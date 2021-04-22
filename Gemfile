@@ -30,6 +30,7 @@ group :jekyll_plugins do
    gem 'jekyll-toc'
    gem "webrick", "~> 1.7" #FC Added
    gem "kramdown-parser-gfm" #FC Added
+   gem "jekyll-sitemap" #FC Added 2021-04-22 1727
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
