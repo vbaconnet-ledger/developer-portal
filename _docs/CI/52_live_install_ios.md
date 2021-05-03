@@ -57,25 +57,25 @@ Here, you can also check that you're using the correct toolchain and that you ha
 We will begin by installing dependencies using brew
 
 
-```
+```sh
 brew install ruby watchman yarn
 ```
 
 Then clone ledger-live-mobile, and cd into the folder.
 
-```
+```sh
 git clone git@github.com:LedgerHQ/ledger-live-mobile.git
 cd ledger-live-mobile
 ```
 You can now use the yarn command.
 
-```
+```sh
 yarn
 ```
 
 When it has finished, execute
 
-```
+```sh
 yarn pod
 ```
 
@@ -88,7 +88,7 @@ This command may fail. Like this, for example.
 
 In my case, I had to run
 
-```
+```sh
 sudo gem install bundler:2.1.4
 ```
 
@@ -96,7 +96,7 @@ Then re-do the **yarn** and **yarn pod** commands.
 
 Open a second terminal, cd into the ledger-live-mobile repository, and run
 
-```
+```sh
 yarn start
 ```
 
@@ -109,7 +109,7 @@ Wait until you see a message indicating "Loading dependency graph, done."
 
 Return to the first terminal, and run
 
-```
+```sh
 yarn ios
 ```
 

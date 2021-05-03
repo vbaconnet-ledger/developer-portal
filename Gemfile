@@ -20,6 +20,8 @@ ruby RUBY_VERSION
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 #gem "github-pages", group: :jekyll_plugins
 gem "github-pages", "~> 214", group: :jekyll_plugins #FC Added 2021-04-22 1746
+ 
+gem 'github-linguist', '~> 7.14'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

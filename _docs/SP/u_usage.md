@@ -21,18 +21,14 @@ After having [installed the requirements and built](../i_build.md) speculos:
 
 The docker image can also be used directly, as detailed in the specific [docker documentation page](docker.md).
 
-The Nano S is the default model; the Nano X and Blue can be specified on the
-command-line:
+The Nano S is the default model; the Nano X and Blue can be specified on the command-line:
 
 ```console
 ./speculos.py --model nanox apps/nanox#btc#1.2#57272a0f.elf
 ./speculos.py --model blue --sdk 1.5 apps/blue#btc#1.5#00000000.elf
 ```
 
-The last SDK version is automatically selected. However, a specific version
-be specified if the target app is not build against the last version of the SDK,
-thanks to the `-k`/`--sdk` argument. For instance, to launch an app built
-against the SDK `1.5` on the Nano S:
+The last SDK version is automatically selected. However, a specific version be specified if the target app is not build against the last version of the SDK, thanks to the `-k`/`--sdk` argument. For instance, to launch an app built against the SDK `1.5` on the Nano S:
 
 ```console
 ./speculos.py --sdk 1.5 --model nanos apps/btc.elf
@@ -60,21 +56,13 @@ Several display options are available through the `--display` parameter:
 - `headless`: nothing is displayed
 - `text`: the UI is displayed in the console (handy on Windows)
 
-These options can be used along `--vnc-port` which spawns a VNC server on the
-specified port. macOS users should also add `--vnc-password <password>` if using
-the built-in VNC client because unauthenticated sessions doesn't seem to be
-supported (issue #34).
+These options can be used along `--vnc-port` which spawns a VNC server on the specified port. macOS users should also add `--vnc-password <password>` if using the built-in VNC client because unauthenticated sessions doesn't seem to be supported (issue #34).
 
 ## App name and version
 
-On a real device, some parameters specific to the app to be installed (name and
-version, icon, allowed derivation paths, etc.) are given during the
-installation. This information isn't embedded in the .elf file itself and thus
-cannot be retrieved by speculos.
+On a real device, some parameters specific to the app to be installed (name and version, icon, allowed derivation paths, etc.) are given during the installation. This information isn't embedded in the .elf file itself and thus cannot be retrieved by speculos.
 
-The default app name and version are respectively `app` `1.33.7`, but these
-values can be set through the `SPECULOS_APPNAME` environment variable. For
-instance:
+The default app name and version are respectively `app` `1.33.7`, but these values can be set through the `SPECULOS_APPNAME` environment variable. For instance:
 
 ```
 $ SPECULOS_APPNAME=blah:1.2.3.4 ./speculos.py ./apps/btc.elf &

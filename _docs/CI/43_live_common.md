@@ -184,7 +184,7 @@ _NOTE: you may need to add `mycoin` to the `withoutNetworkInfo` in this script i
 
 Do not forget to build before testing:
 
-```
+```sh
 yalc publish --push
 # if not yarn watch
 cd cli
@@ -203,7 +203,7 @@ ledger-live envs
 
 The one you will use the most before releasing you integration is:
 
-```
+```sh
 EXPERIMENTAL_CURRENCIES=mycoin
 ```
 
@@ -232,7 +232,7 @@ Ensure the `.yalc` directory is included then in the package.json:
 
 `package.json`:
 
-```
+```js
   "files": [
     ...,
     ".yalc"
@@ -245,11 +245,11 @@ _**WARNING: Do not commit changes due to the usage of `yalc` as it may result in
 
 ### MyCoin cryptoassets
 
-We will consider that _MyCoin_ is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [_MyCoin_ in CryptoAssets](41_live_cryptoassets.md).
+We will consider that _MyCoin_ is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [_MyCoin_ in CryptoAssets](../41_live_cryptoassets).
 
 ### Derive Address from device
 
-If your app JS bindings (see See [_My Coin_ App JS Bindings](42_live_app_bindings.md)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
+If your app JS bindings (see See [_My Coin_ App JS Bindings](../42_live_app_bindings)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
 
 First and easiest step is to get an address from the device for MyCoin, by creating the `hw-getAddress.js` Resolver:
 
@@ -278,7 +278,7 @@ export default resolver;
 
 Test that you can derive an address:
 
-```
+```sh
 ledger-live getAddress --currency mycoin --path "44'/8008'/0'/0/0" --derivationMode ""
 ```
 
@@ -388,7 +388,7 @@ All main accounts share a common ground:
 - `balance: BigNumber` represent the total amount of assets that this account holds.
 - `spendableBalance: BigNumber`: represents the subset of `balance` that can be spent. Most of the time it will be equal to `balance` but this can vary in some blockchains.
 - `blockHeight: number`: tracks the current blockchain block height.
-- `currency: CryptoCurrency`: the associated crypto currency of the Account. See [_MyCoin_ in CryptoAssets](41_live_cryptoassets.md)
+- `currency: CryptoCurrency`: the associated crypto currency of the Account. See [_MyCoin_ in CryptoAssets](../41_live_cryptoassets)
 - `unit: Unit`: the user defined preferred unit to view the account with. It's initialized to `currency.units[0]`.
 - `operationsCount: number` gives the total number of operations this account contains. This field exists because the `operations` array is not guaranteed to be complete.
 - `operations: Operation[]`: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on.
@@ -2092,4 +2092,4 @@ When building live-common, a [script](https://github.com/LedgerHQ/ledger-live-co
 
 ## Testing
 
-See [Testing](./50_live_tests.md)
+See [Testing](../50_live_tests)

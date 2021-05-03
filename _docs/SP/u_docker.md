@@ -59,12 +59,10 @@ Edit `docker-compose.yml` to configure port forwarding and environment variables
 
 ## Build
 
-The following command-line can be used to create a docker image based on a local
-[build](../i_build.md):
+The following command-line can be used to create a docker image based on a local [build](../i_build.md):
 
 ```console
 docker build ./ -t speculos
 ```
 
-Replace `ledgerhq/speculos` with `speculos` in the sections above to use this
-image.
+Replace `ledgerhq/speculos` with `speculos` in the sections above to use this image.

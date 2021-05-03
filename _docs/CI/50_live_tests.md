@@ -18,9 +18,9 @@ Testing the Live-common Bridge [](https://ledgerhq.atlassian.net/wiki/spaces/WAL
 
 ## What to test
 
-see General CLI Checklist - User tests [here](55_live_gen_cli.md)  
+see General CLI Checklist - User tests [here](../55_live_gen_cli)  
 
-see Specific CLI Checklist - User tests [here](56_live_spe_cli.md)  
+see Specific CLI Checklist - User tests [here](../56_live_spe_cli)  
 
 
 

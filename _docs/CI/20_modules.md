@@ -148,7 +148,7 @@ As part of a Ledger Live integration, you should provide a indexing service allo
 <i>Note :
   
 -   within the Live-Common, the coin will need to be included in the CryptoAssets library. This is seen in detail 
-    [later](https://blog.ledger.com/developer-portal/docs/41_live_cryptoassets.html)
+    [later](../41_live_cryptoassets)
     used to define the list of currencies that will be visible on the
     front end of the application.
   

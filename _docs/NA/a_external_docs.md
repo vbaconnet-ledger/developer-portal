@@ -15,7 +15,6 @@ layout: doc_na
 
 ## Introduction
 
-In addition to the documentation provided in this hub, we also have the
-following resources available:
+In addition to the documentation provided in this hub, we also have the following resources available:
 
 -   `python-loader:index`

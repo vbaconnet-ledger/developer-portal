@@ -16,12 +16,10 @@
 <link rel="canonical" href="http://localhost:4000/docs/CI/54_live_run_on_ios_android/" />
 <meta property="og:url" content="http://localhost:4000/docs/CI/54_live_run_on_ios_android/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-23T12:13:54+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Running iOS and Android Dev Apps" />
 <script type="application/ld+json">
-{"description":"Sections in this article","headline":"Running iOS and Android Dev Apps","dateModified":"2021-04-23T12:13:54+02:00","datePublished":"2021-04-23T12:13:54+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/CI/54_live_run_on_ios_android/"},"url":"http://localhost:4000/docs/CI/54_live_run_on_ios_android/","author":{"@type":"Person","name":"leo"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Sections in this article","headline":"Running iOS and Android Dev Apps","url":"http://localhost:4000/docs/CI/54_live_run_on_ios_android/","author":{"@type":"Person","name":"leo"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -183,40 +181,6 @@ function searchResults(form) {
                                 
                                     
                                         <li><a href="/docs/00_header/" >Tutorials</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="#">_Old</a>
-                                        
-                                            <div class="uk-navbar-dropdown">
-                                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/docs/TMPL/installation/">Template docs</a></li>
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/blog/">Blog</a></li>
-                                                    
-                                                    
-                                                    
-                                                        <li class="uk-nav-header">Changelogs</li>
-                                                    
-                                                    
-                                                </ul>
-                                            </div>
-                                        
-                                        </li>
                                                                                                         
                                 
                             
@@ -385,9 +349,9 @@ function searchResults(form) {
   
     Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Leo Lehmann</span></span><br>
   
-  <time datetime="2021-04-23T12:13:54+02:00" itemprop="datePublished">
+  <time datetime="" itemprop="datePublished">
     
-    Apr 23, 2021
+    
   </time>
 </div>
                     </div>
@@ -412,8 +376,8 @@ function searchResults(form) {
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>For iOS: <a href="52_live_install_ios.md">Building iOS build</a>.<br />
-For Android: <a href="53_live_install_android.md">Building Android build</a>.</p>
+<p>For iOS: <a href="../52_live_install_ios">Building iOS build</a>.<br />
+For Android: <a href="../53_live_install_android">Building Android build</a>.</p>
 
 <h2 id="connecting-to-nano-s--x">Connecting to Nano S / X</h2>
 
@@ -423,20 +387,20 @@ For Android: <a href="53_live_install_android.md">Building Android build</a>.</p
 
 <p>Once installed, open a new terminal and type:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvm install 12 (if not already done)
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvm <span class="nb">install </span>12 <span class="o">(</span><span class="k">if </span>not already <span class="k">done</span><span class="o">)</span>
 nvm use 12
 </code></pre></div></div>
 
 <p>Then we’re going to clone the ledger-live-common repo:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/LedgerHQ/ledger-live-common
-cd ledger-live-common/cli
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/LedgerHQ/ledger-live-common
+<span class="nb">cd </span>ledger-live-common/cli
 yarn
 </code></pre></div></div>
 
 <p>Now let’s launch the ledger-live-common proxy command:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node bin/index.js proxy
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node bin/index.js proxy
 </code></pre></div></div>
 
 <p>You should see an output such as this:</p>

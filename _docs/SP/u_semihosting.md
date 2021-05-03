@@ -11,12 +11,11 @@ layout: doc_sp
 * TOC
 {:toc}
 
-QEMU implements some semihosted operations which can be triggered from the app.
-For instance, messages can be printed to stderr with the following code:
+QEMU implements some semihosted operations which can be triggered from the app. For instance, messages can be printed to stderr with the following code:
 
 ## SYS_WRITE0
 
-```
+```c
 void debug_write(char *buf)
 {
   asm volatile (
@@ -28,8 +27,7 @@ void debug_write(char *buf)
 }
 ```
 
-The operation number must be passed in `r0` (here `SYS_WRITE0` operation is
-defined to `0x04`) and arguments are in `r1`, `r2` and `r3`.
+The operation number must be passed in `r0` (here `SYS_WRITE0` operation is defined to `0x04`) and arguments are in `r1`, `r2` and `r3`.
 
 Usage:
 

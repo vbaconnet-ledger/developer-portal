@@ -14,7 +14,7 @@ layout: doc_sp
 
 Debug an app thanks to GDB:
 
-```
+```sh
 ./speculos.py -d apps/btc.elf &
 ./tools/debug.sh apps/btc.elf
 ```

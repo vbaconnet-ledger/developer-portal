@@ -24,8 +24,8 @@ No toc originally here
   - [How does a test work ?](#how-does-a-test-work-)
   - [What are the focus when testing ?](#what-are-the-focus-when-testing-)
   - [What is this testing ?](#what-is-this-testing-)
-  - [How does it work ?](#how-does-it-work-)
-  - [How to define a test ?](#how-to-define-a-test-)
+  - [How it works](#how-it-works)
+  - [How to define a test](#how-to-define-a-test)
 
 -->
 
@@ -55,7 +55,7 @@ You will first need to set up the file `test-dataset.js`
 
 then fill it with this empty template :
 
-```
+```js
 import type { DatasetTest } from "../../types";
 import type { Transaction } from "./types";
 
@@ -71,7 +71,9 @@ export default dataset: DatasetTest<Transaction> = {
 then you will need to connect your nano with a seed that you want to freeze (that means you don't want to do anymore transaction with that seed, or you will need to regenerate the snapshot everytime)
 
 and execute in the CLI the command :
+```sh
 `ledger-live generateTestScanAccounts -c mycoin`
+```
 
 the output should be like this :
 
@@ -247,10 +249,10 @@ What is this testing ?
 
 We are testing the broadcast part and sync part.
 
-How does it work ?
+How it works
 ---
 
-```
+```sh
 ledger-live cleanSpeculos && SEED="generate a seed for testing" COINAPPS="/path/to/coin/apps/folder" ledger-live bot -c mycoin
 ```
 
@@ -261,14 +263,14 @@ ledger-live cleanSpeculos && SEED="generate a seed for testing" COINAPPS="/path/
 
 - We also need to specify how the bot will react when he encounter certain screen, we will create `speculos-deviceActions.js`
 
-How to define a test ?
+How to define a test
 ----
 
 `speculos-deviceActions.js`
 
 It is required to know every screen that your nano app contains, it will use the `title` of the screen then optionally check if the `expectedValue` of that screen is what we expect, then eventually execute the `button` action.
 
-```
+```js
 title : name of the screen title
 button: "Rr" for the bot to push the Right button of the nano || "Ll" same for left || "LRlr" same but for both
 expectedValue: string of what we want to compare

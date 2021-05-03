@@ -16,12 +16,10 @@
 <link rel="canonical" href="http://localhost:4000/docs/SP/d_internals/" />
 <meta property="og:url" content="http://localhost:4000/docs/SP/d_internals/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-23T12:13:54+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Internals" />
 <script type="application/ld+json">
-{"description":"Sections in this article","headline":"Internals","dateModified":"2021-04-23T12:13:54+02:00","datePublished":"2021-04-23T12:13:54+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/SP/d_internals/"},"url":"http://localhost:4000/docs/SP/d_internals/","author":{"@type":"Person","name":"greenknot"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Sections in this article","headline":"Internals","url":"http://localhost:4000/docs/SP/d_internals/","author":{"@type":"Person","name":"greenknot"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -192,7 +190,7 @@ function searchResults(form) {
                             
                                 
                                     
-                                        <li><a href="#">_Old</a>
+                                        <li><a href="#">_</a>
                                         
                                             <div class="uk-navbar-dropdown">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -359,9 +357,9 @@ function searchResults(form) {
   
     Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">greenknot</span></span><br>
   
-  <time datetime="2021-04-23T12:13:54+02:00" itemprop="datePublished">
+  <time datetime="" itemprop="datePublished">
     
-    Apr 23, 2021
+    
   </time>
 </div>
                     </div>
@@ -375,27 +373,17 @@ function searchResults(form) {
 
 <h2 id="introduction">Introduction</h2>
 
-<p>The emulator is actually a userland application cross-compiled for the ARM
-architecture. It opens the target app (<code class="language-plaintext highlighter-rouge">app.elf</code>) from the filesystem and maps
-it as is in memory. The emulator is launched with <code class="language-plaintext highlighter-rouge">qemu-arm-static</code> and
-eventually jumps to the app entrypoint.</p>
+<p>The emulator is actually a userland application cross-compiled for the ARM architecture. It opens the target app (<code class="language-plaintext highlighter-rouge">app.elf</code>) from the filesystem and maps it as is in memory. The emulator is launched with <code class="language-plaintext highlighter-rouge">qemu-arm-static</code> and eventually jumps to the app entrypoint.</p>
 
 <p>Apps can be debugged with <code class="language-plaintext highlighter-rouge">gdb-multiarch</code> thanks to <code class="language-plaintext highlighter-rouge">qemu-arm-static</code>.</p>
 
 <h2 id="syscall-hooks">Syscall hooks</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">svc</code> instruction is replaced with <code class="language-plaintext highlighter-rouge">udf</code> (undefined) to generate a <code class="language-plaintext highlighter-rouge">SIGILL</code>
-signal upon execution. It allows to catch syscalls and emulate them. It can
-unfortunately lead to unexpected bytes being patched if <code class="language-plaintext highlighter-rouge">\x01\xdf</code> is found in
-the binary (and isn’t the <code class="language-plaintext highlighter-rouge">svc</code> instruction).</p>
+<p>The <code class="language-plaintext highlighter-rouge">svc</code> instruction is replaced with <code class="language-plaintext highlighter-rouge">udf</code> (undefined) to generate a <code class="language-plaintext highlighter-rouge">SIGILL</code> signal upon execution. It allows to catch syscalls and emulate them. It can unfortunately lead to unexpected bytes being patched if <code class="language-plaintext highlighter-rouge">\x01\xdf</code> is found in the binary (and isn’t the <code class="language-plaintext highlighter-rouge">svc</code> instruction).</p>
 
-<p>A disassembler could give better results, but it doesn’t look worth it. As a
-side note, the <code class="language-plaintext highlighter-rouge">SVC_Call()</code> function can’t be hooked because some syscalls are
-inlined.</p>
+<p>A disassembler could give better results, but it doesn’t look worth it. As a side note, the <code class="language-plaintext highlighter-rouge">SVC_Call()</code> function can’t be hooked because some syscalls are inlined.</p>
 
-<p>Other alternatives were considered (for instance <code class="language-plaintext highlighter-rouge">seccomp</code> or <code class="language-plaintext highlighter-rouge">ptrace</code>) but they
-seem not practicable because QEMU don’t support the
-<a href="https://github.com/qemu/qemu/blob/1c4c6fcd1a2ae56e98be3a441e19a0933c508a51/linux-user/syscall.c#L7402">associated syscalls</a>.</p>
+<p>Other alternatives were considered (for instance <code class="language-plaintext highlighter-rouge">seccomp</code> or <code class="language-plaintext highlighter-rouge">ptrace</code>) but they seem not practicable because QEMU don’t support the <a href="https://github.com/qemu/qemu/blob/1c4c6fcd1a2ae56e98be3a441e19a0933c508a51/linux-user/syscall.c#L7402">associated syscalls</a>.</p>
 
                         
                             <!-- FC

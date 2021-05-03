@@ -32,9 +32,7 @@ cmake -Bbuild -H.
 make -C build/
 ```
 
-Please note that the first build can take some time because a tarball of OpenSSL
-is downloaded (the integrity of the downloaded tarball is checked) before being
-built. Further invocations of `make` skip this step.
+Please note that the first build can take some time because a tarball of OpenSSL is downloaded (the integrity of the downloaded tarball is checked) before being built. Further invocations of `make` skip this step.
 
 The following command line can be used for a debug build:
 

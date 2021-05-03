@@ -18,14 +18,9 @@ layout: doc_na
 
 #### Screens and Flows
 
-Displaying information on the devices is done by defining a `flow`.
-Think of a flow as a **set of screens that will be displayed** to the
-user. The user will be able to navigate the flow using **left** and
-**right** buttons.
+Displaying information on the devices is done by defining a `flow`. Think of a flow as a **set of screens that will be displayed** to the user. The user will be able to navigate the flow using **left** and **right** buttons.
 
-The macro `UX_FLOW` lets you define a flow. It first takes the **name of
-the flow** you are defining, and then the **different steps** of your
-flow.
+The macro `UX_FLOW` lets you define a flow. It first takes the **name of the flow** you are defining, and then the **different steps** of your flow.
 
 Here's an example:
 
@@ -39,31 +34,15 @@ UX_FLOW(ux_sign_transaction,            // Name of the flow
         );
 ```
 
-"*But what are those steps? Where can I find them?*" you ask? Well,
-they're **yours to declare in your app**! Let's have a look at how you
-can declare those!
+"*But what are those steps? Where can I find them?*" you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those!
 
 #### Declaring steps
 
-A step is declared using one of the **macros provided by the SDK**.
-Here's a list of the **most used ones** (a more exhaustive list is
-available by looking at the SDK source code!):
+A step is declared using one of the **macros provided by the SDK**. Here's a list of the **most used ones** (a more exhaustive list is available by looking at the SDK source code!):
 
--   `UX_STEP_NOCB` : Your bread and butter step. A step that simply
-    **displays information on-screen**, without having any callback
-    function (hence the `NOCB` annotation!). This is used to display
-    information to the user (display a public key, display the network
-    name...).
--   `UX_STEP_CB` : Another widely used step declaration. You need to
-    **associate a callback function** (hence the `CB` annotation!) that
-    will be called if the **user presses both buttons simultaneously**.
-    This is used mainly at the end of a flow, to either APPROVE or
-    REJECT a signature for example.
--   `FLOW_LOOP` : This is a special macro that **doesn't take any
-    arguments**. Put it as the last step of your `UX_FLOW` declaration,
-    and the flow will wrap around: pressing the left button on the first
-    screen will display to the last screen, and pressing the right
-    button on the last screen will jump right to the first screen!
+-   `UX_STEP_NOCB` : Your bread and butter step. A step that simply **displays information on-screen**, without having any callback function (hence the `NOCB` annotation!). This is used to display information to the user (display a public key, display the network name...). 
+-   `UX_STEP_CB` : Another widely used step declaration. You need to **associate a callback function** (hence the `CB` annotation!) that will be called if the **user presses both buttons simultaneously**. This is used mainly at the end of a flow, to either APPROVE or REJECT a signature for example. 
+-   `FLOW_LOOP` : This is a special macro that **doesn't take any arguments**. Put it as the last step of your `UX_FLOW` declaration, and the flow will wrap around: pressing the left button on the first screen will display to the last screen, and pressing the right button on the last screen will jump right to the first screen!
 
 Looking back at our previous flow (the `ux_display_pubkey_flow`), you
 can guess which steps were declared with `UX_STEP_NOCB` and
@@ -92,33 +71,25 @@ UX_STEP_NOCB(
 );
 ```
 
--   The first argument is the **name** that we are going to give to this
-    step.
+-   The first argument is the **name** that we are going to give to this step.
 -   The second are what we call a `layout` option.
 -   The third argument goes hand-in-hand with the `layout` option.
 
-It looks like the `layout` is where the black-magic happens. Let's have
-a closer look at `layout` s!
+It looks like the `layout` is where the black-magic happens. Let's have a closer look at `layout` s!
 
 #### Layouts
 
-Layouts are nothing more than rules that specify the format / number of
-lines / fonts we are going to use on the screen. They are easy to
-remember once you understand that:
+Layouts are nothing more than rules that specify the format / number of lines / fonts we are going to use on the screen. They are easy to remember once you understand that:
 
 -   `b` stands for **bold**.
 -   `n` stands for **normal**.
 -   `p` stands for **picture**.
--   `paging` means that if the data doesn't fit on screen, user will be
-    able to navigate through multiple screens to see the data (e.g a
-    public key).
+-   `paging` means that if the data doesn't fit on screen, user will be able to navigate through multiple screens to see the data (e.g a public key).
 -   And the number of letters used stands for the **number of lines**!
 
-Note that **all combinations of letters are not possible**. For example
-`paging` only exists with `bnnn`. `nnnn` only exists on NanoX, etc...
+Note that **all combinations of letters are not possible**. For example `paging` only exists with `bnnn`. `nnnn` only exists on NanoX, etc...
 
-Now that you know all that, here's a table with the **most commonly used
-layouts**:
+Now that you know all that, here's a table with the **most commonly used layouts**:
 
 | Denomination  | Comment                                                                                                                                                                                           | Usage                                                      |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -129,11 +100,9 @@ layouts**:
 
 Most commonly used layouts
 
-And here's a table that compares how those layouts are displayed on a
-Nano S and on a Nano X!
+And here's a table that compares how those layouts are displayed on a Nano S and on a Nano X!
 
-Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S
-can only fit 2**!
+Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only fit 2**!
 
 | LAYOUT        | NANOS                                                         | NANOX                                                         |
 |---------------|---------------------------------------------------------------|---------------------------------------------------------------|
@@ -144,17 +113,13 @@ can only fit 2**!
 
 Comparing end results on NanoS and NanoX
 
-You're now ready to go and fly on your owns wings! Flows, steps, and
-layouts are no mystery to you anymore! We've added a couple of examples
-just down below, because an example is worth 16x16 words...
+You're now ready to go and fly on your owns wings! Flows, steps, and layouts are no mystery to you anymore! We've added a couple of examples just down below, because an example is worth 16x16 words...
 
 ### Examples
 
 #### Menu
 
-Here's a typical flow for any app that will display its name (along with
-its logo), then its version, then the settings and finally a quit (along
-with a icon).
+Here's a typical flow for any app that will display its name (along with its logo), then its version, then the settings and finally a quit (along with a icon).
 
 ``` c
 UX_STEP_NOCB(step_menu, pnn, {&C_app_logo, "App", "is ready"});
@@ -171,21 +136,11 @@ UX_FLOW(ux_app_dashboard,
 );
 ```
 
-You guessed it, pressing both buttons when on the <span
-class="title-ref">QUIT</span> screen will call `os_sched_exit(-1)`,
-effectively quitting the app. Pressing both button while on the
-`Settings` screen will call `ui_settings_menu()`, another function that
-you need to define with `UX_FLOW` ! We also added the `FLOW_LOOP` step
-at the end to have the menu wrap around. Users can now indefinitely
-cycle through the menu, yay!
+You guessed it, pressing both buttons when on the <span class="title-ref">QUIT</span> screen will call `os_sched_exit(-1)`, effectively quitting the app. Pressing both button while on the `Settings` screen will call `ui_settings_menu()`, another function that you need to define with `UX_FLOW` ! We also added the `FLOW_LOOP` step at the end to have the menu wrap around. Users can now indefinitely cycle through the menu, yay!
 
 #### Signing a transaction
 
-Here's the example of a flow to sign a transaction. We first display
-"Confirm address" along with a picture, then use `bnnn_paging` to
-display the address because it might not fit on a single screen. We then
-display the amount and the transactions fees, and finally add two
-callack steps: the first one to confirm, the second one to reject.
+Here's the example of a flow to sign a transaction. We first display "Confirm address" along with a picture, then use `bnnn_paging` to display the address because it might not fit on a single screen. We then display the amount and the transactions fees, and finally add two callack steps: the first one to confirm, the second one to reject.
 
 ``` c
 UX_STEP_NO_CB(step_review, pn, {&C_icon_eye, "Confirm Address"});
@@ -207,11 +162,5 @@ UX_FLOW(ux_sign_transaction,
 
 #### Advanced display management
 
-A special
-`advanced display management </u_advanced_display_management>`
-section has been written where we detail more advanced UX\_FLOW
-delcaration. Another `low_level_display_management`
-&lt;/u_low\_level\_display\_management&gt;\` has details about
-the inner-workings of flows, but definitely feel free to skip it as it
-is in no way required to be able to write new apps!
+The special [advanced display management](../u_advanced_display_management) section details more advanced UX\_FLOW delcaration. Another article [Low-level display management](../u_low_level_display_management) has details about the inner-workings of flows, but feel free to skip it as it is not obligatory to write new apps!
 

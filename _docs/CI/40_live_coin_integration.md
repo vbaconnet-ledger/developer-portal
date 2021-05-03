@@ -47,18 +47,18 @@ In each part you will add your **Coin code** You may also have to make changes i
 ***
 # CryptoAssets  
 
-Follow instructions [here](41_live_cryptoassets.md)  
+Follow instructions [here](../41_live_cryptoassets)  
 
 # App JS Bindings
 
-Follow instructions [here](42_live_app_bindings.md)  
+Follow instructions [here](../42_live_app_bindings)  
 
 # Live Common
 
-Follow instructions [here](43_live_common.md)  
+Follow instructions [here](../43_live_common)  
 
 # Front-end integration
 
-Follow instructions [here](44_live_frontend.md)  
+Follow instructions [here](../44_live_frontend)  
 
 ***

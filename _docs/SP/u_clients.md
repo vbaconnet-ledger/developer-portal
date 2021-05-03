@@ -12,24 +12,17 @@ layout: doc_sp
 {:toc}
 
 
-Clients can communicate with the emulated device using APDUs, as usual. Speculos
-embbeds a TCP server (listening on `127.0.0.1:9999`) to forward APDUs to the
-target app.
+Clients can communicate with the emulated device using APDUs, as usual. Speculos embbeds a TCP server (listening on `127.0.0.1:9999`) to forward APDUs to the target app.
 
 ## ledgerctl (ledgerwallet)
 
-[ledgerwallet](https://github.com/LedgerHQ/ledgerctl) is a library to control
-Ledger devices, also available through the command `ledgerctl` (it can be
-installed thanks to [pip](https://pypi.org/project/ledgerwallet/)):
+[ledgerwallet](https://github.com/LedgerHQ/ledgerctl) is a library to control Ledger devices, also available through the command `ledgerctl` (it can be installed thanks to [pip](https://pypi.org/project/ledgerwallet/)):
 
 ```console
 pip3 install ledgerwallet
 ```
 
-If the environment variables `LEDGER_PROXY_ADDRESS` and `LEDGER_PROXY_PORT` are
-set, the library tries to use the device emulated by Speculos. For instance, the
-following command-line sends the APDU `e0 c4 00 00 00` (Bitcoin app APDU to get
-the version):
+If the environment variables `LEDGER_PROXY_ADDRESS` and `LEDGER_PROXY_PORT` are set, the library tries to use the device emulated by Speculos. For instance, the following command-line sends the APDU `e0 c4 00 00 00` (Bitcoin app APDU to get the version):
 
 ```console
 $ echo 'e0c4000000' | LEDGER_PROXY_ADDRESS=127.0.0.1 LEDGER_PROXY_PORT=9999 ledgerctl send -
@@ -40,11 +33,7 @@ $ echo 'e0c4000000' | LEDGER_PROXY_ADDRESS=127.0.0.1 LEDGER_PROXY_PORT=9999 ledg
 
 ## blue-loader-python (ledgerblue)
 
-Most clients relies on the
-[blue-loader-python](https://github.com/LedgerHQ/blue-loader-python/) Python
-library which supports Speculos since release
-[0.1.24](https://pypi.org/project/ledgerblue/0.1.24/). This library can be
-installed through pip using the following command-line:
+Most clients relies on the [blue-loader-python](https://github.com/LedgerHQ/blue-loader-python/) Python library which supports Speculos since release [0.1.24](https://pypi.org/project/ledgerblue/0.1.24/). This library can be installed through pip using the following command-line:
 
 ```console
 pip3 install ledgerblue
@@ -68,8 +57,7 @@ Use [btchip-python](https://github.com/LedgerHQ/btchip-python) without a real de
 PYTHONPATH=$(pwd) LEDGER_PROXY_ADDRESS=127.0.0.1 LEDGER_PROXY_PORT=9999 python tests/testMultisigArmory.py
 ```
 
-Note: `btchip-python` relies on its own library to communicate with devices
-(physical or emulated) instead of `ledgerblue` to transmit APDUs.
+Note: `btchip-python` relies on its own library to communicate with devices (physical or emulated) instead of `ledgerblue` to transmit APDUs.
 
 ## ledger-live-common
 

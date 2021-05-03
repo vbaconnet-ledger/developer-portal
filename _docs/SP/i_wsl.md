@@ -19,7 +19,7 @@ Rough steps to do so below, detailed procedure available on [this blogpost](http
 
 - Add the following to your `.bashrc` within WSL2:
 
-```
+```sh
 export DISPLAY="`sed -n 's/nameserver //p' /etc/resolv.conf`:0"
 ```
 

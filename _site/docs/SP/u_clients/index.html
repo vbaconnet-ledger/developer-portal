@@ -16,12 +16,10 @@
 <link rel="canonical" href="http://localhost:4000/docs/SP/u_clients/" />
 <meta property="og:url" content="http://localhost:4000/docs/SP/u_clients/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-23T12:13:54+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Clients - how to send APDUs" />
 <script type="application/ld+json">
-{"description":"Sections in this article","headline":"Clients - how to send APDUs","dateModified":"2021-04-23T12:13:54+02:00","datePublished":"2021-04-23T12:13:54+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/SP/u_clients/"},"url":"http://localhost:4000/docs/SP/u_clients/","author":{"@type":"Person","name":"greenknot"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Sections in this article","headline":"Clients - how to send APDUs","url":"http://localhost:4000/docs/SP/u_clients/","author":{"@type":"Person","name":"greenknot"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -192,7 +190,7 @@ function searchResults(form) {
                             
                                 
                                     
-                                        <li><a href="#">_Old</a>
+                                        <li><a href="#">_</a>
                                         
                                             <div class="uk-navbar-dropdown">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -359,9 +357,9 @@ function searchResults(form) {
   
     Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">greenknot</span></span><br>
   
-  <time datetime="2021-04-23T12:13:54+02:00" itemprop="datePublished">
+  <time datetime="" itemprop="datePublished">
     
-    Apr 23, 2021
+    
   </time>
 </div>
                     </div>
@@ -375,23 +373,16 @@ function searchResults(form) {
   <li><a href="#ledger-live-common" id="markdown-toc-ledger-live-common">ledger-live-common</a></li>
 </ul>
 
-<p>Clients can communicate with the emulated device using APDUs, as usual. Speculos
-embbeds a TCP server (listening on <code class="language-plaintext highlighter-rouge">127.0.0.1:9999</code>) to forward APDUs to the
-target app.</p>
+<p>Clients can communicate with the emulated device using APDUs, as usual. Speculos embbeds a TCP server (listening on <code class="language-plaintext highlighter-rouge">127.0.0.1:9999</code>) to forward APDUs to the target app.</p>
 
 <h2 id="ledgerctl-ledgerwallet">ledgerctl (ledgerwallet)</h2>
 
-<p><a href="https://github.com/LedgerHQ/ledgerctl">ledgerwallet</a> is a library to control
-Ledger devices, also available through the command <code class="language-plaintext highlighter-rouge">ledgerctl</code> (it can be
-installed thanks to <a href="https://pypi.org/project/ledgerwallet/">pip</a>):</p>
+<p><a href="https://github.com/LedgerHQ/ledgerctl">ledgerwallet</a> is a library to control Ledger devices, also available through the command <code class="language-plaintext highlighter-rouge">ledgerctl</code> (it can be installed thanks to <a href="https://pypi.org/project/ledgerwallet/">pip</a>):</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pip3 install ledgerwallet
 </span></code></pre></div></div>
 
-<p>If the environment variables <code class="language-plaintext highlighter-rouge">LEDGER_PROXY_ADDRESS</code> and <code class="language-plaintext highlighter-rouge">LEDGER_PROXY_PORT</code> are
-set, the library tries to use the device emulated by Speculos. For instance, the
-following command-line sends the APDU <code class="language-plaintext highlighter-rouge">e0 c4 00 00 00</code> (Bitcoin app APDU to get
-the version):</p>
+<p>If the environment variables <code class="language-plaintext highlighter-rouge">LEDGER_PROXY_ADDRESS</code> and <code class="language-plaintext highlighter-rouge">LEDGER_PROXY_PORT</code> are set, the library tries to use the device emulated by Speculos. For instance, the following command-line sends the APDU <code class="language-plaintext highlighter-rouge">e0 c4 00 00 00</code> (Bitcoin app APDU to get the version):</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'e0c4000000'</span> | <span class="nv">LEDGER_PROXY_ADDRESS</span><span class="o">=</span>127.0.0.1 <span class="nv">LEDGER_PROXY_PORT</span><span class="o">=</span>9999 ledgerctl send -
 <span class="gp">13:37:35.096:apdu: &gt;</span><span class="w"> </span>e0c4000000
@@ -401,11 +392,7 @@ the version):</p>
 
 <h2 id="blue-loader-python-ledgerblue">blue-loader-python (ledgerblue)</h2>
 
-<p>Most clients relies on the
-<a href="https://github.com/LedgerHQ/blue-loader-python/">blue-loader-python</a> Python
-library which supports Speculos since release
-<a href="https://pypi.org/project/ledgerblue/0.1.24/">0.1.24</a>. This library can be
-installed through pip using the following command-line:</p>
+<p>Most clients relies on the <a href="https://github.com/LedgerHQ/blue-loader-python/">blue-loader-python</a> Python library which supports Speculos since release <a href="https://pypi.org/project/ledgerblue/0.1.24/">0.1.24</a>. This library can be installed through pip using the following command-line:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pip3 install ledgerblue
 </span></code></pre></div></div>
@@ -426,8 +413,7 @@ installed through pip using the following command-line:</p>
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">PYTHONPATH=$</span><span class="o">(</span><span class="nb">pwd</span><span class="o">)</span> <span class="nv">LEDGER_PROXY_ADDRESS</span><span class="o">=</span>127.0.0.1 <span class="nv">LEDGER_PROXY_PORT</span><span class="o">=</span>9999 python tests/testMultisigArmory.py
 </code></pre></div></div>
 
-<p>Note: <code class="language-plaintext highlighter-rouge">btchip-python</code> relies on its own library to communicate with devices
-(physical or emulated) instead of <code class="language-plaintext highlighter-rouge">ledgerblue</code> to transmit APDUs.</p>
+<p>Note: <code class="language-plaintext highlighter-rouge">btchip-python</code> relies on its own library to communicate with devices (physical or emulated) instead of <code class="language-plaintext highlighter-rouge">ledgerblue</code> to transmit APDUs.</p>
 
 <h2 id="ledger-live-common">ledger-live-common</h2>
 

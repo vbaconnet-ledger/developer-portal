@@ -43,7 +43,7 @@ The clone will be used to test your modifications locally, using `yalc`.
 
 ### Running the Desktop projet
 
-```
+```sh
 git clone <fork-live-desktop>
 cd ledger-live-desktop
 yalc add @ledgerhq/live-common
@@ -52,7 +52,7 @@ yarn install
 
 If it is the first time you use `yalc` for live-common do this:
 
-```
+```sh
 cd ledger-live-common
 yalc publish
 ```
@@ -73,7 +73,7 @@ The clone will be used to test your modifications locally, using `yalc`.
 
 The prerequisites to running the project are found in the README file.
 
-```
+```sh
 git clone <fork-live-mobile>
 cd ledger-live-mobile
 yalc add @ledgerhq/live-common
@@ -87,7 +87,7 @@ yarn start
 1. Launch the emulatore or plug-in your telephone.
 2. Use an Android environment such as Android Studio
 
-```
+```sh
 git clone <fork-live-mobile>
 cd ledger-live-mobile
 yalc add @ledgerhq/live-common

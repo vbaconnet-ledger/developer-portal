@@ -21,8 +21,8 @@ This page explains how to run a Ledger Live dev app for iOS on macOS.
 
 ## Prerequisites
 
-For iOS: [Building iOS build](52_live_install_ios.md).  
-For Android: [Building Android build](53_live_install_android.md).  
+For iOS: [Building iOS build](../52_live_install_ios).  
+For Android: [Building Android build](../53_live_install_android).  
 
 
 ## Connecting to Nano S / X
@@ -33,14 +33,14 @@ You would need nvm to install and use node version 12 easily. Installation detai
 
 Once installed, open a new terminal and type:
 
-```
+```sh
 nvm install 12 (if not already done)
 nvm use 12
 ```
 
 Then we're going to clone the ledger-live-common repo:
 
-```
+```sh
 git clone https://github.com/LedgerHQ/ledger-live-common
 cd ledger-live-common/cli
 yarn
@@ -48,7 +48,7 @@ yarn
 
 Now let's launch the ledger-live-common proxy command:
 
-```
+```sh
 node bin/index.js proxy
 ```
 

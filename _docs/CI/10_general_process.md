@@ -37,7 +37,7 @@ Integrating your cryptocurrency on Ledger Live is a multi steps process.
 The first mandatory requirement is to have a Nano application already listed in the Ledger Live Manager section. If you don't have one already, please make sure to read this [documentation](https://ledger.readthedocs.io/en/latest/additional/publishing_an_app.html) first.
 
 <!--  -->
-{% include alert.html style="primary" text="The Integration of Nano applications is found this Developer Portal here $LINK." %}
+{% include alert.html style="primary" text="The Integration of Nano applications is found this Developer Portal in the  <a href='../../NA/u_introduction' class='alert-link'> Nano pages </a>." %}
 <!--  -->
 
 ## Tokens
@@ -48,7 +48,7 @@ If you simply want to get your ERC20 token supported, please note that Ledger is
 [//]: To know more, please follow these simple steps (add link / to **be discussed**)
 
 <!-- -->
-{% include alert.html style="danger" text="The Integration of Tokens is <b>not</b> addressed in this Developer Portal." %}
+{% include alert.html style="danger" text="<strong>Note: </strong> The Integration of Tokens is <b>not</b> addressed in this Developer Portal." %}
 <!-- -->
 
 ## Ledger Live

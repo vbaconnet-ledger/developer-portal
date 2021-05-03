@@ -15,17 +15,13 @@ layout: doc_na
 
 ## Introduction
 
-This article talks about more advanced flows that are sometimes needed
-when writing applications.
+This article talks about more advanced flows that are sometimes needed when writing applications.
 
 ### Cherry-picking steps at runtime
 
 #### Usecase
 
-The `Display Management </u_display_management>` doc taught us
-how to use the `UX_FLOW` macro. This macro is quite handy but comes with
-its **drawbacks**: everything needs to be declared at **compilation
-time**. What if we wished to change the `flow` at runtime?
+In [Display Management](../u_display_management) we learned how to use the `UX_FLOW` macro. This is quite handy but it comes with its **drawbacks**: everything needs to be declared at **compilation time**. What if we wished to change the `flow` at runtime?
 
 Imagine an app where you have a flow for a transaction signature.
 
@@ -40,10 +36,7 @@ UX_FLOW(ux_transaction_signature,
       );
 ```
 
-This works well enough for a transaction signature. But suppose there's
-an update to the protocol: now some transactions can also sign some
-arbitrary data. However, not all transactions are required to sign the
-arbitrary data, so you need two flows:
+This works well enough for a transaction signature. But suppose there's an update to the protocol: now some transactions can also sign some arbitrary data. However, not all transactions are required to sign the arbitrary data, so you need two flows:
 
 ``` c
 // The standard signature, nothing has changed.
@@ -68,8 +61,7 @@ UX_FLOW(ux_data_transaction_signature,
       );
 ```
 
-And now somewhere in your app at runtime you will be able to decide
-which flow to use:
+And now somewhere in your app at runtime you will be able to decide which flow to use:
 
 ``` c
 void launch_flow() {
@@ -81,15 +73,9 @@ void launch_flow() {
 }
 ```
 
-Great this works. Hu-oh but now the community also wants to be able to
-see the nonce for the transaction. But they want it to be optional. You
-know for *advanced* users.
+Great this works. Hu-oh but now the community also wants to be able to see the nonce for the transaction. But they want it to be optional. You know for *advanced* users.
 
-Ok so back to work: we need a flow for the vanilla signature, as well as
-a flow for the vanilla signature where we show the nonce. Oh but wait we
-also need the option to display the nonce when there is arbitrary data
-to sign, so we **also** need the "data signature" flow **and** the "data
-signature + nonce" flow.
+Ok so back to work: we need a flow for the vanilla signature, as well as a flow for the vanilla signature where we show the nonce. Oh but wait we also need the option to display the nonce when there is arbitrary data to sign, so we **also** need the "data signature" flow **and** the "data signature + nonce" flow.
 
 ``` c
 // The standard signature, nothing has changed.
@@ -137,8 +123,7 @@ UX_FLOW(ux_data_nonce_transaction_signature,
       );
 ```
 
-And now somewhere in our app at runtime we're able to decide which flow
-to use:
+And now somewhere in our app at runtime we're able to decide which flow to use:
 
 ``` c
 void launch_flow() {
@@ -158,34 +143,17 @@ void launch_flow() {
 }
 ```
 
-Ugh. Ok now everyone's happy: we've updated our app to support the
-protocol and the advanced users in the community can display the nonce.
-But now a new upgrade to the protocol is planned for the near future:
-the fees can sometimes be paid by another user of the blockchain, called
-a relayer. Anyways now some transactions now need to **hide** the fees
-(displaying a fee of 0.000 is not an option because it would confuse
-users more than anything).
+Ugh. Ok now everyone's happy: we've updated our app to support the protocol and the advanced users in the community can display the nonce. But now a new upgrade to the protocol is planned for the near future: the fees can sometimes be paid by another user of the blockchain, called a relayer. Anyways now some transactions now need to **hide** the fees (displaying a fee of 0.000 is not an option because it would confuse users more than anything).
 
-So we need... **8 different flows**. That escalated quickly! Indeed, for
-every little *upgrade*, we're doubling the number of flows. Soon enough
-we'll end up with 16 or even 32 different flows... Notice that whilst
-the number of flows will grow exponentially, the number of different
-steps though will only grow linearly (one for every new feature).
+So we need... **8 different flows**. That escalated quickly! Indeed, for every little *upgrade*, we're doubling the number of flows. Soon enough we'll end up with 16 or even 32 different flows... Notice that whilst the number of flows will grow exponentially, the number of different steps though will only grow linearly (one for every new feature).
 
-To fix this problem, we would need to define the UX\_FLOW at runtime,
-cherry-picking which steps we wish to include depending on the details
-of our transaction.
+To fix this problem, we would need to define the UX\_FLOW at runtime, cherry-picking which steps we wish to include depending on the details of our transaction.
 
-Don't worry, Ledger's got your back! The fix is quite simple, so let's
-dive right into it!
+Don't worry, Ledger's got your back! The fix is quite simple, so let's dive right into it!
 
 #### Cherry-picking explained
 
-The idea is to create an array of steps that would be big enough to fit
-all the steps. Since steps grow linearly, this array won't be too big.
-Once this array created, we simply need to fill it with the steps we
-wish to include. Finally, we need to add a last step `FLOW_END_STEP` for
-it to work properly.
+The idea is to create an array of steps that would be big enough to fit all the steps. Since steps grow linearly, this array won't be too big. Once this array created, we simply need to fill it with the steps we wish to include. Finally, we need to add a last step `FLOW_END_STEP` for it to work properly.
 
 We can then call the `ux_init_flow` and pass in our array as argument!
 
@@ -230,14 +198,9 @@ void start_display() {
 
 ### Defining steps at runtime
 
-In the previous section we saw that we could define a `UX_FLOW` at
-runtime. But we did this whilst still having steps defined statically.
-What if we wish to define steps at runtime too? This would give us a
-very fine-grained control over what we wish to display, without having
-to declare a step everytime.
+In the previous section we saw that we could define a `UX_FLOW` at runtime. But we did this whilst still having steps defined statically. What if we wish to define steps at runtime too? This would give us a very fine-grained control over what we wish to display, without having to declare a step everytime.
 
-Finding a step that would be generic enough to fit all our needs.
-Naively, the code we'd expect would look something like that:
+Finding a step that would be generic enough to fit all our needs. Naively, the code we'd expect would look something like that:
 
 ``` c
 // Naive definition of a UX_FLOW.
@@ -251,19 +214,12 @@ UX_FLOW(ideal_dynamic_fow,
    );
 ```
 
-However this wouldn't work: if we only defined a single step, then how
-could it dynamically change its information? Pressing the right button
-would make it loop and we'd end up on the same exact screen, and
-pressing the left button would lead to the same situation.
+However this wouldn't work: if we only defined a single step, then how could it dynamically change its information? Pressing the right button would make it loop and we'd end up on the same exact screen, and pressing the left button would lead to the same situation.
 
 So here's a solution:
 
--   Add an extra step just before the `step_generic` step, and another
-    one right after it.
--   Those extra steps are nothing but delimiters for the `step_generic`
-    . They allow us to execute special logic to update the screen and
-    redisplay it. They also allow us to keep track of an index, so that
-    we know whether we're still within our array boundaries or not.
+-   Add an extra step just before the `step_generic` step, and another one right after it.
+-   Those extra steps are nothing but delimiters for the `step_generic` . They allow us to execute special logic to update the screen and redisplay it. They also allow us to keep track of an index, so that we know whether we're still within our array boundaries or not.
 
 Here's what the code looks like.
 
@@ -280,8 +236,7 @@ UX_FLOW(dynamic_flow,
    );
 ```
 
-The definition of `step_upper_delimiter`, `step_lower_delimiter` and
-`step_generic` could look like this:
+The definition of `step_upper_delimiter`, `step_lower_delimiter` and `step_generic` could look like this:
 
 ``` c
 // Note we're using UX_STEP_INIT because this step won't display anything.
@@ -316,14 +271,11 @@ UX_STEP_INIT(
 );
 ```
 
-As you can see, `step_upper_delimiter` and `step_lower_delimiter` are
-very similar. `step_generic` is a simple `bnnn_paging` that will always
-display what's located in `global.title` and `global.text`.
+As you can see, `step_upper_delimiter` and `step_lower_delimiter` are very similar. `step_generic` is a simple `bnnn_paging` that will always display what's located in `global.title` and `global.text`.
 
 And now we only need to implement the special logic for this to work!
 
-Inside the `.h` file, we only need to add an enum definition and an
-instance of this enum in our global structure:
+Inside the `.h` file, we only need to add an enum definition and an instance of this enum in our global structure:
 
 ``` c
 // State of the dynamic display.
@@ -344,16 +296,9 @@ struct global {
 
 And in the `.c` file, we add all the business logic. A helper function
 
-is used throughout the code. This function is yours to define, and
-basically fills the title\_buffer and the text\_buffer with the
-appropriate strings. Is returns a `bool` corresponding to whether or not
-it found data to fill the buffers. The <span
-class="title-ref">:code:\`bool forward</span> parameter is used to
-indicate whether we wish to display the next screen or the previous
-screen.
+is used throughout the code. This function is yours to define, and basically fills the title\_buffer and the text\_buffer with the appropriate strings. Is returns a `bool` corresponding to whether or not it found data to fill the buffers. The <span class="title-ref">:code:\`bool forward</span> parameter is used to indicate whether we wish to display the next screen or the previous screen.
 
-> The code is commented thoroughly, so take your time and read it
-> carefully.
+> The code is commented thoroughly, so take your time and read it carefully.
 
 ``` c
 // This is a special function we must call for bnnn_paging to work properly in an edgecase.
@@ -432,6 +377,5 @@ void display_next_state(bool is_upper_delimiter) {
 }
 ```
 
-That was a mouthful! But we did it: we managed to dynamically adapt our
-flow AND our steps!
+That was a mouthful! But we did it: we managed to dynamically adapt our flow AND our steps!
 

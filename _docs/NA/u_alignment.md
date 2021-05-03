@@ -15,49 +15,36 @@ layout: doc_na
 
 ## Introduction
 
-The Secure Elements on top of which the BOLOS Operating System and the
-associated applications run imply a 32-bit alignment. This paragraph
-aims at explaining the C associated development constraints.
+The Secure Elements on top of which the BOLOS Operating System and the associated applications run imply a 32-bit alignment. This paragraph aims at explaining the C associated development constraints.
 
 ### Alignment concept
 
 The memory alignment is a concept which applies to memory and pointers:
 
-> -   A memory address is 'b-bits aligned' when it is a multiple of b/8,
->     b/8 being a power of 2,
-> -   A memory address is said to be aligned when the data referenced by
->     said address is b bits long, and said address is b-bits aligned,
+> -   A memory address is 'b-bits aligned' when it is a multiple of b/8, b/8 being a power of 2,
+> -   A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,
 > -   A pointer is 'aligned' when it points on aligned memory,
 > -   A pointer is 'unaligned' when it points on unaligned memory.
 
 ### Alignment constraints for basic types and structures
 
-Implementing C source code with types and structures is not functionally
-impacted by the 32-bit alignment, except for potentially wasting a few
-bytes without even noticing.
+Implementing C source code with types and structures is not functionally impacted by the 32-bit alignment, except for potentially wasting a few bytes without even noticing.
 
-It might be important to be aware of this paragraph contents when it
-comes to writing memory-efficient structures, once the application is
-compiled and loaded onto a device.
+It might be important to be aware of this paragraph contents when it comes to writing memory-efficient structures, once the application is compiled and loaded onto a device.
 
-Within any application source code, the alignment of basic types will be
-considered as follows, at compilation time:
+Within any application source code, the alignment of basic types will be considered as follows, at compilation time:
 
 > -   `char` / `unsigned char` / `int8_t` / `uint8_t` : 8-bit aligned,
-> -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit
->     aligned,
+> -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit aligned,
 > -   `int` / `unsigned int` / `int32_t` / `uint32_t`: 32-bit aligned,
 > -   any pointer: 32-bit aligned.
 
-Please note that 8-bit aligned means that there is actually no alignment
-constraint.
+Please note that 8-bit aligned means that there is actually no alignment constraint.
 
-The compiler will add padding in any structure which is not aligned by
-design, in order to respect:
+The compiler will add padding in any structure which is not aligned by design, in order to respect:
 
 > -   The alignment of each field associated to their respective length,
-> -   The alignment of the whole structure, which shall have a total
->     length, padding included, multiple of the largest field's length.
+> -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length.
 
 For instance the following structure is 8 bytes long before compilation:
 
@@ -72,8 +59,7 @@ struct Example1
 };
 ```
 
-However during compilation, the structure is modified to ensure the
-alignment, and will thus be 12 bytes long:
+However during compilation, the structure is modified to ensure the alignment, and will thus be 12 bytes long:
 
 ``` c
 // After compilation
@@ -94,12 +80,9 @@ struct Example1
 };
 ```
 
-In this example, it is possible to reorganize the structure's fields to
-avoid alignment-induced padding, but sometimes padding will not be
-avoidable.
+In this example, it is possible to reorganize the structure's fields to avoid alignment-induced padding, but sometimes padding will not be avoidable.
 
-One can order the structure fields according to their length in
-decreasing order:
+One can order the structure fields according to their length in decreasing order:
 
 ``` c
 // Before compilation
@@ -127,8 +110,7 @@ struct Example1_reordered
 };
 ```
 
-One can also order the structure fields to make sure the minimum amount
-of padding bytes will be added by the compilation phase:
+One can also order the structure fields to make sure the minimum amount of padding bytes will be added by the compilation phase:
 
 ``` c
 // Before compilation
@@ -158,15 +140,11 @@ struct Example1_reordered_other_way
 
 ### Alignment constraints for pointers
 
-Using pointers within C source code might be functionally impacted by
-the 32-bit alignment in a specific case: when the pointer points on a
-memory area which type differs from the pointer, and is dereferenced.
+Using pointers within C source code might be functionally impacted by the 32-bit alignment in a specific case: when the pointer points on a memory area which type differs from the pointer, and is dereferenced.
 
-Dereferencing unaligned pointers within an application stalls the
-device.
+Dereferencing unaligned pointers within an application stalls the device.
 
-Usually, pointers are used to store the address of an element which type
-corresponds to the pointer one, and for simple example:
+Usually, pointers are used to store the address of an element which type corresponds to the pointer one, and for simple example:
 
 ``` c
 uint16_t *pointer;
@@ -180,10 +158,7 @@ pointer = &array[3];
 *pointer = 0x0001;
 ```
 
-However, if we use a pointer with a specific type to store the address
-of a memory area declared with another type (usually with an
-alignment-related size less than the pointer one), it can lead to
-hardware faults and stall the device:
+However, if we use a pointer with a specific type to store the address of a memory area declared with another type (usually with an alignment-related size less than the pointer one), it can lead to hardware faults and stall the device:
 
 ``` c
 uint16_t *pointer;
@@ -258,12 +233,10 @@ if (pointer->field_2 == 0x0001) { /* This dereferencing stalls the device. */
 Unaligned pointers can thus occur in cases where a pointer:
 
 > -   declared as positioning on some data type (or structure)
-> -   is used to point on a memory area actually containing another type
->     of data,
+> -   is used to point on a memory area actually containing another type of data,
 > -   and is dereferenced.
 
-In order to produce C source code robust to alignment constraints, one
-need to avoid using pointers in such a way.
+In order to produce C source code robust to alignment constraints, one need to avoid using pointers in such a way.
 
 ### External links
 

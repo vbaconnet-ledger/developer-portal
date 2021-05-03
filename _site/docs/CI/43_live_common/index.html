@@ -16,12 +16,10 @@
 <link rel="canonical" href="http://localhost:4000/docs/CI/43_live_common/" />
 <meta property="og:url" content="http://localhost:4000/docs/CI/43_live_common/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-23T12:13:54+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Adding MyCoin to Live-Common" />
 <script type="application/ld+json">
-{"description":"Sections in this article","headline":"Adding MyCoin to Live-Common","dateModified":"2021-04-23T12:13:54+02:00","datePublished":"2021-04-23T12:13:54+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/CI/43_live_common/"},"url":"http://localhost:4000/docs/CI/43_live_common/","author":{"@type":"Person","name":"remi_j"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Sections in this article","headline":"Adding MyCoin to Live-Common","url":"http://localhost:4000/docs/CI/43_live_common/","author":{"@type":"Person","name":"remi_j"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -183,40 +181,6 @@ function searchResults(form) {
                                 
                                     
                                         <li><a href="/docs/00_header/" >Tutorials</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="#">_Old</a>
-                                        
-                                            <div class="uk-navbar-dropdown">
-                                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/docs/TMPL/installation/">Template docs</a></li>
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/blog/">Blog</a></li>
-                                                    
-                                                    
-                                                    
-                                                        <li class="uk-nav-header">Changelogs</li>
-                                                    
-                                                    
-                                                </ul>
-                                            </div>
-                                        
-                                        </li>
                                                                                                         
                                 
                             
@@ -385,9 +349,9 @@ function searchResults(form) {
   
     Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Remi Jarasson</span></span><br>
   
-  <time datetime="2021-04-23T12:13:54+02:00" itemprop="datePublished">
+  <time datetime="" itemprop="datePublished">
     
-    Apr 23, 2021
+    
   </time>
 </div>
                     </div>
@@ -643,9 +607,9 @@ ledger-live deviceInfo   <span class="c"># should display information about conn
 
 <p>Do not forget to build before testing:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yalc publish --push
-# if not yarn watch
-cd cli
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yalc publish <span class="nt">--push</span>
+<span class="c"># if not yarn watch</span>
+<span class="nb">cd </span>cli
 yarn build
 </code></pre></div></div>
 
@@ -660,7 +624,7 @@ yarn build
 
 <p>The one you will use the most before releasing you integration is:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXPERIMENTAL_CURRENCIES=mycoin
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">EXPERIMENTAL_CURRENCIES</span><span class="o">=</span>mycoin
 </code></pre></div></div>
 
 <p>It will consider <code class="language-plaintext highlighter-rouge">mycoin</code> as supported (you can also add it to the supported currencies in <code class="language-plaintext highlighter-rouge">cli/src/live-common-setup-base.js</code>).</p>
@@ -687,10 +651,10 @@ Ensure the <code class="language-plaintext highlighter-rouge">.yalc</code> direc
 
 <p><code class="language-plaintext highlighter-rouge">package.json</code>:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  "files": [
-    ...,
-    ".yalc"
-  ],
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="dl">"</span><span class="s2">files</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">...,</span>
+    <span class="dl">"</span><span class="s2">.yalc</span><span class="dl">"</span>
+  <span class="p">],</span>
 </code></pre></div></div>
 
 <p><em><strong>WARNING: Do not commit changes due to the usage of <code class="language-plaintext highlighter-rouge">yalc</code> as it may result in wrong behaviour.</strong></em></p>
@@ -699,11 +663,11 @@ Ensure the <code class="language-plaintext highlighter-rouge">.yalc</code> direc
 
 <h3 id="mycoin-cryptoassets">MyCoin cryptoassets</h3>
 
-<p>We will consider that <em>MyCoin</em> is already in <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets">@ledgerhq/cryptoassets</a> package. If not, see <a href="41_live_cryptoassets.md"><em>MyCoin</em> in CryptoAssets</a>.</p>
+<p>We will consider that <em>MyCoin</em> is already in <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets">@ledgerhq/cryptoassets</a> package. If not, see <a href="../41_live_cryptoassets"><em>MyCoin</em> in CryptoAssets</a>.</p>
 
 <h3 id="derive-address-from-device">Derive Address from device</h3>
 
-<p>If your app JS bindings (see See <a href="42_live_app_bindings.md"><em>My Coin</em> App JS Bindings</a>) are not yet published in <a href="https://github.com/LedgerHQ/ledgerjs">LedgerJS</a>, you can put them in <code class="language-plaintext highlighter-rouge">src/families/mycoin/hw-app-mycoin</code>.</p>
+<p>If your app JS bindings (see See <a href="../42_live_app_bindings"><em>My Coin</em> App JS Bindings</a>) are not yet published in <a href="https://github.com/LedgerHQ/ledgerjs">LedgerJS</a>, you can put them in <code class="language-plaintext highlighter-rouge">src/families/mycoin/hw-app-mycoin</code>.</p>
 
 <p>First and easiest step is to get an address from the device for MyCoin, by creating the <code class="language-plaintext highlighter-rouge">hw-getAddress.js</code> Resolver:</p>
 
@@ -731,7 +695,7 @@ Ensure the <code class="language-plaintext highlighter-rouge">.yalc</code> direc
 
 <p>Test that you can derive an address:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ledger-live getAddress --currency mycoin --path "44'/8008'/0'/0/0" --derivationMode ""
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ledger-live getAddress <span class="nt">--currency</span> mycoin <span class="nt">--path</span> <span class="s2">"44'/8008'/0'/0/0"</span> <span class="nt">--derivationMode</span> <span class="s2">""</span>
 </code></pre></div></div>
 
 <h3 id="derivation">Derivation</h3>
@@ -851,7 +815,7 @@ If <em>MyCoin</em> has a conventional derivation path (BIP44), Ledger Live shoul
   <li><code class="language-plaintext highlighter-rouge">balance: BigNumber</code> represent the total amount of assets that this account holds.</li>
   <li><code class="language-plaintext highlighter-rouge">spendableBalance: BigNumber</code>: represents the subset of <code class="language-plaintext highlighter-rouge">balance</code> that can be spent. Most of the time it will be equal to <code class="language-plaintext highlighter-rouge">balance</code> but this can vary in some blockchains.</li>
   <li><code class="language-plaintext highlighter-rouge">blockHeight: number</code>: tracks the current blockchain block height.</li>
-  <li><code class="language-plaintext highlighter-rouge">currency: CryptoCurrency</code>: the associated crypto currency of the Account. See <a href="41_live_cryptoassets.md"><em>MyCoin</em> in CryptoAssets</a></li>
+  <li><code class="language-plaintext highlighter-rouge">currency: CryptoCurrency</code>: the associated crypto currency of the Account. See <a href="../41_live_cryptoassets"><em>MyCoin</em> in CryptoAssets</a></li>
   <li><code class="language-plaintext highlighter-rouge">unit: Unit</code>: the user defined preferred unit to view the account with. It’s initialized to <code class="language-plaintext highlighter-rouge">currency.units[0]</code>.</li>
   <li><code class="language-plaintext highlighter-rouge">operationsCount: number</code> gives the total number of operations this account contains. This field exists because the <code class="language-plaintext highlighter-rouge">operations</code> array is not guaranteed to be complete.</li>
   <li><code class="language-plaintext highlighter-rouge">operations: Operation[]</code>: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on.</li>
@@ -2546,7 +2510,7 @@ ledger-live send <span class="nt">-c</span> mycoin <span class="nt">-i</span> 0 
 
 <h2 id="testing">Testing</h2>
 
-<p>See <a href="./50_live_tests.md">Testing</a></p>
+<p>See <a href="../50_live_tests">Testing</a></p>
 
                         
                             <!-- FC

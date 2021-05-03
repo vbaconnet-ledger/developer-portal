@@ -1,4 +1,4 @@
-# Docs is a premium documentation Jekyll theme
+# 
 
 Desk was developed by [Unbound Studio](https://unbound.studio).
 
@@ -24,7 +24,7 @@ Add your site and author details in `_config.yml`:
 ```yaml
 # Site title and description
 title:              Docs
-description:        Documentation Jekyll theme.
+description:        Documentation
 lang:               en
 
 # Site subpath, e.g. /blog
@@ -58,7 +58,7 @@ $global-primary-background:                   #05c896;
 ```
 
 Further style customisation can be done in the following files:
-```
+```none
 /_sass/theme/mixins.scss
 /_sass/theme/variables.scss
 /assets/css/main.scss

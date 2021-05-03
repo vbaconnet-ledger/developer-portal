@@ -5,7 +5,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/00_header/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -13,7 +13,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/CI/01_general_toc/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -21,7 +21,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/10_general_process/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -29,7 +29,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/20_modules/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -37,7 +37,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/30_live_prerequisites/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -45,7 +45,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/40_live_coin_integration/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -53,7 +53,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/41_live_cryptoassets/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -61,7 +61,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/42_live_app_bindings/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -69,7 +69,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/43_live_common/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -77,7 +77,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/44_live_frontend/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -85,7 +85,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/50_live_tests/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -93,7 +93,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/51_live_on_desktop/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -101,7 +101,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/52_live_install_ios/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -109,7 +109,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/53_live_install_android/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -117,7 +117,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/54_live_run_on_ios_android/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -125,7 +125,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/55_live_gen_cli/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -133,7 +133,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/56_live_spe_cli/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -141,7 +141,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/CI/60_live_guidelines/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -149,7 +149,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/00_header/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -157,7 +157,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/a_external_docs/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -165,7 +165,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/a_publishing_an_app/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -173,7 +173,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/a_security_guidelines/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -181,7 +181,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/b_application_environment/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -189,7 +189,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/b_features/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -197,7 +197,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/b_hardware_architecture/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -205,7 +205,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/b_introduction/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -213,7 +213,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/b_overview/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -221,7 +221,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_application_isolation/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -229,7 +229,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_hd_keys/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -237,7 +237,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_hd_use_cases/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -245,7 +245,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_introduction/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -253,7 +253,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_master_seed/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -261,7 +261,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_personal_security_devices/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -269,7 +269,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_advanced_display_management/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -277,7 +277,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_alignment/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -285,7 +285,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_application_structure/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -293,7 +293,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_debugging/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -301,7 +301,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_display_management/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -309,7 +309,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_introduction/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -317,7 +317,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_low_level_display_management/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -325,7 +325,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_memory/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -333,7 +333,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_setup/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -341,7 +341,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_speculos/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -349,7 +349,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_syscalls/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -357,7 +357,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_troubleshooting/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -365,7 +365,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_writing_apps/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -373,7 +373,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/d_ci/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -381,7 +381,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/d_getting_started/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -389,7 +389,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/d_index/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -397,7 +397,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/d_internals/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -405,7 +405,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/d_tests/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -413,7 +413,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/i_build/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -421,7 +421,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/i_index/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -429,7 +429,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/i_wsl/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -437,7 +437,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/index/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -445,7 +445,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_automation/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -453,7 +453,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_clients/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -461,7 +461,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_debug/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -469,7 +469,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_docker/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -477,7 +477,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_index/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -485,7 +485,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_semihosting/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -493,7 +493,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/SP/u_usage/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -501,7 +501,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/alerts/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -509,7 +509,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/TMPL/analytics/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -517,7 +517,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/boxes/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -525,7 +525,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/boxes_integrations/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -533,7 +533,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/boxes_toolboxes/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -541,7 +541,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/changelog/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -549,7 +549,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/TMPL/comments/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -557,7 +557,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/contact/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -565,7 +565,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/cta/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -573,7 +573,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/TMPL/customize/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -581,7 +581,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/TMPL/development/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -589,7 +589,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/docs/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -597,7 +597,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/docs/TMPL/faq/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -605,7 +605,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/featured/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -613,7 +613,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/footer/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -621,7 +621,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/hero/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -629,7 +629,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/installation/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -637,7 +637,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/docs/TMPL/media/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -645,7 +645,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/navigation/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -653,7 +653,7 @@
       "category" : "",
       "tags"     : "othertag",
       "url"      : "/docs/TMPL/pages/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -661,7 +661,7 @@
       "category" : "",
       "tags"     : "featured",
       "url"      : "/docs/TMPL/posts/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -669,7 +669,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/TMPL/setup/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -677,7 +677,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/TMPL/sources/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -685,7 +685,7 @@
       "category" : "",
       "tags"     : "help, customize",
       "url"      : "/docs/TMPL/support/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -693,7 +693,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/team/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -701,7 +701,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/TMPL/toc/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -709,7 +709,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/TMPL/translation/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } ,
   
     {
@@ -717,7 +717,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/docs/TMPL/videos/",
-      "date"     : "2021-04-23 12:13:54 +0200"
+      "date"     : ""
     } 
   
 ]

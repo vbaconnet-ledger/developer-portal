@@ -10,13 +10,22 @@ description:        Integrating with Ledger Live
 lang:               en
 
 # Site subpath, e.g. /blog
-baseurl:            /unos
+# Site base hostname & protocol, e.g. http://example.com
+
+# {% if jekyll.environment == "development" %}
+# 
+# {% endif %}
+# {% if jekyll.environment == "production" %}
+# 
+# {% endif %}
+
+# baseurl:            /unos
+# url:                https://blog.ledger.com
+baseurl:            ""
+url:                ""
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
-
-# Site base hostname & protocol, e.g. http://example.com
-url:                https://blog.ledger.com
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
@@ -164,6 +173,11 @@ uploads:            /uploads/
 # Build settings
 markdown:           kramdown
 highlighter:        rouge
+
+kramdown:                                         
+  syntax_highlighter: rouge                                      
+sass:                                                     
+  style: :expanded
 
 plugins:
   - jekyll-feed

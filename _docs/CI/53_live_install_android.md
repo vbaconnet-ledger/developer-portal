@@ -30,20 +30,20 @@ Go by default installation or custom it if you know what you are doing.
 
 We will begin by installing dependencies using brew
 
-```
+```sh
 brew install ruby watchman yarn
 ```
 
 Then clone ledger-live-mobile, and cd into the folder.
 
-```
+```sh
 git clone git@github.com:LedgerHQ/ledger-live-mobile.git
 cd ledger-live-mobile
 ```
 
 You can now use the yarn command.
 
-```
+```sh
 yarn
 ```
 

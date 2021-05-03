@@ -16,12 +16,10 @@
 <link rel="canonical" href="http://localhost:4000/docs/CI/44_live_frontend/" />
 <meta property="og:url" content="http://localhost:4000/docs/CI/44_live_frontend/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-23T12:13:54+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Adding MyCoin to Ledger Live Desktop and Mobile" />
 <script type="application/ld+json">
-{"description":"Sections in this article","headline":"Adding MyCoin to Ledger Live Desktop and Mobile","dateModified":"2021-04-23T12:13:54+02:00","datePublished":"2021-04-23T12:13:54+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/CI/44_live_frontend/"},"url":"http://localhost:4000/docs/CI/44_live_frontend/","author":{"@type":"Person","name":"remi_j"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Sections in this article","headline":"Adding MyCoin to Ledger Live Desktop and Mobile","url":"http://localhost:4000/docs/CI/44_live_frontend/","author":{"@type":"Person","name":"remi_j"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -183,40 +181,6 @@ function searchResults(form) {
                                 
                                     
                                         <li><a href="/docs/00_header/" >Tutorials</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="#">_Old</a>
-                                        
-                                            <div class="uk-navbar-dropdown">
-                                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/docs/TMPL/installation/">Template docs</a></li>
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        <li><a href="/blog/">Blog</a></li>
-                                                    
-                                                    
-                                                    
-                                                        <li class="uk-nav-header">Changelogs</li>
-                                                    
-                                                    
-                                                </ul>
-                                            </div>
-                                        
-                                        </li>
                                                                                                         
                                 
                             
@@ -385,9 +349,9 @@ function searchResults(form) {
   
     Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Remi Jarasson</span></span><br>
   
-  <time datetime="2021-04-23T12:13:54+02:00" itemprop="datePublished">
+  <time datetime="" itemprop="datePublished">
     
-    Apr 23, 2021
+    
   </time>
 </div>
                     </div>
@@ -446,15 +410,15 @@ function searchResults(form) {
 
 <h3 id="running-the-desktop-projet">Running the Desktop projet</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-desktop&gt;
-cd ledger-live-desktop
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-desktop&gt;
+<span class="nb">cd </span>ledger-live-desktop
 yalc add @ledgerhq/live-common
-yarn install
+yarn <span class="nb">install</span>
 </code></pre></div></div>
 
 <p>If it is the first time you use <code class="language-plaintext highlighter-rouge">yalc</code> for live-common do this:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ledger-live-common
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>ledger-live-common
 yalc publish
 </code></pre></div></div>
 
@@ -478,11 +442,11 @@ yalc publish
 
 <p>The prerequisites to running the project are found in the README file.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-mobile&gt;
-cd ledger-live-mobile
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-mobile&gt;
+<span class="nb">cd </span>ledger-live-mobile
 yalc add @ledgerhq/live-common
-yarn install
-yarn run ios
+yarn <span class="nb">install
+</span>yarn run ios
 yarn start
 </code></pre></div></div>
 
@@ -493,11 +457,11 @@ yarn start
   <li>Use an Android environment such as Android Studio</li>
 </ol>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-mobile&gt;
-cd ledger-live-mobile
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;fork-live-mobile&gt;
+<span class="nb">cd </span>ledger-live-mobile
 yalc add @ledgerhq/live-common
-yarn install
-yarn run android
+yarn <span class="nb">install
+</span>yarn run android
 yarn start
 </code></pre></div></div>
 
