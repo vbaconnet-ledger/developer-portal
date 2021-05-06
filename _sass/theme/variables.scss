@@ -5,7 +5,7 @@
 $global-color:                                #142533;
 $global-muted-color:                          #565656;
 $global-primary-background:                   #41CCB4;
-$global-secondary-background:                 #222;
+$global-secondary-background:                 #F3F3F3;
 $global-warning-background:                   #fbc418;
 $global-success-background:                   #0F0F0F;
 $global-danger-background:                    #f0506e;
@@ -51,7 +51,7 @@ $base-pre-color:                                $base-code-color;
 // Container
 $container-xxsmall:                             560px;
 
-// Box shadow
+// Box shadow  //FC 2021-05-06 1525 this is where we removed the Shadows
 $global-medium-box-shadow:                      0 0px 0px rgba(0,0,0,0.08);
 $global-large-box-shadow:                       0 0px 0px rgba(0,0,0,0.12);
 $global-xlarge-box-shadow:                      0 0px 0px rgba(0,0,0,0.16);
@@ -124,6 +124,8 @@ $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
 $card-body-padding-vertical-l:                  50px;
 $card-default-color:                            $global-muted-color;
+$card-hover-background: #fff;
+$card-default-background: $global-secondary-background;
 $card-default-title-color:                      $global-color;
 
 // Offcanvas
