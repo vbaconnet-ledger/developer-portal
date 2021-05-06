@@ -617,14 +617,14 @@
 
     .section-featured {
         .uk-accordion>:nth-child(n+2) {
-            margin-top: 16px;
+            margin-top: 0;
         }
 
         a {
             display: block;
             font-size: $text-lead-font-size;
             overflow: hidden;
-            border: solid 1px $border-light;
+            border: solid 0px $border-light;
             border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;
