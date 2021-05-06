@@ -372,11 +372,15 @@ function searchResults(form) {
 
 <h2 id="clang-format">clang-format</h2>
 
-<p>clang-format is used by the CI to format C code according to a set of rules and heuristics. The CI checks will fail if some code isn’t formatted as expected by the rules.</p>
+<p>clang-format is used by the CI to format C code according to a set of rules and
+heuristics. The CI checks will fail if some code isn’t formatted as expected by
+the rules.</p>
 
-<p>To ensure that the CI checks pass, please use the script <code class="language-plaintext highlighter-rouge">tools/clang-format.sh</code> (the path to clang-format can be specified thanks to the <code class="language-plaintext highlighter-rouge">CLANG_FORMAT</code> environment variable):</p>
+<p>To ensure that the CI checks pass, please use the script <code class="language-plaintext highlighter-rouge">tools/clang-format.sh</code>
+(the path to clang-format can be specified thanks to the <code class="language-plaintext highlighter-rouge">CLANG_FORMAT</code>
+environment variable):</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">CLANG_FORMAT</span><span class="o">=</span>clang-format-11 ./tools/clang-format.sh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CLANG_FORMAT=clang-format-11 ./tools/clang-format.sh
 </code></pre></div></div>
 
                         

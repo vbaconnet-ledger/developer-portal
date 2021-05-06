@@ -371,22 +371,24 @@ function searchResults(form) {
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
-<p>QEMU implements some semihosted operations which can be triggered from the app. For instance, messages can be printed to stderr with the following code:</p>
+<p>QEMU implements some semihosted operations which can be triggered from the app.
+For instance, messages can be printed to stderr with the following code:</p>
 
 <h2 id="sys_write0">SYS_WRITE0</h2>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">debug_write</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">buf</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">asm</span> <span class="k">volatile</span> <span class="p">(</span>
-     <span class="s">"movs r0, #0x04</span><span class="se">\n</span><span class="s">"</span>
-     <span class="s">"movs r1, %0</span><span class="se">\n</span><span class="s">"</span>
-     <span class="s">"svc      0xab</span><span class="se">\n</span><span class="s">"</span>
-     <span class="o">::</span> <span class="s">"r"</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span> <span class="o">:</span> <span class="s">"r0"</span><span class="p">,</span> <span class="s">"r1"</span>
-  <span class="p">);</span>
-<span class="p">}</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void debug_write(char *buf)
+{
+  asm volatile (
+     "movs r0, #0x04\n"
+     "movs r1, %0\n"
+     "svc      0xab\n"
+     :: "r"(buf) : "r0", "r1"
+  );
+}
 </code></pre></div></div>
 
-<p>The operation number must be passed in <code class="language-plaintext highlighter-rouge">r0</code> (here <code class="language-plaintext highlighter-rouge">SYS_WRITE0</code> operation is defined to <code class="language-plaintext highlighter-rouge">0x04</code>) and arguments are in <code class="language-plaintext highlighter-rouge">r1</code>, <code class="language-plaintext highlighter-rouge">r2</code> and <code class="language-plaintext highlighter-rouge">r3</code>.</p>
+<p>The operation number must be passed in <code class="language-plaintext highlighter-rouge">r0</code> (here <code class="language-plaintext highlighter-rouge">SYS_WRITE0</code> operation is
+defined to <code class="language-plaintext highlighter-rouge">0x04</code>) and arguments are in <code class="language-plaintext highlighter-rouge">r1</code>, <code class="language-plaintext highlighter-rouge">r2</code> and <code class="language-plaintext highlighter-rouge">r3</code>.</p>
 
 <p>Usage:</p>
 

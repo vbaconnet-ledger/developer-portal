@@ -373,7 +373,8 @@ function searchResults(form) {
 
 <h2 id="how-to-run-tests">How to run tests</h2>
 
-<p>The application binaries launched by the tests should be placed in <code class="language-plaintext highlighter-rouge">apps/</code>. Every type of app tested should have a dedicated test file that can be launched like this:</p>
+<p>The application binaries launched by the tests should be placed in <code class="language-plaintext highlighter-rouge">apps/</code>.
+Every type of app tested should have a dedicated test file that can be launched like this:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pytest-3 -s -v tests/apps/
 </span></code></pre></div></div>
@@ -383,7 +384,8 @@ function searchResults(form) {
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">make -C build/ test
 </span></code></pre></div></div>
 
-<p>Arguments can be given to <code class="language-plaintext highlighter-rouge">ctest</code>. For instance, to make the output of a specific test verbose:</p>
+<p>Arguments can be given to <code class="language-plaintext highlighter-rouge">ctest</code>. For instance, to make the output of a
+specific test verbose:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">make -C build/ test ARGS='-V -R test_bip32'
 </span></code></pre></div></div>
