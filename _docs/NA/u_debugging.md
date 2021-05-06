@@ -50,8 +50,10 @@ Wait until `BOOTLOADER` is displayed again on the device's screen.
 
 If you can notice a small `dbg` block at the bottom of the screen, then it's a success !
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/debug_nano.jpg" class="align-center" alt="A Nano S with special debug firmware" /><figcaption aria-hidden="true">A Nano S with special debug firmware</figcaption>
+<img src="../images/debug_nano.jpg" class="align-center" alt="A Nano S with special debug firmware" /><figcaption aria-hidden="true">A Nano S with special debug firmware</figcaption>
 </figure>
 
 Uninstalling this special firmware is also very easy, first you need to download the [normal firmware](https://drive.google.com/open?id=1YfdU1dNycojdtuKU_hHctLFzJZzhDFuY), then you can repeat the installation steps 2 to 5.
@@ -88,8 +90,10 @@ PRINTF("What a lovely buffer:\n %.*H \n\n", 4, buffer);
 PRINTF("I prefer it lower-cased:\n %.*h \n", 4, buffer);
 ```
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/deadbeef.png" class="align-center" alt="Result of the example code printed inside a terminal" /><figcaption aria-hidden="true">Result of the example code printed inside a terminal</figcaption>
+<img src="../images/deadbeef.png" class="align-center" alt="Result of the example code printed inside a terminal" /><figcaption aria-hidden="true">Result of the example code printed inside a terminal</figcaption>
 </figure>
 
 ### Console Printing

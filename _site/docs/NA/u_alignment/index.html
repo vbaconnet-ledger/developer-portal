@@ -449,14 +449,12 @@ function searchResults(form) {
 
 <p>The memory alignment is a concept which applies to memory and pointers:</p>
 
-<blockquote>
-  <ul>
-    <li>A memory address is ‘b-bits aligned’ when it is a multiple of b/8, b/8 being a power of 2,</li>
-    <li>A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,</li>
-    <li>A pointer is ‘aligned’ when it points on aligned memory,</li>
-    <li>A pointer is ‘unaligned’ when it points on unaligned memory.</li>
-  </ul>
-</blockquote>
+<ul>
+  <li>A memory address is ‘b-bits aligned’ when it is a multiple of b/8, b/8 being a power of 2,</li>
+  <li>A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,</li>
+  <li>A pointer is ‘aligned’ when it points on aligned memory,</li>
+  <li>A pointer is ‘unaligned’ when it points on unaligned memory.</li>
+</ul>
 
 <h3 id="alignment-constraints-for-basic-types-and-structures">Alignment constraints for basic types and structures</h3>
 
@@ -466,25 +464,21 @@ function searchResults(form) {
 
 <p>Within any application source code, the alignment of basic types will be considered as follows, at compilation time:</p>
 
-<blockquote>
-  <ul>
-    <li><code class="language-plaintext highlighter-rouge">char</code> / <code class="language-plaintext highlighter-rouge">unsigned char</code> / <code class="language-plaintext highlighter-rouge">int8_t</code> / <code class="language-plaintext highlighter-rouge">uint8_t</code> : 8-bit aligned,</li>
-    <li><code class="language-plaintext highlighter-rouge">short</code> / <code class="language-plaintext highlighter-rouge">unsigned short</code> / <code class="language-plaintext highlighter-rouge">int16_t</code> / <code class="language-plaintext highlighter-rouge">uint16_t</code>: 16-bit aligned,</li>
-    <li><code class="language-plaintext highlighter-rouge">int</code> / <code class="language-plaintext highlighter-rouge">unsigned int</code> / <code class="language-plaintext highlighter-rouge">int32_t</code> / <code class="language-plaintext highlighter-rouge">uint32_t</code>: 32-bit aligned,</li>
-    <li>any pointer: 32-bit aligned.</li>
-  </ul>
-</blockquote>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">char</code> / <code class="language-plaintext highlighter-rouge">unsigned char</code> / <code class="language-plaintext highlighter-rouge">int8_t</code> / <code class="language-plaintext highlighter-rouge">uint8_t</code> : 8-bit aligned,</li>
+  <li><code class="language-plaintext highlighter-rouge">short</code> / <code class="language-plaintext highlighter-rouge">unsigned short</code> / <code class="language-plaintext highlighter-rouge">int16_t</code> / <code class="language-plaintext highlighter-rouge">uint16_t</code>: 16-bit aligned,</li>
+  <li><code class="language-plaintext highlighter-rouge">int</code> / <code class="language-plaintext highlighter-rouge">unsigned int</code> / <code class="language-plaintext highlighter-rouge">int32_t</code> / <code class="language-plaintext highlighter-rouge">uint32_t</code>: 32-bit aligned,</li>
+  <li>any pointer: 32-bit aligned.</li>
+</ul>
 
 <p>Please note that 8-bit aligned means that there is actually no alignment constraint.</p>
 
 <p>The compiler will add padding in any structure which is not aligned by design, in order to respect:</p>
 
-<blockquote>
-  <ul>
-    <li>The alignment of each field associated to their respective length,</li>
-    <li>The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field’s length.</li>
-  </ul>
-</blockquote>
+<ul>
+  <li>The alignment of each field associated to their respective length,</li>
+  <li>The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field’s length.</li>
+</ul>
 
 <p>For instance the following structure is 8 bytes long before compilation:</p>
 
@@ -663,25 +657,21 @@ function searchResults(form) {
 
 <p>Unaligned pointers can thus occur in cases where a pointer:</p>
 
-<blockquote>
-  <ul>
-    <li>declared as positioning on some data type (or structure)</li>
-    <li>is used to point on a memory area actually containing another type of data,</li>
-    <li>and is dereferenced.</li>
-  </ul>
-</blockquote>
+<ul>
+  <li>declared as positioning on some data type (or structure)</li>
+  <li>is used to point on a memory area actually containing another type of data,</li>
+  <li>and is dereferenced.</li>
+</ul>
 
 <p>In order to produce C source code robust to alignment constraints, one need to avoid using pointers in such a way.</p>
 
 <h3 id="external-links">External links</h3>
 
-<blockquote>
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Data_structure_alignment">https://en.wikipedia.org/wiki/Data_structure_alignment</a></li>
-    <li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html">http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html</a></li>
-    <li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html">http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html</a></li>
-  </ul>
-</blockquote>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Data_structure_alignment">https://en.wikipedia.org/wiki/Data_structure_alignment</a></li>
+  <li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html">http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html</a></li>
+  <li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html">http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html</a></li>
+</ul>
 
 
                         

@@ -23,7 +23,7 @@ At the time of this writing, the default link script provided by the SDK for the
 
 This is the linker error you will experience if you declare too many global non-const and non-NVRAM variables to fit in RAM:
 
-``` none
+```
 bin/app.elf section `.bss' will not fit in region `SRAM'
 ```
 

@@ -4,6 +4,7 @@ subtitle: With Oscars for on-screen performance
 tags: []
 toc: true
 toc_sticky: true
+author: pscott
 layout: doc_na
 ---
 
@@ -91,25 +92,33 @@ Note that **all combinations of letters are not possible**. For example `paging`
 
 Now that you know all that, here's a table with the **most commonly used layouts**:
 
-| Denomination  | Comment                                                                                                                                                                                           | Usage                                                      |
+| | | |
+| Denomination  | Comment <img align="left" width="320" src="">                                                                                                                                                     | Usage                                                      |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | `bn`          | Bold font for the first line, normal font for the second line.                                                                                                                                    | `bn, {"BoldLine", "NormalLine"}`                           |
 | `pb`          | Picture for the first line, bold font for the second line.                                                                                                                                        | `pb, {&RefToPicture, "BoldLine"}`                          |
 | `pnn`         | Picture for the first line, normal font for the second line and third line.                                                                                                                       | `pnn, {&RefToPicture, "NormalLine1", "NormalLine2"}`       |
 | `bnnn_paging` | Bold first line, normal fonts for the other lines. If the data to be displayed doesn't fit on a single screen, the user will be able to navigate through different screens to see the whole text. | `bnnn_paging, {.title = "BoldLine", .text = "NormalLine"}` |
+|
 
 Most commonly used layouts
 
-And here's a table that compares how those layouts are displayed on a Nano S and on a Nano X!
+And here's a table that compares how those layouts are displayed on a Nano S and on a Nano X! 
 
-Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only fit 2**!
+Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only fit 2**!   
+<!-- ------------- Image ------------- -->  
+<!-- --------------------------------- -->  
 
+| | | |
 | LAYOUT        | NANOS                                                         | NANOX                                                         |
 |---------------|---------------------------------------------------------------|---------------------------------------------------------------|
-| `pb`          | ![nanos\_pb](../Images/nanos_approve.png)                  | ![nanox\_pb](../Images/nanox/nanox_approve.png)                  |
-| `bn`          | ![nanos\_bn](../Images/nanos/nanos_amount.png)                   | ![nanox\_bn](../Images/nanox/nanox_amount.png)                   |
-| `pnn`         | ![nanos\_pnn](../Images/nanos/nanos_boilerplate.png)             | ![nanox\_pnn](../Images/nanox/nanox_boilerplate.png)             |
-| `bnnn_paging` | ![nanos\_bnnn\_paging](../Images/nanos/nanos_address_merged.png) | ![nanox\_bnnn\_paging](../Images/nanox/nanox_address_merged.png) |
+| `pb`          | <img align="left" width="280" src="../images/nanos_approve.png">       | <img align="left" width="327" src="../images/nanox_approve.png">       |
+| `bn`          | <img align="left" width="280" src="../images/nanos_amount.png">        | <img align="left" width="327" src="../images/nanox_amount.png">        |
+| `pnn`         | <img align="left" width="280" src="../images/nanos_boilerplate.png">   | <img align="left" width="327" src="../images/nanox_boilerplate.png">   |
+| `bnnn_paging` | <img align="left" width="280" src="../images/nanos_address_merged.png">| <img align="left" width="327" src="../images/nanox_address_merged.png">|
+| 
+
+
 
 Comparing end results on NanoS and NanoX
 

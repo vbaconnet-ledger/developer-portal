@@ -19,8 +19,10 @@ Ledger devices have a very unique architecture in order to leverage the security
 
 ### Multiple Processors: Secure Element Proxy
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" /><figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
+<img src="../images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" /><figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
 </figure>
 
 BOLOS is split between two hardware chips, one being secure (the ST31 Secure Element), and the other having JTAG enabled and acting as a proxy (the STM32 MCU).
@@ -42,8 +44,10 @@ The protocol works as follows:
 3.  The SE sends a Status indicating that the Event is fully processed
 and waits for another Event.
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" /><figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
+<img src="../images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" /><figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
 </figure>
 
 As a matter of fact, due to buffer size, requests to display something to the screen are sent using a Status. When the MCU has finished processing the Display Status, it issues a Display Processed Event indicating that it is ready to receive another Display Status. As a result, displaying multiple elements on the screen (in order to build an entire user interface) must be done asynchronously from the core application logic. This process is facilitated by a UX helper implemented in the SDK, which will be discussed further in the next chapter.

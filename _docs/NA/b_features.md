@@ -33,8 +33,10 @@ Attestation is a process used by Ledger devices to prove that they are a genuine
 
 #### Anti-Tampering with Attestation
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/wallet_not_genuine.png" class="align-center" />
+<img src="../images/wallet_not_genuine.png" class="align-center" />
 </figure>
 
 Ledger devices are protected from interdiction attacks (being tampered with while en route from Ledger's warehouses to your home) due to anti-tampering technology built into the firmware. Using attestation, the authenticity of the device is verified in software every time you plug it into one of the Ledger Chrome applications.
@@ -73,8 +75,10 @@ For an example of how these features may be used, check out [blue-app-otherdime]
 
 #### Attestation Chain of Trust
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/chain_of_trust.png" class="align-center" alt="The chain of trust for Ledger&#39;s attestation model" /><figcaption aria-hidden="true">The chain of trust for Ledger's attestation model</figcaption>
+<img src="../images/chain_of_trust.png" class="align-center" alt="The chain of trust for Ledger&#39;s attestation model" /><figcaption aria-hidden="true">The chain of trust for Ledger's attestation model</figcaption>
 </figure>
 
 This diagram shows the chain of trust of our attestation model. All data signed by the attestation keys can be trusted to have been signed by an authentic Ledger device. This is because the Device Certificate is proof that the attestation keys belong to a device, and the Issuer Certificate is proof that the device is genuine. Additionally, the Owner Certificate is proof that the attestation keys are trusted by Owner (which may be Ledger or a third party).
@@ -91,8 +95,10 @@ When establishing the Secure Channel, both parties (the Signer and the Device) g
 
 The process of establishing a Secure Channel is illustrated in the following diagram. 
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/secure_channel_protocol.png" class="align-center" alt="An admittedly not-so-simple diagram of the Secure Channel protocol handshake" /><figcaption aria-hidden="true">An admittedly not-so-simple diagram of the Secure Channel protocol handshake</figcaption>  
+<img src="../images/secure_channel_protocol.png" class="align-center" alt="An admittedly not-so-simple diagram of the Secure Channel protocol handshake" /><figcaption aria-hidden="true">An admittedly not-so-simple diagram of the Secure Channel protocol handshake</figcaption>  
 </figure>  
 
 In the above diagram, during segment (6), the Device provides a Signer serial. The Signer serial is a number stored by the device which identifies the specific Issuer keypair used to sign the device's Issuer Certificate, as Ledger does not use the same Issuer keypair for every device. 

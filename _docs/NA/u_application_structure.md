@@ -33,8 +33,10 @@ For an example of this feature, refer to [blue-app-samplesign](https://github.co
 
 It's important to understand that the APDU protocol used by most BOLOS applications is not implemented by BOLOS itself. Instead, the APDU interpretation is performed entirely by the SDK. This means that applications can choose to implement another protocol on top of the transport layer (USB HID, USB CCID, BLE, ...) instead of APDU. In fact, the same is true for the transport layer protocols. Applications can customize the way the application is enumerated as a USB device by the host.
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/common_protocols.png" class="align-center" alt="Common protocols across BOLOS applications" /><figcaption aria-hidden="true">Common protocols across BOLOS applications</figcaption>
+<img src="../images/common_protocols.png" class="align-center" alt="Common protocols across BOLOS applications" /><figcaption aria-hidden="true">Common protocols across BOLOS applications</figcaption>
 </figure>
 
 ### Unprocessed Events

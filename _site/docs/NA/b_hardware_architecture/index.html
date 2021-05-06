@@ -445,8 +445,10 @@ function searchResults(form) {
 
 <h3 id="multiple-processors-secure-element-proxy">Multiple Processors: Secure Element Proxy</h3>
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" /><figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
+<img src="../images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" /><figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
 </figure>
 
 <p>BOLOS is split between two hardware chips, one being secure (the ST31 Secure Element), and the other having JTAG enabled and acting as a proxy (the STM32 MCU).</p>
@@ -470,8 +472,10 @@ function searchResults(form) {
 and waits for another Event.</li>
 </ol>
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" /><figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
+<img src="../images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" /><figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
 </figure>
 
 <p>As a matter of fact, due to buffer size, requests to display something to the screen are sent using a Status. When the MCU has finished processing the Display Status, it issues a Display Processed Event indicating that it is ready to receive another Display Status. As a result, displaying multiple elements on the screen (in order to build an entire user interface) must be done asynchronously from the core application logic. This process is facilitated by a UX helper implemented in the SDK, which will be discussed further in the next chapter.</p>

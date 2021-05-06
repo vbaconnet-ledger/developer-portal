@@ -81,10 +81,10 @@ The Ledger Live application is available for Windows, Mac and Linux in its deskt
 
 To be officially released by Ledger, your protocol must be included on all five platforms Ledger Live.
 
-# Open source, but not Open bar
+# Open source, but not Open bar 
 
 <!-- ------------- Image ------------- -->
-<img align="left" width="132" src="../../../uploads/images/open_bar.png">
+<img align="left" width="132" src="../../../images/CI/open_bar.png">
 <!-- --------------------------------- -->
 
 
@@ -96,7 +96,7 @@ In most cases however, you will want to have your blockchain officially supporte
 
 # Agreeing on a Framework
 <!-- ------------- Image ------------- -->
-<img align="right" width="156"  src="../../../uploads/images/agreement.png" >  
+<img align="right" width="156"  src="../../../images/CI/agreement.png" >  
 <!-- --------------------------------- -->
 Assuming you are on course for a **Participant Integration**, here is how we suggest working together.
 

@@ -452,8 +452,8 @@ function searchResults(form) {
 
 <p>This is the linker error you will experience if you declare too many global non-const and non-NVRAM variables to fit in RAM:</p>
 
-<pre><code class="language-none">bin/app.elf section `.bss' will not fit in region `SRAM'
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bin/app.elf section `.bss' will not fit in region `SRAM'
+</code></pre></div></div>
 
 <p>The only solution to this problem is, of course, using less RAM. You can accomplish this by making your application’s memory layout more efficient. Alternatively, if you’re feeling adventurous, you can attempt to modify the link script (<code class="language-plaintext highlighter-rouge">script.ld</code> in the SDKs) to optimize the space allocated for the call stack. If you choose to pursue the latter option, we recommend you read the next section as well.</p>
 

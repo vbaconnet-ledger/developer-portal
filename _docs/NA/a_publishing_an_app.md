@@ -17,25 +17,32 @@ layout: doc_na
 
 The Ledger Manager is the service which centralizes the distribution of [BOLOS](../b_introduction) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This document aims at explaining the procedure for a third party app to be released on the Ledger Manager.
 
-<img src="../Images/manager.png" class="align-center" alt="The Ledger Manager" /><figcaption aria-hidden="true">The Ledger Manager</figcaption>
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
+<figure>
+<img src="../images/manager.png" class="align-center" alt="The Ledger Manager" /><figcaption aria-hidden="true">The Ledger Manager</figcaption>
 </figure>
 
 First, let's see the typical end-to-end architecture of a BOLOS application, in the case of an app for a cryptocurrency:
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/app_architecture.png" class="align-center" alt="End-to-end architecture of a BOLOS application" /><figcaption aria-hidden="true">End-to-end architecture of a BOLOS application</figcaption>
+<img src="../images/app_architecture.png" class="align-center" alt="End-to-end architecture of a BOLOS application" /><figcaption aria-hidden="true">End-to-end architecture of a BOLOS application</figcaption>
 </figure>
 
 In this example, 3 pieces of software are required:
 
 1.  A BOLOS application, written in C, running on a Ledger device
 2.  The companion app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
-1.  A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
+3.  A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
 
 If you're not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the companion app might be a simple daemon or a command line tool, without a GUI. *The companion app should always be compatible with Windows, MacOS and Linux*
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/bitcoin-live.png" class="align-center" alt="Ledger&#39;s main companion app: the Ledger Live" /><figcaption aria-hidden="true">Ledger's main companion app: the Ledger Live</figcaption>
+<img src="../images/bitcoin-live.png" class="align-center" alt="Ledger&#39;s main companion app: the Ledger Live" /><figcaption aria-hidden="true">Ledger's main companion app: the Ledger Live</figcaption>
 </figure>
 
 When these pieces are ready for deployment, they must be sent to Ledger for a security review. One of the things we're going to do is review the security of the BOLOS application code, and check that it functions as intended in conjunction with its companion app. Here is a non-exhaustive list of what we're looking at during the review process:
@@ -67,12 +74,16 @@ Below are the Adobe Illustrator templates for such icons, please respect their g
 
 **Click on each image to download the corresponding .ai file, and fill them directly before sending them back. They should correspond to the icons used to compile your app.**
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/device_template.png" class="align-center" alt="Device icon template (click to access Illustrator file)" /><figcaption aria-hidden="true">Device icon template (click to access Illustrator file)</figcaption>
+<img src="../images/device_template.png" class="align-center" alt="Device icon template (click to access Illustrator file)" /><figcaption aria-hidden="true">Device icon template (click to access Illustrator file)</figcaption>
 </figure>
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/manager_template.png" class="align-center" alt="Manager icon template (click to access Illustrator file)" /><figcaption aria-hidden="true">Manager icon template (click to access Illustrator file)</figcaption>
+<img src="../images/manager_template.png" class="align-center" alt="Manager icon template (click to access Illustrator file)" /><figcaption aria-hidden="true">Manager icon template (click to access Illustrator file)</figcaption>
 </figure>
 
 Most of the time, Bolos apps expose few functionalities to the user. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons !) and also because of the screen size which offer only 128\*32 pixels. Ledger provides some guidance to avoid third party developers to reinvent the wheel.
@@ -84,8 +95,10 @@ Most of the time, Bolos apps expose few functionalities to the user. However, de
 
 Even though the screen is small, you don't want to bloat it with plenty of tiny text to fit everything in a single time. Instead, multiple successives screens are the way to go, with a configurable time interval between each screen switch. Doing this allows you to split and segment the information to display. It is also a good practice to inform the user of what is the kind of information currently displayed, by giving it a title. In some cases, even when the information is segmented by type, there won't be enough space for it to fit entirely on screen. Rather than splitting this information in multiple screens, it is better to use automatic scrolling display. Here is an example that sums it up:
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/scroll.gif" class="align-center" alt="Example: transaction confirmation screen" /><figcaption aria-hidden="true">Example: transaction confirmation screen</figcaption>
+<img src="../images/scroll.gif" class="align-center" alt="Example: transaction confirmation screen" /><figcaption aria-hidden="true">Example: transaction confirmation screen</figcaption>
 </figure>
 
 On this example two pieces of information are shown: an amount of bitcoins, and a destination address. The two screens are alternating periodically until the user validates or cancel. A title is present to describe each information. For the too-long-to-display destination address, the automatic scrolling is used.
@@ -101,12 +114,16 @@ To propose a binary choice to the user, 2 glyphs representing the 2 choices shou
 
 To move inside a menu, be it vertical or horizontal, the same technique is applied with different glyphs. We recommend using arrows: up and down for a vertical menu, left and right for a horizontal one).
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/horizontal_menu.png" class="align-center" alt="Example use of arrows in an horizontal menu" /><figcaption aria-hidden="true">Example use of arrows in an horizontal menu</figcaption>
+<img src="../images/horizontal_menu.png" class="align-center" alt="Example use of arrows in an horizontal menu" /><figcaption aria-hidden="true">Example use of arrows in an horizontal menu</figcaption>
 </figure>
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/vertical_menu.png" class="align-center" alt="Example use of arrows in a vertical menu" /><figcaption aria-hidden="true">Example use of arrows in a vertical menu</figcaption>
+<img src="../images/vertical_menu.png" class="align-center" alt="Example use of arrows in a vertical menu" /><figcaption aria-hidden="true">Example use of arrows in a vertical menu</figcaption>
 </figure>
 
 Once positioned on the right menu entry, the user can select the entry by pressing both buttons. This potential action is not represented by glyphs. Same goes when going through a set of disclaimer screens: only text is displayed, and the user goes to the next part by pressing both buttons. This is a consistent behavior across the device, so you can assume that users are used to it. It should feel obvious when the user has to press two buttons to go through something in your app.

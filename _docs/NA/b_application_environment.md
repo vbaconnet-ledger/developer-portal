@@ -18,8 +18,10 @@ Due to its limited amount of RAM, the Secure Element is designed to only support
 
 This model has the tremendous advantage of not limiting what the application can do, however it also implies that every application has to do **all** of the heavy lifting involved in managing every layer of the transport protocols used to communicate with the world outside of the SE. Luckily, the SDK implements all I/O handling that typical applications need to do. However, developers have the option to customize I/O protocols for more specialized applications.
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/app_centric_view.png" class="align-center" alt="The application-centric view of the BOLOS environment" /><figcaption aria-hidden="true">The application-centric view of the BOLOS environment</figcaption>
+<img src="../images/app_centric_view.png" class="align-center" alt="The application-centric view of the BOLOS environment" /><figcaption aria-hidden="true">The application-centric view of the BOLOS environment</figcaption>
 </figure>
 
 The above diagram shows a view of the system as seen by the application. The app directly accesses multiple peripherals and is the real brain of the device while it is running. Each box can be seen as a coprocessor, under direct command of the application.
@@ -30,8 +32,10 @@ In this model, the application is at the center, and does not rely on any other 
 
 ### Delegation Model
 
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
 <figure>
-<img src="../Images/usb_delegation_overview.png" class="align-center" alt="An overview of the USB delegation model" /><figcaption aria-hidden="true">An overview of the USB delegation model</figcaption>
+<img src="../images/usb_delegation_overview.png" class="align-center" alt="An overview of the USB delegation model" /><figcaption aria-hidden="true">An overview of the USB delegation model</figcaption>
 </figure>
 
 Once BOLOS boots the application, BOLOS is not reachable anymore, it only provides basic services to the application during its execution via system calls. As a consequence, BOLOS does not process commands sent to the device from peripherals (like USB) and therefore BOLOS does not play a role in I/O handling.

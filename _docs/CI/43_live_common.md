@@ -1183,7 +1183,9 @@ AccountBridge offers a generic abstraction to synchronize accounts and perform t
 
 It is designed for the end user frontend interface and is agnostic of the way it runs, has multiple implementations and does not know how the data is even stored: in fact **it's just a set of stateless functions**.
 
-![account bridge flow](../images/account-bridge-flow.png)
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
+![account bridge flow](../../../images/CI/account-bridge-flow.png)
 
 #### Receive
 
@@ -1904,7 +1906,9 @@ CurrencyBridge offers a generic abstraction (for all crypto currencies) to add a
 
 It is responsible for scanning accounts for a crypto family, but also preloading any data needed for the integration to work.
 
-![currency bridge flow](../images/currency-bridge-flow.png)
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
+![currency bridge flow](../../../images/CI/currency-bridge-flow.png)
 
 #### Scanning accounts
 

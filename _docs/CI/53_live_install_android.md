@@ -59,7 +59,7 @@ It will take some time to load the project. We will take this time to create an 
 Click the AVD Manager icon on the upper right of Android Studio :
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="120" src="../../../uploads/images/avd_manager_icon.png" ></div>
+<img width="120" src="../../../images/CI/avd_manager_icon.png" ></div>
 <!-- --------------------------------- -->
 
 Create the device that you want to have for test, don't go too low on API level it will may not working.

@@ -33,9 +33,9 @@ Therefore, every new coin integration calls for a preliminary analysis, to gathe
 ## Technical Assessment
 
 <!-- ------------- Image ------------- -->
-<img width="395" height="548" src="../../../uploads/images/technical_assessment.png" style="float:right">
-<!-- --------------------------------- -->
-
+<img width="395" height="548" src="../../../images/CI/technical_assessment.png " style="float:right">
+<!-- --------------------------------- -->  
+  
 <!-- ------------- Image ------------- -->
 [//]: 488 × 677
 [//]: !technical_assessment(/../../uploads/images/technical_assessment.png)
@@ -65,7 +65,7 @@ The technical choices made concerning Specific features regard all staking opera
 [//]: 786 × 525
 
 <!-- ------------- Image ------------- -->
-<img align="centre" width="471" height="315" src="../../../uploads/images/blockchain_infra.png" >
+<img align="centre" width="471" height="315" src="../../../images/CI/blockchain_infra.png" >
 <!-- --------------------------------- -->
 
 Both UTXO and account-based blockchains can contain a serious amount of transactions for any given account. Because Ledger Live shows the complete list of operations to the end user, the synchronisation process can take a long time, especially if addressing the blockchain node directly.
@@ -77,7 +77,7 @@ Ledger runs its own indexing services but can also rely on third parties to oper
 ### Choosing the right Indexer solution for your your project
 
 <!-- ------------- Image ------------- -->
-![indexer_decision_tree.png](../../uploads/images/indexer_decision_tree.png)
+![indexer_decision_tree.png](../../../images/CI/indexer_decision_tree.png)
 <!-- --------------------------------- -->
 
 ***

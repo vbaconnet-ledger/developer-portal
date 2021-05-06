@@ -32,7 +32,7 @@ git clone https://github.com/LedgerHQ/ledger-app-boilerplate.git
 
 Now you can let the Makefile do all the work. The `load` target will build the app if necessary and load it onto your device over USB.
 
-``` bash
+```bash
 cd ledger-app-boilerplate/
 make load
 ```

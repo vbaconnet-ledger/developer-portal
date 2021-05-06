@@ -21,10 +21,10 @@ The Secure Elements on top of which the BOLOS Operating System and the associate
 
 The memory alignment is a concept which applies to memory and pointers:
 
-> -   A memory address is 'b-bits aligned' when it is a multiple of b/8, b/8 being a power of 2,
-> -   A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,
-> -   A pointer is 'aligned' when it points on aligned memory,
-> -   A pointer is 'unaligned' when it points on unaligned memory.
+ -   A memory address is 'b-bits aligned' when it is a multiple of b/8, b/8 being a power of 2,
+ -   A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,
+ -   A pointer is 'aligned' when it points on aligned memory,
+ -   A pointer is 'unaligned' when it points on unaligned memory.
 
 ### Alignment constraints for basic types and structures
 
@@ -34,17 +34,17 @@ It might be important to be aware of this paragraph contents when it comes to wr
 
 Within any application source code, the alignment of basic types will be considered as follows, at compilation time:
 
-> -   `char` / `unsigned char` / `int8_t` / `uint8_t` : 8-bit aligned,
-> -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit aligned,
-> -   `int` / `unsigned int` / `int32_t` / `uint32_t`: 32-bit aligned,
-> -   any pointer: 32-bit aligned.
+ -   `char` / `unsigned char` / `int8_t` / `uint8_t` : 8-bit aligned,
+ -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit aligned,
+ -   `int` / `unsigned int` / `int32_t` / `uint32_t`: 32-bit aligned,
+ -   any pointer: 32-bit aligned.
 
 Please note that 8-bit aligned means that there is actually no alignment constraint.
 
 The compiler will add padding in any structure which is not aligned by design, in order to respect:
 
-> -   The alignment of each field associated to their respective length,
-> -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length.
+ -   The alignment of each field associated to their respective length,
+ -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length.
 
 For instance the following structure is 8 bytes long before compilation:
 
@@ -232,15 +232,15 @@ if (pointer->field_2 == 0x0001) { /* This dereferencing stalls the device. */
 
 Unaligned pointers can thus occur in cases where a pointer:
 
-> -   declared as positioning on some data type (or structure)
-> -   is used to point on a memory area actually containing another type of data,
-> -   and is dereferenced.
+ -   declared as positioning on some data type (or structure)
+ -   is used to point on a memory area actually containing another type of data,
+ -   and is dereferenced.
 
 In order to produce C source code robust to alignment constraints, one need to avoid using pointers in such a way.
 
 ### External links
 
-> -   <https://en.wikipedia.org/wiki/Data_structure_alignment>
-> -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html>
-> -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html>
+ -   <https://en.wikipedia.org/wiki/Data_structure_alignment>
+ -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html>
+ -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html>
 
