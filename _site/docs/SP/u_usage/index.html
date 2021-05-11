@@ -383,17 +383,13 @@ function searchResults(form) {
 
 <p>The docker image can also be used directly, as detailed in the specific <a href="docker.md">docker documentation page</a>.</p>
 
-<p>The Nano S is the default model; the Nano X and Blue can be specified on the
-command-line:</p>
+<p>The Nano S is the default model; the Nano X and Blue can be specified on the command-line:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">./speculos.py --model nanox apps/nanox#</span>btc#1.2#57272a0f.elf
 <span class="gp">./speculos.py --model blue --sdk 1.5 apps/blue#</span>btc#1.5#00000000.elf
 </code></pre></div></div>
 
-<p>The last SDK version is automatically selected. However, a specific version
-be specified if the target app is not build against the last version of the SDK,
-thanks to the <code class="language-plaintext highlighter-rouge">-k</code>/<code class="language-plaintext highlighter-rouge">--sdk</code> argument. For instance, to launch an app built
-against the SDK <code class="language-plaintext highlighter-rouge">1.5</code> on the Nano S:</p>
+<p>The last SDK version is automatically selected. However, a specific version be specified if the target app is not build against the last version of the SDK, thanks to the <code class="language-plaintext highlighter-rouge">-k</code>/<code class="language-plaintext highlighter-rouge">--sdk</code> argument. For instance, to launch an app built against the SDK <code class="language-plaintext highlighter-rouge">1.5</code> on the Nano S:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">./speculos.py --sdk 1.5 --model nanos apps/btc.elf
 </span></code></pre></div></div>
@@ -439,21 +435,13 @@ The down arrow can also be used as a more convenient shortcut.</li>
   <li><code class="language-plaintext highlighter-rouge">text</code>: the UI is displayed in the console (handy on Windows)</li>
 </ul>
 
-<p>These options can be used along <code class="language-plaintext highlighter-rouge">--vnc-port</code> which spawns a VNC server on the
-specified port. macOS users should also add <code class="language-plaintext highlighter-rouge">--vnc-password &lt;password&gt;</code> if using
-the built-in VNC client because unauthenticated sessions doesn’t seem to be
-supported (issue #34).</p>
+<p>These options can be used along <code class="language-plaintext highlighter-rouge">--vnc-port</code> which spawns a VNC server on the specified port. macOS users should also add <code class="language-plaintext highlighter-rouge">--vnc-password &lt;password&gt;</code> if using the built-in VNC client because unauthenticated sessions doesn’t seem to be supported (issue #34).</p>
 
 <h2 id="app-name-and-version">App name and version</h2>
 
-<p>On a real device, some parameters specific to the app to be installed (name and
-version, icon, allowed derivation paths, etc.) are given during the
-installation. This information isn’t embedded in the .elf file itself and thus
-cannot be retrieved by speculos.</p>
+<p>On a real device, some parameters specific to the app to be installed (name and version, icon, allowed derivation paths, etc.) are given during the installation. This information isn’t embedded in the .elf file itself and thus cannot be retrieved by speculos.</p>
 
-<p>The default app name and version are respectively <code class="language-plaintext highlighter-rouge">app</code> <code class="language-plaintext highlighter-rouge">1.33.7</code>, but these
-values can be set through the <code class="language-plaintext highlighter-rouge">SPECULOS_APPNAME</code> environment variable. For
-instance:</p>
+<p>The default app name and version are respectively <code class="language-plaintext highlighter-rouge">app</code> <code class="language-plaintext highlighter-rouge">1.33.7</code>, but these values can be set through the <code class="language-plaintext highlighter-rouge">SPECULOS_APPNAME</code> environment variable. For instance:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ SPECULOS_APPNAME=blah:1.2.3.4 ./speculos.py ./apps/btc.elf &amp;
 $ echo 'b0 01 00 00 00' \

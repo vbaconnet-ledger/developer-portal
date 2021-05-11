@@ -441,32 +441,13 @@ function searchResults(form) {
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Since BOLOS is designed based on a single-task model where only a single
-app runs at any given time, an application is independently responsible
-for a lot of the things a typical OS would do. These things include
-managing hardware like the device screen, buttons, timer, etc. as well
-as handling all I/O with peripherals. However, there are many instances
-where a BOLOS application has to request the operating system to perform
-a certain operation. This is done using a syscall.</p>
+<p>Since BOLOS is designed based on a single-task model where only a single app runs at any given time, an application is independently responsible for a lot of the things a typical OS would do. These things include managing hardware like the device screen, buttons, timer, etc. as well as handling all I/O with peripherals. However, there are many instances where a BOLOS application has to request the operating system to perform a certain operation. This is done using a syscall.</p>
 
-<p>When an application performs a syscall, the Secure Element switches to
-Supervisor mode and the OS performs the requested task before returning
-control back to the application, in User mode. All syscalls have a
-wrapper function in the SDK that can be used to invoke them. A syscall
-may be used to access hardware accelerated cryptographic primitives
-(most of these functions are defined in <code class="language-plaintext highlighter-rouge">include/cx.h</code> in the SDKs), to
-perform low-level I/O operations (like receiving / transmitting to the
-MCU), or to access cryptographic secrets managed by BOLOS (for example,
-to derive a node from the BIP 32 master node).</p>
+<p>When an application performs a syscall, the Secure Element switches to Supervisor mode and the OS performs the requested task before returning control back to the application, in User mode. All syscalls have a wrapper function in the SDK that can be used to invoke them. A syscall may be used to access hardware accelerated cryptographic primitives (most of these functions are defined in <code class="language-plaintext highlighter-rouge">include/cx.h</code> in the SDKs), to perform low-level I/O operations (like receiving / transmitting to the MCU), or to access cryptographic secrets managed by BOLOS (for example, to derive a node from the BIP 32 master node).</p>
 
 <h3 id="error-model">Error Model</h3>
 
-<p>If you are familiar with C programming, you will be used to error codes
-as the default error model. However, when programming in the embedded
-world, this traditional model reaches its limits, and can quickly
-overcomplicate large codebases. Therefore, we’ve implemented a try /
-catch system that supports nesting (direct or transitive) using the
-<code class="language-plaintext highlighter-rouge">setjmp</code> and <code class="language-plaintext highlighter-rouge">longjmp</code> API to facilitate writing robust code.</p>
+<p>If you are familiar with C programming, you will be used to error codes as the default error model. However, when programming in the embedded world, this traditional model reaches its limits, and can quickly overcomplicate large codebases. Therefore, we’ve implemented a try / catch system that supports nesting (direct or transitive) using the <code class="language-plaintext highlighter-rouge">setjmp</code> and <code class="language-plaintext highlighter-rouge">longjmp</code> API to facilitate writing robust code.</p>
 
 <p>Here is an example of a typical try / catch / finally construct:</p>
 
@@ -481,31 +462,15 @@ catch system that supports nesting (direct or transitive) using the
 <span class="p">}</span> <span class="n">END_TRY</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>However there is a single constraint to be aware of with our try / catch
-system: a <code class="language-plaintext highlighter-rouge">TRY</code> clause must always be closed in the appropriate way.
-This means that if using a return, break, continue or goto statement
-that jumps out of the <code class="language-plaintext highlighter-rouge">TRY</code> clause you MUST manually close it, or it
-could lead to a crash of the application in a later <code class="language-plaintext highlighter-rouge">THROW</code>. A <code class="language-plaintext highlighter-rouge">TRY</code>
-clause can be manually closed using <code class="language-plaintext highlighter-rouge">CLOSE_TRY</code>. Using <code class="language-plaintext highlighter-rouge">CLOSE_TRY</code> is
-only necessary when jumping out of a <code class="language-plaintext highlighter-rouge">TRY</code> clause, jumping out of a
-<code class="language-plaintext highlighter-rouge">CATCH</code> or <code class="language-plaintext highlighter-rouge">FINALLY</code> clause is allowed (but still, be careful you’re not
-in a <code class="language-plaintext highlighter-rouge">CATCH</code> nested in a <code class="language-plaintext highlighter-rouge">TRY</code>).</p>
+<p>However there is a single constraint to be aware of with our try / catch system: a <code class="language-plaintext highlighter-rouge">TRY</code> clause must always be closed in the appropriate way. This means that if using a return, break, continue or goto statement that jumps out of the <code class="language-plaintext highlighter-rouge">TRY</code> clause you MUST manually close it, or it could lead to a crash of the application in a later <code class="language-plaintext highlighter-rouge">THROW</code>. A <code class="language-plaintext highlighter-rouge">TRY</code> clause can be manually closed using <code class="language-plaintext highlighter-rouge">CLOSE_TRY</code>. Using <code class="language-plaintext highlighter-rouge">CLOSE_TRY</code> is only necessary when jumping out of a <code class="language-plaintext highlighter-rouge">TRY</code> clause, jumping out of a <code class="language-plaintext highlighter-rouge">CATCH</code> or <code class="language-plaintext highlighter-rouge">FINALLY</code> clause is allowed (but still, be careful you’re not in a <code class="language-plaintext highlighter-rouge">CATCH</code> nested in a <code class="language-plaintext highlighter-rouge">TRY</code>).</p>
 
-<p>You should use the error codes defined in the SDKs wherever possible
-(see <code class="language-plaintext highlighter-rouge">EXCEPTION</code>, <code class="language-plaintext highlighter-rouge">INVALID_PARAMETER</code>, etc. in <code class="language-plaintext highlighter-rouge">os.h</code>). If you decide to
-use custom error codes, never use an error code of <code class="language-plaintext highlighter-rouge">0</code>.</p>
+<p>You should use the error codes defined in the SDKs wherever possible (see <code class="language-plaintext highlighter-rouge">EXCEPTION</code>, <code class="language-plaintext highlighter-rouge">INVALID_PARAMETER</code>, etc. in <code class="language-plaintext highlighter-rouge">os.h</code>). If you decide to use custom error codes, never use an error code of <code class="language-plaintext highlighter-rouge">0</code>.</p>
 
-<p>Developers should avoid creating a new try context wherever possible in
-order to reduce code size and stack usage. Preferably, an application
-should only have a single top-level try context at the application entry
-point (in <code class="language-plaintext highlighter-rouge">main()</code>).</p>
+<p>Developers should avoid creating a new try context wherever possible in order to reduce code size and stack usage. Preferably, an application should only have a single top-level try context at the application entry point (in <code class="language-plaintext highlighter-rouge">main()</code>).</p>
 
 <h3 id="syscall-requirements">Syscall Requirements</h3>
 
-<p>BOLOS is based on an exception model for error reporting, therefore, it
-expects the application to call the BOLOS API using this mechanism. If
-an API function is called from outside a <code class="language-plaintext highlighter-rouge">TRY</code> context, then the BOLOS
-call is denied.</p>
+<p>BOLOS is based on an exception model for error reporting, therefore, it expects the application to call the BOLOS API using this mechanism. If an API function is called from outside a <code class="language-plaintext highlighter-rouge">TRY</code> context, then the BOLOS call is denied.</p>
 
 <p>Here is a valid way to call a system entry point:</p>
 
@@ -516,10 +481,7 @@ call is denied.</p>
 <span class="p">}</span> <span class="n">END_TRY</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>However, as mentioned above, it is preferred to use as few try contexts
-as possible (not one per syscall). A single, top-level try context can
-be used to catch any exception thrown by any syscall performed by the
-application.</p>
+<p>However, as mentioned above, it is preferred to use as few try contexts as possible (not one per syscall). A single, top-level try context can be used to catch any exception thrown by any syscall performed by the application.</p>
 
 
                         

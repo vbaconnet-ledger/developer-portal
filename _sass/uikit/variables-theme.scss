@@ -26,7 +26,7 @@ $global-primary-background: #1e87f0 !default;
 $alert-primary-background: lighten(mix(white, $global-primary-background, 40%), 20%) !default;
 $alert-primary-color: $global-primary-background !default;
 $global-success-background: #32d296 !default;
-$alert-success-background: lighten(mix(white, $global-success-background, 40%), 25%) !default;
+$alert-success-background: lighten(mix(white, $global-success-background, 40%), 15%) !default;
 $alert-success-color: $global-success-background !default;
 $global-warning-background: #faa05a !default;
 $alert-warning-background: lighten(mix(white, $global-warning-background, 45%), 15%) !default;

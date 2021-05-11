@@ -377,7 +377,7 @@ function searchResults(form) {
   <li>Add the following to your <code class="language-plaintext highlighter-rouge">.bashrc</code> within WSL2:</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export DISPLAY="`sed -n 's/nameserver //p' /etc/resolv.conf`:0"
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">DISPLAY</span><span class="o">=</span><span class="s2">"</span><span class="sb">`</span><span class="nb">sed</span> <span class="nt">-n</span> <span class="s1">'s/nameserver //p'</span> /etc/resolv.conf<span class="sb">`</span><span class="s2">:0"</span>
 </code></pre></div></div>
 
 <ul>

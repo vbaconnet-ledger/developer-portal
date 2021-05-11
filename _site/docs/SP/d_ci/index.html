@@ -373,33 +373,28 @@ function searchResults(form) {
 
 <h2 id="speculos-builder">Speculos builder</h2>
 
-<p>The Dockerfile <code class="language-plaintext highlighter-rouge">build.Dockerfile</code> builds a container with all required
-dependencies to build speculos:</p>
+<p>The Dockerfile <code class="language-plaintext highlighter-rouge">build.Dockerfile</code> builds a container with all required dependencies to build speculos:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -f build.Dockerfile -t ledgerhq/speculos-builder .
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-f</span> build.Dockerfile <span class="nt">-t</span> ledgerhq/speculos-builder <span class="nb">.</span>
 </code></pre></div></div>
 
-<p>The resulting container is pushed on
-<a href="https://hub.docker.com/r/ledgerhq/speculos-builder">Docker Hub</a> (by Ledger
-employees, obviously):</p>
+<p>The resulting container is pushed on <a href="https://hub.docker.com/r/ledgerhq/speculos-builder">Docker Hub</a> (by Ledger employees, obviously):</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker push ledgerhq/speculos-builder:latest
-docker image tag ledgerhq/speculos-builder:latest ledgerhq/speculos-builder:$(git rev-parse --short HEAD)
-docker push ledgerhq/speculos-builder:$(git rev-parse --short HEAD)
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker push ledgerhq/speculos-builder:latest
+docker image tag ledgerhq/speculos-builder:latest ledgerhq/speculos-builder:<span class="si">$(</span>git rev-parse <span class="nt">--short</span> HEAD<span class="si">)</span>
+docker push ledgerhq/speculos-builder:<span class="si">$(</span>git rev-parse <span class="nt">--short</span> HEAD<span class="si">)</span>
 </code></pre></div></div>
 
 <p>This container can eventually be used by the CI.</p>
 
 <h2 id="speculos">Speculos</h2>
 
-<p>The Dockerfile <code class="language-plaintext highlighter-rouge">Dockerfile</code> builds a container with all required dependencies to
-run speculos from the command-line:</p>
+<p>The Dockerfile <code class="language-plaintext highlighter-rouge">Dockerfile</code> builds a container with all required dependencies to run speculos from the command-line:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -f Dockerfile -t ledgerhq/speculos .
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-f</span> Dockerfile <span class="nt">-t</span> ledgerhq/speculos <span class="nb">.</span>
 </code></pre></div></div>
 
-<p>This should be done by the CI, which publish the resulting image on
-<a href="https://hub.docker.com/r/ledgerhq/speculos">Docker Hub</a>.</p>
+<p>This should be done by the CI, which publish the resulting image on <a href="https://hub.docker.com/r/ledgerhq/speculos">Docker Hub</a>.</p>
 
                         
                             <!-- FC

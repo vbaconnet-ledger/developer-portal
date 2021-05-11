@@ -21,8 +21,8 @@ lang:               en
 
 baseurl:            /unos
 url:                https://blog.ledger.com
-# baseurl:            ""
-# url:                ""
+#baseurl:            ""
+#url:                ""
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
