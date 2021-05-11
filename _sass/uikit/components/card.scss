@@ -59,7 +59,7 @@ $card-hover-background:                         $global-background !default; /* 
 $card-default-background:                       $global-muted-background !default;
 $card-default-color:                            $global-color !default;
 $card-default-title-color:                      $global-emphasis-color !default;
-$card-default-hover-background:                 darken($card-default-background, 5%) !default;
+$card-default-hover-background:                 darken($card-default-background, 0%) !default; /* */
 
 $card-primary-background:                       $global-primary-background !default;
 $card-primary-color:                            $global-inverse-color !default;
@@ -70,7 +70,7 @@ $card-primary-color-mode:                       light !default;
 $card-secondary-background:                     $global-secondary-background !default;
 $card-secondary-color:                          $global-inverse-color !default;
 $card-secondary-title-color:                    $card-secondary-color !default;
-$card-secondary-hover-background:               darken($card-secondary-background, 5%) !default;
+$card-secondary-hover-background:               darken($card-secondary-background, 5%) !default; /* */
 $card-secondary-color-mode:                     light !default;
 
 $card-small-body-padding-horizontal:            $global-margin !default;

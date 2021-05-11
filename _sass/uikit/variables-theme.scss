@@ -59,7 +59,7 @@ $global-muted-color: #999 !default;
 $article-meta-color: $global-muted-color !default;
 $inverse-global-muted-color: rgba($global-inverse-color, 0.5) !default;
 $inverse-article-meta-color: $inverse-global-muted-color !default;
-$global-background: #a54747 !default; /* 2021-05-11 1124 */
+$global-background: #f9f9f9 !default;
 $background-default-background: $global-background !default;
 $background-muted-background: $global-muted-background !default;
 $background-primary-background: $global-primary-background !default;
@@ -260,11 +260,11 @@ $card-badge-padding-horizontal: 10px !default;
 $card-badge-background: $global-primary-background !default;
 $card-badge-color: $global-inverse-color !default;
 $card-badge-font-size: $global-small-font-size !default;
-$card-hover-background: $global-background !default;
+$card-hover-background: $global-muted-background !default; /* */
 $card-default-background: $global-background !default;
 $card-default-color: $global-color !default;
 $card-default-title-color: $global-emphasis-color !default;
-$card-default-hover-background: $card-default-background !default;
+$card-default-hover-background: #FFFFFF !default; /* FC 2021-05-11 1156 This is where the card changes colour, on hover */  
 $card-primary-background: $global-primary-background !default;
 $card-primary-color: $global-inverse-color !default;
 $card-primary-title-color: $card-primary-color !default;
