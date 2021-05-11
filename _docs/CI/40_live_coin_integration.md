@@ -29,7 +29,7 @@ layout: doc_ci
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
-![](../../../images/CI/code-blocks.png)
+![](../../../uploads/images/CI/code-blocks.png)
 
 ***
 ## Introduction
