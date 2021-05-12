@@ -112,7 +112,7 @@ Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only 
 | | | |
 | LAYOUT        | NANOS                                                         | NANOX                                                         |
 |---------------|---------------------------------------------------------------|---------------------------------------------------------------|
-| `pb`          | <img align="left" width="280" src="../images/nanos_approve.png">       | <img align="left" width="327" src="../images/nanox_approve.png">       |
+| `pb`          | <img align="left" width="280" src="../images/nanos_approve.png">       | <img align="left" width="327" src="images/NA/nanox_approve.png">       |
 | `bn`          | <img align="left" width="280" src="../images/nanos_amount.png">        | <img align="left" width="327" src="../images/nanox_amount.png">        |
 | `pnn`         | <img align="left" width="280" src="../images/nanos_boilerplate.png">   | <img align="left" width="327" src="../images/nanox_boilerplate.png">   |
 | `bnnn_paging` | <img align="left" width="280" src="../images/nanos_address_merged.png">| <img align="left" width="327" src="../images/nanox_address_merged.png">|
