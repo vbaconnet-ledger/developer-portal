@@ -5,7 +5,7 @@ hero:
     title: Ledger Developer Pages -
     subtitle: 
         Documentation for Third-party Foundations and blockchain teams who want to develop their currency and services in the Desktop and Mobile versions of Ledger Live
-    image: uploads/images/GEN/portal-intro.png
+    image: images/GEN/portal-intro.png
     search: true 
 ---
  
