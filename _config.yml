@@ -12,6 +12,15 @@ lang:               en
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com
 
+{% if site.environment == "production" %}
+    baseurl: "/unos"
+    url: "https://blog.ledger.com"
+{% elsif site.environment == "development" %}
+    baseurl:            ""
+    url:                ""
+{% endif %}
+
+
 # {% if jekyll.environment == "development" %}
 # 
 # {% endif %}
@@ -19,8 +28,8 @@ lang:               en
 # 
 # {% endif %}
    
-baseurl:            /unos
-url:                https://blog.ledger.com
+# baseurl:            /unos
+# url:                https://blog.ledger.com
 # baseurl:            ""
 # url:                ""
 
