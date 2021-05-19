@@ -20,10 +20,10 @@ lang:               en
 # 
 # {% endif %}
    
-baseurl:            /unos
-url:                https://blog.ledger.com
-# baseurl:            ""
-# url:                ""
+# baseurl:            /unos
+# url:                https://blog.ledger.com
+baseurl:            ""
+url:                ""
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
@@ -103,6 +103,10 @@ authors:
       name:         greenknot
       title:        Security     
       avatar:       avatar-greenknot.png
+    thomas:
+      name:         Thomas Julien
+      title:        Nano App product support
+      avatar:       avatar-thomas.png
     john:
       name:         John Brown
       title:        Support     

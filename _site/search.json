@@ -204,14 +204,6 @@
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
-      "url"      : "/docs/NA/b_introduction/",
-      "date"     : ""
-    } ,
-  
-    {
-      "title"    : "Overview",
-      "category" : "",
-      "tags"     : "",
       "url"      : "/docs/NA/b_overview/",
       "date"     : ""
     } ,
@@ -241,14 +233,6 @@
     } ,
   
     {
-      "title"    : "Introduction",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/docs/NA/bg_introduction/",
-      "date"     : ""
-    } ,
-  
-    {
       "title"    : "The Master Seed",
       "category" : "",
       "tags"     : "",
@@ -257,10 +241,18 @@
     } ,
   
     {
-      "title"    : "Personal Security Devices",
+      "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/bg_personal_security_devices/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Developing a Nano App",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/NA/start_here/",
       "date"     : ""
     } ,
   
@@ -301,14 +293,6 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/NA/u_display_management/",
-      "date"     : ""
-    } ,
-  
-    {
-      "title"    : "Introduction",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/docs/NA/u_introduction/",
       "date"     : ""
     } ,
   

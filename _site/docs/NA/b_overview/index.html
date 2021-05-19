@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Overview | Ledger Developer pages</title>
+<title>Introduction | Ledger Developer pages</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Overview" />
+<meta property="og:title" content="Introduction" />
 <meta name="author" content="pscott" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Sections in this article Introduction The Dashboard Introduction The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub." />
-<meta property="og:description" content="Sections in this article Introduction The Dashboard Introduction The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub." />
+<meta name="description" content="These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub." />
+<meta property="og:description" content="These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub." />
 <link rel="canonical" href="http://localhost:4000/docs/NA/b_overview/" />
 <meta property="og:url" content="http://localhost:4000/docs/NA/b_overview/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Overview" />
+<meta property="twitter:title" content="Introduction" />
 <script type="application/ld+json">
-{"description":"Sections in this article Introduction The Dashboard Introduction The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub.","headline":"Overview","url":"http://localhost:4000/docs/NA/b_overview/","author":{"@type":"Person","name":"pscott"},"@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged personal security devices. BOLOS allows users to review and install applications that let them do more with their cryptographic secrets, while protecting the device and other applications from malicious code. The key to BOLOS’s open-source friendliness and ability to limit the exposure of user’s cryptographic secrets to their apps is its application isolation technology. BOLOS is organized into the following modules: An input / output module which allows applications executing in a secure environment to communicate with the outside world and third party peripherals A cryptography module that implements low level cryptographic primitives and provides access to hardware acceleration where available A persistent storage module that lets applications store data securely on the device A personalization module for interfacing with the device master seed An endorsement &amp; application attestation module allowing BOLOS applications to provide proof of execution A user interface module for rendering the GUI and handling user input (eg. via buttons on the device) The Dashboard All BOLOS devices have a special app installed that runs on the OS with certain special privileges called the Dashboard application or the PSD Content Manager. The dashboard app contains the main GUI that the user sees when they aren’t in any other app. This is what the users use to enter their master seed, and its what they use to launch other applications. The dashboard application is also what the host computer communicates with when loading or deleting apps off of the device. An important component of the dashboard is the BOLOS UX, which is the implementation of the device-wide user interface that all applications need to interface with for certain device-wide UI features (like screen locking). The UI of the default dashboard app that is built into the firmware for the Nano S is also available as an external application that can be loaded onto the device on GitHub.","headline":"Introduction","url":"http://localhost:4000/docs/NA/b_overview/","author":{"@type":"Person","name":"pscott"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -271,16 +271,112 @@ function searchResults(form) {
             <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     
-                    <h5>Background Information</h5>
+                    <h5>Getting Started</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     
                       
                       
-                      <li class=""><a href="/docs/NA/bg_introduction/">Introduction</a></li>
+                      <li class=""><a href="/docs/NA/u_setup/">Setting it up</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/NA/bg_personal_security_devices/">Personal Security Devices</a></li>
+                      <li class=""><a href="/docs/NA/u_writing_apps/">Writing Apps</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Security</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_security_guidelines/">Developing Secure Ledger Apps</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Display</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_display_management/">Display Management</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_advanced_display_management/">Advanced display management</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_low_level_display_management/">Low-level display management</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Memory</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_memory/">Persistent Storage and PIC</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_alignment/">Memory alignment</a></li>
+                    
+                    </ul>
+                    
+                    <h5>I/O</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_syscalls/">Interaction Between BOLOS and Apps</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_application_structure/">Application Structure and I/O</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Debug</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_troubleshooting/">Common Pitfalls and Troubleshooting</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_debugging/">Application Debug</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Publishing</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_publishing_an_app/">Publishing an Application</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Tools</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_speculos/">Emulating devices with Speculos</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_external_docs/">External Documentation</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Appx - Personal security devices</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/bg_personal_security_devices/">Introduction</a></li>
                     
                       
                       
@@ -300,16 +396,12 @@ function searchResults(form) {
                     
                     </ul>
                     
-                    <h5>BOLOS Platform</h5>
+                    <h5>Appx - The BOLOS Platform</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     
                       
                       
-                      <li class=""><a href="/docs/NA/b_introduction/">Introduction</a></li>
-                    
-                      
-                      
-                      <li class="uk-active"><a href="/docs/NA/b_overview/">Overview</a></li>
+                      <li class="uk-active"><a href="/docs/NA/b_overview/">Introduction</a></li>
                     
                       
                       
@@ -325,80 +417,6 @@ function searchResults(form) {
                     
                     </ul>
                     
-                    <h5>Userspace Development</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_introduction/">Introduction</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_setup/">Setting it up</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_writing_apps/">Writing Apps</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_display_management/">Display Management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_advanced_display_management/">Advanced display management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_low_level_display_management/">Low-level display management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_syscalls/">Interaction Between BOLOS and Apps</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_application_structure/">Application Structure and I/O</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_memory/">Persistent Storage and PIC</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_alignment/">Memory alignment</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_troubleshooting/">Common Pitfalls and Troubleshooting</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_debugging/">Application Debug</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_speculos/">Emulating devices with Speculos</a></li>
-                    
-                    </ul>
-                    
-                    <h5>Additional Resources</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_publishing_an_app/">Publishing an Application</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_external_docs/">External Documentation</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_security_guidelines/">Developing Secure Ledger Apps</a></li>
-                    
-                    </ul>
-                    
                 </div>
             </div>
 
@@ -406,9 +424,9 @@ function searchResults(form) {
 
                 <article class="uk-article">
 
-                    <h1 class="uk-article-title">Overview</h1>
+                    <h1 class="uk-article-title">Introduction</h1>
 
-                    <p class="uk-text-lead uk-text-muted">Bird's eye view</p>
+                    <p class="uk-text-lead uk-text-muted">A bird's eye view</p>
 
                     <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
                         
@@ -430,15 +448,7 @@ function searchResults(form) {
                     </div>
 
                     <div class="article-content link-primary">
-                        <h4 class="no_toc" id="sections-in-this-article">Sections in this article</h4>
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
-      <li><a href="#the-dashboard" id="markdown-toc-the-dashboard">The Dashboard</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="introduction">Introduction</h2>
+                        <p>These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices.</p>
 
 <p>The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged <a href="../bg_personal_security_devices">personal security devices</a>.</p>
 
@@ -466,7 +476,7 @@ function searchResults(form) {
                             <!-- FC
                             <div class="share uk-text-center uk-margin-medium-top">
     
-        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Overview&url=http://localhost:4000/docs/NA/b_overview/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Introduction&url=http://localhost:4000/docs/NA/b_overview/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
     
     
         <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdocs%2FNA%2Fb_overview%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
@@ -568,24 +578,6 @@ function searchResults(form) {
     
 
     <ul class="uk-list link-secondary">
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
     
 
     

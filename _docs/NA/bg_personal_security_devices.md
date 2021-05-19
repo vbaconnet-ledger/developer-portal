@@ -1,6 +1,6 @@
 ---
-title: Personal Security Devices
-subtitle: The secure portal to your assets, not a bank
+title: Introduction
+subtitle: PSDs - The secure portal to your assets, not a bank
 tags: []
 toc: true
 toc_sticky: true
@@ -8,14 +8,9 @@ author: pscott
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We'll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We'll also describe the hardware architecture that is common between all BOLOS devices.
 
-## Introduction
-
-Personal security devices are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you'd like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don't just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device's internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device.
+Personal security devices (PSDs) are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you'd like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don't just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device's internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device.
 
 Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software.
 

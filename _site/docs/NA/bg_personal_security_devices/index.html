@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Personal Security Devices | Ledger Developer pages</title>
+<title>Introduction | Ledger Developer pages</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Personal Security Devices" />
+<meta property="og:title" content="Introduction" />
 <meta name="author" content="pscott" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Sections in this article Introduction Introduction Personal security devices are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed." />
-<meta property="og:description" content="Sections in this article Introduction Introduction Personal security devices are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed." />
+<meta name="description" content="These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. Personal security devices (PSDs) are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed." />
+<meta property="og:description" content="These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. Personal security devices (PSDs) are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed." />
 <link rel="canonical" href="http://localhost:4000/docs/NA/bg_personal_security_devices/" />
 <meta property="og:url" content="http://localhost:4000/docs/NA/bg_personal_security_devices/" />
 <meta property="og:site_name" content="Ledger Developer pages" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Personal Security Devices" />
+<meta property="twitter:title" content="Introduction" />
 <script type="application/ld+json">
-{"description":"Sections in this article Introduction Introduction Personal security devices are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed.","headline":"Personal Security Devices","url":"http://localhost:4000/docs/NA/bg_personal_security_devices/","author":{"@type":"Person","name":"pscott"},"@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices. Personal security devices (PSDs) are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device. Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software. However, personal security devices aren’t intended to be a store of data -they’re a root of trust. Apps for these devices tend to be lightweight apps that work in conjunction with a host computer. The Secure Element places a limit on the storage capacity of these devices, so storing data encrypted on a host computer is preferred over storing data directly on the device. As such, the device contains a set of private keys that you can use to unlock your data and assets, without any risk of compromising the security of your assets in the event that your computer becomes infected with a virus. Applications that process large amounts of data may not be able to store all of the data on the device at once. There are two effective solutions to this problem: 1) stream data through the device while the application processes it (for example, it may be encrypting / decrypting the data) or 2) derive a secret on the device (preferably from the master seed) and use it on the computer to process the data (this is how the PGP app works). This is an important concept: personal security devices are a secure portal to your assets, not a bank. If your device gets lost or destroyed, your assets are still safe. The key to this portal is your “master seed”. That brings us to our next section, The Master Seed.","headline":"Introduction","url":"http://localhost:4000/docs/NA/bg_personal_security_devices/","author":{"@type":"Person","name":"pscott"},"@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:image" content="http://localhost:4000/uploads/"/>
@@ -271,16 +271,112 @@ function searchResults(form) {
             <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     
-                    <h5>Background Information</h5>
+                    <h5>Getting Started</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     
                       
                       
-                      <li class=""><a href="/docs/NA/bg_introduction/">Introduction</a></li>
+                      <li class=""><a href="/docs/NA/u_setup/">Setting it up</a></li>
                     
                       
                       
-                      <li class="uk-active"><a href="/docs/NA/bg_personal_security_devices/">Personal Security Devices</a></li>
+                      <li class=""><a href="/docs/NA/u_writing_apps/">Writing Apps</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Security</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_security_guidelines/">Developing Secure Ledger Apps</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Display</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_display_management/">Display Management</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_advanced_display_management/">Advanced display management</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_low_level_display_management/">Low-level display management</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Memory</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_memory/">Persistent Storage and PIC</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_alignment/">Memory alignment</a></li>
+                    
+                    </ul>
+                    
+                    <h5>I/O</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_syscalls/">Interaction Between BOLOS and Apps</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_application_structure/">Application Structure and I/O</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Debug</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_troubleshooting/">Common Pitfalls and Troubleshooting</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_debugging/">Application Debug</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Publishing</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_publishing_an_app/">Publishing an Application</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Tools</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/u_speculos/">Emulating devices with Speculos</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/NA/a_external_docs/">External Documentation</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Appx - Personal security devices</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class="uk-active"><a href="/docs/NA/bg_personal_security_devices/">Introduction</a></li>
                     
                       
                       
@@ -300,16 +396,12 @@ function searchResults(form) {
                     
                     </ul>
                     
-                    <h5>BOLOS Platform</h5>
+                    <h5>Appx - The BOLOS Platform</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     
                       
                       
-                      <li class=""><a href="/docs/NA/b_introduction/">Introduction</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/b_overview/">Overview</a></li>
+                      <li class=""><a href="/docs/NA/b_overview/">Introduction</a></li>
                     
                       
                       
@@ -325,80 +417,6 @@ function searchResults(form) {
                     
                     </ul>
                     
-                    <h5>Userspace Development</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_introduction/">Introduction</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_setup/">Setting it up</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_writing_apps/">Writing Apps</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_display_management/">Display Management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_advanced_display_management/">Advanced display management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_low_level_display_management/">Low-level display management</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_syscalls/">Interaction Between BOLOS and Apps</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_application_structure/">Application Structure and I/O</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_memory/">Persistent Storage and PIC</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_alignment/">Memory alignment</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_troubleshooting/">Common Pitfalls and Troubleshooting</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_debugging/">Application Debug</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/u_speculos/">Emulating devices with Speculos</a></li>
-                    
-                    </ul>
-                    
-                    <h5>Additional Resources</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_publishing_an_app/">Publishing an Application</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_external_docs/">External Documentation</a></li>
-                    
-                      
-                      
-                      <li class=""><a href="/docs/NA/a_security_guidelines/">Developing Secure Ledger Apps</a></li>
-                    
-                    </ul>
-                    
                 </div>
             </div>
 
@@ -406,9 +424,9 @@ function searchResults(form) {
 
                 <article class="uk-article">
 
-                    <h1 class="uk-article-title">Personal Security Devices</h1>
+                    <h1 class="uk-article-title">Introduction</h1>
 
-                    <p class="uk-text-lead uk-text-muted">The secure portal to your assets, not a bank</p>
+                    <p class="uk-text-lead uk-text-muted">PSDs - The secure portal to your assets, not a bank</p>
 
                     <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
                         
@@ -430,14 +448,9 @@ function searchResults(form) {
                     </div>
 
                     <div class="article-content link-primary">
-                        <h4 class="no_toc" id="sections-in-this-article">Sections in this article</h4>
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-</ul>
+                        <p>These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We’ll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We’ll also describe the hardware architecture that is common between all BOLOS devices.</p>
 
-<h2 id="introduction">Introduction</h2>
-
-<p>Personal security devices are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device.</p>
+<p>Personal security devices (PSDs) are designed to isolate cryptographic secrets (like PGP or Bitcoin private keys) from your potentially insecure computer which has known vulnerabilities. Storing cryptographic secrets on a physical medium that cannot be infected with a virus such as writing them on a piece of paper (or storing them on an encrypted drive) is secure until you need to use your funds. The instant you need to transfer your funds, you need to load your private keys onto your computer to sign the transaction and as such you expose them to potential malware (unless you’d like to perform the cryptographic operations necessary to sign the transaction by hand, which is far from convenient, to say the least). This is where personal security devices come in - they don’t just store your cryptographic secrets safely, they also allow you to perform operations with them (like signing transactions) securely and conveniently. Ledger devices also generate secrets securely with a large amount of entropy using an AIS-31 compliant true random number generator (TRNG). As such, it is more secure to use the device’s internally generated secrets rather than importing a secret from elsewhere which could have been compromised before being loaded onto the device.</p>
 
 <p>Ledger leverages Secure Element technology to build personal security devices for cryptocurrencies and blockchains which provide an interface between humans and the blockchain world. They keep your private keys secure from hackers by storing them in a tamper-proof and eavesdropping-proof Secure Element. Additionally, the Ledger Nano S and Ledger Blue have a screen which serves as a trusted source of information about your assets as it is controlled by the device itself, not by potentially vulnerable computer software.</p>
 
@@ -450,7 +463,7 @@ function searchResults(form) {
                             <!-- FC
                             <div class="share uk-text-center uk-margin-medium-top">
     
-        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Personal Security Devices&url=http://localhost:4000/docs/NA/bg_personal_security_devices/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Introduction&url=http://localhost:4000/docs/NA/bg_personal_security_devices/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
     
     
         <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdocs%2FNA%2Fbg_personal_security_devices%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
@@ -552,24 +565,6 @@ function searchResults(form) {
     
 
     <ul class="uk-list link-secondary">
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
     
 
     

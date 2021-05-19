@@ -15,7 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-The Ledger Manager is the service which centralizes the distribution of [BOLOS](../b_introduction) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This document aims at explaining the procedure for a third party app to be released on the Ledger Manager.
+The Ledger Manager is the service which centralizes the distribution of [BOLOS](../b_overview) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This document aims at explaining the procedure for a third party app to be released on the Ledger Manager.
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->

@@ -1,6 +1,6 @@
 ---
-title: Overview
-subtitle: Bird's eye view
+title: Introduction
+subtitle: A bird's eye view
 tags: []
 toc: true
 toc_sticky: true
@@ -8,12 +8,8 @@ author: pscott
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
-## Introduction
+These pages contain detailed documentation about the core features offered by BOLOS, and how they can be utilized by BOLOS applications and end-users. We'll discuss how BOLOS manages the master device seed and the device private key, and how it can be used for attestation purposes. We'll also describe the hardware architecture that is common between all BOLOS devices.
 
 The operating system behind all Ledger personal security devices is called the Blockchain Open Ledger Operating System, or BOLOS for short. BOLOS provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment. BOLOS is a way of turning hardware wallets into fully-fledged [personal security devices](../bg_personal_security_devices).
 

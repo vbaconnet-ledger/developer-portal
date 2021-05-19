@@ -37,7 +37,7 @@ Integrating your cryptocurrency on Ledger Live is a multi steps process.
 The first mandatory requirement is to have a Nano application already listed in the Ledger Live Manager section. If you don't have one already, please make sure to read this [documentation](https://ledger.readthedocs.io/en/latest/additional/publishing_an_app.html) first.
 
 <!-- --> 
-{% include alert.html style="success" text="The Integration of Nano applications is found this Developer Portal in the  <a href='../../NA/u_introduction' class='alert-link'> Nano pages </a>." %}
+{% include alert.html style="success" text="The Integration of Nano applications is found this Developer Portal in the  <a href='../../NA/start_here' class='alert-link'> Nano pages </a>." %}
 <!--  -->
 
 ## Tokens
