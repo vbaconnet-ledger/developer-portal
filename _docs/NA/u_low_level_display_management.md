@@ -16,7 +16,7 @@ layout: doc_na
 ## Introduction
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>This article only concerns about 1% of users who wish to get a deeper understanding / design more advanced flows. Feel free to skip it!." %}
+{% include alert.html style="warning" text="This article only concerns about 1% of users who wish to get a deeper understanding / design more advanced flows. Feel free to skip it!." %}
 <!--  -->
 
 ## BAGLs and BOLOSS

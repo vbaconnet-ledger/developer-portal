@@ -49,7 +49,7 @@ It is extremely unlikely for the Device private key to become compromised, becau
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Tip</b><br>For more information about the benefits of Ledger's use of a Secure Element for verifying device authenticity, see our blog post <a href='https://www.ledger.com/how-to-protect-hardware-wallets-against-tampering/' class='alert-link'> How to protect hardware wallets against tampering </a> (though keep in mind that not all of the information in this article applies to Ledger's latest products)." %}
+{% include alert.html style="primary" text="For more information about the benefits of Ledger's use of a Secure Element for verifying device authenticity, see our blog post <a href='https://www.ledger.com/how-to-protect-hardware-wallets-against-tampering/' class='alert-link'> How to protect hardware wallets against tampering </a> (though keep in mind that not all of the information in this article applies to Ledger's latest products)." %}
 <!--  -->
 
 

@@ -89,7 +89,7 @@ Below are the Adobe Illustrator templates for such icons, please respect their g
 Most of the time, Bolos apps expose few functionalities to the user. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons !) and also because of the screen size which offer only 128\*32 pixels. Ledger provides some guidance to avoid third party developers to reinvent the wheel.
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>See the <a href='../u_display_management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
+{% include alert.html style="primary" text="See the <a href='../u_display_management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
 <!--  -->
 
 
@@ -149,7 +149,7 @@ There are different release levels for a given application:
 
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Ledger has developed its own emulator called [Speculos](https://github.com/LedgerHQ/speculos). Feel free to checkout:
+{% include alert.html style="warning" text="Ledger has developed its own emulator called [Speculos](https://github.com/LedgerHQ/speculos). Feel free to checkout:
 
 1.  The [Speculos repo](https://github.com/LedgerHQ/speculos) .
 2.  The [Nano S SDK](https://github.com/LedgerHQ/nanos-secure-sdk) and the [Nano X SDK](https://github.com/LedgerHQ/nanox-secure-sdk) .
@@ -172,14 +172,14 @@ An application will be listed publicly (official Ledger support) once:
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it. Applications are usually released on Tuesday or Wednesday." %}
+{% include alert.html style="primary" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it. Applications are usually released on Tuesday or Wednesday." %}
 <!--  -->
 
 
 ### Third Party Applications Support
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>The following only applies if you are adding support for a cryptocurrency and chose to build your own companion app." %}
+{% include alert.html style="primary" text="The following only applies if you are adding support for a cryptocurrency and chose to build your own companion app." %}
 <!--  -->
 
 
@@ -191,7 +191,7 @@ Along with your publication request, app sources and tutorial, please provide in
 -   **Point of Contact: URL, email address, phone number**
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>Name, surname and phone number are kept private and will be used only in case of emergency." %}
+{% include alert.html style="primary" text="Name, surname and phone number are kept private and will be used only in case of emergency." %}
 <!--  -->
 
 
@@ -223,6 +223,6 @@ Program](https://forms.gle/86qP6H1etn8xSwQG9):
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>Ledger will review new applications and Pull Requests on a best-effort basis. Submitting an application or a Pull Request isn't a guarantee it will be released." %}
+{% include alert.html style="primary" text="Ledger will review new applications and Pull Requests on a best-effort basis. Submitting an application or a Pull Request isn't a guarantee it will be released." %}
 <!--  -->
 

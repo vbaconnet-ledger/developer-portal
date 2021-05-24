@@ -17,14 +17,14 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>Ledger has developed its own emulator called
+{% include alert.html style="primary" text="Ledger has developed its own emulator called
 <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos</a>. Feel free to checkout:  <br>1.  The <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos repository</a>. <br>2.  The <a href='https://github.com/LedgerHQ/nanos-secure-sdk' class='alert-link'> Nano S SDK </a> and the
 <a href='https://github.com/LedgerHQ/nanox-secure-sdk' class='alert-link'> Nano X SDK </a>.  <br>3.  The <a href='../../SP/i_build/' class='alert-link'> speculos </a> section which gives an overview of how to use speculos." %}
 <!--  -->
 
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>The [BOLOS development environment](../u_setup) is required for the following article. It applies only for the Nano S, with its SE firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="warning" text="The [BOLOS development environment](../u_setup) is required for the following article. It applies only for the Nano S, with its SE firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 
@@ -71,11 +71,11 @@ The debug firmware enables the `PRINTF` macro, however you have to define it in 
 Usually, `PRINTF` is already defined to void with this line `DEFINES += PRINTF\(...\)=`. Check if `PRINTF` is already defined somewhere else in your Makefile, and comment out this definition so it doesn't override the one that we just set.
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>The <code>PRINTF</code> macro is a debugging feature, and as such it is not intended for use in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile. In other words, in case of release compilation, put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
+{% include alert.html style="warning" text="The <code>PRINTF</code> macro is a debugging feature, and as such it is not intended for use in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile. In other words, in case of release compilation, put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
 <!--  -->
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>The <code>PRINTF</code> macro can only be used in between successive calls to <code>io_exchange</code>. Calling it outside of it will result in unexpected behaviour. Behind the scene, <code>PRINTF</code> sends a status on the <a href='../b_hardware_architecture/#seproxyhal' class='alert-link'> SEPH </a>. Only one status can be sent in a row, otherwise the SEPH crashes. For this reason, don't use <code>PRINTF</code> just after status-sending calls, such as <code>UX_DISPLAY</code>. This macro packs a call to <i>io_seproxyhal_display</i> and is often the reason for application crashes. Then is no other work around than to move your call to <code>PRINTF</code> somewhere else in your code." %}
+{% include alert.html style="warning" text="The <code>PRINTF</code> macro can only be used in between successive calls to <code>io_exchange</code>. Calling it outside of it will result in unexpected behaviour. Behind the scene, <code>PRINTF</code> sends a status on the <a href='../b_hardware_architecture/#seproxyhal' class='alert-link'> SEPH </a>. Only one status can be sent in a row, otherwise the SEPH crashes. For this reason, don't use <code>PRINTF</code> just after status-sending calls, such as <code>UX_DISPLAY</code>. This macro packs a call to <i>io_seproxyhal_display</i> and is often the reason for application crashes. Then is no other work around than to move your call to <code>PRINTF</code> somewhere else in your code." %}
 <!--  -->
 
 
@@ -132,7 +132,7 @@ For more information see [loadApp-py](https://ledger.readthedocs.io/projects/blu
 
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>A side effect of installing a custom CA on your device is that it will from now on fail to pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it genuine again, you should uninstall your custom CA and all the applications installed through it." %}
+{% include alert.html style="warning" text="A side effect of installing a custom CA on your device is that it will from now on fail to pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it genuine again, you should uninstall your custom CA and all the applications installed through it." %}
 <!--  -->
 
 Uninstalling a custom CA is very quick:
@@ -144,4 +144,3 @@ Uninstalling a custom CA is very quick:
         foo@bar:~$ python3 -m ledgerblue.resetCustomCA --targetId 0x31100004
 
 Find the right targetId for your device [here](https://gist.github.com/TamtamHero/b7651ffe6f1e485e3886bf4aba673348).
-

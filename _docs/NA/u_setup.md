@@ -18,7 +18,7 @@ In these pages we will provide a general tutorial for getting your BOLOS develop
 ## Introduction
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Only Linux is supported as a development OS. For Windows and MacOS users, a Linux VM is recommended." %}
+{% include alert.html style="warning" text="Only Linux is supported as a development OS. For Windows and MacOS users, a Linux VM is recommended." %}
 <!--  -->
 
 Developing and / or compiling BOLOS applications requires the SDK matching the appropriate device (the Nano S, X SDK or the Blue SDK) as well as the following two compilers:
