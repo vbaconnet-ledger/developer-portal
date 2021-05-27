@@ -4,704 +4,704 @@
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/00_header/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/00_header/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "General TOC",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/CI/01_general_toc/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/01_general_toc/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "General Process",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/10_general_process/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/10_general_process/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Modules – General Architecture",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/20_modules/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/20_modules/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Prerequisites",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/30_live_prerequisites/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/30_live_prerequisites/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/40_live_coin_integration/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/40_live_coin_integration/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding *MyCoin* to CryptoAssets library",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/41_live_cryptoassets/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/41_live_cryptoassets/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding *MyCoin* Nano App JS Bindings",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/42_live_app_bindings/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/42_live_app_bindings/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Live-Common",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/43_live_common/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/43_live_common/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live Desktop and Mobile",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/44_live_frontend/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/44_live_frontend/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Testing",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/50_live_tests/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/50_live_tests/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Getting your Ledger Live running",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/51_live_on_desktop/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/51_live_on_desktop/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Building iOS Dev App",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/52_live_install_ios/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/52_live_install_ios/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Building Android Dev App",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/53_live_install_android/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/53_live_install_android/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Running iOS and Android Dev Apps",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/54_live_run_on_ios_android/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/54_live_run_on_ios_android/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "General CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/55_live_gen_cli/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/55_live_gen_cli/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Specific CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/56_live_spe_cli/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/56_live_spe_cli/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "JavaScript Coding Guidelines",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/CI/60_live_guidelines/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/CI/60_live_guidelines/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/00_header/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/00_header/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "External Documentation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/a_external_docs/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/a_external_docs/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Publishing an Application",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/a_publishing_an_app/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/a_publishing_an_app/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Developing Secure Ledger Apps",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/a_security_guidelines/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/a_security_guidelines/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Application Environment",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/b_application_environment/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/b_application_environment/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "BOLOS Features",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/b_features/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/b_features/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Hardware Architecture",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/b_hardware_architecture/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/b_hardware_architecture/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/b_overview/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/b_overview/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Application Isolation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/bg_application_isolation/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/bg_application_isolation/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "HD Key Generation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/bg_hd_keys/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/bg_hd_keys/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Applications for HD Trees",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/bg_hd_use_cases/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/bg_hd_use_cases/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "The Master Seed",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/bg_master_seed/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/bg_master_seed/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/bg_personal_security_devices/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/bg_personal_security_devices/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Developing a Nano App",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/start_here/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/start_here/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Advanced display management",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_advanced_display_management/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_advanced_display_management/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Memory alignment",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_alignment/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_alignment/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Application Structure and I/O",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_application_structure/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_application_structure/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Application Debug",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_debugging/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_debugging/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Display Management",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_display_management/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_display_management/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Low-level display management",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_low_level_display_management/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_low_level_display_management/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Persistent Storage and PIC",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_memory/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_memory/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Setting it up",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_setup/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_setup/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Emulating devices with Speculos",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_speculos/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_speculos/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Interaction Between BOLOS and Apps",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_syscalls/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_syscalls/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Common Pitfalls and Troubleshooting",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_troubleshooting/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_troubleshooting/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Writing Apps",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/NA/u_writing_apps/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/NA/u_writing_apps/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Continuous Integration",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/d_ci/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/d_ci/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Getting Started",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/d_getting_started/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/d_getting_started/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Developer documentation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/d_index/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/d_index/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Internals",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/d_internals/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/d_internals/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Tests",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/d_tests/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/d_tests/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Linux",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/i_build/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/i_build/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Installation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/i_index/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/i_index/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Windows (with WSL 2)",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/i_wsl/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/i_wsl/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Speculos documentation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/index/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/index/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Automation - press buttons automatically",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_automation/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_automation/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Clients - how to send APDUs",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_clients/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_clients/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Debug - how to use GDB",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_debug/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_debug/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Docker",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_docker/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_docker/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "User",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_index/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_index/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Semihosting as an additional debug mechanism",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_semihosting/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_semihosting/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Usage",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/SP/u_usage/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/SP/u_usage/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding alerts to content",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/alerts/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/alerts/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Google Analytics",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/TMPL/analytics/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/analytics/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/boxes/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/boxes/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/boxes_integrations/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/boxes_integrations/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/boxes_toolboxes/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/boxes_toolboxes/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Creating a changelog",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/changelog/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/changelog/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Enabling comments (via Disqus)",
       "category" : "",
       "tags"     : "",
-      "url"      : "/unos/docs/TMPL/comments/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/comments/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Contact form (via FormSpree)",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/contact/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/contact/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Call to action section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/cta/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/cta/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Customization",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/unos/docs/TMPL/customize/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/customize/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Development",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/unos/docs/TMPL/development/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/development/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Creating docs posts",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/docs/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/docs/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Frequently asked questions section",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/unos/docs/TMPL/faq/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/faq/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Fearured docs section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/featured/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/featured/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Footer options",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/footer/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/footer/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Hero page header",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/hero/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/hero/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Theme installation",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/installation/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/installation/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding media to post and doc content",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/unos/docs/TMPL/media/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/media/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Navigation bar",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/navigation/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/navigation/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Updating your billing credit card - HERE2",
       "category" : "",
       "tags"     : "othertag",
-      "url"      : "/unos/docs/TMPL/pages/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/pages/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Creating your first post in Jekyll",
       "category" : "",
       "tags"     : "featured",
-      "url"      : "/unos/docs/TMPL/posts/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/posts/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Basic theme setup",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/unos/docs/TMPL/setup/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/setup/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Sources and credits",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/unos/docs/TMPL/sources/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/sources/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Contacting support",
       "category" : "",
       "tags"     : "help, customize",
-      "url"      : "/unos/docs/TMPL/support/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/support/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Team members section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/team/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/team/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Adding table of contents to docs",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/unos/docs/TMPL/toc/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/toc/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Translation",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/unos/docs/TMPL/translation/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/translation/",
+      "date"     : ""
     } ,
   
     {
       "title"    : "Video lightbox boxes section",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/unos/docs/TMPL/videos/",
-      "date"     : "2021-05-19 17:00:22 +0200"
+      "url"      : "/docs/TMPL/videos/",
+      "date"     : ""
     } 
   
 ]
