@@ -24,6 +24,7 @@
   - CI/54_live_run_on_ios_android
   - CI/55_live_gen_cli
   - CI/56_live_spe_cli
+  - CI/57_live_tests_android_ios
 
 - title: Guidelines
   docs:
