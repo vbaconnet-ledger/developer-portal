@@ -13,14 +13,14 @@ layout: doc_ci
 
 
 
-Testing the Live-common Bridge [](https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/1809613975/Ledger-live-common+QA#Setup)
+Testing the Live-common Bridge [here](../58_live_common_test_framework)
 
 
 ## What to test
 
-see General CLI Checklist - User tests [here](../55_live_gen_cli)  
+see General CLI Checklist - User tests [here](../55_live_gen_cli)
 
-see Specific CLI Checklist - User tests [here](../56_live_spe_cli)  
+see Specific CLI Checklist - User tests [here](../56_live_spe_cli)
 
 
 
