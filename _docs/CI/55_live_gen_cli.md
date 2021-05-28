@@ -2,7 +2,7 @@
 title: General CLI Checklist - User tests
 subtitle:
 tags: []
-author: 
+author:
 layout: doc_ci
 ---
 
@@ -32,10 +32,8 @@ No toc originally here
 
 # How-to test
 
-Sync
+[Sync](../58_live_common_test_framework/#sync-accounts)
 
- https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/1809613975/Ledger-live-common+QA#Sync
 
-Send
+[Send](../58_live_common_test_framework/#send-get-transaction-status)
 
-https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/1809613975/Ledger-live-common+QA#Send-(Only-verify-that-transaction-status-is-OK)
