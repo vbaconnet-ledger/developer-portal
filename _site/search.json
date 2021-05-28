@@ -369,6 +369,30 @@
     } ,
   
     {
+      "title"    : "Python tools for Ledger Hardware Wallets",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/unos/docs/PL/01_readme/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Scripts",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/unos/docs/PL/11_scripts/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Script reference",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/unos/docs/PL/12_script_reference/",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Continuous Integration",
       "category" : "",
       "tags"     : "",

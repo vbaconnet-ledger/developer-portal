@@ -8,6 +8,6 @@
 - title: Python Loader
   desc: Lean about all the options, features and how to use them
   icon: settings
-  doc: TMPL/hero
+  doc: PL/01_readme
 
 
