@@ -96,10 +96,4 @@ yarn run android
 yarn start
 ```
 
-These pages can be useful
-
-https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/2177138906/iOS+build+on+macOS
-
-https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/2548924630/Run+tests+on+emulated+Android+and+iOS
-
 ---
