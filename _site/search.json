@@ -81,14 +81,6 @@
     } ,
   
     {
-      "title"    : "",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/CI/45_live_tests_android_ios/",
-      "date"     : ""
-    } ,
-  
-    {
       "title"    : "Testing",
       "category" : "",
       "tags"     : "",
@@ -141,6 +133,14 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/unos/docs/CI/56_live_spe_cli/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Run tests on emulated Android and iOS",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/unos/docs/CI/57_live_tests_android_ios/",
       "date"     : ""
     } ,
   

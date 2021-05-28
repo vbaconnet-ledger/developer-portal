@@ -1,5 +1,5 @@
 ---
-title: Coin Integration : Run tests on emulated Android and iOS
+title: Run tests on emulated Android and iOS
 subtitle:
 tags: []
 author: Guillaume Lethuillier
@@ -55,7 +55,4 @@ Then, pair the Nano using the IP address provided in the preliminary steps
 | `$ yarn run ios` <br> Expected output: <br>  <video controls muted  preload='none' poster='../../../uploads/images/CI/2548924630/terminal3-IOS-poster.png'><source src="../../../uploads/images/CI/2548924630/Terminal3-IOS.mp4" type='video/mp4'></video>  <br> At this stage, both the emulator and the Mobile app start.|
 
 Then, pair the Nano using the IP address provided in the preliminary steps
-
-
-
 
