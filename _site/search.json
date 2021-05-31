@@ -4,198 +4,279 @@
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/00_header/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/00_header/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "General TOC",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/01_general_toc/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/01_general_toc/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "General Process",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/10_general_process/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/10_general_process/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Modules – General Architecture",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/20_modules/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/20_modules/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Prerequisites",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/30_live_prerequisites/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/30_live_prerequisites/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/40_live_coin_integration/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/40_live_coin_integration/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding *MyCoin* to CryptoAssets library",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/41_live_cryptoassets/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/41_live_cryptoassets/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding *MyCoin* Nano App JS Bindings",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/42_live_app_bindings/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/42_live_app_bindings/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Live-Common",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/43_live_common/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/43_live_common/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live Desktop and Mobile",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/44_live_frontend/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/44_live_frontend/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Testing",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/50_live_tests/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/50_live_tests/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Getting your Ledger Live running",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/51_live_on_desktop/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/51_live_on_desktop/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Building iOS Dev App",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/52_live_install_ios/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/52_live_install_ios/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Building Android Dev App",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/53_live_install_android/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/53_live_install_android/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Running iOS and Android Dev Apps",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/54_live_run_on_ios_android/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/54_live_run_on_ios_android/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "General CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/55_live_gen_cli/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/55_live_gen_cli/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Specific CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/56_live_spe_cli/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
@@ -218,324 +299,459 @@
       "url"      : "/unos/docs/CI/58_live_common_test_framework/",
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/56_live_spe_cli/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "JavaScript Coding Guidelines",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/CI/60_live_guidelines/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/CI/60_live_guidelines/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/00_header/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/00_header/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "External Documentation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/a_external_docs/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/a_external_docs/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Publishing an Application",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/a_publishing_an_app/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/a_publishing_an_app/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Developing Secure Ledger Apps",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/a_security_guidelines/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/a_security_guidelines/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Application Environment",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/b_application_environment/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/b_application_environment/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "BOLOS Features",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/b_features/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/b_features/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Hardware Architecture",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/b_hardware_architecture/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/b_hardware_architecture/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/b_overview/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/b_overview/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Application Isolation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/bg_application_isolation/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/bg_application_isolation/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "HD Key Generation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/bg_hd_keys/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/bg_hd_keys/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Applications for HD Trees",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/bg_hd_use_cases/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/bg_hd_use_cases/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "The Master Seed",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/bg_master_seed/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/bg_master_seed/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/bg_personal_security_devices/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/bg_personal_security_devices/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Developing a Nano App",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/start_here/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/start_here/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Advanced display management",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_advanced_display_management/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_advanced_display_management/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Memory alignment",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_alignment/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_alignment/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Application Structure and I/O",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_application_structure/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_application_structure/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Application Debug",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_debugging/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_debugging/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Display Management",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_display_management/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_display_management/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Low-level display management",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_low_level_display_management/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_low_level_display_management/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Persistent Storage and PIC",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_memory/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_memory/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Setting it up",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_setup/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_setup/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Emulating devices with Speculos",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_speculos/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_speculos/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Interaction Between BOLOS and Apps",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_syscalls/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_syscalls/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Common Pitfalls and Troubleshooting",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_troubleshooting/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_troubleshooting/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Writing Apps",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/NA/u_writing_apps/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
@@ -566,534 +782,758 @@
       "url"      : "/unos/docs/PL/12_script_reference/",
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/NA/u_writing_apps/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Continuous Integration",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/d_ci/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/d_ci/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Getting Started",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/d_getting_started/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/d_getting_started/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Developer documentation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/d_index/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/d_index/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Internals",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/d_internals/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/d_internals/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Tests",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/d_tests/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/d_tests/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Linux",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/i_build/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/i_build/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Installation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/i_index/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/i_index/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Windows (with WSL 2)",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/i_wsl/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/i_wsl/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Speculos documentation",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/index/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/index/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Automation - press buttons automatically",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_automation/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_automation/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Clients - how to send APDUs",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_clients/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_clients/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Debug - how to use GDB",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_debug/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_debug/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Docker",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_docker/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_docker/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "User",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_index/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_index/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Semihosting as an additional debug mechanism",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_semihosting/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_semihosting/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Usage",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/SP/u_usage/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/SP/u_usage/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding alerts to content",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/alerts/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/alerts/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Google Analytics",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/analytics/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/analytics/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/boxes/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/boxes/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/boxes_integrations/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/boxes_integrations/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/boxes_toolboxes/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/boxes_toolboxes/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Creating a changelog",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/changelog/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/changelog/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Enabling comments (via Disqus)",
       "category" : "",
       "tags"     : "",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/comments/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/comments/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Contact form (via FormSpree)",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/contact/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/contact/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Call to action section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/cta/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/cta/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Customization",
       "category" : "",
       "tags"     : "customize",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/customize/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/customize/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Development",
       "category" : "",
       "tags"     : "customize",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/development/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/development/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Creating docs posts",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/docs/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/docs/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Frequently asked questions section",
       "category" : "",
       "tags"     : "features, featured",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/faq/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/faq/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Fearured docs section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/featured/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/featured/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Footer options",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/footer/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/footer/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Hero page header",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/hero/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/hero/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Theme installation",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/installation/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/installation/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding media to post and doc content",
       "category" : "",
       "tags"     : "features, featured",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/media/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/media/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Navigation bar",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/navigation/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/navigation/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Updating your billing credit card - HERE2",
       "category" : "",
       "tags"     : "othertag",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/pages/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/pages/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Creating your first post in Jekyll",
       "category" : "",
       "tags"     : "featured",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/posts/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/posts/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Basic theme setup",
       "category" : "",
       "tags"     : "setup",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/setup/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/setup/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Sources and credits",
       "category" : "",
       "tags"     : "customize",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/sources/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/sources/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Contacting support",
       "category" : "",
       "tags"     : "help, customize",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/support/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/support/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Team members section",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/team/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/team/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Adding table of contents to docs",
       "category" : "",
       "tags"     : "features",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/toc/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/toc/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Translation",
       "category" : "",
       "tags"     : "customize",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/translation/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/translation/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } ,
   
     {
       "title"    : "Video lightbox boxes section",
       "category" : "",
       "tags"     : "features, featured",
+<<<<<<< HEAD
       "url"      : "/unos/docs/TMPL/videos/",
 <<<<<<< HEAD
       "date"     : "2021-05-31 14:42:28 +0200"
 =======
       "date"     : ""
 >>>>>>> a50a5fa19b856a8e581047c0d9b195403270493d
+=======
+      "url"      : "/docs/TMPL/videos/",
+      "date"     : ""
+>>>>>>> parent of 88b5b96 (2021-05-31, 14:37)
     } 
   
 ]
