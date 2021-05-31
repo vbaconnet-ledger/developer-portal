@@ -4,1184 +4,704 @@
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/00_header/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/00_header/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "General TOC",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/01_general_toc/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/01_general_toc/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "General Process",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/10_general_process/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/10_general_process/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Modules – General Architecture",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/20_modules/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/20_modules/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Prerequisites",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/30_live_prerequisites/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/30_live_prerequisites/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/40_live_coin_integration/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/40_live_coin_integration/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding *MyCoin* to CryptoAssets library",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/41_live_cryptoassets/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/41_live_cryptoassets/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding *MyCoin* Nano App JS Bindings",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/42_live_app_bindings/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/42_live_app_bindings/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Live-Common",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/43_live_common/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/43_live_common/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding *MyCoin* to Ledger Live Desktop and Mobile",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/44_live_frontend/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/44_live_frontend/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Testing",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/50_live_tests/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/50_live_tests/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Getting your Ledger Live running",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/51_live_on_desktop/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/51_live_on_desktop/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Building iOS Dev App",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/52_live_install_ios/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/52_live_install_ios/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Building Android Dev App",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/53_live_install_android/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/53_live_install_android/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Running iOS and Android Dev Apps",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/54_live_run_on_ios_android/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/54_live_run_on_ios_android/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "General CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/55_live_gen_cli/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/55_live_gen_cli/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Specific CLI Checklist - User tests",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/56_live_spe_cli/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/56_live_spe_cli/",
-      "date"     : "2021-05-31 14:21:29 +0200"
-    } ,
-  
-    {
-      "title"    : "Run tests on emulated Android and iOS",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/CI/57_live_tests_android_ios/",
-      "date"     : "2021-05-31 14:21:29 +0200"
-    } ,
-  
-    {
-      "title"    : "Live Common Bridge Test Framework",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/CI/58_live_common_test_framework/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "JavaScript Coding Guidelines",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/CI/60_live_guidelines/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/CI/60_live_guidelines/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "00_header",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/00_header/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/00_header/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "External Documentation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/a_external_docs/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/a_external_docs/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Publishing an Application",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/a_publishing_an_app/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/a_publishing_an_app/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Developing Secure Ledger Apps",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/a_security_guidelines/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/a_security_guidelines/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Application Environment",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/b_application_environment/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/b_application_environment/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "BOLOS Features",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/b_features/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/b_features/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Hardware Architecture",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/b_hardware_architecture/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/b_hardware_architecture/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/b_overview/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/b_overview/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Application Isolation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/bg_application_isolation/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/bg_application_isolation/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "HD Key Generation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/bg_hd_keys/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/bg_hd_keys/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Applications for HD Trees",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/bg_hd_use_cases/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/bg_hd_use_cases/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "The Master Seed",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/bg_master_seed/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/bg_master_seed/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/bg_personal_security_devices/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/bg_personal_security_devices/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Developing a Nano App",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/start_here/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/start_here/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Advanced display management",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_advanced_display_management/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_advanced_display_management/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Memory alignment",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_alignment/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_alignment/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Application Structure and I/O",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_application_structure/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_application_structure/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Application Debug",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_debugging/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_debugging/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Display Management",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_display_management/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_display_management/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Low-level display management",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_low_level_display_management/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_low_level_display_management/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Persistent Storage and PIC",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_memory/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_memory/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Setting it up",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_setup/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_setup/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Emulating devices with Speculos",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_speculos/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_speculos/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Interaction Between BOLOS and Apps",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_syscalls/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_syscalls/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Common Pitfalls and Troubleshooting",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_troubleshooting/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_troubleshooting/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Writing Apps",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/NA/u_writing_apps/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/NA/u_writing_apps/",
-      "date"     : "2021-05-31 14:21:29 +0200"
-    } ,
-  
-    {
-      "title"    : "Python tools for Ledger Hardware Wallets",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/PL/01_readme/",
-      "date"     : "2021-05-31 14:21:29 +0200"
-    } ,
-  
-    {
-      "title"    : "Scripts",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/PL/11_scripts/",
-      "date"     : "2021-05-31 14:21:29 +0200"
-    } ,
-  
-    {
-      "title"    : "Script reference",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/unos/docs/PL/12_script_reference/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Continuous Integration",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/d_ci/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/d_ci/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Getting Started",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/d_getting_started/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/d_getting_started/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Developer documentation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/d_index/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/d_index/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Internals",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/d_internals/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/d_internals/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Tests",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/d_tests/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/d_tests/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Linux",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/i_build/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/i_build/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Installation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/i_index/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/i_index/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Windows (with WSL 2)",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/i_wsl/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/i_wsl/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Speculos documentation",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/index/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/index/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Automation - press buttons automatically",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_automation/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_automation/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Clients - how to send APDUs",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_clients/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_clients/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Debug - how to use GDB",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_debug/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_debug/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Docker",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_docker/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_docker/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "User",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_index/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_index/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Semihosting as an additional debug mechanism",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_semihosting/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_semihosting/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Usage",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/SP/u_usage/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/SP/u_usage/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding alerts to content",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/alerts/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/alerts/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Google Analytics",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/analytics/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/analytics/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/boxes/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/boxes/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/boxes_integrations/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/boxes_integrations/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/boxes_toolboxes/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/boxes_toolboxes/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Creating a changelog",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/changelog/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/changelog/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Enabling comments (via Disqus)",
       "category" : "",
       "tags"     : "",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/comments/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/comments/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Contact form (via FormSpree)",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/contact/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/contact/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Call to action section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/cta/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/cta/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Customization",
       "category" : "",
       "tags"     : "customize",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/customize/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/customize/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Development",
       "category" : "",
       "tags"     : "customize",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/development/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/development/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Creating docs posts",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/docs/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/docs/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Frequently asked questions section",
       "category" : "",
       "tags"     : "features, featured",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/faq/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/faq/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Fearured docs section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/featured/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/featured/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Footer options",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/footer/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/footer/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Hero page header",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/hero/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/hero/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Theme installation",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/installation/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/installation/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding media to post and doc content",
       "category" : "",
       "tags"     : "features, featured",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/media/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/media/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Navigation bar",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/navigation/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/navigation/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Updating your billing credit card - HERE2",
       "category" : "",
       "tags"     : "othertag",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/pages/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/pages/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Creating your first post in Jekyll",
       "category" : "",
       "tags"     : "featured",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/posts/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/posts/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Basic theme setup",
       "category" : "",
       "tags"     : "setup",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/setup/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/setup/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Sources and credits",
       "category" : "",
       "tags"     : "customize",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/sources/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/sources/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Contacting support",
       "category" : "",
       "tags"     : "help, customize",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/support/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/support/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Team members section",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/team/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/team/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Adding table of contents to docs",
       "category" : "",
       "tags"     : "features",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/toc/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/toc/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Translation",
       "category" : "",
       "tags"     : "customize",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/translation/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/translation/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } ,
   
     {
       "title"    : "Video lightbox boxes section",
       "category" : "",
       "tags"     : "features, featured",
-<<<<<<< Updated upstream
-      "url"      : "/docs/TMPL/videos/",
-      "date"     : ""
-=======
       "url"      : "/unos/docs/TMPL/videos/",
-      "date"     : "2021-05-31 14:21:29 +0200"
->>>>>>> Stashed changes
+      "date"     : "2021-05-31 14:42:28 +0200"
     } 
   
 ]
