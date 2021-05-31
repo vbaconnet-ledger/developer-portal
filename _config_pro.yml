@@ -1,0 +1,5 @@
+# Site subpath, e.g. /blog
+# Site base hostname & protocol, e.g. http://example.com
+
+baseurl:            /unos
+url:                https://blog.ledger.com
