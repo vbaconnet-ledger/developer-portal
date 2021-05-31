@@ -8,7 +8,7 @@ author: parkerhoyes
 layout: doc_pl
 ---
 
-## Python tools for Ledger Blue, Nano S and Nano X
+## Introduction
 
 This package contains Python tools to communicate with Ledger Blue, Nano S and Nano X and manage applications life cycle.
 
