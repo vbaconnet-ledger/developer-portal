@@ -62,7 +62,7 @@
 }
 
 @mixin hook-button(){
-    border-radius: 30px;
+    border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
 }
 
 @mixin hook-button-misc(){
@@ -551,7 +551,7 @@
         margin-top: -28px;
         margin-bottom: 30px;
         img {
-            max-height: 220px;
+            max-height: 340px; // FC 2021-06-01 1216 Height of the top image on the Landing page
         }
     }
     
@@ -624,7 +624,7 @@
             display: block;
             font-size: $text-lead-font-size;
             overflow: hidden;
-            border: solid 0px $border-light;
+            border: solid 1px $border-light; //FC 2021-06-01 1119 to add a separator betw popular articles
             border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;

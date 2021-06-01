@@ -4,6 +4,8 @@
 
 // System fonts
 @import "system-font-css/_system-font";
+//@import "system-font-css/MuseoSans_500.otf"; //FC 2021-06-01 1146
+//@import "../assets/css/MuseoSans_500.otf"; //FC 2021-06-01 1146
 
 // Custom variables and variable overwrites.
 @import "theme/variables";
@@ -18,7 +20,7 @@
 // Import UIkit.
 @import "theme/uikit";
 
-// Other vendor styles
+// Other vendor styles : Code Syntax highlighting
 // @import "syntax-highlighting/cld";  // Coloured
 // @import "syntax-highlighting/bw";
 @import "syntax-highlighting/hl"; //#FC 2021-04-28 1550
