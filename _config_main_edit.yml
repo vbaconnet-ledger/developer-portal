@@ -13,79 +13,79 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               avatar-francesco.png  # FC 2021-06-01 1216 ***
+logo:               favicon.png  # CF 2021-06-01 1520 ***
 
 navbar:
     sticky:         true
     search:         true
-  
+
 # Default author settings
 author:
     name:           Francesco Cipollone
-    title:          Tech writer  
+    title:          Tech writer
     avatar:         avatar-francesco.png
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     fabrice:
       name:         Fabrice Dautriat
-      title:        Product Coin Integration     
+      title:        Product Coin Integration
       avatar:       avatar-fabrice.jpg
     francesco:
       name:         Francesco Cipollone
-      title:        Tech writer  
+      title:        Tech writer
       avatar:       avatar-francesco.png
     guillaume:
       name:         Guillaume Lethuillier
-      title:        QA Development Engineer    
+      title:        QA Development Engineer
       avatar:       avatar-guillaume.jpg
     hakim:
       name:         Hakim Aammar
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-hakim.jpg
     henri:
       name:         Henri Ly
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-henri.jpg
     remi_j:
       name:         Remi Jarasson
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-remi_j.jpg
     gerry:
       name:         Gerry Agbobada
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-gerry.jpg
     leo:
       name:         Leo Lehmann
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-leo.png
     nafissa:
       name:         Nafissa Ndiaye
-      title:        Nano App Product manager     
+      title:        Nano App Product manager
       avatar:       avatar-nafissa.jpg
     pierre:
       name:         Pierre Pollastri
-      title:        Lead Engineer     
+      title:        Lead Engineer
       avatar:       avatar-pierre.jpg
     remi_b:
       name:         Remi Barjon
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-remi_b.jpg
     pscott:
       name:         pscott
-      title:        Firmware Applications Engineer     
+      title:        Firmware Applications Engineer
       avatar:       avatar-pscott.jpg
     Tamtamhero:
       name:         Tamtamhero
-      title:        Firmware Developer     
+      title:        Firmware Developer
       avatar:       avatar-tamtamhero.jpg
     niooss:
       name:         niooss-ledger
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-niooss.png
     greenknot:
       name:         greenknot
-      title:        Security     
+      title:        Security
       avatar:       avatar-greenknot.png
     thomas:
       name:         Thomas Julien
@@ -97,27 +97,27 @@ authors:
       avatar:       avatar-celia.png
     john:
       name:         John Brown
-      title:        Support     
+      title:        Support
       avatar:       avatar-john.png
     evan:
       name:         Evan Wells
-      title:        Support    
+      title:        Support
       avatar:       avatar-evan.png
     sara:
       name:         Sara Galen
-      title:        Lead Developer     
+      title:        Lead Developer
       avatar:       avatar-sara.png
     alex:
       name:         Alex Koch
-      title:        Design Engineer     
+      title:        Design Engineer
       avatar:       avatar-alex.png
     daniel:
       name:         Daniel Shultz
-      title:        Developer      
+      title:        Developer
       avatar:       avatar-daniel.png
     tom:
       name:         Tom Farrell
-      title:        Developer     
+      title:        Developer
       avatar:       avatar-tom.png
 
 # Social icons displayed in footer
@@ -140,7 +140,7 @@ social:
 share:
     post:           true # Display share buttons on a post page
     doc:            true # Display share buttons on a doc page
-    twitter:        username # Enable by adding Twitter handle 
+    twitter:        username # Enable by adding Twitter handle
     facebook:       true # Enable by setting true (Facebook handle not required)
 
 # Default footer image settings
@@ -167,9 +167,9 @@ uploads:            /uploads/
 markdown:           kramdown
 highlighter:        rouge
 
-kramdown:                                         
-  syntax_highlighter: rouge                                      
-sass:                                                     
+kramdown:
+  syntax_highlighter: rouge
+sass:
   style: :expanded
 
 plugins:
