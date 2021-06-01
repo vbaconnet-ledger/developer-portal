@@ -8,9 +8,9 @@ author: parkerhoyes
 layout: doc_pl
 ---
 
-## Python tools for Ledger Blue, Nano S and Nano X
+## Introduction
 
-This package contains Python tools to communicate with Ledger Blue, Nano S and Nano X and manage applications life cycle.
+This package contains tools to communicate with Ledger Blue, Nano S and Nano X and manage applications life cycle.
 
 It is recommended to install this package in a [Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) in your native environment (not a Docker image) to avoid hidapi issues.
 
