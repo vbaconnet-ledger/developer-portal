@@ -13,7 +13,7 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               avatar-francesco.png  # FC 2021-06-01 1216 ***
+logo:               favicon.png  # FC 2021-06-01 1216 ***
 
 navbar:
     sticky:         true
