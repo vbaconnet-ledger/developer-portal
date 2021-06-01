@@ -1,4 +1,4 @@
----
+--- 
 title: Python tools for Ledger Hardware Wallets
 subtitle: Apps loader
 tags: []
@@ -8,9 +8,9 @@ author: parkerhoyes
 layout: doc_pl
 ---
 
-## Introduction Introduction
+## Introduction
 
-This package contains tools to communicate with Ledger Blue, Nano S and Nano X and manage applications life cycle.
+The Python loader is  tool to communicate with Ledger Blue, Nano S and Nano X and manage applications life cycle.
 
 It is recommended to install this package in a [Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) in your native environment (not a Docker image) to avoid hidapi issues.
 
