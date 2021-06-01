@@ -2,4 +2,4 @@
 # Site base hostname & protocol, e.g. http://example.com
 
 baseurl:            /unos
-url:                https://developer.ledger.com
+url:                https://blog.ledger.com
