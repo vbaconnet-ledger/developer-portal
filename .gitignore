@@ -1,5 +1,4 @@
 _site
-*.html
 .DS_Store
 /_docs/.DS_Store/
 
