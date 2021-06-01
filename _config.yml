@@ -13,7 +13,7 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               
+logo:               avatar-francesco.png  # FC 2021-06-01 1216 ***
 
 navbar:
     sticky:         true
@@ -213,5 +213,5 @@ defaults:
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com
 
-baseurl:            /unos
-url:                https://blog.ledger.com
+baseurl:            ""
+url:                ""
