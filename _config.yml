@@ -5,7 +5,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Ledger Developer Pages
+title:              Ledger Developer pages
 description:        Integrating with Ledger Live
 lang:               en
 
@@ -13,7 +13,7 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               favicon.png  # CF 2021-06-01 1520 ***
+logo:               favicon.png  # FC 2021-06-01 1216 ***
 
 navbar:
     sticky:         true
@@ -213,5 +213,5 @@ defaults:
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com
 
-baseurl:            ""
-url:                ""
+baseurl:            /unos
+url:                https://blog.ledger.com
