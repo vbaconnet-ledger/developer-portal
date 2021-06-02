@@ -10,10 +10,10 @@
   icon: settings
   doc: CI/10_general_process
 
-- title: Ledger Live Apps
+- title: DApps Integration
   desc: Get Started integrating your service in Ledger Live
   icon: code
-  doc: TMPL/customize
+  doc: DA/01_readme
 
 - title: API
   desc: Get started fast with using Ledger APIs with detailed instructions
