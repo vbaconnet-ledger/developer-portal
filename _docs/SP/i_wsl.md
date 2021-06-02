@@ -11,7 +11,7 @@ layout: doc_sp
 * TOC
 {:toc}
 
-Building in WSL 2 (Windows Subsystem for Linux 2) is identical to the procedure in [building](build.md).
+Building in WSL 2 (Windows Subsystem for Linux 2) is identical to the procedure in [building](https://blog.ledger.com/unos/docs/SP/i_build/).
 
 Using Speculos with display features requires correctly exporting the X display.
 
