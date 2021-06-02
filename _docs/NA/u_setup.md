@@ -31,7 +31,7 @@ Developing and / or compiling BOLOS applications requires the SDK matching the a
 
 The Makefiles used by our BOLOS applications look for gcc and clang installations using the `PATH` environment variable.
 
-If you don't want to install specific versions of clang and gcc directly on your system, simply prepend their location in your `PATH` environment variable. 
+If you don't want to install specific versions of clang and gcc directly on your system, simply prepend their location in your `PATH` environment variable.
 
 ``` bash
 ## GCC

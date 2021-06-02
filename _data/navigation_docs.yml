@@ -125,6 +125,7 @@
 
 - title: installation
   docs:
+  - SP/start_here
   - SP/i_build
   - SP/i_wsl
 
@@ -141,6 +142,8 @@
   docs:
   - SP/d_getting_started
   - SP/d_tests
+  - SP/d_ci
+  - d_internals
 
 - title: Contents
   docs:
