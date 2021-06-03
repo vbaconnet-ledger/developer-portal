@@ -1,5 +1,5 @@
 ---
-title: Setting it up 2021-06-03 0957
+title: Setting it up 
 subtitle: Where's the On switch?
 tags: []
 toc: true
