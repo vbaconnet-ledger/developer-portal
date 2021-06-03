@@ -1,5 +1,5 @@
 {% if include.email %}
-<form class="uk-form-stacked uk-margin-medium-top" method="POST" action="https://formspree.io/{{ include.email }}" accept-charset="UTF-8">
+<form class="uk-form-stacked uk-margin-medium-top" action="https://formkeep.com/f/ba77092f506a" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
     {% if include.name == 'true' %}
     <div class="uk-margin-medium-bottom">
         <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_name | default: "Name" }}</label>
@@ -18,14 +18,11 @@
     <div class="uk-margin-medium-bottom">
         <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_subject | default: "Subject" }}</label>
         <div class="uk-form-controls">
-          <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_subject | default: "Subject" }}</label>
-          <div class="uk-form-controls">
-              <select name="_subject">
-                <option value="nanoapp">I'm building a Nano App</option>
-                <option value="dapp">I'm building a DApp</option>
-                <option value="other">Other</option>
-              </select>
-          </div>
+            <select name="_subject">
+              <option value="nanoapp">I'm building a Nano App</option>
+              <option value="dapp">I'm building a DApp</option>
+              <option value="other">Other</option>
+            </select>
         </div>
     </div>
     {% endif %}
