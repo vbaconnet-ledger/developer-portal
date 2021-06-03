@@ -12,4 +12,4 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 <!-- {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}-->
 
 
-{% include formkeep.html redirect="/thanks/" name="true" subject="true" %}
+{% include formkeep.html %}
