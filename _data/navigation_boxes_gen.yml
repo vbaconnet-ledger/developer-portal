@@ -10,13 +10,13 @@
   icon: settings
   doc: CI/10_general_process
 
-- title: DApps Integration
+- title: DApp Integration
   desc: Get Started integrating your service in Ledger Live
   icon: code
   doc: DA/01_readme
 
-- title: API
-  desc: Get started fast with using Ledger APIs with detailed instructions
+- title: ERC-20
+  desc: How to get your token in Ledger Live 
   icon: download
-  doc: TMPL/customize
+  doc: ET/01_readme
 
