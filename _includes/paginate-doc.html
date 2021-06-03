@@ -1,4 +1,18 @@
-{% assign docs = site.data.navigation_docs | map: 'docs' | join: ',' | split: ',' %}
+{% assign url = page.url | split: "/" %}
+{% assign category = url[2] %}
+
+{% if category == "NA" %}
+  {% assign docs = site.data.navigation_docs_na | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "CI"  %}
+  {% assign docs = site.data.navigation_docs_ci | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "DA"  %}
+  {% assign docs = site.data.navigation_docs_da | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "SP"  %}
+  {% assign docs = site.data.navigation_docs_sp | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "PL"  %}
+  {% assign docs = site.data.navigation_docs_pl | map: 'docs' | join: ',' | split: ',' %}
+{% endif %}
+
 
 {% for document in docs %}
   {% assign document_url = document | prepend:"/docs/" | append:"/" %}
@@ -10,8 +24,9 @@
                 {% else %}
                   {% assign previous = forloop.index0 | minus: 1 %}
                   {% assign previous_page = docs[previous] | prepend:"/unos/docs/" | append:"/" %}
-                  {% assign previous_doc = site.docs | where:"url", previous_page | first %}
-                    <h5 class="uk-text-right">{{previous_doc.title}}</h5>
+                  {% assign previous_title = docs[previous] | prepend:"/docs/" | append:"/" %}
+                  {% assign previous_doc = site.docs | where:"url", previous_title | first %}
+                    <h5>{{previous_doc.title}}</h5>
                     <div><a class="remove-underline hvr-back" href="{{previous_page}}">&larr; {{ site.data.translation[site.lang].previous | default: "Previous" }}</a></div>
                 {% endif %}
             </div>
@@ -20,7 +35,8 @@
                 {% else %}
                   {% assign next = forloop.index0 | plus: 1 %}
                   {% assign next_page = docs[next] | prepend:"/unos/docs/" | append:"/" %}
-                  {% assign next_doc = site.docs | where:"url", next_page | first %}
+                  {% assign next_title = docs[next] | prepend:"/docs/" | append:"/" %}
+                  {% assign next_doc = site.docs | where:"url", next_title | first %}
                     <h5 class="uk-text-right">{{next_doc.title}}</h5>
                     <div class="uk-text-right"><a class="remove-underline hvr-forward" href="{{next_page}}">{{ site.data.translation[site.lang].next | default: "Next" }} &rarr;</a></div>
                 {% endif %}
