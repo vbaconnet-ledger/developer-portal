@@ -27,24 +27,25 @@ layout: doc_ci
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.
 Nowadays, they are also functionally complex: it’s no longer just about sending and receiving a single currency, we see more and more individual projects with their own purpose and identity, their own innovative features, such as staking, rewards, tokens, smart contracts, on-chain governance, etc…
 
-Therefore, every new coin integration calls for a preliminary analysis, to gather all information about the coin before being able to start coding, making sure nothing is left in the shadow. In order to do so, this pre-analysis has to cover both the functional and technical aspects of the coin.  
+Therefore, every new coin integration calls for a preliminary analysis, to gather all information about the coin before being able to start coding, making sure nothing is left in the shadow. In order to do so, this pre-analysis has to cover both the functional and technical aspects of the coin.
 
 ***
 ## Technical Assessment
 
 <!-- ------------- Image ------------- -->
 <img width="395" height="548" src="../../../uploads/images/CI/technical_assessment.png " style="float:right">
-<!-- --------------------------------- -->  
-  
+<!-- --------------------------------- -->
+
 <!-- ------------- Image ------------- -->
 [//]: 488 × 677
 [//]: !technical_assessment(/../../uploads/images/technical_assessment.png)
 <!-- --------------------------------- -->
 
-The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the gereric and specific aspects.
+The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the generic and specific aspects.
 
-To do this, please download and fill in the form provided, to guide you along.
-[technical_assessment_v1.pdf](../../files/technical_assessment_v1.pdf)   
+This filled out form is an exemple of how you can achieve this first step: [technical_assessment_polkadot_v2.pdf](../../../files/technical_assessment_polkadot_v2.pdf)
+
+Get in touch with your usual contact at Ledger to fill your own form.
 
 
 Secondly, choices must be made concerning the Specific features.
