@@ -1,5 +1,6 @@
 - title: Installation
   docs:
+  - SP/start_here
   - SP/i_build
   - SP/i_wsl
 

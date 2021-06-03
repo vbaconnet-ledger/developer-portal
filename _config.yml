@@ -5,7 +5,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Ledger Developer pages
+title:              Ledger Developer Pages
 description:        Integrating with Ledger Live
 lang:               en
 
@@ -124,17 +124,17 @@ authors:
 social:
     email:
     website:
-    facebook:       https://www.facebook.com/
+    facebook:       https://www.facebook.com/Ledger
     flickr:
     dribbble:
     github:
     googleplus:
-    instagram:      https://www.instagram.com/
+    instagram:      https://www.instagram.com/ledger
     linkedin:
     pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
+    twitter:        https://twitter.com/Ledger
+    vimeo:
+    youtube:        https://youtube.com/Ledger
 
 # Share button
 share:

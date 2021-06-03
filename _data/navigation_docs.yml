@@ -1,5 +1,93 @@
 - title: Getting Started
   docs:
+  - NA/start_here
+  - NA/u_setup
+  - NA/u_writing_apps
+
+- title: Security
+  docs:
+  - NA/a_security_guidelines
+
+- title: Display
+  docs:
+  - NA/a_security_guidelines
+  - NA/u_advanced_display_management
+  - NA/u_low_level_display_management
+
+- title: Memory
+  docs:
+  - NA/u_memory
+  - NA/u_alignment
+
+- title: I/O
+  docs:
+  - NA/u_syscalls
+  - NA/u_application_structure
+
+- title: Debug
+  docs:
+  - NA/u_troubleshooting
+  - NA/u_debugging
+
+- title: Publishing
+  docs:
+  - NA/a_publishing_an_app
+
+- title: Tools
+  docs:
+  - NA/u_speculos
+  - NA/a_external_docs
+
+- title: Appx - Personal security devices
+  docs:
+  - NA/bg_personal_security_devices
+  - NA/bg_master_seed
+  - NA/bg_hd_keys
+  - NA/bg_hd_use_cases
+  - NA/bg_application_isolation
+
+- title: Appx - The BOLOS Platform
+  docs:
+  - NA/b_overview
+  - NA/b_features
+  - NA/b_hardware_architecture
+  - NA/b_application_environment
+
+- title: Getting Started
+  docs:
+  - CI/10_general_process
+  - CI/20_modules
+
+- title: Prerequisites
+  docs:
+  - CI/30_live_prerequisites
+
+- title: Coding
+  docs:
+  - CI/40_live_coin_integration
+  - CI/41_live_cryptoassets
+  - CI/42_live_app_bindings
+  - CI/43_live_common
+  - CI/44_live_frontend
+
+- title: Testing
+  docs:
+  - CI/50_live_tests
+  - CI/51_live_on_desktop
+  - CI/52_live_install_ios
+  - CI/53_live_install_android
+  - CI/54_live_run_on_ios_android
+  - CI/55_live_gen_cli
+  - CI/56_live_spe_cli
+  - CI/57_live_tests_android_ios
+  - CI/58_live_common_test_framework
+
+- title: Guidelines
+  docs:
+  - CI/60_live_guidelines
+
+- title: Getting Started
+  docs:
   - TMPL/installation
   - TMPL/setup
   - TMPL/navigation
@@ -34,3 +122,33 @@
 - title: Help
   docs:
   - TMPL/support
+
+- title: installation
+  docs:
+  - SP/start_here
+  - SP/i_build
+  - SP/i_wsl
+
+- title: User
+  docs:
+  - SP/u_usage
+  - SP/u_docker
+  - SP/u_clients
+  - SP/u_debug
+  - SP/u_automation
+  - SP/u_semihosting
+
+- title: Developer Documentation
+  docs:
+  - SP/d_getting_started
+  - SP/d_tests
+  - SP/d_ci
+  - d_internals
+
+- title: Contents
+  docs:
+  - PL/01_readme
+  - PL/11_scripts
+  - PL/12_script_reference
+
+
