@@ -123,14 +123,14 @@ authors:
 # Social icons displayed in footer
 social:
     email:
-    website:
+    website:        https://ledger.com/
     facebook:       https://www.facebook.com/Ledger
     flickr:
     dribbble:
-    github:
+    github:         https://github.com/LedgerHQ
     googleplus:
     instagram:      https://www.instagram.com/ledger
-    linkedin:
+    linkedin:       https://fr.linkedin.com/company/ledgerhq
     pinterest:
     twitter:        https://twitter.com/Ledger
     vimeo:
