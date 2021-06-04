@@ -1,28 +1,37 @@
-- title: Getting Started
+- title: []
   docs:
   - NA/start_here
+
+- title: Getting Started
+  docs:
   - NA/u_setup
   - NA/u_writing_apps
 
-- title: Security
+- title: Security Requirements
   docs:
   - NA/a_security_guidelines
 
-- title: Display
+- title: Documentation Requirements
   docs:
-  - NA/u_display_management
-  - NA/u_advanced_display_management
-  - NA/u_low_level_display_management
+  - NA/a_documentation_requirements
 
-- title: Memory
-  docs:
-  - NA/u_memory
-  - NA/u_alignment
+- title: Functional Requirements
+  dropdown:
+  - title: Display
+    docs:
+    - NA/u_display_management
+    - NA/u_advanced_display_management
+    - NA/u_low_level_display_management
 
-- title: I/O
-  docs:
-  - NA/u_syscalls
-  - NA/u_application_structure
+  - title: Memory
+    docs:
+    - NA/u_memory
+    - NA/u_alignment
+
+  - title: I/O
+    docs:
+    - NA/u_syscalls
+    - NA/u_application_structure
 
 - title: Debug
   docs:
@@ -33,10 +42,10 @@
   docs:
   - NA/a_publishing_an_app
 
-- title: Tools
-  docs:
-  - NA/u_speculos
-  - NA/a_external_docs
+#- title: Tools
+  #docs:
+  #- NA/u_speculos
+  #- NA/a_external_docs
 
 - title: Appx - Personal security devices
   docs:
