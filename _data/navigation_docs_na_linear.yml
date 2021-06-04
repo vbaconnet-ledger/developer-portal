@@ -1,3 +1,6 @@
+# This file is a duplicate of navigation_docs_na.yml without the nested menu (subfolderitems)
+# We need it to make "previous" and "next" buttons work properly
+
 - title: []
   docs:
   - NA/start_here
@@ -15,21 +18,21 @@
   docs:
   - NA/a_documentation_requirements
 
-- title: Functional Requirements
-  subfolderitems:
-    - title: Display
-      docs:
-      - NA/u_display_management
-      - NA/u_advanced_display_management
-      - NA/u_low_level_display_management
-    - title: Memory
-      docs:
-      - NA/u_memory
-      - NA/u_alignment
-    - title: I/O
-      docs:
-      - NA/u_syscalls
-      - NA/u_application_structure
+- title: Display
+  docs:
+  - NA/u_display_management
+  - NA/u_advanced_display_management
+  - NA/u_low_level_display_management
+
+- title: Memory
+  docs:
+  - NA/u_memory
+  - NA/u_alignment
+
+- title: I/O
+  docs:
+  - NA/u_syscalls
+  - NA/u_application_structure
 
 - title: Debug
   docs:
