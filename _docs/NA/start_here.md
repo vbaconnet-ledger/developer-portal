@@ -44,7 +44,7 @@ See the [design guidelines here](http://localhost:4000/unos/docs/NA/a_publishing
 #### Internal process
 When an app is submitted it will go through 3 main steps which are the functional review, the security review and the documentation review.
 
-Click the links to see [security requirements](../a_security_guidelines), [documentation requirements](../a_documentation_requirements), and [functional requirements]().
+Click the links to see [security requirements](../a_security_guidelines), [documentation requirements](../a_documentation_requirements), and [functional requirements](../u_display_management).
 
 #### Submission
 Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
