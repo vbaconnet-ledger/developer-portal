@@ -11,7 +11,6 @@
   docs:
   - NA/a_security_guidelines
 
-<<<<<<< Updated upstream
 - title: Documentation Requirements
   docs:
   - NA/a_documentation_requirements
@@ -31,25 +30,6 @@
       docs:
       - NA/u_syscalls
       - NA/u_application_structure
-=======
-- title: Display C
-  docs:
-  - NA/u_display_management
-  - title: TOTO
-    docs:
-      - NA/u_advanced_display_management
-      - NA/u_low_level_display_management
-
-- title: Memory
-  docs:
-  - NA/u_memory
-  - NA/u_alignment
-
-- title: I/O
-  docs:
-  - NA/u_syscalls
-  - NA/u_application_structure
->>>>>>> Stashed changes
 
 - title: Debug
   docs:
@@ -79,4 +59,3 @@
   - NA/b_features
   - NA/b_hardware_architecture
   - NA/b_application_environment
-
