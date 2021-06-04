@@ -15,7 +15,9 @@ hero:
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast Ledger Live" %}
 
-{% include repos.html columns="6" title="Github Repos " subtitle="Other sources to help you develop for Ledger Live" %}
+{% include repos1.html columns="6" title="Github Repos " subtitle="Other sources to help you develop for Ledger Live" %}
+
+{% include repos2.html columns="6" %}
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quick answers to frequent  questions asked by third party developers" %}
 
