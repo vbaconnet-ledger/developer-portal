@@ -30,8 +30,8 @@ We provide examples of good codebases which you can learn from, instructions on 
 
 [Find instructions here](../u_writing_apps)
 
-#### If you want to submit changes to the documentation
-Go to [this page](https://github.com/LedgerHQ/unos/tree/main/_docs) to make your submission
+#### Contributing
+If you want to improve the documentation you can make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
 
 
 ## Submit your app for the Ledger Live manager
