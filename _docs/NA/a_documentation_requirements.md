@@ -25,7 +25,7 @@ As the companion apps are maintained by third-party members of the Ledger commun
 
 ### Third Party Documentation
 
-Third Party will write and host an article ([example](https://medium.com/rise-vision/how-to-use-ledger-nano-with-rise-ef781d2997fc)) that describes:
+Third Party will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
 - Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
 - Requirements: What’s needed before starting.
 - Installation instructions: How to install the app using Ledger Live.
@@ -52,4 +52,4 @@ Third Party will write and host an article ([example](https://medium.com/rise-vi
 *Strictly avoid: wallet, Ledger wallet, a Ledger*.
 - **Referring to crypto assets**: name, ticker, crypto asset(s), coin(s), cryptocurrency.
 *Please avoid: money*.
-- Be sure to check [this article](https://medium.com/rise-vision/how-to-use-ledger-nano-with-rise-ef781d2997fc) for an example.
+- Be sure to check [this article](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/) for an example.
