@@ -13,8 +13,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# List of all Integrations resources
-
 <!--
 List of all Integrations
     Nano applications
