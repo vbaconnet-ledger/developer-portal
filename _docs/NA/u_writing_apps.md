@@ -1,5 +1,5 @@
 ---
-title: Writing Apps
+title: Running the code sample
 subtitle: Putting it together
 tags: []
 toc: true
@@ -24,7 +24,7 @@ Not much documentation has been written yet (work in progress!) regarding the ex
 
 Applications that support multiple BOLOS devices are typically contained within a single repository, so you can use the same repository to build an app for different Ledger devices. Just make sure that you've set `BOLOS_SDK` to the appropriate SDK for the device you're using. The Makefiles used by our apps use the contents of the SDK to determine which device you're using.
 
-First, download the boilerplate app. 
+First, download the boilerplate app.
 
 ```bash
 git clone https://github.com/LedgerHQ/ledger-app-boilerplate.git
