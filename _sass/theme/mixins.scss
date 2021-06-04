@@ -616,28 +616,51 @@
     }
 // FC 2021-06-03 2322
     @media (min-width: $breakpoint-small) {
-        .section-repos {
+        .section-repos1 {
             div[class^="uk-child-width-1-1"] {
                 .uk-card {
-                    padding-top: 70px;
-                    padding-bottom: 70px;
+                    padding-top: 50px; // 70
+                    padding-bottom: 50px; //70
                 }
             }
         }
     }
 // FC 2021-06-03 2322
 @media (min-width: $breakpoint-medium) {
-        .section-repos {
+        .section-repos1 {
             div[class^="uk-child-width-1-1"] {
                 .uk-card {
-                    padding-top: 110px;
-                    padding-bottom: 110px;
+                    padding-top: 70px; // 110
+                    padding-bottom: 70px; // 110
                 }
             }
         }
     }
 
-    .section-featured {
+// FC 2021-06-03 2322
+@media (min-width: $breakpoint-small) {
+    .section-repos2 {
+        div[class^="uk-child-width-1-1"] {
+            .uk-card {
+                padding-top: 50px; // 70
+                padding-bottom: 50px; //70
+            }
+        }
+    }
+}
+// FC 2021-06-03 2322
+@media (min-width: $breakpoint-medium) {
+    .section-repos2 {
+        div[class^="uk-child-width-1-1"] {
+            .uk-card {
+                padding-top: 70px; // 110
+                padding-bottom: 70px; // 110
+            }
+        }
+    }
+}
+
+.section-featured {
         .uk-accordion>:nth-child(n+2) {
             margin-top: 0;
         }

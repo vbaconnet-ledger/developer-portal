@@ -122,19 +122,21 @@ authors:
 
 # Social icons displayed in footer
 social:
-    email:
-    website:        https://ledger.com/
+    github:         https://github.com/LedgerHQ
+    reddit:         https://www.reddit.com/r/ledgerwallet/
+    twitter:        https://twitter.com/Ledger
+    youtube:        https://youtube.com/Ledger
+    instagram:      https://www.instagram.com/ledger
     facebook:       https://www.facebook.com/Ledger
+    linkedin:       https://fr.linkedin.com/company/ledgerhq
+
+    email:
+    website:        # https://ledger.com/
     flickr:
     dribbble:
-    github:         https://github.com/LedgerHQ
     googleplus:
-    instagram:      https://www.instagram.com/ledger
-    linkedin:       https://fr.linkedin.com/company/ledgerhq
     pinterest:
-    twitter:        https://twitter.com/Ledger
     vimeo:
-    youtube:        https://youtube.com/Ledger
 
 # Share button
 share:
