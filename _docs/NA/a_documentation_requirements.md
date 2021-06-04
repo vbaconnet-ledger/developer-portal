@@ -1,0 +1,55 @@
+---
+title: Writing documentation for Nano Apps
+subtitle: Ensuring your documentation is well documented
+tags: []
+toc: true
+toc_sticky: true
+author:
+layout: doc_na
+---
+
+
+Ledger continually works to make its products and services easy and safe to use. Since the Ledger hardware wallet platform is open-source, members of the Ledger community are welcome to develop BOLOS apps. After a review and approval by Ledger, their apps can be installed through the Ledger Live Manager and used with third-party companion apps (web or desktop app).
+
+As the companion apps are maintained by third-party members of the Ledger community, the documentation on how to use these third-party services needs to be provided during the app review process. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
+
+{% include alert.html style="primary" text="<b>Note</b><br>Without approval of your documentation, the release of your app will be postponed." %}
+
+### Documentation by Ledger
+
+[Ledger Customer Support](https://support.ledgerwallet.com/hc/en-us) will write and publish an article ([example](https://support.ledgerwallet.com/hc/en-us/articles/360007583514-Ontology-ONT-)) that describes:
+- Short introduction: what the app does, what crypto assets it can manage, using what service. Who has developed it. Ledger Nano S and Ledger Blue supported?
+- Requirements: What’s needed before starting.
+- Installation instructions: How to install the app using Ledger Live.
+- Next steps: link to third party documentation and where to get support.
+
+### Third Party Documentation
+
+Third Party will write and host an article ([example](https://medium.com/rise-vision/how-to-use-ledger-nano-with-rise-ef781d2997fc)) that describes:
+- Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
+- Requirements: What’s needed before starting.
+- Installation instructions: How to install the app using Ledger Live.
+- Setup instructions:
+    - For a web app: how to connect the Ledger device.
+    - For installable app: how to download and install it, how to connect to it.
+- Where to view account balance.
+- How to receive crypto assets
+    - Document all the steps.
+    - Explicitly instruct to verify receive addresses on the device.
+- How to send crypto assets
+    - Document all the steps and form fields to fill.
+    - Explicitly instruct to verify transaction details on the device display, before confirming and signing it.
+- Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities).
+
+### Writing tips
+
+- Write short and concise sentences.
+- Write clear section titles.
+- Give actionable instructions: Click this, enter that. Verify this, confirm that.
+- Use text formatting for UI text, example: Your device displays BTC app installed.
+- Screenshots can support the instructions if the user interface is complicated.
+- **Referring to the hardware wallet**: Ledger Nano S, Ledger Nano S device, device, hardware wallet, Ledger hardware wallet, Ledger device.
+*Strictly avoid: wallet, Ledger wallet, a Ledger*.
+- **Referring to crypto assets**: name, ticker, crypto asset(s), coin(s), cryptocurrency.
+*Please avoid: money*.
+- Be sure to check [this article](https://medium.com/rise-vision/how-to-use-ledger-nano-with-rise-ef781d2997fc) for an example.
