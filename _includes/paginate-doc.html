@@ -11,6 +11,8 @@
   {% assign docs = site.data.navigation_docs_sp | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "PL"  %}
   {% assign docs = site.data.navigation_docs_pl | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "ET"  %}
+  {% assign docs = site.data.navigation_docs_et | map: 'docs' | join: ',' | split: ',' %}
 {% endif %}
 
 
