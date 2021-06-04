@@ -2,7 +2,7 @@
 title: General Process
 subtitle: This section describes the general processes and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
 tags: []
-author: fabrice 
+author: fabrice
 toc: true
 toc_sticky: true
 layout: doc_ci
@@ -31,37 +31,10 @@ Ledger Live Development Phases
     D - GUI integration - Specific (SPE) features
 -->
 
-## Nano applications
-
-Integrating your cryptocurrency on Ledger Live is a multi steps process.
-The first mandatory requirement is to have a Nano application already listed in the Ledger Live Manager section. If you don't have one already, please make sure to read this [documentation](https://ledger.readthedocs.io/en/latest/additional/publishing_an_app.html) first.
-
-<!-- --> 
-{% include alert.html style="success" text="The Integration of Nano applications is found this Developer Portal in the  <a href='../../NA/start_here' class='alert-link'> Nano pages </a>." %}
-<!--  -->
-
-## Tokens
-
-Adding tokens (ERC20, TRC10/20, or ASAs) is not considered a new cryptocurrency addition as it doesn't involve dealing with a new protocol per se.
-If you simply want to get your ERC20 token supported, please note that Ledger is already adding new ERC20 on a monthly basis.   
-
-[//]: To know more, please follow these simple steps (add link / to **be discussed**)
-
-<!-- -->
-{% include alert.html style="danger" text="<strong>Note: </strong> The Integration of Tokens is <b>not</b> addressed in this Developer Portal." %}
-<!-- -->
-
-## Ledger Live
-
-To confirm if your Nano application is already supported, please check if your currency is visible on [this page](https://www.ledger.com/supported-crypto-assets/).
-If you already have a public Nano application and are looking for a way to get your blockchain supported on Ledger Live, then congratulations, you are in the right place.
-
-
-<!-- -->
-{% include alert.html style="primary" text="The Integration of Coins in Ledger Live (Desktop & Mobile) is addressed in the Developer Portal." %} 
-<!-- -->
-
 # General Ledger Live Overview
+
+If you already have a public Nano application and are looking for a way to get your blockchain supported on Ledger Live, then congratulations, you are in the right place.
+To confirm if your Nano application is already supported, please check if your currency is visible on [this page](https://www.ledger.com/supported-crypto-assets/).
 
 The Ledger Live application acts as a user-friendly platform for managing the digital assets as well as the application installed on the Ledger device.
 
@@ -81,7 +54,7 @@ The Ledger Live application is available for Windows, Mac and Linux in its deskt
 
 To be officially released by Ledger, your protocol must be included on all five platforms Ledger Live.
 
-# Open source, but not Open bar 
+# Open source, but not Open bar
 
 <!-- ------------- Image ------------- -->
 <img align="left" width="132" src="../../../uploads/images/CI/open_bar.png">
@@ -96,7 +69,7 @@ In most cases however, you will want to have your blockchain officially supporte
 
 # Agreeing on a Framework
 <!-- ------------- Image ------------- -->
-<img align="right" width="156"  src="../../../uploads/images/CI/agreement.png" >  
+<img align="right" width="156"  src="../../../uploads/images/CI/agreement.png" >
 <!-- --------------------------------- -->
 Assuming you are on course for a **Participant Integration**, here is how we suggest working together.
 
@@ -104,14 +77,14 @@ To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-l
 
 The aim of the Launch meeting is to present and discuss together:
 
-\-  your project objective, and  
-\-  a high-level roadmap  
+\-  your project objective, and
+\-  a high-level roadmap
 
 After the Launch meeting we will assess the feasibility and the maturity of your coin integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
 
-\- Resources  
-\- Support and communication channels  
-\- Contact points for Technical and Documentation issues  
+\- Resources
+\- Support and communication channels
+\- Contact points for Technical and Documentation issues
 
 Note: Roadmaps and terms can be changed by any party along the way, of course, so long as these changes are talked about and agreed together.
 
@@ -158,14 +131,14 @@ This table shows which GEN/SPE components are involved is which phase.
 
 The table below shows what the inputs and outputs are for each phase, the work involved, as well as the main parts of this documentation are involved.
 
-| Delivery<br>Phase  	|   Input<br>of the Phase	|   Work Package	|   Output<br>of the Phase	|   Main Chapters<br>involved	|   	
+| Delivery<br>Phase  	|   Input<br>of the Phase	|   Work Package	|   Output<br>of the Phase	|   Main Chapters<br>involved	|
 |---	|---	|---	|---	|---	|
-|  <center>A 	|  <center>n/a 	|   Technical assessment	|   **Acceptance Plan**:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  <center>3 Prerequisites 	|   	
-|  <center>B	|     **Acceptance Plan**:<br>Technical assessment   	|   GEN Features    	|   PR CLI & GUI    	|    <center>4 & 5<br>Coding & Testing   	|   	
-|  <center>C 	| **Acceptance Plan**:<br>SPE Choices   	   	| SPE Features      	|  PR CLI      	|    <center>4 & 5<br>Coding & Testing   	|   	
-|  <center>D 	| **Acceptance Plan**:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  User journey (UI)     	|   PR  GUI    	|    <center>4 & 5<br>Coding & Testing   	|   
+|  <center>A 	|  <center>n/a 	|   Technical assessment	|   **Acceptance Plan**:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  <center>3 Prerequisites 	|
+|  <center>B	|     **Acceptance Plan**:<br>Technical assessment   	|   GEN Features    	|   PR CLI & GUI    	|    <center>4 & 5<br>Coding & Testing   	|
+|  <center>C 	| **Acceptance Plan**:<br>SPE Choices   	   	| SPE Features      	|  PR CLI      	|    <center>4 & 5<br>Coding & Testing   	|
+|  <center>D 	| **Acceptance Plan**:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  User journey (UI)     	|   PR  GUI    	|    <center>4 & 5<br>Coding & Testing   	|
 
-Note PR: Pull request  
+Note PR: Pull request
 
 ***
 
@@ -178,53 +151,53 @@ Importantly, it also contains research and choices concerning the Indexer/Explor
 The **output of this phase** is a presentation to Ledger of those technical choices
 
 ***
-## B - CLI and GUI integration - General (GEN) features  
+## B - CLI and GUI integration - General (GEN) features
 
-**General features are Receive, Synch, Send**  
+**General features are Receive, Synch, Send**
 
-1 - **Analysis**  
-\- Getting the JS app and the Nano App work together (APDU)  
-\- Recovering the Receive address  
-\- Piecing together a basic Synch  (see indexer)  
+1 - **Analysis**
+\- Getting the JS app and the Nano App work together (APDU)
+\- Recovering the Receive address
+\- Piecing together a basic Synch  (see indexer)
 
-2 - **Implementation**  
-\- Get a list of nominal errors returned: OK / No funds / etc  
-\- Work in the Families Folder in  Live Common.  
-\- Getting Receive, Synch, Send to work.  
-\- Verification of LLD and LLM UI flows  
+2 - **Implementation**
+\- Get a list of nominal errors returned: OK / No funds / etc
+\- Work in the Families Folder in  Live Common.
+\- Getting Receive, Synch, Send to work.
+\- Verification of LLD and LLM UI flows
 
-3 - **Code Review and functional test**  
-\- Code Delivery for Review by Ledger  
+3 - **Code Review and functional test**
+\- Code Delivery for Review by Ledger
 
 ***
 ## C - CLI integration - Specific (SPE) features
 
-**Staking operations, Reward related actions**  
+**Staking operations, Reward related actions**
 
-1 - **Analysis**  
-\- Understanding staking operations is a basic first step  
-\- interpreting them. Considering the appropriate choices   
-\- Detailing the User Flows defined at Technical Assessment  
+1 - **Analysis**
+\- Understanding staking operations is a basic first step
+\- interpreting them. Considering the appropriate choices
+\- Detailing the User Flows defined at Technical Assessment
 
-2 - **Implementation**  
-\- Work on Specific Coin Folder in Live Common  
-\- Get Specific functions to work  
+2 - **Implementation**
+\- Work on Specific Coin Folder in Live Common
+\- Get Specific functions to work
 
-3 - **Code Review**  
-\- Code Delivery for Review by Ledger  
+3 - **Code Review**
+\- Code Delivery for Review by Ledger
 
 ***
-## D - GUI integration - Specific (SPE) features  
+## D - GUI integration - Specific (SPE) features
 
-1 - **Analysis**  
-\- Detailing the diagrams of User Flows defined at Technical Assessment  
+1 - **Analysis**
+\- Detailing the diagrams of User Flows defined at Technical Assessment
 
-2 - **Implementation**  
-\- Work on Graphics designs and modal flows  
-\- Get Specific flows to work  
+2 - **Implementation**
+\- Work on Graphics designs and modal flows
+\- Get Specific flows to work
 
-3 - **Code Review**  
-\- Code Delivery for Review by Ledger  
+3 - **Code Review**
+\- Code Delivery for Review by Ledger
 
 
 ***
