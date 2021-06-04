@@ -15,7 +15,7 @@ hero:
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast Ledger Live" %}
 
-{% include videos.html columns="6" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Ledger Live" %}
+{% include repos.html columns="6" title="Github Repos " subtitle="Other sources to help you develop for Ledger Live" %}
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quick answers to frequent  questions asked by third party developers" %}
 
@@ -23,5 +23,5 @@ hero:
 
 {% include team.html authors="pscott, Tamtamhero, greenknot, nafissa, guillaume, leo, thomas, francesco" %}
 
-{% include cta.html title="Didn't find an answer?" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
+{% include cta.html title="How to get connected" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 

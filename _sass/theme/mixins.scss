@@ -614,6 +614,28 @@
             }
         }
     }
+// FC 2021-06-03 2322
+    @media (min-width: $breakpoint-small) {
+        .section-repos {
+            div[class^="uk-child-width-1-1"] {
+                .uk-card {
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
+            }
+        }
+    }
+// FC 2021-06-03 2322
+@media (min-width: $breakpoint-medium) {
+        .section-repos {
+            div[class^="uk-child-width-1-1"] {
+                .uk-card {
+                    padding-top: 110px;
+                    padding-bottom: 110px;
+                }
+            }
+        }
+    }
 
     .section-featured {
         .uk-accordion>:nth-child(n+2) {
