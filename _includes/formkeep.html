@@ -10,17 +10,18 @@
     <div class="uk-margin-medium-bottom">
         <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_email | default: "Email" }}</label>
         <div class="uk-form-controls">
-            <input class="uk-input uk-form-large uk-border-rounded" name="_replyto" type="email" required>
+            <input class="uk-input uk-form-large uk-border-rounded" name="email" type="email" required>
         </div>
     </div>
 
     <div class="uk-margin-medium-bottom">
-        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_subject | default: "Subject" }}</label>
+        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">{{ site.data.translation[site.lang].contact_subject | default: "Please put me on the right channel for:" }}</label>
         <div class="uk-form-controls">
             <select name="_subject" required>
-              <option value="nanoapp">I'm building a Nano App</option>
-              <option value="dapp">I'm building a DApp</option>
-              <option value="other">Other</option>
+              <option value="nanoapp">Building a Nano App</option>
+              <option value="nanoapp">Integrating my coin into Ledger Live</option>
+              <option value="dapp">Building a DApp</option>
+              <option value="other">Including a token in Ledger Live</option>
             </select>
         </div>
     </div>
