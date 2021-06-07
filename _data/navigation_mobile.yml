@@ -1,17 +1,16 @@
 # Mobile menu navigation links
 
-- title: Home
-  url: /
+- title: Nano App
+  url: /docs/NA/start_here
 
-- title: Docs
-  url: /docs/TMPL/installation
+- title: Coin Integration
+  url: /docs/CI/10_general_process
 
-- title: Blog
-  url: /blog/
+- title: DApp Integration
+  url: /docs/DA/01_readme
 
-- title: Changelog
-  url: /changelog-timeline/
+- title: Tokens Integration
+  url: /docs/ET/01_readme
 
 - title: Contact
-  url: /contact/
-  button: success
+  url: /contact
