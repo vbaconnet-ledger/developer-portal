@@ -9,6 +9,11 @@ author: thomas
 layout: doc_na
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 #### Get in touch with the Ledger developer community
 
 Join the [Ledger's Developer Slack](https://ledger-dev.slack.com) workspace to communicate with the developer community, and introduce yourself and your project through the dedicated channel, **\#introductions**.

@@ -17,7 +17,9 @@ layout: doc_na
 
 Developing applications for Ledger devices (Nano S, X, Blue) is an intricate process. The security of the user funds relies on the fact that the application works in a correct and secure manner and that potential attackers cannot misuse it to extract private data and/or sign requests which are not authorized by the user. The app should guard against such attacks because they have a very low entry point -- a Ledger device attached to a compromised host might be a victim of the attacker's program sending invalid/non-standard requests to the device.
 
-This guide is meant to be a summary of all important aspects of Ledger Apps security and it shall be read by developers before developing an app for Ledger. The guide is divided into multiple sections, each taking on a different aspect of security.
+{% include alert.html style="warning" text="This guide is meant to be a summary of all important aspects of Ledger Apps security and it shall be read by developers before developing an app for Ledger." %}
+
+
 
 ### Development practices
 
@@ -28,7 +30,7 @@ Whenever writing a secure Ledger app, the following advice should not be taken l
 We encourage all written code to be peer-reviewed. Importantly, the review should have at least:
 
 1.  One reviewer proficient in C and knowing C security weaknesses.
-2.  One reviewer with "hacker's mind" (looking at the code from the perspective of an attacker).
+2.  One reviewer with a "hacker's mind" (looking at the code from the perspective of an attacker).
 
 #### Security audits
 
@@ -36,7 +38,7 @@ We encourage third-party security reviews. Note, however, that solid review take
 
 #### Developing First App
 
-Apart from reading developer documentation at <https://ledger.readthedocs.io/en/latest/> we recommend looking at Sia app <https://github.com/LedgerHQ/ledger-app-sia> which provides a nice starting point for an app, including lots of explanatory comments. A sample of security-wise overly-paranoid app is <https://github.com/LedgerHQ/ledger-app-cardano>.
+Apart from reading developer documentation <!--at <https://ledger.readthedocs.io/en/latest/> REMOVED by CF 07.06.2021--> we recommend looking at Sia app <https://github.com/LedgerHQ/ledger-app-sia> which provides a nice starting point for an app, including lots of explanatory comments. A sample of security-wise overly-paranoid app is <https://github.com/LedgerHQ/ledger-app-cardano>.
 
 ### Cryptography
 
@@ -46,7 +48,7 @@ This section presents general concepts about cryptography development, but also 
 -   Make sure all the operations that manipulate secrets are approved by the user.
 -   Restrict the use of these secrets by apps.
 
-#### Own crypto primitives
+#### Don't roll your own crypto primitives
 
 **You should never roll your own crypto primitives** (including encryption/derivation schemes, hashing functions, HMAC, etc.)
 
@@ -62,7 +64,7 @@ If you want to sign user-supplied "personal" messages, prefix them with a fixed 
 
 Warning: If you allow signing untrusted hashes (while displaying a prompt to the user), be aware that
 
-1.  Users do not understand security and could be easily tricked. In fact, they will probably click through your prompt without thinking unless you give them explicit "Warning: this is a very unusual operation. Do not continue unless you know what you are doing" warning. They might not listen even then
+1.  Some users are not familiar with security and could be easily tricked. They can click through your prompt without proper checking unless you give them explicit "Warning: this is a very unusual operation. Do not continue unless you know what you are doing" warning. They might not see the message even then
 1.  A compromised host might both change hash on the screen and also data sent to device. This opens the possibility of users signing something they didn't want to.
 
 #### Restrict Apps to Coin-Specific BIP32 Prefix
@@ -90,7 +92,7 @@ Several curves and paths can be configured. For example, if your app must derive
 APP_LOAD_PARAMS=--curve ed25519 --curve prime256r1 --path "44'/535348'" --path "13'" --path "17'"
 ```
 
-Rationale: Setting prefixes is crucial, as it limites the amount of damages an attacker can do if he manages to compromise an application. If a vulnerability is exploited on a poorly written of backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
+Rationale: Setting prefixes is crucial, as it limits the amount of damages an attacker can cause if he manages to compromise an application. If a vulnerability is exploited on a poorly written of backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
 
 <!--  -->
 {% include alert.html style="warning" text="<b>Warning</b><br>If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
@@ -102,7 +104,7 @@ Rationale: Setting prefixes is crucial, as it limites the amount of damages an a
 {% include alert.html style="warning" text="<b>Warning</b><br>You must always require user approval for signing transactions/messages." %}
 <!--  -->
 
-Rationale: If you do not require user consent for signing important data, an attacker can use your device as a signing black box and sign whatever it wants.
+Rationale: If you do not require user consent for signing important data, an attacker can use your device as a signing black box and sign whatever they want.
 
 
 <!--  -->
@@ -126,7 +128,7 @@ Leaving parts of private or secret keys lying around in memory is not a security
 
 However, if the key has not been properly erased, a security issue could lead to the leak of this key, even if it is not used anymore. An attacker able to read arbitrary memory from the app, or execute arbitrary code, will be able to read the content of the stack segment, hence the parts of the key which have not been erased.
 
-A common (and wrong) way of doing this:
+Here is an exemple of a common and **wrong way** of doing this:
 
 ``` c
 uint8_t privateKeyData[64];
@@ -354,9 +356,9 @@ void f(uint8_t* buf, size_t bufSize) { // size_t is unsigned
 
 Speaking of safely formatting data, be wary of truncated values. Importantly, make sure you do not truncate any important data when displaying on the Ledger screen.
 
-Example 1: Truncating tx hash from "f6954eb23ecd1d64c782e6d6c32fad2876003ae92986606585ae7187470d5e04" to "f695...5e04" might look nice for the users but this effectively reduces the security of hash and an attacker can now easily try to create a hash collision. Instead, prefer scrolling/paging of long such important values.
+**Example 1**: Truncating tx hash from "f6954eb23ecd1d64c782e6d6c32fad2876003ae92986606585ae7187470d5e04" to "f695...5e04" might look nice for the users but this effectively reduces the security of hash and an attacker can now easily try to create a hash collision. Instead, prefer scrolling/paging of long such important values.
 
-Example 2: Raise errors instead of truncation
+**Example 2**: Raise errors instead of truncation
 
 ``` c
 int tmp[10]; // max 10 digits, right?
@@ -382,9 +384,9 @@ Enable `DEFINES += HAVE_BOLOS_APP_STACK_CANARY` in your Makefile. This will help
 
 #### Optimizations
 
-Do not clear sensitive data with for-loops or other techniques. Do not user `memset` or `bzero` to clear sensitive data: it could be optimized and removed by the compiler.
+Do not clear sensitive data with for-loops or other techniques. Do not use `memset` or `bzero` to clear sensitive data: it could be optimized and removed by the compiler.
 
-Recommendation: Use `explicit_bzero` which guarantees that the compiler will not remove the erasure. (See [https://www.owasp.org/index.php/Insecure\\\_Compiler\\\_Optimization](https://www.owasp.org/index.php/Insecure\_Compiler\_Optimization) for an example of how things could go wrong.)
+**Recommendation**: Use `explicit_bzero` which guarantees that the compiler will not remove the erasure. (See [https://www.owasp.org/index.php/Insecure\\\_Compiler\\\_Optimization](https://www.owasp.org/index.php/Insecure\_Compiler\_Optimization) for an example of how things could go wrong.)
 
 ### Business logic problems
 
@@ -519,12 +521,12 @@ Obviously, there are many variations of this basic scheme and an utmost care nee
 
 Whenever a host is required to perform certain actions in a specific order, be sure to explicitly track the state and verify that the next step is consistent. Good examples of what might need to be checked
 
-1. If host claims some number of tx inputs/outputs, make sure you receive exactly that amount, not more and not less
+1. If the host claims some number of tx inputs/outputs, make sure you receive exactly that amount, not more and not less
 2. If the host needs to send multiple transaction inputs and outputs and you have to process inputs before outputs, make sure the host cannot send additional input after it received an output.
 3. Check that once you finished an action (signing), the attacker cannot resume with additional data (which might be empty). This is important, because usually signing "closes" some hash contexts (or destroy some other data) and re-running `SignTx(CONTINUE, empty data)` might, therefore, yield either crash or produce a signature of some different data. In general, after finishing a request you should wipe the context variable
 4. If you do not reset UI after sending APDU (for example, because you displayed an address and now you are waiting for another APDU containing tx amount), make sure your button handlers fire just once -- a user might press the buttons multiple times. A general recommendation would be to always reset UI with APDU response. Additionally, you can guard your app against itself (and against bad SDK) with tracking whether it should be in IO/UI phase and assert on it in APDU/UI handlers.
 
-An (somewhat contrived) example of problematic button handlers
+A (somewhat contrived) example of problematic button handlers
 
 ``` c
 void handle_sign_message(...) {
@@ -574,7 +576,14 @@ unsigned int io_seproxyhal_touch_tx_cancel() {
 }
 ```
 
-But such a solution is needed only if tx\_ok or tx\_cancel modify context/global variables before calling ui\_idle(). (As a side note, if your\_\_ok()/\_\_cancel() handler both 1) do not check whether the memory is cleared, but 2) clear the memory inside the handler; make sure that memclear happens after calling ui\_idle()).
+But such a solution is needed only if `tx\_ok` or `tx\_cancel` modify context/global variables before calling `ui\_idle()`.
+
+As a side note, if your `\_\_ok()`/`\_\_cancel()` handler both :
+1. do not check whether the memory is cleared, but :
+2. clear the memory inside the handler
+
+make sure that memclear happens after calling `ui\_idle()`.
+
 
 Note: If not guarded properly, an attacker might try a following line of attack:
 

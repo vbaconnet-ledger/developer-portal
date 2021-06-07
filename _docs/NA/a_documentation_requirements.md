@@ -8,6 +8,11 @@ author:
 layout: doc_na
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 
 Ledger continually works to make its products and services easy and safe to use. Since the Ledger hardware wallet platform is open-source, members of the Ledger community are welcome to develop BOLOS apps. After a review and approval by Ledger, their apps can be installed through the Ledger Live Manager and used with third-party companion apps (web or desktop app).
 

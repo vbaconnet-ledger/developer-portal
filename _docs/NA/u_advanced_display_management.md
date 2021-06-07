@@ -73,9 +73,9 @@ void launch_flow() {
 }
 ```
 
-Great this works. Hu-oh but now the community also wants to be able to see the nonce for the transaction. But they want it to be optional. You know for *advanced* users.
+Great, this works. But imagine the community also wants to be able to see the nonce for the transaction. But they want it to be optional. You know, for *advanced* users.
 
-Ok so back to work: we need a flow for the vanilla signature, as well as a flow for the vanilla signature where we show the nonce. Oh but wait we also need the option to display the nonce when there is arbitrary data to sign, so we **also** need the "data signature" flow **and** the "data signature + nonce" flow.
+We then need a flow for the vanilla signature, as well as a flow for the vanilla signature where we show the nonce. We also need the option to display the nonce when there is arbitrary data to sign, so we **also** need the "data signature" flow **and** the "data signature + nonce" flow.
 
 ``` c
 // The standard signature, nothing has changed.
@@ -143,19 +143,19 @@ void launch_flow() {
 }
 ```
 
-Ugh. Ok now everyone's happy: we've updated our app to support the protocol and the advanced users in the community can display the nonce. But now a new upgrade to the protocol is planned for the near future: the fees can sometimes be paid by another user of the blockchain, called a relayer. Anyways now some transactions now need to **hide** the fees (displaying a fee of 0.000 is not an option because it would confuse users more than anything).
+Ok now everyone's happy: we've updated our app to support the protocol and the advanced users in the community can display the nonce. But now a new upgrade to the protocol is planned for the near future: the fees can sometimes be paid by another user of the blockchain, called a relayer. Now, some transactions need to **hide** the fees (displaying a fee of 0.000 is not an option because it would confuse users more than anything).
 
-So we need... **8 different flows**. That escalated quickly! Indeed, for every little *upgrade*, we're doubling the number of flows. Soon enough we'll end up with 16 or even 32 different flows... Notice that whilst the number of flows will grow exponentially, the number of different steps though will only grow linearly (one for every new feature).
+So we need **8 different flows**. That escalated quickly! Indeed, for every little *upgrade*, we're doubling the number of flows. Soon enough we'll end up with 16 or even 32 different flows. Notice that whilst the number of flows will grow exponentially, the number of different steps will only grow linearly (one for every new feature).
 
-To fix this problem, we would need to define the UX\_FLOW at runtime, cherry-picking which steps we wish to include depending on the details of our transaction.
+To fix this problem, we would need to define the `UX\_FLOW` at runtime, cherry-picking which steps we wish to include depending on the details of our transaction.
 
-Don't worry, Ledger's got your back! The fix is quite simple, so let's dive right into it!
+Don't worry, Ledger's got your back! The fix is quite simple, so let's dive right into it.
 
 #### Cherry-picking explained
 
 The idea is to create an array of steps that would be big enough to fit all the steps. Since steps grow linearly, this array won't be too big. Once this array created, we simply need to fill it with the steps we wish to include. Finally, we need to add a last step `FLOW_END_STEP` for it to work properly.
 
-We can then call the `ux_init_flow` and pass in our array as argument!
+We can then call the `ux_init_flow` and pass in our array as argument.
 
 ``` c
 // The maximum number of steps we will ever need. Here it's 8: step_review, step_amount,
@@ -275,11 +275,11 @@ As you can see, `step_upper_delimiter` and `step_lower_delimiter` are very simil
 
 And now we only need to implement the special logic for this to work!
 
-Inside the `.h` file, we only need to add an enum definition and an instance of this enum in our global structure:
+Inside the `.h` file, we only need to add an `enum` definition and an instance of this `enum` in our global structure:
 
 ``` c
 // State of the dynamic display.
-// Use to keep track of whether we are displaying screens that are inside the 
+// Use to keep track of whether we are displaying screens that are inside the
 // array (dynamic), or outside the array (static).
 enum e_state {
    STATIC_SCREEN,
@@ -294,9 +294,7 @@ struct global {
 }
 ```
 
-And in the `.c` file, we add all the business logic. A helper function
-
-is used throughout the code. This function is yours to define, and basically fills the title\_buffer and the text\_buffer with the appropriate strings. Is returns a `bool` corresponding to whether or not it found data to fill the buffers. The <span class="title-ref">:code:\`bool forward</span> parameter is used to indicate whether we wish to display the next screen or the previous screen.
+And in the `.c` file, we add all the business logic. A helper function is used throughout the code. This function is yours to define, and basically fills the `title\_buffer` and the `text\_buffer` with the appropriate strings. Is returns a `bool` corresponding to whether or not it found data to fill the buffers. The <span class="title-ref">:code:\`bool forward</span> parameter is used to indicate whether we wish to display the next screen or the previous screen.
 
 > The code is commented thoroughly, so take your time and read it carefully.
 
@@ -334,7 +332,7 @@ void display_next_state(bool is_upper_delimiter) {
                 ux_flow_next();
             }
             else {
-                // There's no more dynamic data to display, so 
+                // There's no more dynamic data to display, so
                 // update the current state accordingly.
                 global.current_state = STATIC_SCREEN;
 
@@ -377,5 +375,5 @@ void display_next_state(bool is_upper_delimiter) {
 }
 ```
 
-That was a mouthful! But we did it: we managed to dynamically adapt our flow AND our steps!
+That was a mouthful, but we did it: we managed to dynamically adapt our flow AND our steps!
 
