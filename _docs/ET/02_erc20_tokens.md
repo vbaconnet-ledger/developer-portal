@@ -1,7 +1,7 @@
 ---
 title: Adding a new ERC20 token to Ledger Live
 subtitle:
-tags: []
+tags: [featured]
 toc: true
 toc_sticky: true
 author:

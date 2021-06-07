@@ -1,7 +1,7 @@
---- 
+---
 title: Developing Secure Ledger Apps
 subtitle: Ensuring your app is secure
-tags: []
+tags: [featured]
 toc: true
 toc_sticky: true
 author: pscott
@@ -169,9 +169,9 @@ Sometimes your app needs to compute over more data than it can fit inside memory
 
 Some cryptocurrencies (notably Monero) need to perform an extensive calculation with *(public, private)* key-pair spread over multiple APDU exchanges. If you need to do the same, **do not** allow the attacker to step out of the protocol. Notably, allowing the attacker to freely perform key manipulation (e.g., group multiplications, exponentiations, etc.) could undermine your app security **even if the private key never leaves the device**. In general, keep an explicit protocol state machine during the computation. Also, consult with cryptography experts to check for implications if you misstep from the protocol.
 
-### C is your enemy  
+### C is your enemy
 
-#### Know your C compiler  
+#### Know your C compiler
 
 Ledger apps are written in C. Unlike typical embedded project, the goal here is to write for a single platform with a single compiler.
 
@@ -260,8 +260,8 @@ main() {
 }
 
 void f(uint8_t* x) {
-  sizeof(x); // 4 
-} 
+  sizeof(x); // 4
+}
 
 void g(uint8_t oops[100]) {
   sizeof(oops); // 4
@@ -519,9 +519,9 @@ Obviously, there are many variations of this basic scheme and an utmost care nee
 
 Whenever a host is required to perform certain actions in a specific order, be sure to explicitly track the state and verify that the next step is consistent. Good examples of what might need to be checked
 
-1. If host claims some number of tx inputs/outputs, make sure you receive exactly that amount, not more and not less 
-2. If the host needs to send multiple transaction inputs and outputs and you have to process inputs before outputs, make sure the host cannot send additional input after it received an output. 
-3. Check that once you finished an action (signing), the attacker cannot resume with additional data (which might be empty). This is important, because usually signing "closes" some hash contexts (or destroy some other data) and re-running `SignTx(CONTINUE, empty data)` might, therefore, yield either crash or produce a signature of some different data. In general, after finishing a request you should wipe the context variable 
+1. If host claims some number of tx inputs/outputs, make sure you receive exactly that amount, not more and not less
+2. If the host needs to send multiple transaction inputs and outputs and you have to process inputs before outputs, make sure the host cannot send additional input after it received an output.
+3. Check that once you finished an action (signing), the attacker cannot resume with additional data (which might be empty). This is important, because usually signing "closes" some hash contexts (or destroy some other data) and re-running `SignTx(CONTINUE, empty data)` might, therefore, yield either crash or produce a signature of some different data. In general, after finishing a request you should wipe the context variable
 4. If you do not reset UI after sending APDU (for example, because you displayed an address and now you are waiting for another APDU containing tx amount), make sure your button handlers fire just once -- a user might press the buttons multiple times. A general recommendation would be to always reset UI with APDU response. Additionally, you can guard your app against itself (and against bad SDK) with tracking whether it should be in IO/UI phase and assert on it in APDU/UI handlers.
 
 An (somewhat contrived) example of problematic button handlers
@@ -530,7 +530,7 @@ An (somewhat contrived) example of problematic button handlers
 void handle_sign_message(...) {
   ... // validations
   if (!is_last_apdu) {
-    cx_hash(CX_CONTINUE, ctx->hash, data); 
+    cx_hash(CX_CONTINUE, ctx->hash, data);
   else {
     memcpy(ctx->last_part, data);
     flags *= IO_ASYNCH;
