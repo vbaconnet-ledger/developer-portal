@@ -46,5 +46,5 @@ You can find the entire list of ERC20 tokens supported, along with their signatu
 
 Ledger Live currently supports ERC20 tokens on Ethereum, ASAs on Algorand and TRC10/TRC20 tokens on Tron.
 
-If you wish to add a new ERC20, [click here](../02_erc20_token)
-For ASAs and TRC tokens [click here](../03_trc1020_asa_token)
+If you wish to add a new ERC20, [click here](../02_erc20_tokens)
+For ASAs and TRC tokens [click here](../03_other_tokens)
