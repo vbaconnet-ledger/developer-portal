@@ -24,8 +24,8 @@ In these pages we will provide a general tutorial for getting your BOLOS develop
 Developing and / or compiling BOLOS applications requires the SDK matching the appropriate device (the Nano S, X SDK or the Blue SDK) as well as the following two compilers:
 
 -   A standard ARM gcc to build the non-secure (STM32) firmware and link the secure (ST31) applications
--   A standard ARM clang above 7.0.0 with [ROPI support](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0491i/CHDCDGGG.html) to build the secure (ST31) applications
--   Download a prebuilt gcc from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+-   A standard ARM clang 7.0.0 <= version < 10.0.0 with [ROPI support](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0491i/CHDCDGGG.html) to build the secure (ST31) applications, download it [here](https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz)
+-   Download a prebuilt gcc from [here](https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2?revision=ca0cbf9c-9de2-491c-ac48-898b5bbc0443&la=en&hash=68760A8AE66026BCF99F05AC017A6A50C6FD832A)
 
 ### Setting up the Toolchain
 
