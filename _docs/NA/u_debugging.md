@@ -17,8 +17,8 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>Ledger has developed its own emulator called 
-<a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos</a>. Feel free to checkout:  <br>1.  The <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos repository</a>. <br>2.  The <a href='https://github.com/LedgerHQ/nanos-secure-sdk' class='alert-link'> Nano S SDK </a> and the 
+{% include alert.html style="primary" text="<b>Note</b><br>Ledger has developed its own emulator called
+<a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos</a>. Feel free to checkout:  <br>1.  The <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos repository</a>. <br>2.  The <a href='https://github.com/LedgerHQ/nanos-secure-sdk' class='alert-link'> Nano S SDK </a> and the
 <a href='https://github.com/LedgerHQ/nanox-secure-sdk' class='alert-link'> Nano X SDK </a>.  <br>3.  The <a href='../../SP/i_build/' class='alert-link'> speculos </a> section which gives an overview of how to use speculos." %}
 <!--  -->
 
@@ -30,7 +30,7 @@ layout: doc_na
 
 It is possible to install a debugging firmware on the device's MCU that will enable printing text outputs from the device to a terminal. To do so, follow these steps:
 
-1\. First, download the [updater](https://drive.google.com/open?id=1pbqIDDuamfsvFuEkduCyOFq8mW0HZmeQ) and the [debug firmware](https://drive.google.com/open?id=1hTZKqlwKjx51vdqda8SRp_80Yx3lPizb) and install the python module ledgerblue by running <span class="title-ref">pip3 install ledgerblue</span>.
+1\. First, download the [updater](https://drive.google.com/open?id=1pbqIDDuamfsvFuEkduCyOFq8mW0HZmeQ) and the [debug firmware](https://drive.google.com/open?id=1hTZKqlwKjx51vdqda8SRp_80Yx3lPizb) and install the Python Loader following [this documentation](../../PL/01_readme).
 
 2\. Exit any instance of Ledger Live, Ledger Chrome App, or any other program able to communicate with a Ledger device.
 
