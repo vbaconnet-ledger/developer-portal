@@ -9,13 +9,15 @@
         {% if include.subtitle %}
             <p class="uk-text-center uk-text-lead">{{ include.subtitle | escape }}</p>
         {% endif %}
-        
+
         <ul class="uk-list uk-list-large uk-margin-medium-top">
+            <li><a class="uk-box-shadow-hover-small" href="https://blog.ledger.com/rust-apps/">Developing Nano apps in Rust</a></li>
         {% for doc in site.docs %}
             {% if doc.tags contains include.tag %}
             <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ doc.url }}">{{doc.title}}</a></li>
             {% endif %}
         {% endfor %}
+            <li><a class="uk-box-shadow-hover-small" href="https://www.ledger.com/academy/security/our-custom-operating-system-bolos">Our Custom Operating System – BOLOS</a></li>
         </ul>
 
     </div>
