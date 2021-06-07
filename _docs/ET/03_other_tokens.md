@@ -15,8 +15,8 @@ This is due to the fact that tokens details are hardcoded within the Nano applic
 
 To add your ASA you need to
 
-- update the Nano app (https://github.com/LedgerHQ/app-algorand/blob/master/src/algo_asa.c)
-- update the ledgerjs package (https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js)
+- update the Nano app [](https://github.com/LedgerHQ/app-algorand/blob/master/src/algo_asa.c)
+- update the ledgerjs package [](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js)
 
 To ensure both these topics are handled properly, we invite you to contact our engineering team through the [Ledger's Developer Slack](https://ledger-dev.slack.com).
 
