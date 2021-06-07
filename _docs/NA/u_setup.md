@@ -77,5 +77,7 @@ Most apps use the Python loader, a Ledger-made Python library to communicate wit
 
 To install it, check our [Python Loader documentation](../../PL/01_readme).
 
-When you're setup and ready to go, you can start looking at our [Writing Apps](../u_writing_apps) article!
+<!-- When you're setup and ready to go, you can start looking at our [Writing Apps](../u_writing_apps) article!
+  REMOVED by CF - 07.06.2021
+-->
 
