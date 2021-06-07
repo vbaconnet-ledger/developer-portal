@@ -2,35 +2,26 @@
 
 left:
 
-  - title: Creating content
-    url: /docs/00_header/
+  - title: Nano App
+    url: /docs/NA/start_here
 
-  - title: Tools & Frameworks
-    url: /docs/00_header/
+  - title: Coin Integration
+    url: /docs/CI/10_general_process
 
-  - title: Release notes
-    url: /docs/00_header/
+  - title: DApp Integration
+    url: /docs/DA/01_readme
 
-  - title: Tutorials
-    url: /docs/00_header/
+  - title: Tokens Integration
+    url: /docs/ET/01_readme
 
-  - title: _
+  - title: Tools
     dropdown:
 
-    - title: Template docs
-      url: /docs/TMPL/installation/
+    - title: Speculos
+      url: /docs/SP/start_here
 
-    - title: Blog
-      url: /blog/
-
-    - title: Changelogs
-      dropdown:
-
-      - title: Timeline Style
-        url: /changelog-timeline/
-
-      - title: Post Style
-        url: /changelog-posts/
+    - title: Python Loader
+      url: /docs/PL/01_readme
 
 # Navbar right menu navigation links
 
