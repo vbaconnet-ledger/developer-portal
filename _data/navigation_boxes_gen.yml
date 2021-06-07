@@ -1,12 +1,12 @@
 # Boxes All Integrations
 
 - title: Nano App
-  desc: Complete guide to getting your app running on Nano
+  desc: Complete guide to getting your blockchain supported on Nano S/X
   icon: cog
   doc: NA/start_here
 
 - title: Coin Integration
-  desc: Learn about all the options, features and how to use them
+  desc: How to get your currency supported on Ledger Live
   icon: settings
   doc: CI/10_general_process
 
