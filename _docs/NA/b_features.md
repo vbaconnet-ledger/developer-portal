@@ -57,7 +57,7 @@ It is extremely unlikely for the Device private key to become compromised, becau
 
 As discussed in the previous subsection, the `Device` private key can be used to prove authenticity of a Ledger device. However, direct access to the device private key is limited to BOLOS, so it can't be directly utilized by individual applications on the device (to avoid compromising the key). However, applications can indirectly use the Device private key for attestation purposes by generating attestation keypairs.
 
-Attestation keypairs can be generated on demand by the user for applications to use. An attestation key can be setup using the `endorsementSetup.py` or `endorsementSetupLedger.py` Python loader scripts. When generating an attestation keypair, the host computer connects to the dashboard application and initiates a [Secure Channel](#secure-channel) before instructing the device to create an attestation keypair. The device generates a new attestation keypair and signs it using the `Device` private key to create a Device Certificate. The device then returns the attestation public key, the Device Certificate, and the Issuer Certificate over the Secure Channel to the host. The host, which may be Ledger or a third party, then signs the attestation public key with an `Owner` private key, thus creating an Owner Certificate which is sent back over the Secure Channel and stored by the device (in this way, the Owner "endorses" the authenticity of the device). The device can then prove that the attestation key belongs to a genuine Ledger device using the Device Certificate and the Issuer Certificate, and that the attestation key is trusted by the Owner using the Owner Certificate.
+Attestation keypairs can be generated on demand by the user for applications to use. An attestation key can be setup using the `endorsementSetup.py` or `endorsementSetupLedger.py` [Python loader scripts](../../PL/12_script_reference). When generating an attestation keypair, the host computer connects to the dashboard application and initiates a [Secure Channel](#secure-channel) before instructing the device to create an attestation keypair. The device generates a new attestation keypair and signs it using the `Device` private key to create a Device Certificate. The device then returns the attestation public key, the Device Certificate, and the Issuer Certificate over the Secure Channel to the host. The host, which may be Ledger or a third party, then signs the attestation public key with an `Owner` private key, thus creating an Owner Certificate which is sent back over the Secure Channel and stored by the device (in this way, the Owner "endorses" the authenticity of the device). The device can then prove that the attestation key belongs to a genuine Ledger device using the Device Certificate and the Issuer Certificate, and that the attestation key is trusted by the Owner using the Owner Certificate.
 
 The attestation keys are not accessible to apps directly, instead BOLOS provides attestation functionality to userspace applications through cryptographic primitives available as system calls. There are two different Endorsement Schemes available to applications (Endorsement Scheme \#1 and Endorsement Scheme \#2). When creating an attestation keypair, the user must choose which scheme the keypair shall belong to. Applications can then use that keypair by using the cryptographic primitives offered for the appropriate Endorsement Scheme.
 
@@ -91,50 +91,50 @@ As discussed in `anti-tampering`, the authenticity of a Ledger device can be ver
 
 The Secure Channel protocol is built on top of the APDU protocol used to communicate with the device over USB. As such, the protocol consists of a series of Command APDUs being sent from the host computer, and then associated Response APDUs being sent back from the device, with a one-to-one correspondence. The Secure Channel exists between two parties: the Signer and the Device. The Signer is the remote host connecting to the device. This may be the Issuer (Ledger) connecting to the device through our APIs, a [Custom Certificate Authority](#custom-ca) connecting to the device using a previously [enrolled Custom CA public key](#custom-ca-public-key-enrollment), or another end-user using a randomly generated keypair.
 
-When establishing the Secure Channel, both parties (the Signer and the Device) generate an ephemeral keypair which is later used to calculate a shared secret using ECDH for encrypted communications between the two parties. Both parties prove that they trust their respective ephemeral public keys by each providing a certificate chain. These certificate chains incorporate both a Signer nonce and a Device nonce to avoid reuse of the certificates by an eavesdropper. If the root certificate in the certificate chain provided by the Signer is signed by a party that is trusted by the device, then the device grants the remote host special permissions after establishing the Secure Channel. For example, if the root certificate in the Signer's certificate chain is signed by a previously enrolled Custom CA keypair or Ledger's Issuer keypair, then the host can add or remove apps from the device without the user's confirmation. 
+When establishing the Secure Channel, both parties (the Signer and the Device) generate an ephemeral keypair which is later used to calculate a shared secret using ECDH for encrypted communications between the two parties. Both parties prove that they trust their respective ephemeral public keys by each providing a certificate chain. These certificate chains incorporate both a Signer nonce and a Device nonce to avoid reuse of the certificates by an eavesdropper. If the root certificate in the certificate chain provided by the Signer is signed by a party that is trusted by the device, then the device grants the remote host special permissions after establishing the Secure Channel. For example, if the root certificate in the Signer's certificate chain is signed by a previously enrolled Custom CA keypair or Ledger's Issuer keypair, then the host can add or remove apps from the device without the user's confirmation.
 
-The process of establishing a Secure Channel is illustrated in the following diagram. 
+The process of establishing a Secure Channel is illustrated in the following diagram.
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
 <figure>
-<img src="../images/secure_channel_protocol.png" class="align-center" alt="An admittedly not-so-simple diagram of the Secure Channel protocol handshake" /><figcaption aria-hidden="true">An admittedly not-so-simple diagram of the Secure Channel protocol handshake</figcaption>  
-</figure>  
+<img src="../images/secure_channel_protocol.png" class="align-center" alt="An admittedly not-so-simple diagram of the Secure Channel protocol handshake" /><figcaption aria-hidden="true">An admittedly not-so-simple diagram of the Secure Channel protocol handshake</figcaption>
+</figure>
 
-In the above diagram, during segment (6), the Device provides a Signer serial. The Signer serial is a number stored by the device which identifies the specific Issuer keypair used to sign the device's Issuer Certificate, as Ledger does not use the same Issuer keypair for every device. 
-  
-The Signer certificate chain is generated, sent to the device, and verified from (7) to (11). The Device certificate chain is generated, sent to the Signer, and verified from (12) to (16). In this example, both certificate chains consist of two certificates. The root certificate in the Signer certificate chain is self-signed. The final certificate in the Signer certificate chain is signed by the Signer and verifies the authenticity of the Signer ephemeral public key. The root certificate in the Device certificate chain is the Issuer Certificate (as such, verifying this certificate implicitly verifies the authenticity of the device). The final certificate in the Device certificate chain is signed by the Device and verifies the authenticity of the Device ephemeral public key. 
+In the above diagram, during segment (6), the Device provides a Signer serial. The Signer serial is a number stored by the device which identifies the specific Issuer keypair used to sign the device's Issuer Certificate, as Ledger does not use the same Issuer keypair for every device.
+
+The Signer certificate chain is generated, sent to the device, and verified from (7) to (11). The Device certificate chain is generated, sent to the Signer, and verified from (12) to (16). In this example, both certificate chains consist of two certificates. The root certificate in the Signer certificate chain is self-signed. The final certificate in the Signer certificate chain is signed by the Signer and verifies the authenticity of the Signer ephemeral public key. The root certificate in the Device certificate chain is the Issuer Certificate (as such, verifying this certificate implicitly verifies the authenticity of the device). The final certificate in the Device certificate chain is signed by the Device and verifies the authenticity of the Device ephemeral public key.
 
 ### Custom CA Public Key Enrollment
 
-A [Custom Certificate Authority](#custom-ca) has the option to generate a keypair (using `genCAPair.py`) and enroll their public key onto the device (using `setupCustomCA.py`). Enrolling the Custom CA public key onto the device gives them the following special privileges: 
+A [Custom Certificate Authority](#custom-ca) has the option to generate a keypair (using `genCAPair.py`) and enroll their public key onto the device (using `setupCustomCA.py`). Enrolling the Custom CA public key onto the device gives them the following special privileges:
 
--   The Custom CA can open an authenticated [Secure Channel](#secure-channel) with the device (using the `--rootPrivateKey` option of the Python loader scripts).
--   The Custom CA can sign applications (using `signApp.py`) to create a signature which can be used to avoid the user confirmation when loading the app on the device.  
+-   The Custom CA can open an authenticated [Secure Channel](#secure-channel) with the device (using the `--rootPrivateKey` option of the [Python loader scripts](../../PL/12_script_reference)).
+-   The Custom CA can sign applications (using `signApp.py`) to create a signature which can be used to avoid the user confirmation when loading the app on the device.
 
-This feature may be used by BOLOS application developers to simplify the development process, but it is intended to be much wider in scope than that. This feature may also be used by third party companies to give their own application manager permissions to manage the device without needing user confirmation on every action. 
+This feature may be used by BOLOS application developers to simplify the development process, but it is intended to be much wider in scope than that. This feature may also be used by third party companies to give their own application manager permissions to manage the device without needing user confirmation on every action.
 
-### Parties Involved in our Model  
+### Parties Involved in our Model
 
-Below is a definition of all of the parties involved in our public key cryptography model. 
- 
+Below is a definition of all of the parties involved in our public key cryptography model.
 
-#### Device  
 
-Device Certificate The meaning of this term should be quite self-evident, however in our public key cryptography model it has a distinct meaning. Each Device has a **unique** public-private keypair that is known **only to that device**. In the factory, the Device generates it's own public-private keypair. The Device's private key is not known by Ledger. The Device public-private key pair can be used to sign certificates. 
+#### Device
 
-#### Issuer  
+Device Certificate The meaning of this term should be quite self-evident, however in our public key cryptography model it has a distinct meaning. Each Device has a **unique** public-private keypair that is known **only to that device**. In the factory, the Device generates it's own public-private keypair. The Device's private key is not known by Ledger. The Device public-private key pair can be used to sign certificates.
 
-Issuer Certificate The Issuer is the party that initially provisions the [Device](#device). This party is always Ledger. The Issuer has a public-private keypair that can be used to sign Issuer Certificates. Note that Ledger uses multiple Issuer keypairs, not just one. 
+#### Issuer
 
-#### Owner  
+Issuer Certificate The Issuer is the party that initially provisions the [Device](#device). This party is always Ledger. The Issuer has a public-private keypair that can be used to sign Issuer Certificates. Note that Ledger uses multiple Issuer keypairs, not just one.
+
+#### Owner
 
 Owner Certificate An Owner is simply a party that owns and / or verifies the authenticity of a Ledger device. An Owner has a public-private keypair that can be used to sign certificates. A single [Device](#device) can have zero or more Owners, and the Owner doesn't have to be Ledger. The device uses Owner Certificates exclusively for the purposes of [application attestation](../b_features#endorsement--application-attestation).
 
-#### Custom CA  
+#### Custom CA
 
-Custom CA Certificate A Custom Certificate Authority has a public-private keypair, where the public key is [enrolled on the device](#custom-ca-public-key-enrollment). The Custom CA's private key can then be used to establish an authenticated [Secure Channel](#secure-channel) with the device and sign applications. 
+Custom CA Certificate A Custom Certificate Authority has a public-private keypair, where the public key is [enrolled on the device](#custom-ca-public-key-enrollment). The Custom CA's private key can then be used to establish an authenticated [Secure Channel](#secure-channel) with the device and sign applications.
 
-> A Custom CA may be a BOLOS application developer or a third party company that would like to give their application manager special administration permissions with a BOLOS device. 
+> A Custom CA may be a BOLOS application developer or a third party company that would like to give their application manager special administration permissions with a BOLOS device.
 
 

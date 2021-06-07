@@ -1,4 +1,4 @@
---- 
+---
 title: Python tools for Ledger Hardware Wallets
 subtitle: Apps loader
 tags: []
@@ -14,19 +14,18 @@ The Python loader is  tool to communicate with Ledger Blue, Nano S and Nano X an
 
 It is recommended to install this package in a [Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) in your native environment (not a Docker image) to avoid hidapi issues.
 
-```bash
-virtualenv ledger
-source ledger/bin/activate
-pip install ledgerblue
+To install it, you will need to add a couple of extra dependencies:
+
+``` bash
+sudo apt install virtualenv libudev-dev libusb-1.0-0-dev
 ```
 
-### Installation pre-requisites
+You will also need the `python-dev-tools` (aka `python-dev` on Python 2) package
 
-
-  * libudev-dev
-  * libusb-1.0-0-dev
-  * python-dev (python 2.7)
-  * virtualenv
+``` bash
+python3 -m pip install python-dev-tools --user --upgrade
+python3 -m pip install ledgerblue
+```
 
 This package can optionally work with [libsecp256k1](https://github.com/ludbb/secp256k1-py) Python bindings compiled with ECDH support. If you wish to enable libsecp256k1 bindings, make sure to install libsecp256k1 as follows:
 

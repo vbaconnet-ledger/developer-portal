@@ -1,5 +1,5 @@
 ---
-title: Setting it up 
+title: Setting it up
 subtitle: Where's the On switch?
 tags: []
 toc: true
@@ -75,20 +75,7 @@ When using the Makefile for our BOLOS apps, the Makefile will use the contents o
 
 Most apps use the Python loader, a Ledger-made Python library to communicate with Ledger devices.
 
-To install it, you will need to add a couple of extra dependencies:
+To install it, check our [Python Loader documentation](../../PL/01_readme).
 
-``` bash
-sudo apt install virtualenv libudev-dev libusb-1.0-0-dev
-```
-
-You will also need the `python-dev-tools` (aka `python-dev` on Python 2) package
-
-``` bash
-python3 -m pip install python-dev-tools --user --upgrade
-python3 -m pip install ledgerblue
-```
-
-If you need more information about the Python loader, feel free to check out the github repo: <https://github.com/LedgerHQ/blue-loader-python> . You should find what you're looking for in the `doc` folder and `README.md` .
-
-Now that you're setup and ready to go, you can start looking at our [Writing Apps](../u_writing_apps) article!
+When you're setup and ready to go, you can start looking at our [Writing Apps](../u_writing_apps) article!
 
