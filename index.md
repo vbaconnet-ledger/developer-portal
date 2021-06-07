@@ -2,7 +2,7 @@
 layout: page
 width: expand
 hero:
-    title: Ledger Developer Pages 
+    title: Ledger Developer Pages
     subtitle:
          For Third-party Foundations and blockchain teams who want to develop their <br> currency and services in the Desktop and Mobile versions of Ledger Live
     image: /images/GEN/portal-intro.png
@@ -21,9 +21,9 @@ hero:
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quick answers to frequent  questions asked by third party developers" %}
 
-{% include team.html authors="fabrice, remi_j, remi_b, pierre, hakim, henri, gerry, " title="We are here to help" subtitle="Our team is just a ping away, ready to answer your questions" %}
+<!-- {% include team.html authors="fabrice, remi_j, remi_b, pierre, hakim, henri, gerry, " title="We are here to help" subtitle="Our team is just a ping away, ready to answer your questions" %}
 
-{% include team.html authors="pscott, Tamtamhero, greenknot, nafissa, guillaume, leo, thomas, francesco" %}
+{% include team.html authors="pscott, Tamtamhero, greenknot, nafissa, guillaume, leo, thomas, francesco" %}-->
 
 {% include cta.html title="How to get connected" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 
