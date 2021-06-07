@@ -1,10 +1,10 @@
 # Boxes All Integrations
 
 - title: Nano App
-  desc: Complete guide to building getting your app running on Nano
+  desc: Complete guide to getting your app running on Nano
   icon: cog
-  doc: NA/start_here  
- 
+  doc: NA/start_here
+
 - title: Coin Integration
   desc: Learn about all the options, features and how to use them
   icon: settings
@@ -16,7 +16,7 @@
   doc: DA/01_readme
 
 - title: ERC-20
-  desc: How to include your favourite token in Ledger Live 
+  desc: How to include your favourite token in Ledger Live
   icon: download
   doc: ET/01_readme
 
