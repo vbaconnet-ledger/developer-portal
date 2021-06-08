@@ -47,7 +47,6 @@ By doing so we can ensure that the account synchronisation and the transaction s
 {% include alert.html style="warning" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
 <div> <ul>
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/2610659678/Ledger+Live+Common#ledger-live-cli-setup' class='alert-link'>ledger-live CLI</a></li>
-<li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/1551794446/Live+QA+seed' class='alert-link'>Frozen seed</a></li>
 <li>Physical or emulated Nano Device</li>
 </ul></div> " %}
 <!--  -->
