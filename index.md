@@ -21,5 +21,5 @@ hero:
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quick answers to frequent  questions asked by third party developers" %}
 
-{% include cta.html title="How to get connected" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
+{% include cta.html title="Join the Ledger Devs Slack workspace" button_text="Fill this form" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 

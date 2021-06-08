@@ -16,8 +16,7 @@ layout: doc_na
 
 #### Get in touch with the Ledger developer community
 
-Join the [Ledger's Developer Slack](https://ledger-dev.slack.com) workspace to communicate with the developer community, and introduce yourself and your project through the dedicated channel, **\#introductions**.
-Other useful channels are : **\#Support**, **\#Ledgerjs**, **\#Ledger-live**, **\#rust-sdk** and **\#speculos**.
+If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **ledgerjs** channels. Otherwise, send us a request by filling [this contact form](../../../contact).
 
 #### Familiarize yourself with the BOLOS platform
 

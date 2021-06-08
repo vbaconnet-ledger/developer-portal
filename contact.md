@@ -1,13 +1,11 @@
 ---
 layout: page
 width: xsmall
-title: Got Any Questions
+title: Sign me up on the Ledger Devs Slack workspace
 permalink: /contact/
 ---
 
-##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
-
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+If you're already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **#ledgerjs** channels. Otherwise, **send us a request by filling this form**.
 
 <!-- {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}-->
 
