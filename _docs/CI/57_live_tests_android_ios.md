@@ -17,9 +17,9 @@ layout: doc_ci
 
 <!--  -->
 {% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
-<ul> 
+<ul>
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/1615200511' class='alert-link'>Mobile - Android and iOS</a></li>
-<li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/2177138906/iOS+build+on+macOS' class='alert-link'>iOS build on macOS</a></li></ul>" %}
+<li><a href='https://blog.ledger.com/unos/docs/CI/52_live_install_ios/' class='alert-link'>iOS build on macOS</a></li></ul>" %}
 <!--  -->
 
 <!--  -->
