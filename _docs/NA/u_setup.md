@@ -4,7 +4,7 @@ subtitle: Where's the On switch?
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

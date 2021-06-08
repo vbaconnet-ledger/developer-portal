@@ -1,10 +1,10 @@
 ---
 title: Integrating DApps
-subtitle: 
+subtitle:
 tags: []
 toc: true
 toc_sticky: true
-author: hugo
+author:
 layout: doc_da
 ---
 
@@ -22,12 +22,12 @@ The server must allow DApps to be embedded in iframes.
 The DApp must run differently if it is run from within an iframe or not. If it's the case, directly initialize the web3 instance with the iframe-provider. This way there is no web3modal connect flow at all, and users are instantly connected to the parent window's wallet. Detecting if the wallet is being run or not in an iframe can be done simply by using a query param such as  `?embed=true`.
 
 ## Testing Locally
-We have a little tool to test the provider integration. It is a DApp browser empty shell that uses mock data. 
+We have a little tool to test the provider integration. It is a DApp browser empty shell that uses mock data.
 https://iframe-dapp-browser-test.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>
 
-For example, this is how it is used with Paraswap: https://iframe-dapp-browser-test.vercel.app/app/dapp-browser?mock=true&url=https://paraswap.io?embed=true 
+For example, this is how it is used with Paraswap: https://iframe-dapp-browser-test.vercel.app/app/dapp-browser?mock=true&url=https://paraswap.io?embed=true
 
-Note the page information is driven by the chosen account in the drop-down list in the page header. 
+Note the page information is driven by the chosen account in the drop-down list in the page header.
 
 ## Security Plugin
 

@@ -4,7 +4,7 @@ subtitle: With Oscars for on-screen performance
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

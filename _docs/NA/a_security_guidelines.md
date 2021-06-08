@@ -4,7 +4,7 @@ subtitle: Ensuring your app is secure
 tags: [featured]
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

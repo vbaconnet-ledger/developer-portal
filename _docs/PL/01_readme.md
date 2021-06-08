@@ -4,7 +4,7 @@ subtitle: Apps loader
 tags: []
 toc: true
 toc_sticky: true
-author: parkerhoyes
+author:
 layout: doc_pl
 ---
 

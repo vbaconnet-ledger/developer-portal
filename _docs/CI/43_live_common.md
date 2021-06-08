@@ -2,7 +2,7 @@
 title: Adding *MyCoin* to Live-Common
 subtitle:
 tags: []
-author: remi_j
+author:
 layout: doc_ci
 ---
 
@@ -1912,7 +1912,7 @@ It is responsible for scanning accounts for a crypto family, but also preloading
 
 #### Scanning accounts
 
-As we have seen [Synchronization](#synchronization), the `scanAccounts`, which is part of the CurrencyBridge, share common logic with the sync function, that's why we preferably put them in a `js-synchronisation.js` file. 
+As we have seen [Synchronization](#synchronization), the `scanAccounts`, which is part of the CurrencyBridge, share common logic with the sync function, that's why we preferably put them in a `js-synchronisation.js` file.
 
 The `makeScanAccounts` helper will automatically execute the default address derivation logic, but for some reason if you need to have a completely new way to scan account, you could then implement your own strategy.
 

@@ -2,7 +2,7 @@
 title: Internals
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

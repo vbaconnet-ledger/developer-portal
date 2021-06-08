@@ -2,7 +2,7 @@
 title: Installation
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 
@@ -11,4 +11,4 @@ layout: doc_sp
 * TOC
 {:toc}
 
-##  
+##

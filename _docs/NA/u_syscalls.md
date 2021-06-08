@@ -4,7 +4,7 @@ subtitle: Getting smooth exchanges
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 
@@ -23,7 +23,7 @@ When an application performs a syscall, the Secure Element switches to Superviso
 
 If you are familiar with C programming, you will be used to error codes as the default error model. However, when programming in the embedded world, this traditional model reaches its limits, and can quickly overcomplicate large codebases. Therefore, we've implemented a try / catch system that supports nesting (direct or transitive) using the `setjmp` and `longjmp` API to facilitate writing robust code.
 
-Here is an example of a typical try / catch / finally construct:  
+Here is an example of a typical try / catch / finally construct:
 
 ``` c
 BEGIN_TRY {

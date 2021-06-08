@@ -2,7 +2,7 @@
 title: Building Android Dev App
 subtitle:
 tags: []
-author: henri
+author:
 layout: doc_ci
 ---
 
@@ -16,12 +16,12 @@ layout: doc_ci
 
 # Setup your Android environment
 
-You will need to get Android Studio : 
+You will need to get Android Studio :
 https://developer.android.com/studio
 
 ## Android Studio
 
-You will need to get Android Studio, download and install it : 
+You will need to get Android Studio, download and install it :
 https://developer.android.com/studio
 
 Go by default installation or custom it if you know what you are doing.
@@ -70,14 +70,14 @@ Then start the created device in the AVD manager.
 
 ## Run ledger-live-mobile in the emulator
 
-Go back to your terminal, and add the Android sdk path. 
-you will need to locate your SDK path, and add it to your env, it should be some where like  : 
+Go back to your terminal, and add the Android sdk path.
+you will need to locate your SDK path, and add it to your env, it should be some where like  :
 `export ANDROID_SDK_ROOT=/Users/<username>/Library/Android/sdk`
 
-If you have some modification you want to test from your live-common you can 
+If you have some modification you want to test from your live-common you can
 
 `yalc add @ledger-live/common` (if you have `yalc publish` your live-common)
-and rerun 
+and rerun
 `yarn install`
 
 then you should be able to :

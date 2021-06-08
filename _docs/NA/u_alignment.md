@@ -4,7 +4,7 @@ subtitle: Get padded if you're not aligned
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

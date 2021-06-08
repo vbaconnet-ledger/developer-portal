@@ -2,7 +2,7 @@
 title: Automation - press buttons automatically
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

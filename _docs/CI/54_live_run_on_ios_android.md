@@ -2,7 +2,7 @@
 title: Running iOS and Android Dev Apps
 subtitle:
 tags: []
-author: leo
+author:
 layout: doc_ci
 ---
 
@@ -21,8 +21,8 @@ This page explains how to run a Ledger Live dev app for iOS on macOS.
 
 ## Prerequisites
 
-For iOS: [Building iOS build](../52_live_install_ios).  
-For Android: [Building Android build](../53_live_install_android).  
+For iOS: [Building iOS build](../52_live_install_ios).
+For Android: [Building Android build](../53_live_install_android).
 
 
 ## Connecting to Nano S / X
@@ -79,7 +79,7 @@ previously by ledger-live-common.
 
 Once that is done, an onboarding page should popup.
 - Connect your Nano, and choose the Ledger Nano X device once again.
-- Go through the setup.  
+- Go through the setup.
 
 Congratulations! You have successfully connected your device
 

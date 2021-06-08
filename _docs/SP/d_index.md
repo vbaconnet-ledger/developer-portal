@@ -2,7 +2,7 @@
 title: Developer documentation
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 
