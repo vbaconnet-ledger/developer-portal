@@ -15,15 +15,15 @@ layout: doc_ci
 
 # Coin Integration : Run tests on emulated Android and iOS
 
-{% include alert.html style="primary" text="<b>Prerequisite</b><br>Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
-<ul>
+<!--  -->
+{% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
+<ul> 
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/1615200511' class='alert-link'>Mobile - Android and iOS</a></li>
-<li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/2177138906/iOS+build+on+macOS' class='alert-link'>iOS build on macOS</a></li>
-</ul>
-" %}
+<li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/2177138906/iOS+build+on+macOS' class='alert-link'>iOS build on macOS</a></li></ul>" %}
+<!--  -->
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Different terminals have to be opened at the same time. Obviously, that could be terminal tabs. In this guide, <code>terminal X</code> refers indifferently to a terminal or one of its tabs." %}
+{% include alert.html style="warning" text="Different terminals have to be opened at the same time. Obviously, that could be terminal tabs. In this guide, <code>terminal X</code> refers indifferently to a terminal or one of its tabs." %}
 <!--  -->
 
 

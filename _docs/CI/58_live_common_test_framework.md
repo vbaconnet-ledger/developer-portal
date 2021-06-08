@@ -12,6 +12,7 @@ layout: doc_ci
 {:toc}
 
 <!-- 2021-03-30 based on 1809613975 in Confluence -->
+<!-- https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/1809613975/live-common%2BBridge%2BTest%2Bframework -->
 
 # Testing the Live-common Bridge
 
@@ -28,13 +29,11 @@ Live-common lib is used to test Ledger Live in a headless way:
 
 
 This document describes how tests are implemented in order to test live-common bridge.
-
-{% include alert.html style="primary" text="<b>Scope</b><br>
 <ul>
 <li>Transaction status</li>
 <li>Account synchronisation</li>
 </ul>
-" %}
+
 
 The approach is to test transactions and accounts synchronisation for the different currencies supported in Ledger Live. The transactions are not Broadcasted to the blockchain. We just verify that the bridge behave properly regarding to a tx inputs (recipient address, amount, fee…).
 
@@ -44,13 +43,14 @@ For a specific currency, the seed used needs to be frozen, it’s mean that no n
 
 By doing so we can ensure that the account synchronisation and the transaction status will always provide the same results.
 
-{% include alert.html style="primary" text="<b>Prerequisite</b><br>Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
-<ul>
+<!--  -->
+{% include alert.html style="warning" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
+<div> <ul>
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/2610659678/Ledger+Live+Common#ledger-live-cli-setup' class='alert-link'>ledger-live CLI</a></li>
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/LCH/pages/1551794446/Live+QA+seed' class='alert-link'>Frozen seed</a></li>
 <li>Physical or emulated Nano Device</li>
-</ul>
-" %}
+</ul></div> " %}
+<!--  -->
 
 ## Currency / Account bridge
 
