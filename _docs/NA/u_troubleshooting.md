@@ -4,7 +4,7 @@ subtitle: When it doesn't quite Work
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 
@@ -114,7 +114,7 @@ An application stalling when run on the device (the device's screen freezes and 
 ### Unaligned RAM access
 
 ``` c
-uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed]; 
+uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed];
 PRINTF("uint16_t: %d", ptr16[0]);
 ```
 

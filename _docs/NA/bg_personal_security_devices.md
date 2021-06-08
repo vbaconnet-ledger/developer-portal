@@ -4,7 +4,7 @@ subtitle: PSDs - The secure portal to your assets, not a bank
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

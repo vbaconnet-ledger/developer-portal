@@ -4,7 +4,7 @@ subtitle: The children of infinite trees
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

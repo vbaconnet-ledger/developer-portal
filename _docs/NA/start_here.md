@@ -5,7 +5,7 @@ subtitle: Find the necessary instructions to develop an app for Ledger devices
 tags: []
 toc: true
 toc_sticky: true
-author: thomas
+author:
 layout: doc_na
 ---
 

@@ -2,7 +2,7 @@
 title: Debug - how to use GDB
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

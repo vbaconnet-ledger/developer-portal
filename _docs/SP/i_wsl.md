@@ -2,7 +2,7 @@
 title: Windows (with WSL 2)
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

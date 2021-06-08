@@ -2,7 +2,7 @@
 title: Testing
 subtitle:
 tags: []
-author: francesco
+author:
 layout: doc_ci
 ---
 

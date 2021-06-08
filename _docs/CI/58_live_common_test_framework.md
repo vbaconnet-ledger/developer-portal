@@ -2,7 +2,7 @@
 title: Live Common Bridge Test Framework
 subtitle:
 tags: []
-author: Arnaud Ulric
+author:
 layout: doc_ci
 ---
 

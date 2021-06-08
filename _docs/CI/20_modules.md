@@ -2,7 +2,7 @@
 title: Modules – General Architecture
 subtitle: This section describes the high level technical architecture of Ledger Live and how the different components interact.
 tags: []
-author: fabrice
+author:
 layout: doc_ci
 ---
 
@@ -144,14 +144,14 @@ and mobile version of Ledger-Live.
 
 The Ledger Live application retrieves transaction history and broadcasts new transactions using different nodes and indexing services.
 
-As part of a Ledger Live integration, you should provide a indexing service allowing a Ledger Live user to synchronize his account(s) in a timely manner.  
+As part of a Ledger Live integration, you should provide a indexing service allowing a Ledger Live user to synchronize his account(s) in a timely manner.
 <i>Note :
-  
--   within the Live-Common, the coin will need to be included in the CryptoAssets library. This is seen in detail 
+
+-   within the Live-Common, the coin will need to be included in the CryptoAssets library. This is seen in detail
     [later](../41_live_cryptoassets)
     used to define the list of currencies that will be visible on the
     front end of the application.
-  
+
 -   the [countervalue API](https://github.com/LedgerHQ/ledger-api-countervalue) is used
     to display the actual price and market cap to sort the information
     and accounts inside the application.
@@ -177,20 +177,20 @@ Ledger Live is a new generation wallet desktop application for Desktop and Mobil
 
 Ledger Live is an hybrid desktop application built using Electron, React, Redux, RxJS to deal with blockchains (sync, broadcast,..). It communicates with  hardware wallet devices to verify address and sign transactions with ledgerjs. Some logic is shared with live-common.
 
-## Ledger Live Desktop  
+## Ledger Live Desktop
 
 <!-- ------------- Image ------------- -->
-<img width="255" src="../../../uploads/images/CI/lld.png" style="float:right">  
+<img width="255" src="../../../uploads/images/CI/lld.png" style="float:right">
 <!-- --------------------------------- -->
 
 Ledger Live Desktop is the computer app for Ledger hardware wallets. It allows users to manage their crypto assets securely, such as Bitcoin, Ethereum, XRP and many others.
 
-It is compatible with  
-\- **macOS 10.10+**  
-\- **Windows 8+ (x64)**  
-\- **Linux (x64)**  
+It is compatible with
+\- **macOS 10.10+**
+\- **Windows 8+ (x64)**
+\- **Linux (x64)**
 
-## Ledger Live Mobile  
+## Ledger Live Mobile
 
 <!-- ------------- Image ------------- -->
 <img align="left" width="109" src="../../../uploads/images/CI/llm.png">
@@ -198,9 +198,9 @@ It is compatible with
 
 Ledger Live is a mobile companion app for Ledger hardware wallets. It allows users to manage their crypto assets securely, such as Bitcoin, Ethereum, XRP and many others.
 
-It is compatible with  
-\- **iOS**   
-\- **Android**  
+It is compatible with
+\- **iOS**
+\- **Android**
 
 Ledger Live mobile application is  compatible with the Ledger Nano X via Bluetooth connection.
 

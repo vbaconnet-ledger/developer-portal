@@ -1,10 +1,10 @@
---- 
+---
 title: Scripts
 subtitle: Set of Scripts
 tags: []
 toc: true
 toc_sticky: true
-author: parkerhoyes
+author:
 layout: doc_pl
 ---
 

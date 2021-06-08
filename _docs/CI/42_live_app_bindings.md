@@ -2,7 +2,7 @@
 title: Adding *MyCoin* Nano App JS Bindings
 subtitle:
 tags: []
-author: remi_j
+author:
 layout: doc_ci
 ---
 

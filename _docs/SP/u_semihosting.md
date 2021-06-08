@@ -2,7 +2,7 @@
 title: Semihosting as an additional debug mechanism
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

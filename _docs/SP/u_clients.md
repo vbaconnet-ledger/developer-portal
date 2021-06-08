@@ -2,7 +2,7 @@
 title: Clients - how to send APDUs
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

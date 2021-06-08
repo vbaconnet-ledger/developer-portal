@@ -1,8 +1,8 @@
 ---
 title: Adding *MyCoin* to CryptoAssets library
-subtitle: This section describes the general processes and way of working Ledger will follow while 
+subtitle: This section describes the general processes and way of working Ledger will follow while
 tags: []
-author: remi_j
+author:
 layout: doc_ci
 ---
 
@@ -25,7 +25,7 @@ layout: doc_ci
 
 -->
 
-***  
+***
 
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.
 

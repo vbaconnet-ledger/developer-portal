@@ -2,7 +2,7 @@
 title: Prerequisites
 subtitle:
 tags: []
-author: hakim
+author:
 layout: doc_ci
 ---
 

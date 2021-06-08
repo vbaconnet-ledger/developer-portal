@@ -1,10 +1,10 @@
 ---
 title: Publishing an Application
-subtitle: 
+subtitle:
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 
@@ -54,7 +54,7 @@ When these pieces are ready for deployment, they must be sent to Ledger for a se
 -   Application stability, correct handling of errors
 -   Correct usability (see [Design Guidelines](#design-guidelines))
 
-Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps. A new all-in-one native app called *Ledger Live* has been released on the 9th of July, 2018. This new platform will be open to pull requests for adding support for new cryptocurrencies in the coming months, *it is not available yet*. Currently, your best shot is to build your own companion app with its own backend. It is less convenient for users than a full integration to Ledger Live, but on the other hand, it gives you more freedom on the design of the interface you want users to see, and the way it will be implemented (Web app? Native app? It's up to you!). 
+Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps. A new all-in-one native app called *Ledger Live* has been released on the 9th of July, 2018. This new platform will be open to pull requests for adding support for new cryptocurrencies in the coming months, *it is not available yet*. Currently, your best shot is to build your own companion app with its own backend. It is less convenient for users than a full integration to Ledger Live, but on the other hand, it gives you more freedom on the design of the interface you want users to see, and the way it will be implemented (Web app? Native app? It's up to you!).
 
 ### Design Guidelines
 

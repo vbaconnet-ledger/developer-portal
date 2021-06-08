@@ -4,7 +4,7 @@ subtitle: Hold your breath. Then jump in
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

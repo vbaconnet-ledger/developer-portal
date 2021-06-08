@@ -2,7 +2,7 @@
 title: Speculos documentation
 subtitle:
 tags: []
-author: greenknot
+author:
 layout: doc_sp
 ---
 

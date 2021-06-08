@@ -4,7 +4,7 @@ subtitle: How the 24 words are used on the device
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

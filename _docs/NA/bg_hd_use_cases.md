@@ -4,7 +4,7 @@ subtitle: HD Trees and the 24 words
 tags: []
 toc: true
 toc_sticky: true
-author: pscott
+author:
 layout: doc_na
 ---
 

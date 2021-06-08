@@ -2,7 +2,7 @@
 title: Run tests on emulated Android and iOS
 subtitle:
 tags: []
-author: Guillaume Lethuillier
+author:
 layout: doc_ci
 ---
 
