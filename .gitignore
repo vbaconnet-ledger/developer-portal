@@ -8,3 +8,6 @@ _site
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# dependencies
+node_modules/

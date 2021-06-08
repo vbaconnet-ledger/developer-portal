@@ -1,7 +1,7 @@
 ---
 title: Developing Secure Ledger Apps
-subtitle: Ensuring your app is secure
-tags: [featured]
+subtitle: Ensuring your app passes the security review
+tags: []
 toc: true
 toc_sticky: true
 author:
@@ -72,7 +72,7 @@ Warning: If you allow signing untrusted hashes (while displaying a prompt to the
 BIP32 paths on which the app can derive keys must be restricted in your application. The chosen derivation paths must not conflict with existing paths if the use case differs.
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Ledger will not sign apps whose BIP32 prefixes have not been properly set." %}
+{% include alert.html style="warning" text="Ledger will not sign apps whose BIP32 prefixes have not been properly set." %}
 <!--  -->
 
 
@@ -95,20 +95,20 @@ APP_LOAD_PARAMS=--curve ed25519 --curve prime256r1 --path "44'/535348'" --path "
 Rationale: Setting prefixes is crucial, as it limits the amount of damages an attacker can cause if he manages to compromise an application. If a vulnerability is exploited on a poorly written of backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
+{% include alert.html style="warning" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
 <!--  -->
 
 #### Signing/disclosing keys without user approval
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>You must always require user approval for signing transactions/messages." %}
+{% include alert.html style="warning" text="You must always require user approval for signing transactions/messages." %}
 <!--  -->
 
 Rationale: If you do not require user consent for signing important data, an attacker can use your device as a signing black box and sign whatever they want.
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>You might also consider approvals for extracting public keys, as some users might want extended privacy." %}
+{% include alert.html style="primary" text="You might also consider approvals for extracting public keys, as some users might want extended privacy." %}
 <!--  -->
 
 
@@ -117,7 +117,7 @@ Rationale: If you do not require user consent for signing important data, an att
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Note</b><br>There is a trade-off between privacy and usability here. If you want privacy, it would require a user interaction every time they want to use Ledger device, as opposed to only interaction while signing transactions. The behaviour could also be manually set in the application options." %}
+{% include alert.html style="primary" text="There is a trade-off between privacy and usability here. If you want privacy, it would require a user interaction every time they want to use Ledger device, as opposed to only interaction while signing transactions. The behaviour could also be manually set in the application options." %}
 <!--  -->
 
 #### Private Key Management
@@ -592,4 +592,3 @@ Note: If not guarded properly, an attacker might try a following line of attack:
 3.  Attacker hogs `io_exchange` (presumably by doing some bad things to USB communication)
 1.  User tries again a few more times, thinks that the UI is broken and the app hanged. The callbacks are fired again and again but `io_exchange` still throws
 1.  At this point in time, a desperate user might click on "confirm" button to unblock the UI. If an attacker can guess this time, she can un-hog USB and receive confirm callback
-

@@ -43,7 +43,7 @@ The following command line can be used for a debug build:
 ### Usage
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Only run Speculos on trusted apps, as a malicious app could exploit it and make arbitrary Linux system calls." %}
+{% include alert.html style="warning" text="Only run Speculos on trusted apps, as a malicious app could exploit it and make arbitrary Linux system calls." %}
 <!--  -->
 
 To run your application, simply type in:

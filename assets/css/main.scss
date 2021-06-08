@@ -23,4 +23,11 @@
 // Other vendor styles : Code Syntax highlighting
 // @import "syntax-highlighting/cld";  // Coloured
 // @import "syntax-highlighting/bw";
-@import "syntax-highlighting/hl"; //#FC 2021-04-28 1550
+// @import "syntax-highlighting/hl"; // FC 2021-04-28 1550 unos/_sass/syntax-highlighting/hl.scss
+@import "syntax-highlighting/mk"; // FC 2021-05-20 1750 (monokai) unos/_sass/syntax-highlighting/mk.scss
+
+// Font Awesome FC 2021-05-21 1900
+@import "font_awesome/scss/fontawesome.scss";
+@import "font_awesome/scss/solid.scss";
+@import "font_awesome/scss/regular.scss";
+@import "font_awesome/scss/brands.scss";
