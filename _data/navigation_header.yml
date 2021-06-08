@@ -23,6 +23,9 @@ left:
     - title: Python Loader
       url: /docs/PL/01_readme
 
+  - title: Changelog
+    url: /changelog-timeline
+
 # Navbar right menu navigation links
 
 right:
