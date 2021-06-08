@@ -18,7 +18,7 @@ layout: doc_na
 <!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
 If you want to get inspired, very good codebases are available for you to learn from.
 
--   The [app-boilerplate](https://github.com/LedgerHQ/ledger-app-boilerplate.git) is a thoroughly documented app that was specifically designed for developers to play around with and read the code.
+-   The [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) is a thoroughly documented app that was specifically designed for developers to play around with and read the code.
 -   The [app-sia](https://github.com/LedgerHQ/app-sia.git) is also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!
 
 ### Cloning and Making
@@ -28,26 +28,18 @@ Applications that support multiple BOLOS devices are typically contained within 
 First, download the boilerplate app.
 
 ```bash
-git clone https://github.com/LedgerHQ/ledger-app-boilerplate.git
+git clone https://github.com/LedgerHQ/app-boilerplate.git
 ```
 
 Now you can let the Makefile do all the work. The `load` target will build the app if necessary and load it onto your device over USB.
 
 ```bash
-cd ledger-app-boilerplate/
+cd app-boilerplate/
 make load
 ```
 
-And you're done! After confirming the installation on your device, you should see an app named "Boilerplate". The app can be deleted like so:
+And you're done! After confirming the installation on your device, you should see an app named "Boilerplate". The app can be deleted from the Nano like so:
 
 ```bash
 make delete
 ```
-
-<!--- ### Display Management
-
-The doc covered the art of displaying information on screen, go and check it out: [Display Management](../u_display_management).
-
-REMOVED by CF - 07.06.2021
---->
-

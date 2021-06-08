@@ -1,3 +1,14 @@
+<!-- alert.html FC 2021-05-21 2207 -->
 <div{% if include.style %} class="uk-alert-{{ include.style }}"{% endif %} data-uk-alert>
-    <p>{{ include.text }}</p>
+    {% if include.style == 'success' %}
+        <span> <i class="fas fa-info-circle"></i> &ensp; <b>Note</b><br> {{ include.text }}</span>
+    {% elsif include.style == 'primary' %}
+        <span> <i class="fa fa-check-square"></i> &ensp; <b>Tip</b><br> {{ include.text }}</span>
+    {% elsif include.style == 'warning' %}
+        <span> <i class="fas fa-exclamation-triangle"></i> &ensp; <b>Important</b><br> {{ include.text }}</span>
+    {% elsif include.style == 'danger' %}
+        <span> <i class="fas fa-radiation"></i> &ensp; <b>Warning</b><br> {{ include.text }}</span>
+    {% else %}
+        {{ include.text }}
+    {% endif %}
 </div>

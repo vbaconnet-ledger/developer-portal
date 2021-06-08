@@ -22,7 +22,7 @@ BOLOS applications have access to two different types of memory in the Secure El
 All global variables that are declared as `const` are stored in read-only flash memory, right next to code. All normal global variables that are declared as non-`const` are stored in RAM. However, thanks to the link script (`script.ld`) in the SDK, global variables that are declared as non-`const` and are given the prefix `N_` are placed in a special write-permitted location of NVRAM. This data can be read in the same way that regular global variables are read. However, writing to NVRAM variables must be done using the `nvm_write(...)` function defined by the SDK, which performs a syscall. When loading the app, NVRAM variables are initialized with data specified in the app's hex file (this is usually just zero bytes).
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Warning</b><br>Initializers of global non-<code>const</code> variables (including NVRAM variables) are ignored. As such, this data must be initialized by application code." %}
+{% include alert.html style="warning" text="Initializers of global non-<code>const</code> variables (including NVRAM variables) are ignored. As such, this data must be initialized by application code." %}
 <!--  -->
 
 ### Flash Memory Endurance
