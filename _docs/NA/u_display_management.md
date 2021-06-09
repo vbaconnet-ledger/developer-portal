@@ -15,9 +15,9 @@ layout: doc_na
 
 ## Introduction
 
-### On-screen display
+## On-screen display
 
-#### Screens and Flows
+### Screens and Flows
 
 Displaying information on the devices is done by defining a **flow**. Think of a flow as a **set of screens that will be displayed** to the user. The user will be able to navigate the flow using **left** and **right** buttons.
 
@@ -37,7 +37,7 @@ UX_FLOW(ux_sign_transaction,            // Name of the flow
 
 "*But what are those steps? Where can I find them?*" you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those.
 
-#### Declaring steps
+### Declaring steps
 
 A step is declared using one of the **macros provided by the SDK**. Here's a list of the **most used ones** (a more exhaustive list is available by looking at the SDK source code):
 
@@ -78,7 +78,7 @@ UX_STEP_NOCB(
 
 It looks like the `layout` is where the black-magic happens. Let's have a closer look at layouts.
 
-#### Layouts
+### Layouts
 
 Layouts are nothing more than rules that specify the format / number of lines / fonts we are going to use on the screen. They are easy to remember once you understand that:
 
@@ -120,9 +120,9 @@ Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only 
 
 
 
-### Examples
+## Examples
 
-#### Menu
+### Menu
 
 Here's a typical flow for any app that will display its name (along with its logo), then its version, then the settings and finally a quit (along with a icon).
 
@@ -143,7 +143,7 @@ UX_FLOW(ux_app_dashboard,
 
 You guessed it, pressing both buttons when on the **QUIT** screen will call `os_sched_exit(-1)`, effectively quitting the app. Pressing both button while on the `Settings` screen will call `ui_settings_menu()`, another function that you need to define with `UX_FLOW`. We also added the `FLOW_LOOP` step at the end to have the menu wrap around. Users can now indefinitely cycle through the menu, yay!
 
-#### Signing a transaction
+### Signing a transaction
 
 Here's the example of a flow to sign a transaction. We first display "Confirm address" along with a picture, then use `bnnn_paging` to display the address because it might not fit on a single screen. We then display the amount and the transactions fees, and finally add two callack steps: the first one to confirm, the second one to reject.
 
@@ -165,7 +165,7 @@ UX_FLOW(ux_sign_transaction,
     );
 ```
 
-#### Advanced display management
+### Advanced display management
 
 The special [advanced display management](../u_advanced_display_management) section details more advanced UX\_FLOW delcaration. [Low-level display management](../u_low_level_display_management) has details about the inner-workings of flows, but feel free to skip this one as it is not mandatory to write new apps.
 

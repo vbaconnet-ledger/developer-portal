@@ -56,7 +56,7 @@ When these pieces are ready for deployment, they must be sent to Ledger for a se
 
 Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps.
 
-### Design Guidelines
+## Design Guidelines
 
 The design of your device app will be added to our website to inform that your app is available. Please provide us your design in the required format and measurements.
 
@@ -130,7 +130,7 @@ Once positioned on the right menu entry, the user can select the entry by pressi
 
 Ledger does not impose the icons nor the interface for third party applications, however user friendliness and guidelines compliance is something being reviewed during the integration process. Therefore, a very poor design might be a cause of delay in your release roadmaps. Don't neglect it !
 
-### Design Warranty
+## Design Warranty
 
 The design of your app must be free from any encumbrances and must not infringe upon any third party intellectual property right, in particular trademark and design rights. You grant Ledger the right to use such design for free with the right to reproduce and exploit the design for the duration of its display on Ledger website.
 
@@ -138,7 +138,7 @@ You represent and warrant that the app you are making available on Ledger Live i
 
 You agree to hold Ledger harmless of any claim arising out of the use of the design and or distribution of your app .
 
-### Release Process
+## Release Process
 
 There are different release levels for a given application:
 
@@ -168,7 +168,7 @@ An application will be listed publicly (official Ledger support) when:
 <!--  -->
 
 
-### Third Party Applications Support
+## Third Party Applications Support
 
 <!--  -->
 {% include alert.html style="success" text="The following only applies if you are adding support for a cryptocurrency and chose to build your own companion app." %}
@@ -187,13 +187,13 @@ Along with your publication request, app sources and tutorial, please provide in
 <!--  -->
 
 
-### Warranty and liability disclaimer
+## Warranty and liability disclaimer
 
 The review and publication of third-party Ledger device applications (collectively “the Service”) are provided by Ledger on an “as-is” and “as-available” basis. The Service is subject to change without notice. Ledger disclaims all warranties of accuracy, non-infringement, merchantability and fitness for a particular purpose. To the extent that Ledger makes any pre-release of Ledger device applications available to third-party developers, you understand that Ledger is under no obligation to provide updates, enhancements, or corrections, or to notify you of any changes that Ledger may make, or to publicly announce or introduce the Ledger device applications at any time in the future.
 
 To the extent not prohibited by applicable law, in no event will Ledger be liable for personal injury, or any incidental, special, indirect, consequential or punitive damages whatsoever, including, without limitation, damages resulting from delay of delivery, for loss of profits, data, business or goodwill, for business interruption, or any other commercial damages or losses, arising out of or related to this agreement or your use or inability to use the service.
 
-### Deliverables summary
+## Deliverables summary
 
 Please apply on [Ledger's Listing
 Program](https://forms.gle/86qP6H1etn8xSwQG9):

@@ -21,7 +21,7 @@ BOLOS applications have access to two different types of memory in the Secure El
 
 Access to flash memory is regulated by the Memory Protection Unit, which is configured by BOLOS to prevent applications from tampering with parts of flash memory that they shouldn't. However, applications are able to access the part of flash memory where their constant data and code is defined. This data includes code and `const` variables, but applications may also allocate extra space in NVRAM to be used at runtime for persistent storage.
 
-### Types of Memory
+## Types of Memory
 
 All global variables that are declared as `const` are stored in read-only flash memory, right next to code. All normal global variables that are declared as non-`const` are stored in RAM. However, thanks to the link script (`script.ld`) in the SDK, global variables that are declared as non-`const` and are given the prefix `N_` are placed in a special write-permitted location of NVRAM. This data can be read in the same way that regular global variables are read. However, writing to NVRAM variables must be done using the `nvm_write(...)` function defined by the SDK, which performs a syscall. When loading the app, NVRAM variables are initialized with data specified in the app's hex file (this is usually just zero bytes).
 
@@ -29,7 +29,7 @@ All global variables that are declared as `const` are stored in read-only flash 
 {% include alert.html style="warning" text="Initializers of global non-<code>const</code> variables (including NVRAM variables) are ignored. As such, this data must be initialized by application code." %}
 <!--  -->
 
-### Flash Memory Endurance
+## Flash Memory Endurance
 
 The flash memory for the [ST31G480](http://www.st.com/en/secure-mcus/st31g480.html), which is the Secure Element used in the Ledger Blue, is rated for 500 000 erase / write cycles. This should be more than enough to last the expected lifetime of the device, but only if applications use it properly. Applications should avoid erasures as much as possible.
 
@@ -40,7 +40,7 @@ The flash memory for the [ST31G480](http://www.st.com/en/secure-mcus/st31g480.ht
 
 In the future, Ledger will provide various persistent storage utilities within BOLOS and the SDKs to simplify the process of using flash memory efficiently.
 
-### PIC and Model Implications
+## PIC and Model Implications
 
 PIC stands for Position-Independent Code. The BOLOS toolchain produces PIC to allow the code **Link address** to be different from the code **Execution address**. For example, the `main` function is linked in the generated application at address `0xC0D00000`. However, the slot used when loaded into the Secure Element could be `0x10E40400`. Therefore, if the code makes a reference to `0xC0D00000`, even with an offset, it would be denied access as the application is locked by the Memory Protection Unit (not to mention, this is not the correct address of the `main` function at runtime).
 

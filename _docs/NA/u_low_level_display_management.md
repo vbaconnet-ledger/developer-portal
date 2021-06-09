@@ -47,7 +47,7 @@ To facilitate the process of implementing an asynchronous display manager loop, 
 
 See [the sample apps](https://github.com/LedgerHQ/blue-sample-apps) for examples of how to use these macros. The main concept to remember is that after a Display Status has been sent, the application must wait, asynchronously, for the Display Processed Event before being able to continue to display more elements of the GUI.
 
-### BOLOS UX
+## BOLOS UX
 
 The BOLOS UX is the implementation of the device-wide user interface; it is a component of the [dashboard application](../b_overview#dashboard). Applications delegate certain jobs to the BOLOS UX in order to retain consistency across all apps for certain UI components (like the status bar on the Ledger Blue), as well as to allow the operating system to override the application's UI when necessary (for example, when locking the screen). The application interfaces with the BOLOS UX using `os_ux(...)`, which is a syscall. However, applications don't need to call this function directly as it is automatically called by the display interaction helpers (the `UX_` macros).
 

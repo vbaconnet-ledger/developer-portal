@@ -19,7 +19,7 @@ Since BOLOS was designed based on a single-task model where only one app runs at
 
 When an application performs a syscall, the Secure Element switches to Supervisor mode and the OS performs the requested task before giving control back to the application, in User mode. All syscalls have a wrapper function in the [SDK](http://localhost:4000/unos/docs/NA/u_setup/#setting-up-the-sdk) that can be used to invoke them. A syscall may be used to access hardware accelerated cryptographic primitives (most of these functions are defined in `include/cx.h` in the SDKs), to perform low-level I/O operations (like receiving / transmitting to the MCU), or to access cryptographic secrets managed by BOLOS (for example, to derive a node from the BIP 32 master node).
 
-### Error Model
+## Error Model
 
 If you are familiar with C programming, you will be used to error codes as the default error model. However, when programming in the embedded world, this traditional model reaches its limits, and can quickly overcomplicate large codebases. Therefore, we've implemented a try / catch system that supports nesting (direct or transitive) using the `setjmp` and `longjmp` API to facilitate writing robust code.
 
@@ -43,7 +43,7 @@ You should use the error codes defined in the SDKs wherever possible (see `EXCEP
 
 Developers should avoid creating a new try context wherever possible in order to reduce code size and stack usage. Preferably, an application should only have a single top-level try context at the application entry point (in `main()`).
 
-### Syscall Requirements
+## Syscall Requirements
 
 BOLOS is based on an exception model for error reporting, therefore, it expects the application to call the BOLOS API using this mechanism. If an API function is called from outside a `TRY` context, then the BOLOS call is denied.
 

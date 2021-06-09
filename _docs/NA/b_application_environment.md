@@ -1,6 +1,6 @@
 ---
 title: Application Environment
-subtitle: 
+subtitle:
 tags: []
 toc: true
 toc_sticky: true
@@ -14,7 +14,9 @@ layout: doc_na
 
 ## Introduction
 
-Due to its limited amount of RAM, the Secure Element is designed to only support one application running at a time. This isolated model implies that once the application is running, no other application can spuriously disturb the SE-MCU link. It also means that BOLOS can give the currently running application full control of I/O with the device's peripherals. This model allowed the BOLOS architecture to be designed in a way that gives applications as much control over the device's features as possible. In essence, each application runs in a "virtual" device and can reconfigure all of the hardware as it pleases. BOLOS [isolates the application](../bg_application_isolation) from the other applications on the device, and restricts access to all areas of flash memory other than those exclusively allocated for the running application.
+Due to its limited amount of RAM, the Secure Element is designed to only support one application running at a time. This isolated model implies that once the application is running, no other application can spuriously disturb the SE-MCU link. It also means that BOLOS can give the currently running application full control of I/O with the device's peripherals.
+
+This model allowed the BOLOS architecture to be designed in a way that gives applications as much control over the device's features as possible. In essence, each application runs in a "virtual" device and can reconfigure all of the hardware as it pleases. BOLOS [isolates the application](../bg_application_isolation) from the other applications on the device, and restricts access to all areas of flash memory other than those exclusively allocated for the running application.
 
 This model has the tremendous advantage of not limiting what the application can do, however it also implies that every application has to do **all** of the heavy lifting involved in managing every layer of the transport protocols used to communicate with the world outside of the SE. Luckily, the SDK implements all I/O handling that typical applications need to do. However, developers have the option to customize I/O protocols for more specialized applications.
 
@@ -30,7 +32,7 @@ Some peripherals not only receive commands from the SE, but also trigger events 
 
 In this model, the application is at the center, and does not rely on any other embedded co-applications.
 
-### Delegation Model
+## Delegation Model
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
