@@ -26,11 +26,11 @@
 
 - title: Ledger Boilerplate App
   desc: Boilerplate for a Nano S/X apps
-  url: https://github.com/LedgerHQ/ledger-app-boilerplate.git
+  url: https://github.com/LedgerHQ/app-boilerplate
 
 - title: App Sia
   desc: Sia wallet app for the Ledger Nano S
-  url: https://github.com/LedgerHQ/app-sia.git
+  url: https://github.com/LedgerHQ/app-sia
 
 - title: Nano X Secure SDK
   desc: SDK for ST33 applications development
