@@ -35,7 +35,7 @@ UX_FLOW(ux_sign_transaction,            // Name of the flow
         );
 ```
 
-"*But what are those steps? Where can I find them?*" you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those.
+*"But what are those steps? Where can I find them?"* you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those.
 
 #### Declaring steps
 
