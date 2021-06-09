@@ -15,7 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-The Ledger Manager is the service which centralizes the distribution of [BOLOS](../b_overview) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This document aims at explaining the procedure for a third party app to be released on the Ledger Manager.
+The Ledger Manager is the service which centralizes the distribution of [BOLOS](../b_overview) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This article explains the procedure for a third party app to be released on the Ledger Manager.
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
@@ -54,11 +54,11 @@ When these pieces are ready for deployment, they must be sent to Ledger for a se
 -   Application stability, correct handling of errors
 -   Correct usability (see [Design Guidelines](#design-guidelines))
 
-Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps. A new all-in-one native app called *Ledger Live* has been released on the 9th of July, 2018. This new platform will be open to pull requests for adding support for new cryptocurrencies in the coming months, *it is not available yet*. Currently, your best shot is to build your own companion app with its own backend. It is less convenient for users than a full integration to Ledger Live, but on the other hand, it gives you more freedom on the design of the interface you want users to see, and the way it will be implemented (Web app? Native app? It's up to you!).
+Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps.
 
 ### Design Guidelines
 
-The design of your device app will be added to our website to inform that your app is available. In that respect, we thank you to provide us with the design in a format and with measurements that shall meet the criteria communicated by our team.
+The design of your device app will be added to our website to inform that your app is available. Please provide us your design in the required format and measurements.
 
 There are 2 mandatory icons that should be provided for Ledger to release an app:
 
@@ -67,10 +67,10 @@ There are 2 mandatory icons that should be provided for Ledger to release an app
 
 Below are the Adobe Illustrator templates for such icons, please respect their guidance.
 
--   The color palette for Blue icons shall contain 16 colors maximum
--   The icon file shall not contain any alpha channel
--   In order to blend well with the Blue's Dashboard background, the 4 rounded white corners of the blue icon shall be set to this RGB value: \#F9F9F9 (and not \#FFFFFF)
--   Nano X icons must be 14x14 px in size. Developers can create their Nano X icons from the 16x16 px Nano S one with the following command on Linux (it first requires to install the package <span class="title-ref">imagemagick</span>): `convert nanos_app_<token>.gif -crop 14x14+1+1 +repage -negate nanox_app_<token>.gif`
+-   The color palette for Blue icons contains 16 colors maximum
+-   The icon file does not contain any alpha channel
+-   In order to blend well with the Blue's Dashboard background, the 4 rounded white corners of the blue icon are set to this RGB value: \#F9F9F9 (and not \#FFFFFF)
+-   Nano X icons are 14x14 px in size. Developers can create their Nano X icons from the 16x16 px Nano S one with the following command on Linux (install the package **imagemagick** first): `convert nanos_app_<token>.gif -crop 14x14+1+1 +repage -negate nanox_app_<token>.gif`
 
 **Click on each image to download the corresponding .ai file, and fill them directly before sending them back. They should correspond to the icons used to compile your app.**
 
@@ -101,11 +101,11 @@ Even though the screen is small, you don't want to bloat it with plenty of tiny 
 <img src="../images/scroll.gif" class="align-center" alt="Example: transaction confirmation screen" /><figcaption aria-hidden="true">Example: transaction confirmation screen</figcaption>
 </figure>
 
-On this example two pieces of information are shown: an amount of bitcoins, and a destination address. The two screens are alternating periodically until the user validates or cancel. A title is present to describe each information. For the too-long-to-display destination address, the automatic scrolling is used.
+On this example two pieces of information are shown: an amount of bitcoins, and a destination address. The two screens are alternating until the user validates or cancel. A title describes each information. Automatic scrolling is used for addresses that are too long to be displayed.
 
-A few graphical pointers (glyphs) help users to make a link between the right and left buttons and their effects. There are four principal functions fulfilled by pressing buttons:
+Graphical pointers (glyphs) shows the effects of the right and left buttons. There are four principal functions fulfilled by pressing buttons:
 
--   Making a binary choice for a question asked by the device (1 button)
+-   Making a binary choice for answering a question asked by the device (1 button)
 -   Moving in a menu (1 button)
 -   Selecting a menu entry (2 buttons)
 -   Proceeding with a disclaimer (2 buttons)
@@ -126,17 +126,17 @@ To move inside a menu, be it vertical or horizontal, the same technique is appli
 <img src="../images/vertical_menu.png" class="align-center" alt="Example use of arrows in a vertical menu" /><figcaption aria-hidden="true">Example use of arrows in a vertical menu</figcaption>
 </figure>
 
-Once positioned on the right menu entry, the user can select the entry by pressing both buttons. This potential action is not represented by glyphs. Same goes when going through a set of disclaimer screens: only text is displayed, and the user goes to the next part by pressing both buttons. This is a consistent behavior across the device, so you can assume that users are used to it. It should feel obvious when the user has to press two buttons to go through something in your app.
+Once positioned on the right menu entry, the user can select the entry by pressing both buttons. This action is not represented by glyphs. Same goes when going through a set of disclaimer screens: only text is displayed, and the user goes to the next part by pressing both buttons. This is a consistent behavior across the device, so you can assume that users are used to it. It should feel obvious when the user has to press two buttons to go through something in your app.
 
-Ledger does not impose the icons nor the interface for third party applications, however user friendliness and guidelines compliance is something being reviewed during the integration process. Therefore, a very poor design might be a cause of delay in your release roadmap if the outcome of the review is negative because of it. Don't neglect it !
+Ledger does not impose the icons nor the interface for third party applications, however user friendliness and guidelines compliance is something being reviewed during the integration process. Therefore, a very poor design might be a cause of delay in your release roadmaps. Don't neglect it !
 
 ### Design Warranty
 
-The design of your device app shall free from any encumbrances and shall not infringe upon any third party intellectual property right, in particular trademark and design rights. You grant Ledger the right to use such design for free with the right to reproduce and exploit the design for the duration of its display on Ledger website.
+The design of your app must be free from any encumbrances and must not infringe upon any third party intellectual property right, in particular trademark and design rights. You grant Ledger the right to use such design for free with the right to reproduce and exploit the design for the duration of its display on Ledger website.
 
-You represent and warrant that the device app you are making available on Ledger Live is in compliance with all relevant laws and regulations.
+You represent and warrant that the app you are making available on Ledger Live is in compliance with all relevant laws and regulations.
 
-You agree to hold Ledger harmless of any claim arising out of the use of the design and or distribution of the device app .
+You agree to hold Ledger harmless of any claim arising out of the use of the design and or distribution of your app .
 
 ### Release Process
 
@@ -148,21 +148,13 @@ There are different release levels for a given application:
     -   Developer mode with an **unaudited** application
 
 
-<!--  -->
-{% include alert.html style="warning" text="Ledger has developed its own emulator called [Speculos](https://github.com/LedgerHQ/speculos). Feel free to checkout:
+In any case, Ledger's decision to publish a third party application may not be considered as any form of partnership or endorsement.
 
-1.  The [Speculos repo](https://github.com/LedgerHQ/speculos) .
-2.  The [Nano S SDK](https://github.com/LedgerHQ/nanos-secure-sdk) and the [Nano X SDK](https://github.com/LedgerHQ/nanox-secure-sdk) .
-3.  The `speculos` section which gives an overview of how to use speculos." %}
-<!--  -->
+As long as an application isn't audited by Ledger security team, the message `Pending Ledger Review` will be displayed when the application is started. The user can aknowledge and skip this warning by pressing both buttons and use the application at his own risks. As an unaudited application is considered experimental, such application will be visible **only when the developer mode settings is enabled** in Ledger Live settings.
 
-In any case, Ledger's decision to publish a third party application may not be considered as any form of partnership nor endorsement of such.
+Some applications are also visible when the developer mode setting is enabled, not because of a lack of security review, but rather because they are considered too complex to use. It can be that the mandatory compatible GUI is missing, or that the application purpose is considered too technical for the vast majority of users.
 
-As long as an application isn't audited by Ledger security team, the message `Pending Ledger Review` will be made visible when the application is started. The user can aknowledge and skip this warning by pressing both buttons and use the application at his own risks. As an unaudited application is considered experimental, such application will be visible **only once the developer mode settings has been enabled** in Ledger Live settings.
-
-Some applications are also visible once the developer mode setting is enabled, not because of a lack of security review, but rather because they are considered too complex to use. A reason might be a the mandatory compatible GUI is missing, or the application purpose is considered too technical for the vast majority of users.
-
-An application will be listed publicly (official Ledger support) once:
+An application will be listed publicly (official Ledger support) when:
 
 -   It passed the security audit
 -   It's been tested and validated by at least someone from Ledger Customer Success Team
@@ -172,14 +164,14 @@ An application will be listed publicly (official Ledger support) once:
 
 
 <!--  -->
-{% include alert.html style="primary" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it. Applications are usually released on Tuesday or Wednesday." %}
+{% include alert.html style="success" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it. Applications are usually released on Tuesday or Wednesday." %}
 <!--  -->
 
 
 ### Third Party Applications Support
 
 <!--  -->
-{% include alert.html style="primary" text="The following only applies if you are adding support for a cryptocurrency and chose to build your own companion app." %}
+{% include alert.html style="success" text="The following only applies if you are adding support for a cryptocurrency and chose to build your own companion app." %}
 <!--  -->
 
 
@@ -191,13 +183,9 @@ Along with your publication request, app sources and tutorial, please provide in
 -   **Point of Contact: URL, email address, phone number**
 
 <!--  -->
-{% include alert.html style="primary" text="Name, surname and phone number are kept private and will be used only in case of emergency." %}
+{% include alert.html style="success" text="Name, surname and phone number are kept private and will be used only in case of emergency." %}
 <!--  -->
 
-
-### Contact
-
-External developer teams are welcome on [Ledger's Developer Slack](https://ledger-dev.slack.com). This is the place to get technical support, to discuss Ledger's tech stack, and more broadly to get in touch with us.
 
 ### Warranty and liability disclaimer
 
@@ -223,6 +211,6 @@ Program](https://forms.gle/86qP6H1etn8xSwQG9):
 
 
 <!--  -->
-{% include alert.html style="primary" text="Ledger will review new applications and Pull Requests on a best-effort basis. Submitting an application or a Pull Request isn't a guarantee it will be released." %}
+{% include alert.html style="success" text="Ledger will review new applications and Pull Requests on a best-effort basis. Submitting an application or a Pull Request isn't a guarantee it will be released." %}
 <!--  -->
 
