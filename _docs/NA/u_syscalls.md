@@ -15,9 +15,9 @@ layout: doc_na
 
 ## Introduction
 
-Since BOLOS is designed based on a single-task model where only a single app runs at any given time, an application is independently responsible for a lot of the things a typical OS would do. These things include managing hardware like the device screen, buttons, timer, etc. as well as handling all I/O with peripherals. However, there are many instances where a BOLOS application has to request the operating system to perform a certain operation. This is done using a syscall.
+Since BOLOS was designed based on a single-task model where only one app runs at any given time, an application is independently responsible for a lot of the things a typical OS would do. These things include managing hardware like the device screen, buttons, timer, etc. as well as handling all I/O with peripherals. However, there are many instances where a BOLOS application has to request the operating system to perform a certain operation. This is done using a syscall.
 
-When an application performs a syscall, the Secure Element switches to Supervisor mode and the OS performs the requested task before returning control back to the application, in User mode. All syscalls have a wrapper function in the SDK that can be used to invoke them. A syscall may be used to access hardware accelerated cryptographic primitives (most of these functions are defined in `include/cx.h` in the SDKs), to perform low-level I/O operations (like receiving / transmitting to the MCU), or to access cryptographic secrets managed by BOLOS (for example, to derive a node from the BIP 32 master node).
+When an application performs a syscall, the Secure Element switches to Supervisor mode and the OS performs the requested task before giving control back to the application, in User mode. All syscalls have a wrapper function in the [SDK](http://localhost:4000/unos/docs/NA/u_setup/#setting-up-the-sdk) that can be used to invoke them. A syscall may be used to access hardware accelerated cryptographic primitives (most of these functions are defined in `include/cx.h` in the SDKs), to perform low-level I/O operations (like receiving / transmitting to the MCU), or to access cryptographic secrets managed by BOLOS (for example, to derive a node from the BIP 32 master node).
 
 ### Error Model
 
@@ -37,7 +37,7 @@ BEGIN_TRY {
 } END_TRY;
 ```
 
-However there is a single constraint to be aware of with our try / catch system: a `TRY` clause must always be closed in the appropriate way. This means that if using a return, break, continue or goto statement that jumps out of the `TRY` clause you MUST manually close it, or it could lead to a crash of the application in a later `THROW`. A `TRY` clause can be manually closed using `CLOSE_TRY`. Using `CLOSE_TRY` is only necessary when jumping out of a `TRY` clause, jumping out of a `CATCH` or `FINALLY` clause is allowed (but still, be careful you're not in a `CATCH` nested in a `TRY`).
+However there is a single constraint to be aware of with our try / catch system: a `TRY` clause must always be closed in the appropriate way. This means that if using a return, break, continue or goto statement that jumps out of the `TRY` clause you MUST manually close it, or it could lead to a crash of the application in a later `THROW`. A `TRY` clause can be manually closed using `CLOSE_TRY`. Using `CLOSE_TRY` is only necessary when jumping out of a `TRY` clause. Jumping out of a `CATCH` or `FINALLY` clause is allowed (but still, be careful you're not in a `CATCH` nested in a `TRY`).
 
 You should use the error codes defined in the SDKs wherever possible (see `EXCEPTION`, `INVALID_PARAMETER`, etc. in `os.h`). If you decide to use custom error codes, never use an error code of `0`.
 

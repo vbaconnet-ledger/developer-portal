@@ -58,7 +58,7 @@ The canary should be checked regularly. For example, you could run the check eve
 
 Error handling in C can sometimes be a bit counter-intuitive. With our error model, there are two common failure scenarios.
 
-Firstly, you must take care to always close a try context when jumping out of it. For example, in the block of code below, the `CLOSE_TRY` macro must be used to close the try context before returning from the function in the case that `i > 0`. However, in the `CATCH` clause, the try has already been closed automatically so `CLOSE_TRY` is not necessary.
+Firstly, you must be careful to always close a try context when jumping out of it. For example, in the block of code below, the `CLOSE_TRY` macro must be used to close the try context before returning from the function in the case that `i > 0`. However, in the `CATCH` clause, the try has already been closed automatically so `CLOSE_TRY` is not necessary.
 
 ``` c
 bool is_positive(int8_t i) {
@@ -109,7 +109,7 @@ On another note, you should use the error codes defined in the SDKs wherever pos
 
 ### Application Stalled
 
-An application stalling when run on the device (the device's screen freezes and stops responding to APDU) could be caused by a number of issues from the SE being isolated due to invalid handling of SEPROXYHAL packets, to a core fault on the device (perhaps due to a misaligned memory access or an attempt to access restricted memory). If this occurs, it is best to attempt to simplify the app and strip away as much code as possible until the problem can be isolated.
+An application stalling when running on the device (the device's screen freezes and stops responding to APDU) could be caused by a number of issues from the SE being isolated due to invalid handling of SEPROXYHAL packets, to a core fault on the device (perhaps due to a misaligned memory access or an attempt to access restricted memory). If this occurs, it is best to attempt to simplify the app and strip away as much code as possible until the problem can be isolated.
 
 ### Unaligned RAM access
 
@@ -118,7 +118,7 @@ uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed];
 PRINTF("uint16_t: %d", ptr16[0]);
 ```
 
-`ptr16[0]` access can be stalling the app, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed alright. This happens when pointer isn't word-aligned, but word is access in RAM. Workaround is copying buffer into another location which is properly aligned (e.g. using <span class="title-ref">os\_memmove</span>).
+`ptr16[0]` access can be stalling the app, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed alright. This happens when pointer isn't word-aligned, but word is access in RAM. Workaround this by copying the buffer into another location that is properly aligned (e.g. using `os\_memmove`).
 
-Please refer to the [alignment](../u_alignment)page for further information.
+Please refer to the [alignment](../u_alignment) page for further information.
 

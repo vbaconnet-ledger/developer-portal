@@ -15,36 +15,36 @@ layout: doc_na
 
 ## Introduction
 
-The Secure Elements on top of which the BOLOS Operating System and the associated applications run imply a 32-bit alignment. This paragraph aims at explaining the C associated development constraints.
+The Secure Elements on top of which the BOLOS Operating System and the associated applications run imply a 32-bit alignment. This article aims at explaining the C associated development constraints.
 
 ### Alignment concept
 
 The memory alignment is a concept which applies to memory and pointers:
 
- -   A memory address is 'b-bits aligned' when it is a multiple of b/8, b/8 being a power of 2,
- -   A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned,
- -   A pointer is 'aligned' when it points on aligned memory,
- -   A pointer is 'unaligned' when it points on unaligned memory.
+ -   A memory address is 'b-bits aligned' when it is a multiple of b/8, b/8 being a power of 2
+ -   A memory address is said to be aligned when the data referenced by said address is b bits long, and said address is b-bits aligned
+ -   A pointer is 'aligned' when it points on aligned memory
+ -   A pointer is 'unaligned' when it points on unaligned memory
 
 ### Alignment constraints for basic types and structures
 
 Implementing C source code with types and structures is not functionally impacted by the 32-bit alignment, except for potentially wasting a few bytes without even noticing.
 
-It might be important to be aware of this paragraph contents when it comes to writing memory-efficient structures, once the application is compiled and loaded onto a device.
+This paragraph is important for writing memory-efficient structures, once the application is compiled and loaded onto a device.
 
 Within any application source code, the alignment of basic types will be considered as follows, at compilation time:
 
- -   `char` / `unsigned char` / `int8_t` / `uint8_t` : 8-bit aligned,
- -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit aligned,
- -   `int` / `unsigned int` / `int32_t` / `uint32_t`: 32-bit aligned,
- -   any pointer: 32-bit aligned.
+ -   `char` / `unsigned char` / `int8_t` / `uint8_t` : 8-bit aligned
+ -   `short` / `unsigned short` / `int16_t` / `uint16_t`: 16-bit aligned
+ -   `int` / `unsigned int` / `int32_t` / `uint32_t`: 32-bit aligned
+ -   any pointer: 32-bit aligned
 
 Please note that 8-bit aligned means that there is actually no alignment constraint.
 
 The compiler will add padding in any structure which is not aligned by design, in order to respect:
 
- -   The alignment of each field associated to their respective length,
- -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length.
+ -   The alignment of each field associated to their respective length
+ -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length
 
 For instance the following structure is 8 bytes long before compilation:
 
@@ -82,7 +82,7 @@ struct Example1
 
 In this example, it is possible to reorganize the structure's fields to avoid alignment-induced padding, but sometimes padding will not be avoidable.
 
-One can order the structure fields according to their length in decreasing order:
+You can order the structure fields according to their length in decreasing order:
 
 ``` c
 // Before compilation
@@ -110,7 +110,7 @@ struct Example1_reordered
 };
 ```
 
-One can also order the structure fields to make sure the minimum amount of padding bytes will be added by the compilation phase:
+You can also order the structure fields to make sure the minimum amount of padding bytes will be added by the compilation phase:
 
 ``` c
 // Before compilation
@@ -236,11 +236,10 @@ Unaligned pointers can thus occur in cases where a pointer:
  -   is used to point on a memory area actually containing another type of data,
  -   and is dereferenced.
 
-In order to produce C source code robust to alignment constraints, one need to avoid using pointers in such a way.
+In order to produce robust to alignment constraints C source code, avoid using pointers in such a way.
 
 ### External links
 
- -   <https://en.wikipedia.org/wiki/Data_structure_alignment>
- -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABFAIGG.html>
- -   <http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka15414.html>
+ -   [Data structure alignment Wikipedia](https://en.wikipedia.org/wiki/Data_structure_alignment)
+ -   [Arm documentation about Address alignment](https://developer.arm.com/documentation/dui0497/a/the-cortex-m0-instruction-set/about-the-instruction-descriptions/address-alignment)
 
