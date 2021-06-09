@@ -4,6 +4,5 @@ title: Changelog timeline
 width: small
 ---
 
-Sedu ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
+Check this timeline for updates about new piece of documentation and technical novelties.
 {% include changelog.html %}

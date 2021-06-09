@@ -10,13 +10,12 @@
   icon: settings
   doc: CI/10_general_process
 
-- title: DApp Integration
-  desc: Get Started integrating your service in Ledger Live
-  icon: code
-  doc: DA/01_readme
-
 - title: ERC-20
   desc: How to include your favourite token in Ledger Live
   icon: download
   doc: ET/01_readme
 
+- title: DApp Integration
+  desc: Get Started integrating your service in Ledger Live
+  icon: code
+  doc: DA/01_readme

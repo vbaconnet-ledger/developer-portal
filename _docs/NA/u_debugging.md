@@ -24,7 +24,7 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="warning" text="The [BOLOS development environment](../u_setup) is required for the following article. It applies only for the Nano S, with its SE firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="warning" text="The <a href='https://blog.ledger.com/unos/docs/NA/u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 
@@ -36,7 +36,7 @@ It is possible to install a debugging firmware on the device's MCU that will ena
 
 3\. Now, plug your Nano S to your computer while keeping the left button pressed. Keep it pressed until the screen displays `BOOTLOADER`.
 
-4\. Fire a terminal and move to the directory containing the files downloaded at step 1.
+4\. Open a terminal and move to the directory containing the files downloaded at step 1.
 
 1.  Install the updater (only if you MCU firmware is not already in version 1.11, otherwise just go to step 6):
 
@@ -68,10 +68,10 @@ The `dbg` block should now be gone.
 
 The debug firmware enables the `PRINTF` macro, however you have to define it in your app's Makefile. To do so, add this line in your Makefile: `DEFINES += HAVE_SPRINTF HAVE_PRINTF PRINTF=screen_printf`
 
-Usually, `PRINTF` is already defined to void with this line `DEFINES += PRINTF\(...\)=`. Check if `PRINTF` is already defined somewhere else in your Makefile, and comment out this definition so it doesn't override the one that we just set.
+Usually, `PRINTF` is already defined to void, with this line `DEFINES += PRINTF\(...\)=`. Check if `PRINTF` is already defined somewhere else in your Makefile, and comment out this definition so it doesn't override the one that you just set.
 
 <!--  -->
-{% include alert.html style="warning" text="The <code>PRINTF</code> macro is a debugging feature, and as such it is not intended for use in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile. In other words, in case of release compilation, put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
+{% include alert.html style="warning" text="The <code>PRINTF</code> macro is a debugging feature, and as such it is not intended for use in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile. In other words, in the case of a release compilation, put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
 <!--  -->
 
 <!--  -->
@@ -106,7 +106,7 @@ Now you can launch your app on your Nano S, and every `PRINTF` will end up print
 
 ### PIN bypass
 
-In Ledger app development, it is necessary to enter your PIN code each time you install an unsigned app. In order to do testing during development, this means developers wind up using many painful button presses entering a PIN code compared to relatively few testing their own application code. The Ledger OS (BOLOS) supports installing a custom developer certificate. By installing a custom certificate once on your device you can avoid having to retype your PIN each time you adjust your app. Here are the steps for the Ledger Nano S:
+In Ledger app development, it is necessary to enter your PIN code each time you install an unsigned app. However, BOLOS supports installing a custom developer certificate. By installing a custom certificate on your device, you can avoid having to retype your PIN each time you adjust your app. Here are the steps for the Ledger Nano S:
 
 1.  Generate a public / private keypair using the following command:
 
@@ -114,19 +114,19 @@ In Ledger app development, it is necessary to enter your PIN code each time you 
         Public key : 0495331cb86e961fc9cb5792a97737e4204b58be99321dcec463cec3057b3304e9875614004e6e540ab0610a1339fae22df6f6f3ec594912b409d69b72f0eaf390
         Private key: 6c1f1df852255e113b23c2e977d6b5c3ea2aaf411f05a5fdab87a3e8f44468ee
 
-2\. Enter recovery mode on your Ledger Nano S. Do this by unplugging it then holding down the right button (near the hinge, away from USB port) while plugging it in again. `recovery mode` should then appear on the screen. Enter your pin and continue.
+2. Enter recovery mode on your Ledger Nano S. Do this by unplugging it then holding down the right button (near the hinge, away from USB port) while plugging it in again. `recovery mode` should then appear on the screen. Enter your pin and continue.
 
-3\. Load your public key onto the Ledger Nano S. Paste the public key generated at step 1 after `--public`. You may need to adjust the `--targetId` constant to match your device. Find the right targetId for your device [here](https://gist.github.com/TamtamHero/b7651ffe6f1e485e3886bf4aba673348). Notice that we must include a `--name` parameter containing the name of the custom certificate (any string will do):
+3. Load your public key onto the Ledger Nano S. Paste the public key generated at step 1 after `--public`. You may need to adjust the `--targetId` constant to match your device. Find the right targetId for your device [here](https://gist.github.com/TamtamHero/b7651ffe6f1e485e3886bf4aba673348). Notice that we must include a `--name` parameter containing the name of the custom certificate (any string will do):
 
-    python3 -m ledgerblue.setupCustomCA --targetId 0x31100004 --public yourPublicKey --name dev
+        python3 -m ledgerblue.setupCustomCA --targetId 0x31100004 --public yourPublicKey --name dev
 
-If you receive the error `Invalid status 6985` then please review [this link](https://github.com/LedgerHQ/blue-loader-python/issues/42) and then go back to step 2. The above command is the simplest that can work however some developers may wish to use the optional `--rootPrivateKey` option to specify a secure channel encryption key (which is the private key generated at step 1) or use the `--name` option for convenient labeling according to local convention.
+    If you receive the error `Invalid status 6985`,review [this link](https://github.com/LedgerHQ/blue-loader-python/issues/42) and go back to step 2. The above command is the simplest that can work however some developers may wish to use the optional `--rootPrivateKey` option to specify a secure channel encryption key (which is the private key generated at step 1) or use the `--name` option for convenient labeling according to local convention.
 
-4\. Once you have loaded your custom certificate, you can try to load an app you compiled yourself onto your Ledger to see if you are able to bypass the PIN. Before you try it, set the `SCP_PRIVKEY` environment variable to contain the private key generated at step 1 in your shell or `.bashrc`:
+4. Once you have loaded your custom certificate, you can try to load an app you compiled yourself onto your Ledger to see if you are able to bypass the PIN. Before you try it, set the `SCP_PRIVKEY` environment variable to contain the private key generated at step 1 in your shell or `.bashrc`:
 
-    export SCP_PRIVKEY=yourPrivateKey
+        export SCP_PRIVKEY=yourPrivateKey
 
-and then rebuild/load your app.
+    and rebuild/load your app.
 
 For more information see [loadApp-py](https://ledger.readthedocs.io/projects/blue-loader-python/en/0.1.16/script_reference.html#loadapp-py)
 
@@ -135,12 +135,12 @@ For more information see [loadApp-py](https://ledger.readthedocs.io/projects/blu
 {% include alert.html style="warning" text="A side effect of installing a custom CA on your device is that it will from now on fail to pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it genuine again, you should uninstall your custom CA and all the applications installed through it." %}
 <!--  -->
 
-Uninstalling a custom CA is very quick:
+**Uninstalling a custom CA is very quick:**
 
-1\. Enter recovery mode on your Ledger Nano S. Do this by unplugging it then holding down the right button (near the hinge, away from USB port) while plugging it in again. `recovery mode` should then appear on the screen. Enter your pin and continue.
+1. Enter recovery mode on your Ledger Nano S. Do this by unplugging it and then plugging it in again while holding down the right button (near the hinge, away from USB port). `recovery mode` appears on the screen. Enter your pin and continue.
 
-1.  Type this command in your terminal:
+2.  Type this command in your terminal:
 
         foo@bar:~$ python3 -m ledgerblue.resetCustomCA --targetId 0x31100004
 
-Find the right targetId for your device [here](https://gist.github.com/TamtamHero/b7651ffe6f1e485e3886bf4aba673348).
+    Find the right targetId for your device [here](https://gist.github.com/TamtamHero/b7651ffe6f1e485e3886bf4aba673348).
