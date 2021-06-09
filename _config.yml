@@ -108,5 +108,6 @@ defaults:
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com
 
-baseurl:            ""
-url:                http://developers.ledger.com # https://blog.ledger.com
+baseurl:            /
+# url:                https://blog.ledger.com
+url:                http://developers.ledger.com
