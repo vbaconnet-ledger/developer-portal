@@ -27,7 +27,7 @@ Developing and / or compiling BOLOS applications requires the SDK matching the a
 -   A standard ARM clang 7.0.0 <= version < 10.0.0 with [ROPI support](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0491i/CHDCDGGG.html) to build the secure (ST31) applications, download it [here](https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz)
 -   Download a prebuilt gcc from [here](https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2?revision=ca0cbf9c-9de2-491c-ac48-898b5bbc0443&la=en&hash=68760A8AE66026BCF99F05AC017A6A50C6FD832A)
 
-### Setting up the Toolchain
+## Setting up the Toolchain
 
 The Makefiles used by our BOLOS applications look for gcc and clang installations using the `PATH` environment variable.
 
@@ -53,7 +53,7 @@ If you wish to load applications on your device, you will also need to add the a
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
 
-### Setting up the SDK
+## Setting up the SDK
 
 Now that you have your toolchain set up, you need to download / clone the SDK for the appropriate Ledger device you're working with. Make sure you checkout the tag matching your firmware version.
 
@@ -71,7 +71,7 @@ BOLOS_SDK='/path/to/sdk/'
 
 When using the Makefile for our BOLOS apps, the Makefile will use the contents of the SDK to determine your target device ID (Ledger Nano S, X or Ledger Blue). Even if you aren't building an app, loading an app with the Makefile still requires you to have the SDK for the appropriate device linked to by `BOLOS_SDK`.
 
-### Python Loader
+## Python Loader
 
 Most apps use the Python loader, a Ledger-made Python library to communicate with Ledger devices.
 

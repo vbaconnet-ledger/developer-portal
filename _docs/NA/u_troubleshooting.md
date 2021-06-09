@@ -15,9 +15,9 @@ layout: doc_na
 
 ## Introduction
 
-In this section, we'll walk you through a lot of concepts that are hard to grasp when developing on the BOLOS platform, and we'll provide some analysis of common failure scenarios that you might experience while developing applications.
+In this article, we'll walk you through a lot of concepts that are hard to grasp when developing on the BOLOS platform, and we'll provide some analysis of common failure scenarios that you might experience while developing applications.
 
-### Not Enough RAM
+## Not Enough RAM
 
 At the time of this writing, the default link script provided by the SDK for the Ledger Nano S allocates 4 KiB of RAM for applications to use. This 4 KiB has to be enough to store all global non-const and [non-NVRAM](../u_memory) variables as well as the call stack (which is currently set to 768 bytes by default, also defined in the link script).
 
@@ -29,7 +29,7 @@ bin/app.elf section `.bss' will not fit in region `SRAM'
 
 The only solution to this problem is, of course, using less RAM. You can accomplish this by making your application's memory layout more efficient. Alternatively, if you're feeling adventurous, you can attempt to modify the link script (`script.ld` in the SDKs) to optimize the space allocated for the call stack. If you choose to pursue the latter option, we recommend you read the next section as well.
 
-### Stack Overflows
+## Stack Overflows
 
 Determining the exact amount of the call stack used by your application can be difficult to do without simply running your application. The technique we recommend for avoiding stack overflows is using a stack canary. Creating a stack canary involves setting a magic value at the start of the stack area (the stack grows towards lower addresses, so a canary at the start of this region will be located at the top of the stack), and then the canary is checked regularly. If the canary was modified, then this means there was a stack overflow.
 
@@ -54,7 +54,7 @@ void check_canary() {
 
 The canary should be checked regularly. For example, you could run the check every time `io_event(...)` is called.
 
-### Error Handling
+## Error Handling
 
 Error handling in C can sometimes be a bit counter-intuitive. With our error model, there are two common failure scenarios.
 
@@ -107,11 +107,11 @@ In the above example, `a` does not need to be declared `volatile` because it is 
 
 On another note, you should use the error codes defined in the SDKs wherever possible (see `EXCEPTION`, `INVALID_PARAMETER`, etc. in `os.h`). If you decide to use custom error codes, never use an error code of `0`.
 
-### Application Stalled
+## Application Stalled
 
 An application stalling when running on the device (the device's screen freezes and stops responding to APDU) could be caused by a number of issues from the SE being isolated due to invalid handling of SEPROXYHAL packets, to a core fault on the device (perhaps due to a misaligned memory access or an attempt to access restricted memory). If this occurs, it is best to attempt to simplify the app and strip away as much code as possible until the problem can be isolated.
 
-### Unaligned RAM access
+## Unaligned RAM access
 
 ``` c
 uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed];

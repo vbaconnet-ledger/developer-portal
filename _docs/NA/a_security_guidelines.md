@@ -23,26 +23,26 @@ Developing applications for Ledger devices (Nano S, X, Blue) is an intricate pro
 
 
 
-### Development practices
+## Development practices
 
 Whenever writing a secure Ledger app, the following advice should not be taken lightly.
 
-#### Code reviews
+### Code reviews
 
 We encourage all written code to be peer-reviewed. Importantly, the review should have at least:
 
 1.  One reviewer proficient in C and knowing C security weaknesses.
 2.  One reviewer with a "hacker's mind" (looking at the code from the perspective of an attacker).
 
-#### Security audits
+### Security audits
 
 We encourage third-party security reviews. Note, however, that solid review takes time and a short review might yield a false sense of security (especially if the reviewing party does not have an extensive knowledge of Ledger code specifics).
 
-#### Developing First App
+### Developing First App
 
 Apart from reading developer documentation <!--at <https://ledger.readthedocs.io/en/latest/> REMOVED by CF 07.06.2021--> we recommend looking at Sia app <https://github.com/LedgerHQ/ledger-app-sia> which provides a nice starting point for an app, including lots of explanatory comments. A sample of security-wise overly-paranoid app is <https://github.com/LedgerHQ/ledger-app-cardano>.
 
-### Cryptography
+## Cryptography
 
 This section presents general concepts about cryptography development, but also guidelines specific to the security model of the Ledger devices. It gives guidelines to:
 
@@ -50,13 +50,13 @@ This section presents general concepts about cryptography development, but also 
 -   Make sure all the operations that manipulate secrets are approved by the user.
 -   Restrict the use of these secrets by apps.
 
-#### Don't roll your own crypto primitives
+### Don't roll your own crypto primitives
 
 **You should never roll your own crypto primitives** (including encryption/derivation schemes, hashing functions, HMAC, etc.)
 
 Rationale: It is a purpose of BOLOS operating system to perform these in a secure manner. Importantly, writing your own crypto primitives is likely to open you to side-channel attacks or other problems. If your primitive is not supported by BOLOS (e.g., some very new cryptography), consult with Ledger developers the possibility of including it in the OS.
 
-#### Avoid blindly signing data
+### Avoid blindly signing data
 
 **You should never allow signing of any attacker-controlled message unless it has been verified for structural validity. Importantly, you should never sign a message that might be a hash of transaction.**
 
@@ -69,7 +69,7 @@ Warning: If you allow signing untrusted hashes (while displaying a prompt to the
 1.  Some users are not familiar with security and could be easily tricked. They can click through your prompt without proper checking unless you give them explicit "Warning: this is a very unusual operation. Do not continue unless you know what you are doing" warning. They might not see the message even then
 1.  A compromised host might both change hash on the screen and also data sent to device. This opens the possibility of users signing something they didn't want to.
 
-#### Restrict Apps to Coin-Specific BIP32 Prefix
+### Restrict Apps to Coin-Specific BIP32 Prefix
 
 BIP32 paths on which the app can derive keys must be restricted in your application. The chosen derivation paths must not conflict with existing paths if the use case differs.
 
@@ -100,7 +100,7 @@ Rationale: Setting prefixes is crucial, as it limits the amount of damages an at
 {% include alert.html style="warning" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
 <!--  -->
 
-#### Signing/disclosing keys without user approval
+### Signing/disclosing keys without user approval
 
 <!--  -->
 {% include alert.html style="warning" text="You must always require user approval for signing transactions/messages." %}
@@ -122,7 +122,7 @@ Rationale: If you do not require user consent for signing important data, an att
 {% include alert.html style="primary" text="There is a trade-off between privacy and usability here. If you want privacy, it would require a user interaction every time they want to use Ledger device, as opposed to only interaction while signing transactions. The behaviour could also be manually set in the application options." %}
 <!--  -->
 
-#### Private Key Management
+### Private Key Management
 
 **You should minimize the code that works with private (ECDSA, RSA, etc.) or secret (HMAC, AES, etc.) keys.** Importantly, you should always **clear the memory** after you use these keys. That includes key data and key objects.
 
@@ -152,11 +152,11 @@ In the happy path, the previous code will correctly clean the memory once the pr
 
 Applications where such issues were fixed include [the ARK app](https://github.com/LedgerHQ/app-ark/commit/e84a4dc0c422f7ade586c831cbab56cb15c64df1) and [the Solana app](https://github.com/LedgerHQ/app-solana/pull/5/files).
 
-#### Be Wary of Untrusted Input
+### Be Wary of Untrusted Input
 
 Some cryptocurrencies do not have *explicit* fee encoded in the transaction. In such cases, the app cannot rely on fee value sent from the host. Instead, it should receive previous UTxOs and check their output amounts. Note that this usually needs to be done in a separate step due to memory constraints. Check with BTC/Cardano app design for this.
 
-#### Properly protect data you wish to cache on the host computer
+### Properly protect data you wish to cache on the host computer
 
 Sometimes your app needs to compute over more data than it can fit inside memory. Taking an example from the previous section, it might not be easy to store all UTxOs in memory of Ledger. As such, you might break computation into multiple steps and, for example, verify each UTxO separately and let the host computer to cache a "certified summary". If you do this, be aware that
 
@@ -169,13 +169,13 @@ Sometimes your app needs to compute over more data than it can fit inside memory
     -   Encrypt the information with a sufficiently strong cipher
     -   Provide a digest to avoid tampering with the value
 
-#### Do not allow the host to freely manipulate with key-pairs
+### Do not allow the host to freely manipulate with key-pairs
 
 Some cryptocurrencies (notably Monero) need to perform an extensive calculation with *(public, private)* key-pair spread over multiple APDU exchanges. If you need to do the same, **do not** allow the attacker to step out of the protocol. Notably, allowing the attacker to freely perform key manipulation (e.g., group multiplications, exponentiations, etc.) could undermine your app security **even if the private key never leaves the device**. In general, keep an explicit protocol state machine during the computation. Also, consult with cryptography experts to check for implications if you misstep from the protocol.
 
-### C is your enemy
+## C is your enemy
 
-#### Know your C compiler
+### Know your C compiler
 
 Ledger apps are written in C. Unlike typical embedded project, the goal here is to write for a single platform with a single compiler.
 
@@ -183,7 +183,7 @@ The current supported compiler is clang, and it supports newest language feature
 
 A random collection of useful features: intermingled declarations and code, support of `_Generic`, `_Static_assert`, `__builtin_types_compatible_p`, `__typeof` (very useful for safer versions of macros), etc.
 
-#### Use safe macro constructs
+### Use safe macro constructs
 
 C is a minefield of problems related to pointers. You can alleviate some of the problems with good macros. However, beware of when they can fail. For example, take the following code:
 
@@ -221,7 +221,7 @@ memset(x, 0, sizeof(x))
 
 In general, if writing macros, try to write them in a way that they will fail if they get a pointer instead of struct/array.
 
-#### Buffer overflows/underflows
+### Buffer overflows/underflows
 
 Buffer overflows and underflows are perhaps the biggest source of security vulnerabilities in C code. The following example shows a buffer overflow in (a past version) of one Ledger app.
 
@@ -308,7 +308,7 @@ Finally, you can use SPRINTF macro from `sdk/include/os_io_seproxyhal.h` but be 
 
 so the above warning about passing pointers instead of arrays applies to it.
 
-#### Integer overflows/underflows
+### Integer overflows/underflows
 
 Integer overflows go hand in hand with buffer overflows. In fact, they can cause serious buffer overflows. Consider following code where a numeric underflow causes buffer overflow of 64kB!
 
@@ -354,7 +354,7 @@ void f(uint8_t* buf, size_t bufSize) { // size_t is unsigned
 }
 ```
 
-#### Data Truncation
+### Data Truncation
 
 Speaking of safely formatting data, be wary of truncated values. Importantly, make sure you do not truncate any important data when displaying on the Ledger screen.
 
@@ -374,7 +374,7 @@ display(tmp) // but we display an empty screen!
 format_amount(tmp, SIZEOF(tmp), amount) // "198765432" or "987654321"
 ```
 
-#### Stack overflow
+### Stack overflow
 
 You application has only a limited size (about \~700B) of stack. That is one of the reasons why stack cookies are not supported yet on the platform.
 
@@ -384,15 +384,15 @@ Recommendation:
 
 Enable `DEFINES += HAVE_BOLOS_APP_STACK_CANARY` in your Makefile. This will help you detect stack overflows during app development. If overflow is detected, the app will reboot the device. Note that the overflow check happens only on the next I/O. This means that the protection is not instant and an attacker might avoid the canary check: this option is not a security feature, and has been added to analyze the stack usage during testing process.
 
-#### Optimizations
+### Optimizations
 
 Do not clear sensitive data with for-loops or other techniques. Do not use `memset` or `bzero` to clear sensitive data: it could be optimized and removed by the compiler.
 
 **Recommendation**: Use `explicit_bzero` which guarantees that the compiler will not remove the erasure. (See [https://www.owasp.org/index.php/Insecure\\\_Compiler\\\_Optimization](https://www.owasp.org/index.php/Insecure\_Compiler\_Optimization) for an example of how things could go wrong.)
 
-### Business logic problems
+## Business logic problems
 
-#### Swallowing errors & half-updated states
+### Swallowing errors & half-updated states
 
 It goes without saying that you should check return value of functions for any errors. Fortunately, BOLOS throws an error if something goes wrong and you might want to do the same instead of relying on error codes.
 
@@ -438,7 +438,7 @@ The problem here is that the app state is not updated in a "transactional" manne
 
 Recommendations: Try to not affect global state before you throw. Many times you can use a scratch memory to assemble result and only then do `memmove` to write the result. Even better, wipe memory/reboot device on exceptions to destroy any half-updated app states.
 
-#### Too lenient parsing of transactions
+### Too lenient parsing of transactions
 
 It might happen that your transaction parsing is too lenient. Importantly, this might cause problems if the transaction serialization spec is ambiguous and different clients might interpret it differently. For example, if a field might be repeated one parser might take the first value while another one a second. In general, lenient tx serialization spec should not happen (and if so, the cryptocurrency has bigger concerns than Ledger wallet).
 
@@ -448,13 +448,13 @@ Recommendation: Be as strict as possible with transaction parsing. Accept only f
 
 Note: you can even go further and do not parse transaction on the device at all. Instead, just send the data in a custom format and let both the app and host serialize the transaction on their own with the app revealing (and signing) only the serialized hash. This way you can avoid bugs in parsing code and be sure both the host wallet and the app agree perfectly on the content of the transaction.
 
-#### Protect Against "Instruction Change" Attacks
+### Protect Against "Instruction Change" Attacks
 
 Ledger applications live on a secure chip which is very limited in terms of its memory and communication channel. This brings in an interesting problem -- the application might not be able to perform all its work in a single request. Instead, the work will need to be spread over multiple requests. Whenever this happens, the application needs to be protected against attacker mixing multiple non-related (or even related) requests.
 
 If your application contains at least one instruction which works over multiple APDU exchanges (e.g., having `P1_INIT/P1_CONTINUE` flag in the standard application "terminology"), you have to protect it from interference. Common attack scenarios:
 
-##### Example: Two multi-APDU instructions
+#### Example: Two multi-APDU instructions
 
 Let's say you have SignTx and SignMessage, both sharing the same global `hash` variable, both instructions working over multiple APDU exchanges.The attacker might now call
 
@@ -465,7 +465,7 @@ Let's say you have SignTx and SignMessage, both sharing the same global `hash` v
 
 At this point, the global memory might be in an inconsistent state (for example, the SignTx hash does contain a different hash than it should be). This might lead to an easy attack.
 
-##### Example: Single multi-APDU instruction
+#### Example: Single multi-APDU instruction
 
 Even if you have only a single instruction with multiple APDU exchanges, an attacker might gain some leverage. Let's say you have roughly
 
@@ -488,7 +488,7 @@ union {
 
 To overwrite the hash context with an exact chosen value.
 
-##### Example: "Self"-attack on a single multi-APDU instruction
+#### Example: "Self"-attack on a single multi-APDU instruction
 
 You don't even need two instructions to perform a variation of the attack. Suppose your code goes along these lines
 
@@ -519,7 +519,7 @@ Obviously, there are many variations of this basic scheme and an utmost care nee
 2.  Within instruction, keep an explicit state machine of what is allowed to happen next)
 1.  Clear memory on exceptions
 
-#### Use explicit state machines
+### Use explicit state machines
 
 Whenever a host is required to perform certain actions in a specific order, be sure to explicitly track the state and verify that the next step is consistent. Good examples of what might need to be checked
 

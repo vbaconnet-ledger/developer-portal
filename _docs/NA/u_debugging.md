@@ -24,11 +24,11 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="warning" text="The <a href='https://blog.ledger.com/unos/docs/NA/u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="warning" text="The <a href='https://blog.ledger.com/unos/docs/NA/u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 
-It is possible to install a debugging firmware on the device's MCU that will enable printing text outputs from the device to a terminal. To do so, follow these steps:
+It is possible to install a debugging firmware on the device's MCU (Microcontroller) that will enable printing text outputs from the device to a terminal. To do so, follow these steps:
 
 1\. First, download the [updater](https://drive.google.com/open?id=1pbqIDDuamfsvFuEkduCyOFq8mW0HZmeQ) and the [debug firmware](https://drive.google.com/open?id=1hTZKqlwKjx51vdqda8SRp_80Yx3lPizb) and install the Python Loader following [this documentation](../../PL/01_readme).
 
@@ -64,7 +64,7 @@ Finally, flash the normal firmware with this command:
 
 The `dbg` block should now be gone.
 
-### PRINTF macro
+## PRINTF macro
 
 The debug firmware enables the `PRINTF` macro, however you have to define it in your app's Makefile. To do so, add this line in your Makefile: `DEFINES += HAVE_SPRINTF HAVE_PRINTF PRINTF=screen_printf`
 
@@ -96,7 +96,7 @@ PRINTF("I prefer it lower-cased:\n %.*h \n", 4, buffer);
 <img src="../images/deadbeef.png" class="align-center" alt="Result of the example code printed inside a terminal" /><figcaption aria-hidden="true">Result of the example code printed inside a terminal</figcaption>
 </figure>
 
-### Console Printing
+## Console Printing
 
 The `PRINTF` macro triggers messages from the MCU to the host computer through the USB link. We use [USBTool](https://drive.google.com/open?id=16D5vlrbczmBxqpDJml6QUV0RGWs7aZeZ) to read these messages and print their payload in a terminal.
 
@@ -104,7 +104,7 @@ Unzip the file and execute this command: `./usbtool -v 0x2c97 log`
 
 Now you can launch your app on your Nano S, and every `PRINTF` will end up printed on the host computer, allowing you to debug your program more easily.
 
-### PIN bypass
+## PIN bypass
 
 In Ledger app development, it is necessary to enter your PIN code each time you install an unsigned app. However, BOLOS supports installing a custom developer certificate. By installing a custom certificate on your device, you can avoid having to retype your PIN each time you adjust your app. Here are the steps for the Ledger Nano S:
 

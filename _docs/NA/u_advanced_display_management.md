@@ -17,9 +17,9 @@ layout: doc_na
 
 This article talks about more advanced flows that are sometimes needed when writing applications.
 
-### Cherry-picking steps at runtime
+## Cherry-picking steps at runtime
 
-#### Usecase
+### Usecase
 
 In [Display Management](../u_display_management) we learned how to use the `UX_FLOW` macro. This is quite handy but it comes with its **drawbacks**: everything needs to be declared at **compilation time**. What if we wished to change the `flow` at runtime?
 
@@ -151,7 +151,7 @@ To fix this problem, we would need to define the `UX\_FLOW` at runtime, cherry-p
 
 Don't worry, Ledger's got your back! The fix is quite simple, so let's dive right into it.
 
-#### Cherry-picking explained
+### Cherry-picking explained
 
 The idea is to create an array of steps that would be big enough to fit all the steps. Since steps grow linearly, this array won't be too big. Once this array created, we simply need to fill it with the steps we wish to include. Finally, we need to add a last step `FLOW_END_STEP` for it to work properly.
 
@@ -196,7 +196,7 @@ void start_display() {
 }
 ```
 
-### Defining steps at runtime
+## Defining steps at runtime
 
 In the previous section we saw that we could define a `UX_FLOW` at runtime. But we did this whilst still having steps defined statically. What if we wish to define steps at runtime too? This would give us a very fine-grained control over what we wish to display, without having to declare a step everytime.
 

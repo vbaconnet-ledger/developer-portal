@@ -21,7 +21,7 @@ If you want to get inspired, very good codebases are available for you to learn 
 -   The [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) is a thoroughly documented app that was specifically designed for developers to play around with and read the code.
 -   The [app-sia](https://github.com/LedgerHQ/app-sia.git) is also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!
 
-### Cloning and Making
+## Cloning and Making
 
 Applications that support multiple BOLOS devices are typically contained within a single repository, so you can use the same repository to build an app for different Ledger devices. Just make sure that you've set `BOLOS_SDK` to the appropriate SDK for the device you're using. The Makefiles used by our apps use the contents of the SDK to determine which device you're using.
 

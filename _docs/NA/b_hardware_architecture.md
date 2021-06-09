@@ -15,9 +15,11 @@ layout: doc_na
 
 ## Introduction
 
-Ledger devices have a very unique architecture in order to leverage the security of the Secure Element while still being able to interface with many different peripherals such as the screen, buttons, the host computer over USB, or Bluetooth & NFC in the case of the Ledger Blue. In order to accomplish this, we attached an additional STM32 microcontroller ("the MCU") to the Secure Element ("the SE") which acts as a "dumb router" between the Secure Element and the peripherals. The microcontroller doesn't perform any application logic and it doesn't store any of the cryptographic secrets used by BOLOS, it simply manages the peripherals and notifies the Secure Element whenever new data is ready to be received. BOLOS applications are executed entirely on the Secure Element. In this section, we'll take a look at the hardware architecture to better embrace the hardware related constraints before analyzing their software implications.
+Ledger devices have a very unique architecture in order to leverage the security of the Secure Element while still being able to interface with many different peripherals such as the screen, buttons, the host computer over USB, or Bluetooth & NFC in the case of the Ledger Blue.
 
-### Multiple Processors: Secure Element Proxy
+In order to accomplish this, we attached an additional STM32 microcontroller (the MCU) to the Secure Element (the SE) which acts as a "dumb router" between the Secure Element and the peripherals. The microcontroller doesn't perform any application logic and it doesn't store any of the cryptographic secrets used by BOLOS, it simply manages the peripherals and notifies the Secure Element whenever new data is ready to be received. BOLOS applications are executed entirely on the Secure Element. In this section, we'll take a look at the hardware architecture to better embrace the hardware related constraints before analyzing their software implications.
+
+## Multiple Processors: Secure Element Proxy
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
@@ -33,7 +35,7 @@ BOLOS relies on the collaboration of both chips to empower Secure Element applic
 
 The SE-MCU link protocol is called SEPROXYHAL or SEPH in source code and documentation. The "HAL" stands for Hardware Abstraction Layer.
 
-### SEPROXYHAL
+## SEPROXYHAL
 
 The SEPROXYHAL protocol is structured as a serialized list of three types of packets: Events, Commands, and Statuses. Since SEPROXYHAL is the only channel for the SE to communicate with the outside world, if there is an error at the protocol level (such as the order or formatting of Events / Commands / Statuses getting messed up), then the SE ends up completely isolated and unable to communicate. When developing an application this is typically the most common failure scenario. If this happens, the device must be rebooted to reset the SEPROXYHAL protocol state. Hopefully, multiple levels of software guards are implemented to avoid such cases.
 

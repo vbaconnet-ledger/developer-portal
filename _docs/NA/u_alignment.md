@@ -17,7 +17,7 @@ layout: doc_na
 
 The Secure Elements on top of which the BOLOS Operating System and the associated applications run imply a 32-bit alignment. This article aims at explaining the C associated development constraints.
 
-### Alignment concept
+## Alignment concept
 
 The memory alignment is a concept which applies to memory and pointers:
 
@@ -26,7 +26,7 @@ The memory alignment is a concept which applies to memory and pointers:
  -   A pointer is 'aligned' when it points on aligned memory
  -   A pointer is 'unaligned' when it points on unaligned memory
 
-### Alignment constraints for basic types and structures
+## Alignment constraints for basic types and structures
 
 Implementing C source code with types and structures is not functionally impacted by the 32-bit alignment, except for potentially wasting a few bytes without even noticing.
 
@@ -138,7 +138,7 @@ struct Example1_reordered_other_way
 };
 ```
 
-### Alignment constraints for pointers
+## Alignment constraints for pointers
 
 Using pointers within C source code might be functionally impacted by the 32-bit alignment in a specific case: when the pointer points on a memory area which type differs from the pointer, and is dereferenced.
 
@@ -238,8 +238,8 @@ Unaligned pointers can thus occur in cases where a pointer:
 
 In order to produce robust to alignment constraints C source code, avoid using pointers in such a way.
 
-### External links
+## External links
 
  -   [Data structure alignment Wikipedia](https://en.wikipedia.org/wiki/Data_structure_alignment)
- -   [Arm documentation about Address alignment](https://developer.arm.com/documentation/dui0497/a/the-cortex-m0-instruction-set/about-the-instruction-descriptions/address-alignment)
+ -   [ARM documentation about Address alignment](https://developer.arm.com/documentation/dui0497/a/the-cortex-m0-instruction-set/about-the-instruction-descriptions/address-alignment)
 
