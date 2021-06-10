@@ -1,6 +1,6 @@
 ---
 title: General Process
-subtitle: This section describes the general processes and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
+subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
 tags: []
 author:
 toc: true
@@ -29,7 +29,7 @@ Ledger Live Development Phases
     D - GUI integration - Specific (SPE) features
 -->
 
-# General Ledger Live Overview
+## General Ledger Live Overview
 
 If you already have a public Nano application and are looking for a way to get your blockchain supported on Ledger Live, then congratulations, you are in the right place.
 To confirm if your Nano application is already supported, please check if your currency is visible on [this page](https://www.ledger.com/supported-crypto-assets/).
@@ -52,7 +52,7 @@ The Ledger Live application is available for Windows, Mac and Linux in its deskt
 
 To be officially released by Ledger, your protocol must be included on all five platforms Ledger Live.
 
-# Open source, but not Open bar
+## Open source, but not Open bar
 
 <!-- ------------- Image ------------- -->
 <img align="left" width="132" src="../../../uploads/images/CI/open_bar.png">
@@ -65,7 +65,7 @@ In some rare cases, you may want to <i>go it alone</i>, and do your own **Solo I
 
 In most cases however, you will want to have your blockchain officially supported in Ledger Live for your community, with an updated release of Ledger Live Desktop and Mobile. In this case it is a **Participant Integration**, because this involves various Ledger teams: Security, Product, Engineering and QA,  we will have discussions with you to enter into an Agreement Framework in order to clarify the roles and responsibilities between us.
 
-# Agreeing on a Framework
+## Agreeing on a Framework
 <!-- ------------- Image ------------- -->
 <img align="right" width="156"  src="../../../uploads/images/CI/agreement.png" >
 <!-- --------------------------------- -->
@@ -73,43 +73,44 @@ Assuming you are on course for a **Participant Integration**, here is how we sug
 
 To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger Slack Dev](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw).
 
-The aim of the Launch meeting is to present and discuss together:
+The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 
-\-  your project objective, and
-\-  a high-level roadmap
+After the Launch meeting, we will assess the feasibility and the maturity of your coin integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
 
-After the Launch meeting we will assess the feasibility and the maturity of your coin integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
+- Resources
+- Support and communication channels
+- Contact points for Technical and Documentation issues
 
-\- Resources
-\- Support and communication channels
-\- Contact points for Technical and Documentation issues
+<!--  -->
+{% include alert.html style="success" text="Roadmaps and terms can be changed by any party along the way, of course, as long as these changes are talked about and agreed together." %}
+<!--  -->
 
-Note: Roadmaps and terms can be changed by any party along the way, of course, so long as these changes are talked about and agreed together.
 
-# Note about Code Reviews
 
-For **Solo Integrations**
+## Note about Code Reviews
+
+#### For Solo Integrations
 
 Ledger will still review pull requests, but on a best effort basis only. Please understand we can't allocate resources to carry out reviews which we were not informed of previously.
 
-For **Participant Integrations**
+#### For Participant Integrations
 
 Ledger will review PR according to the agreed roadmap as closely as possible.
 
 ***
-# Ledger Live Development Phases
+## Ledger Live Development Phases
 
 We have identified several phases, each giving rise to a deliverable.
 
 The features supported by a blockchain protocol can be split between Generic and Specific ones.
 
-Blockchain protocols mainly offer at least, Receive/Synchronise/Send functions. (Synchronising is the ability to return the balance of an account, including, but not necessarily with the list of operations). That is why these generic **(GEN)** fetures are a considered as one of the phases.
+Blockchain protocols mainly offer at least, Receive/Synchronise/Send functions. (Synchronising is the ability to return the balance of an account, including, but not necessarily, the list of operations). That is why these generic **(GEN)** fetures are a considered as one of the phases.
 
 Many Blockchain protocols also offer staking functions. And these do not have the same mechanism from one protocol to another. That is why they are specific **(SPE)** features.
 
 **_Please note that to be supported on Ledger Live, you must at least offer generic features._**
 
-In both cases, background work, or preliminary **Technical Assessment** must be done. It ensures the blockchain knowledge has been acquired and agreed on, since we at Ledger will also have done this prior background work to validate the quality of your work when you will eventually submit it for review and release into our products.
+In both cases, background work, or preliminary **Technical Assessment**, must be done. It ensures the blockchain knowledge has been acquired and agreed on, since we, at Ledger, will also have done this prior background work to validate the quality of your work when you will eventually submit it for review and release into our products.
 
 When adding your blockchain support on Ledger Live, you can consider a CLI (command line interface) integration only, or a full CLI + GUI (graphical user interface) integration.
 
@@ -131,16 +132,16 @@ The table below shows what the inputs and outputs are for each phase, the work i
 
 | Delivery<br>Phase  	|   Input<br>of the Phase	|   Work Package	|   Output<br>of the Phase	|   Main Chapters<br>involved	|
 |---	|---	|---	|---	|---	|
-|  <center>A 	|  <center>n/a 	|   Technical assessment	|   **Acceptance Plan**:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  <center>3 Prerequisites 	|
-|  <center>B	|     **Acceptance Plan**:<br>Technical assessment   	|   GEN Features    	|   PR CLI & GUI    	|    <center>4 & 5<br>Coding & Testing   	|
-|  <center>C 	| **Acceptance Plan**:<br>SPE Choices   	   	| SPE Features      	|  PR CLI      	|    <center>4 & 5<br>Coding & Testing   	|
-|  <center>D 	| **Acceptance Plan**:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  User journey (UI)     	|   PR  GUI    	|    <center>4 & 5<br>Coding & Testing   	|
+|  <center>A 	|  <center>n/a 	|   Technical assessment	|   **Acceptance Plan**:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  <center>Prerequisites 	|
+|  <center>B	|     **Acceptance Plan**:<br>Technical assessment   	|   GEN Features    	|   PR CLI & GUI    	|    <center>Coding & Testing   	|
+|  <center>C 	| **Acceptance Plan**:<br>SPE Choices   	   	| SPE Features      	|  PR CLI      	|    <center>Coding & Testing   	|
+|  <center>D 	| **Acceptance Plan**:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  User journey (UI)     	|   PR  GUI    	|    <center>Coding & Testing   	|
 
 Note PR: Pull request
 
 ***
 
-## A - Technical Assessment
+### A - Technical Assessment
 
 The prerequisites phase contains all the prior analysis of the blockchain and the choices to be made.
 
@@ -149,7 +150,7 @@ Importantly, it also contains research and choices concerning the Indexer/Explor
 The **output of this phase** is a presentation to Ledger of those technical choices
 
 ***
-## B - CLI and GUI integration - General (GEN) features
+### B - CLI and GUI integration - General (GEN) features
 
 **General features are Receive, Synch, Send**
 
@@ -168,7 +169,7 @@ The **output of this phase** is a presentation to Ledger of those technical choi
 \- Code Delivery for Review by Ledger
 
 ***
-## C - CLI integration - Specific (SPE) features
+### C - CLI integration - Specific (SPE) features
 
 **Staking operations, Reward related actions**
 
@@ -185,7 +186,7 @@ The **output of this phase** is a presentation to Ledger of those technical choi
 \- Code Delivery for Review by Ledger
 
 ***
-## D - GUI integration - Specific (SPE) features
+### D - GUI integration - Specific (SPE) features
 
 1 - **Analysis**
 \- Detailing the diagrams of User Flows defined at Technical Assessment
@@ -197,5 +198,3 @@ The **output of this phase** is a presentation to Ledger of those technical choi
 3 - **Code Review**
 \- Code Delivery for Review by Ledger
 
-
-***

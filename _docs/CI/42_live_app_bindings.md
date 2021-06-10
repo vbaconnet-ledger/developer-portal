@@ -11,8 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# Ledger Live - Nano App JS Bindings
-
 You will need to provide a JS implementation to interact with your coin nano app on the Ledger Nano.
 These bindings can either be implemented directly into live-common (as a folder in your coin family folder), or published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs) as a package - i.e. `hw-app-mycoin`.
 
@@ -29,7 +27,9 @@ The app implementation should provide at least 2 methods:
 * `getAddress(path: string, display?: bool)`: derive an address providing the BIP32 path
 * `signTransaction(path: string, message)`: sign a raw message for provided BIP32 path
 
-_Note: arguments are provided as example, but try to follow as much as possible other implementations for easy integration._
+<!--  -->
+{% include alert.html style="success" text="Arguments are provided as example, but try to follow as much as possible other implementations for easy integration." %}
+<!--  -->
 
 Any features provided by the Nano App should be provided through these JS bindings, such as `getAppConfiguration` or any blockchain-specific capabilities.
 

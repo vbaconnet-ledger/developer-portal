@@ -11,9 +11,8 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# General overview
+## General overview
 
-***
 <!--
 
 - [General overview](#general-overview)
@@ -31,34 +30,15 @@ layout: doc_ci
 <!-- --------------------------------- -->
 ![](../../../uploads/images/CI/code-blocks.png)
 
-***
 ## Introduction
 Here is how to include a new crypto-asset (Coin) on Ledger Live.
 
 There are 4 main parts to integration in Ledger Live
-1. CryptoAssets
-2. App JS Bindings
-3. Live Common
-4. Live Desktop & Mobile
+1. **CryptoAssets** (Follow instructions [here](../41_live_cryptoassets))
+2. **App JS Bindings** (Follow instructions [here](../42_live_app_bindings))
+3. **Live Common** (Follow instructions [here](../43_live_common))
+4. **Live Desktop & Mobile** (Follow instructions [here](../44_live_frontend))
 
 In each part you will add your **Coin code** You may also have to make changes in the **Generic code**
 
 
-***
-# CryptoAssets
-
-Follow instructions [here](../41_live_cryptoassets)
-
-# App JS Bindings
-
-Follow instructions [here](../42_live_app_bindings)
-
-# Live Common
-
-Follow instructions [here](../43_live_common)
-
-# Front-end integration
-
-Follow instructions [here](../44_live_frontend)
-
-***

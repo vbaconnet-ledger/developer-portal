@@ -11,9 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-
-# _MyCoin_ implementation in Live-Common
-
 <!--
 
 - [_MyCoin_ implementation in Live-Common](#mycoin-implementation-in-live-common)
@@ -68,8 +65,6 @@ layout: doc_ci
   - [Testing](#testing)
 
 -->
-
----
 
 ## Introduction
 
@@ -127,7 +122,9 @@ ledger-live version      # should print live-common version
 ledger-live deviceInfo   # should display information about connected device
 ```
 
-_Note: ensure `yarn global bin` is in your $PATH. You can build automatically the CLI by running `yarn watch` in a separate terminal to ensure `ledger-live` bin is always up-to-date with your work._
+<!--  -->
+{% include alert.html style="success" text="Ensure <code>yarn global bin</code> is in your $PATH. You can build automatically the CLI by running <code>yarn watch</code> in a separate terminal to ensure <code>ledger-live</code> bin is always up-to-date with your work." %}
+<!--  -->
 
 If everything is fine, you are ready to start integrating your new coin `MyCoin` !
 
@@ -162,7 +159,11 @@ Here is a typical family folder structure (JS integration):
 └── types.js
 ```
 
-_Note: You can refer to existing implementations to complete given examples, like [Polkadot integration](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/src/families/polkadot)_
+<!--  -->
+{% include alert.html style="primary" text="You can refer to existing implementations to complete given examples, like <a href='https://github.com/Ledger-Coin-Integration-team/ledger-live-common/src/families/polkadot'>Polkadot integration</a>" %}
+<!--  -->
+
+
 
 In the section Below, the files are marked as **Required**, **Recommended**, or **Optional** accordingly.
 
@@ -176,7 +177,8 @@ You should not update those files manually, but call a dedicated script:
 ./scripts/sync-families-dispatch.sh
 ```
 
-_NOTE: you may need to add `mycoin` to the `withoutNetworkInfo` in this script if you don't use a NetworkInfo type._
+{% include alert.html style="success" text="you may need to add <code>mycoin</code> to the <code>withoutNetworkInfo</code> in this script if you don't use a NetworkInfo type." %}
+
 
 **As soon as you add a file in the family (that is part of the generated folder) you will need to execute this script before building.** Otherwise, your implementation will not be known by the live-common library.
 
@@ -238,18 +240,20 @@ Ensure the `.yalc` directory is included then in the package.json:
     ".yalc"
   ],
 ```
+<!--  -->
+{% include alert.html style="warning" text="Do not commit changes due to the usage of <code>yalc</code> as it may result in wrong behaviour." %}
+<!--  -->
 
-_**WARNING: Do not commit changes due to the usage of `yalc` as it may result in wrong behaviour.**_
 
 ## Step by Step integration
 
 ### MyCoin cryptoassets
 
-We will consider that _MyCoin_ is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [_MyCoin_ in CryptoAssets](../41_live_cryptoassets).
+We will consider that _MyCoin_ is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [\*MyCoin\* in CryptoAssets](../41_live_cryptoassets).
 
 ### Derive Address from device
 
-If your app JS bindings (see See [_My Coin_ App JS Bindings](../42_live_app_bindings)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
+If your app JS bindings (See [\*My Coin\* App JS Bindings](../42_live_app_bindings)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
 
 First and easiest step is to get an address from the device for MyCoin, by creating the `hw-getAddress.js` Resolver:
 
@@ -376,26 +380,26 @@ We will focus only on the `Account` type as we won't cover the Token integration
 
 All main accounts share a common ground:
 
-- `id: string`: a unique account identifier we build up with many pieces of information. It's generally composed of 5 parts split by a `:`.
-- `seedIdentifier: string`: a unique way to identify a seed the account was associated with.
-- `xpub?: string`: the xpub if relevant. This information is redundant with the `id` and might be eventually dropped.
-- `derivationMode: DerivationMode` identifies the derivation scheme that is used. See [Derivation](#derivation).
-- `index: number`: the index of the account among a given `derivationMode`.
-- `freshAddress: string`: the "next" public address where a user should receive funds. For account-based blockchains, it is the current public address.
-- `freshAddressPath: string` represents the derivation path where the `freshAddress` was taken from.
-- `freshAddresses: Address[]`: an array of "future" fresh addresses. It is a generalisation of `freshAddress` and `freshAddressPath`.
-- `name: string`: name of the account that the user has set. It is not saved or restored from any place but is defined by the user and locally saved.
-- `balance: BigNumber` represent the total amount of assets that this account holds.
-- `spendableBalance: BigNumber`: represents the subset of `balance` that can be spent. Most of the time it will be equal to `balance` but this can vary in some blockchains.
-- `blockHeight: number`: tracks the current blockchain block height.
-- `currency: CryptoCurrency`: the associated crypto currency of the Account. See [_MyCoin_ in CryptoAssets](../41_live_cryptoassets)
-- `unit: Unit`: the user defined preferred unit to view the account with. It's initialized to `currency.units[0]`.
-- `operationsCount: number` gives the total number of operations this account contains. This field exists because the `operations` array is not guaranteed to be complete.
-- `operations: Operation[]`: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on.
-- `pendingOperations: Operation[]`: like `operations` but only for _optimistic updates_ of operations resulting from transactions that were just performed and not yet confirmed.
-- `lastSyncDate: Date`: the date of the last time a synchronisation was performed.
-- `subAccounts?: SubAccount[]`: an optional field that is defined for accounts that can contain children accounts. This is for instance used for tokens and Tezos originated accounts.
-- `balanceHistory?: BalanceHistoryMap`: a cache that contains the historical datapoints of the balance in different ranges of time. It might not be present in Account and in that case, a fallback JS implementation will be used to calculate this from the operations array.
+- `id: string`: a unique account identifier we build up with many pieces of information. It's generally composed of 5 parts split by a `:`
+- `seedIdentifier: string`: a unique way to identify a seed the account was associated with
+- `xpub?: string`: the xpub if relevant. This information is redundant with the `id` and might be eventually dropped
+- `derivationMode: DerivationMode` identifies the derivation scheme that is used. See [Derivation](#derivation)
+- `index: number`: the index of the account among a given `derivationMode`
+- `freshAddress: string`: the "next" public address where a user should receive funds. For account-based blockchains, it is the current public address
+- `freshAddressPath: string` represents the derivation path where the `freshAddress` was taken from
+- `freshAddresses: Address[]`: an array of "future" fresh addresses. It is a generalisation of `freshAddress` and `freshAddressPath`
+- `name: string`: name of the account that the user has set. It is not saved or restored from any place but is defined by the user and locally saved
+- `balance: BigNumber` represent the total amount of assets that this account holds
+- `spendableBalance: BigNumber`: represents the subset of `balance` that can be spent. Most of the time it will be equal to `balance` but this can vary in some blockchains
+- `blockHeight: number`: tracks the current blockchain block height
+- `currency: CryptoCurrency`: the associated crypto currency of the Account. See [\*MyCoin\* in CryptoAssets](../41_live_cryptoassets)
+- `unit: Unit`: the user defined preferred unit to view the account with. It's initialized to `currency.units[0]`
+- `operationsCount: number` gives the total number of operations this account contains. This field exists because the `operations` array is not guaranteed to be complete
+- `operations: Operation[]`: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on
+- `pendingOperations: Operation[]`: like `operations` but only for _optimistic updates_ of operations resulting from transactions that were just performed and not yet confirmed
+- `lastSyncDate: Date`: the date of the last time a synchronisation was performed
+- `subAccounts?: SubAccount[]`: an optional field that is defined for accounts that can contain children accounts. This is for instance used for tokens and Tezos originated accounts
+- `balanceHistory?: BalanceHistoryMap`: a cache that contains the historical datapoints of the balance in different ranges of time. It might not be present in Account and in that case, a fallback JS implementation will be used to calculate this from the operations array
 
 But if needed by the blockchain, an account can also contain coin-specific resources related to a single account, like its "nonce" or additional balances (e.g. for staking), or anything that may be displayed or used in your implementation. It's generally an additional field like `myCoinResources`. See [Family-specific types](#family-specific-types) below.
 
@@ -463,9 +467,8 @@ Some coins also have some fields generally respecting the same semantics, here a
 - `mode: string`: type of transaction to be broadcasted (`"send"`, `"freeze"`, `"delegate"`, `"claimReward"`...)
 - `fees: BigNumber`: fees (provided by blockchain, or filled by user)
 - `memo: ?string`: memo if required by exchange
-- ...
 
-Although some fields are required, they can be emptied (recipent = "" and amount = 0) and ignored for transactions making no use of it.
+Although some fields are required, they can be emptied (recipent = "" and amount = 0) and ignored for transactions not using them.
 
 You should add any fields that would be required by _MyCoin_ to be correctly broadcasted - respecting as much as possible its protocol's lexicon.
 
@@ -541,8 +544,11 @@ export type MyCoinPreloadData = {|
 
 export const reflect = (_declare: *) => {};
 ```
+<!--  -->
+{% include alert.html style="success" text="Core types should be exported for legacy compatibility with existing libcore integrations." %}
+<!--  -->
 
-_Note: Core types should be exported for legacy compatibility with existing libcore integrations._
+
 
 Since some of thoses types will be serialized when stored or cached, you may need to define serialize/deserialize functions for those:
 
@@ -626,7 +632,10 @@ export { toMyCoinResourcesRaw, fromMyCoinResourcesRaw };
 // }
 ```
 
-_Note: if your integration of MyCoin does not require coin-specific data in an account, you will not need to define `MyCoinResources`._
+<!--  -->
+{% include alert.html style="success" text="If your integration of MyCoin does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
+<!--  -->
+
 
 #### Operation, Account and Transaction serialization
 
@@ -727,7 +736,9 @@ export default {
 };
 ```
 
-_NOTE: `formatOperationSpecifics()` and `formatAccountSpecifics()` are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging._
+<!--  -->
+{% include alert.html style="success" text="<code>formatOperationSpecifics()</code> and <code>formatAccountSpecifics()</code> are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging." %}
+<!--  -->
 
 The same idea applies also to the `Transaction` type which needs to be serialized and formatted for CLI:
 
@@ -800,8 +811,9 @@ The best way to implement your API in Live Common is to create a dedicated `api`
   ├── sdk.js
   └── sdk.types.js
 ```
-
-_NOTE: try to separate as much as possible your different APIs (if you use multiple providers) and use typings to ensure you map correctly API responses to Ledger Live types_
+<!--  -->
+{% include alert.html style="success" text="Try to separate as much as possible your different APIs (if you use multiple providers) and use typings to ensure you map correctly API responses to Ledger Live types" %}
+<!--  -->
 
 You will likely need to export thoses functions, but implemention is up-to-developer:
 
@@ -826,7 +838,9 @@ See [Polkadot Coin Integration's api](https://github.com/LedgerHQ/ledger-live-co
 
 Here is an example of a MyCoin API implementation using a fictive SDK that uses something like WebSocket to fetch data.
 
-_NOTE: We don't recommend using WebSocket as it could have drawbacks and is more difficult to scale up and put behind a reverse proxy. If possible, use HTTPS requests as much as possible._
+<!--  -->
+{% include alert.html style="success" text="We don't recommend using WebSocket as it could have drawbacks and is more difficult to scale up and put behind a reverse proxy. If possible, use HTTPS requests as much as possible." %}
+<!--  -->
 
 ```js
 // @flow
@@ -1175,7 +1189,9 @@ const accountBridge: AccountBridge<Transaction> = {
 export default { currencyBridge, accountBridge };
 ```
 
-_Note: you could implement all the methods in a single file, but for better readability and maintainability, you should split your code into multiple files._
+<!--  -->
+{% include alert.html style="success" text="You could implement all the methods in a single file, but for better readability and maintainability, you should split your code into multiple files." %}
+<!--  -->
 
 ### Account Bridge
 
@@ -1376,9 +1392,9 @@ For instance we will check that:
 - user have enough funds to pay transaction fees
 - the amount is strictly positive (avoiding zero sends)
 - the minimum balance or existential deposit is respected if relevant
-- ...
+- etc
 
-This validation is done everytime the user updates the transaction (any input changes) to give himeimmediate and contextual feedback. The status object returned by the `getTransactionStatus` follows this definition:
+This validation is done everytime the user updates the transaction (any input changes) to give him immediate and contextual feedback. The status object returned by the `getTransactionStatus` follows this definition:
 
 - `errors: { [string]: Error }`: potential error for each (user) field of the transaction
 - `warnings: { [string]: Error }`: potential warning for each (user) field for a transaction
@@ -1744,7 +1760,9 @@ export default broadcast;
 This function must return the optimistic operation, patched with the `hash` generally provided by the network.
 Once the operation is synced from MyCoin API, the AccountBridge will remove this optimistic operation from the `pendingOperations`.
 
-_NOTE: when there are some pending operations, synchronization will occur every minutes._
+<!--  -->
+{% include alert.html style="success" text="When there are some pending operations, synchronization will occur every minutes." %}
+<!--  -->
 
 #### Estimate Max Spendable
 
@@ -1918,7 +1936,7 @@ The `makeScanAccounts` helper will automatically execute the default address der
 
 #### Preload currency data (optional)
 
-Before creating or using a currency bridge (e.g. scanning accounts, or every 2 minutes for synchronization), Ledger Live will try to preload some currency data (e.g. tokens, delegators,...) required for live-common feature to correctly work.
+Before creating or using a currency bridge (e.g. scanning accounts, or every 2 minutes for synchronization), Ledger Live will try to preload some currency data (e.g. tokens, delegators, etc) required for live-common feature to correctly work.
 
 This preloaded data will be stored in a persisted cache for future use, for Ledger Live to still work if temporarily offline, and speed up startup, depending on `getPreloadStrategy` (`preloadMaxAge` determines the data expiration that will trigger a refresh).
 
@@ -2002,7 +2020,7 @@ It is important to keep in mind that all currencies work independently and that 
 
 Hence, the more cryptocurrencies Ledger Live is using, the more requests and calculations are executed, which can take time.
 
-To avoid making the same requests several times, we recommend using a local cache in your implementation (e.g. fees estimations, some currency data to preload...) in a `src/families/mycoin/cache.js` file.
+To avoid making the same requests several times, we recommend using a local cache in your implementation (e.g. fees estimations, some currency data to preload, etc in a `src/families/mycoin/cache.js` file.
 
 We have a [`src/cache.js`](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/cache.js) helper for creating Least-Recently-Used caches anywhere if needed.
 
@@ -2067,8 +2085,9 @@ function getDeviceTransactionConfig({
 
 export default getDeviceTransactionConfig;
 ```
-
-__IMPORTANT NOTE: Since a not-well-informed user could be tricked to sign transaction with wrong recipients, we never show the `destination` fields in Ledger Live applications, in order for users to get used to always verify it externally.__
+<!--  -->
+{% include alert.html style="warning" text="Since a not-well-informed user could be tricked to sign transaction with wrong recipients, we never show the <code>destination</code> fields in Ledger Live applications, in order for users to get used to always verify it externally." %}
+<!--  -->
 
 ### React hooks (optional / advanced)
 
@@ -2085,8 +2104,8 @@ Icons are usually maintained by Ledger's design team, so you must first check th
 If you need to add your own, they must respect those requirements:
 - Clean SVG with **only** `<path>` elements representing the crypto
 - Size and viewport must be `24x24`
-- Icon should be about `18x18` and centered / padded
-- flat-styled, and must respect crypto color scheme (filled)
+- Icon should be `18x18` and centered / padded
+- Flat-styled, and must respect crypto color scheme (filled)
 - No background or decorative shape added
 - No `<g>` or `transform`, `style` attributes...
 
