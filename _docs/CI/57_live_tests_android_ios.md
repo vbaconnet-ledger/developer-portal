@@ -16,9 +16,9 @@ layout: doc_ci
 # Coin Integration : Run tests on emulated Android and iOS
 
 <!--  -->
-{% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose: -
+{% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
 <ul>
-<li><a href='53_live_install_android/' class='alert-link'>Building Android Dev App</a></li>
+<li><a href='../53_live_install_android/' class='alert-link'>Building Android Dev App</a></li>
 <li><a href='https://blog.ledger.com/unos/docs/CI/52_live_install_ios/' class='alert-link'>Building iOS Dev App</a></li></ul>" %}
 <!--  -->
 
