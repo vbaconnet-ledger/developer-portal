@@ -75,7 +75,7 @@ The attestation keys are not accessible to apps directly, instead BOLOS provides
 
 - `os_endorsement_key2_derive_sign_data(...)` Sign a message using a private key derived from the attestation private key and the hash of the running application (this signature can be verified using `verifyEndorsement2.py`).
 
-For an example of how these features may be used, check out [blue-app-otherdime](https://github.com/LedgerHQ/blue-app-otherdime) and [this blog post](https://blog.ledger.co/attestation-redux-proving-code-execution-on-the-ledger-platform-fd11ab0f7c19) which discusses the app in detail.
+For an example of how these features may be used, check out [blue-app-otherdime](https://github.com/LedgerHQ/blue-app-otherdime) and [this blog post](https://www.ledger.com/attestation-redux-proving-code-execution-on-the-ledger-platform) which discusses the app in detail.
 
 ### Attestation Chain of Trust
 

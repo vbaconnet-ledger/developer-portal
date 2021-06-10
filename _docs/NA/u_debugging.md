@@ -24,7 +24,7 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="warning" text="The <a href='https://blog.ledger.com/unos/docs/NA/u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="warning" text="The <a href='../u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 
