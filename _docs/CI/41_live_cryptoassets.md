@@ -1,6 +1,6 @@
 ---
 title: Adding *MyCoin* to CryptoAssets library
-subtitle: This section describes the general processes and way of working Ledger will follow while
+subtitle:
 tags: []
 author:
 layout: doc_ci
@@ -10,8 +10,6 @@ layout: doc_ci
 {:.no_toc}
 * TOC
 {:toc}
-
-# *MyCoin* in CryptoAssets library
 
 <!--
 
@@ -24,8 +22,6 @@ layout: doc_ci
   - [Adding MyCoin](#adding-mycoin)
 
 -->
-
-***
 
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.
 
@@ -145,8 +141,9 @@ type CryptoCurrency = CurrencyCommon & {
   }
 };
 ```
-
-_Note: CoinType is generally found in [https://github.com/satoshilabs/slips/blob/master/slip-0044.md](https://github.com/satoshilabs/slips/blob/master/slip-0044.md), although unicity is not quaranteed across networks (testnets, etc...)._
+<!--  -->
+{% include alert.html style="success" text="CoinType is generally found in [https://github.com/satoshilabs/slips/blob/master/slip-0044.md](https://github.com/satoshilabs/slips/blob/master/slip-0044.md), although unicity is not quaranteed across networks (testnets, etc...)." %}
+<!--  -->
 
 ### ExplorerView
 
@@ -163,7 +160,9 @@ type ExplorerView = {
 };
 ```
 
-_Note: Find a reliable explorer. If you find more than one explorer, list them from most to less popular. Ledger Live will likely use the first explorer as default._
+<!--  -->
+{% include alert.html style="success" text="Find a reliable explorer. If you find more than one explorer, list them from most to less popular. Ledger Live will likely use the first explorer as default." %}
+<!--  -->
 
 ### TokenCurrency specific fields
 

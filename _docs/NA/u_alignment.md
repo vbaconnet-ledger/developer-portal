@@ -44,7 +44,7 @@ Please note that 8-bit aligned means that there is actually no alignment constra
 The compiler will add padding in any structure which is not aligned by design, in order to respect:
 
  -   The alignment of each field associated to their respective length
- -   The alignment of the whole structure, which shall have a total length, padding included, multiple of the largest field's length
+ -   The alignment of the whole structure, which must have a total length, padding included, multiple of the largest field's length
 
 For instance the following structure is 8 bytes long before compilation:
 
