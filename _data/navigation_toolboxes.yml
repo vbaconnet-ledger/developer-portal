@@ -1,12 +1,12 @@
 # Boxes include navigation
 
 - title: Speculos
-  desc: Complete guide to building your app running on Nano
+  desc: Emulate Nano devices, on standard desktop computers, without any hardware device
   icon: cog
   doc: SP/start_here
 
 - title: Python Loader
-  desc: Lean about all the options, features and how to use them
+  desc: Python tools to communicate with Nano S and Nano X and manage applications life cycle
   icon: settings
   doc: PL/01_readme
 

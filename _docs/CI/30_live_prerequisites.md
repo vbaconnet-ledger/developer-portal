@@ -11,8 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# Prerequisites
-
 <!--
 - [Prerequisites](#prerequisites)
   - [Technical Assessment](#technical-assessment)
@@ -22,12 +20,10 @@ layout: doc_ci
 
 -->
 
-***
-
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.
-Nowadays, they are also functionally complex: it’s no longer just about sending and receiving a single currency, we see more and more individual projects with their own purpose and identity, their own innovative features, such as staking, rewards, tokens, smart contracts, on-chain governance, etc…
+Nowadays, they are also functionally complex: it’s no longer just about sending and receiving a single currency, we see more and more individual projects with their own purpose and identity, their own innovative features, such as staking, rewards, tokens, smart contracts, on-chain governance, etc.
 
-Therefore, every new coin integration calls for a preliminary analysis, to gather all information about the coin before being able to start coding, making sure nothing is left in the shadow. In order to do so, this pre-analysis has to cover both the functional and technical aspects of the coin.
+Therefore, every new coin integration calls for a preliminary analysis, to gather all information about the coin before being able to start coding and make sure nothing is left in the shadow. In order to do so, this pre-analysis has to cover both the functional and technical aspects of the coin.
 
 ***
 ## Technical Assessment
@@ -80,5 +76,3 @@ Ledger runs its own indexing services but can also rely on third parties to oper
 <!-- ------------- Image ------------- -->
 ![indexer_decision_tree.png](../../../uploads/images/CI/indexer_decision_tree.png)
 <!-- --------------------------------- -->
-
-***

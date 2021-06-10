@@ -26,14 +26,14 @@ Ledger Live
     Ledger Live Mobile
 -->
 
-# Modules – General Description Arch
+## Modules – General Description Arch
 
-## B2C Components
+### B2C Components
 
 <!-- ------------- Image ------------- -->
 ![B2C-components](../../../uploads/images/CI/B2C-components.png)
 <!-- --------------------------------- -->
-Ledger offers its user the ability to self-custody their assets on their Ledger device. This offers some undoubted advantages, but since the hardware wallet acts as a signing box, it defers most of the technical complexity to the **companion application**.
+Ledger gives its user the ability to self-custody their assets on their Ledger device. This offers some undoubted advantages, but since the hardware wallet acts as a signing box, it defers most of the technical complexity to the **companion application**.
 
 <!-- ------------- Image ------------- -->
 ![app_architecture](../../../uploads/images/CI/app_architecture.png)
@@ -44,7 +44,7 @@ The companion application contains the business logic and is (typically) a GUI, 
 
 In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain. We'll cover that more in details here (LINK)
 
-# Global Architecture Overview
+## Global Architecture Overview
 
 [//]: Update image : Replace Lib-Core with JS
 
@@ -58,7 +58,7 @@ blockchains, and the hardware wallets ([Ledger Nano
 S](https://www.ledger.com/products/ledger-nano-s), [Ledger Nano
 X](https://www.ledger.com/products/ledger-nano-x)).
 
-Flows :
+#### Flows
 
 -   Ledger Live application communicates with the hardware wallets
     (through [ledgerjs](https://github.com/LedgerHQ/ledgerjs))
@@ -86,22 +86,22 @@ Flows :
 _From 2021, Ledger does not continue supporting new blockchain through the use of the lib-ledger-core. As such we won't be considering Pull Requests applied to the Lib-core repository_
 
 ***
-# Ledger-Live Architecture Detailed
+## Ledger-Live Architecture Detailed
 
 Ledger-Live Architecture Detailed
 
 [//]: ::**To be discussed with Gre**::
 
 ***
-# BOLOS app
+## BOLOS app
 
 The BOLOS application is the Nano Application. It acts as a transaction signer
-key in a deterministic way). Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
+key in a deterministic way. Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
 
 To get more information about BOLOS application, please refer to this [documentation](https://ledger.readthedocs.io/en/latest/additional/publishing_an_app.html).
 
 ***
-# Communication with the Device
+## Communication with the Device
 
 The communication with the device is ensured by the following libraries.
 
@@ -113,16 +113,14 @@ Documentation is available here
 <http://ledgerhq.github.io/ledgerjs/docs/> - Dead page
 
 ***
-# Communication with the different blockchains
-
-Communication with the different blockchains
+## Communication with the different blockchains
 
 The Ledger Live application wil retrieve transaction history and broadcast new transactions using different nodes and indexing services.
 
 As part of a Ledger Live integration, you should provide a indexing service allowing a Ledger Live user to synchronize his account in a timely manner.
 
 ***
-# Indexer and nodes
+## Indexer and nodes
 
 The indexers will retrieve a list of transaction for a specific address
 based on a standard dB.
@@ -134,7 +132,7 @@ transactions and blocks. Most of the times these modules will keep most
 data of a blockchain and are able to send raw messages to the network.
 
 ***
-# Live-Common
+## Live-Common
 
 The Common library of Ledger Live is called Live-Common (live-com)
 
@@ -145,17 +143,17 @@ and mobile version of Ledger-Live.
 The Ledger Live application retrieves transaction history and broadcasts new transactions using different nodes and indexing services.
 
 As part of a Ledger Live integration, you should provide a indexing service allowing a Ledger Live user to synchronize his account(s) in a timely manner.
-<i>Note :
+
+<i>Note</i> :
 
 -   within the Live-Common, the coin will need to be included in the CryptoAssets library. This is seen in detail
-    [later](../41_live_cryptoassets)
-    used to define the list of currencies that will be visible on the
+    [later](../41_live_cryptoassets). It is used to define the list of currencies that will be visible on the
     front end of the application.
 
 -   the [countervalue API](https://github.com/LedgerHQ/ledger-api-countervalue) is used
     to display the actual price and market cap to sort the information
     and accounts inside the application.
-</i>
+
 ledgerjs is a set of javascript library. It allows a javascript
 application to use the API of a BOLOS app. BOLOS apps are using APDU to
 transfer data and commands to and from the external world. ledgerjs only
@@ -171,13 +169,13 @@ The same thing as Ledger Live Desktop but on mobile devices (iOS,
 Android)
 
 ***
-# Ledger Live
+## Ledger Live
 
 Ledger Live is a new generation wallet desktop application for Desktop and Mobile, providing a unique interface to maintain multiple cryptocurrencies for Ledger Nano S / Blue. Manage devices, create accounts, receive and send cryptoassets.
 
 Ledger Live is an hybrid desktop application built using Electron, React, Redux, RxJS to deal with blockchains (sync, broadcast,..). It communicates with  hardware wallet devices to verify address and sign transactions with ledgerjs. Some logic is shared with live-common.
 
-## Ledger Live Desktop
+### Ledger Live Desktop
 
 <!-- ------------- Image ------------- -->
 <img width="255" src="../../../uploads/images/CI/lld.png" style="float:right">
@@ -190,7 +188,7 @@ It is compatible with
 \- **Windows 8+ (x64)**
 \- **Linux (x64)**
 
-## Ledger Live Mobile
+### Ledger Live Mobile
 
 <!-- ------------- Image ------------- -->
 <img align="left" width="109" src="../../../uploads/images/CI/llm.png">
@@ -203,6 +201,3 @@ It is compatible with
 \- **Android**
 
 Ledger Live mobile application is  compatible with the Ledger Nano X via Bluetooth connection.
-
-
-***
