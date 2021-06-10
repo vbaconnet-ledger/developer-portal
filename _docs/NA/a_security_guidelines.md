@@ -60,7 +60,7 @@ Rationale: It is a purpose of BOLOS operating system to perform these in a secur
 
 **You should never allow signing of any attacker-controlled message unless it has been verified for structural validity. Importantly, you should never sign a message that might be a hash of transaction.**
 
-Rationale: If you allow an attacker to blindly sign a message, she can easily supply a hash of a valid transaction. Your signature could then be used to send an unauthorized transaction.
+Rationale: If you allow an attacker to blindly sign a message, it can easily supply a hash of a valid transaction. Your signature could then be used to send an unauthorized transaction.
 
 If you want to sign user-supplied "personal" messages, prefix them with a fixed string (which shouldn't be a valid transaction prefix). It is also a good practice to include message length in the text to be signed. Ledger-app-eth has a good example in function `handleSignPersonalMessage`. Note that sometimes cryptocurrencies have a standardized way of signing such personal messages and in that case you should use the approved scheme.
 
@@ -94,7 +94,7 @@ Several curves and paths can be configured. For example, if your app must derive
 APP_LOAD_PARAMS=--curve ed25519 --curve prime256r1 --path "44'/535348'" --path "13'" --path "17'"
 ```
 
-Rationale: Setting prefixes is crucial, as it limits the amount of damages an attacker can cause if he manages to compromise an application. If a vulnerability is exploited on a poorly written of backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
+Rationale: Setting prefixes is crucial, as it limits the amount of damages an attacker can cause if he manages to compromise an application. If a vulnerability is exploited on a poorly written or backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
 
 <!--  -->
 {% include alert.html style="warning" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
@@ -148,7 +148,7 @@ explicit_bzero(privateKeyData, sizeof(privateKeyData));
 explicit_bzero(&privateKey, sizeof(privateKey));
 ```
 
-In the happy path, the previous code will correctly clean the memory once the private key is initialized. Note, however, that this code **fails to protect private key in case some system call throws (for example cx\_ecfp\_init\_private\_key)**. Correct code should wrap the clearing in `BEGIN_TRY { TRY { ... } FINALLY { explicit_bzero() } END_TRY;`.
+In the happy path, the previous code will correctly clean the memory once the private key is initialized. Note, however, that this code **fails to protect private keys in case some system call throws (for example cx\_ecfp\_init\_private\_key)**. Correct code should wrap the clearing in `BEGIN_TRY { TRY { ... } FINALLY { explicit_bzero() } END_TRY;`.
 
 Applications where such issues were fixed include [the ARK app](https://github.com/LedgerHQ/app-ark/commit/e84a4dc0c422f7ade586c831cbab56cb15c64df1) and [the Solana app](https://github.com/LedgerHQ/app-solana/pull/5/files).
 
@@ -158,7 +158,7 @@ Some cryptocurrencies do not have *explicit* fee encoded in the transaction. In 
 
 ### Properly protect data you wish to cache on the host computer
 
-Sometimes your app needs to compute over more data than it can fit inside memory. Taking an example from the previous section, it might not be easy to store all UTxOs in memory of Ledger. As such, you might break computation into multiple steps and, for example, verify each UTxO separately and let the host computer to cache a "certified summary". If you do this, be aware that
+Sometimes your app needs to compute over more data than it can fit inside memory. Taking an example from the previous section, it might not be easy to store all UTxOs in the device memory. As such, you might break computation into multiple steps and, for example, verify each UTxO separately and let the host computer cache a "certified summary". If you do this, be aware that
 
 1. If the information you want the host to cache is public, you still need to attach a signature to it so that the host cannot send some other value later. This could be done with standard HMAC digest. We would recommend using a temporary (per session) key for this --having a per-session HMAC allows you to truncate the digest size (e.g., you don't need to have HMAC which withstands years of brute-force attack. Instead, you can balance the digest size against some reasonable upper bound on how long the session lives (e.g., one month should be enough)).
 
@@ -169,7 +169,7 @@ Sometimes your app needs to compute over more data than it can fit inside memory
     -   Encrypt the information with a sufficiently strong cipher
     -   Provide a digest to avoid tampering with the value
 
-### Do not allow the host to freely manipulate with key-pairs
+### Do not allow the host to freely manipulate key-pairs
 
 Some cryptocurrencies (notably Monero) need to perform an extensive calculation with *(public, private)* key-pair spread over multiple APDU exchanges. If you need to do the same, **do not** allow the attacker to step out of the protocol. Notably, allowing the attacker to freely perform key manipulation (e.g., group multiplications, exponentiations, etc.) could undermine your app security **even if the private key never leaves the device**. In general, keep an explicit protocol state machine during the computation. Also, consult with cryptography experts to check for implications if you misstep from the protocol.
 
@@ -179,7 +179,7 @@ Some cryptocurrencies (notably Monero) need to perform an extensive calculation 
 
 Ledger apps are written in C. Unlike typical embedded project, the goal here is to write for a single platform with a single compiler.
 
-The current supported compiler is clang, and it supports newest language features (up to C11). This is useful for both development and security. You should really learn about the new features and use them extensively as they might help you writing more secure code.
+The current supported compiler is clang, and it supports newest language features (up to C11). This is useful for both development and security. You should really learn about the new features and use them extensively as they might help you write more secure code.
 
 A random collection of useful features: intermingled declarations and code, support of `_Generic`, `_Static_assert`, `__builtin_types_compatible_p`, `__typeof` (very useful for safer versions of macros), etc.
 
@@ -358,7 +358,7 @@ void f(uint8_t* buf, size_t bufSize) { // size_t is unsigned
 
 Speaking of safely formatting data, be wary of truncated values. Importantly, make sure you do not truncate any important data when displaying on the Ledger screen.
 
-**Example 1**: Truncating tx hash from "f6954eb23ecd1d64c782e6d6c32fad2876003ae92986606585ae7187470d5e04" to "f695...5e04" might look nice for the users but this effectively reduces the security of hash and an attacker can now easily try to create a hash collision. Instead, prefer scrolling/paging of long such important values.
+**Example 1**: Truncating tx hash from "f6954eb23ecd1d64c782e6d6c32fad2876003ae92986606585ae7187470d5e04" to "f695...5e04" might look nice for the users but this effectively reduces the security of hash and an attacker can now easily try to create a hash collision. Instead, prefer scrolling/paging of long important values.
 
 **Example 2**: Raise errors instead of truncation
 
