@@ -1,6 +1,6 @@
 ---
 title: General Process
-subtitle: This section describes the general processes and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
+subtitle: This section describes the general processes and way of working Ledger will follow while interacting with the teams who want to add their currency on Ledger Live.
 tags: []
 author:
 toc: true
