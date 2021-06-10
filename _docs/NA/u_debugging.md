@@ -19,7 +19,7 @@ layout: doc_na
 <!--  -->
 {% include alert.html style="primary" text="Ledger has developed its own emulator called
 <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos</a>. Feel free to checkout:  <br>1.  The <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos repository</a>. <br>2.  The <a href='https://github.com/LedgerHQ/nanos-secure-sdk' class='alert-link'> Nano S SDK </a> and the
-<a href='https://github.com/LedgerHQ/nanox-secure-sdk' class='alert-link'> Nano X SDK </a>.  <br>3.  The <a href='../SP/i_build/' class='alert-link'> Speculos </a> section which gives an overview of how to use Speculos." %}
+<a href='https://github.com/LedgerHQ/nanox-secure-sdk' class='alert-link'> Nano X SDK </a>.  <br>3.  The <a href='../../SP/i_build/' class='alert-link'> Speculos </a> section which gives an overview of how to use Speculos." %}
 <!--  -->
 
 
