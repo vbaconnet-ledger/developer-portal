@@ -38,7 +38,7 @@ We encourage all written code to be peer-reviewed. Importantly, the review shoul
 
 We encourage third-party security reviews. Note, however, that solid review takes time and a short review might yield a false sense of security (especially if the reviewing party does not have an extensive knowledge of Ledger code specifics).
 
-### Developing First App
+### Developing your first App
 
 Apart from reading developer documentation <!--at <https://ledger.readthedocs.io/en/latest/> REMOVED by CF 07.06.2021--> we recommend looking at Sia app <https://github.com/LedgerHQ/ledger-app-sia> which provides a nice starting point for an app, including lots of explanatory comments. A sample of security-wise overly-paranoid app is <https://github.com/LedgerHQ/ledger-app-cardano>.
 
