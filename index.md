@@ -4,7 +4,7 @@ width: expand
 hero:
     title: Ledger Developer Pages
     subtitle:
-         For Third-party Foundations and blockchain teams who want to develop their <br> currency and services in the Desktop and Mobile versions of Ledger Live
+         Welcome to the new Ledger Developer Portal for Third-party Foundations and blockchain teams who want to develop their <br> currency and services in the Desktop and Mobile versions of Ledger Live
     image: /images/GEN/portal-intro.png
     search: true
 ---

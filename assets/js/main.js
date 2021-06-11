@@ -1,5 +1,5 @@
 (function(global, factory) {
-    typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define("uikit", factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, 
+    typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define("uikit", factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self,
     global.UIkit = factory());
 })(this, function() {
     "use strict";
@@ -210,7 +210,7 @@
         ratio: function(dimensions, prop, value) {
             var obj;
             var aProp = prop === "width" ? "height" : "width";
-            return obj = {}, obj[aProp] = dimensions[prop] ? Math.round(value * dimensions[aProp] / dimensions[prop]) : dimensions[aProp], 
+            return obj = {}, obj[aProp] = dimensions[prop] ? Math.round(value * dimensions[aProp] / dimensions[prop]) : dimensions[aProp],
             obj[prop] = value, obj;
         },
         contain: function(dimensions, maxDimensions) {
@@ -1548,7 +1548,7 @@
         var obj;
         if (args === void 0) args = [];
         try {
-            return !options ? {} : startsWith(options, "{") ? JSON.parse(options) : args.length && !includes(options, ":") ? (obj = {}, 
+            return !options ? {} : startsWith(options, "{") ? JSON.parse(options) : args.length && !includes(options, ":") ? (obj = {},
             obj[args[0]] = options, obj) : options.split(";").reduce(function(options, option) {
                 var ref = option.split(/:(.*)/);
                 var key = ref[0];
@@ -8999,7 +8999,7 @@
 });
 
 (function(global, factory) {
-    typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define("uikiticons", factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, 
+    typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define("uikiticons", factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self,
     global.UIkitIcons = factory());
 })(this, function() {
     "use strict";
