@@ -98,7 +98,7 @@ Ledger-Live Architecture Detailed
 The BOLOS application is the Nano Application. It acts as a transaction signer
 key in a deterministic way. Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
 
-To get more information about BOLOS application, please refer to this [documentation](https://ledger.readthedocs.io/en/latest/additional/publishing_an_app.html).
+To get more information about BOLOS application, please refer to this [documentation](../../NA/a_publishing_an_app).
 
 ***
 ## Communication with the Device
