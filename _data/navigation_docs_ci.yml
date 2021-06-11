@@ -1,11 +1,15 @@
 - title: Getting Started
   docs:
   - CI/10_general_process
-  - CI/20_modules
+  - CI/11_modules
 
 - title: Prerequisites
   docs:
-  - CI/30_live_prerequisites
+  - CI/20_live_prerequisites
+
+- title: Tools
+  docs:
+  - CI/30_tools
 
 - title: Coding
   docs:

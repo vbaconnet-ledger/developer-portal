@@ -106,28 +106,6 @@ Some of those families are implemented using the Ledger's [libcore](https://gith
 - `yarn install` will install all dependencies
 - `yalc publish --push` will build and link live-common
 
-### CLI setup
-
-```sh
-cd cli/
-yalc add @ledgerhq/live-common
-yarn install
-yarn link        # will make ledger-live CLI available
-```
-
-You can test that your local Live Common and your device works correctly by executing a CLI command like:
-
-```sh
-ledger-live version      # should print live-common version
-ledger-live deviceInfo   # should display information about connected device
-```
-
-<!--  -->
-{% include alert.html style="success" text="Ensure <code>yarn global bin</code> is in your $PATH. You can build automatically the CLI by running <code>yarn watch</code> in a separate terminal to ensure <code>ledger-live</code> bin is always up-to-date with your work." %}
-<!--  -->
-
-If everything is fine, you are ready to start integrating your new coin `MyCoin` !
-
 ## Structure
 
 Your whole implementation of `MyCoin` must reside in a `mycoin` folder in `src/families/`, with the exception of some changes to apply in shared code.
