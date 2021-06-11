@@ -1,5 +1,5 @@
 ---
-title: Ledger Live Common
+title: Ledger Live CLI
 subtitle:
 tags: []
 author:
@@ -12,7 +12,7 @@ layout: doc_ci
 {:toc}
 
 
-### Ledger Live CLI Set up
+### Set up
 
 Clone [ledger-live-common](https://github.com/LedgerHQ/ledger-live-common) repository
 
