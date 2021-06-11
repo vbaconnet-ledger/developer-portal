@@ -2,20 +2,20 @@
 
 - title: Nano App
   desc: Complete guide to getting your blockchain supported on Nano S/X
-  icon: cog
+  icon: nano
   doc: NA/start_here
 
 - title: Coin Integration
   desc: How to get your currency supported on Ledger Live
-  icon: settings
+  icon: coin
   doc: CI/10_general_process
 
 - title: ERC-20
   desc: How to include your favourite token in Ledger Live
-  icon: database
+  icon: token
   doc: ET/01_readme
 
 - title: DApp Integration
   desc: Get Started integrating your service in Ledger Live
-  icon: code
+  icon: dapp
   doc: DA/01_readme
