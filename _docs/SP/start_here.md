@@ -32,7 +32,7 @@ hardware devices and Speculos:
 ## Security
 
 Apps can make arbitrary Linux system calls (and use QEMU
-[semihosting](docs/user/semihosting.md) features), thus don't run Speculos on
+[semihosting](../u_semihosting) features), thus don't run Speculos on
 untrusted apps.
 
 It's worth noting that the syscall implementation (`src/`) doesn't expect

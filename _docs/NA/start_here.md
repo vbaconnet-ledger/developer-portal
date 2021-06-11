@@ -43,7 +43,7 @@ Make sure that your app is ready before submitting it for review and that you ha
 
 #### Design guidelines
 The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
-See the [design guidelines here](http://localhost:4000/unos/docs/NA/a_publishing_an_app/#design-guidelines).
+See the [design guidelines here](../a_publishing_an_app/#design-guidelines).
 
 #### Internal process
 When an app is submitted it will go through 3 main steps which are the functional review, the security review and the documentation review.
