@@ -128,7 +128,7 @@ In Ledger app development, it is necessary to enter your PIN code each time you 
 
     and rebuild/load your app.
 
-For more information see [loadApp-py](https://ledger.readthedocs.io/projects/blue-loader-python/en/0.1.16/script_reference.html#loadapp-py)
+For more information see [the section about the Python Loader](../../PL/01_readme)
 
 
 <!--  -->
