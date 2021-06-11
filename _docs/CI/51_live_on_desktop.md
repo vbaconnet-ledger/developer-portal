@@ -2,7 +2,7 @@
 title: Getting your Ledger Live running
 subtitle:
 tags: []
-author: 
+author:
 layout: doc_ci
 ---
 
@@ -10,8 +10,6 @@ layout: doc_ci
 {:.no_toc}
 * TOC
 {:toc}
-
-# Getting your Ledger Live running  
 
 <!--
 No toc originally here
@@ -29,15 +27,18 @@ No toc originally here
 
 -->
 
-***
+## Getting started
 
-1. fork + clone git@github.com:LedgerHQ/ledger-live-common.git  
-2. cd ledger-live-common  
-3. yarn install  
-4. yalc publish  
-5. cd cli  
-6. yalc add @ledgerhq/live-common  
-7. yarn install  
+To start, fork and clone git@github.com:LedgerHQ/ledger-live-common.git
+```bash
+cd ledger-live-common
+yarn install
+yalc publish
+cd cli
+yalc add @ledgerhq/live-common
+yarn install
+```
+
 
 
 > CLI ready to be used based on local live-common
@@ -47,13 +48,9 @@ No toc originally here
 
 ## test-dataset
 
-this file allow us to simulate some transactions of our implementation.
+This file allows us to simulate some transactions of our implementation.
 
-You will first need to set up the file `test-dataset.js`
-
-1. Create a `test-dataset.js` file
-
-then fill it with this empty template :
+First, create a `test-dataset.js` file and fill it with this empty template :
 
 ```js
 import type { DatasetTest } from "../../types";
@@ -68,14 +65,12 @@ export default dataset: DatasetTest<Transaction> = {
 }
 ```
 
-then you will need to connect your nano with a seed that you want to freeze (that means you don't want to do anymore transaction with that seed, or you will need to regenerate the snapshot everytime)
-
-and execute in the CLI the command :
+Then connect your nano with a seed that you want to freeze (that means you don't want to do anymore transaction with that seed, or you will need to regenerate the snapshot everytime) and execute in the CLI the command :
 ```sh
 `ledger-live generateTestScanAccounts -c mycoin`
 ```
 
-the output should be like this :
+The expected output is:
 
 ```js
 // @flow
@@ -105,7 +100,7 @@ const dataset: CurrenciesData<Transaction> = {
 export default dataset;
 ```
 
-just keep the part with the scanAccounts and put it the `mycoin` part :
+Just keep the part with the scanAccounts and put it the `mycoin` part :
 
 ```js
 // @flow
@@ -140,8 +135,8 @@ const dataset: DatasetTest<Transaction> = {
 export default dataset;
 ```
 
-then get info on the accounts that you want to freeze, they will be used as references for our tests.
-It should look something like this :
+Then, get info on the accounts that you want to freeze, they will be used as references for our tests.
+It should look something like this:
 
 ```js
 // @flow
@@ -200,14 +195,13 @@ const dataset: DatasetTest<Transaction> = {
 export default dataset;
 ```
 
-How does a test work ?
-----
+## How does a test work ?
 
-The test-dataset will simulate an object `Transaction` that we have as input and as an output a `TransactionStatus` that we compare with an expected status.
+The test-dataset simulates an object `Transaction` that we have as input, and a `TransactionStatus` as an output that we compare with an expected status.
 
 There's some generic tests that are already made in `src/__tests__/test-helpers/bridge.js` that are mandatory to pass.
 
-so to implement our own test in `test-dataset.js` in the array of `transactions` you will add an Object typed like this:
+To implement your own test in `test-dataset.js`, add an Object typed like this in the array of `transactions`:
 
 ```js
 // @flow
@@ -225,12 +219,11 @@ type TestTransaction =
     }
 ```
 
-this `TestTransaction` will use as mainAccount the account that we have set before and then execute the command `getTransactionStatus` by using the `transaction` object as input.
+This `TestTransaction` uses as mainAccount the account that we have set before and then execute the command `getTransactionStatus` by using the `transaction` object as input.
 
-What are the focus when testing ?
-----
+## What are the focus when testing ?
 
-Obviously we tried to cover as much as possible all the cases that are in `getTransactionStatus`.
+We tried to cover as many cases as possible that are in `getTransactionStatus`.
 
 You can also check `test-specifics.js` if you want to mock some specific part that is not covered by transactionStatus.
 
@@ -241,34 +234,30 @@ Transaction broadcast is an exception, it is tested differently, by a tool that 
 Requirement :
 
 - Docker
-- https://github.com/LedgerHQ/coin-apps or an elf of the nano app for LNS (create a empty folder with like : `<device>/<firmware version>/<appName>` example `nanos/1.6.1/mycoin`)
-- some currencies of the coin
+- [github.com/LedgerHQ/coin-apps](https://github.com/LedgerHQ/coin-apps) or an elf of the nano app for LNS (create a empty folder with like : `<device>/<firmware version>/<appName>` example `nanos/1.6.1/mycoin`)
+- Some currencies of the coin
 
-What is this testing ?
-----
+## What is this testing ?
 
 We are testing the broadcast part and sync part.
 
-How it works
----
+## How it works
 
 ```sh
 ledger-live cleanSpeculos && SEED="generate a seed for testing" COINAPPS="/path/to/coin/apps/folder" ledger-live bot -c mycoin
 ```
 
-- you need to generate a SEED : https://iancoleman.io/bip39/
-  use this seed for testing purpose only, then use the command before to have an adresse and send some currencies into it
+- Generate a SEED, [iancoleman.io/bip39/](https://iancoleman.io/bip39/). Use this seed for testing purpose only, then use the command before to have an adresse and send some currencies into it
 
-- the bot will execute each scenario if he met the requirement, then it will wait until the sync find the broadcasted transaction.
+- The bot will execute each scenario if it met the requirement, then it will wait until the sync find the broadcasted transaction
 
-- We also need to specify how the bot will react when he encounter certain screen, we will create `speculos-deviceActions.js`
+- You also need to specify how the bot will react when he encounter certain screen, create `speculos-deviceActions.js`
 
-How to define a test
-----
+## How to define a test
 
 `speculos-deviceActions.js`
 
-It is required to know every screen that your nano app contains, it will use the `title` of the screen then optionally check if the `expectedValue` of that screen is what we expect, then eventually execute the `button` action.
+It is required to know every screen that your nano app contains, it will use the `title` of the screen then optionally check if the `expectedValue` of that screen is what it expects, then eventually execute the `button` action.
 
 ```js
 title : name of the screen title
@@ -332,7 +321,7 @@ You can check the following example to help you write your specs.
 
 The bot will execute all the `mutations` if it doesn't encounter an invariant.
 
-then it will execute all the `updates` of the `Transaction` object.
+Then it will execute all the `updates` of the `Transaction` object.
 
 The bot will try to sign the transaction using instructions that you provided in `speculos-deviceActions.js`
 
@@ -405,13 +394,7 @@ export default { mycoin };
 ```
 
 
-
-
-
 [//]: > ** **Internal Note ** **
 [//]: >
-[//]: > Still useful? <https://github.com/LedgerHQ/ledger-live-common/tree/master/cli>  
+[//]: > Still useful? <https://github.com/LedgerHQ/ledger-live-common/tree/master/cli>
 
-
-
----

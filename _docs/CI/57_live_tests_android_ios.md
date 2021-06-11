@@ -13,8 +13,6 @@ layout: doc_ci
 
 <!-- 2021-03-30 based on 2548924630 in Confluence -->
 
-# Coin Integration : Run tests on emulated Android and iOS
-
 <!--  -->
 {% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
 <ul>

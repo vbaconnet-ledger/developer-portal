@@ -11,17 +11,11 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# General CLI Checklist - User tests
-
-<!--
-No toc originally here
--->
-
----
+## Checklist
 
 - Create a new account
-- Retrive the receive address of new account
-- Get balance of the account (before and after sending funds to it)
+- Retrive the receive address of the new account
+- Get the balance of the account (before and after sending funds to it)
 - Handle all user-level errors
 - Synchronize account
 - Retrieve operations
@@ -30,7 +24,7 @@ No toc originally here
 
 ---
 
-# How-to test
+## How-to test
 
 [Sync](../58_live_common_test_framework/#sync-accounts)
 

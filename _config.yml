@@ -109,5 +109,4 @@ defaults:
 # Site base hostname & protocol, e.g. http://example.com
 
 baseurl:            /
-# url:               https://blog.ledger.com
-url:                http://developers.ledger.com # 2021-06-09 1658
+url:                ""

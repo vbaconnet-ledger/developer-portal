@@ -2,7 +2,7 @@
 title: Building iOS Dev App
 subtitle:
 tags: []
-author: 
+author:
 layout: doc_ci
 ---
 
@@ -13,9 +13,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# Building an iOS developer app on macOS
-
-***
 This page explains how to install the Ledger Live dev app for iOS on macOS.
 
 ## Prerequisites
@@ -23,11 +20,11 @@ This page explains how to install the Ledger Live dev app for iOS on macOS.
 1.  Xcode (download [here](https://developer.apple.com/download/more/),
     latest version 11.7 at the time of writing)
 
-2.  [brew](https://brew.sh/)
+2.  [Brew](https://brew.sh/)
 
 3.  The Swift toolchain 4.2.4 (download [here](https://swift.org/builds/swift-4.2.4-release/xcode/swift-4.2.4-RELEASE/swift-4.2.4-RELEASE-osx.pkg))
 
-4.  Having an Apple account,
+4.  Having an Apple account
 
 5.  Being a member of the Ledger iOS dev
     group: to check if you're a member
@@ -54,7 +51,7 @@ Here, you can also check that you're using the correct toolchain and that you ha
 
 ## Steps
 
-We will begin by installing dependencies using brew
+Install dependencies using brew
 
 
 ```sh
@@ -67,13 +64,13 @@ Then clone ledger-live-mobile, and cd into the folder.
 git clone git@github.com:LedgerHQ/ledger-live-mobile.git
 cd ledger-live-mobile
 ```
-You can now use the yarn command.
+Use the yarn command.
 
 ```sh
 yarn
 ```
 
-When it has finished, execute
+When it has finished, execute:
 
 ```sh
 yarn pod
@@ -86,7 +83,7 @@ This command may fail. Like this, for example.
 <img width="680" src="../../../uploads/images/CI/2177138906/2177171709.png" ></div>
 <!-- --------------------------------- -->
 
-In my case, I had to run
+One solution is to run:
 
 ```sh
 sudo gem install bundler:2.1.4
@@ -94,7 +91,7 @@ sudo gem install bundler:2.1.4
 
 Then re-do the **yarn** and **yarn pod** commands.
 
-Open a second terminal, cd into the ledger-live-mobile repository, and run
+Open a second terminal, cd into the ledger-live-mobile repository, and run:
 
 ```sh
 yarn start
@@ -121,5 +118,3 @@ Then eventually, an iOS simulator will open, and after some time again, you'll s
 <div style="text-align:center">
 <img width="340" src="../../../uploads/images/CI/2177138906/2177237212.png" ></div>
 <!-- --------------------------------- -->
-
----
