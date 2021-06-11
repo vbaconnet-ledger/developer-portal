@@ -12,7 +12,7 @@
 
 - title: ERC-20
   desc: How to include your favourite token in Ledger Live
-  icon: download
+  icon: database
   doc: ET/01_readme
 
 - title: DApp Integration

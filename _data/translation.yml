@@ -17,4 +17,5 @@ en:
   contact_email:              "Email"
   contact_subject:            "Please put me on the right channel for:"
   contact_message:            "Message (optional)"
+  contact_contribution:       "Your suggestion"
   contact_send:               "Send and go back to the home page"
