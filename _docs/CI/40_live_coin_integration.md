@@ -1,5 +1,5 @@
 ---
-title: Adding *MyCoin* to Ledger Live
+title: Introduction
 subtitle:
 tags: []
 author:
@@ -16,11 +16,7 @@ layout: doc_ci
 <!--
 
 - [General overview](#general-overview)
-  - [Introduction](#introduction)
-- [CryptoAssets](#cryptoassets)
-- [App JS Bindings](#app-js-bindings)
-- [Live Common](#live-common)
-- [Front-end integration](#front-end-integration)
+- [Breakdown](#breakdown)
 
 -->
 
@@ -30,8 +26,8 @@ layout: doc_ci
 <!-- --------------------------------- -->
 ![](../../../uploads/images/CI/code-blocks.png)
 
-## Introduction
-Here is how to include a new crypto-asset (Coin) on Ledger Live.
+## Breakdown
+The following pages describe how to include a new crypto-asset (Coin) on Ledger Live.
 
 There are 4 main parts to integration in Ledger Live
 1. **CryptoAssets** (Follow instructions [here](../41_live_cryptoassets))
