@@ -13,13 +13,13 @@ layout: doc_sp
 
 ## Introduction
 
-After having [installed the requirements and built](../i_build.md) speculos:
+After having [installed the requirements and built](../i_build) speculos:
 
 ```console
 ./speculos.py apps/btc.elf
 ```
 
-The docker image can also be used directly, as detailed in the specific [docker documentation page](docker.md).
+The docker image can also be used directly, as detailed in the specific [docker documentation page](../u_docker).
 
 The Nano S is the default model; the Nano X and Blue can be specified on the command-line:
 
