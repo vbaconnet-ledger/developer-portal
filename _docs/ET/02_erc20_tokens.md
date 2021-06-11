@@ -8,6 +8,11 @@ author:
 layout: doc_et
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 First, make sure your token isn’t already listed by checking the [repository](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/data).
 
 The easiest way for you to request a token addition is to make a request to our [customer success team](https://support.ledger.com/hc/en-us/requests/new) and select Ledger Products - Technical Inquiries. Please make sure to share with us the details of your ERC20 token, and a link to Etherscan to allow us to double check the information.

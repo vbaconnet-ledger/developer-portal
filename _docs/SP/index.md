@@ -18,7 +18,6 @@ layout: doc_sp
 ### Installation and basic usage
 
 - Linux users: [Requirements and build](../i_build)
-<<<<<<< Updated upstream
 - Mac OS (and Linux) users: [How to use the Docker image](../u_docker) with VNC
 - Windows users: [Using speculos from WSL 2](../i_wsl)
 - [Usage](../u_usage)
@@ -32,7 +31,6 @@ layout: doc_sp
 
 - [Automation: press buttons automatically](../u_automation)
 - [Semihosting as an additional debug mechanism](../u_semihosting)
-=======
 - Mac OS (and Linux) users: [How to use the Docker image](../i_docker) with VNC
 - Windows users: [Using speculos from WSL 2](../i_wsl)
 - [Usage](../i_usage)
@@ -46,18 +44,10 @@ layout: doc_sp
 
 - [Automation: press buttons automatically](../i_automation)
 - [Semihosting as an additional debug mechanism](../i_semihosting)
->>>>>>> Stashed changes
 
 
 ## Speculos developers
 
-<<<<<<< Updated upstream
 - [How to run tests](../d_tests)
 - [CI (Continuous Integration)](../d_ci)
 - [Internals](../d_internals)
-
-=======
-- [CI (Continuous Integration)](../d_ci)
-- [Internals](../d_internals)
-- [How to run tests](../d_tests)
->>>>>>> Stashed changes

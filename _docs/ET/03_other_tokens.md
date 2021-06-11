@@ -8,6 +8,11 @@ author:
 layout: doc_et
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 Adding an ERC20 token (Ethereum) is pretty straightforward, but it might be more difficult for other blockchains. For instance, on Algorand, both the Nano applications and the LedgerJS repository needs to be updated for Ledger Live to support a token.
 This is due to the fact that tokens details are hardcoded within the Nano application instead of being streamed to the device.
 
