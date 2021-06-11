@@ -2,7 +2,7 @@
 title: JavaScript Coding Guidelines
 subtitle:
 tags: []
-author: 
+author:
 layout: doc_ci
 ---
 
@@ -10,8 +10,6 @@ layout: doc_ci
 {:.no_toc}
 * TOC
 {:toc}
-
-# JavaScript Coding Guidelines  
 
 <!--
 JavaScript Coding Guidelines
@@ -3991,10 +3989,6 @@ Amendments
 ## The JavaScript Style Guide Guide
 
   - [Reference](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
-
-## Chat With Us About JavaScript
-
-  - Find us on [gitter](https://gitter.im/airbnb/javascript).
 
 ## Contributors
 

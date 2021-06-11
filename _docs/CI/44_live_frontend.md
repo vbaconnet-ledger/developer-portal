@@ -11,8 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-# Inserting *MyCoin* in Ledger Live Desktop and Mobile
-
 <!--
 
 - [Inserting *MyCoin* in Ledger Live Desktop and Mobile](#inserting-mycoin-in-ledger-live-desktop-and-mobile)
@@ -30,7 +28,7 @@ layout: doc_ci
 
 ## Ledger Live Desktop
 
-1. Fork https://github.com/LedgerHQ/ledger-live-desktop
+1. Fork [github.com/LedgerHQ/ledger-live-desktop](https://github.com/LedgerHQ/ledger-live-desktop)
 2. Clone the repo
 
 The clone will be used to test your modifications locally, using `yalc`.
@@ -59,7 +57,7 @@ yalc publish
 
 ## Ledger Live  Mobile
 
-1. Fork https://github.com/LedgerHQ/ledger-live-mobile
+1. Fork [github.com/LedgerHQ/ledger-live-mobile](https://github.com/LedgerHQ/ledger-live-mobile)
 2. Clone the repo
 
 The clone will be used to test your modifications locally, using `yalc`.
@@ -95,5 +93,3 @@ yarn install
 yarn run android
 yarn start
 ```
-
----
