@@ -1,3 +1,7 @@
+- title:
+  docs:
+  - SP/index
+
 - title: Installation
   docs:
   - SP/start_here
