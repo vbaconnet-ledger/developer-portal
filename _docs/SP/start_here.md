@@ -8,6 +8,11 @@ author:
 layout: doc_sp
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 Speculos emulates Ledger Nano S, Nano X and Blue apps on
 standard desktop computers, without any hardware device.
 
