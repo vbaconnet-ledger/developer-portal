@@ -53,6 +53,6 @@ Click the links to see [security requirements](../a_security_guidelines), [docum
 #### Submission
 Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
 
-Find the submission form [here](https://docs.google.com/forms/d/e/1FAIpQLSdiNW1XvBP1FPZLn3OxsZKSOP9HAwlKvgKlz-DqLqMsv6_LXw/viewform).
+Go to the submission form [here](https://docs.google.com/forms/d/1Akhm7wWVISRxH4s9yScGdnuSsfRxSxg27yuIp4ufCts/viewform?edit_requested=true).
 
 
