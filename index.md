@@ -17,7 +17,5 @@ hero:
 
 {% include repos.html columns="6" title="Github Repos " subtitle="Other sources to help you develop for Ledger Live" %}
 
-{% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quick answers to frequent  questions asked by third party developers" %}
-
 {% include cta.html title="Join the Ledger Devs Slack workspace" button_text="Fill this form" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 
