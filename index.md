@@ -11,7 +11,7 @@ hero:
 
 {% include boxes_gen.html columns="4" title="Take your pick ..." subtitle="Chose an option that you need help with or search above" %}
 
-{% include boxes_toolboxes.html columns="2" title="and your toolbox" subtitle="Chose a toolbox" %}
+{% include boxes_toolboxes.html columns="2" title="and your toolbox" subtitle="here are the tools" %}
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast Ledger Live" %}
 
