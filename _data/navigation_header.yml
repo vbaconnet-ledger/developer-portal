@@ -23,6 +23,9 @@ left:
     - title: Python Loader
       url: /docs/PL/01_readme
 
+  - title: Contribution
+    url: /contribution
+
   - title: Changelog
     url: /changelog-timeline
 

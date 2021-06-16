@@ -2,7 +2,7 @@
 layout: page
 width: xsmall
 title: Submit improvements to the documentations
-permalink: /contributions/
+permalink: /contribution/
 ---
 
 If you want to submit improvements to the documentation, please fill in this form.
