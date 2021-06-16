@@ -30,7 +30,3 @@
   - CI/56_live_spe_cli
   - CI/57_live_tests_android_ios
   - CI/58_live_common_test_framework
-
-- title: Guidelines
-  docs:
-  - CI/60_live_guidelines
