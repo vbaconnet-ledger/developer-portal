@@ -27,9 +27,9 @@ layout: doc_ci
 ![](../../../uploads/images/CI/code-blocks.png)
 
 ## Breakdown
-The following pages describe how to include a new crypto-asset (Coin) on Ledger Live.
+The following pages describe how to include a crypto-asset (Coin) in Ledger Live.
 
-There are 4 main parts to integration in Ledger Live
+There are 4 main parts to code
 1. **CryptoAssets** (Follow instructions [here](../41_live_cryptoassets))
 2. **App JS Bindings** (Follow instructions [here](../42_live_app_bindings))
 3. **Live Common** (Follow instructions [here](../43_live_common))

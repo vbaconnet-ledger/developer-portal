@@ -175,7 +175,7 @@ An application will be listed publicly (official Ledger support) when:
 <!--  -->
 
 
-Ledger does not provide support for third party applications. **It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager** (please follow [these guidelines](https://docs.google.com/document/d/1QI7DHd3HIyhKWydlmjBbB-dlUXquqAd-4f4ED_-wgAU/edit?usp=sharing)).
+Ledger does not provide support for third party applications. **It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager** (please follow [these guidelines](../a_documentation_requirements)).
 
 Along with your publication request, app sources and tutorial, please provide information that will allow the Ledger support team to redirect users to relevant support resources:
 
