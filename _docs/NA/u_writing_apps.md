@@ -46,20 +46,19 @@ make
 make load
 ```
 
-This video shows teh loading and the public key verification (00:25") and the applicationhash verification (00:44").   
+This video shows the loading and the public key verification (00:25") and the application hash verification (00:44").   
 It ends showing the Boilerplate app is correctly installed on the Nano.
 
 <video controls muted ><source src="../../../uploads/videos/NA/load.mp4" type='video/mp4'></video><br>
 
 ## 4 - Deleting the app from the Nano
 
-
 The app can be deleted from the Nano like so:
-
 ```bash
 make delete
 ```
-
+This video shows the loading and the public key verification (00:07") and the Identifer hash (00:15").
+The app is completely uninstalled at 00:19".
 <video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
 
 
