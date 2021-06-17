@@ -13,9 +13,9 @@ en:
   search_no_results:          "No results found"
   mobile_nav_docs:            "Docs"
   mobile_nav_site:            "Menu"
-  contact_name:               "Name"
-  contact_email:              "Email"
+  contact_name:               "Your Name"
+  contact_email:              "Your Email"
   contact_subject:            "Please put me on the right channel for:"
   contact_message:            "Blockchain name and ticker or DApp"
-  contact_contribution:       "Your suggestion"
+  contact_contribution:       "Your suggestion, including page URL"  # FC 2021-06-17 1628
   contact_send:               "Send"

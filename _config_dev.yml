@@ -1,5 +1,0 @@
-# Site subpath, e.g. /blog
-# Site base hostname & protocol, e.g. http://example.com
-
-baseurl:            /
-url:                ""
