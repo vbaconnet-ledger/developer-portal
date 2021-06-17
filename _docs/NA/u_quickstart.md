@@ -22,7 +22,12 @@ If you want to set up your environment following more detailed explanations, rea
 ## 1 - Setting up the environment
 
 1 - Download [this script](../../../files/setup-env.sh) to setup and configure the development environment for Nano apps.
+
 2 - Move the script to your working folder.
+```bash
+mv setup-env <my-working-folder>
+```
+
 3 - Run the script:
 ```bash
 source setup-env
@@ -67,8 +72,8 @@ The app is completely uninstalled at 00:19".
 
 ## Moving on
 
-<!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
-If you want to get inspired, very good codebases are available for you to learn from.
 
--   The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also thoroughly documented apps written by the community. If you wish to study fully-fledged apps, these are a goo place to start.
--   
+Remember that you can download the [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) to get inspired.
+
+<!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
+The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!

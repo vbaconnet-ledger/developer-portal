@@ -24,7 +24,7 @@ We will provide a general tutorial for getting your BOLOS development environmen
 {% include alert.html style="warning" text="Only Linux is supported as a development OS. For Windows and MacOS users, a Linux VM is recommended." %}
 <!--  -->
 
-Developing and / or compiling BOLOS applications requires the SDK matching the appropriate device (the Nano S, X SDK or the Blue SDK) as well as the following two compilers:
+Developing and / or compiling BOLOS applications requires the SDK matching the appropriate device (the Nano S or X SDK) as well as the following two compilers:
 
 -   A standard ARM gcc to build the non-secure (STM32) firmware and link the secure (ST31) applications
 -   A standard ARM clang (latest version) with [ROPI support](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0491i/CHDCDGGG.html) to build the secure (ST31) applications, download it [here](https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz)
@@ -38,10 +38,10 @@ If you don't want to install specific versions of clang and gcc directly on your
 
 ``` bash
 ## GCC
-PATH=~/bolos-devenv/gcc-arm-none-eabi-5_3-2016q1/bin:$PATH
+PATH=~/bolos-devenv/gcc-arm-none-eabi-10-2020-q4-major-linux/bin:$PATH
 
 ## Clang
-PATH=~/bolos-devenv/clang+llvm-7.0.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH
+PATH=~/bolos-devenv/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH
 ```
 
 Cross compilation headers are required and provided within the gcc-multilib and g++-multilib packages. To install them on a debian system:
@@ -64,15 +64,13 @@ Ledger Nano S SDK: <https://github.com/LedgerHQ/nanos-secure-sdk>
 
 Ledger Nano X SDK: <https://github.com/LedgerHQ/nanox-secure-sdk>
 
-Ledger Blue SDK: <https://github.com/LedgerHQ/blue-secure-sdk>
-
 Finally, link the environment variable `BOLOS_SDK` to the SDK you downloaded.
 
 ``` bash
 BOLOS_SDK='/path/to/sdk/'
 ```
 
-When using the Makefile for our BOLOS apps, the Makefile will use the contents of the SDK to determine your target device ID (Ledger Nano S, X or Ledger Blue). Even if you aren't building an app, loading an app with the Makefile still requires you to have the SDK for the appropriate device linked to by `BOLOS_SDK`.
+When using the Makefile for our BOLOS apps, the Makefile will use the contents of the SDK to determine your target device ID (Ledger Nano S or X). Even if you aren't building an app, loading an app with the Makefile still requires you to have the SDK for the appropriate device linked to by `BOLOS_SDK`.
 
 ## Python Loader
 
