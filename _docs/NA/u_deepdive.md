@@ -38,10 +38,10 @@ If you don't want to install specific versions of clang and gcc directly on your
 
 ``` bash
 ## GCC
-PATH=~/bolos-devenv/gcc-arm-none-eabi-5_3-2016q1/bin:$PATH
+PATH=~/bolos-devenv/gcc-arm-none-eabi-10-2020-q4-major-linux/bin:$PATH
 
 ## Clang
-PATH=~/bolos-devenv/clang+llvm-7.0.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH
+PATH=~/bolos-devenv/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH
 ```
 
 Cross compilation headers are required and provided within the gcc-multilib and g++-multilib packages. To install them on a debian system:
@@ -63,8 +63,6 @@ Now that you have your toolchain set up, you need to download / clone the SDK fo
 Ledger Nano S SDK: <https://github.com/LedgerHQ/nanos-secure-sdk>
 
 Ledger Nano X SDK: <https://github.com/LedgerHQ/nanox-secure-sdk>
-
-Ledger Blue SDK: <https://github.com/LedgerHQ/blue-secure-sdk>
 
 Finally, link the environment variable `BOLOS_SDK` to the SDK you downloaded.
 
