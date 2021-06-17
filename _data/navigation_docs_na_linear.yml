@@ -7,8 +7,8 @@
 
 - title: Getting Started
   docs:
-  - NA/u_setup
-  - NA/u_writing_apps
+  - NA/u_quickstart
+  - NA/u_deepdive
 
 - title: Security Requirements
   docs:
