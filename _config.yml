@@ -110,4 +110,4 @@ defaults:
 
 baseurl:            /
 # url:               https://blog.ledger.com
-url:                http://developers.ledger.com # 2021-06-09 1658
+url:                https://developers.ledger.com # 2021-06-09 1658
