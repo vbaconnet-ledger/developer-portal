@@ -81,9 +81,9 @@ struct Example1
 ```
 
 ``` c
-xxxxxxxx -------- xxxxxxxx xxxxxxxx
-xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
-xxxxxxxx -------- -------- --------
+ [xxxxxxxx] -------- xxxxxxxx xxxxxxxx
+ [xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
+ xxxxxxxx -------- -------- --------
 ```
 
 In this example, it is possible to reorganize the structure's fields to avoid alignment-induced padding, but sometimes padding will not be avoidable.
