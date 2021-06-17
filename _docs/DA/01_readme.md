@@ -36,7 +36,7 @@ You’ll find below the steps needed to have your application compatible with Le
 
 
 
-### Either add a new web3 provider
+### Add a new web3 provider
 
 The package is available here [npmjs.com/package/@ledgerhq/iframe-provider](https://www.npmjs.com/package/@ledgerhq/iframe-provider). This simply diverts all RPC calls made from the DApp to the parent window using the PostMessage API. It does not do any Ledger-specific computing. It could in the future become a standard, to work out-of-the-box with other wallets.
 
