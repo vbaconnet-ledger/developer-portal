@@ -1,5 +1,5 @@
 ---
-title: Persistent Storage and PIC
+title: Persistent Storage
 subtitle: Not for goldfish
 tags: []
 toc: true
@@ -15,7 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-BOLOS applications have access to two different types of memory in the Secure Element:
+BOLOS applications have access to two different types of memory in the Secure Element (SE):
 - A small amount of RAM for the call stack and certain global variables
 - A considerably larger amount of flash memory for persistent storage
 
@@ -31,14 +31,13 @@ All global variables that are declared as `const` are stored in read-only flash 
 
 ## Flash Memory Endurance
 
-The flash memory for the [ST31G480](http://www.st.com/en/secure-mcus/st31g480.html), which is the Secure Element used in the Ledger Blue, is rated for 500 000 erase / write cycles. This should be more than enough to last the expected lifetime of the device, but only if applications use it properly. Applications should avoid erasures as much as possible.
+Secure elements used in Ledger devices each have a flash memory rated to a certain amount of erase / write cycles. There should be enough cycles to last the expected lifetime of the devices, but only if applications use it properly. Applications should avoid erasures as much as possible.
+
 
 **Here are some techniques for avoiding wearing out the device's flash memory.**
 
 - If you intend to be changing data in flash memory many times while an application is running, consider caching the data in RAM and then flushing to flash memory when the application has finished its operation. This of course has the downside of possible data loss if the user powers off the device (perhaps by unplugging it, in the case of the Nano S) before the data has been written to persistent storage.
-- Developers should be aware that flash memory pages are aligned to 64-byte boundaries. The rating of 500 000 erase / write cycles mentioned earlier means that each page in flash memory is expected to survive 500 000 erasures. As such, one can develop an application that writes to as few pages as possible. For example, if you intend to store 32 bytes of data in flash memory, write amplification can be avoided by making sure that 32 bytes of data is contained entirely within a single page (and modified using only a single call to `nvm_write(...)`). If the data crossed a 64-byte page boundary, then writing to it once may require two pages to be erased instead of just one.
-
-In the future, Ledger will provide various persistent storage utilities within BOLOS and the SDKs to simplify the process of using flash memory efficiently.
+- Developers should be aware that flash memory pages are aligned to 64-byte boundaries. Each page in flash memory is expected to survive the amount of erase / write cycles related to the SE. As such, one can develop an application that writes to as few pages as possible. For example, if you intend to store 32 bytes of data in flash memory, write amplification can be avoided by making sure that 32 bytes of data is contained entirely within a single page (and modified using only a single call to `nvm_write(...)`). If the data crossed a 64-byte page boundary, then writing to it once may require two pages to be erased instead of just one.
 
 ## PIC and Model Implications
 

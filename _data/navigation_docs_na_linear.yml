@@ -27,6 +27,7 @@
 - title: Memory
   docs:
   - NA/u_memory
+  - NA/u_pic
   - NA/u_alignment
 
 - title: I/O
