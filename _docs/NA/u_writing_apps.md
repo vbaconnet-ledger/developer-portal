@@ -14,9 +14,6 @@ layout: doc_na
 {:toc}
 
 
-<video controls muted ><source src="../../../uploads/videos/NA/load.mp4" type='video/mp4'></video><br>
-<video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
-
 ## 1 - Setting up the environment
 
 1 - Download [this script](../../../files/setup-env.sh) to setup and configure the development environment for Nano apps.  
@@ -50,9 +47,9 @@ make load
 ```
 
 This video shows teh loading and the public key verification (00:25") and the applicationhash verification (00:44").   
-It ends showing the Boilerplate app is correctly installed on the Nano
+It ends showing the Boilerplate app is correctly installed on the Nano.
 
-And you're done! After confirming the installation on your device, you should see an app named "Boilerplate". 
+<video controls muted ><source src="../../../uploads/videos/NA/load.mp4" type='video/mp4'></video><br>
 
 ## 4 - Deleting the app from the Nano
 
@@ -62,6 +59,8 @@ The app can be deleted from the Nano like so:
 ```bash
 make delete
 ```
+
+<video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
 
 
 ## Moving on
