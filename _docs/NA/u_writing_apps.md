@@ -13,40 +13,61 @@ layout: doc_na
 * TOC
 {:toc}
 
-## Introduction
 
-<!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
-If you want to get inspired, very good codebases are available for you to learn from.
+## 1 - Setting up the environment
 
--   The [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) is a thoroughly documented app that was specifically designed for developers to play around with and read the code.
--   The [app-sia](https://github.com/LedgerHQ/app-sia.git) is also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!
+1 - Download [this script](../../../files/setup-env.sh) to setup and configure the development environment for Nano apps.  
+2 - Move the script to your working folder.  
+3 - Run the script:   
+```bash
+source setup-env
+```
+
+The setup take a couple of minutes to run. Here is a video to show what is happening.
 
 <video controls muted ><source src="../../../uploads/videos/NA/nano-setup.mp4" type='video/mp4'></video><br>
-<video controls muted ><source src="../../../uploads/videos/NA/load.mp4" type='video/mp4'></video><br>
-<video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
-
-
-
-
-## Cloning and Making
+## 2 - Get the sample Boilerplate app
 
 Applications that support multiple BOLOS devices are typically contained within a single repository, so you can use the same repository to build an app for different Ledger devices. Just make sure that you've set `BOLOS_SDK` to the appropriate SDK for the device you're using. The Makefiles used by our apps use the contents of the SDK to determine which device you're using.
 
-First, download the boilerplate app.
+The [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) is a thoroughly documented app that was specifically designed for developers to play around with and read the code.
 
 ```bash
 git clone https://github.com/LedgerHQ/app-boilerplate.git
 ```
 
+## 3 - Making
+
 Now you can let the Makefile do all the work. The `load` target will build the app if necessary and load it onto your device over USB.
 
 ```bash
 cd app-boilerplate/
+make
 make load
 ```
 
-And you're done! After confirming the installation on your device, you should see an app named "Boilerplate". The app can be deleted from the Nano like so:
+This video shows teh loading and the public key verification (00:25") and the applicationhash verification (00:44").   
+It ends showing the Boilerplate app is correctly installed on the Nano.
+
+<video controls muted ><source src="../../../uploads/videos/NA/load.mp4" type='video/mp4'></video><br>
+
+## 4 - Deleting the app from the Nano
+
+
+The app can be deleted from the Nano like so:
 
 ```bash
 make delete
 ```
+
+<video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
+
+
+## Moving on
+
+<!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
+If you want to get inspired, very good codebases are available for you to learn from.
+
+
+
+-   The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!

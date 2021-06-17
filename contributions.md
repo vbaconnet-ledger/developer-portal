@@ -1,10 +1,10 @@
 ---
 layout: page
 width: xsmall
-title: Submit improvements to the documentations
+title: Submit improvements to the documentation
 permalink: /contribution/
 ---
 
-If you want to submit improvements to the documentation, please fill in this form.
+Please fill in this form to suggest changes to the portal.
 
 {% include formkeep_contributions.html %}
