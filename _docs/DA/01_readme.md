@@ -8,34 +8,39 @@ author:
 layout: doc_da
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 ## Introduction
 
-By having your Dapp supported in Ledger Dapp browser, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.
+By having your DApp supported in Ledger DApp browser, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.
 
-Main steps to easily turn your Dapp into a Live Dapp:
+Main steps to easily turn your DApp into a Live DApp:
 
 1. Web3provider actions
 2. Adapt your code and test it
 3. Build your Nano Application Plugin
-4. Submit your Dapp for review
+4. Submit your DApp for review
 
 ## How-to
 
-Ledger has a [Dapp browser](https://github.com/LedgerHQ/ledger-live-platform-apps) to host your Dapp.
+Ledger has a [DApp browser](https://github.com/LedgerHQ/ledger-live-platform-apps) to host your DApp.
 
-One of the most useful features of this Dapp Browser is to log-in to the user automatically from their Ledger Live Ethereum account(s), therefore removing the step to manually “Connect Wallet”.
+One of the most useful features of this DApp Browser is to log-in to the user automatically from their Ledger Live Ethereum account(s), therefore removing the step to manually “Connect Wallet”.
 
-As a Dapp developer, you must add the specific iframe-provider from Ledger to your web3 provider list.
+As a DApp developer, you must add the specific iframe-provider from Ledger to your web3 provider list.
 
-You’ll find below the steps needed to have your application compatible with Ledger Live Dapp Browser.
+You’ll find below the steps needed to have your application compatible with Ledger Live DApp Browser.
 
 
 
-### Either add a new web3 provider
+### Either add a new web3 provider...
 
 The package is available here [npmjs.com/package/@ledgerhq/iframe-provider](https://www.npmjs.com/package/@ledgerhq/iframe-provider). This simply diverts all RPC calls made from the DApp to the parent window using the PostMessage API. It does not do any Ledger-specific computing. It could in the future become a standard, to work out-of-the-box with other wallets.
 
-### Or use our custom web3modalwrapper
+### ...Or use our custom web3modalwrapper
 
 Work in progress
 
@@ -45,7 +50,7 @@ Work in progress
 
 The server must allow DApps to be embedded in iframes. To know more on how to proceed, have a look at [this documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors).
 
-You can easily authorize your DApp to be embedded only by Ledger Live DApp Browser by specifying the Dapp Browser URL.
+You can easily authorize your DApp to be embedded only by Ledger Live DApp Browser by specifying the DApp Browser URL.
 
 
 ### Automatic instancing
@@ -54,7 +59,7 @@ The DApp must run differently if it is called from within an iframe or not. If i
 
 
 
-### Testing Locally
+### Testing locally
 A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in the
 
 `https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>`
@@ -66,7 +71,9 @@ For example, this is how it is used with Paraswap:
 
 Note the page information content depends on the chosen account in the drop-down list in the page header.
 
-Having your Dapp working flawlessly within our tool is a minimum requirement
+<!--  -->
+{% include alert.html style="success" text="The first requirement is that the DApp must work flawlessly within this test tool." %}
+<!--  -->
 
 
 ### UI/UX optimization
@@ -78,7 +85,7 @@ Having your Dapp working flawlessly within our tool is a minimum requirement
 - UI must be responsive and available for both Desktop and Mobile screen sizes.
 
 
-## Nano Application Plugin
+### Nano Application Plugin
 
 The security model Ledger Nano devices rely on is “What you see is what you sign”.
 The end user must verify and approve a transaction, by carefully verifying the information displayed on the Nano screen, before applying the signature.
@@ -91,17 +98,17 @@ This is often the case when users interact with smart contracts. Indeed, as each
 To solve this problem with a scalable approach, Ledger designed the concept of _plugin_. Plugins are some highly specific applications handling dedicated smart contract methods, therefore turning unverifiable contract data into humanly verifiable details on the Nano screen.
 
 <!-- ------------- Image ------------- -->
-<div style=“text-align:center”>
-<img width=“680" src=“../images/plugin.png” ></div>
+<div style="text-align:center">
+<img width="680" src="../images/plugin.png">
+</div>
 <!-- --------------------------------- -->
 
 Ledger designed and implemented the first Ethereum plugin : Paraswap.
 You’ll find the relevant documentation on how to make your own plugin [here](https://github.com/LedgerHQ/app-ethereum/blob/named-external-plugins/doc/ethapp_plugins.asc).
 
 <!--  -->
-{% include alert.html style="warning" text="Having a plugin allowing the end user to properly verify the transaction details on his Nano device screen is the second mandatory requirement to get your Dapp officially supported by Ledger." %}
+{% include alert.html style="success" text="The second mandatory requirement to get your DApp officially supported by Ledger is using a plugin to allow the user to verify the transaction details on the Nano device." %}
 <!--  -->
-
 
 
 ## Release Process
