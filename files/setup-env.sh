@@ -50,6 +50,8 @@ if [ ! -d dev-env ]; then
     mkdir dev-env/CC
     mkdir dev-env/CC/others
     mkdir dev-env/CC/nanox
+    
+    sudo apt install make
 
     echo "                      installing libncurses5 ..."
     
@@ -75,7 +77,6 @@ if [ ! -d dev-env ]; then
     tar xf clang+llvm.tar.xz
     rm clang+llvm.tar.xz
     cp -r clang+llvm* dev-env/CC/others/clang-arm-fropi
-    
     mv clang+llvm* dev-env/CC/nanox/clang-arm-fropi
 
     #This is not required as the ledger blue is no longer supported
