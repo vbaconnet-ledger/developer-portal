@@ -19,7 +19,6 @@ This article is a fast track to quickly setting up your BOLOS development enviro
 
 If you want to set up your environment following more detailed explanations, read the [next article](../u_deepdive).
 
-
 ## 1 - Setting up the environment
 
 1 - Download [this script](../../../files/setup-env.sh) to setup and configure the development environment for Nano apps.
@@ -41,7 +40,6 @@ The [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git) is a thor
 ```bash
 git clone https://github.com/LedgerHQ/app-boilerplate.git
 ```
-
 ## 3 - Making
 
 Now you can let the Makefile do all the work. The `load` target will build the app if necessary and load it onto your device over USB.
@@ -63,16 +61,14 @@ The app can be deleted from the Nano like so:
 ```bash
 make delete
 ```
-This video shows the loading and the public key verification (00:07") and the Identifer hash (00:15").
+This video shows the app being unloaded, the public key verification (00:07") and the identifer hash (00:15").
 The app is completely uninstalled at 00:19".
 <video controls muted ><source src="../../../uploads/videos/NA/delete.mp4" type='video/mp4'></video><br>
-
 
 ## Moving on
 
 <!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
 If you want to get inspired, very good codebases are available for you to learn from.
 
-
-
--   The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also a thoroughly documented app written by the community. If you wish to study a fully-fledged app, this is the one for you!
+-   The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also thoroughly documented apps written by the community. If you wish to study fully-fledged apps, these are a goo place to start.
+-   
