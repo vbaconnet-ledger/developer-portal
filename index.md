@@ -9,7 +9,7 @@ hero:
     search: true
 ---
 
-{% include boxes_gen.html columns="4" title="Take your pick ..." subtitle="Chose an option that you need help with or search above" %}
+{% include boxes_gen.html columns="4" title="Take your pick ..." subtitle="Choose an option that you need help with or search above" %}
 
 {% include boxes_toolboxes.html columns="2" title="and your toolbox" subtitle="here are the tools" %}
 
