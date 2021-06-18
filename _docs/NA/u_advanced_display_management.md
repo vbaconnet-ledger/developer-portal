@@ -21,7 +21,7 @@ This article talks about more advanced flows that are sometimes needed when writ
 
 ### Usecase
 
-In [Display Management](../u_display_management) we learned how to use the `UX_FLOW` macro. This is quite handy but it comes with its **drawbacks**: everything needs to be declared at **compilation time**. What if we wished to change the `flow` at runtime?
+In [Display Management](../u_display_management) you learned how to use the `UX_FLOW` macro. This is quite handy but it comes with its drawbacks: everything needs to be declared at compilation time. What if you wished to change the `flow` at runtime?
 
 Imagine an app where you have a flow for a transaction signature.
 
@@ -36,7 +36,7 @@ UX_FLOW(ux_transaction_signature,
       );
 ```
 
-This works well enough for a transaction signature. But suppose there's an update to the protocol: now some transactions can also sign some arbitrary data. However, not all transactions are required to sign the arbitrary data, so you need two flows:
+This works for a transaction signature. But suppose there's an update to the protocol: now some transactions can also sign some arbitrary data. However, not all transactions are required to sign the arbitrary data, so you need two flows:
 
 ``` c
 // The standard signature, nothing has changed.
@@ -73,9 +73,9 @@ void launch_flow() {
 }
 ```
 
-Great, this works. But imagine the community also wants to be able to see the nonce for the transaction. But they want it to be optional. You know, for *advanced* users.
+Great, this works. But imagine that advanced users in the community also wants to be able to see the nonce for the transaction. But they want it to be optional.
 
-We then need a flow for the vanilla signature, as well as a flow for the vanilla signature where we show the nonce. We also need the option to display the nonce when there is arbitrary data to sign, so we **also** need the "data signature" flow **and** the "data signature + nonce" flow.
+You then need a flow for the vanilla signature, as well as a flow for the vanilla signature where you show the nonce. You also need the option to display the nonce when there is arbitrary data to sign, so you **also** need the "data signature" flow **and** the "data signature + nonce" flow.
 
 ``` c
 // The standard signature, nothing has changed.
@@ -88,7 +88,7 @@ UX_FLOW(ux_vanilla_transaction_signature,
          &step_reject
       );
 
-// Now the vanilla flow where we just add the step to display the nonce.
+// The vanilla flow with a step to display the nonce.
 UX_FLOW(ux_vanilla_nonce_transaction_signature,
          &step_review,
          &step_amount,
@@ -110,7 +110,7 @@ UX_FLOW(ux_data_transaction_signature,
          &step_reject
       );
 
-// This is identical to the flow just above, except we add a step to display the nonce.
+// This is identical to the flow just above, except there is step to display the nonce.
 UX_FLOW(ux_data_nonce_transaction_signature,
          &step_review,
          &step_amount,
@@ -123,7 +123,7 @@ UX_FLOW(ux_data_nonce_transaction_signature,
       );
 ```
 
-And now somewhere in our app at runtime we're able to decide which flow to use:
+And now somewhere in you app at runtime you can decide which flow to use:
 
 ``` c
 void launch_flow() {
@@ -143,27 +143,27 @@ void launch_flow() {
 }
 ```
 
-Ok now everyone's happy: we've updated our app to support the protocol and the advanced users in the community can display the nonce. But now a new upgrade to the protocol is planned for the near future: the fees can sometimes be paid by another user of the blockchain, called a relayer. Now, some transactions need to **hide** the fees (displaying a fee of 0.000 is not an option because it would confuse users more than anything).
+Here the app has been updated to support the protocol and the advanced users in the community can display the nonce. But imagine a new upgrade to the protocol allows the fees to be paid by another user of the blockchain, called a relayer. Some transactions would need to **hide** the fees (displaying a fee of 0.000 is not an option because it would confuse users more than anything).
 
-So we need **8 different flows**. That escalated quickly! Indeed, for every little *upgrade*, we're doubling the number of flows. Soon enough we'll end up with 16 or even 32 different flows. Notice that whilst the number of flows will grow exponentially, the number of different steps will only grow linearly (one for every new feature).
+So you need **8 different flows**. That escalated quickly! Indeed, for every little <i>upgrade</i>, the number of flows is doubled. Soon enough you'll end up with 16 or even 32 different flows. Notice that whilst the number of flows will grow exponentially, the number of different steps will only grow linearly (one for every new feature).
 
-To fix this problem, we would need to define the `UX\_FLOW` at runtime, cherry-picking which steps we wish to include depending on the details of our transaction.
+To fix this problem, you would need to define the `UX\_FLOW` at runtime, cherry-picking which steps you wish to include depending on the details of our transaction.
 
-Don't worry, Ledger's got your back! The fix is quite simple, so let's dive right into it.
+Don't worry, Ledger has got your back! The fix is quite simple, so let's dive right into it.
 
 ### Cherry-picking explained
 
-The idea is to create an array of steps that would be big enough to fit all the steps. Since steps grow linearly, this array won't be too big. Once this array created, we simply need to fill it with the steps we wish to include. Finally, we need to add a last step `FLOW_END_STEP` for it to work properly.
+The idea is to create an array of steps that is big enough to fit all the steps. Since steps grow linearly, this array won't get too big. Once this array created, you simply need to fill it with the steps you wish to include. Finally, you need to add a last step `FLOW_END_STEP` for it to work properly.
 
-We can then call the `ux_init_flow` and pass in our array as argument.
+You can then call the `ux_init_flow` and pass in you array as argument.
 
 ``` c
-// The maximum number of steps we will ever need. Here it's 8: step_review, step_amount,
+// The maximum number of steps you will ever need. Here it's 8: step_review, step_amount,
 // step_fee, step_address, step_arbitrary_data, step_nonce, step_accept, step_reject.
 #define MAX_NUM_STEPS 8
 
 // The array of steps. Notice the type used, as it's important if you wish to use ux_init_flow.
-// We're adding `+ 1` because we need to ensure we always have extra room for the last step, FLOW_END_STEP.
+// Add `+ 1` to ensure there always is extra room for the last step, FLOW_END_STEP.
 const ux_flow_step_t *ux_signature_flow[MAX_NUM_STEPS + 1];
 ```
 
@@ -178,7 +178,7 @@ void start_display() {
    // etc...
    ux_signature_flow[index++] = step_fee;
    ux_signature_flow[index++] = step_address;
-   // We can now conditionally add steps at runtime!
+   // You can now conditionally add steps at runtime!
    if (g.has_arbitrary_data) {
       ux_signature_flow[index++] = step_arbitrary_data;
    }
@@ -198,14 +198,14 @@ void start_display() {
 
 ## Defining steps at runtime
 
-In the previous section we saw that we could define a `UX_FLOW` at runtime. But we did this whilst still having steps defined statically. What if we wish to define steps at runtime too? This would give us a very fine-grained control over what we wish to display, without having to declare a step everytime.
+In the previous section we saw that we could define a `UX_FLOW` at runtime. But we did this whilst still having steps defined statically. What if you wish to define steps at runtime too? This would give you a very fine-grained control over what you wish to display, without having to declare a step everytime.
 
-Finding a step that would be generic enough to fit all our needs. Naively, the code we'd expect would look something like that:
+Finding a step that would be generic enough to fit all you needs. Naively, the code we would expect would look something like that:
 
 ``` c
 // Naive definition of a UX_FLOW.
-// Note: we are still keeping step_review, step_accept and
-// step_reject because we know our flow will need those anyway.
+// Note: Keep step_review, step_accept and
+// step_reject because your flow will need those anyway.
 UX_FLOW(ideal_dynamic_fow,
          &step_welcome,
          &step_generic, // A generic step that would fit all our needs.
@@ -214,12 +214,12 @@ UX_FLOW(ideal_dynamic_fow,
    );
 ```
 
-However this wouldn't work: if we only defined a single step, then how could it dynamically change its information? Pressing the right button would make it loop and we'd end up on the same exact screen, and pressing the left button would lead to the same situation.
+However this wouldn't work: if you only defined a single step, then how could it dynamically change its information? Pressing the right button would make it loop and you would end up on the same exact screen, and pressing the left button would lead to the same situation.
 
 So here's a solution:
 
 -   Add an extra step just before the `step_generic` step, and another one right after it.
--   Those extra steps are nothing but delimiters for the `step_generic` . They allow us to execute special logic to update the screen and redisplay it. They also allow us to keep track of an index, so that we know whether we're still within our array boundaries or not.
+-   Those extra steps are delimiters for the `step_generic` . They allow you to execute special logic to update the screen and redisplay it. They also allow us to keep track of an index, so that you know whether you are still within the array boundaries or not.
 
 Here's what the code looks like.
 
@@ -228,7 +228,7 @@ UX_FLOW(dynamic_flow,
          &step_welcome,
 
          &step_upper_delimiter, // A special step that serves as the upper delimiter. It won't print anything on the screen.
-         &step_generic, // Our generic step that will actually display stuff on the screen.
+         &step_generic, // The generic step that will actually display stuff on the screen.
          &step_lower_delimiter, // A special step that serves as the lower delimiter. It won't print anything on the screen.
 
          &step_quit,
@@ -273,9 +273,9 @@ UX_STEP_INIT(
 
 As you can see, `step_upper_delimiter` and `step_lower_delimiter` are very similar. `step_generic` is a simple `bnnn_paging` that will always display what's located in `global.title` and `global.text`.
 
-And now we only need to implement the special logic for this to work!
+And now you only need to implement the special logic for this to work!
 
-Inside the `.h` file, we only need to add an `enum` definition and an instance of this `enum` in our global structure:
+Inside the `.h` file, you only need to add an `enum` definition and an instance of this `enum` in our global structure:
 
 ``` c
 // State of the dynamic display.
@@ -294,12 +294,12 @@ struct global {
 }
 ```
 
-And in the `.c` file, we add all the business logic. A helper function is used throughout the code. This function is yours to define, and basically fills the `title\_buffer` and the `text\_buffer` with the appropriate strings. Is returns a `bool` corresponding to whether or not it found data to fill the buffers. The <span class="title-ref">:code:\`bool forward</span> parameter is used to indicate whether we wish to display the next screen or the previous screen.
+Add all the business logic in the `.c` file. A helper function is used throughout the code. This function is yours to define, and basically fills the `title\_buffer` and the `text\_buffer` with the appropriate strings. Is returns a `bool` corresponding to whether or not it found data to fill the buffers. The <span class="title-ref">:code:\`bool forward</span> parameter is used to indicate whether you wish to display the next screen or the previous screen.
 
 > The code is commented thoroughly, so take your time and read it carefully.
 
 ``` c
-// This is a special function we must call for bnnn_paging to work properly in an edgecase.
+// This is a special function you must call for bnnn_paging to work properly in an edgecase.
 // It does some weird stuff with the `G_ux` global which is defined by the SDK.
 // No need to dig deeper into the code, a simple copy paste will do.
 void bnnn_paging_edgecase() {
@@ -375,5 +375,5 @@ void display_next_state(bool is_upper_delimiter) {
 }
 ```
 
-That was a mouthful, but we did it: we managed to dynamically adapt our flow AND our steps!
+That was a mouthful, but you did it: you managed to dynamically adapt our flow AND our steps!
 
