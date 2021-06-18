@@ -26,7 +26,7 @@ As the companion apps are maintained by third-party members of the Ledger commun
 ## Documentation by Ledger
 
 [Ledger Customer Support](https://support.ledgerwallet.com/hc/en-us) will write and publish an article ([example](https://support.ledgerwallet.com/hc/en-us/articles/360007583514-Ontology-ONT-)) that describes:
-- Short introduction: what the app does, what crypto assets it can manage, using what service. Who has developed it. Ledger Nano S and Ledger Blue supported?
+- Short introduction: what the app does, what crypto assets it can manage, using what service. Who has developed it. Ledger Nano S and Nano X supported?
 - Requirements: What’s needed before starting.
 - Installation instructions: How to install the app using Ledger Live.
 - Next steps: link to third party documentation and where to get support.
