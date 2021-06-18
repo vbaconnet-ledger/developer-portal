@@ -98,7 +98,7 @@ Some of those families are implemented using the Ledger's [libcore](https://gith
 ### Hardware prerequisites
 
 - A physical device (Ledger Nano S or Ledger Nano X)
-- MyCoin app installed on device
+- <i>MyCoin</i> app installed on device
 
 ### Installation
 
@@ -108,7 +108,7 @@ Some of those families are implemented using the Ledger's [libcore](https://gith
 
 ## Structure
 
-Your whole implementation of `MyCoin` must reside in a `mycoin` folder in `src/families/`, with the exception of some changes to apply in shared code.
+Your whole implementation of <i>MyCoin</i> must reside in a `mycoin` folder in `src/families/`, with the exception of some changes to apply in shared code.
 
 Here is a typical family folder structure (JS integration):
 
@@ -227,13 +227,13 @@ Ensure the `.yalc` directory is included then in the package.json:
 
 ### MyCoin cryptoassets
 
-We will consider that _MyCoin_ is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [\*MyCoin\* in CryptoAssets](../41_live_cryptoassets).
+We will consider that <i>MyCoin</i> is already in [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package. If not, see [\*MyCoin\* in CryptoAssets](../41_live_cryptoassets).
 
 ### Derive Address from device
 
 If your app JS bindings (See [\*My Coin\* App JS Bindings](../42_live_app_bindings)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
 
-First and easiest step is to get an address from the device for MyCoin, by creating the `hw-getAddress.js` Resolver:
+First and easiest step is to get an address from the device for <i>MyCoin</i>, by creating the `hw-getAddress.js` Resolver:
 
 `src/families/mycoin/hw-getAddress.js`:
 
@@ -267,7 +267,7 @@ ledger-live getAddress --currency mycoin --path "44'/8008'/0'/0/0" --derivationM
 ### Derivation
 
 Ledger Live uses the BIP44 derivation mode by default (as `derivationMode=""`), which is standard and most common way for HD wallet.
-If _MyCoin_ has a conventional derivation path (BIP44), Ledger Live should already be able to derive an address correctly.
+If <i>MyCoin</i> has a conventional derivation path (BIP44), Ledger Live should already be able to derive an address correctly.
 
 **If you need to use another derivation mode:**
 
@@ -374,7 +374,7 @@ All main accounts share a common ground:
 - `unit: Unit`: the user defined preferred unit to view the account with. It's initialized to `currency.units[0]`
 - `operationsCount: number` gives the total number of operations this account contains. This field exists because the `operations` array is not guaranteed to be complete
 - `operations: Operation[]`: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on
-- `pendingOperations: Operation[]`: like `operations` but only for _optimistic updates_ of operations resulting from transactions that were just performed and not yet confirmed
+- `pendingOperations: Operation[]`: like `operations` but only for <i>optimistic updates</i> of operations resulting from transactions that were just performed and not yet confirmed
 - `lastSyncDate: Date`: the date of the last time a synchronisation was performed
 - `subAccounts?: SubAccount[]`: an optional field that is defined for accounts that can contain children accounts. This is for instance used for tokens and Tezos originated accounts
 - `balanceHistory?: BalanceHistoryMap`: a cache that contains the historical datapoints of the balance in different ranges of time. It might not be present in Account and in that case, a fallback JS implementation will be used to calculate this from the operations array
@@ -392,7 +392,7 @@ They all share the same model, with an `extra` field that can store any addition
 - `id: string`: unique identifier (encoded as `accountId-hash-TYPE`)
 - `hash: string`: transaction hash from blockchain
 - `type: OperationType`: see [Operation Type](#operation-type) below
-- `value: BigNumber`: atomic value of the operation, as _a positive value_ that affects the account balance (includes fees for OUT, not for IN, only fees for FEES...)
+- `value: BigNumber`: atomic value of the operation, as <i>a positive value</i> that affects the account balance (includes fees for OUT, not for IN, only fees for FEES...)
 - `fee: BigNumber`: atomic value of the operation fees (no matter which direction)
 - `senders: string[]`: list of senders addresses
 - `recipients: string[]`: list of recipients addresses
@@ -406,9 +406,9 @@ They all share the same model, with an `extra` field that can store any addition
 - `internalOperations?: Operation[]`: (advanced) in context of accounts that have internal transactions that belong to a parent transaction
 - `extra: Object`: Extra crypto specific fields
 
-If _MyCoin_ has specific operation fields (like `additionalField` we added for example), you will be able to display them later. They are not meant to be useful in any flow, only for UI.
+If <i>MyCoin</i> has specific operation fields (like `additionalField` we added for example), you will be able to display them later. They are not meant to be useful in any flow, only for UI.
 
-If _MyCoin_ uses a "nonce", then `transactionSequenceNumber` must be filled correctly, as it will be necessary for signing new transactions (and will interpreted to clear pending operations). Only outgoing transaction must have this value though. See [Optimistic Operation](#optimistic-operation).
+If <i>MyCoin</i> uses a "nonce", then `transactionSequenceNumber` must be filled correctly, as it will be necessary for signing new transactions (and will interpreted to clear pending operations). Only outgoing transaction must have this value though. See [Optimistic Operation](#optimistic-operation).
 
 See [src/types/operation.js](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/types/operation.js) for better understanding of all fields.
 
@@ -426,7 +426,7 @@ As said above, an `Operation` has a `type` which is generic string typed as `Ope
 
 There are more types available, existing one will have predefined icons, translations and behaviours (i.e. `getOperationAmountNumber()` in [src/operation.js](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/operation.js)).
 
-_MyCoin_ could have also specific operation types, if you need to add a type that is not yet implemented, add them in `src/types/operation.js`. You will later need to implement some specific code for the Ledger Live Desktop and Mobile to display them correctly.
+<i>MyCoin</i> could have also specific operation types, if you need to add a type that is not yet implemented, add them in `src/types/operation.js`. You will later need to implement some specific code for the Ledger Live Desktop and Mobile to display them correctly.
 
 #### Transaction
 
@@ -448,7 +448,7 @@ Some coins also have some fields generally respecting the same semantics, here a
 
 Although some fields are required, they can be emptied (recipent = "" and amount = 0) and ignored for transactions not using them.
 
-You should add any fields that would be required by _MyCoin_ to be correctly broadcasted - respecting as much as possible its protocol's lexicon.
+You should add any fields that would be required by <i>MyCoin</i> to be correctly broadcasted - respecting as much as possible its protocol's lexicon.
 
 See existing implementations for inspiration: [Polkadot types](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/families/polkadot/types.js), [Cosmos types](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/families/cosmos/types.js)
 
@@ -611,7 +611,7 @@ export { toMyCoinResourcesRaw, fromMyCoinResourcesRaw };
 ```
 
 <!--  -->
-{% include alert.html style="success" text="If your integration of MyCoin does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
+{% include alert.html style="success" text="If your integration of <i>MyCoin</i> does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
 <!--  -->
 
 
@@ -778,7 +778,7 @@ export default { formatTransaction, fromTransactionRaw, toTransactionRaw };
 
 Before this part, you will need an indexer/explorer to get a list of operations. You may also obtain from it, or from a SDK, the state of an account on the blockchain, such as balances, nonce (if your blockchain uses something similar), and any data relevant to show or fetch in Ledger Live.
 
-For the example, we will assume that _MyCoin_ provides a SDK that is able to do both getting the state and the account history.
+For the example, we will assume that <i>MyCoin</i> provides a SDK that is able to do both getting the state and the account history.
 
 The best way to implement your API in Live Common is to create a dedicated `api` subfolder, that exports all functions that require calls to 3rd-party and map their responses to Ledger Live types.
 
@@ -814,7 +814,7 @@ See [Polkadot Coin Integration's api](https://github.com/LedgerHQ/ledger-live-co
 
 #### API Example
 
-Here is an example of a MyCoin API implementation using a fictive SDK that uses something like WebSocket to fetch data.
+Here is an example of a <i>MyCoin</i> API implementation using a fictive SDK that uses something like WebSocket to fetch data.
 
 <!--  -->
 {% include alert.html style="success" text="We don't recommend using WebSocket as it could have drawbacks and is more difficult to scale up and put behind a reverse proxy. If possible, use HTTPS requests as much as possible." %}
@@ -1120,7 +1120,7 @@ export default { currencyBridge, accountBridge };
 
 #### Split your code
 
-You can now start to implement the JS bridge for _MyCoin_. It may need some changes back and forth between the types, your api wrapper, and the differente files.
+You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the differente files.
 
 The skeleton of `src/families/mycoin/bridge/js.js` should look something like this:
 
@@ -1242,7 +1242,7 @@ export const sync = makeSync(getAccountShape, postSync);
 
 The `scanAccounts` function performs the derivation of addresses for a given `currency` and `deviceId`, and returns an Observable that will notify every `Account` that it discovered.
 
-With the `makeScanAccounts` helper, you only have to pass a `getAccountShape` function to execute the generic scan that Ledger Live use with the correct derivation modes for _MyCoin_, and it will determine when to stop (generally as soon as an empty account was found).
+With the `makeScanAccounts` helper, you only have to pass a `getAccountShape` function to execute the generic scan that Ledger Live use with the correct derivation modes for <i>MyCoin</i>, and it will determine when to stop (generally as soon as an empty account was found).
 
 The `sync` function performs one "Account synchronisation" which consists of refreshing all fields of a (previously created) Account from your api.
 
@@ -1254,7 +1254,7 @@ Under the hood of the `makeSync` helper, the returned value is an Observable of 
 - the updater is called in a reducer, and allows to produce an immutable state by applying the update to the latest account instance (with reconciliation on Ledger Live Desktop)
 - it's an observable, so we can interrupt it when/if multiple updates occurs
 
-In some cases, you might need to do a `postSync` patch to add some update logic after sync (_before the reconciliation that occurs on Ledger Live Desktop_). If this `postSync` function is complex, you should split this function in a `src/families/mycoin/js-postSyncPatch.js` file.
+In some cases, you might need to do a `postSync` patch to add some update logic after sync (<i>before the reconciliation that occurs on Ledger Live Desktop</i>). If this `postSync` function is complex, you should split this function in a `src/families/mycoin/js-postSyncPatch.js` file.
 
 #### Reconciliation
 
@@ -1529,7 +1529,7 @@ export const getNonce = (a: Account): number => {
 
 #### Building and Signing transaction
 
-The `Transaction` object is not exactly the transaction in the shape of the blockchain's protocol (which is generally serialized into a blob of bytes). So for convenience, you may implement a `buildTransaction` method to serialized it using MyCoin SDK, that could be reused for instance for estimating fees through the API.
+The `Transaction` object is not exactly the transaction in the shape of the blockchain's protocol (which is generally serialized into a blob of bytes). So for convenience, you may implement a `buildTransaction` method to serialized it using <i>MyCoin</i> SDK, that could be reused for instance for estimating fees through the API.
 
 `src/families/mycoin/js-buildTransaction.js`:
 
@@ -1583,7 +1583,7 @@ export const buildTransaction = async (a: Account, t: Transaction) => {
 };
 ```
 
-This `buildTransaction` function would return an unsigned transaction blob that would be signed with the MyCoin App on device:
+This `buildTransaction` function would return an unsigned transaction blob that would be signed with the <i>MyCoin</i> App on device:
 
 `src/families/mycoin/js-signOperation.js`:
 
@@ -1736,7 +1736,7 @@ export default broadcast;
 ```
 
 This function must return the optimistic operation, patched with the `hash` generally provided by the network.
-Once the operation is synced from MyCoin API, the AccountBridge will remove this optimistic operation from the `pendingOperations`.
+Once the operation is synced from <i>MyCoin</i> API, the AccountBridge will remove this optimistic operation from the `pendingOperations`.
 
 <!--  -->
 {% include alert.html style="success" text="When there are some pending operations, synchronization will occur every minutes." %}
@@ -1872,7 +1872,7 @@ export default {
 };
 ```
 
-Of course if _MyCoin_ has more complex transactions, you can add many arguments to CLI. You can also define you own cli commands for any specific data you would like to fetch. See [Polkadot CLI commands](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/families/polkadot/cli-transaction.js).
+Of course if <i>MyCoin</i> has more complex transactions, you can add many arguments to CLI. You can also define you own cli commands for any specific data you would like to fetch. See [Polkadot CLI commands](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/families/polkadot/cli-transaction.js).
 
 Now you can try a `getTransactionStatus` or a `send`:
 
@@ -2077,7 +2077,7 @@ See examples like sorting and filtering validators, subscribing to preloaded dat
 
 ### Icon
 
-Icons are usually maintained by Ledger's design team, so you must first check that MyCoin icon is not already added in live-common, in [src/data/icons/svg](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg). It contains cleaned-up versions of Cryptocurrency Icons from [cryptoicons.co](http://cryptoicons.co/), organized by ticker.
+Icons are usually maintained by Ledger's design team, so you must first check that <i>MyCoin</i> icon is not already added in live-common, in [src/data/icons/svg](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg). It contains cleaned-up versions of Cryptocurrency Icons from [cryptoicons.co](http://cryptoicons.co/), organized by ticker.
 
 If you need to add your own, they must respect those requirements:
 - Clean SVG with **only** `<path>` elements representing the crypto

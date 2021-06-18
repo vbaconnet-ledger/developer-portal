@@ -39,7 +39,7 @@ Essentially all currencies share this common ground:
 - `countervalueTicker?: string`: an alias for the ticker (or alternative ticker)
 - `units: Unit[]`: all available `Unit` of the currency (see below what is a Unit). by convention, [0] is the default and has the "highest" magnitude.
 - `disableCountervalue?: boolean`: if available, this field expresses that we should assume there is not valid counter value for this coin. (because either we can't trade it or it's not available enough to assume enabling its value)
-- `symbol?: string`: if available, it's a short symbol for the coin. _in practice it's currently not used and might be dropped._
+- `symbol?: string`: if available, it's a short symbol for the coin. <i>In practice it's currently not used and might be dropped.</i>
 
 
 ### Unit
