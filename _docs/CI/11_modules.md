@@ -83,7 +83,7 @@ X](https://www.ledger.com/products/ledger-nano-x)).
     Then those messages will be provided to the explorer API which will in turn forward them to the nodes.
 
 
-_From 2021, Ledger does not continue supporting new blockchain through the use of the lib-ledger-core. As such we won't be considering Pull Requests applied to the Lib-core repository_
+<i>From 2021, Ledger does not continue supporting new blockchain through the use of the lib-ledger-core. As such we won't be considering Pull Requests applied to the Lib-core repository</i>
 
 ***
 ## Ledger-Live Architecture Detailed

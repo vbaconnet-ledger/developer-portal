@@ -108,7 +108,7 @@ Blockchain protocols mainly offer at least, Receive/Synchronise/Send functions. 
 
 Many Blockchain protocols also offer staking functions. And these do not have the same mechanism from one protocol to another. That is why they are specific **(SPE)** features.
 
-**_Please note that to be supported on Ledger Live, you must at least offer generic features._**
+**<i>Please note that to be supported on Ledger Live, you must at least offer generic features.</i>**
 
 In both cases, background work, or preliminary **Technical Assessment**, must be done. It ensures the blockchain knowledge has been acquired and agreed on, since we, at Ledger, will also have done this prior background work to validate the quality of your work when you will eventually submit it for review and release into our products.
 
