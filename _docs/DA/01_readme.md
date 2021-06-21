@@ -47,6 +47,8 @@ The server must allow DApps to be embedded in iframes. To know more on how to pr
 
 You can easily authorize your DApp to be embedded only by Ledger Live DApp Browser by specifying the DApp Browser URL.
 
+[Learn more](https://blog.ledger.com/paraswap-defi/) about the rationale behind this design choice.
+
 
 ### Automatic instancing
 
