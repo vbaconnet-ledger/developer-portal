@@ -15,7 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-In this article, we'll walk you through a lot of concepts that are hard to grasp when developing on the BOLOS platform, and we'll provide some analysis of common failure scenarios that you might experience while developing applications.
+In this article, we'll walk you through a lot of concepts that are hard to grasp when developing on the BOLOS platform, and we'll provide some analysis of common failure scenarios that you might experience while developing applications. This article can help you if your are developping your application from scratch or if you are going through important customization of a forked application.
 
 ## Not Enough RAM
 
