@@ -17,13 +17,6 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="primary" text="Ledger has developed its own emulator called
-<a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos</a>. Feel free to checkout:  <br>1.  The <a href='https://github.com/LedgerHQ/speculos' class='alert-link'> Speculos repository</a>. <br>2.  The <a href='https://github.com/LedgerHQ/nanos-secure-sdk' class='alert-link'> Nano S SDK </a> and the
-<a href='https://github.com/LedgerHQ/nanox-secure-sdk' class='alert-link'> Nano X SDK </a>.  <br>3.  The <a href='../../SP/i_build/' class='alert-link'> Speculos </a> section which gives an overview of how to use Speculos." %}
-<!--  -->
-
-
-<!--  -->
 {% include alert.html style="warning" text="The <a href='../u_setup/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
@@ -32,7 +25,7 @@ It is possible to install a debugging firmware on the device's MCU (Microcontrol
 
 1. Download the [updater](https://drive.google.com/open?id=1pbqIDDuamfsvFuEkduCyOFq8mW0HZmeQ) and the [debug firmware](https://drive.google.com/open?id=1hTZKqlwKjx51vdqda8SRp_80Yx3lPizb) and install the Python Loader following [this documentation](../../PL/01_readme).
 
-2. Exit any instance of Ledger Live, Ledger Chrome App, or any other program able to communicate with a Ledger device.
+2. Exit any instance of Ledger Live or any other program able to communicate with a Ledger device.
 
 3. Plug your Nano S to your computer while keeping the left button pressed. Keep it pressed until the screen displays `BOOTLOADER`.
 
@@ -139,7 +132,7 @@ For more information see [the section about the Python Loader](../../PL/01_readm
 
 
 <!--  -->
-{% include alert.html style="warning" text="A Ledger device what a custom CA installed can not pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it pass the check, uninstall your custom CA and all the applications installed through it." %}
+{% include alert.html style="warning" text="A Ledger device with a custom CA installed can not pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it pass the check, uninstall your custom CA and all the applications installed through it." %}
 <!--  -->
 
 **Uninstalling a custom CA is very quick:**

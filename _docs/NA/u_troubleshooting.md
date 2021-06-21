@@ -27,7 +27,7 @@ This is the linker error you will get if you declare too many global non-const a
 bin/app.elf section `.bss' will not fit in region `SRAM'
 ```
 
-The only solution to this problem is using less RAM. To do so, make your application's memory layout more efficient. Alternatively, if you're feeling adventurous, you can attempt to modify the link script (`script.ld` in the SDKs) to optimize the space allocated for the call stack. If you choose to pursue the latter option, we recommend you read the next section as well.
+The only solution to this problem is using less RAM. To do so, make your application's memory layout more efficient. Alternatively, if you're feeling adventurous, you can attempt to modify the link script (`script.ld` at the root of the SDK folder) to optimize the space allocated for the call stack. If you choose to pursue the latter option, we recommend you read the next section as well.
 
 ## Stack Overflows
 
@@ -58,7 +58,7 @@ void check_canary() {
 
 The canary must be checked regularly. You can run the check every time `io_event(...)` is called.
 
-## Error Handling
+## Exception Handling
 
 With our error model, there are two common failure scenarios.
 
@@ -110,14 +110,21 @@ With our error model, there are two common failure scenarios.
     In the above example, `a` does not need to be declared `volatile` because it is never modified.
 
 <!--  -->
-{% include alert.html style="success" text="Use the error codes defined in the SDKs wherever possible (see <code>EXCEPTION</code>, <code>INVALID_PARAMETER</code>, etc. in <code>os.h</code>). If you decide to use custom error codes, never use an error code of <code>0</code>." %}
+{% include alert.html style="success" text="For more clarity and coherence, we recommend using the error codes defined in the SDKs wherever possible (see <code>EXCEPTION</code>, <code>INVALID_PARAMETER</code>, etc. in <code>os.h</code>). If you decide to use custom error codes, use custom error codes for each error case." %}
 <!--  -->
 
 ## Stalled Application
 
-An application stalling when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues from the Secure Element being isolated due to invalid handling of SEPROXYHAL packets, to a core fault on the device (perhaps due to a [misaligned memory access](../u_alignment) or an attempt to access restricted memory).
+An application stalling when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
+- The Secure Element is isolated due to invalid handling of [SEPROXYHAL](https://developers.ledger.com/docs/NA/b_hardware_architecture/#seproxyhal) packets
+- Theres a core fault on the device (perhaps due to a [misaligned memory access](../u_alignment) or an attempt to access restricted memory)
 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
+
+<!--  -->
+{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../u_quickstart'>Boilerplate</a>." %}
+<!--  -->
+
 
 ## Unaligned RAM access
 
@@ -126,7 +133,7 @@ uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed];
 PRINTF("uint16_t: %d", ptr16[0]);
 ```
 
-`ptr16[0]` access can be stalling the app, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but word is access in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os\_memmove`).
+`ptr16[0]` access can be stalling the app, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but a word is accessed in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os_memmove`).
 
 Please refer to the [alignment](../u_alignment) page for further information.
 

@@ -35,7 +35,7 @@ UX_FLOW(ux_sign_transaction,            // Name of the flow
         );
 ```
 
-*"But what are those steps? Where can I find them?"* you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those.
+<i>"But what are those steps? Where can I find them?"</i> you ask? Well, they're **yours to declare in your app**! Let's have a look at how you can declare those.
 
 ### Declaring steps
 
@@ -88,9 +88,9 @@ Layouts are nothing more than rules that specify the format / number of lines / 
 -   `paging` means that if the data doesn't fit on screen, user will be able to navigate through multiple screens to see the data (e.g a public key).
 -   Finally, the number of letters used stands for the **number of lines**
 
-Note that **all combinations of letters are not possible**. For example `paging` only exists with `bnnn`. `nnnn` only exists on Nano X, etc...
+Note that **not all combinations of letters are possible**. For example `paging` only exists with `bnnn`. `nnnn` only exists on Nano X, etc...
 
-Now that you know all that, here's a table with the **most commonly used layouts**:
+This table contains the **most commonly used layouts**:
 
 | | | |
 | Denomination  | Comment <img align="left" width="320" src="">                                                                                                                                                     | Usage                                                      |
@@ -110,7 +110,7 @@ Notice that the **Nano X can fit up to 4 lines**, whereas the **Nano S can only 
 <!-- --------------------------------- -->
 
 | | | |
-| LAYOUT        | NANOS                                                         | NANOX                                                         |
+| LAYOUT        | NANO S                                                        | NANO X                                                         |
 |---------------|---------------------------------------------------------------|---------------------------------------------------------------|
 | `pb`          | <img align="left" width="280" src="../images/nanos_approve.png">       | <img align="left" width="327" src="../images/nanox_approve.png">       |
 | `bn`          | <img align="left" width="280" src="../images/nanos_amount.png">        | <img align="left" width="327" src="../images/nanox_amount.png">        |
@@ -141,11 +141,11 @@ UX_FLOW(ux_app_dashboard,
 );
 ```
 
-You guessed it, pressing both buttons when on the **QUIT** screen will call `os_sched_exit(-1)`, effectively quitting the app. Pressing both button while on the `Settings` screen will call `ui_settings_menu()`, another function that you need to define with `UX_FLOW`. We also added the `FLOW_LOOP` step at the end to have the menu wrap around. Users can now indefinitely cycle through the menu, yay!
+Pressing both buttons when on the **QUIT** screen calls `os_sched_exit(-1)`, effectively quitting the app. Pressing both button while on the `Settings` screen calls `ui_settings_menu()`, another function that you need to define with `UX_FLOW`. We also added the `FLOW_LOOP` step at the end to have the menu wrap around. Users can now indefinitely cycle through the menu, yay!
 
 ### Signing a transaction
 
-Here's the example of a flow to sign a transaction. We first display "Confirm address" along with a picture, then use `bnnn_paging` to display the address because it might not fit on a single screen. We then display the amount and the transactions fees, and finally add two callack steps: the first one to confirm, the second one to reject.
+Here's the example of a flow to sign a transaction. We first display "Confirm address" along with a picture, then use `bnnn_paging` to display the address because it might not fit on a single screen. We then display the amount and the transactions fees, and finally add two callback steps: the first one to confirm, the second one to reject.
 
 ``` c
 UX_STEP_NO_CB(step_review, pn, {&C_icon_eye, "Confirm Address"});
