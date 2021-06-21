@@ -37,7 +37,7 @@ To create a stack canary, you have to set a magic value at the start of the stac
 
 The canary is then checked regularly. If the canary was modified this means there was a stack overflow.
 
-In a future version of the BOLOS SDKs, this feature will be implemented automatically. Until then, this is the recommended way to implement a stack canary:
+Here is the recommended way to implement a stack canary:
 
 ``` c
 // This symbol is defined by the link script to be at the start of the stack
