@@ -88,7 +88,7 @@ Layouts are nothing more than rules that specify the format / number of lines / 
 -   `paging` means that if the data doesn't fit on screen, user will be able to navigate through multiple screens to see the data (e.g a public key).
 -   Finally, the number of letters used stands for the **number of lines**
 
-Note that **all combinations of letters are not possible**. For example `paging` only exists with `bnnn`. `nnnn` only exists on NanoX, etc...
+Note that **all combinations of letters are not possible**. For example `paging` only exists with `bnnn`. `nnnn` only exists on Nano X, etc...
 
 Now that you know all that, here's a table with the **most commonly used layouts**:
 
