@@ -49,7 +49,7 @@
   #- NA/u_speculos
   #- NA/a_external_docs
 
-- title: Appx - Personal security devices
+- title: Appendix A - Personal security devices
   docs:
   - NA/bg_personal_security_devices
   - NA/bg_master_seed
@@ -57,7 +57,7 @@
   - NA/bg_hd_use_cases
   - NA/bg_application_isolation
 
-- title: Appx - The BOLOS Platform
+- title: Appendix B - The BOLOS Platform
   docs:
   - NA/b_overview
   - NA/b_features
