@@ -11,22 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-No toc originally here
--->
-
-<!--
-
-- [Getting your Ledger Live running](#getting-your-ledger-live-running)
-  - [test-dataset](#test-dataset)
-  - [How does a test work ?](#how-does-a-test-work-)
-  - [What are the focus when testing ?](#what-are-the-focus-when-testing-)
-  - [What is this testing ?](#what-is-this-testing-)
-  - [How it works](#how-it-works)
-  - [How to define a test](#how-to-define-a-test)
-
--->
-
 ## Getting started
 
 To start, fork and clone git@github.com:LedgerHQ/ledger-live-common.git

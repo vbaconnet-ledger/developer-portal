@@ -12,8 +12,6 @@ layout: doc_ci
 {:toc}
 
 <!-- 2021-03-30 based on 1809613975 in Confluence -->
-<!-- https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/1809613975/live-common%2BBridge%2BTest%2Bframework -->
-
 
 Live-common lib is used to test Ledger Live in a headless way:
 

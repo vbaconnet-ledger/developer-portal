@@ -11,61 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-
-- [_MyCoin_ implementation in Live-Common](#mycoin-implementation-in-live-common)
-  - [Introduction](#introduction)
-  - [Setup](#setup)
-    - [Requirements](#requirements)
-    - [Development tools (used or required)](#development-tools-used-or-required)
-    - [Hardware prerequisites](#hardware-prerequisites)
-    - [Installation](#installation)
-    - [CLI setup](#cli-setup)
-  - [Structure](#structure)
-  - [Generating families-specific imports](#generating-families-specific-imports)
-  - [Building for Development](#building-for-development)
-    - [Environment Variables](#environment-variables)
-    - [Linking local packages](#linking-local-packages)
-  - [Step by Step integration](#step-by-step-integration)
-    - [MyCoin cryptoassets](#mycoin-cryptoassets)
-    - [Derive Address from device](#derive-address-from-device)
-    - [Derivation](#derivation)
-    - [Types](#types)
-      - [Semantics](#semantics)
-      - [Account](#account)
-      - [Operation](#operation)
-      - [Operation Type](#operation-type)
-      - [Transaction](#transaction)
-      - [Family-specific types](#family-specific-types)
-      - [Operation, Account and Transaction serialization](#operation-account-and-transaction-serialization)
-    - [Wrap your API](#wrap-your-api)
-      - [API Example](#api-example)
-    - [JS Bridge](#js-bridge)
-      - [Starting with a mock](#starting-with-a-mock)
-      - [Split your code](#split-your-code)
-    - [Account Bridge](#account-bridge)
-      - [Receive](#receive)
-      - [Synchronization](#synchronization)
-      - [Reconciliation](#reconciliation)
-      - [Transactions](#transactions)
-      - [Validating Transactions](#validating-transactions)
-      - [Dealing with Logic and Errors](#dealing-with-logic-and-errors)
-      - [Building and Signing transaction](#building-and-signing-transaction)
-      - [Broadcast](#broadcast)
-      - [Estimate Max Spendable](#estimate-max-spendable)
-      - [Testing send with CLI](#testing-send-with-cli)
-    - [Currency Bridge](#currency-bridge)
-      - [Scanning accounts](#scanning-accounts)
-      - [Preload currency data (optional)](#preload-currency-data-optional)
-    - [Cache and performance](#cache-and-performance)
-    - [Front-End helpers](#front-end-helpers)
-      - [Device transaction fields](#device-transaction-fields)
-    - [React hooks (optional / advanced)](#react-hooks-optional--advanced)
-    - [Icon](#icon)
-  - [Testing](#testing)
-
--->
-
 ## Introduction
 
 Ledger Live Common is the shared core library used by Ledger Live Desktop and Mobile, that also includes a CLI for testing purpose or for using Ledger Live features directly from a terminal (in a limited way).

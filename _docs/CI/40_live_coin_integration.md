@@ -13,18 +13,12 @@ layout: doc_ci
 
 ## General overview
 
-<!--
-
-- [General overview](#general-overview)
-- [Breakdown](#breakdown)
-
--->
-
 ***
 
 <!-- ------------- Image ------------- -->
-<!-- --------------------------------- -->
 ![](../../../uploads/images/CI/code-blocks.png)
+<!-- --------------------------------- -->
+
 
 ## Breakdown
 The following pages describe how to include a crypto-asset (Coin) in Ledger Live.

@@ -14,13 +14,6 @@ layout: doc_ci
 You will need to provide a JS implementation to interact with your coin nano app on the Ledger Nano.
 These bindings can either be implemented directly into live-common (as a folder in your coin family folder), or published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs) as a package - i.e. `hw-app-mycoin`.
 
-<!--
-- [Ledger Live - Nano App JS Bindings](#ledger-live---nano-app-js-bindings)
-  - [Minimal Implementationn](#minimal-implementationn)
-  - [Example](#example)
-    - [Usage Example](#usage-example)
--->
-
 ## Minimal Implementationn
 
 The app implementation should provide at least 2 methods:
