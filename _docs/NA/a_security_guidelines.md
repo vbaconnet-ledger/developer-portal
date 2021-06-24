@@ -66,7 +66,7 @@ If you want to sign user-supplied "personal" messages, prefix them with a fixed 
 
 Warning: If you allow signing untrusted hashes (while displaying a prompt to the user), be aware that
 
-1.  Some users are not familiar with security and could be easily tricked. They can click through your prompt without proper checking unless you give them explicit "Warning: this is a very unusual operation. Do not continue unless you know what you are doing" warning. They might not see the message even then
+1.  Some users are not familiar with security and could be easily tricked. They can click through your prompt without properly checking unless you give them explicit "Warning: this is a very unusual operation. Do not continue unless you know what you are doing" warning. They might not see the message even then.
 1.  A compromised host might both change hash on the screen and also data sent to device. This opens the possibility of users signing something they didn't want to.
 
 ### Restrict Apps to Coin-Specific BIP32 Prefix
@@ -88,13 +88,13 @@ APP_LOAD_PARAMS += --path "44'/60'"
 
 Derivation can also be restricted to a specific curve using the `--curve` property. Supported curves are `secp256k1`, `prime256r1` and `ed25519`.
 
-Several curves and paths can be configured. For example, if your app must derive keys on paths 44'/535348', 13' and 17', on curves Ed25519 and prime256r1, the Makefile should contain:
+Several curves and paths can be configured at the same time. For example, if your app must derive keys on paths 44'/535348', 13' and 17', on curves Ed25519 and prime256r1, the Makefile should contain:
 
 ``` makefile
 APP_LOAD_PARAMS=--curve ed25519 --curve prime256r1 --path "44'/535348'" --path "13'" --path "17'"
 ```
 
-Rationale: Setting prefixes is crucial, as it limits the amount of damages an attacker can cause if he manages to compromise an application. If a vulnerability is exploited on a poorly written or backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
+Rationale: Setting prefixes is crucial, as it limits the amount of damage an attacker can cause if they manage to compromise an application. If a vulnerability is exploited on a poorly written or backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
 
 <!--  -->
 {% include alert.html style="warning" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
@@ -126,9 +126,9 @@ Rationale: If you do not require user consent for signing important data, an att
 
 **You should minimize the code that works with private (ECDSA, RSA, etc.) or secret (HMAC, AES, etc.) keys.** Importantly, you should always **clear the memory** after you use these keys. That includes key data and key objects.
 
-Leaving parts of private or secret keys lying around in memory is not a security issue on its own because there is no easy way to extract the content of RAM on the chip. If a key is left in RAM by an app, another app will not be able to access it.
+Leaving parts of private or secret keys lying around in memory is not a security issue on its own because there is no easy way to extract the RAM content on the chip. If a key is left in RAM by an app, another app will not be able to access it.
 
-However, if the key has not been properly erased, a security issue could lead to the leak of this key, even if it is not used anymore. An attacker able to read arbitrary memory from the app, or execute arbitrary code, will be able to read the content of the stack segment, hence the parts of the key which have not been erased.
+However, if the key has not properly been erased, a security issue could lead to the leak of this key, even if it is not used anymore. An attacker able to read arbitrary memory from the app, or execute arbitrary code, will be able to read the content of the stack segment, hence the parts of the key which have not been erased.
 
 Here is an exemple of a common and **wrong way** of doing this:
 
@@ -154,7 +154,7 @@ Applications where such issues were fixed include [the ARK app](https://github.c
 
 ### Be Wary of Untrusted Input
 
-Some cryptocurrencies do not have *explicit* fee encoded in the transaction. In such cases, the app cannot rely on fee value sent from the host. Instead, it should receive previous UTxOs and check their output amounts. Note that this usually needs to be done in a separate step due to memory constraints. Check with BTC/Cardano app design for this.
+Some cryptocurrencies do not have *explicit* fee encoded in the transaction. In such cases, the app cannot rely on the fee value sent from the host. Instead, it should receive previous UTxOs and check their output amounts. Note that this usually needs to be done in a separate step due to memory constraints. Check with BTC/Cardano app design for this.
 
 ### Properly protect data you wish to cache on the host computer
 
@@ -166,7 +166,7 @@ Sometimes your app needs to compute over more data than it can fit inside memory
 
     Instead:
 
-    -   Encrypt the information with a sufficiently strong cipher
+    -   Encrypt the information with a sufficiently strong cypher
     -   Provide a digest to avoid tampering with the value
 
 ### Do not allow the host to freely manipulate key-pairs
