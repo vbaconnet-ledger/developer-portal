@@ -18,7 +18,7 @@ left:
     dropdown:
 
     - title: Speculos
-      url: /docs/SP/start_here
+      url: /docs/SP/index
 
     - title: Python Loader
       url: /docs/PL/01_readme
