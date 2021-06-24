@@ -11,18 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-
-- [*MyCoin* in CryptoAssets library](#mycoin-in-cryptoassets-library)
-  - [The Currency model](#the-currency-model)
-    - [Unit](#unit)
-    - [CryptoCurrency specific fields](#cryptocurrency-specific-fields)
-    - [ExplorerView](#explorerview)
-    - [TokenCurrency specific fields](#tokencurrency-specific-fields)
-  - [Adding MyCoin](#adding-mycoin)
-
--->
-
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.
 
 Ledger Live deals with different kinds of currencies and assets: fiat currencies, cryptocurrencies, and tokens.

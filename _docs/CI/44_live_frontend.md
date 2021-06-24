@@ -11,19 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-
-- [Inserting *MyCoin* in Ledger Live Desktop and Mobile](#inserting-mycoin-in-ledger-live-desktop-and-mobile)
-  - [Ledger Live Desktop](#ledger-live-desktop)
-    - [Adding the crypto in LLD](#adding-the-crypto-in-lld)
-    - [Running the Desktop projet](#running-the-desktop-projet)
-  - [Ledger Live  Mobile](#ledger-live--mobile)
-    - [Adding the crypto in LLM](#adding-the-crypto-in-llm)
-    - [Running the Mobile projet on iOS (Mac only)](#running-the-mobile-projet-on-ios-mac-only)
-    - [Running the Mobile projet on Android](#running-the-mobile-projet-on-android)
-
--->
-
 ***
 
 ## Ledger Live Desktop

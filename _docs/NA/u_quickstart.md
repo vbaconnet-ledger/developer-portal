@@ -72,7 +72,6 @@ The app is completely uninstalled at 00:19".
 
 ## Moving on
 
-<!-- Not much documentation has been written yet (work in progress!) regarding the exact steps to follow to write apps. However, very good codebases are available for you to learn from.-->
 This was the [app-boilerplate](https://github.com/LedgerHQ/app-boilerplate.git). If you want to get inspired, very good codebases are available for you to learn from.
 
 The [app-sia](https://github.com/LedgerHQ/app-sia.git) and [solana](https://github.com/LedgerHQ/app-solana) are also a thoroughly documented app written by the community. If you wish to study fully-fledged apps, these are the one for you.

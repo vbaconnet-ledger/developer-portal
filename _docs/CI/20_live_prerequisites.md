@@ -11,15 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-- [Prerequisites](#prerequisites)
-  - [Technical Assessment](#technical-assessment)
-  - [Choice of Specific features](#choice-of-specific-features)
-  - [Indexer](#indexer)
-    - [Choosing the right Indexer solution for your your project](#choosing-the-right-indexer-solution-for-your-your-project)
-
--->
-
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.
 Nowadays, they are also functionally complex: it’s no longer just about sending and receiving a single currency, we see more and more individual projects with their own purpose and identity, their own innovative features, such as staking, rewards, tokens, smart contracts, on-chain governance, etc.
 

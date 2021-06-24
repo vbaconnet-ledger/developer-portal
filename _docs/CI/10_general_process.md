@@ -13,22 +13,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-List of all Integrations
-    Nano applications
-    Tokens
-    Ledger Live
-General Ledger Live Overview
-Open source, but not Open bar
-Agreeing on a Framework
-Note about Code Reviews
-Ledger Live Development Phases
-    A - Technical Assessment
-    B - CLI and GUI integration - General (GEN) features
-    C - CLI integration - Specific (SPE) features
-    D - GUI integration - Specific (SPE) features
--->
-
 ## General Ledger Live Overview
 
 If you already have a public Nano application and are looking for a way to get your blockchain supported on Ledger Live, then congratulations, you are in the right place.
