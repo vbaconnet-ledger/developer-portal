@@ -83,7 +83,7 @@ struct Example1
 ``` c
  [xxxxxxxx] -------- [xxxxxxxx  xxxxxxxx]
  [xxxxxxxx  xxxxxxxx  xxxxxxxx  xxxxxxxx]
- [xxxxxxxx] --------  --------  -------- 
+ [xxxxxxxx] --------  --------  --------
 ```
 
 In this example, it is possible to reorganize the structure's fields to avoid alignment-induced padding, but sometimes padding will not be avoidable.
@@ -148,7 +148,7 @@ struct Example1_reordered_other_way
 
 Using pointers within C source code might be functionally impacted by the 32-bit alignment in a specific case: when the pointer points on a memory area which type differs from the pointer, and is dereferenced.
 
-Dereferencing unaligned pointers within an application stalls the device.
+Dereferencing unaligned pointers within an application makes the application crash.
 
 Usually, pointers are used to store the address of an element which type corresponds to the pointer one, and for simple example:
 
@@ -164,7 +164,7 @@ pointer = &array[3];
 *pointer = 0x0001;
 ```
 
-However, if we use a pointer with a specific type to store the address of a memory area declared with another type (usually with an alignment-related size less than the pointer one), it can lead to hardware faults and stall the device:
+However, if we use a pointer with a specific type to store the address of a memory area declared with another type (usually with an alignment-related size less than the pointer one), it can lead to hardware faults and the application crashing:
 
 ``` c
 uint16_t *pointer;
@@ -182,15 +182,15 @@ if (*pointer == 0x0001) {
     do_something();
 }
 
-// Case where it will stall the device.
+// Case where it will make the application crash.
 
 // Pointer positioning is fine, but it is unaligned.
 pointer = (uint16_t*)&array[3];
 
-// Dereferencing this pointer will stall the device: the pointed memory is not aligned
+// Dereferencing this pointer will make the application crash: the pointed memory is not aligned
 // in accordance with the pointer type (because the offset 3 in the array variable
 // is not a multiple of 16 bits).
-if (*pointer == 0x0001) { /* This dereferencing stalls the device. */
+if (*pointer == 0x0001) { /* This dereferencing makes the application crash. */
     do_something();
 }
 ```
@@ -223,15 +223,15 @@ if (pointer->field_2 == 0x0001) {
     do_something();
 }
 
-// Case where it will stall the device.
+// Case where it will make the application crash.
 
 // Pointer positioning is fine, but it is unaligned.
 pointer = (Example1_reordered*)&array[3];
 
-// Dereferencing this pointer will stall the device: the pointed memory is not aligned
+// Dereferencing this pointer will make the application crash: the pointed memory is not aligned
 // in accordance with the pointer type (because the offset 3 in the array variable
 // is not a multiple of the structure's size after compilation).
-if (pointer->field_2 == 0x0001) { /* This dereferencing stalls the device. */
+if (pointer->field_2 == 0x0001) { /* This dereferencing makes the application crash. */
     do_something();
 }
 ```

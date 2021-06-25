@@ -113,9 +113,9 @@ With our error model, there are two common failure scenarios.
 {% include alert.html style="success" text="For more clarity and coherence, we recommend using the error codes defined in the SDKs wherever possible (see <code>EXCEPTION</code>, <code>INVALID_PARAMETER</code>, etc. in <code>os.h</code>). If you decide to use custom error codes, use custom error codes for each error case." %}
 <!--  -->
 
-## Stalled Application
+## The Application crashed
 
-An application stalling when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
+An application crashing when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
 - The Secure Element is isolated due to invalid handling of [SEPROXYHAL](https://developers.ledger.com/docs/NA/b_hardware_architecture/#seproxyhal) packets
 - Theres a core fault on the device (perhaps due to a [misaligned memory access](../u_alignment) or an attempt to access restricted memory)
 
@@ -133,7 +133,7 @@ uint16_t *ptr16 = &tmp_ctx.signing_context.buffer[processed];
 PRINTF("uint16_t: %d", ptr16[0]);
 ```
 
-`ptr16[0]` access can be stalling the app, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but a word is accessed in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os_memmove`).
+`ptr16[0]` access can make the application crash, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but a word is accessed in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os_memmove`).
 
 Please refer to the [alignment](../u_alignment) page for further information.
 
