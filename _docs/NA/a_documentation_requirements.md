@@ -57,7 +57,7 @@ Third Party will write and host an article ([example](https://blog.cyberrepublic
 - Use text formatting for UI text, example: Your device displays BTC app installed.
 - Screenshots can support the instructions if the user interface is complicated.
 - **Referring to the hardware wallet**: Ledger Nano S, Ledger Nano S device, device, hardware wallet, Ledger hardware wallet, Ledger device.
-*Strictly avoid: wallet, Ledger wallet, a Ledger*.
+<i>Strictly avoid: wallet, Ledger wallet, a Ledger</i>.
 - **Referring to crypto assets**: name, ticker, crypto asset(s), coin(s), cryptocurrency.
-*Please avoid: money*.
+<i>Please avoid: money</i>.
 - Be sure to check [this article](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/) for an example.
