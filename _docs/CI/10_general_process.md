@@ -55,7 +55,7 @@ In most cases however, you will want to have your blockchain officially supporte
 <!-- --------------------------------- -->
 Assuming you are on course for a **Participant Integration**, here is how we suggest working together.
 
-To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger Slack Dev](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw).
+To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger Dev Slack](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw).
 
 The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 
@@ -88,7 +88,7 @@ We have identified several phases, each giving rise to a deliverable.
 
 The features supported by a blockchain protocol can be split between Generic and Specific ones.
 
-Blockchain protocols mainly offer at least, Receive/Synchronise/Send functions. (Synchronising is the ability to return the balance of an account, including, but not necessarily, the list of operations). That is why these generic **(GEN)** fetures are a considered as one of the phases.
+Blockchain protocols mainly offer at least, Receive/Synchronise/Send functions. (Synchronising is the ability to return the balance of an account, including, but not necessarily, the list of operations). That is why these generic **(GEN)** features are a considered as one of the phases.
 
 Many Blockchain protocols also offer staking functions. And these do not have the same mechanism from one protocol to another. That is why they are specific **(SPE)** features.
 

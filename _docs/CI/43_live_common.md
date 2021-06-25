@@ -20,8 +20,6 @@ This library is built upon a pretty standard ES6 + FlowType stack and relies on 
 It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new coin integrations through flexibility.
 All integrated coins are implemented in a `src/families` dedicated folder which contains the specifics of a coin family - that can be shared by multiple crypto-assets that use the same implementation (i.e. Bitcoin-like coins share the same `bitcoin` family).
 
-Some of those families are implemented using the Ledger's [libcore](https://github.com/LedgerHQ/lib-ledger-core) which is a monolithic library built in C++ that we tend to replace by JS implementations.
-
 **This document only concerns new coin integrations using JavaScript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
 
 ## Setup
@@ -1689,7 +1687,7 @@ Once the operation is synced from <i>MyCoin</i> API, the AccountBridge will remo
 
 #### Estimate Max Spendable
 
-The maximum spendable amount is the total balance in an account that is available to send in a transaction. This amount is specific to MyCoin, so you will need to provide this value depending on the transaction the user want to send.
+The maximum spendable amount is the total balance in an account that is available to send in a transaction. This amount is specific to <i>MyCoin</i>, so you will need to provide this value depending on the transaction the user want to send.
 
 See [https://support.ledger.com/hc/en-us/articles/360012960679-Maximum-spendable-amount](https://support.ledger.com/hc/en-us/articles/360012960679-Maximum-spendable-amount)
 
@@ -2018,7 +2016,7 @@ If you are adding specific features to Ledger Live (like staking), you may need 
 
 You are then free to add them in a `src/families/mycoin/react.js` file.
 
-See examples like sorting and filtering validators, subscribing to preloaded data observable, or waiting for a transaction to be reflected in account, in the [Polkadot React hooks](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/families/polkadot/react.js),
+See examples like sorting and filtering validators, subscribing to preloaded data observable, or waiting for a transaction to be reflected in account, in the [Polkadot React hooks](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/families/polkadot/react.js).
 
 ### Icon
 
