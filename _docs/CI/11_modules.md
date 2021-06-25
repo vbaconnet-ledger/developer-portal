@@ -11,20 +11,6 @@ layout: doc_ci
 * TOC
 {:toc}
 
-<!--
-Modules – General Architecture
-    B2C Components
-Global Architecture Overview
-Ledger-Live Architecture Detailed
-BOLOS app
-Communication with the Device
-Communication with the different blockchains
-Indexer and nodes
-Live-Common
-Ledger Live
-    Ledger Live Desktop
-    Ledger Live Mobile
--->
 
 ## Modules – General Description Arch
 
@@ -160,13 +146,7 @@ transfer data and commands to and from the external world. ledgerjs only
 allows to use commands developed on the BOLOS app.
 
 The Countervalue API is a service to get the current market value of
-different cryptocurrency
-
-
-Ledger Live Desktop / Ledger Live Mobile
-
-The same thing as Ledger Live Desktop but on mobile devices (iOS,
-Android)
+different cryptocurrency.
 
 ***
 ## Ledger Live

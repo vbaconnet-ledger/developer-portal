@@ -23,7 +23,7 @@ The clone will be used to test your modifications locally, using `yalc`.
 
 ### Adding the crypto in LLD
 
-1. In  `live-common-set-supported-currencies.js` add the name you gave in the table. E.g., `"mycoin"`
+1. In  `live-common-set-supported-currencies.js` add the name you gave in the table. E.g., `mycoin`
 2. Add the error translation keys in `static/i18n/en`.
 
 ### Running the Desktop projet
@@ -69,7 +69,7 @@ yarn start
 
 ### Running the Mobile projet on Android
 
-1. Launch the emulatore or plug-in your telephone.
+1. Launch the emulator or plug-in your telephone.
 2. Use an Android environment such as Android Studio
 
 ```sh

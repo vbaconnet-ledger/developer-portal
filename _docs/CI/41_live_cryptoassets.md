@@ -130,7 +130,7 @@ type CryptoCurrency = CurrencyCommon & {
 };
 ```
 <!--  -->
-{% include alert.html style="success" text="CoinType is generally found in [https://github.com/satoshilabs/slips/blob/master/slip-0044.md](https://github.com/satoshilabs/slips/blob/master/slip-0044.md), although unicity is not quaranteed across networks (testnets, etc...)." %}
+{% include alert.html style="success" text="CoinType is generally found in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md'>github.com/satoshilabs/slips/blob/master/slip-0044.md</a>, although unicity is not quaranteed across networks (testnets, etc...)." %}
 <!--  -->
 
 ### ExplorerView
