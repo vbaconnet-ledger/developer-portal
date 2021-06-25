@@ -28,7 +28,7 @@ BOLOS (Blockchain Open Ledger Operating System) is the operating system behind a
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. [Quickstart](../u_quickstart) with our script and/or go into [more details](../u_deepdive) about the script.
 
 #### Contributing
-If you want to improve the documentation you can [use this contact](https://developers.ledger.com/contact/) form or make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
+If you want to improve the documentation you can [use the contribution form](https://developers.ledger.com/contribution/) or make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
 
 
 ## Submit your app for the Ledger Live manager
