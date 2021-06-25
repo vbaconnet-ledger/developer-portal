@@ -14,22 +14,35 @@ layout: doc_na
 * TOC
 {:toc}
 
-#### Get in touch with the Ledger developer community
+
+## Get in touch with the Ledger developer community
 
 If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **ledgerjs** channels. Otherwise, send us a request by filling [this contact form](../../../contact).
 
+## Start coding
+
+Nano applications are developed in C on the Blockchain Open Ledger Operating System (BOLOS).
+
+To develop a Nano Application you will need to:
+- Use Linux or a VM with Linux installed
+- Set up the BOLOS environment (consisting of the Nano S or X SDK, and two compilers)
+- Use the [Python Loader](../../PL/01_readme/) to communicate with the device
+
+<!--  -->
+{% include alert.html style="primary" text="If you need to emulate a device, you can use <a href='https://developers.ledger.com/docs/SP/index/'>Speculos</a>, an emulator developed by Ledger." %}
+<!--  -->
+
 #### Familiarize yourself with the BOLOS platform
 
-BOLOS (Blockchain Open Ledger Operating System) is the operating system behind all Ledger personal security devices. It provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment.
+BOLOS is the operating system behind all Ledger personal security devices. It provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment.
 
 [Learn about the BOLOS platform](../b_overview)
 
 #### Set up the BOLOS development environment
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. [Quickstart](../u_quickstart) with our script and/or go into [more details](../u_deepdive) about the script.
 
-#### Contributing
+## Contribute
 If you want to improve the documentation you can make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
-
 
 ## Submit your app for the Ledger Live manager
 Make sure that your app is ready before submitting it for review and that you have followed instructions from our documentation.
