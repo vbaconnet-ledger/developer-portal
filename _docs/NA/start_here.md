@@ -26,11 +26,8 @@ Nano applications are developed in C on the Blockchain Open Ledger Operating Sys
 To develop a Nano Application you will need to:
 - Use Linux or a VM with Linux installed
 - Set up the BOLOS environment (consisting of the Nano S or X SDK, and two compilers)
-- Use the [Python Loader](../../PL/01_readme/) to communicate with the device
-
-<!--  -->
-{% include alert.html style="primary" text="If you need to emulate a device, you can use <a href='https://developers.ledger.com/docs/SP/index/'>Speculos</a>, an emulator developed by Ledger." %}
-<!--  -->
+- Use the [Python Loader](../../PL/01_readme/) to communicate with the Nano S
+- Use [Speculos](../../SP/index/) to emulate a Nano S or X
 
 #### Familiarize yourself with the BOLOS platform
 
