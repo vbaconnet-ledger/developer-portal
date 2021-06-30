@@ -32,6 +32,10 @@
   desc: SDK for ST31 applications development
   url: https://github.com/LedgerHQ/nanos-secure-sdk
 
+- title: Ledger API Countervalue
+  desc: Display the actual price and market cap
+  url: https://github.com/LedgerHQ/ledger-api-countervalue
+
 - title: App Passwords
   desc: Password Manager app
   url: https://github.com/LedgerHQ/blue-app-password-manager
@@ -39,3 +43,7 @@
 - title: Ledger Sample Apps
   desc: Sample applications for Ledger Blue and Ledger Nano S
   url: https://github.com/LedgerHQ/blue-sample-apps
+
+- title: Speculos Nano Emulator
+  desc: Emulate Ledger devices on your computer
+  url: https://github.com/LedgerHQ/speculos
