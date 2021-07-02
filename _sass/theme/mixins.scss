@@ -520,15 +520,26 @@
           z-index: 10;
     }
 
-    @media (min-width: $breakpoint-large) {
-        .sidebar-fixed-width {
-            width: $docs-sidebar-width-l;
-        }
-        .sidebar-docs {
-            width: $docs-sidebar-width-l - $global-large-gutter;
-            padding-right: $global-large-gutter;
-        }
+    .sidebar-toc {
+      position: fixed;
+      top: 160px;
+      width:300px;
+      background: white;
+      border-radius: 20px;
+      padding-top:20px;
+      padding-right:18px;
+      > ul li {list-style: none;}
     }
+
+    // @media (min-width: $breakpoint-large) {
+    //     .sidebar-fixed-width {
+    //         width: $docs-sidebar-width-l;
+    //     }
+    //     .sidebar-docs {
+    //         width: $docs-sidebar-width-l - $global-large-gutter;
+    //         padding-right: $global-large-gutter;
+    //     }
+    // }
 
     ul.doc-nav {
         padding-left: 14px;
