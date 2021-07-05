@@ -46,9 +46,6 @@ layout: default
 
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
                     <div class="article-content link-primary">
-                    <div class="uk-nav-default uk-hidden@l">
-                      {% toc %}
-                    </div>
                         {{ content }}
                         {% if site.share.doc %}
                             <!-- FC
@@ -79,11 +76,6 @@ layout: default
                 </script>
 
             </div>
-          <div class="uk-width-medium uk-nav-default link-primary uk-visible@l">
-            <div class="sidebar-toc">
-              {% toc %}
-            </div>
-          </div>
-
+        </div>
     </div>
 </div>
