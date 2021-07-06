@@ -86,6 +86,8 @@ Below are the Adobe Illustrator templates for such icons, please respect their g
 <img src="../images/manager_template.png" class="align-center" alt="Manager icon template (click to access Illustrator file)" /><figcaption aria-hidden="true">Manager icon template (click to access Illustrator file)</figcaption>
 </figure>
 
+The Device icon must be displayed on the first welcome screen.
+
 Most of the time, Bolos apps expose few functionalities to the user. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons !) and also because of the screen size which offer only 128\*32 pixels. Ledger provides some guidance to avoid third party developers to reinvent the wheel.
 
 <!--  -->
