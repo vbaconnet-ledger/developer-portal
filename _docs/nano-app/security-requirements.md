@@ -594,13 +594,13 @@ unsigned int io_seproxyhal_touch_tx_cancel() {
 }
 ```
 
-But such a solution is needed only if `tx\_ok` or `tx\_cancel` modify context/global variables before calling `ui\_idle()`.
+But such a solution is needed only if `tx_ok` or `tx_cancel` modify context/global variables before calling `ui_idle()`.
 
-As a side note, if your `\_\_ok()`/`\_\_cancel()` handler both :
+As a side note, if your `__ok()`/`__cancel()` handler both :
 1. do not check whether the memory is cleared, but :
 2. clear the memory inside the handler
 
-make sure that memclear happens after calling `ui\_idle()`.
+make sure that memclear happens after calling `ui_idle()`.
 
 
 Note: If not guarded properly, an attacker might try a following line of attack:
