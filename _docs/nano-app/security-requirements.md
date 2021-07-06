@@ -40,7 +40,7 @@ We encourage third-party security reviews. Note, however, that solid review take
 
 ### Best practices
 
-In order to ease security reviews and maintenance, the Ledger Security Team requires theses development best practices to be met:
+In order to ease security reviews and maintenance, the Ledger Security Team requires these development best practices to be met:
 
 - The app must build with no warnings using the container image intended for that purpose, [Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder).
 - The scan-build utility from clang must be used to analyze the whole project and produce no errors.
