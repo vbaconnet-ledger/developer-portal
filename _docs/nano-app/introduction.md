@@ -17,7 +17,12 @@ layout: doc_na
 
 ## Get in touch with the Ledger developer community
 
-If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **ledgerjs** channels. Otherwise, send us a request by filling [this contact form](../../../contact).
+If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in  **#introductions** and get help in **#support**. Otherwise, send us a request by filling [this contact form](../../../contact).
+
+You can join the following channels to discuss more precise topics:
+- **#ledgerjs** for all questions regarding the ledgerjs libraries
+- **#rust-sdk** to build Bolos apps in Rust
+
 
 ## Start coding
 
