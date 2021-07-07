@@ -166,7 +166,7 @@ An application will be listed publicly (official Ledger support) when:
 
 
 <!--  -->
-{% include alert.html style="success" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it. Applications are usually released on Tuesday or Wednesday." %}
+{% include alert.html style="success" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it." %}
 <!--  -->
 
 
