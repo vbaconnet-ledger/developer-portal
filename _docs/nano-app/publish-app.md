@@ -15,15 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-The Ledger Manager is the service which centralizes the distribution of [BOLOS](../bolos-introduction) applications on Ledger devices. It is the place where both Ledger's apps and third party apps are distributed to users. This article explains the procedure for a third party app to be released on the Ledger Manager.
-
-<!-- ------------- Image ------------- -->
-<!-- --------------------------------- -->
-<figure>
-<img src="../images/manager.png" class="align-center" alt="The Ledger Manager" /><figcaption aria-hidden="true">The Ledger Manager</figcaption>
-</figure>
-
-First, let's see the typical end-to-end architecture of a BOLOS application, in the case of an app for a cryptocurrency:
+Let’s see the typical end-to-end architecture of a BOLOS application, in the case of an app for a cryptocurrency:
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
@@ -31,19 +23,21 @@ First, let's see the typical end-to-end architecture of a BOLOS application, in 
 <img src="../images/app_architecture.png" class="align-center" alt="End-to-end architecture of a BOLOS application" /><figcaption aria-hidden="true">End-to-end architecture of a BOLOS application</figcaption>
 </figure>
 
-In this example, 3 pieces of software are required:
+Three pieces of software are required:
+- A BOLOS application, written in C, running on a Ledger device
+- The companion app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
+- A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
 
-1.  A BOLOS application, written in C, running on a Ledger device
-2.  The companion app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
-3.  A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
+If you’re not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the companion app might be a simple daemon or a command line tool, without a GUI.
 
-If you're not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the companion app might be a simple daemon or a command line tool, without a GUI. *The companion app should always be compatible with Windows, MacOS and Linux*
+The Ledger Manager is the service which centralizes the distribution of [BOLOS](https://developers.ledger.com/docs/nano-app/bolos-introduction/) applications on Ledger devices. It is the place where both Ledger’s apps and third party apps are distributed to users.
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
 <figure>
-<img src="../images/bitcoin-live.png" class="align-center" alt="Ledger&#39;s main companion app: the Ledger Live" /><figcaption aria-hidden="true">Ledger's main companion app: the Ledger Live</figcaption>
+<img src="../images/manager.png" class="align-center" alt="The Ledger Manager" /><figcaption aria-hidden="true">The Ledger Manager</figcaption>
 </figure>
+
 
 When these pieces are ready for deployment, they must be sent to Ledger for a security review. One of the things we're going to do is review the security of the BOLOS application code, and check that it functions as intended in conjunction with its companion app. Here is a non-exhaustive list of what we're looking at during the review process:
 
