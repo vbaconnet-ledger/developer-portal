@@ -192,7 +192,7 @@ To the extent not prohibited by applicable law, in no event will Ledger be liabl
 ## Deliverables summary
 
 Please apply on [Ledger's Listing
-Program](https://forms.gle/86qP6H1etn8xSwQG9):
+Program](https://ledger.typeform.com/to/qQSf7CVh):
 
 -   Bolos app Release Candidate source code (preferably a git repository)
 -   Companion app (binaries or package, for Windows/MacOS/Linux)
