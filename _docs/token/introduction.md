@@ -8,6 +8,11 @@ author:
 layout: doc_et
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 ## Introduction
 
 Ledger Live currently supports ERC20 tokens on Ethereum, ASAs on Algorand and TRC10/TRC20 tokens on Tron. The process to integrate varies depending on which kind of token you would like to integrate to Ledger Live, but there are a few common specs.
