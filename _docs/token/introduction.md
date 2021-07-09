@@ -10,6 +10,9 @@ layout: doc_et
 
 ## Introduction
 
+Ledger Live currently supports ERC20 tokens on Ethereum, ASAs on Algorand and TRC10/TRC20 tokens on Tron. The process to integrate varies depending on which kind of token you would like to integrate to Ledger Live, but there are a few common specs.
+
+
 
 Similarly to transferring native assets, transferring tokens requires the end-user to confirm the transaction details on the Nano devices’ screens. Such verification is a security requirement and must be made available before the application is released by Ledger. Expected information to verify are (at least) : the amount transferred, the token name and/or ticker, the recipient address.
 
@@ -42,9 +45,7 @@ Because this information is important, Ledger applies a specific signature to th
 You can find the entire list of ERC20 tokens supported, along with their signature [here](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/data).
 
 
-### How do I request a token addition ?
-
-Ledger Live currently supports ERC20 tokens on Ethereum, ASAs on Algorand and TRC10/TRC20 tokens on Tron.
+## How do I request a token addition ?
 
 If you wish to add a new ERC20, [click here](../erc20)
 For ASAs and TRC tokens [click here](../other-tokens)
