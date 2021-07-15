@@ -13,4 +13,7 @@ layout: doc_na
 * TOC
 {:toc}
 
-Work in progress
+|                     Project A (third party)                  |                         Ledger                         |
+|--------------------------------------------------------------|--------------------------------------------------------|
+|          Twitter announcement<br><b>Mandatory</b>            |      Retweet<br>Website update<br><b>Guaranteed</b>    |
+| Device giveway<br>Blog post/Press Release<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |
