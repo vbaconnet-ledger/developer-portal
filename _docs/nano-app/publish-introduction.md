@@ -13,9 +13,6 @@ layout: doc_na
 * TOC
 {:toc}
 
-## Deliverable summary
-
-## Developer journey
 
 ## Global architecture
 
@@ -55,34 +52,13 @@ When these pieces are ready for deployment, they must be sent to Ledger for a se
 Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps.
 
 
-## Release Process
+## Release types
 
-There are different release levels for a given application:
-
--   **Public release** (official Ledger support)
--   **Developer mode release** (experimental support)
-    -   Developer mode with an **audited** application
-    -   Developer mode with an **unaudited** application
-
-
-In any case, Ledger's decision to publish a third party application may not be considered as any form of partnership or endorsement.
-
-As long as an application isn't audited by Ledger security team, the message `Pending Ledger Review` will be displayed when the application is started. The user can aknowledge and skip this warning by pressing both buttons and use the application at his own risks. As an unaudited application is considered experimental, such application will be visible **only when the developer mode settings is enabled** in Ledger Live settings.
-
-Some applications are also visible when the developer mode setting is enabled, not because of a lack of security review, but rather because they are considered too complex to use. It can be that the mandatory compatible GUI is missing, or that the application purpose is considered too technical for the vast majority of users.
-
-An application will be listed publicly (official Ledger support) when:
-
--   It passed the security audit
--   It's been tested and validated by at least someone from Ledger Customer Success Team
--   The application is compatible with a GUI companion app (CLI is not enough)
--   Ledger is ready to communicate officially about the app release (tweet, blogpost, website page update)
--   Customer support pages are available on Ledger Help Center
-
-
-<!--  -->
-{% include alert.html style="success" text="Ledger releases new cryptocurrency apps for its devices whenever reviews, tests, and resources allow it." %}
-<!--  -->
+<!-- ------------- Image ------------- -->
+<!-- --------------------------------- -->
+<figure>
+<img src="../images/listing-program.png" class="align-center" alt="Ledger listing program" />
+</figure>
 
 
 ## Warranty and liability disclaimer
