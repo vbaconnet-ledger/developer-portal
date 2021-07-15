@@ -8,10 +8,7 @@ author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+If you a develop a Nano Application for a public release, the following steps will be applied:
 
 |                     Project A (third party)                  |                         Ledger                         |
 |--------------------------------------------------------------|--------------------------------------------------------|

@@ -7,11 +7,11 @@
   - nano-app/quickstart
   - nano-app/deepdive
 
-- title: Security Requirements
+- title: Security best practices
   docs:
   - nano-app/secure-app
 
-- title: Functional Requirements
+- title: Backround information
   subfolderitems:
     - title: Display
       docs:
@@ -40,6 +40,7 @@
   - nano-app/functional-requirements
   - nano-app/documentation-requirements
   - nano-app/marketing-requirements
+  - nano-app/design-requirements
   - nano-app/support-maintenance-requirements
 
 - title: Appendix A - Personal security devices
