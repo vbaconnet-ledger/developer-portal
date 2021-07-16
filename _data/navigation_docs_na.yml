@@ -36,7 +36,6 @@
 - title: Publishing an application
   docs:
   - nano-app/publish-introduction
-  - nano-app/security-requirements
   - nano-app/functional-requirements
   - nano-app/documentation-requirements
   - nano-app/marketing-requirements
