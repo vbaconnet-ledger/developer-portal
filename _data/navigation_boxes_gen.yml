@@ -13,7 +13,7 @@
 - title: Token Integration
   desc: How to include your favourite token in Ledger Live
   icon: token
-  doc: token/erc20
+  doc: token/introduction
 
 - title: DApp Integration
   desc: Get Started integrating your service in Ledger Live
