@@ -7,7 +7,7 @@ permalink: /contact/
 
 If **you are a developer** and you are already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **#ledgerjs** channels. Otherwise, **send us a request by filling the form below**.
 
-If **you are a ledger customer** and you need some help about our product you can [check our help center](https://support.ledger.com/).
+If **you are a ledger customer** and you need some help about our products you can [check our help center](https://support.ledger.com/).
 
 <!-- {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}-->
 
