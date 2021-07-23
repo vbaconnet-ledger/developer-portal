@@ -17,7 +17,7 @@ layout: doc_et
 
 ### 1. Is my ERC20 token listed ?
 
-First, make sure your token isn’t already listed by checking the [repository](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/data).
+First, make sure your token isn’t already listed by checking the [repository](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/erc20.js).
 
 ### 2. How to get my token listed ?
 
