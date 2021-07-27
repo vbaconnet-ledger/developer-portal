@@ -19,7 +19,7 @@ For ASAs, compared to ERC20, the process differs due to the fact that the tokens
 
 ### 1. Is my ASA token listed ?
 
-First, make sure your token isn’t already listed by checking the [repository](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).
+First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
 
 ### 2. How to get my token listed ?
 
