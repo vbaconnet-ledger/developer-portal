@@ -31,3 +31,4 @@ node_modules
 
 # Jekyll build
 _site
+.jekyll-metadata
