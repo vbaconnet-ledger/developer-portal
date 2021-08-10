@@ -1,3 +1,18 @@
-- title: Communication betwin a wallet and a Ledger Device
+- title: Nano App development
   docs:
   - transport/introduction
+
+- title: Connexion betwin a third party app and a device
+  docs:
+  - transport/introduction
+  - transport/webhid
+  - transport/webusb
+  - transport/web-ble
+  - transport/node-hid
+  - transport/node-ble
+  - transport/react-native-hid
+  - transport/react-native-ble
+
+- title: Test the connexion
+  docs:
+  - transport/ledger-repl
