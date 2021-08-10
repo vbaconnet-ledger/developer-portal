@@ -1,5 +1,5 @@
 ---
-title: webhid
+title: Web HID
 subtitle:
 tags: []
 author:
@@ -11,24 +11,20 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## FAQ: "DOM Exception" is triggered when creating the transport
+### FAQ: "DOM Exception" is triggered when creating the transport
 
 The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
 
-## How to use this transport?
+### How to use this transport?
 
 Please check [hw-transport-webusb documentation](../hw-transport-webusb) because it is very similar paradigm.
 
-## Support status
+### Support status
 
 WebUSB is currently only supported on Google Chrome / Chromium DEV version and by explicitly enabling `chrome://flags/#enable-experimental-web-platform-features`
 
 
-## TransportWebHID
-
-**Extends Transport**
-
-WebHID Transport implementation
+## Implementation
 
 ### Parameters
 

@@ -1,5 +1,5 @@
 ---
-title: React native HID Transport
+title: React native HID
 subtitle:
 tags: []
 author:
@@ -11,13 +11,14 @@ layout: doc_tr
 * TOC
 {:toc}
 
+## Implementation
 
-## Parameters
+### Parameters
 
 -   `nativeId` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 -   `productId` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
-## Examples
+### Examples
 
 ```js
 import TransportHID from "@ledgerhq/react-native-hid";
@@ -25,46 +26,46 @@ import TransportHID from "@ledgerhq/react-native-hid";
 TransportHID.create().then(transport => ...)
 ```
 
-## exchange
+### exchange
 
-### Parameters
+#### Parameters
 
 -   `apdu` **any** input value
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;any>** Promise of apdu response
 
-## close
+### close
 
 Close the transport
 
 Returns **any** Promise
 
-## isSupported
+### isSupported
 
 Check if the transport is supported (basically true on Android)
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>**
 
-## list
+### list
 
 List currently connected devices.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;any>>** Promise of devices
 
-## listen
+### listen
 
 Listen to ledger devices events
 
-### Parameters
+#### Parameters
 
 -   `observer` **any**
 
 Returns **any**
 
-## open
+### open
 
 Open a the transport with a Ledger device
 
-### Parameters
+#### Parameters
 
 -   `deviceObj` **DeviceObj**

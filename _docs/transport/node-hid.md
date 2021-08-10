@@ -1,5 +1,5 @@
 ---
-title: webhid
+title: Node Hid
 subtitle:
 tags: []
 author:
@@ -11,7 +11,7 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## TransportNodeHid
+## Implementation
 
 ### Examples
 

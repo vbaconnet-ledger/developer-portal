@@ -1,5 +1,5 @@
 ---
-title: web-ble
+title: Node Bluetooth
 subtitle:
 tags: []
 author:
@@ -11,55 +11,57 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## Parameters
+## Implementation
+
+### Parameters
 
 -   `device` **Device**
 -   `writeCharacteristic` **any**
 -   `notifyObservable` **Observable&lt;[Buffer](https://nodejs.org/api/buffer.html)>**
 -   `deviceModel` **DeviceModel**
 
-## Examples
+### Examples
 
 ```js
 import BluetoothTransport from "@ledgerhq/hw-transport-node-ble";
 ```
 
-## exchange
+### exchange
 
 communicate with a BLE transport
 
-### Parameters
+#### Parameters
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>**
 
-## isSupported
+### isSupported
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>**
 
-## availability
+### availability
 
-## listen
+### listen
 
 Scan for bluetooth Ledger devices
 
-### Parameters
+#### Parameters
 
 -   `observer` **any**
 
-## open
+### open
 
 Open a BLE transport
 
-### Parameters
+#### Parameters
 
 -   `deviceOrId` **any**
 
-## disconnect
+### disconnect
 
 Globally disconnect a BLE device by its ID
 
-### Parameters
+#### Parameters
 
 -   `id` **any**

@@ -1,5 +1,5 @@
 ---
-title: web-ble
+title: Web Bluetooth
 subtitle:
 tags: []
 author:
@@ -11,11 +11,7 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## BluetoothTransport
-
-**Extends Transport**
-
-react-native bluetooth BLE implementation
+## Implementation
 
 ### Parameters
 

@@ -1,5 +1,5 @@
 ---
-title: React native BLE Transport
+title: React native Bluetooth
 subtitle:
 tags: []
 author:
@@ -99,77 +99,72 @@ const transport = await TransportBLE.open(deviceId); // deviceId can come from p
 
 **and now we can just use the transport like any other Ledger transport!**
 
-## API
 
-### BluetoothTransport
+## Implementation
 
-**Extends Transport**
-
-react-native bluetooth BLE implementation
-
-#### Parameters
+### Parameters
 
 -   `device` **Device**
 -   `writeCharacteristic` **Characteristic**
 -   `notifyObservable` **Observable&lt;[Buffer](https://nodejs.org/api/buffer.html)>**
 -   `deviceModel` **DeviceModel**
 
-#### Examples
+### Examples
 
 ```js
 import BluetoothTransport from "@ledgerhq/react-native-hw-transport-ble";
 ```
 
-#### exchange
+### exchange
 
 communicate with a BLE transport
 
-##### Parameters
+#### Parameters
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>**
 
-#### isSupported
+### isSupported
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>**
 
-#### setLogLevel
+### setLogLevel
 
-##### Parameters
+#### Parameters
 
 -   `level` **any**
 
-#### observeState
+### observeState
 
 TODO could add this concept in all transports
 observe event with { available: bool, string } // available is generic, type is specific
 an event is emit once and then listened
 
-##### Parameters
+#### Parameters
 
 -   `observer` **any**
 
-#### listen
+### listen
 
 Scan for bluetooth Ledger devices
 
-##### Parameters
+#### Parameters
 
 -   `observer` **any**
 
-#### open
+### open
 
 Open a BLE transport
 
-##### Parameters
+#### Parameters
 
 -   `deviceOrId` **any**
 
-#### disconnect
+### disconnect
 
 Globally disconnect a BLE device by its ID
 
-##### Parameters
+#### Parameters
 
 -   `id` **any**
