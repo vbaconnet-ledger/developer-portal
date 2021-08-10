@@ -75,10 +75,15 @@ root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
 
 You can exit the image, with the command `exit`.
 
+<!--  -->
+{% include alert.html style="primary" text="If you change the <code>BOLOS_SDK</code> variable betwin two builds, you can first use <code>make clean</code> to avoid errors." %}
+<!--  -->
+
+
 ## Load your app onto a Nano S
 
 <!--  -->
-{% include alert.html style="primary" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <a href='https://developers.ledger.com/docs/speculos/start-here/'>Speculos</a> for loading to work." %}
+{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <a href='https://developers.ledger.com/docs/speculos/start-here/'>Speculos</a> for loading to work." %}
 <!--  -->
 
 ### If you are a Linux user
