@@ -1,8 +1,4 @@
-- title: Nano App development
-  docs:
-  - transport/introduction
-
-- title: Connexion betwin a third party app and a device
+- title: Implement Transport
   docs:
   - transport/introduction
   - transport/webhid
@@ -12,6 +8,10 @@
   - transport/node-ble
   - transport/react-native-hid
   - transport/react-native-ble
+
+- title: Implement a Nano App protocol
+  docs:
+  - transport/app-protocol
 
 - title: Test the connexion
   docs:
