@@ -14,7 +14,7 @@ layout: doc_ci
 You will need to provide a JS implementation to interact with your coin Nano app on the Ledger Nano.
 These bindings can either be implemented directly into live-common (as a folder in your coin family folder), or published in [LedgerJS/packages](https://github.com/LedgerHQ/ledgerjs) as a package - i.e. `hw-app-mycoin`.
 
-## Minimal Implementationn
+## Minimal Implementation
 
 The app implementation should provide at least 2 methods:
 * `getAddress(path: string, display?: bool)`: derive an address providing the BIP32 path
