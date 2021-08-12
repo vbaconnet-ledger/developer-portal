@@ -1,6 +1,10 @@
-- title: Implement Transport
+- title: Communication betwin a companion app and a Ledger Nano
   docs:
-  - transport/introduction
+  - transport/ledgerjs
+  - transport/U2F
+
+- title: Transport implementation
+  docs:
   - transport/webhid
   - transport/webusb
   - transport/web-ble
