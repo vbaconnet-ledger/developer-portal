@@ -13,8 +13,10 @@
   {% assign docs = site.data.navigation_docs_et | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "platform-app"  %}
   {% assign docs = site.data.navigation_docs_pa | map: 'docs' | join: ',' | split: ',' %}
-  {% elsif category == "transport"  %}
+{% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "repl"  %}
+  {% assign docs = site.data.navigation_docs_re | map: 'docs' | join: ',' | split: ',' %}
 {% endif %}
 
 

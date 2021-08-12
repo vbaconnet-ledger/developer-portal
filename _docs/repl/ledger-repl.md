@@ -3,7 +3,7 @@ title: Ledger REPL
 subtitle:
 tags: []
 author:
-layout: doc_tr
+layout: doc_re
 ---
 
 #### Sections in this article

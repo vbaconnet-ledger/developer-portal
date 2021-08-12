@@ -19,6 +19,8 @@ left:
 
     - title: Speculos
       url: /docs/speculos/start-here
+    - title: Ledger REPL
+      url: /docs/repl/ledger-repl
 
   - title: Contribution
     url: /contribution
