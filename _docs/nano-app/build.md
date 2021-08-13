@@ -112,15 +112,16 @@ First, make sure you have installed the prerequisited packages:
   * python-dev (python 2.7)
   * virtualenv
 
-Then install the ledgerblue package:
+Then, outside of your application folder, install the ledgerblue package in a virtual environment:
 
 ```bash
 virtualenv ledger
 source ledger/bin/activate
 pip install ledgerblue
+deactivate
 ```
 
-In your virtual environment, define the udev rules:
+Define the udev rules:
 
 ```bash
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
@@ -130,11 +131,12 @@ Finally, locally clone the Nano S SDK and store it in `BOLOS_SDK`:
 
 ```bash
 git clone https://github.com/LedgerHQ/nanos-secure-sdk.git nanos-secure-sdk
-export BOLOS_SDK=nanos-secure-sdk
+export BOLOS_SDK=<path-to>nanos-secure-sdk
 ```
 
 #### Load and delete
 
-Move to the root of the application file and use `make load` to load the app to the Nano S and `make delete` to delete it.
-
-You can deactivate the virtual environment with the command `deactivate`.
+1. Plug and unlock the Nano S.
+2. Move to the root of the application file and activate the virtual environment with `source ledger/bin/activate`.
+3. Use `make load` to load the app to the Nano S and `make delete` to delete it.
+4. You can deactivate the virtual environment with the command `deactivate`.
