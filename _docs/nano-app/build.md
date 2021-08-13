@@ -1,5 +1,5 @@
 ---
-title: Build your app
+title: How-to
 subtitle:
 tags: []
 author:
@@ -11,9 +11,12 @@ layout: doc_na
 * TOC
 {:toc}
 
+
 In this article we will explain how to compile a Nano application and how to load it to a Nano S.
 
-We provide a container image that contains all dependencies to compile an application for Nano S/X. To use this container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/).
+[Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X.
+
+To use this container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
 
 ## Build the container image
 
@@ -82,6 +85,12 @@ You can exit the image, with the command `exit`.
 
 ## Load your app onto a Nano S
 
+If you wish to load applications on your device, you will need to add the appropriate `udev` rules.
+
+``` bash
+wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+```
+
 <!--  -->
 {% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <a href='https://developers.ledger.com/docs/speculos/start-here/'>Speculos</a> for loading to work." %}
 <!--  -->
@@ -94,14 +103,14 @@ If you want to load and delete the app directly from the container image. You ne
 $ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" --privileged ledger-app-builder:latest
 ```
 
-(Do you need to exit the image before make load and delete ?)
-
-Move to the root of the application file and use `make load` to load the app to the Nano S and `make delete` to delete it.
-
+Then:
+1. Plug and unlock the Nano S.
+3. Use `make load` to load the app to the Nano S and `make delete` to delete it.
+3. You can exit the image, with the command `exit`.
 
 ### If you are a Windows or a Mac user
 
-To load your application, use `ledgerblue`, a package that contains Python tools to communicate with Ledger devices and manage applications life cycle. It is recommended to install this package in a Virtual Environment in your native environment (not a Docker image) to avoid hidapi issues.
+Once you compiled your application with the container image, to load your application, you will need `ledgerblue`. `ledgerblue` is a package that contains Python tools to communicate with Ledger devices and manage applications life cycle. It is recommended to install this package in a Virtual Environment in your native environment (not a Docker image) to avoid hidapi issues.
 
 
 #### Install the package
@@ -119,12 +128,6 @@ virtualenv ledger
 source ledger/bin/activate
 pip install ledgerblue
 deactivate
-```
-
-Define the udev rules:
-
-```bash
-wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
 
 Finally, locally clone the Nano S SDK and store it in `BOLOS_SDK`:

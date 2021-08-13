@@ -2,10 +2,9 @@
   docs:
   - nano-app/introduction
 
-- title: Getting Started
+- title: Build and load an Nano App
   docs:
-  - nano-app/quickstart
-  - nano-app/deepdive
+  - nano-app/build
 
 - title: Security best practices
   docs:
