@@ -8,7 +8,7 @@
   - transport/webhid
   - transport/webusb
   - transport/web-ble
-  - transport/node-hid
-  - transport/node-ble
+  - transport/node-hid-singleton
+  - transport/node-hid-noevents
   - transport/react-native-hid
   - transport/react-native-ble

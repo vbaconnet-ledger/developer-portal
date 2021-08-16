@@ -1,5 +1,5 @@
 ---
-title: React native Bluetooth
+title: React native BLE
 subtitle:
 tags: []
 author:
@@ -11,13 +11,7 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## @ledgerhq/react-native-hw-transport-ble
-
-**Ledger Hardware Wallet Bluetooth BLE transport for React Native.**
-
-    yarn add @ledgerhq/react-native-hw-transport-ble
-
-### Pre-requisite
+## Pre-requisite
 
 -   [**Install and link library `react-native-ble-plx` + configure your app for Bluetooth permissions**](https://github.com/Polidea/react-native-ble-plx) (Open the link for documentation)
 -   [for Android] **a recent version of JavaScriptCore** instead of React Native's default one. The simplest way is to set up [jsc-android](https://www.npmjs.com/package/jsc-android). In future, [we expect](https://github.com/facebook/react-native/issues/19737) React Native to upgrade JSC for Android.
@@ -37,7 +31,7 @@ Read again our Pre-requisites, you must set up jsc-android, alternatively you ca
 
 `@ledgerhq/react-native-hw-transport-ble` works like any of our `@ledgerhq/hw-transport` libraries.
 
-The difference here is that the `listen()` is costy and you likely don't want to always scan for devices, you would better save a selected device as "known" to suggest it to user later.
+The difference here is that the listen() is costy and you likely don't want to always scan for devices, you would better save a selected device as "known" to suggest it to user later.
 
 > Important: you will also have to deal with specifics of Bluetooth BLE, for instance, you need to request the LOCATION permission on Android!
 
@@ -99,7 +93,6 @@ const transport = await TransportBLE.open(deviceId); // deviceId can come from p
 
 **and now we can just use the transport like any other Ledger transport!**
 
-
 ## Implementation
 
 ### Parameters
@@ -111,11 +104,11 @@ const transport = await TransportBLE.open(deviceId); // deviceId can come from p
 
 ### Examples
 
-```js
+```javascript
 import BluetoothTransport from "@ledgerhq/react-native-hw-transport-ble";
 ```
 
-### exchange
+#### exchange
 
 communicate with a BLE transport
 
