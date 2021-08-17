@@ -85,15 +85,17 @@ You can exit the image, with the command `exit`.
 
 ## Load your app onto a Nano S
 
+<!--  -->
+{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <a href='https://developers.ledger.com/docs/speculos/start-here/'>Speculos</a> for loading to work." %}
+<!--  -->
+
+### Define the udev rules
+
 If you wish to load applications on your device, you will need to add the appropriate `udev` rules.
 
 ``` bash
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
-
-<!--  -->
-{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <a href='https://developers.ledger.com/docs/speculos/start-here/'>Speculos</a> for loading to work." %}
-<!--  -->
 
 ### If you are a Linux user
 
@@ -143,3 +145,7 @@ export BOLOS_SDK=<path-to>nanos-secure-sdk
 2. Move to the root of the application file and activate the virtual environment with `source ledger/bin/activate`.
 3. Use `make load` to load the app to the Nano S and `make delete` to delete it.
 4. You can deactivate the virtual environment with the command `deactivate`.
+
+<!--  -->
+{% include alert.html style="primary" text="Before loading an application, make sure you have enough space on the device." %}
+<!--  -->
