@@ -5,8 +5,8 @@
 
 - title: Transport implementation
   docs:
-  - transport/webhid
   - transport/webusb
+  - transport/webhid
   - transport/web-ble
   - transport/node-hid-singleton
   - transport/node-hid-noevents
@@ -15,4 +15,4 @@
 
 - title: App protocol implementation
   docs:
-  - transport/apps-protocol
+  - transport/app-protocol
