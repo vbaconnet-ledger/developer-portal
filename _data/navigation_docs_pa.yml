@@ -1,15 +1,11 @@
-- title: Platform applications
+- title: Contents
   docs:
   - platform-app/context
 
 - title: Ledger Live Platform SDK
-  subfolderitems:
-    - title: Table of contents
-      docs:
-      - platform-app/modules
-    - title: Enumerations
-      docs:
-      - platform-app/device-model
-      - platform-app/exchange-type
-      - platform-app/families
-      - platform-app/fees-level
+  docs:
+  - platform-app/classes
+  - platform-app/modules
+  - platform-app/exchange-type
+  - platform-app/fees-level
+  - platform-app/transport

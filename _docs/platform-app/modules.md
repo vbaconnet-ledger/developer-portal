@@ -5,58 +5,6 @@ tags: []
 layout: doc_pa
 ---
 
-## Table of contents
-
-### Enumerations
-
-- [DeviceModel](../device-model)
-- [ExchangeType](../exchange-types)
-- [FAMILIES](../families)
-- [FeesLevel](../fees-level)
-
-### Classes
-
-- [Mock](classes/Mock.md)
-- [WindowMessageTransport](classes/WindowMessageTransport.md)
-- [default](classes/default.md)
-
-### Interfaces
-
-- [BitcoinTransaction](interfaces/BitcoinTransaction.md)
-- [EthereumTransaction](interfaces/EthereumTransaction.md)
-- [RawBitcoinTransaction](interfaces/RawBitcoinTransaction.md)
-- [RawEthereumTransaction](interfaces/RawEthereumTransaction.md)
-- [RawTransactionCommon](interfaces/RawTransactionCommon.md)
-- [TransactionCommon](interfaces/TransactionCommon.md)
-- [Transport](interfaces/Transport.md)
-
-### Type aliases
-
-- [Account](modules.md#account)
-- [ApplicationDetails](modules.md#applicationdetails)
-- [Currency](modules.md#currency)
-- [DeviceDetails](modules.md#devicedetails)
-- [EcdsaSignature](modules.md#ecdsasignature)
-- [EstimatedFees](modules.md#estimatedfees)
-- [ExchangePayload](modules.md#exchangepayload)
-- [MessageHandler](modules.md#messagehandler)
-- [Operation](modules.md#operation)
-- [RawAccount](modules.md#rawaccount)
-- [RawSignedTransaction](modules.md#rawsignedtransaction)
-- [RawTransaction](modules.md#rawtransaction)
-- [SignedTransaction](modules.md#signedtransaction)
-- [Transaction](modules.md#transaction)
-- [Unit](modules.md#unit)
-
-### Functions
-
-- [deserializeAccount](modules.md#deserializeaccount)
-- [deserializeSignedTransaction](modules.md#deserializesignedtransaction)
-- [deserializeTransaction](modules.md#deserializetransaction)
-- [serializeAccount](modules.md#serializeaccount)
-- [serializeSignedTransaction](modules.md#serializesignedtransaction)
-- [serializeTransaction](modules.md#serializetransaction)
-
 ## Type aliases
 
 ### Account
