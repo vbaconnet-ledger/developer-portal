@@ -14,7 +14,7 @@ layout: doc_tr
 
 A companion application, or wallet application, contains the business logic and is (typically) a GUI, running on a computer, a phone, or a web browser, connected to the Ledger device.
 
-This documentation will help you develop either a JavaScript web wallet, a Node.js desktop wallet, or a React Native mobile app.
+This documentation will help you implement transport with a Nano device either with a JavaScript web wallet, a Node.js desktop wallet, or a React Native mobile app.
 
 (SHOULD WE ADD SOMETHING ABOUT A GENERAL SDK COMING IN THE FUTURE?)
 
@@ -27,8 +27,8 @@ To communicate with a Ledger device, you first need to identify which transport(
 
 | Channels    | U2F/WebAuthn | HID | WebUSB | Bluetooth |
 |-------------|--------------|-----|--------|-----------|
-|<b>Nano S</b>| DEPRECATED<sup>1</sup> | YES | YES    | NO        |
-|<b>Nano X</b>| DEPRECATED<sup>1</sup> | YES | YES    | YES       |
+|<b>Nano S</b>| DEPRECATED   | YES | YES    | NO        |
+|<b>Nano X</b>| DEPRECATED   | YES | YES    | YES       |
 
 <!--  -->
 {% include alert.html style="danger" text="<code>@ledgerhq/hw-transport-u2f</code> and <code>@ledgerhq/hw-transport-webauthn</code> have been deprecated.<br><b>We strongly advise to migrate to <a href='../webusb'><code>@ledgerhq/hw-transport-webusb</code></a> or <a href='../webhid'><code>@ledgerhq/hw-transport-webhid</code></a></b>" %}
@@ -69,3 +69,18 @@ and some derivates:
 {% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
 <!--  -->
 
+## Basic gist
+
+```js
+import Transport from "@ledgerhq/hw-transport-node-hid";
+// import Transport from "@ledgerhq/hw-transport-webusb";
+// import Transport from "@ledgerhq/react-native-hw-transport-ble";
+import AppBtc from "@ledgerhq/hw-app-btc";
+const getBtcAddress = async () => {
+  const transport = await Transport.create();
+  const btc = new AppBtc(transport);
+  const result = await btc.getWalletPublicKey("44'/0'/0'/0/0");
+  return result.bitcoinAddress;
+};
+getBtcAddress().then(a => console.log(a));
+```

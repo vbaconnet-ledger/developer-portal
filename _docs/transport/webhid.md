@@ -23,6 +23,9 @@ Please check [hw-transport-webusb documentation](../hw-transport-webusb) because
 
 WebUSB is currently only supported on Google Chrome / Chromium DEV version and by explicitly enabling `chrome://flags/#enable-experimental-web-platform-features`
 
+## Install the package
+
+`yarn add @ledgerhq/hw-transport-webhid`
 
 ## Implementation
 

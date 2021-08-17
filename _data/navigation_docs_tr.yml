@@ -1,14 +1,25 @@
-- title: Communication betwin a companion app and a Ledger Nano
+- title: Communication between a companion app and a Ledger Nano
   docs:
   - transport/ledgerjs
   - transport/U2F
 
 - title: Transport implementation
+  subfolderitems:
+    - title: Web app
+      docs:
+      - transport/webhid
+      - transport/webusb
+      - transport/web-ble
+    - title: Desktop app
+      docs:
+      - transport/node-hid-singleton
+      - transport/node-hid-noevents
+    - title: Mobile app
+      docs:
+      - transport/react-native-hid
+      - transport/react-native-ble
+
+
+- title: App protocol implementation
   docs:
-  - transport/webhid
-  - transport/webusb
-  - transport/web-ble
-  - transport/node-hid-singleton
-  - transport/node-hid-noevents
-  - transport/react-native-hid
-  - transport/react-native-ble
+  - transport/apps-protocol

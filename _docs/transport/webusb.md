@@ -36,6 +36,9 @@ WebUSB is currently only supported on Google Chrome / Chromium.
 -   In Windows, [WebUSB does not work out of the box](https://github.com/WICG/webusb/issues/143) but you can fix it with [Zadig](https://zadig.akeo.ie/).
 -   In Android Chrome it works.
 
+## Install the package
+
+`yarn add @ledgerhq/hw-transport-webusb`
 
 ## Implementation
 

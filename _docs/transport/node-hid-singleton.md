@@ -11,7 +11,11 @@ layout: doc_tr
 * TOC
 {:toc}
 
-**[Node]**/Electron **(HID)** – uses `node-hid` and `usb-detection`. Keep transport opened and re-use it as a singleton, one device at a time on a computer but more robust implementation.
+## Install the package
+
+`yarn add @ledgerhq/hw-transport-node-singleton`
+
+This package uses `node-hid` and `usb-detection`. Keep transport opened and re-use it as a singleton, one device at a time on a computer but more robust implementation.
 
 <!--  -->
 {% include alert.html style="success" text='It is recommended not to use <code>hw-transport-node-hid\*</code> transport in the "renderer thread" but instead to spawn a dedicated thread. Otherwise the USB connection is blocking the thread and can cause performance issues' %}

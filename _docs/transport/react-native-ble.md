@@ -11,6 +11,10 @@ layout: doc_tr
 * TOC
 {:toc}
 
+## Install the package
+
+`yarn add @ledgerhq/react-native-hw-transport-ble`
+
 ## Pre-requisite
 
 -   [**Install and link library `react-native-ble-plx` + configure your app for Bluetooth permissions**](https://github.com/Polidea/react-native-ble-plx) (Open the link for documentation)

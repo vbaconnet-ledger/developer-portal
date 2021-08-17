@@ -11,6 +11,10 @@ layout: doc_tr
 * TOC
 {:toc}
 
+## Install the package
+
+`yarn add @ledgerhq/react-native-hid`
+
 ## Implementation
 
 ### Parameters

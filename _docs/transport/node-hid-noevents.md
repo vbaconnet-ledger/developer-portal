@@ -11,7 +11,11 @@ layout: doc_tr
 * TOC
 {:toc}
 
-**[Node]**/Electron **(HID)** – uses **only** `node-hid`. Does not provide USB events.
+## Install the package
+
+`yarn add @ledgerhq/hw-transport-node-noevents`
+
+This package uses **only** `node-hid`. Does not provide USB events.
 
 ## Implementation
 
