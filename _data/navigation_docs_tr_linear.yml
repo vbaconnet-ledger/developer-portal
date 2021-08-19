@@ -10,6 +10,7 @@
   - transport/web-ble
   - transport/node-hid-singleton
   - transport/node-hid-noevents
+  - transport/node-speculos
   - transport/react-native-hid
   - transport/react-native-ble
 
