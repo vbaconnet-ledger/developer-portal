@@ -13,7 +13,10 @@ layout: doc_tr
 
 ## Low Level implementation
 
-As soon as your <i>Transport</i> is created, you can already communicate by implementing the apps protocol (refer to the application documentations, for instance [BTC app](https://github.com/LedgerHQ/ledger-app-btc/blob/master/doc/btc.asc) and [ETH app](https://github.com/LedgerHQ/ledger-app-eth/blob/master/doc/ethapp.asc)).
+As soon as your <i>Transport</i> is created, you can already communicate by implementing the apps protocol.
+The ways to implement a Nano App protocol will vary, depending on the way the community developed their Nano app. We recommend you to refer to the application documentations, for instance [BTC app](https://github.com/LedgerHQ/ledger-app-btc/blob/master/doc/btc.asc) and [ETH app](https://github.com/LedgerHQ/ledger-app-eth/blob/master/doc/ethapp.asc).
+
+Some communities have developed JS packages for a higher level implementation.
 
 
 ## High Level implementation

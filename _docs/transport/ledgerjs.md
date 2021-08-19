@@ -46,6 +46,9 @@ To communicate with a Ledger device, you first need to identify which transport(
 
 1. Via Android Chrome
 
+### Summary of web browsers support
+
+You can check the following link to check the compatibility between a web browser and [WebHID](https://caniuse.com/webhid), [WebUSB](https://caniuse.com/webusb) and [Web Bluetooth](https://caniuse.com/web-bluetooth).
 
 ## A unified Transport interface
 
