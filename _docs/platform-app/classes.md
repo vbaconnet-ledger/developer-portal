@@ -17,77 +17,18 @@ layout: doc_pa
 
 • **new default**(`transport`, `logger?`)
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
-| `transport` | [`Transport`](../interfaces/Transport.md) |
+| `transport` | [`Transport`](../transport) |
 | `logger` | `default` |
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:46](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L46)
 
-## Properties
-
-### logger
-
-• `Private` **logger**: `default`
-
-#### Defined in
-
-[LedgerLivePlatformSDK/index.ts:42](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L42)
-
-___
-
-### serverAndClient
-
-• `Private` `Optional` **serverAndClient**: `JSONRPCServerAndClient`<`void`, `void`\>
-
-#### Defined in
-
-[LedgerLivePlatformSDK/index.ts:44](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L44)
-
-___
-
-### transport
-
-• `Private` **transport**: [`Transport`](../interfaces/Transport.md)
-
-#### Defined in
-
-[LedgerLivePlatformSDK/index.ts:40](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L40)
-
 ## Methods
-
-### \_request
-
-▸ `Private` **_request**<`T`\>(`method`, `params?`): `Promise`<`T`\>
-
-Wrapper to api request for logging
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `method` | `string` |
-| `params?` | `JSONRPCParams` |
-
-#### Returns
-
-`Promise`<`T`\>
-
-#### Defined in
-
-[LedgerLivePlatformSDK/index.ts:54](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L54)
-
-___
 
 ### bridgeApp
 
@@ -95,26 +36,26 @@ ___
 
 Open a bridge to an application to exchange APDUs with a device application
 
-#### Type parameters
+**Type parameters**
 
 | Name |
 | :------ |
 | `Result` |
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
 | `_appName` | `string` |
 | `_handler` | <Result\>(`deviceBridge`: `default`) => `Promise`<`Result`\> |
 
-#### Returns
+**Returns**
 
 `Promise`<`Result`\>
 
 The result of the handler function
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:81](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L81)
 
@@ -126,25 +67,25 @@ ___
 
 Open a bridge to a the device dashboard to exchange APDUs
 
-#### Type parameters
+**Type parameters**
 
 | Name |
 | :------ |
 | `Result` |
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
 | `_handler` | <Result\>(`deviceBridge`: `default`) => `Promise`<`Result`\> |
 
-#### Returns
+**Returns**
 
 `Promise`<`Result`\>
 
 The result of the handler function
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:94](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L94)
 
@@ -156,20 +97,20 @@ ___
 
 Broadcast a signed transaction through Ledger Live, providing an optimistic Operation given by signTransaction
 
-#### Parameters
+**Parameters**
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `accountId` | `string` | LL id of the account |
 | `signedTransaction` | [`SignedTransaction`](../modules#signedtransaction) | a signed transaction given by LL when signing |
 
-#### Returns
+**Returns**
 
 `Promise`<`string`\>
 
 - hash of the transaction
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:107](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L107)
 
@@ -181,7 +122,7 @@ ___
 
 Complete an exchange process by passing by the exchange content and its signature.
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
@@ -189,11 +130,11 @@ Complete an exchange process by passing by the exchange content and its signatur
 | `_payloadSignature` | [`EcdsaSignature`](../modules#ecdsasignature) |
 | `_txFeesLevel` | [`FeesLevel`](../fees-level) |
 
-#### Returns
+**Returns**
 
 `Promise`<`void`\>
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:123](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L123)
 
@@ -205,11 +146,11 @@ ___
 
 Connect the SDK to the Ledger Live instance
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:134](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L134)
 
@@ -221,11 +162,11 @@ ___
 
 Disconnect the SDK
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:150](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L150)
 
@@ -237,20 +178,20 @@ ___
 
 Estimate fees required to successfully broadcast a transaction.
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
 | `_accountId` | `string` |
 | `_transaction` | [`Transaction`](../modules#transaction) |
 
-#### Returns
+**Returns**
 
 `Promise`<[`EstimatedFees`](../modules#estimatedfees)\>
 
 - Estimated fees for 3 level of confirmation speed
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:163](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L163)
 
@@ -262,13 +203,13 @@ ___
 
 Get information about a currently connected device (firmware version...)
 
-#### Returns
+**Returns**
 
 `Promise`<[`DeviceDetails`](../modules#devicedetails)\>
 
 Informations about a currently connected device
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:175](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L175)
 
@@ -287,13 +228,13 @@ Start the exchange process by generating a nonce on Ledger device
 | `_exchangeType` | [`ExchangeType`](../exchange-type) |
 | `_partnerName` | `string` |
 
-#### Returns
+**Returns**
 
 `Promise`<`string`\>
 
 The nonce of the exchange
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:186](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L186)
 
@@ -305,11 +246,11 @@ ___
 
 List accounts added by user on Ledger Live
 
-#### Returns
+**Returns**
 
 `Promise`<[`Account`](../modules#account)[]\>
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:198](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L198)
 
@@ -321,13 +262,13 @@ ___
 
 List applications opened on a currently connected device
 
-#### Returns
+**Returns**
 
 `Promise`<[`ApplicationDetails`](../modules#applicationdetails)[]\>
 
 The list of applications
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:209](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L209)
 
@@ -339,17 +280,17 @@ ___
 
 List crypto-currencies supported by Ledger Live, providing filters by name or ticker
 
-#### Parameters
+**Parameters**
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `params?` | `ListCurrenciesParams` | filters for currencies |
 
-#### Returns
+**Returns**
 
 `Promise`<[`Currency`](../modules#currency)[]\>
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:219](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L219)
 
@@ -361,19 +302,19 @@ ___
 
 Let user verify it's account address on his device through Ledger Live
 
-#### Parameters
+**Parameters**
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `accountId` | `string` | LL id of the account |
 
-#### Returns
+**Returns**
 
 `Promise`<`string`\>
 
 - the verified address
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:229](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L229)
 
@@ -385,17 +326,17 @@ ___
 
 Let user choose an account in a Ledger Live, providing filters for choosing currency or allowing add account.
 
-#### Parameters
+**Parameters**
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `params` | `RequestAccountParams` | parameters for the request modal |
 
-#### Returns
+**Returns**
 
 `Promise`<[`Account`](../modules#account)\>
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:239](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L239)
 
@@ -407,7 +348,7 @@ ___
 
 Let user sign a transaction through Ledger Live
 
-#### Parameters
+**Parameters**
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
@@ -415,11 +356,11 @@ Let user sign a transaction through Ledger Live
 | `transaction` | [`Transaction`](../modules#transaction) | the transaction in the currency family-specific format |
 | `params?` | `SignTransactionParams` | parameters for the sign modal |
 
-#### Returns
+**Returns**
 
 `Promise`<[`SignedTransaction`](../modules#signedtransaction)\>
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:256](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L256)
 
@@ -431,18 +372,18 @@ ___
 
 Synchronize an account with its network and return an updated view of the account
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
 | `_accountId` | `string` |
 
-#### Returns
+**Returns**
 
 `Promise`<[`Account`](../modules#account)\>
 
 An updated view of the account
 
-#### Defined in
+**Defined in**
 
 [LedgerLivePlatformSDK/index.ts:279](https://github.com/LedgerHQ/ledger-live-platform-sdk/blob/248c4d7/src/LedgerLivePlatformSDK/index.ts#L279)
