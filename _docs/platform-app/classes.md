@@ -221,7 +221,7 @@ ___
 
 Start the exchange process by generating a nonce on Ledger device
 
-#### Parameters
+**Parameters**
 
 | Name | Type |
 | :------ | :------ |
