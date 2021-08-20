@@ -31,18 +31,18 @@ To communicate with a Ledger device, you first need to identify which transport(
 |<b>Nano X</b>| DEPRECATED   | YES | YES    | YES       |
 
 <!--  -->
-{% include alert.html style="danger" text="<code>@ledgerhq/hw-transport-u2f</code> and <code>@ledgerhq/hw-transport-webauthn</code> have been deprecated.<br><b>We strongly advise to migrate to <a href='../webusb'><code>@ledgerhq/hw-transport-webusb</code></a> or <a href='../webhid'><code>@ledgerhq/hw-transport-webhid</code></a></b>" %}
+{% include alert.html style="danger" text="<code>@ledgerhq/hw-transport-u2f</code> and <code>@ledgerhq/hw-transport-webauthn</code> have been deprecated.<br><b>We strongly advise to migrate to <code><a href='../webusb'>@ledgerhq/hw-transport-webusb</a></code> or <code><a href='../webhid'>@ledgerhq/hw-transport-webhid</a></code></b>" %}
 <!--  -->
 
 ### Summary of implementations available per platform
 
 
-|    Platforms          |                                     HID                               |                         WebUSB                             |                            Bluetooth                              |
-|-----------------------|-----------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
-|<b>Web</b>             |       <a href='../webhid'>`hw-transport-webhid`</a>                   | <a href='../webhid'>`hw-transport-webusb`</a>              | <a href='../web-ble'>`hw-transport-web-ble`</a>                   |
-|<b>Electron/Node.js</b>| <a href='../node-hid-singleton'>`hw-transport-node-hid-singleton`</a> | NO                                                         | NO                                                                |
-|<b>iOS</b>             | NO                                                                    | NO                                                         | <a href='../react-native-ble'>`react-native-hw-transport-ble`</a> |
-|<b>Android</b>         | <a href='../react-native-hid'>`react-native-hid`</a>                  | <a href='../webusb'>`hw-transport-webusb`</a><sup>1</sup>  | <a href='../react-native-ble'>`react-native-hw-transport-ble`</a> |
+|    Platforms          |                                            HID                                   |                                 WebUSB                                |                                  Bluetooth                                   |
+|-----------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------|
+|<b>Web</b>             | <code><a href='../webhid'>hw-transport-webhid</a></code>                         | <code><a href='../webhid'>hw-transport-webusb</a> </code>             | <code><a href='../web-ble'>hw-transport-web-ble</a></code>                   |
+|<b>Electron/Node.js</b>| <code><a href='../node-hid-singleton'>hw-transport-node-hid-singleton</a></code> | NO                                                                    | NO                                                                           |
+|<b>iOS</b>             | NO                                                                               | NO                                                                    | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
+|<b>Android</b>         | <code><a href='../react-native-hid'>react-native-hid</a></code>                  | <code><a href='../webusb'>hw-transport-webusb</a></code><sup>1</sup>  | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
 
 1. Via Android Chrome
 
