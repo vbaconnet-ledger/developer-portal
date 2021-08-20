@@ -5,6 +5,11 @@ tags: []
 layout: doc_pa
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+
 ## Type aliases
 
 ### Account
