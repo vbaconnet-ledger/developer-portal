@@ -63,7 +63,7 @@ ___
 | `name` | `string` |
 | `ticker` | `string` |
 | `type` | `string` |
-| `units` | [`Unit`](modules.md#unit)[] |
+| `units` | <code><a href='modules#unit'>Unit</a></code>[] |
 
 **Defined in**
 
@@ -81,7 +81,7 @@ Information about a device
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `modelId` | <code><a href='enums/DeviceModel.md'>DeviceModel</a></code> | The model of the device (Nano S, Nano X...) |
+| `modelId` | <code><a href='enums/DeviceModel'>DeviceModel</a></code> | The model of the device (Nano S, Nano X...) |
 | `version` | `string` | The version of the firmware |
 
 **Defined in**
@@ -171,7 +171,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `expirationDate` | `Date` \| ``null`` |
-| `operation` | <code><a href='modules.md#operation'>Operation</a></code> |
+| `operation` | <code><a href='modules#operation'>Operation</a></code> |
 | `signature` | `string` |
 | `signatureRaw?` | `unknown` |
 
@@ -183,7 +183,7 @@ ___
 
 ### Transaction
 
-Ƭ **Transaction**: <code><a href='interfaces/EthereumTransaction.md'>EthereumTransaction</a></code> \| <code><a href='interfaces/BitcoinTransaction.md'>BitcoinTransaction</a></code> \| `AlgorandTransaction` \| `CryptoOrgTransaction` \| `RippleTransaction` \| `CosmosTransaction` \| `TezosTransaction` \| `PolkadotTransaction` \| `StellarTransaction` \| `TronTransaction`
+Ƭ **Transaction**: <code><a href='interfaces/EthereumTransaction'>EthereumTransaction</a></code> \| <code><a href='interfaces/BitcoinTransaction'>BitcoinTransaction</a></code> \| `AlgorandTransaction` \| `CryptoOrgTransaction` \| `RippleTransaction` \| `CosmosTransaction` \| `TezosTransaction` \| `PolkadotTransaction` \| `StellarTransaction` \| `TronTransaction`
 
 **Defined in**
 
