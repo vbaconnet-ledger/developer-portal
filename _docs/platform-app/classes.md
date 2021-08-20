@@ -174,7 +174,7 @@ ___
 
 ### estimateTransactionFees
 
-▸ **estimateTransactionFees**(`_accountId`, `_transaction`): `Promise`<<code><a href='../modules#estimatedfees'>EstimatedFees</a></code>\>
+▸ **estimateTransactionFees**(`_accountId`, `_transaction`): `Promise` < <code><a href='../modules#estimatedfees'>EstimatedFees</a></code> \>
 
 Estimate fees required to successfully broadcast a transaction.
 
@@ -187,7 +187,7 @@ Estimate fees required to successfully broadcast a transaction.
 
 **Returns**
 
-`Promise`<<code><a href='../modules#estimatedfees'>EstimatedFees</a></code>\>
+`Promise`< <code><a href='../modules#estimatedfees'>EstimatedFees</a></code> \>
 
 - Estimated fees for 3 level of confirmation speed
 
@@ -199,13 +199,13 @@ ___
 
 ### getDeviceInfo
 
-▸ **getDeviceInfo**(): `Promise`<<code><a href='../modules#devicedetails'>DeviceDetails</a></code>\>
+▸ **getDeviceInfo**(): `Promise`< <code><a href='../modules#devicedetails'>DeviceDetails</a></code> \>
 
 Get information about a currently connected device (firmware version...)
 
 **Returns**
 
-`Promise`<<code><a href='../modules#devicedetails'>DeviceDetails</a></code>\>
+`Promise`< <code><a href='../modules#devicedetails'>DeviceDetails</a></code> \>
 
 Informations about a currently connected device
 
@@ -242,13 +242,13 @@ ___
 
 ### listAccounts
 
-▸ **listAccounts**(): `Promise`<<code><a href='../modules#account'>Account</a></code>[]\>
+▸ **listAccounts**(): `Promise`< <code><a href='../modules#account'>Account</a></code> []\>
 
 List accounts added by user on Ledger Live
 
 **Returns**
 
-`Promise`<<code><a href='../modules#account'>Account</a></code>[]\>
+`Promise`< <code><a href='../modules#account'>Account</a></code> []\>
 
 **Defined in**
 
@@ -258,13 +258,13 @@ ___
 
 ### listApps
 
-▸ **listApps**(): `Promise`<<code><a href='../modules#applicationdetails'>ApplicationDetails</a></code>[]\>
+▸ **listApps**(): `Promise`< <code><a href='../modules#applicationdetails'>ApplicationDetails</a></code> []\>
 
 List applications opened on a currently connected device
 
 **Returns**
 
-`Promise`<<code><a href='../modules#applicationdetails'>ApplicationDetails</a></code>[]\>
+`Promise`< <code><a href='../modules#applicationdetails'>ApplicationDetails</a></code> []\>
 
 The list of applications
 
@@ -276,7 +276,7 @@ ___
 
 ### listCurrencies
 
-▸ **listCurrencies**(`params?`): `Promise`<<code><a href='../modules#currency'>Currency</a></code>[]\>
+▸ **listCurrencies**(`params?`): `Promise`< <code><a href='../modules#currency'>Currency</a></code> []\>
 
 List crypto-currencies supported by Ledger Live, providing filters by name or ticker
 
@@ -288,7 +288,7 @@ List crypto-currencies supported by Ledger Live, providing filters by name or ti
 
 **Returns**
 
-`Promise`<<code><a href='../modules#currency'>Currency</a></code>[]\>
+`Promise`< <code><a href='../modules#currency'>Currency</a></code> []\>
 
 **Defined in**
 
@@ -322,7 +322,7 @@ ___
 
 ### requestAccount
 
-▸ **requestAccount**(`params`): `Promise`<<code><a href='../modules#account'>Account</a></code>\>
+▸ **requestAccount**(`params`): `Promise`< <code><a href='../modules#account'>Account</a></code> \>
 
 Let user choose an account in a Ledger Live, providing filters for choosing currency or allowing add account.
 
@@ -334,7 +334,7 @@ Let user choose an account in a Ledger Live, providing filters for choosing curr
 
 **Returns**
 
-`Promise`<<code><a href='../modules#account'>Account</a></code>\>
+`Promise`< <code><a href='../modules#account'>Account</a></code> \>
 
 **Defined in**
 
@@ -344,7 +344,7 @@ ___
 
 ### signTransaction
 
-▸ **signTransaction**(`accountId`, `transaction`, `params?`): `Promise`<<code><a href='../modules#signedtransaction'>SignedTransaction</a></code>\>
+▸ **signTransaction**(`accountId`, `transaction`, `params?`): `Promise`< <code><a href='../modules#signedtransaction'>SignedTransaction</a></code> \>
 
 Let user sign a transaction through Ledger Live
 
@@ -358,7 +358,7 @@ Let user sign a transaction through Ledger Live
 
 **Returns**
 
-`Promise`<<code><a href='../modules#signedtransaction'>SignedTransaction</a></code>\>
+`Promise`< <code><a href='../modules#signedtransaction'>SignedTransaction</a></code> \>
 
 **Defined in**
 
@@ -368,7 +368,7 @@ ___
 
 ### synchronizeAccount
 
-▸ **synchronizeAccount**(`_accountId`): `Promise`<<code><a href='../modules#account'>Account</a></code>\>
+▸ **synchronizeAccount**(`_accountId`): `Promise`< <code><a href='../modules#account'>Account</a></code> \>
 
 Synchronize an account with its network and return an updated view of the account
 
@@ -380,7 +380,7 @@ Synchronize an account with its network and return an updated view of the accoun
 
 **Returns**
 
-`Promise`<<code><a href='../modules#account'>Account</a></code>\>
+`Promise`< <code><a href='../modules#account'>Account</a></code> \>
 
 An updated view of the account
 
