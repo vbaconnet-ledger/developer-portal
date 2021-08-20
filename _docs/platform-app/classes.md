@@ -21,7 +21,7 @@ layout: doc_pa
 
 | Name | Type |
 | :------ | :------ |
-| `transport` | [`Transport`](../transport) |
+| `transport` | <code><a href='../transport'>Transport</a></code> |
 | `logger` | `default` |
 
 **Defined in**
@@ -102,7 +102,7 @@ Broadcast a signed transaction through Ledger Live, providing an optimistic Oper
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `accountId` | `string` | LL id of the account |
-| `signedTransaction` | [`SignedTransaction`](../modules#signedtransaction) | a signed transaction given by LL when signing |
+| `signedTransaction` | <code><a href='../modules#signedtransaction'>SignedTransaction</a></code> | a signed transaction given by LL when signing |
 
 **Returns**
 
@@ -126,9 +126,9 @@ Complete an exchange process by passing by the exchange content and its signatur
 
 | Name | Type |
 | :------ | :------ |
-| `_exchangePayload` | [`ExchangePayload`](../modules#exchangepayload) |
-| `_payloadSignature` | [`EcdsaSignature`](../modules#ecdsasignature) |
-| `_txFeesLevel` | [`FeesLevel`](../fees-level) |
+| `_exchangePayload` | <code><a href='../modules#exchangepayload'>ExchangePayload</a></code> |
+| `_payloadSignature` | <code><a href='../modules#ecdsasignature'>EcdsaSignature</a></code> |
+| `_txFeesLevel` | <code><a href='../fees-level'>FeesLevel</a></code> |
 
 **Returns**
 
@@ -174,7 +174,7 @@ ___
 
 ### estimateTransactionFees
 
-▸ **estimateTransactionFees**(`_accountId`, `_transaction`): `Promise`<[`EstimatedFees`](../modules#estimatedfees)\>
+▸ **estimateTransactionFees**(`_accountId`, `_transaction`): `Promise`<<code><a href='../modules#estimatedfees'>EstimatedFees</a></code>\>
 
 Estimate fees required to successfully broadcast a transaction.
 
@@ -183,11 +183,11 @@ Estimate fees required to successfully broadcast a transaction.
 | Name | Type |
 | :------ | :------ |
 | `_accountId` | `string` |
-| `_transaction` | [`Transaction`](../modules#transaction) |
+| `_transaction` | <code><a href='../modules#transaction'>Transaction</a></code> |
 
 **Returns**
 
-`Promise`<[`EstimatedFees`](../modules#estimatedfees)\>
+`Promise`<<code><a href='../modules#estimatedfees'>EstimatedFees</a></code>\>
 
 - Estimated fees for 3 level of confirmation speed
 
@@ -199,13 +199,13 @@ ___
 
 ### getDeviceInfo
 
-▸ **getDeviceInfo**(): `Promise`<[`DeviceDetails`](../modules#devicedetails)\>
+▸ **getDeviceInfo**(): `Promise`<<code><a href='../modules#devicedetails'>DeviceDetails</a></code>\>
 
 Get information about a currently connected device (firmware version...)
 
 **Returns**
 
-`Promise`<[`DeviceDetails`](../modules#devicedetails)\>
+`Promise`<<code><a href='../modules#devicedetails'>DeviceDetails</a></code>\>
 
 Informations about a currently connected device
 
@@ -225,7 +225,7 @@ Start the exchange process by generating a nonce on Ledger device
 
 | Name | Type |
 | :------ | :------ |
-| `_exchangeType` | [`ExchangeType`](../exchange-type) |
+| `_exchangeType` | <code><a href='../exchange-type'>ExchangeType</a></code> |
 | `_partnerName` | `string` |
 
 **Returns**
@@ -242,13 +242,13 @@ ___
 
 ### listAccounts
 
-▸ **listAccounts**(): `Promise`<[`Account`](../modules#account)[]\>
+▸ **listAccounts**(): `Promise`<<code><a href='../modules#account'>Account</a></code>[]\>
 
 List accounts added by user on Ledger Live
 
 **Returns**
 
-`Promise`<[`Account`](../modules#account)[]\>
+`Promise`<<code><a href='../modules#account'>Account</a></code>[]\>
 
 **Defined in**
 
@@ -258,13 +258,13 @@ ___
 
 ### listApps
 
-▸ **listApps**(): `Promise`<[`ApplicationDetails`](../modules#applicationdetails)[]\>
+▸ **listApps**(): `Promise`<<code><a href='../modules#applicationdetails'>ApplicationDetails</a></code>[]\>
 
 List applications opened on a currently connected device
 
 **Returns**
 
-`Promise`<[`ApplicationDetails`](../modules#applicationdetails)[]\>
+`Promise`<<code><a href='../modules#applicationdetails'>ApplicationDetails</a></code>[]\>
 
 The list of applications
 
@@ -276,7 +276,7 @@ ___
 
 ### listCurrencies
 
-▸ **listCurrencies**(`params?`): `Promise`<[`Currency`](../modules#currency)[]\>
+▸ **listCurrencies**(`params?`): `Promise`<<code><a href='../modules#currency'>Currency</a></code>[]\>
 
 List crypto-currencies supported by Ledger Live, providing filters by name or ticker
 
@@ -288,7 +288,7 @@ List crypto-currencies supported by Ledger Live, providing filters by name or ti
 
 **Returns**
 
-`Promise`<[`Currency`](../modules#currency)[]\>
+`Promise`<<code><a href='../modules#currency'>Currency</a></code>[]\>
 
 **Defined in**
 
@@ -322,7 +322,7 @@ ___
 
 ### requestAccount
 
-▸ **requestAccount**(`params`): `Promise`<[`Account`](../modules#account)\>
+▸ **requestAccount**(`params`): `Promise`<<code><a href='../modules#account'>Account</a></code>\>
 
 Let user choose an account in a Ledger Live, providing filters for choosing currency or allowing add account.
 
@@ -334,7 +334,7 @@ Let user choose an account in a Ledger Live, providing filters for choosing curr
 
 **Returns**
 
-`Promise`<[`Account`](../modules#account)\>
+`Promise`<<code><a href='../modules#account'>Account</a></code>\>
 
 **Defined in**
 
@@ -344,7 +344,7 @@ ___
 
 ### signTransaction
 
-▸ **signTransaction**(`accountId`, `transaction`, `params?`): `Promise`<[`SignedTransaction`](../modules#signedtransaction)\>
+▸ **signTransaction**(`accountId`, `transaction`, `params?`): `Promise`<<code><a href='../modules#signedtransaction'>SignedTransaction</a></code>\>
 
 Let user sign a transaction through Ledger Live
 
@@ -353,12 +353,12 @@ Let user sign a transaction through Ledger Live
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `accountId` | `string` | LL id of the account |
-| `transaction` | [`Transaction`](../modules#transaction) | the transaction in the currency family-specific format |
+| `transaction` | <code><a href='../modules#transaction'>Transaction</a></code> | the transaction in the currency family-specific format |
 | `params?` | `SignTransactionParams` | parameters for the sign modal |
 
 **Returns**
 
-`Promise`<[`SignedTransaction`](../modules#signedtransaction)\>
+`Promise`<<code><a href='../modules#signedtransaction'>SignedTransaction</a></code>\>
 
 **Defined in**
 
@@ -368,7 +368,7 @@ ___
 
 ### synchronizeAccount
 
-▸ **synchronizeAccount**(`_accountId`): `Promise`<[`Account`](../modules#account)\>
+▸ **synchronizeAccount**(`_accountId`): `Promise`<<code><a href='../modules#account'>Account</a></code>\>
 
 Synchronize an account with its network and return an updated view of the account
 
@@ -380,7 +380,7 @@ Synchronize an account with its network and return an updated view of the accoun
 
 **Returns**
 
-`Promise`<[`Account`](../modules#account)\>
+`Promise`<<code><a href='../modules#account'>Account</a></code>\>
 
 An updated view of the account
 
