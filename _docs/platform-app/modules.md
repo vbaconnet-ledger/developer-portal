@@ -68,7 +68,7 @@ ___
 | `name` | `string` |
 | `ticker` | `string` |
 | `type` | `string` |
-| `units` | <code><a href='modules#unit'>Unit</a></code>[] |
+| `units` | <code><a href='#unit'>Unit</a></code>[] |
 
 **Defined in**
 
@@ -176,7 +176,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `expirationDate` | `Date` \| ``null`` |
-| `operation` | <code><a href='modules#operation'>Operation</a></code> |
+| `operation` | <code><a href='#operation'>Operation</a></code> |
 | `signature` | `string` |
 | `signatureRaw?` | `unknown` |
 
