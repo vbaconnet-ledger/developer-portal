@@ -14,9 +14,11 @@ layout: doc_tr
 
 A companion application, or wallet application, contains the business logic and is (typically) a GUI, running on a computer, a phone, or a web browser, connected to the Ledger device.
 
-This documentation will help you implement transport with a Nano device either with a JavaScript web wallet, a Node.js desktop wallet, or a React Native mobile app.
+This documentation will help you implement transport with a Nano device either with a **JavaScript** web wallet, a **Node.js** desktop wallet, or a **React Native** mobile app.
 
-(SHOULD WE ADD SOMETHING ABOUT A GENERAL SDK COMING IN THE FUTURE?)
+<!--  -->
+{% include alert.html style="success" text="We currently do not have libraries to help the implentation with wallets written in another language. However, you are free to develop your companion app in the language of your chosing." %}
+<!--  -->
 
 To establish connexion and communication betwin the companion app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
 
