@@ -18,7 +18,7 @@ layout: doc_pa
 
 **Inherited from**
 
-[TransactionCommon](TransactionCommon.md).[amount](TransactionCommon.md#amount)
+[TransactionCommon.amount](../transaction-common#amount)
 
 **Defined in**
 
@@ -28,7 +28,7 @@ ___
 
 ### family
 
-• **family**: [`BITCOIN`](../enums/FAMILIES.md#bitcoin)
+• **family**: [`BITCOIN`](../families#bitcoin)
 
 **Defined in**
 
@@ -52,7 +52,7 @@ ___
 
 **Inherited from**
 
-[TransactionCommon](TransactionCommon.md).[recipient](TransactionCommon.md#recipient)
+[TransactionCommon.recipient](../transaction-common#recipient)
 
 **Defined in**
 
