@@ -59,11 +59,12 @@ google_analytics: GTM-W5FKZ2N
 uploads:            /uploads/
 
 # Build settings
-markdown:           kramdown
-highlighter:        rouge
+markdown: kramdown
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
+
 sass:
   style: :expanded
 

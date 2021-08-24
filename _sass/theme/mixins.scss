@@ -62,7 +62,7 @@
 }
 
 @mixin hook-button(){
-    border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
+    // border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
 }
 
 @mixin hook-button-misc(){
@@ -191,7 +191,7 @@
 }
 
 @mixin hook-alert(){
-    border-radius: $border-rounded-border-radius;
+    // border-radius: $border-rounded-border-radius;
 }
 
 @mixin hook-alert-misc(){
@@ -684,7 +684,6 @@
             font-size: $text-lead-font-size;
             overflow: hidden;
             border: solid 1px $border-light; //FC 2021-06-01 1119 to add a separator betw popular articles
-            border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;
             color: $global-primary-background;

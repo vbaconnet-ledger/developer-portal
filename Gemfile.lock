@@ -300,8 +300,10 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-toc
+  kramdown
   kramdown-parser-gfm
   rdiscount
+  rouge
   tzinfo-data
   webrick (~> 1.7)
 

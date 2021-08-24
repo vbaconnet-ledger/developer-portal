@@ -570,7 +570,7 @@ function formatAccountSpecifics(account: Account): string {
   if (!myCoinResources) {
     throw new Error("mycoin account expected")
   }
- 
+
   const unit = getAccountUnit(account);
   const formatConfig = {
     disableRounding: true,
