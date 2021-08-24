@@ -1,6 +1,7 @@
-- title: []
+- title: Introduction
   docs:
   - nano-app/introduction
+  - nano-app/types-apps
 
 - title: Build and load an Nano App
   docs:
