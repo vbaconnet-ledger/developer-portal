@@ -18,7 +18,7 @@ layout: doc_pa
 
 **Inherited from**
 
-[TransactionCommon](TransactionCommon.md).[amount](TransactionCommon.md#amount)
+[TransactionCommon.amount](../transaction-common#amount)
 
 **Defined in**
 
@@ -38,7 +38,7 @@ ___
 
 ### family
 
-• **family**: [`ETHEREUM`](../enums/FAMILIES.md#ethereum)
+• **family**: [`ETHEREUM`](../families#ethereum)
 
 **Defined in**
 
@@ -82,7 +82,7 @@ ___
 
 **Inherited from**
 
-[TransactionCommon](TransactionCommon.md).[recipient](TransactionCommon.md#recipient)
+[TransactionCommon.recipient](../transaction-common#recipient)
 
 **Defined in**
 
