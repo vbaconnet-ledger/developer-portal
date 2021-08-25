@@ -18,7 +18,7 @@ layout: doc_ci
 ![app_architecture](../images/app_architecture.png)
 <!-- --------------------------------- -->
 
-- The Ledger device acts as a signing box and it defers most of the technical complexity to a **wallet application** (Ledger Live or a third-party wallet). The wallet application contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
+- The Ledger device acts as a signing box and it defers most of the technical complexity to a **wallet application** (Ledger Live or a third-party wallet. It can be a web app, a desktop app or a mobile app.). The wallet application contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
 - The Nano application acts as a transaction signer key in a deterministic way. Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
@@ -47,7 +47,7 @@ The Common library of Ledger Live is called [Ledger-live-common](https://github.
 
 #### Communication with the Device
 
-[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of JavaScript library. It allows a javascript
+[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of packages. It allows a JavaScript
 application to use the API of a Nano app. Nano apps are using APDU to
 transfer data and commands to and from the external world. `ledgerjs` only
 allows to use commands developed on the Nano app.
