@@ -13,12 +13,12 @@
     }
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav) {
         transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-        border-bottom: 1px solid $global-primary-background;
-        color: $global-primary-background;
+        border-bottom: 1px solid $legacy-green;
+        color: $legacy-green;
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
-        border-bottom-color: lighten($global-primary-background, 25%);
+        border-bottom-color: lighten($legacy-green, 25%);
         text-decoration: none;
     }
 
@@ -596,7 +596,7 @@
             margin: 60px auto 0 auto;
             .uk-search-input {
                 height: 80px;
-                border-radius: 50px;
+                // border-radius: 50px;
                 font-size: 1.25rem;
                 font-style: normal;
                 padding-left: 36px;
@@ -696,13 +696,12 @@
                 @include svg-fill($featured-right-image, "#000", $accordion-icon-color);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                background-color: $accordion-icon-background-color;
                 border-radius: 20px;
             }
 
             &:hover {
                 text-decoration: none;
-                color: $global-primary-background;
+                border: solid 1px #000000;
             }
 
         }

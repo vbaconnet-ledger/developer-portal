@@ -4,8 +4,10 @@
 // Color
 $global-color:                                #000000;
 $global-muted-color:                          #565656;
+//$global-primary-background:                   #41CCB4;
+$legacy-green:                                #41CCB4; // Added by C.F when testing new charter
 $global-primary-background:                   #000000;
-$global-secondary-background:                 #F3F3F3;
+$global-secondary-background:                 #F9F9F9;
 $global-warning-background:                   #EBB81E;
 $global-success-background:                   #6490F1; /* 6490F1   FC 2021-05-11  was 0F0F0F */
 $global-danger-background:                    #f0506e;
@@ -89,18 +91,18 @@ $label-padding-vertical:                        2px;
 // Navbar
 $navbar-background:                           #fff;
 $navbar-nav-item-color:                         $global-color;
-$navbar-nav-item-hover-color:                   $global-primary-background;
-$navbar-nav-item-active-color:                  $global-primary-background;
+$navbar-nav-item-hover-color:                   $legacy-green;
+$navbar-nav-item-active-color:                  $legacy-green;
 $navbar-nav-item-font-size:                     0.9375rem;
 $navbar-nav-item-text-transform:                none;
 $navbar-toggle-color:                           $global-color;
-$navbar-toggle-hover-color:                     $global-primary-background;
+$navbar-toggle-hover-color:                     $legacy-green;
 
 // Navbar dropdown
 $navbar-dropdown-margin:                        1px;
 $navbar-dropdown-nav-item-color:                $global-color;
-$navbar-dropdown-nav-item-hover-color:          $global-primary-background;
-$navbar-dropdown-nav-item-active-color:         $global-primary-background;
+$navbar-dropdown-nav-item-hover-color:          $legacy-green;
+$navbar-dropdown-nav-item-active-color:         $legacy-green;
 
 // Subnav
 $subnav-item-color:                             $global-muted-color;
@@ -127,7 +129,8 @@ $card-small-body-padding-vertical:              25px;
 $card-body-padding-vertical-l:                  50px;
 $card-default-color:                            $global-muted-color;
 $card-hover-background:                        #FFFfff; /* FC 2021-05-11 1153 */
-$card-default-background:                       $global-secondary-background;
+// $card-default-background:                       $global-secondary-background;
+$card-default-background:                       #FFFFFF;
 $card-default-title-color:                      $global-color;
 
 // Offcanvas

@@ -249,6 +249,7 @@ $card-large-footer-padding-vertical-l:          round($global-large-gutter / 2) 
 
 .uk-card-default.uk-card-hover:hover {
     background-color: $card-default-hover-background;
+    border: solid 1px #000000;
     @if(mixin-exists(hook-card-default-hover)) {@include hook-card-default-hover();}
 }
 
