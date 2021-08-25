@@ -14,7 +14,7 @@ layout: doc_na
 
 [Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X.
 
-To use this container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
+To use the container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
 
 ## 1. Build the container (standard way)
 
@@ -61,7 +61,7 @@ git clone https://github.com/LedgerHQ/app-boilerplate.git
 
 #### For the Nano S
 
-In the source folder of your application:
+In the source folder of the application:
 
 ```bash
 $ # docker can be replaced with podman or buildah without sudo
@@ -71,7 +71,7 @@ root@656be163fe84:/app# make
 
 #### For the Nano X
 
-For Nano X, specify the `BOLOS_SDK` environment variable before building your app:
+For Nano X, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
 
 ```bash
 $ # docker can be replaced with podman or buildah without sudo
@@ -93,6 +93,8 @@ $ # docker can be replaced with podman or buildah without sudo
 $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# make scan-build
 ```
+
+### 2.3 Exit the image
 
 You can exit the image, with the command `exit`.
 
