@@ -6,9 +6,10 @@
   - nano-app/introduction
   - nano-app/types-apps
 
-- title: Build and load an Nano App
+- title: Using a Nano App
   docs:
   - nano-app/build
+  - nano-app/load
 
 - title: Security best practices
   docs:

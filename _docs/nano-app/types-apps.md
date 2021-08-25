@@ -1,5 +1,5 @@
 ---
-title: Types of nano apps
+title: Types of applications
 subtitle:
 tags: []
 toc: true
