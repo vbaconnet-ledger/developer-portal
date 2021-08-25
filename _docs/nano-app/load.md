@@ -27,7 +27,7 @@ wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_ud
 
 ### 2.1. Compile your app with the --privilege option
 
-If you want to load and delete the app directly from the container image. You need to compile the application using this command:
+If you want to load and delete the app directly from the container image. You need to compile the application, in the source file of your application, using this command:
 
 ```bash
 $ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" --privileged ledger-app-builder:latest

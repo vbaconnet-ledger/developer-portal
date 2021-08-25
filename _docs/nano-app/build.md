@@ -16,7 +16,7 @@ layout: doc_na
 
 To use this container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
 
-## 1. Standard Build
+## 1. Build the container (standard way)
 
 The container can be build using standard tools:
 
@@ -29,7 +29,7 @@ podman build -t ledger-app-builder:latest .
 buildah bud -t ledger-app-builder:latest .
 ```
 
-## OR Build with App Scanner
+## Or Build with App Scanner
 
 Images can embed the [Coverity Scan](https://scan.coverity.com/) build tool. It is an excellent static analysis tool, and it can be very useful to find bugs in Nano apps.
 
@@ -48,7 +48,18 @@ buildah bud -t ledger-app-scanner:latest .
 
 ## 2. Compile your app in the container
 
-### For the Nano S
+### 2.1 Get the Ledger Boilerplate Application
+
+The Boilerplate Application was specifically designed for developers to play around with and read the code. You can clone it in your working folder to start a new project.
+Applications that support multiple BOLOS devices are typically contained within a single repository, so you can use the same repository to build an app for different Ledger devices.
+
+```bash
+git clone https://github.com/LedgerHQ/app-boilerplate.git
+```
+
+### 2.2 Build the Application
+
+#### For the Nano S
 
 In the source folder of your application:
 
@@ -58,7 +69,7 @@ $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# make
 ```
 
-### For the Nano X
+#### For the Nano X
 
 For Nano X, specify the `BOLOS_SDK` environment variable before building your app:
 
@@ -73,7 +84,7 @@ root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
 <!--  -->
 
 
-### Using the Clang Static Analyzer
+#### Using the Clang Static Analyzer
 
 The Docker image includes the [Clang Static Analyzer](https://clang-analyzer.llvm.org/), which can be invoked with:
 
