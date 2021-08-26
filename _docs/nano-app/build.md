@@ -16,6 +16,11 @@ layout: doc_na
 
 To use the container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
 
+<!-- ------------- Image ------------- -->
+<div style="text-align:center">
+<img src="../images/folder-organization.png" ></div>
+<!-- --------------------------------- -->
+
 ## 1. Build the container (standard way)
 
 The container can be build using standard tools:
