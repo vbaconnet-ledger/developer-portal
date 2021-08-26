@@ -15,10 +15,10 @@ layout: doc_ci
 ## Global architecture overview
 
 <!-- ------------- Image ------------- -->
-![app_architecture](../images/app_architecture.png)
+![app_architecture](../images/general-architecture-live.png)
 <!-- --------------------------------- -->
 
-- The Ledger device acts as a signing box and it defers most of the technical complexity to a **wallet application** (Ledger Live or a third-party wallet. It can be a web app, a desktop app or a mobile app.). The wallet application contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
+- The Ledger device acts as a signing box and it defers most of the technical complexity to Ledger Live (Ledger's official **wallet application**). Ledger Live contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
 - The Nano application acts as a transaction signer key in a deterministic way. Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
