@@ -24,3 +24,4 @@
 - title: App protocol implementation
   docs:
   - transport/app-protocol
+  - transport/test-communication
