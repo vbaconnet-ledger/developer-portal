@@ -21,13 +21,13 @@ In this article, we'll discuss some of the features that are built into BOLOS. T
 
 There are two important cryptographic secrets that are stored and managed by BOLOS:
 - the `Device` keypair (which is generated in-factory)
-- the [BIP 32 master node](../bg_master_seed) (which is derived from the user's BIP 39 mnemonic seed).
+- the [BIP 32 master node](../psd-masterseed) (which is derived from the user's BIP 39 mnemonic seed).
 
 Both of these secrets are stored by BOLOS and are not directly accessible to applications for security reasons. The Device keypair can be used indirectly by applications for purposes of [application attestation](../bolos-features#endorsement--application-attestation). Applications can derive secrets from the BIP 32 master node using a system call to BOLOS, provided the app was given the appropriate permissions when loaded onto the device.
 
 ### Passphrases in BOLOS
 
-Since firmware version 1.3 on the Ledger Nano S, BOLOS allows users to load multiple [BIP 39 passphrases](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#from-mnemonic-to-seed) onto the device at once. As described in [the previous chapter](../bg_master_seed), passphrases are a method to add additional entropy to the BIP 39 master seed in order to completely change the [HD tree](../psd-keys). Users can set a temporary passphrase which is activated until the device is disconnected, or store a passphrase on the device by attaching it to a PIN. When a passphrase is attached to a PIN, it is only activated when the user unlocks the device using the PIN corresponding to that passphrase. See our [Help Center article on the advanced passphrase options](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security) for more information about using passphrases.
+Since firmware version 1.3 on the Ledger Nano S, BOLOS allows users to load multiple [BIP 39 passphrases](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#from-mnemonic-to-seed) onto the device at once. As described in [the previous chapter](../psd-masterseed), passphrases are a method to add additional entropy to the BIP 39 master seed in order to completely change the [HD tree](../psd-keys). Users can set a temporary passphrase which is activated until the device is disconnected, or store a passphrase on the device by attaching it to a PIN. When a passphrase is attached to a PIN, it is only activated when the user unlocks the device using the PIN corresponding to that passphrase. See our [Help Center article on the advanced passphrase options](https://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security) for more information about using passphrases.
 
 When a passphrase is activated, the binary seed derived according to BIP 39 is changed and consequently the entire HD tree is changed. This means that using a different passphrase causes applications that derive information from the HD tree (like cryptocurrency wallet applications) to derive entirely different information (different cryptocurrency addresses will be generated).
 

@@ -15,7 +15,7 @@ layout: doc_na
 
 ## Introduction
 
-In [the previous section](../bg_master_seed) we discussed how Ledger devices use a master 24-word mnemonic seed to derive a theoretically infinite number of cryptographic secrets. Though it might seem impossible at first glance, this can be done using nothing more than some mathematical sorcery. The process used to do this is called hierarchical deterministic (HD) key generation.
+In [the previous section](../psd-masterseed) we discussed how Ledger devices use a master 24-word mnemonic seed to derive a theoretically infinite number of cryptographic secrets. Though it might seem impossible at first glance, this can be done using nothing more than some mathematical sorcery. The process used to do this is called hierarchical deterministic (HD) key generation.
 
 The process for HD key generation used by all Ledger devices (and many other HD wallets) is defined by [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
 
