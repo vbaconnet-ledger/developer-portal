@@ -4,8 +4,3 @@
   desc: Emulate Nano devices, on standard desktop computers, without any hardware device
   icon: cog
   doc: speculos/start-here
-
-- title: Ledger REPL
-  desc: Send binary exchanges with a Nano device and play with different channels of communication
-  icon: cog
-  doc: repl/ledger-repl

@@ -14,13 +14,14 @@ left:
   - title: DApp Integration
     url: /docs/dapp/introduction
 
+  - title: Connect a wallet app
+    url: /docs/transport/ledgerjs
+
   - title: Tools
     dropdown:
 
     - title: Speculos
       url: /docs/speculos/start-here
-    - title: Ledger REPL
-      url: /docs/repl/ledger-repl
 
   - title: Contribution
     url: /contribution

@@ -19,3 +19,8 @@
   desc: Get Started integrating your service in Ledger Live
   icon: dapp
   doc: dapp/introduction
+
+- title: Connect Wallet Applications
+  desc: Connect your wallet application to Ledger Nano Apps
+  icon: token
+  doc: transport/ledgerjs

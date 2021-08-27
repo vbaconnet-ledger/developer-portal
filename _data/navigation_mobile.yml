@@ -12,5 +12,8 @@
 - title: DApp Integration
   url: /docs/dapp/introduction
 
+- title: Connect a wallet app
+  url: /docs/transport/ledgerjs
+
 - title: Contact
   url: /contact

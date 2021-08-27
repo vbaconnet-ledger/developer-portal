@@ -9,9 +9,9 @@ hero:
     search: true
 ---
 
-{% include boxes_gen.html columns="4" title="Take your pick ..." subtitle="Choose an option that you need help with or search above" %}
+{% include boxes_gen.html columns="5" title="Take your pick ..." subtitle="Choose an option that you need help with or search above" %}
 
-{% include boxes_toolboxes.html columns="2" title="and the toolbox" %}
+{% include boxes_toolboxes.html columns="1" title="and the toolbox" %}
 
 {% include cta.html title="Join the Ledger Devs Slack workspace" button_text="Fill this form" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 

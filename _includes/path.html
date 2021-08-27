@@ -1,0 +1,30 @@
+{% assign url = page.url | split: "/" %}
+{% assign category = url[2] %}
+
+{% if category == "nano-app" %}
+  {% assign section = "Nano Application" %}
+  {% assign first = site.data.navigation_docs_na_linear.first.docs[0] | split: "/" %}
+{% elsif category == "coin"  %}
+  {% assign section = "Coin Integration" %}
+  {% assign first = site.data.navigation_docs_ci.first.docs[0] | split: "/" %}
+{% elsif category == "dapp"  %}
+  {% assign section = "DApp integration" %}
+  {% assign first = site.data.navigation_docs_da.first.docs[0] | split: "/" %}
+{% elsif category == "speculos"  %}
+  {% assign section = "Speculos" %}
+  {% assign first = site.data.navigation_docs_sp.first.docs[0] | split: "/" %}
+{% elsif category == "token"  %}
+  {% assign section = "Token integration" %}
+  {% assign first = site.data.navigation_docs_et.first.docs[0] | split: "/" %}
+{% elsif category == "platform-app"  %}
+  {% assign section = "Live Applications" %}
+  {% assign first = site.data.navigation_docs_pa_linear.first.docs[0] | split: "/" %}
+{% elsif category == "transport"  %}
+  {% assign section = "Transport" %}
+  {% assign first = site.data.navigation_docs_tr_linear.first.docs[0] | split: "/" %}
+{% endif %}
+
+{% if section != nil %}
+  <p class= "section-title uk-visible@l "><a href="https://developers.ledger.com"><i class="fas fa-home"></i></a>
+    / <a href="../{{ first[1] }}">{{ section }}</a></p>
+{% endif %}
