@@ -135,5 +135,5 @@ PRINTF("uint16_t: %d", ptr16[0]);
 
 `ptr16[0]` access can make the application crash, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but a word is accessed in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os_memmove`).
 
-Please refer to the [alignment](../u_alignment) page for further information.
+Please refer to the [alignment](../memory-alignment) page for further information.
 
