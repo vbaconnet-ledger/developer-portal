@@ -117,7 +117,7 @@ With our error model, there are two common failure scenarios.
 
 An application crashing when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
 - The Secure Element is isolated due to invalid handling of [SEPROXYHAL](https://developers.ledger.com/docs/nano-app/bolos-hardware-architecture/#seproxyhal) packets
-- Theres a core fault on the device (perhaps due to a [misaligned memory access](../u_alignment) or an attempt to access restricted memory)
+- Theres a core fault on the device (perhaps due to a [misaligned memory access](../memory-alignment) or an attempt to access restricted memory)
 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
 

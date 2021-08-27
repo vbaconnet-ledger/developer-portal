@@ -21,7 +21,7 @@ In this article, we'll discuss some of the features that are built into BOLOS. T
 
 There are two important cryptographic secrets that are stored and managed by BOLOS:
 - the `Device` keypair (which is generated in-factory)
-- the [BIP 32 master node](../bg_master_seed) (which is derived from the user's BIP 39 mnemonic seed).
+- the [BIP 32 master node](../psd-masterseed) (which is derived from the user's BIP 39 mnemonic seed).
 
 Both of these secrets are stored by BOLOS and are not directly accessible to applications for security reasons. The Device keypair can be used indirectly by applications for purposes of [application attestation](../bolos-features#endorsement--application-attestation). Applications can derive secrets from the BIP 32 master node using a system call to BOLOS, provided the app was given the appropriate permissions when loaded onto the device.
 

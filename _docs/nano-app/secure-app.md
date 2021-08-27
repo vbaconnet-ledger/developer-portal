@@ -404,7 +404,7 @@ Enable `DEFINES += HAVE_BOLOS_APP_STACK_CANARY` in your Makefile. This will help
 
 Do not clear sensitive data with for-loops or other techniques. Do not use `memset` or `bzero` to clear sensitive data: it could be optimized and removed by the compiler.
 
-**Recommendation**: Use `explicit_bzero` which guarantees that the compiler will not remove the erasure. (See [https://www.owasp.org/index.php/Insecure\\\_Compiler\\\_Optimization](https://www.owasp.org/index.php/Insecure\_Compiler\_Optimization) for an example of how things could go wrong.)
+**Recommendation**: Use `explicit_bzero` which guarantees that the compiler will not remove the erasure. (See [https://www.owasp.org/index.php/Insecure_Compiler_Optimization](https://www.owasp.org/index.php/Insecure_Compiler_Optimization) for an example of how things could go wrong.)
 
 ## Business logic problems
 
