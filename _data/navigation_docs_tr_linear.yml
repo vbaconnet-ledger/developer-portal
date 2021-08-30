@@ -6,7 +6,6 @@
 - title: Transport implementation
   docs:
   - transport/webusb
-  - transport/example-webusb
   - transport/webhid
   - transport/web-ble
   - transport/node-hid-singleton
@@ -19,3 +18,9 @@
   docs:
   - transport/app-protocol
   - transport/test-communication
+
+- title: Examples of transport implementation
+  docs:
+  - transport/example-webusb-js
+  - transport/example-webble-react
+  - transport/example-reactnative-ble

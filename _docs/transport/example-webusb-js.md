@@ -1,5 +1,5 @@
 ---
-title: Example of WebUSB Implementation
+title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: []
 author:
@@ -17,7 +17,7 @@ This is the `renderer.js` file for Google's Carlo application.
 
 It uses the [WebUSB package](../webusb) and the BTC Package (see more in the [App Protocol section](../app-protocol)).
 
-```JS
+```javascript
 import "babel-polyfill";
 import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
 import AppBtc from "@ledgerhq/hw-app-btc";

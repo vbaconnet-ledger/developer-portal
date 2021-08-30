@@ -8,7 +8,6 @@
     - title: Web app
       docs:
       - transport/webusb
-      - transport/example-webusb
       - transport/webhid
       - transport/web-ble
     - title: Desktop app
@@ -21,8 +20,13 @@
       - transport/react-native-hid
       - transport/react-native-ble
 
-
 - title: App protocol implementation
   docs:
   - transport/app-protocol
   - transport/test-communication
+
+- title: Examples of transport implementation
+  docs:
+  - transport/example-webusb-js
+  - transport/example-webble-react
+  - transport/example-reactnative-ble
