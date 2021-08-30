@@ -8,6 +8,7 @@
     - title: Web app
       docs:
       - transport/webusb
+      - transport/example-webusb
       - transport/webhid
       - transport/web-ble
     - title: Desktop app

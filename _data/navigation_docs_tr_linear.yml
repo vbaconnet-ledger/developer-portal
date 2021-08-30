@@ -6,6 +6,7 @@
 - title: Transport implementation
   docs:
   - transport/webusb
+  - transport/example-webusb
   - transport/webhid
   - transport/web-ble
   - transport/node-hid-singleton
