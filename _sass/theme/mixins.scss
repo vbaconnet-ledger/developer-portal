@@ -489,11 +489,11 @@
     }
 
     .sidebar-fixed-width {
+        padding-left: 10px;
         width: $docs-sidebar-width;
     }
     .sidebar-docs {
-        width: $docs-sidebar-width - $global-medium-gutter;
-        padding-right: $global-medium-gutter;
+        width: $docs-sidebar-width;
         line-height: 1.1;
         top: 112px;
         bottom: 70px;
@@ -532,10 +532,11 @@
     // }
 
 
-    .sidebar-toc {
+   .sidebar-toc {
       top: 160px;
       width:250px;
       background: white;
+      margin-left:$global-medium-gutter;
       padding-top:20px;
       text-decoration: none;
       > ul {padding-left: 20px;}
