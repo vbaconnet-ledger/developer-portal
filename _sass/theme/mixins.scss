@@ -533,9 +533,10 @@
 
 
    .sidebar-toc {
-      top: 95px;
+      top: 125px;
       width:250px;
-      background: white;
+      // background: white;
+      border: solid 1px black;
       margin-left:$global-medium-gutter;
       padding-top:20px;
       padding-right: 10px;
@@ -568,8 +569,9 @@
     }
 
     .section-path{
-      padding-left: 72px;
-      padding-top: 10px;
+      padding-left: 30px;
+      padding-top: 25px;
+      line-height: 2px;
     }
 
     .section-title {

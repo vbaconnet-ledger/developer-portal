@@ -12,6 +12,7 @@ const tocLinks = document.querySelectorAll(".sidebar-toc a");
     tocLinks.forEach((link) => {
       link.classList.remove("active");
       linkTitle = link.innerText.toUpperCase().replaceAll(" ", "-").replaceAll(",", "").replaceAll(".", "").replaceAll("?", "").replaceAll("/", "").replaceAll("(", "").replaceAll(")", "");
+
       if (linkTitle == current.toUpperCase()) {
         link.classList.add("active");
       }
