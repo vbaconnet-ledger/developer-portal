@@ -3,7 +3,6 @@ title: Developing Secure Ledger Apps
 subtitle: Ensuring your app passes the security review
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

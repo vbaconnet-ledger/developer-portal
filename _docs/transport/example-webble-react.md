@@ -3,6 +3,7 @@ title: Example of Bluetooth implementation in a React App
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

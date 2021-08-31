@@ -3,7 +3,6 @@ title: Application Structure and I/O
 subtitle: I/O - aye, no?
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

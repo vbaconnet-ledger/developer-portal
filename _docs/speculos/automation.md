@@ -3,6 +3,7 @@ title: Automation - press buttons automatically
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 

@@ -3,6 +3,7 @@ title: Building iOS Dev App
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

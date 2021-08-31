@@ -3,6 +3,7 @@ title: Semihosting as an additional debug mechanism
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 

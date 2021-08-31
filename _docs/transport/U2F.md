@@ -3,6 +3,7 @@ title: Why is U2F deprecated ?
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

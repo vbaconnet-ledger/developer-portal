@@ -3,6 +3,7 @@ title: Building Android Dev App
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

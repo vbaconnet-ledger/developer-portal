@@ -3,6 +3,7 @@ title: Specific CLI Checklist - User tests
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

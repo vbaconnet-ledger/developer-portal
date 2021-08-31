@@ -3,7 +3,6 @@ title: Memory alignment
 subtitle: Get padded if you're not aligned
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

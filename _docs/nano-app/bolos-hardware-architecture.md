@@ -3,7 +3,6 @@ title: Hardware Architecture
 subtitle: Secure chips served with a helping of protocol
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

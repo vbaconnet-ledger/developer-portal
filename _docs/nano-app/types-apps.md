@@ -3,7 +3,6 @@ title: Types of applications
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

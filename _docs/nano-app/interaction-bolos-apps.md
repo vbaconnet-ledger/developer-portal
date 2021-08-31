@@ -3,7 +3,6 @@ title: Interaction Between BOLOS and Apps
 subtitle: Getting smooth exchanges
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

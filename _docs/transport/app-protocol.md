@@ -3,6 +3,7 @@ title: App protocol
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

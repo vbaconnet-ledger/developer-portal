@@ -3,6 +3,7 @@ title: Web Bluetooth
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

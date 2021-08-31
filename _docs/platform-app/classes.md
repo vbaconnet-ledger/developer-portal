@@ -2,6 +2,7 @@
 title: Default classes
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 

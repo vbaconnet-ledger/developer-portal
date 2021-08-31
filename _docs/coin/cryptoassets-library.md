@@ -3,6 +3,7 @@ title: Adding *MyCoin* to CryptoAssets library
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

@@ -3,6 +3,7 @@ title: Ledger Live CLI
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

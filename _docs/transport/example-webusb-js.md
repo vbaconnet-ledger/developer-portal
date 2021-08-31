@@ -3,6 +3,7 @@ title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

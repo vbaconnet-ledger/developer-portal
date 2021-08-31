@@ -3,6 +3,7 @@ title: Node Hid Singleton
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

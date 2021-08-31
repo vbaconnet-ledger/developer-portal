@@ -3,6 +3,7 @@ title: Node Speculos
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_tr
 ---
 

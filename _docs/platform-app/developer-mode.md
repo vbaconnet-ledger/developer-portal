@@ -2,6 +2,7 @@
 title: Developer mode
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 

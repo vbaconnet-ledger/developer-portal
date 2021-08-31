@@ -3,6 +3,7 @@ title: Getting your Ledger Live running
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

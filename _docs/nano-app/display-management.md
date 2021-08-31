@@ -3,7 +3,6 @@ title: Display Management
 subtitle: With Oscars for on-screen performance
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

@@ -3,6 +3,7 @@ title: Testing
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

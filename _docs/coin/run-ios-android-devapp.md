@@ -3,6 +3,7 @@ title: Running iOS and Android Dev Apps
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

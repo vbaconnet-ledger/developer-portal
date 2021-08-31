@@ -3,7 +3,6 @@ title: ASA
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_et
 ---
@@ -23,7 +22,7 @@ First, make sure your token isn’t already listed by checking this table of the
 
 ### 2. How to get my token listed ?
 
-Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c). 
+Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c).
 When your PR is validated by the Algorand team, they will make a PR to Ledger Github repository.
 
 Then, you need to update the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).

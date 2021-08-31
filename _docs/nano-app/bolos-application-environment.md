@@ -3,7 +3,6 @@ title: Application Environment
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 layout: doc_na
 ---
 

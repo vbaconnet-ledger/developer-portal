@@ -3,7 +3,6 @@ title: Application Debug
 subtitle: Making testing easier
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

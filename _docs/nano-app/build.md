@@ -3,6 +3,7 @@ title: Build the application
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_na
 ---
 

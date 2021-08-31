@@ -3,6 +3,7 @@ title: Run tests on emulated Android and iOS
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

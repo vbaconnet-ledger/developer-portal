@@ -4,7 +4,6 @@ subtitle: This article describes the general process and way of working Ledger w
 tags: []
 author:
 toc: true
-toc_sticky: true
 layout: doc_ci
 ---
 

@@ -3,6 +3,7 @@ title: Introduction
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

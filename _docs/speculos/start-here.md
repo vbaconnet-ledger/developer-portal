@@ -3,7 +3,6 @@ title: Start here
 subtitle: Using Speculos
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_sp
 ---

@@ -3,6 +3,7 @@ title: Debug - how to use GDB
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 

@@ -2,6 +2,7 @@
 title: DeviceModel
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 

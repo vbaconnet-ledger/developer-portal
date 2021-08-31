@@ -3,6 +3,7 @@ title: Clients - how to send APDUs
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 

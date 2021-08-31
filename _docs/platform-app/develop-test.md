@@ -2,6 +2,7 @@
 title: Develop and Test
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 
@@ -18,7 +19,7 @@ To develop the web version of your application, you need to use the Ledger Live 
 
 ### Import and instantiate the SDK
 
-Use the following code to import and instantiate the Ledger Live SDK: 
+Use the following code to import and instantiate the Ledger Live SDK:
 
 ```json
 import LedgerLiveApi from "ledger-live-platform-sdk";

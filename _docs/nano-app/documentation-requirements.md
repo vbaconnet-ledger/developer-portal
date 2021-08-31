@@ -3,7 +3,6 @@ title: Documentation requirements
 subtitle: Ensuring your documentation is well documented
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

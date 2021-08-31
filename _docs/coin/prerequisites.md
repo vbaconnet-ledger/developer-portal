@@ -3,6 +3,7 @@ title: Prerequisites
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

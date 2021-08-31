@@ -3,6 +3,7 @@ title: Load the app to a Nano S
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_na
 ---
 
