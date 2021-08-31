@@ -3,13 +3,11 @@ title: Debug - how to use GDB
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 
 ## Debug an app thanks to GDB:

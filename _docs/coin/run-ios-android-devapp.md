@@ -3,14 +3,9 @@ title: Running iOS and Android Dev Apps
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 <!-- 2021-03-30 also based on 2177138906 in Confluence -->
 

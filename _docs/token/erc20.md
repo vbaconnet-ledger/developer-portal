@@ -3,15 +3,11 @@ title: ERC20
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## How to request a token addition
 

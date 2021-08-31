@@ -3,13 +3,9 @@ title: Adding *MyCoin* to CryptoAssets library
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.
 

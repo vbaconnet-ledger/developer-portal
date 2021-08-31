@@ -2,13 +2,11 @@
 title: BitcoinTransaction
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Properties
 

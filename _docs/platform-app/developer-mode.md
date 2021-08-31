@@ -2,13 +2,11 @@
 title: Developer mode
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click ten times on the Ledger Live version.
 

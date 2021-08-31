@@ -3,15 +3,11 @@ title: Application Isolation
 subtitle: Checking the apps on the Ledger Nano S
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 So how do I know that the apps I'm running on my Ledger devices are doing what I intend them to do? What protects me from getting a virus on my Ledger devices?
 

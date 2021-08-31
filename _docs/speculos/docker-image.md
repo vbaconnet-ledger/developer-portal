@@ -3,13 +3,11 @@ title: Docker
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## How to use the Docker image
 

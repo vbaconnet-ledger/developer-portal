@@ -6,11 +6,6 @@ author:
 layout: doc_ci
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Introduction
 
 Ledger Live Common is the shared core library used by Ledger Live Desktop and Mobile, that also includes a CLI for testing purpose or for using Ledger Live features directly from a terminal (in a limited way).

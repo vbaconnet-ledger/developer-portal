@@ -3,15 +3,11 @@ title: Common Pitfalls and Troubleshooting
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 
@@ -122,7 +118,7 @@ An application crashing when running on the device (the device's screen freezes 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
 
 <!--  -->
-{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../quickstart'>Boilerplate</a>." %}
+{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../build'>provided container image for compiling apps</a>." %}
 <!--  -->
 
 

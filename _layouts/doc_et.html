@@ -4,9 +4,9 @@ layout: default
 
 <div class="uk-section">
     <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
+        <div class="uk-grid-medium" data-uk-grid>
 
-            <div class="sidebar-fixed-width uk-visible@m">
+            <div class="sidebar-fixed-width uk-visible@l">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_docs_et %}
                     <h5>{{ section.title }}</h5>
@@ -30,6 +30,14 @@ layout: default
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
 
                     <div class="article-content link-primary">
+
+                      <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m">
+                        <h5>Sections in this article</h5>
+                        <div class="content-toc">
+                          {% toc %}
+                        </div>
+                      </div>
+
                         {{ content }}
                         {% if site.share.doc %}
                             <!-- FC
@@ -41,6 +49,14 @@ layout: default
                     {% include hook-post-content-doc.html %}
 
                     <hr class="uk-margin-medium">
+
+                    <div>
+                      <h5>Did you find this page helpful?</h5>
+                      <!-- LikeBtn.com BEGIN -->
+                      <span class="likebtn-wrapper" data-theme="custom" data-icon_l="sgn8-p" data-icon_d="sgn8-m" data-white_label="true" data-show_like_label="false" data-counter_type="percent" data-popup_disabled="true" data-share_enabled="false" data-tooltip_enabled="false"></span>
+                      <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+                      <!-- LikeBtn.com END -->
+                    </div>
 
                     {% include paginate-doc.html %}
 
@@ -60,9 +76,16 @@ layout: default
                 </script>
 
             </div>
-
+            <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
+              <div class="sidebar-toc sidebar-sticky">
+                <h5>Sections in this article</h5>
+                {% toc %}
+              </div>
+            </div>
+        </div>
     </div>
 </div>
 
 {% include anchor_support.html %}
+{% include scroll.html %}
 

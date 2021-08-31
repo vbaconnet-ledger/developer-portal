@@ -1,11 +1,12 @@
-- title: []
+- title: Introduction
   docs:
   - nano-app/introduction
+  - nano-app/types-apps
 
-- title: Getting Started
+- title: Using a Nano App
   docs:
-  - nano-app/quickstart
-  - nano-app/deepdive
+  - nano-app/build
+  - nano-app/load
 
 - title: Security best practices
   docs:

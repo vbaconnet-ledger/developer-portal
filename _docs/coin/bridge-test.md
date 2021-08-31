@@ -3,13 +3,9 @@ title: Live Common Bridge Test Framework
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 <!-- 2021-03-30 based on 1809613975 in Confluence -->
 

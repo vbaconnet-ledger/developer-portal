@@ -3,13 +3,13 @@ title: Testing
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 
 ## Setting up the Test Toolchain
 
 Testing the Live-common Bridge [here](../bridge-test)
-
 
 ## What to test
 

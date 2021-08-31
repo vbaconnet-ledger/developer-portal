@@ -3,7 +3,6 @@ title: Introduction
 subtitle: A bird's eye view
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---

@@ -2,13 +2,11 @@
 title: Develop and Test
 subtitle:
 tags: []
+toc: true
 layout: doc_pa
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 In order to develop an application compatible with Ledger Live Platform, we provide you with a set of particular APIs (Ledger Live API) to integrate features and interact with Ledger Live. This set of APIs will evolve over time. You basically develop a web version of your application, which is then integrated in an iframe inside the platform so all the Ledger Live users can discover it.
 
@@ -18,7 +16,7 @@ To develop the web version of your application, you need to use the Ledger Live 
 
 ### Import and instantiate the SDK
 
-Use the following code to import and instantiate the Ledger Live SDK: 
+Use the following code to import and instantiate the Ledger Live SDK:
 
 ```json
 import LedgerLiveApi from "ledger-live-platform-sdk";

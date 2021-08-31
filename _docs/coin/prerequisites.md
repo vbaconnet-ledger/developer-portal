@@ -3,13 +3,9 @@ title: Prerequisites
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.
 Nowadays, they are also functionally complex: it’s no longer just about sending and receiving a single currency, we see more and more individual projects with their own purpose and identity, their own innovative features, such as staking, rewards, tokens, smart contracts, on-chain governance, etc.

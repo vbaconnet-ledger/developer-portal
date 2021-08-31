@@ -3,13 +3,9 @@ title: General CLI Checklist - User tests
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Checklist
 

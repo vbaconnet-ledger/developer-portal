@@ -3,13 +3,9 @@ title: Adding *MyCoin* to Ledger Live Desktop and Mobile
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ***
 

@@ -3,13 +3,11 @@ title: Semihosting as an additional debug mechanism
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_sp
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 QEMU implements some semihosted operations which can be triggered from the app. For instance, messages can be printed to stderr with the following code:
 

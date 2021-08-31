@@ -3,21 +3,17 @@ title: Application Debug
 subtitle: Making testing easier
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 
 
 <!--  -->
-{% include alert.html style="warning" text="The <a href='../deepdive/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="warning" text="This article applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 

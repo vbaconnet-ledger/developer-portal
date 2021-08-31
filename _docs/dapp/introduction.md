@@ -3,15 +3,9 @@ title: Integrating DApps
 subtitle:
 tags: []
 toc: true
-toc_sticky: true
 author:
 layout: doc_da
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Introduction
 
