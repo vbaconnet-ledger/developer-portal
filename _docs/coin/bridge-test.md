@@ -7,11 +7,6 @@ toc: true
 layout: doc_ci
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 <!-- 2021-03-30 based on 1809613975 in Confluence -->
 
 Live-common lib is used to test Ledger Live in a headless way:

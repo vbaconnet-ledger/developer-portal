@@ -7,11 +7,6 @@ author:
 layout: doc_da
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Introduction
 
 By having your DApp supported in Ledger DApp browser, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.

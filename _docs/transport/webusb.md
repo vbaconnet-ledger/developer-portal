@@ -7,10 +7,7 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ### FAQ: "DOM Exception" is triggered when creating the transport
 

@@ -7,10 +7,7 @@ author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 So how do I know that the apps I'm running on my Ledger devices are doing what I intend them to do? What protects me from getting a virus on my Ledger devices?
 

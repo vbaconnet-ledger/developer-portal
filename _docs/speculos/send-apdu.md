@@ -7,10 +7,7 @@ toc: true
 layout: doc_sp
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 
 Clients can communicate with the emulated device using APDUs, as usual. Speculos embbeds a TCP server (listening on `127.0.0.1:9999`) to forward APDUs to the target app.

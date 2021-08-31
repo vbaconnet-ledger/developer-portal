@@ -7,10 +7,7 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 As soon as your <i>Transport</i> is created, you can establish connexion between a Wallet App and a Ledger device and communicate by implementing the apps protocol.
 

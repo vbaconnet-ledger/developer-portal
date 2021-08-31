@@ -7,11 +7,6 @@ toc: true
 layout: doc_ci
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Getting started
 
 To start, fork and clone git@github.com:LedgerHQ/ledger-live-common.git

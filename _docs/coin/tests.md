@@ -11,7 +11,6 @@ layout: doc_ci
 
 Testing the Live-common Bridge [here](../bridge-test)
 
-
 ## What to test
 
 See General CLI Checklist - User tests [here](../general-cli-checklist)

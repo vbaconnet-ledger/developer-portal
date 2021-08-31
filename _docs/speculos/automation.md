@@ -7,10 +7,7 @@ toc: true
 layout: doc_sp
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 The `--automation` argument allows to apply a set of actions (eg. button press) when a condition is met (usually some text is displayed on the screen). It is especially useful to automate app testing.
 

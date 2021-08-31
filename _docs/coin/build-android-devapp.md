@@ -7,12 +7,6 @@ toc: true
 layout: doc_ci
 ---
 
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 <!-- 2021-04-07 written by Henri Ly -->
 
 

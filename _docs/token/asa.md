@@ -7,10 +7,7 @@ author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 For ASAs, compared to ERC20, the process differs due to the fact that the tokens details are hardcoded within the Algorand Nano application instead of being streamed to the device. Furthermore, the ownership of the Algorand Nano Application source code lies with the Algorand team. Request for updates must be validated by them before being reviewed by Ledger.
 

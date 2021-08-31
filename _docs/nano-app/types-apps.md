@@ -7,10 +7,7 @@ author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Nano App
 This is the application that allows the users to manage their crypto-assets with their Ledger devices. It is the first step to an integration of your coin or token to the Ledger environment and to an integration of your blockchain to Ledger Live.

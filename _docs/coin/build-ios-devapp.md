@@ -9,11 +9,6 @@ layout: doc_ci
 
 <!-- 2021-03-30 based on 2177138906 in Confluence -->
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 This page explains how to install the Ledger Live dev app for iOS on macOS.
 
 ## Prerequisites

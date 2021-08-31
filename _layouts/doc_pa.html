@@ -45,6 +45,14 @@ layout: default
 
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
                     <div class="article-content link-primary">
+
+                      <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m">
+                        <h5>Sections in this article</h5>
+                        <div class="content-toc">
+                          {% toc %}
+                        </div>
+                      </div>
+
                         {{ content }}
                         {% if site.share.doc %}
                             <!-- FC

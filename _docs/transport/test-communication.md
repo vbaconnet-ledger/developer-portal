@@ -7,10 +7,7 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## How to know if a Nano application allows a type of transport?
 
