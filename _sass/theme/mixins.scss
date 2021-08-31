@@ -494,6 +494,7 @@
     .sidebar-docs {
         width: $docs-sidebar-width - $global-medium-gutter;
         padding-right: $global-medium-gutter;
+        line-height: 1.1;
         top: 112px;
         bottom: 70px;
         overflow-y: scroll;
