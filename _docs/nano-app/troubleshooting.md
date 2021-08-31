@@ -117,7 +117,7 @@ With our error model, there are two common failure scenarios.
 
 An application crashing when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
 - The Secure Element is isolated due to invalid handling of [SEPROXYHAL](https://developers.ledger.com/docs/nano-app/bolos-hardware-architecture/#seproxyhal) packets
-- Theres a core fault on the device (perhaps due to a [misaligned memory access](../u_alignment) or an attempt to access restricted memory)
+- Theres a core fault on the device (perhaps due to a [misaligned memory access](../memory-alignment) or an attempt to access restricted memory)
 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
 
@@ -135,5 +135,5 @@ PRINTF("uint16_t: %d", ptr16[0]);
 
 `ptr16[0]` access can make the application crash, even though `tmp_ctx.signing_context.buffer[processed]` (`unsigned char*`) can be accessed. This happens when a pointer isn't word-aligned, but a word is accessed in RAM. To workaround this issue, copy the buffer into location that is properly aligned (e.g. using `os_memmove`).
 
-Please refer to the [alignment](../u_alignment) page for further information.
+Please refer to the [alignment](../memory-alignment) page for further information.
 

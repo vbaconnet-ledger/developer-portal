@@ -81,7 +81,7 @@ Here is a typical family folder structure (TS integration):
 ```
 
 <!--  -->
-{% include alert.html style="primary" text="You can refer to existing implementations to complete given examples, like <a href='https://github.com/Ledger-Coin-Integration-team/ledger-live-common/src/families/polkadot'>Polkadot integration</a>" %}
+{% include alert.html style="primary" text="You can refer to existing implementations to complete given examples, like <a href='https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot'>Polkadot integration</a>" %}
 <!--  -->
 
 
@@ -322,7 +322,7 @@ All main accounts share a common ground:
 
 But if needed by the blockchain, an account can also contain coin-specific resources related to a single account, like its "nonce" or additional balances (e.g. for staking), or anything that may be displayed or used in your implementation. It's generally an additional field like `myCoinResources`. See [Family-specific types](#family-specific-types) below.
 
-For further details, see [Account documentation](https://github.com/LedgerHQ/ledger-live-common/blob/master/docs/account.md) and [src/types/account.ts](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/types/account.ts)
+For further details, see [Account documentation](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/account.ts)
 
 #### Operation
 
@@ -351,7 +351,7 @@ If <i>MyCoin</i> has specific operation fields (like `additionalField` we added 
 
 If <i>MyCoin</i> uses a "nonce", then `transactionSequenceNumber` must be filled correctly, as it will be necessary for signing new transactions (and will interpreted to clear pending operations). Only outgoing transaction must have this value though. See [Optimistic Operation](#optimistic-operation).
 
-See [src/types/operation.ts](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/types/operation.ts) for better understanding of all fields.
+See [src/types/operation.ts](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/operation.ts) for better understanding of all fields.
 
 #### Operation Type
 
@@ -365,7 +365,7 @@ As said above, an `Operation` has a `type` which is generic string typed as `Ope
 - `REWARD_PAYOUT`: A received reward (as an incoming transaction)
 - `SLASH`: A staking slash (with slashed amount generally)
 
-There are more types available, existing one will have predefined icons, translations and behaviours (i.e. `getOperationAmountNumber()` in [src/operation.ts](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/operation.ts)).
+There are more types available, existing one will have predefined icons, translations and behaviours (i.e. `getOperationAmountNumber()` in [src/operation.ts](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/operation.ts)).
 
 <i>MyCoin</i> could have also specific operation types, if you need to add a type that is not yet implemented, add them in `src/types/operation.ts`. You will later need to implement some specific code for the Ledger Live Desktop and Mobile to display them correctly.
 
@@ -1191,7 +1191,7 @@ In some cases, you might need to do a `postSync` patch to add some update logic 
 #### Reconciliation
 
 Currently, Ledger Live Desktop executes this bridge in a separate thread. Thus, the "avoid race condition" aspect of sync might not be respected since the UI renderer thread does not share the same objects.
-This may be improved in the future, but for updates to be reflected during sync, we implemented reconciliation in [src/reconciliation.js](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/reconciliation.ts), between the account that is in the renderer and the new account produced after sync.
+This may be improved in the future, but for updates to be reflected during sync, we implemented reconciliation in [src/reconciliation.js](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/reconciliation.ts), between the account that is in the renderer and the new account produced after sync.
 
 Since we might have added some coin-specific data in `Account`, we must also reconciliate it:
 
@@ -1795,7 +1795,7 @@ export default {
 };
 ```
 
-Of course if <i>MyCoin</i> has more complex transactions, you can add many arguments to CLI. You can also define you own cli commands for any specific data you would like to fetch. See [Polkadot CLI commands](https://github.com/Ledger-Coin-Integration-team/ledger-live-common/blob/master/src/families/polkadot/cli-transaction.ts).
+Of course if <i>MyCoin</i> has more complex transactions, you can add many arguments to CLI. You can also define you own cli commands for any specific data you would like to fetch. See [Polkadot CLI commands](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/families/polkadot/cli-transaction.ts).
 
 Now you can try a `getTransactionStatus` or a `send`:
 
