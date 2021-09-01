@@ -538,7 +538,7 @@
       top: 95px;
       width:250px;
       // background: white;
-      border: solid 1px black;
+      border-left: solid 1px black;
       margin-left: 35px;
       padding-top:20px;
       padding-right: 10px;
@@ -580,6 +580,7 @@
     .section-title {
       font-weight: bold;
       font-size: 18px;
+      font-family: $global-font-family;
     }
 
 
@@ -588,6 +589,11 @@
       text-decoration: none !important; /* do not underline */
       border-bottom: none !important;
       opacity: 0;
+    }
+
+    .header-nav-active {
+      font-weight: bold;
+      background: orange;
     }
 
     @media (max-width: 768px) {
