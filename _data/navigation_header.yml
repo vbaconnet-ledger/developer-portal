@@ -23,12 +23,6 @@ left:
     - title: Speculos
       url: /docs/speculos/start-here
 
-  - title: Contribution
-    url: /contribution
-
-  - title: Changelog
-    url: /changelog-timeline
-
 # Navbar right menu navigation links
 
 right:

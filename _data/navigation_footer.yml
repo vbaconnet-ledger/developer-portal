@@ -7,5 +7,12 @@
 #- title: Blog
 #  url: /blog/
 
-- title: Contact
+- title: Get connected
   url: /contact/
+
+- title: Contribute
+  url: /contribution/
+
+
+- title: Changelog
+  url: /changelog-timeline/
