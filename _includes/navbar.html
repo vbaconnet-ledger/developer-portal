@@ -8,12 +8,16 @@
 
                     <ul class="uk-navbar-nav uk-visible@l">
                         {% for link in site.data.navigation_header.left %}
+                        {% assign url = page.url | split: "/" %}
+                        {% assign category = url[2] %}
+                        {% assign link_url = link.url | split: "/" %}
+                        {% assign link_category = link_url[2] %}
                             {% if link.url contains 'http' %}
                                 {% assign domain = '' %}
                             {% else %}
                                 {% assign domain = '' | relative_url %}
                             {% endif %}
-                            {% if link.url == page.url %}
+                            {% if link_category == category %}
                                 {% assign current = ' class="uk-active"' %}
                             {% else %}
                                 {% assign current = null %}
@@ -30,13 +34,15 @@
                                             <div class="uk-navbar-dropdown">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     {% for child in link.dropdown %}
+                                                    {% assign child_url = child.url | split: "/" %}
+                                                    {% assign child_category = child_url[2] %}
                                                     {% if child.url != null %}
                                                         {% if child.url contains 'http' %}
                                                             {% assign domain = '' %}
                                                         {% else %}
                                                             {% assign domain = '' | relative_url %}
                                                         {% endif %}
-                                                        {% if child.url == page.url %}
+                                                        {% if child_category == category %}
                                                             {% assign current = ' class="uk-active"' %}
                                                         {% else %}
                                                             {% assign current = null %}

@@ -3,6 +3,7 @@ title: Adding *MyCoin* to Live-Common
 subtitle:
 tags: []
 author:
+toc: true
 layout: doc_ci
 ---
 

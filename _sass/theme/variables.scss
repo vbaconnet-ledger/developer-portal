@@ -8,12 +8,15 @@ $global-muted-color:                          #565656;
 // Removed for V3: $global-primary-background:                   #41CCB4; // Added by C.F when testing new charter
 $legacy-green:                                #41CCB4; // Added by C.F when testing new charter. Temporary.
 // Removed for V3: +$global-primary-background:                   #41CCB4;
-$global-primary-background:                   #000000; // Added by CF for V3 31.08.2021
-// Removed for V3 : $global-secondary-background:                 #F3F3F3;
+$global-primary-background:                   #463A9E; // Added by CF for V3 31.08.2021
+// Removed for V3: $global-secondary-background:                 #F3F3F3;
 $global-secondary-background:                 #F9F9F9; // Added by CF for V3 31.08.2021
-$global-warning-background:                   #EBB81E;
-$global-success-background:                   #6490F1; /* 6490F1   FC 2021-05-11  was 0F0F0F */
-$global-danger-background:                    #f0506e;
+// Removed for V3: $global-warning-background:                   #EBB81E;
+$global-warning-background:                   #FF6E33; // Added by CF for V3 01.09.2021
+// Removed for V3: $global-success-background:                   #6490F1; /* 6490F1   FC 2021-05-11  was 0F0F0F */
+$global-success-background:                   #6EC85C; // Added by CF for V3 01.09.2021
+// Removed for V3: $global-danger-background:                    #f0506e;
+$global-danger-background:                    #F04F52; // Added by CF for V3 01.09.2021
 $base-link-color:                               $global-color;
 $base-link-hover-color:                         $global-color;
 $link-muted-hover-color:                        $global-color;
@@ -50,8 +53,8 @@ $border-radius-medium:                          4px;
 $border-radius-large:                           4px;
 
 // Pre & Code
-$base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-$base-code-color:                               darken($global-primary-background, 3%);
+$base-code-font-family:                         $global-font-family, Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+$base-code-color:                               darken($global-color, 3%); // Modified by CF for V3 01.09.2021 (was global-primary-color)
 $base-pre-font-size:                            $global-small-font-size;
 $base-pre-line-height:                          1.65;
 $base-pre-font-family:                          $base-code-font-family;

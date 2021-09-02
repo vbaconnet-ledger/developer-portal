@@ -8,6 +8,8 @@
 
 */
 
+// Added by CF for V3 (New code highlighting colors)
+
 
 .highlight .hll { background-color: #49483e }
 .highlight  { background: #272822; color: #f9f8f5 }
@@ -80,7 +82,7 @@ p code.highlighter-rouge,
 p kbd {
     color: #f9f8f5;
     background-color: lighten(#272822, 5%);
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-family: $global-font-family, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     border-radius: 2px;
 }
 

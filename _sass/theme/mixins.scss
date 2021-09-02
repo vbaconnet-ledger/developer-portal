@@ -222,7 +222,8 @@
         font-size: $global-small-font-size;
     }
     > span {
-        color: $global-primary-background;
+        // Removed for V3: color: $global-primary-background;
+        color: $global-color; // Added by CF for V3 (color of the icon on the home page)
     }
 }
 
@@ -573,24 +574,9 @@
       > ul li {list-style: none;}
     }
 
-    // Added by CF for V3. To be removed.
-    .section-path{
-      position: fixed;
-      padding-left: 25px;
-      padding-top: 25px;
-      line-height: 2px;
-    }
-
-    .section-title {
-      font-weight: bold;
-      font-size: 18px;
-      font-family: $global-font-family;
-    }
-
-    // Added by CF for V3
-    .header-nav-active {
-      font-weight: bold;
-      background: orange;
+    // Icons on the home-page
+    .icon-home{
+      color: $global-color;
     }
 
     // Anchors next to titles to facilitate copy/pasting links
@@ -628,10 +614,10 @@
         &:before {
             content: "";
             position: absolute;
-            top: 15px;
+            top: 13px; // Modified from 15 to 13 by CF for V3 01.09.2021 (small dash in front of active elements in left side bar)
             left: -14px;
             width: 7px;
-            border-top: 1px solid $global-primary-background;
+            border-top: 2px solid $legacy-green; // Modified px and color by CF for V3 01.09.2021 (color is temporary)
         }
     }
 
@@ -749,7 +735,8 @@
             // Removed for V3 border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;
-            color: $global-primary-background;
+            // Removed for V3: color: $global-primary-background;
+            color: $global-color; // Added by CF for V3 01.09.2021
 
             &::after {
                 content: "";
