@@ -51,9 +51,11 @@ The DApp must run differently if it is called from within an iframe or not. If i
 
 
 ### Testing locally
-A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in the
+A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in:
 
-`https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>`
+```
+https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>
+```
 
 For example, this is how it is used with Paraswap:
 

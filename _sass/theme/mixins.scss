@@ -549,7 +549,7 @@
       text-decoration: none;
       > ul {padding-left: 20px;}
       > ul li {list-style: none;}
-      > h5 {padding-left: 20px; color:$global-primary-background;}
+      > h5 {padding-left: 20px; color:$global-color;}
     }
 
     .sidebar-sticky {
@@ -564,6 +564,7 @@
       font-weight: bold;
       background-color: lighten( $legacy-green, 45% );
     }
+
 
     .content-toc {
       border-left: solid 2px #d9dde0;
