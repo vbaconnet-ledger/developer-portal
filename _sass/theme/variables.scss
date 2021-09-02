@@ -2,12 +2,15 @@
 // ========================================================================
 
 // Color
-$global-color:                                #000000;
+$global-color:                                #000000; // Added by CF for V3 31.08.2021
+// Removed for V3: $global-color:                                #142533;
 $global-muted-color:                          #565656;
-//$global-primary-background:                   #41CCB4;
-$legacy-green:                                #41CCB4; // Added by C.F when testing new charter
-$global-primary-background:                   #000000;
-$global-secondary-background:                 #F9F9F9;
+// Removed for V3: $global-primary-background:                   #41CCB4; // Added by C.F when testing new charter
+$legacy-green:                                #41CCB4; // Added by C.F when testing new charter. Temporary.
+// Removed for V3: +$global-primary-background:                   #41CCB4;
+$global-primary-background:                   #000000; // Added by CF for V3 31.08.2021
+// Removed for V3 : $global-secondary-background:                 #F3F3F3;
+$global-secondary-background:                 #F9F9F9; // Added by CF for V3 31.08.2021
 $global-warning-background:                   #EBB81E;
 $global-success-background:                   #6490F1; /* 6490F1   FC 2021-05-11  was 0F0F0F */
 $global-danger-background:                    #f0506e;
@@ -16,8 +19,9 @@ $base-link-hover-color:                         $global-color;
 $link-muted-hover-color:                        $global-color;
 
 // Font
-$global-font-family:                            "HMAlphaMono";  //FC 2021-06-01 1202
-$body-font-family:                              "InterRegular";
+// Removed for V3: $global-font-family:                            "MuseoSans";  //FC 2021-06-01 1202
+$global-font-family:                            "HMAlphaMono";  // Added by CF for V3 31.08.2021
+$body-font-family:                              "InterRegular"; // Added by CF for V3 31.08.2021
 $global-xxlarge-font-size:                      2.25rem;    // H1
 $global-xlarge-font-size:                       1.6875rem;  // H2
 $global-large-font-size:                        1.375rem;   // H3
@@ -92,18 +96,23 @@ $label-padding-vertical:                        2px;
 // Navbar
 $navbar-background:                           #fff;
 $navbar-nav-item-color:                         $global-color;
-$navbar-nav-item-hover-color:                   $legacy-green;
-$navbar-nav-item-active-color:                  $legacy-green;
+// Removed for V3: $navbar-nav-item-hover-color:                   $global-primary-background;
+$navbar-nav-item-hover-color:                   $legacy-green; // Added by CF for V3 Temporary
+// Removed for V3: $navbar-nav-item-active-color:                  $global-primary-background;
+$navbar-nav-item-active-color:                  $legacy-green; // Added by CF for V3 Temporary
 $navbar-nav-item-font-size:                     0.9375rem;
 $navbar-nav-item-text-transform:                none;
 $navbar-toggle-color:                           $global-color;
-$navbar-toggle-hover-color:                     $legacy-green;
+// Removed for V3: $navbar-toggle-hover-color:                     $global-primary-background;
+$navbar-toggle-hover-color:                     $legacy-green; // Added by CF for V3 Temporary
 
 // Navbar dropdown
 $navbar-dropdown-margin:                        1px;
 $navbar-dropdown-nav-item-color:                $global-color;
-$navbar-dropdown-nav-item-hover-color:          $legacy-green;
-$navbar-dropdown-nav-item-active-color:         $legacy-green;
+// Removed for V3: $navbar-dropdown-nav-item-hover-color:          $global-primary-background;
+$navbar-dropdown-nav-item-hover-color:          $legacy-green; // Added by CF for V3 Temporary
+// Removed for V3: $navbar-dropdown-nav-item-active-color:         $global-primary-background;
+$navbar-dropdown-nav-item-active-color:         $legacy-green; // Added by CF for V3 Temporary
 
 // Subnav
 $subnav-item-color:                             $global-muted-color;
@@ -130,8 +139,8 @@ $card-small-body-padding-vertical:              25px;
 $card-body-padding-vertical-l:                  50px;
 $card-default-color:                            $global-muted-color;
 $card-hover-background:                        #FFFfff; /* FC 2021-05-11 1153 */
-// $card-default-background:                       $global-secondary-background;
-$card-default-background:                       #FFFFFF;
+// Removed for V3: $card-default-background:                       $global-secondary-background;
+$card-default-background:                       #FFFFFF; // Added by CF for V3 31.08.2021
 $card-default-title-color:                      $global-color;
 
 // Offcanvas
@@ -162,7 +171,7 @@ $featured-right-image:                          "data:image/svg+xml,%3Csvg width
 
 // Doc navigation
 $docs-sidebar-width:                            260px;
-$docs-sidebar-width-m:                          280px;
+$docs-sidebar-width-m:                          280px; // Modified by CF (former version:20px)
 $docs-sidebar-width-l:                          360px;
 
 // right sidebar FC 2021-04-09, 20:02:45

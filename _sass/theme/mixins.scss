@@ -13,12 +13,15 @@
     }
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav) {
         transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-        border-bottom: 1px solid $legacy-green;
-        color: $legacy-green;
+// V2   border-bottom: 1px solid $global-primary-background;
+// V2   color: $global-primary-background;
+        border-bottom: 1px solid $legacy-green; // Added by CF for V3 31.08.2021
+        color: $legacy-green; // Added by CF for V3 31.08.2021
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
-        border-bottom-color: lighten($legacy-green, 25%);
+// V2   border-bottom-color: lighten($global-primary-background, 25%);
+        border-bottom-color: lighten($legacy-green, 25%); // Added by CF for V3 31.08.2021
         text-decoration: none;
     }
 
@@ -62,7 +65,7 @@
 }
 
 @mixin hook-button(){
-    // border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
+// Removed for V3: border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
 }
 
 @mixin hook-button-misc(){
@@ -191,7 +194,7 @@
 }
 
 @mixin hook-alert(){
-    // border-radius: $border-rounded-border-radius;
+// Removed for V3 : border-radius: $border-rounded-border-radius;
 }
 
 @mixin hook-alert-misc(){
@@ -355,7 +358,7 @@
 
 @mixin hook-table-misc() {
     table {
-        table-layout: fixed; // Added by CF 31.08.2021
+        table-layout: fixed; // Added by CF for V3 31.08.2021 (to fit with right sidebar-toc)
         font-size: $global-small-font-size;
         border-collapse: collapse;
         border-spacing: 0;
@@ -372,7 +375,7 @@
         }
         td {
             vertical-align: top;
-            overflow: scroll; // Added by CF 31.08.2021
+            overflow: scroll; // Added by CF for V3 31.08.2021 (to fit with right sidebar-toc)
         }
         th {
             text-align: left;
@@ -491,12 +494,12 @@
     }
 
     .sidebar-fixed-width {
-        padding-left: 10px;
+        padding-left: 10px; // Modified by CF for V3 31.08.2021
         width: $docs-sidebar-width;
     }
     .sidebar-docs {
-        width: $docs-sidebar-width;
-        line-height: 1.1;
+        width: $docs-sidebar-width; // Modified by CF for V3 31.08.2021
+        line-height: 1.1; // Modified by CF for V3 31.08.2021
         top: 112px;
         bottom: 70px;
         overflow-y: scroll;
@@ -533,7 +536,7 @@
     //     }
     // }
 
-
+    // Right TOC Sidebar added by CF for V3
    .sidebar-toc {
       top: 95px;
       width:250px;
@@ -570,6 +573,7 @@
       > ul li {list-style: none;}
     }
 
+    // Added by CF for V3. To be removed.
     .section-path{
       position: fixed;
       padding-left: 25px;
@@ -583,17 +587,18 @@
       font-family: $global-font-family;
     }
 
+    // Added by CF for V3
+    .header-nav-active {
+      font-weight: bold;
+      background: orange;
+    }
 
+    // Anchors next to titles to facilitate copy/pasting links
     .anchorjs-link {
       color: inherit !important;
       text-decoration: none !important; /* do not underline */
       border-bottom: none !important;
       opacity: 0;
-    }
-
-    .header-nav-active {
-      font-weight: bold;
-      background: orange;
     }
 
     @media (max-width: 768px) {
@@ -653,7 +658,7 @@
             margin: 60px auto 0 auto;
             .uk-search-input {
                 height: 80px;
-                // border-radius: 50px;
+                // Removed for V3 : border-radius: 50px;
                 font-size: 1.25rem;
                 font-style: normal;
                 padding-left: 36px;
@@ -741,6 +746,7 @@
             font-size: $text-lead-font-size;
             overflow: hidden;
             border: solid 1px $border-light; //FC 2021-06-01 1119 to add a separator betw popular articles
+            // Removed for V3 border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;
             color: $global-primary-background;
@@ -759,6 +765,7 @@
             &:hover {
                 text-decoration: none;
                 border: solid 1px #000000;
+                // Removed for V3 color: $global-primary-background;
             }
 
         }
