@@ -37,6 +37,12 @@
   - nano-app/troubleshooting
   - nano-app/debug
 
+- title: Variant applications
+  docs:
+  - nano-app/variant-specificities
+  - nano-app/eth-variants
+  - nano-app/btc-variants
+
 - title: Publishing an application
   docs:
   - nano-app/publish-introduction
