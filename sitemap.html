@@ -1,0 +1,39 @@
+---
+layout: page
+title: Sitemap
+width: medium
+---
+
+<h3>Nano App</h3>
+{% for section in site.data.navigation_docs_na %}
+<ul>
+  <li>{{ section.title }}</li>
+
+  {% if section.subfolderitems %}
+    {% for subsection in section.subfolderitems %}
+      <ul>
+        <li>{{ subsection.title }}</li>
+        {% for doc in subsection.docs %}
+        <ul>
+        {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+        {% assign doc_content = site.docs | where:"url", doc_url | first %}
+          <li> <a href="..{{ doc_url }}">{{ doc_content.title }}</a> </li>
+        </ul>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+
+  {% else %}
+
+  {% for doc in section.docs %}
+    <ul>
+    {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+    {% assign doc_content = site.docs | where:"url", doc_url | first %}
+      <li><a href="..{{ doc_url }}">{{ doc_content.title }}</a></li>
+    </ul>
+  {% endfor %}
+
+  {% endif %}
+</ul>
+{%  endfor %}
+
