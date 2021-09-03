@@ -4,36 +4,141 @@ title: Sitemap
 width: medium
 ---
 
-<h3>Nano App</h3>
-{% for section in site.data.navigation_docs_na %}
-<ul>
-  <li>{{ section.title }}</li>
+<div class="uk-child-width-expand@m uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body sitemap">
+          <h3>Nano App</h3>
+          {% for section in site.data.navigation_docs_na %}
+            <h4>{{ section.title }}</h4>
+            {% if section.subfolderitems %}
+              {% for subsection in section.subfolderitems %}
+                  <h5>{{ subsection.title }}</h5>
+                  {% for doc in subsection.docs %}
+                  {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                  {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                    <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+                  {% endfor %}
+              {% endfor %}
 
-  {% if section.subfolderitems %}
-    {% for subsection in section.subfolderitems %}
-      <ul>
-        <li>{{ subsection.title }}</li>
-        {% for doc in subsection.docs %}
-        <ul>
-        {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-        {% assign doc_content = site.docs | where:"url", doc_url | first %}
-          <li> <a href="..{{ doc_url }}">{{ doc_content.title }}</a> </li>
-        </ul>
-        {% endfor %}
-      </ul>
-    {% endfor %}
+            {% else %}
 
-  {% else %}
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
 
-  {% for doc in section.docs %}
-    <ul>
-    {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-    {% assign doc_content = site.docs | where:"url", doc_url | first %}
-      <li><a href="..{{ doc_url }}">{{ doc_content.title }}</a></li>
-    </ul>
-  {% endfor %}
+            {% endif %}
+          {%  endfor %}
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body sitemap">
+          <h3>Coin Integration</h3>
+          {% for section in site.data.navigation_docs_ci %}
+            <h4>{{ section.title }}</h4>
 
-  {% endif %}
-</ul>
-{%  endfor %}
+            {% if section.subfolderitems %}
+              {% for subsection in section.subfolderitems %}
+                  <h5>{{ subsection.title }}</h5>
+                  {% for doc in subsection.docs %}
+                  {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                  {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                    <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+                  {% endfor %}
+              {% endfor %}
+
+            {% else %}
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
+            {% endif %}
+          {%  endfor %}
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body sitemap">
+          <h3>Token Integration</h3>
+          {% for section in site.data.navigation_docs_et %}
+            <h4>{{ section.title }}</h4>
+
+            {% if section.subfolderitems %}
+              {% for subsection in section.subfolderitems %}
+                  <h5>{{ subsection.title }}</h5>
+                  {% for doc in subsection.docs %}
+                  {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                  {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                    <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+                  {% endfor %}
+              {% endfor %}
+
+            {% else %}
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
+            {% endif %}
+          {%  endfor %}
+
+           <h3>DApp Integration</h3>
+          {% for section in site.data.navigation_docs_da %}
+            <h4>{{ section.title }}</h4>
+
+            {% if section.subfolderitems %}
+              {% for subsection in section.subfolderitems %}
+                  <h5>{{ subsection.title }}</h5>
+                  {% for doc in subsection.docs %}
+                  {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                  {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                    <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+                  {% endfor %}
+              {% endfor %}
+
+            {% else %}
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
+            {% endif %}
+          {%  endfor %}
+
+           <h3>Connect a wallet app</h3>
+          {% for section in site.data.navigation_docs_tr %}
+            <h4>{{ section.title }}</h4>
+
+            {% if section.subfolderitems %}
+              {% for subsection in section.subfolderitems %}
+                  <h5>{{ subsection.title }}</h5>
+                  {% for doc in subsection.docs %}
+                  {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                  {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                    <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+                  {% endfor %}
+              {% endfor %}
+
+            {% else %}
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
+            {% endif %}
+          {%  endfor %}
+        </div>
+    </div>
+</div>
+
+
 
