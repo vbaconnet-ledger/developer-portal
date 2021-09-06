@@ -1,3 +1,6 @@
+# This file is a duplicate of navigation_docs_ci.yml without the nested menu (subfolderitems)
+# We need it to make "previous" and "next" buttons work properly
+
 - title: Getting Started
   docs:
   - coin/general-process
@@ -17,14 +20,9 @@
   - coin/cryptoassets-library
   - coin/js-bindings
   - coin/desktop-mobile
-  subfolderitems:
-    - title: Adding *MyCoin* to Live-Common
-      docs:
-      - coin/live-common
-      - coin/live-common-integration-01
-      - coin/live-common-integration-02
-
-
+  - coin/live-common
+  - coin/live-common-integration-01
+  - coin/live-common-integration-02
 
 - title: Testing
   docs:
