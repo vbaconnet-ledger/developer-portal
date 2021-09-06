@@ -38,6 +38,12 @@ width: medium
           {% for section in site.data.navigation_docs_ci %}
             <h4>{{ section.title }}</h4>
 
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
             {% if section.subfolderitems %}
               {% for subsection in section.subfolderitems %}
                   <h5>{{ subsection.title }}</h5>
@@ -47,16 +53,8 @@ width: medium
                     <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
                   {% endfor %}
               {% endfor %}
-
-            {% else %}
-
-            {% for doc in section.docs %}
-              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-              {% assign doc_content = site.docs | where:"url", doc_url | first %}
-                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
-            {% endfor %}
-
             {% endif %}
+
           {%  endfor %}
 
           <h3>Token Integration</h3>
