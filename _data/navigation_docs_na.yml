@@ -11,6 +11,10 @@
 - title: Security best practices
   docs:
   - nano-app/secure-app
+  - nano-app/development-practices
+  - nano-app/cryptography
+  - nano-app/c-enemy
+  - nano-app/business-logic-problems
 
 - title: Backround information
   subfolderitems:

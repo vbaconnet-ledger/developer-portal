@@ -12,7 +12,7 @@ const tocLinks = document.querySelectorAll(".sidebar-toc a");
 
     tocLinks.forEach((link) => {
       link.classList.remove("active");
-      linkTitle = link.innerText.toUpperCase().replaceAll(" ", "-").replaceAll(",", "").replaceAll(".", "").replaceAll("–", "").replaceAll("…", "").replaceAll("?", "").replaceAll("’", "").replaceAll("/", "").replaceAll(":", "").replaceAll("(", "").replaceAll(")", "");
+      linkTitle = link.innerText.toUpperCase().replaceAll(" ", "-").replaceAll(",", "").replaceAll(".", "").replaceAll("–", "").replaceAll("…", "").replaceAll("?", "").replaceAll("’", "").replaceAll("”", "").replaceAll("“", "").replaceAll("/", "").replaceAll(":", "").replaceAll("(", "").replaceAll(")", "");
 
       console.log(linkTitle);
       console.log(current);
@@ -22,3 +22,4 @@ const tocLinks = document.querySelectorAll(".sidebar-toc a");
       }
     });
   });
+
