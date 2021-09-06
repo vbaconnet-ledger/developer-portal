@@ -5,6 +5,16 @@
   list:
   - The developer portal is a new unique documentation platform for third-party foundations and blockchain teams. For the first time, all essential documentation for third-party integrators is brought together in one place. It gathers all the information needed to easily build Nano Apps and integrate coins, tokens or DApps to Ledger Live.
 
+- title: Update to V3
+  label:
+  date: September 30th, 2021
+  list:
+  - New design and easier navigation through articles
+  - Documentation to connect third party wallets to Ledger devices and Nano Applications
+  - Enhanced plugin documentation ?
+  - Doc Donjon (security review Nano) ?
+  - New procedure quickstart Nano
+
 
 # Templates :
 # - title: Version 1.0.0
