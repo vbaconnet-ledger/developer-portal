@@ -56,7 +56,9 @@ typedef enum chain_kind_e {
 ```
 
 
-## Upload your icons
+## Upload your app's icons
+
+Once you have created your App's icons following the [Design requirements](../design-requirements), upload them in the `/icons` folder.
 
 ## Adding tokens
 
@@ -100,3 +102,6 @@ extern tokenDefinition_t const TOKENS_TOMOCHAIN[NUM_TOKENS_TOMOCHAIN];
 
 
 ## Open a pull request
+
+When your application is ready, open a pull request on the Ethereum application repository.
+
