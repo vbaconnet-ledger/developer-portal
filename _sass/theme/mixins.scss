@@ -617,6 +617,12 @@
       text-align: start;
     }
 
+    @media (max-width: $breakpoint-medium) {
+        .sitemap {
+          text-align: center;
+        }
+    }
+
     .sitemap h5{
       margin-top: 20px;
       margin-bottom: 10px;
