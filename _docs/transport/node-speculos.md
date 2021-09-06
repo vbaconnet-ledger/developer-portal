@@ -99,7 +99,7 @@ Send a speculos button command
 typically "Ll" would press and release the left button
 typically "Rr" would press and release the right button
 
-##### Parameters
+**Parameters**
 
 -   `command` **any**
 
@@ -107,7 +107,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 #### open
 
-##### Parameters
+**Parameters**
 
 -   `opts` **[SpeculosTransportOpts](#speculostransportopts)**
 

@@ -53,7 +53,7 @@ To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-l
 
 The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 
-After the Launch meeting, we will assess the feasibility and the maturity of your coin integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
+After the Launch meeting, we will assess the feasibility and the maturity of your blockchain integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
 
 - Resources
 - Support and communication channels

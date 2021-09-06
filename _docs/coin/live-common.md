@@ -13,10 +13,10 @@ Ledger Live Common is the shared core library used by Ledger Live Desktop and Mo
 
 This library is built upon a pretty standard ES6 + Typescript stack and relies on a bunch of [ledgerjs](https://github.com/LedgerHQ/ledgerjs) packages, [RxJS 6.x](https://github.com/ReactiveX/rxjs/tree/6.x), [bignumber.js](https://github.com/MikeMcl/bignumber.js) and [React](https://github.com/facebook/react/) + [Redux](https://github.com/reduxjs/redux) for some front-end utilities and hooks.
 
-It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new coin integrations through flexibility.
+It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new blockchain integrations through flexibility.
 All integrated coins are implemented in a `src/families` dedicated folder which contains the specifics of a coin family - that can be shared by multiple crypto-assets that use the same implementation (i.e. Bitcoin-like coins share the same `bitcoin` family).
 
-**This document only concerns new coin integrations using Typecript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
+**This document only concerns new blockchain integrations using Typecript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
 
 ## Setup
 
@@ -742,7 +742,7 @@ export {
 
 Basically, in the next sections, `getAccount` will be called to create an `Account` with balances and any additional resources, and `getOperations` will be called to fill the `operations[]` of this account, with the whole history of operations that can be requested incrementally. Then `getFees` before sending a transaction to let the user know of the network cost (estimated or effective), and `submit` to broadcast its transaction after signing.
 
-See [Polkadot Coin Integration's api](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot/api) for good inspiration.
+See [Polkadot Blockchain Integration's api](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot/api) for good inspiration.
 
 #### API Example
 
@@ -937,7 +937,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
-`bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
+`bridge/js.ts` is the entry point of a blockchain integration. It must export two bridges:
 
 - a CurrencyBridge
 - an AccountBridge

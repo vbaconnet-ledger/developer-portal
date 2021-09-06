@@ -35,7 +35,7 @@ TransportNodeHid.create().then(transport => ...)
 
 ### listen
 
-#### Parameters
+**Parameters**
 
 -   `observer` **Observer&lt;DescriptorEvent&lt;any>>**
 

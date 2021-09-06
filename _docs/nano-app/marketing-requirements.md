@@ -2,7 +2,6 @@
 title: Marketing requirements
 subtitle:
 tags: []
-toc: true
 author:
 layout: doc_na
 ---

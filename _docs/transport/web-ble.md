@@ -32,7 +32,7 @@ import BluetoothTransport from "@ledgerhq/hw-transport-web-ble";
 
 Exchange with the device using APDU protocol.
 
-#### Parameters
+**Parameters**
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
@@ -44,7 +44,7 @@ observe event with { available: bool, type: string }
 (available is generic, type is specific)
 an event is emit once and then each time it changes
 
-#### Parameters
+**Parameters**
 
 -   `observer` **any**
 
@@ -53,7 +53,7 @@ an event is emit once and then each time it changes
 Scan for Ledger Bluetooth devices.
 On this web implementation, it only emits ONE device, the one that was selected in the UI (if any).
 
-#### Parameters
+**Parameters**
 
 -   `observer` **any**
 
@@ -61,7 +61,7 @@ On this web implementation, it only emits ONE device, the one that was selected 
 
 open a bluetooth device.
 
-#### Parameters
+**Parameters**
 
 -   `deviceOrId` **(Device | [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))**
 
@@ -69,6 +69,6 @@ open a bluetooth device.
 
 globally disconnect a bluetooth device by its id.
 
-#### Parameters
+**Parameters**
 
 -   `id` **any**

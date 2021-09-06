@@ -5,7 +5,7 @@
   icon: nano
   doc: nano-app/introduction
 
-- title: Coin Integration
+- title: Blockchain Integration
   desc: How to get your currency supported on Ledger Live
   icon: coin
   doc: coin/general-process

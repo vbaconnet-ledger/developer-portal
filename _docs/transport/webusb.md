@@ -64,7 +64,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 Exchange with the device using APDU protocol.
 
-#### Parameters
+**Parameters**
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
@@ -85,7 +85,7 @@ that was either accepted before, if not it will trigger the native permission UI
 
 Important: it must be called in the context of a UI click!
 
-#### Parameters
+**Parameters**
 
 -   `observer` **Observer&lt;DescriptorEvent&lt;USBDevice>>**
 
@@ -103,6 +103,6 @@ Similar to create() except it will never display the device permission (it retur
 
 Create a Ledger transport with a USBDevice
 
-#### Parameters
+**Parameters**
 
 -   `device` **USBDevice**

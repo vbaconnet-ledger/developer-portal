@@ -30,7 +30,7 @@ TransportHID.create().then(transport => ...)
 
 ### exchange
 
-#### Parameters
+**Parameters**
 
 -   `apdu` **any** input value
 
@@ -58,7 +58,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 Listen to ledger devices events
 
-#### Parameters
+**Parameters**
 
 -   `observer` **any**
 
@@ -68,6 +68,6 @@ Returns **any**
 
 Open a the transport with a Ledger device
 
-#### Parameters
+**Parameters**
 
 -   `deviceObj` **DeviceObj**

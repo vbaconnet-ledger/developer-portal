@@ -5,7 +5,7 @@ left:
   - title: Nano App
     url: /docs/nano-app/introduction
 
-  - title: Coin Integration
+  - title: Blockchain Integration
     url: /docs/coin/general-process
 
   - title: Token Integration

@@ -38,7 +38,7 @@ cd ledger-live-common
 yalc publish
 ```
 
-## Ledger Live  Mobile
+## Ledger Live Mobile
 
 1. Fork [github.com/LedgerHQ/ledger-live-mobile](https://github.com/LedgerHQ/ledger-live-mobile)
 2. Clone the repo

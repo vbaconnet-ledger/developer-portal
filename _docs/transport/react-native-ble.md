@@ -19,15 +19,11 @@ layout: doc_tr
 -   [for Android] **a recent version of JavaScriptCore** instead of React Native's default one. The simplest way is to set up [jsc-android](https://www.npmjs.com/package/jsc-android). In future, [we expect](https://github.com/facebook/react-native/issues/19737) React Native to upgrade JSC for Android.
 -   **global.Buffer** available. Typically `global.Buffer = require("buffer").Buffer;` that can be placed in a `polyfill.js` and imported with `import "./polyfill";` at first line of the main JavaScript entry file.
 
-## Troubleshootings
+## Troubleshooting
 
 ### Bad BLE link between the Phone and the device
 
 It can sometimes happen that the phone have a broken link, it is in this case recommended to users to go to their phone settings and manually Forget the Nano X. There is at the moment no other ways: there is no programmatic way to unpair a bonded device but you can however have a button that opens that phone settings Bluetooth section.
-
-### `undefined is not a function(evaluating '\_iterator[typeof Symbol === "function"?Symbol.iterator:"@@iterator"]()')`
-
-Read again our Pre-requisites, you must set up jsc-android, alternatively you can figure out what polyfills are required. <https://github.com/facebook/react-native/issues/15902>
 
 ## Minimal getting started
 
@@ -110,11 +106,11 @@ const transport = await TransportBLE.open(deviceId); // deviceId can come from p
 import BluetoothTransport from "@ledgerhq/react-native-hw-transport-ble";
 ```
 
-#### exchange
+**exchange**
 
 communicate with a BLE transport
 
-#### Parameters
+**Parameters**
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
@@ -126,7 +122,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### setLogLevel
 
-#### Parameters
+**Parameters**
 
 -   `level` **any**
 
@@ -136,7 +132,7 @@ TODO could add this concept in all transports
 observe event with { available: bool, string } // available is generic, type is specific
 an event is emit once and then listened
 
-#### Parameters
+**Parameters**
 
 -   `observer` **any**
 
@@ -144,7 +140,7 @@ an event is emit once and then listened
 
 Scan for bluetooth Ledger devices
 
-#### Parameters
+**Parameters**
 
 -   `observer` **any**
 
@@ -152,7 +148,7 @@ Scan for bluetooth Ledger devices
 
 Open a BLE transport
 
-#### Parameters
+**Parameters**
 
 -   `deviceOrId` **any**
 
@@ -160,6 +156,6 @@ Open a BLE transport
 
 Globally disconnect a BLE device by its ID
 
-#### Parameters
+**Parameters**
 
 -   `id` **any**

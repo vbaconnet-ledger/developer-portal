@@ -33,7 +33,7 @@ TransportNodeHid.create().then(transport => ...)
 
 Exchange with the device using APDU protocol.
 
-#### Parameters
+**Parameters**
 
 -   `apdu` **[Buffer](https://nodejs.org/api/buffer.html)**
 
@@ -55,7 +55,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### listen
 
-#### Parameters
+**Parameters**
 
 -   `observer` **Observer&lt;DescriptorEvent&lt;any>>**
 
@@ -65,6 +65,6 @@ Returns **Subscription**
 
 if path="" is not provided, the library will take the first device
 
-#### Parameters
+**Parameters**
 
 -   `path` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | null | [undefined](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined))**

@@ -47,12 +47,14 @@ layout: default
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
                     <div class="article-content link-primary">
 
+                      {% if page.toc %}
                       <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m">
                         <h5>Sections in this article</h5>
                         <div class="content-toc">
                           {% toc %}
                         </div>
                       </div>
+                      {% endif %}
 
                         {{ content }}
                         {% if site.share.doc %}
@@ -92,12 +94,14 @@ layout: default
                 </script>
 
             </div>
+            {% if page.toc %}
             <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
               <div class="sidebar-toc sidebar-sticky">
                 <h5>Sections in this article</h5>
                 {% toc %}
               </div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
