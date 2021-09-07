@@ -2,6 +2,7 @@
 title: Clients - how to send APDUs
 subtitle:
 tags: []
+category: Speculos
 author:
 toc: true
 layout: doc_sp

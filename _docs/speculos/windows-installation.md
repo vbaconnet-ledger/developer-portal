@@ -2,6 +2,7 @@
 title: Windows installation (with WSL 2)
 subtitle:
 tags: []
+category: Speculos
 author:
 toc: true
 layout: doc_sp

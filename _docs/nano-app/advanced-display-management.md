@@ -2,6 +2,7 @@
 title: Advanced display management
 subtitle: Advanced flows for advanced uses
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

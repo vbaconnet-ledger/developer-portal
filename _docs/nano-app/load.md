@@ -2,6 +2,7 @@
 title: Load the app to a Nano S
 subtitle:
 tags: []
+category: Nano Application
 author:
 toc: true
 layout: doc_na

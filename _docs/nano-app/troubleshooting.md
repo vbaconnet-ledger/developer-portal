@@ -2,6 +2,7 @@
 title: Common Pitfalls and Troubleshooting
 subtitle:
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

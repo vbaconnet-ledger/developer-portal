@@ -2,6 +2,7 @@
 title: Integration pt. 1
 subtitle:
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

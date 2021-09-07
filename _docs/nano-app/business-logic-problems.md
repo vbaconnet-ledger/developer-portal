@@ -2,6 +2,7 @@
 title: Business logic problems
 subtitle: Ensuring your app passes the security review
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

@@ -2,6 +2,7 @@
 title: Introduction and setup
 subtitle:
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

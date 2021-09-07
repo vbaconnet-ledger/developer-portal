@@ -2,6 +2,7 @@
 title: Example of Bluetooth implementation in a React App
 subtitle:
 tags: []
+category: Connect a wallet application
 author:
 toc: true
 layout: doc_tr

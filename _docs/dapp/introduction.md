@@ -2,6 +2,7 @@
 title: Integrating DApps
 subtitle:
 tags: []
+category: DApp Integration
 toc: true
 author:
 layout: doc_da

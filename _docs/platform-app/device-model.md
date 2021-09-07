@@ -2,6 +2,7 @@
 title: DeviceModel
 subtitle:
 tags: []
+category: Ledger Live Application
 toc: true
 layout: doc_pa
 ---

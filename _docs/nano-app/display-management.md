@@ -2,6 +2,7 @@
 title: Display Management
 subtitle: With Oscars for on-screen performance
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

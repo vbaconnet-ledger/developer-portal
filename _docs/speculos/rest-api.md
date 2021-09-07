@@ -2,6 +2,7 @@
 title: REST API
 subtitle:
 tags: []
+category: Speculos
 author:
 toc: true
 layout: doc_sp

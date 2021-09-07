@@ -2,6 +2,7 @@
 title: Debug - how to use GDB
 subtitle:
 tags: []
+category: Speculos
 author:
 toc: true
 layout: doc_sp

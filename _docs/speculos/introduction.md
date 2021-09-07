@@ -2,6 +2,7 @@
 title: Introduction
 subtitle:
 tags: []
+category: Speculos
 author:
 toc: true
 layout: doc_sp

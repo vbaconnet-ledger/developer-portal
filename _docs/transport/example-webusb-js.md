@@ -2,6 +2,7 @@
 title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: []
+category: Connect a wallet application
 author:
 toc: true
 layout: doc_tr

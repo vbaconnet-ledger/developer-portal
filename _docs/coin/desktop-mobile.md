@@ -2,6 +2,7 @@
 title: Adding *MyCoin* to Ledger Live Desktop and Mobile
 subtitle:
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

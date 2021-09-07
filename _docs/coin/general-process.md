@@ -2,6 +2,7 @@
 title: General Process
 subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

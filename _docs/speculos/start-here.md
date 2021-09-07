@@ -2,6 +2,7 @@
 title: Start here
 subtitle: Using Speculos
 tags: []
+category: Speculos
 toc: true
 author:
 layout: doc_sp

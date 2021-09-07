@@ -2,6 +2,7 @@
 title: Documentation requirements
 subtitle: Ensuring your documentation is well documented
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

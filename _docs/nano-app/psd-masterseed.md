@@ -2,6 +2,7 @@
 title: The Master Seed
 subtitle: How the 24 words are used on the device
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

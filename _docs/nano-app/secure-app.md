@@ -2,6 +2,7 @@
 title: Introduction
 subtitle: Ensuring your app passes the security review
 tags: []
+category: Nano Application
 author:
 layout: doc_na
 ---

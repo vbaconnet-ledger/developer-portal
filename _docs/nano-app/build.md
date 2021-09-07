@@ -2,6 +2,7 @@
 title: Build the application
 subtitle:
 tags: []
+category: Nano Application
 author:
 toc: true
 layout: doc_na

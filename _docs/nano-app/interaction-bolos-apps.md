@@ -2,6 +2,7 @@
 title: Interaction Between BOLOS and Apps
 subtitle: Getting smooth exchanges
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

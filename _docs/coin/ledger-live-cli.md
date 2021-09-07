@@ -2,6 +2,7 @@
 title: Ledger Live CLI
 subtitle:
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

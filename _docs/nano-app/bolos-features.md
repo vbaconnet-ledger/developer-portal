@@ -2,6 +2,7 @@
 title: BOLOS Features
 subtitle: Secrets, Passphrases and Attestations
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

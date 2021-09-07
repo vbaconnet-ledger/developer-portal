@@ -2,6 +2,7 @@
 title: Ethereum app variants
 subtitle:
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

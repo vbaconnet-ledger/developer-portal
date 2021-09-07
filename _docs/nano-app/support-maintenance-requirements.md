@@ -2,6 +2,7 @@
 title: Support and maintenance requirements
 subtitle:
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

@@ -2,6 +2,7 @@
 title: React native HID
 subtitle:
 tags: []
+category: Connect a wallet application
 author:
 toc: true
 layout: doc_tr

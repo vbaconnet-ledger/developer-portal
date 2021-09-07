@@ -2,6 +2,7 @@
 title: TRC10/20
 subtitle:
 tags: []
+category: Token Integration
 toc: true
 author:
 layout: doc_et

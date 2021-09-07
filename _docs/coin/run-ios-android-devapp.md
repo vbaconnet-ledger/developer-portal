@@ -2,6 +2,7 @@
 title: Running iOS and Android Dev Apps
 subtitle:
 tags: []
+category: Blockchain Integration
 author:
 toc: true
 layout: doc_ci

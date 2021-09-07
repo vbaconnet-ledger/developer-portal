@@ -2,6 +2,7 @@
 title: Application Debug
 subtitle: Making testing easier
 tags: []
+category: Nano Application
 toc: true
 author:
 layout: doc_na

@@ -2,6 +2,7 @@
 title: Marketing requirements
 subtitle:
 tags: []
+category: Nano Application
 author:
 layout: doc_na
 ---

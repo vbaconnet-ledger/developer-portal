@@ -2,6 +2,7 @@
 title: Integrating tokens
 subtitle:
 tags: []
+category: Token Integration
 toc: true
 author:
 layout: doc_et
