@@ -1,7 +1,7 @@
 ---
-title: React native BLE
+title: React native Bluetooth
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet application
 author:
 toc: true

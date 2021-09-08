@@ -1,7 +1,7 @@
 ---
 title: Test the communication
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package, repl]
 category: Connect a wallet application
 author:
 toc: true

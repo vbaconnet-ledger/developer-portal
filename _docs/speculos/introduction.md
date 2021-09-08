@@ -1,7 +1,7 @@
 ---
 title: Introduction
 subtitle:
-tags: []
+tags: [usage]
 category: Speculos
 author:
 toc: true

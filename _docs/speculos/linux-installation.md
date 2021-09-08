@@ -1,7 +1,7 @@
 ---
 title: Linux installation
 subtitle:
-tags: []
+tags: [setup, build]
 category: Speculos
 author:
 toc: true

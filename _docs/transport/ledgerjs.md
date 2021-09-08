@@ -1,7 +1,7 @@
 ---
 title: Using ledgerjs npm packages
 subtitle:
-tags: []
+tags: [introduction, communication, transport, wallet, companion]
 category: Connect a wallet application
 author:
 toc: true

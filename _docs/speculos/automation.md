@@ -1,7 +1,7 @@
 ---
 title: Automation - press buttons automatically
 subtitle:
-tags: []
+tags: [usage]
 category: Speculos
 author:
 toc: true

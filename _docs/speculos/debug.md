@@ -1,7 +1,7 @@
 ---
 title: Debug - how to use GDB
 subtitle:
-tags: []
+tags: [usage]
 category: Speculos
 author:
 toc: true

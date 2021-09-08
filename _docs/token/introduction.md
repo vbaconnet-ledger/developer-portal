@@ -1,7 +1,7 @@
 ---
 title: Integrating tokens
 subtitle:
-tags: []
+tags: [erc20, asa, trc10, trc20]
 category: Token Integration
 toc: true
 author:

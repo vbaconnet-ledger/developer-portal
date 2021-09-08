@@ -1,7 +1,7 @@
 ---
 title: ERC20
 subtitle:
-tags: []
+tags: [tokens]
 category: Token Integration
 toc: true
 author:

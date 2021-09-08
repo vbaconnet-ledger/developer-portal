@@ -1,7 +1,7 @@
 ---
 title: Node Hid Singleton
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet application
 author:
 toc: true

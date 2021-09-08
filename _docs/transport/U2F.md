@@ -1,7 +1,7 @@
 ---
 title: Why is U2F deprecated ?
 subtitle:
-tags: []
+tags: [communication, transport]
 category: Connect a wallet application
 author:
 toc: true
