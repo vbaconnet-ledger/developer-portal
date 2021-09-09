@@ -58,9 +58,9 @@ As part of a Ledger Live blockchain integration, you should provide a indexer al
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 
 
-## Breaking down the work to integrate your coin
+## Breaking down the work to integrate your blockchain
 
-To integrate your coin to Ledger Live you will need to:
+To integrate your blockchain to Ledger Live you will need to:
 - Have a Nano Application (see [how to develop your Nano App](https://developers.ledger.com/docs/nano-app/introduction/))
 - Provide an indexer (see the [prerequisites](https://developers.ledger.com/docs/coin/prerequisites/))
 - Add your coin to [ledgerjs](https://developers.ledger.com/docs/coin/js-bindings/)

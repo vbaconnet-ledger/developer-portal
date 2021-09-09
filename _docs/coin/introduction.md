@@ -19,7 +19,7 @@ layout: doc_ci
 
 
 ## Breakdown
-The following pages describe how to include a crypto-asset (Coin) in Ledger Live.
+The following pages describe how to include a blockchain in Ledger Live.
 
 There are 4 main parts to code
 1. **CryptoAssets** (Follow instructions [here](../cryptoassets-library))
