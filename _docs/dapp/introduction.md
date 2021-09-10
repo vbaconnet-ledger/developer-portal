@@ -1,7 +1,7 @@
 ---
 title: Integrating DApps
 subtitle:
-tags: []
+tags: [dapp browser, decentralized app, plugin, ethereum plugin]
 category: DApp Integration
 toc: true
 author:

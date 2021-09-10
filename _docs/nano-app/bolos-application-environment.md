@@ -1,7 +1,7 @@
 ---
 title: Application Environment
 subtitle:
-tags: []
+tags: [bolos]
 category: Nano Application
 toc: true
 layout: doc_na

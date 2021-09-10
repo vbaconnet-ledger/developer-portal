@@ -1,7 +1,7 @@
 ---
 title: Development practices
 subtitle: Ensuring your app passes the security review
-tags: []
+tags: [security, errors, security audits, audits, code review, security best practices, best practices, tests, testing, workflow]
 category: Nano Application
 toc: true
 author:

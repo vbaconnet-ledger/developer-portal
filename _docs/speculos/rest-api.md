@@ -1,7 +1,7 @@
 ---
 title: REST API
 subtitle:
-tags: [test, automation, usage]
+tags: [test, automation]
 category: Speculos
 author:
 toc: true

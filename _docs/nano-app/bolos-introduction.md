@@ -1,7 +1,7 @@
 ---
 title: Introduction
 subtitle: A bird's eye view
-tags: []
+tags: [bolos, framework, operating system]
 category: Nano Application
 toc: true
 author:

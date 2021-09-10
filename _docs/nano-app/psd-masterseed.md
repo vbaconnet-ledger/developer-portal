@@ -1,7 +1,7 @@
 ---
 title: The Master Seed
 subtitle: How the 24 words are used on the device
-tags: []
+tags: [psd, personal security devices, device, serialization, cryptography, mnemonic]
 category: Nano Application
 toc: true
 author:

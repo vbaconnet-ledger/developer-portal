@@ -1,7 +1,7 @@
 ---
 title: Hardware Architecture
 subtitle: Secure chips served with a helping of protocol
-tags: []
+tags: [bolos, chips, processors, secure element proxy, seproxyhal]
 category: Nano Application
 toc: true
 author:

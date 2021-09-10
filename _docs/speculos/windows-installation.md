@@ -1,7 +1,7 @@
 ---
 title: Windows installation (with WSL 2)
 subtitle:
-tags: []
+tags: [setup, build]
 category: Speculos
 author:
 toc: true

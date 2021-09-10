@@ -1,7 +1,7 @@
 ---
 title: Start here
 subtitle: Using Speculos
-tags: [installation]
+tags: [installation, install speculos]
 category: Speculos
 toc: true
 author:

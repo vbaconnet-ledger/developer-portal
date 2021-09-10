@@ -1,7 +1,7 @@
 ---
 title: Semihosting as an additional debug mechanism
 subtitle:
-tags: [usage]
+tags: [use speculos]
 category: Speculos
 author:
 toc: true

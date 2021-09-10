@@ -1,7 +1,7 @@
 ---
 title: Live Common Bridge Test Framework
 subtitle:
-tags: []
+tags: [transaction status, account synchronisation, accounts, run tests]
 category: Blockchain Integration
 author:
 toc: true

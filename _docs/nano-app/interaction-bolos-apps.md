@@ -1,7 +1,7 @@
 ---
 title: Interaction Between BOLOS and Apps
 subtitle: Getting smooth exchanges
-tags: []
+tags: [syscall, error model, error codes, try catch finally]
 category: Nano Application
 toc: true
 author:

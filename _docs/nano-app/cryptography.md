@@ -1,7 +1,7 @@
 ---
 title: Cryptography
 subtitle: Ensuring your app passes the security review
-tags: []
+tags: [security, errors, blind signing, crypto primitives, BIP32 paths, derivation path, private key, key pairs]
 category: Nano Application
 toc: true
 author:

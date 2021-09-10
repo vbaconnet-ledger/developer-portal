@@ -1,7 +1,7 @@
 ---
 title: C is your enemy
 subtitle: Ensuring your app passes the security review
-tags: []
+tags: [security, errors, writing macros, buffer, overflow, underflow, stack overflow, data truncation, truncated values]
 category: Nano Application
 toc: true
 author:

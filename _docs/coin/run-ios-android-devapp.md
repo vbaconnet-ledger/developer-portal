@@ -1,7 +1,7 @@
 ---
 title: Running iOS and Android Dev Apps
 subtitle:
-tags: []
+tags: [ledger-live-common, ledger-live-common proxy, proxy, testing test, tests]
 category: Blockchain Integration
 author:
 toc: true

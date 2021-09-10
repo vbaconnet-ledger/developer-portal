@@ -1,7 +1,7 @@
 ---
 title: Load the app to a Nano S
 subtitle:
-tags: []
+tags: [compile, load app to nano, side loading, ledgerblue, make load, make delete]
 category: Nano Application
 author:
 toc: true

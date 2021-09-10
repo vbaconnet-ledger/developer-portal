@@ -1,7 +1,7 @@
 ---
 title: Developer mode
 subtitle:
-tags: []
+tags: [platform app, platform application, live app, ledger live app]
 category: Ledger Live Application
 toc: true
 layout: doc_pa

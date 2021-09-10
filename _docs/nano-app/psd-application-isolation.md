@@ -1,7 +1,7 @@
 ---
 title: Application Isolation
 subtitle: Checking the apps on the Ledger Nano S
-tags: []
+tags: [psd, personal security devices, device]
 category: Nano Application
 author:
 layout: doc_na

@@ -1,7 +1,7 @@
 ---
 title: Clients - how to send APDUs
 subtitle:
-tags: [usage]
+tags: [use speculos]
 category: Speculos
 author:
 toc: true

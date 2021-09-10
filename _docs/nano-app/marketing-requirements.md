@@ -1,7 +1,7 @@
 ---
 title: Marketing requirements
 subtitle:
-tags: []
+tags: [twitter, retweet, blog post, press release]
 category: Nano Application
 author:
 layout: doc_na

@@ -1,7 +1,7 @@
 ---
 title: Integration pt. 1
 subtitle:
-tags: []
+tags: [Ledger Live Common, live-common, Derive Address, getAddress, derivation, types, account, operation, transaction, serialization, API]
 category: Blockchain Integration
 author:
 toc: true

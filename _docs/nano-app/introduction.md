@@ -1,7 +1,7 @@
 ---
 title: Developing a nano app
 subtitle: Find the necessary instructions to develop an app for Ledger devices
-tags: []
+tags: [development phases, develop nano app]
 category: Nano Application
 toc: true
 author:

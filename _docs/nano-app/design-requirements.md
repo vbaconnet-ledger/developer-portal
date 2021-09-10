@@ -1,7 +1,7 @@
 ---
 title: Design requirements
 subtitle:
-tags: []
+tags: [icon, logo, app icon, device icon, manager icon, graphics, glyphs]
 category: Nano Application
 toc: true
 author:

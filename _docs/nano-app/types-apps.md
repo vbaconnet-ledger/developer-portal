@@ -1,7 +1,7 @@
 ---
 title: Types of applications
 subtitle:
-tags: []
+tags: [nano app, nano application, dapp plugin, dapp, other applications, applications, apps]
 category: Nano Application
 toc: true
 author:

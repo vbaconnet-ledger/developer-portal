@@ -1,7 +1,7 @@
 ---
 title: Memory alignment
 subtitle: Get padded if you're not aligned
-tags: []
+tags: [development constraints, pointers]
 category: Nano Application
 toc: true
 author:

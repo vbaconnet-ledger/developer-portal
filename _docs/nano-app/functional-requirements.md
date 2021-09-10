@@ -1,7 +1,7 @@
 ---
 title: Functional requirements
 subtitle:
-tags: []
+tags: [app name, ticker, wallet, companion, staking]
 category: Nano Application
 toc: true
 author:

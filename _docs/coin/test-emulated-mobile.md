@@ -1,7 +1,7 @@
 ---
 title: Run tests on emulated Android and iOS
 subtitle:
-tags: []
+tags: [emulator, live-common, ledger-live-mobile, llm]
 category: Blockchain Integration
 author:
 toc: true

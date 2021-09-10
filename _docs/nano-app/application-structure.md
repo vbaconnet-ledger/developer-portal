@@ -1,7 +1,7 @@
 ---
 title: Application Structure and I/O
 subtitle: I/O - aye, no?
-tags: []
+tags: [apdu, protocol, apdu protocol]
 category: Nano Application
 toc: true
 author:

@@ -1,7 +1,7 @@
 ---
 title: Ethereum app variants
 subtitle:
-tags: []
+tags: [ethereum clone, clone]
 category: Nano Application
 toc: true
 author:

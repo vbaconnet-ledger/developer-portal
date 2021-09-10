@@ -1,7 +1,7 @@
 ---
 title: Adding *MyCoin* Nano App JS Bindings
 subtitle:
-tags: []
+tags: [ledgerjs, getAddress, signTransaction]
 category: Blockchain Integration
 author:
 toc: true

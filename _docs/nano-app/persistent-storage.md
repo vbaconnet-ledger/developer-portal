@@ -1,7 +1,7 @@
 ---
 title: Persistent Storage
 subtitle: Not for goldfish
-tags: []
+tags: [flash memory, RAM]
 category: Nano Application
 toc: true
 author:

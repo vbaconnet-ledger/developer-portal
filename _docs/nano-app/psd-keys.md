@@ -1,7 +1,7 @@
 ---
 title: HD Key Generation
 subtitle: The children of infinite trees
-tags: []
+tags: [psd, personal security devices, device, deterministic, cryptography, passphrase, hierarchical deterministic]
 category: Nano Application
 toc: true
 author:

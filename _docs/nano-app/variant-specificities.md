@@ -1,7 +1,7 @@
 ---
 title: Specificities
 subtitle:
-tags: []
+tags: [variant, clone]
 category: Nano Application
 toc: true
 author:

@@ -1,7 +1,7 @@
 ---
 title: Advanced display management
 subtitle: Advanced flows for advanced uses
-tags: []
+tags: [on-screen display, screen, ux flow, ux, cherry-picking, define steps]
 category: Nano Application
 toc: true
 author:

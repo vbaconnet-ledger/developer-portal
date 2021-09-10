@@ -1,7 +1,7 @@
 ---
 title: Testing
 subtitle:
-tags: []
+tags: [test toolchain]
 category: Blockchain Integration
 author:
 toc: true

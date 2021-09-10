@@ -1,7 +1,7 @@
 ---
 title: Introduction
 subtitle:
-tags: [usage]
+tags: [use speculos, emulate, emulator, Nano X emulator]
 category: Speculos
 author:
 toc: true

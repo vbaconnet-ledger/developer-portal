@@ -1,7 +1,7 @@
 ---
 title: TransactionCommon
 subtitle:
-tags: []
+tags: [Ledger Live Platform SDK, platform sdk, sdk, api]
 category: Ledger Live Application
 toc: true
 layout: doc_pa

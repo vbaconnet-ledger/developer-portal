@@ -1,7 +1,7 @@
 ---
 title: BOLOS Features
 subtitle: Secrets, Passphrases and Attestations
-tags: []
+tags: [bolos, cryptographic secrets, passphrases, attestation, chain of trust, secure channel, key, public key, private key]
 category: Nano Application
 toc: true
 author:

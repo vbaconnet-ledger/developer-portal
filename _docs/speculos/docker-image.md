@@ -1,7 +1,7 @@
 ---
 title: Docker
 subtitle:
-tags: [usage]
+tags: [use speculos]
 category: Speculos
 author:
 toc: true
