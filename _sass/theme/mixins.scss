@@ -15,13 +15,13 @@
         transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
 // V2   border-bottom: 1px solid $global-primary-background;
 // V2   color: $global-primary-background;
-        border-bottom: 1px solid $legacy-green; // Added by CF for V3 31.08.2021
-        color: $legacy-green; // Added by CF for V3 31.08.2021
+        border-bottom: 1px solid $safety-orange; // Added by CF for V3 31.08.2021
+        color: $safety-orange; // Added by CF for V3 31.08.2021
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
 // V2   border-bottom-color: lighten($global-primary-background, 25%);
-        border-bottom-color: lighten($legacy-green, 25%); // Added by CF for V3 31.08.2021
+        border-bottom-color: lighten($safety-orange, 25%); // Added by CF for V3 31.08.2021
         text-decoration: none;
     }
 
@@ -562,7 +562,7 @@
 
     .sidebar-toc a.active {
       font-weight: bold;
-      background-color: lighten( $legacy-green, 45% );
+      background-color: lighten( $safety-orange, 45% );
     }
 
 
@@ -574,6 +574,17 @@
       padding-right:18px;
       > ul li {list-style: none;}
     }
+
+    // svg icon for alerts
+    .svg-icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      margin-bottom: 2.5px;
+      margin-right: -10px;
+    }
+
 
     // Icons on the home-page
     .icon-home{
@@ -641,7 +652,7 @@
             top: 13px; // Modified from 15 to 13 by CF for V3 01.09.2021 (small dash in front of active elements in left side bar)
             left: -14px;
             width: 7px;
-            border-top: 2px solid $legacy-green; // Modified px and color by CF for V3 01.09.2021 (color is temporary)
+            border-top: 2px solid $safety-orange; // Modified px and color by CF for V3 01.09.2021 (color is temporary)
         }
     }
 
@@ -906,7 +917,7 @@
                 left: calc(30% - 2px);
                 bottom: 0;
                 width: $timeline-border-width;
-                background: $global-primary-background;
+                background: $safety-orange;
             }
 
             &:after {
@@ -942,7 +953,7 @@
                     position: absolute;
                     width: $timeline-dot-diameter;
                     height: $timeline-dot-diameter;
-                    border: $timeline-border-width solid $global-primary-background;
+                    border: $timeline-border-width solid $safety-orange;
                     background-color: #fff;
                     border-radius: 100%;
                     top: 0;

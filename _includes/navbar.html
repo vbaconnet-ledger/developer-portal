@@ -3,8 +3,8 @@
         <div class="uk-container">
             <div data-uk-navbar>
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-visible@l" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
-                    <a class="uk-navbar-item uk-logo uk-visible@l" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                    <a class="uk-navbar-item uk-logo uk-visible@l" style="width:220px;" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
+                    <!--<a class="uk-navbar-item uk-logo uk-visible@l" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
 
                     <ul class="uk-navbar-nav uk-visible@l">
                         {% for link in site.data.navigation_header.left %}
@@ -63,8 +63,8 @@
                     </ul>
                 </div>
                 <div class="uk-navbar-center uk-hidden@l">
-                    <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
-                    <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                    <a class="uk-navbar-item uk-logo" style="width:350px;" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
+                    <!--<a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
                 </div>
                 <div class="uk-navbar-right">
                     {% if site.navbar.search %}

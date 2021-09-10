@@ -165,7 +165,9 @@ $button-link-disabled-color:                     $global-muted-color !default;
 
 .uk-button-default {
     // Removed for V3:  background-color: $button-default-background;
-    background-color: $global-color; // Added by CF for V3 01.09.2021
+    // removed to test safety orange button background-color: $global-color; // Added by CF for V3 01.09.2021
+    background-color: $safety-orange;
+    border-radius: 50px;
     color: $button-default-color;
     @if(mixin-exists(hook-button-default)) {@include hook-button-default();}
 }
@@ -174,7 +176,7 @@ $button-link-disabled-color:                     $global-muted-color !default;
 .uk-button-default:hover,
 .uk-button-default:focus {
     // Removed for V3: background-color: $button-default-hover-background;
-    background-color: $global-color; // Added by CF for V3 01.09.2021
+    // removed to test safety orange button background-color: $global-color; // Added by CF for V3 01.09.2021
     color: $button-default-hover-color;
     font-weight: bold; // Added by CF for V3 01.09.2021
     @if(mixin-exists(hook-button-default-hover)) {@include hook-button-default-hover();}

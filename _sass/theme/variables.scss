@@ -6,7 +6,7 @@ $global-color:                                #000000; // Added by CF for V3 31.
 // Removed for V3: $global-color:                                #142533;
 $global-muted-color:                          #565656;
 // Removed for V3: $global-primary-background:                   #41CCB4; // Added by C.F when testing new charter
-$legacy-green:                                #41CCB4; // Added by C.F when testing new charter. Temporary.
+$safety-orange:                                #FF5300; // Added by C.F for V3 10.09.2021
 // Removed for V3: +$global-primary-background:                   #41CCB4;
 $global-primary-background:                   #463A9E; // Added by CF for V3 31.08.2021
 // Removed for V3: $global-secondary-background:                 #F3F3F3;
@@ -100,22 +100,22 @@ $label-padding-vertical:                        2px;
 $navbar-background:                           #fff;
 $navbar-nav-item-color:                         $global-color;
 // Removed for V3: $navbar-nav-item-hover-color:                   $global-primary-background;
-$navbar-nav-item-hover-color:                   $legacy-green; // Added by CF for V3 Temporary
+$navbar-nav-item-hover-color:                   $safety-orange; // Added by CF for V3 Temporary
 // Removed for V3: $navbar-nav-item-active-color:                  $global-primary-background;
-$navbar-nav-item-active-color:                  $legacy-green; // Added by CF for V3 Temporary
+$navbar-nav-item-active-color:                  $safety-orange; // Added by CF for V3 Temporary
 $navbar-nav-item-font-size:                     0.9375rem;
 $navbar-nav-item-text-transform:                none;
 $navbar-toggle-color:                           $global-color;
 // Removed for V3: $navbar-toggle-hover-color:                     $global-primary-background;
-$navbar-toggle-hover-color:                     $legacy-green; // Added by CF for V3 Temporary
+$navbar-toggle-hover-color:                     $safety-orange; // Added by CF for V3 Temporary
 
 // Navbar dropdown
 $navbar-dropdown-margin:                        1px;
 $navbar-dropdown-nav-item-color:                $global-color;
 // Removed for V3: $navbar-dropdown-nav-item-hover-color:          $global-primary-background;
-$navbar-dropdown-nav-item-hover-color:          $legacy-green; // Added by CF for V3 Temporary
+$navbar-dropdown-nav-item-hover-color:          $safety-orange; // Added by CF for V3 Temporary
 // Removed for V3: $navbar-dropdown-nav-item-active-color:         $global-primary-background;
-$navbar-dropdown-nav-item-active-color:         $legacy-green; // Added by CF for V3 Temporary
+$navbar-dropdown-nav-item-active-color:         $safety-orange; // Added by CF for V3 Temporary
 
 // Subnav
 $subnav-item-color:                             $global-muted-color;
