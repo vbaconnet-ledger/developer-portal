@@ -595,11 +595,16 @@
     .box-icon-home{
     }
 
+    // Typeform
+    .typeform-widget {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
     // Legal text
     .legal-notice{
       font-size:12px;
       font-weight:bold;
-      padding-top:20px;
       a{color:$global-color !important; border-bottom: 1px solid $global-color !important }
     }
 
