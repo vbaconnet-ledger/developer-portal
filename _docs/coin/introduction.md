@@ -2,7 +2,7 @@
 title: Introduction
 subtitle:
 tags: []
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

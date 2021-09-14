@@ -2,7 +2,7 @@
 title: Architecture and work breakdown structure
 subtitle: This section describes the high level technical architecture of Ledger Live and how the different components interact.
 tags: [ledger live, live-common, ledgerjs, ledger-live-desktop, ledger-live-mobile]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

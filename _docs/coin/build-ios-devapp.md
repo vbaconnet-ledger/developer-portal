@@ -2,7 +2,7 @@
 title: Building iOS Dev App
 subtitle:
 tags: [ledger-live-mobile, llm, xcode, swift, ios emulator, ios simulator]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

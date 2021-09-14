@@ -2,7 +2,7 @@
 title: General CLI Checklist - User tests
 subtitle:
 tags: []
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

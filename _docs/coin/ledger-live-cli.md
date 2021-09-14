@@ -2,7 +2,7 @@
 title: Ledger Live CLI
 subtitle:
 tags: [clone ledger live]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

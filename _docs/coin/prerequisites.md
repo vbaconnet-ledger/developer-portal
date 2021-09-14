@@ -2,7 +2,7 @@
 title: Prerequisites
 subtitle:
 tags: [technical assessment, indexer]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

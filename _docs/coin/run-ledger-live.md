@@ -2,7 +2,7 @@
 title: Getting your Ledger Live running
 subtitle:
 tags: [ledger-live-common, test-dataset, test, testing, speculos, bot, the bot]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

@@ -2,7 +2,7 @@
 title: Introduction and setup
 subtitle:
 tags: [Ledger Live Common, typescript, environment variables, local packages]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

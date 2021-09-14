@@ -2,7 +2,7 @@
 title: Integration pt. 2
 subtitle:
 tags: [Ledger Live Common, live-common, Account bridge, currency bridge, front end helpers]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci

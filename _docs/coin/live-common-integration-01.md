@@ -2,7 +2,7 @@
 title: Integration pt. 1
 subtitle:
 tags: [Ledger Live Common, live-common, Derive Address, getAddress, derivation, types, account, operation, transaction, serialization, API]
-category: Blockchain Integration
+category: Blockchain Support
 author:
 toc: true
 layout: doc_ci
@@ -588,7 +588,7 @@ export {
 
 Basically, in the next sections, `getAccount` will be called to create an `Account` with balances and any additional resources, and `getOperations` will be called to fill the `operations[]` of this account, with the whole history of operations that can be requested incrementally. Then `getFees` before sending a transaction to let the user know of the network cost (estimated or effective), and `submit` to broadcast its transaction after signing.
 
-See [Polkadot Blockchain Integration's api](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot/api) for good inspiration.
+See [Polkadot Blockchain Support's api](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot/api) for good inspiration.
 
 #### API Example
 
