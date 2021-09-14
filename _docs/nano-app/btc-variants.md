@@ -16,7 +16,7 @@ layout: doc_na
 
 {% include alert.html style="warning" text="For security reasons, all commits must be signed using the -S flag : <code>$ git commit -S -m your commit message</code>" %}
 
-## Modify the Makefile
+## 1. Modify the Makefile
 
 Following the next example, add your chain to the Bitcoin app's makefile, here:
 
@@ -34,7 +34,7 @@ ifeq ($(filter clean,$(MAKECMDGOALS)),)
 $(error Unsupported COIN - use bitcoin_testnet, bitcoin, bitcoin_cash, bitcoin_gold, litecoin, dogecoin, dash, zcash, horizen, komodo, stratis, peercoin, posw, pivx, viacoin, vertcoin, stealth, digibyte, qtum, hcash, bitcoin_private, firo, gamecredits, zclassic)
 ```
 
-### Modify include/btchip_context.h
+## 2. Modify include/btchip_context.h
 
 ``` c
 typedef enum btchip_coin_kind_e {
@@ -51,10 +51,10 @@ typedef enum btchip_coin_kind_e {
 
 ```
 
-## Upload your app's icons
+## 3. Upload your app's icons
 
 Once you have created your App's icons following the [Design requirements](../design-requirements), upload them in the `/icons` folder.
 
-## Open a pull request
+## 4. Open a pull request
 
 When your application is ready, open a pull request on the Bitcoin application repository.

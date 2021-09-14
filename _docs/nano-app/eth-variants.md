@@ -16,7 +16,7 @@ layout: doc_na
 
 {% include alert.html style="warning" text="For security reasons, all commits must be signed using the -S flag : <code>$ git commit -S -m your commit message</code>" %}
 
-## Modify the Makefile
+## 1.1 Modify the Makefile
 
 Following the next example, add your chain to the Ethereum app's makefile, here:
 
@@ -41,7 +41,7 @@ And finally, here:
 @echo VARIANTS CHAIN ethereum ethereum_classic expanse poa rsk rsk_testnet ubiq wanchain kusd pirl akroma atheios callisto ethersocial ether1 gochain musicoin ethergem mix ellaism reosc hpb tomochain
 ```
 
-## Modify src/chainConfig.h
+## 1.2 Modify src/chainConfig.h
 
 Inside `scr/chainConfig.h`, add your chain in `chain_kind_e`:
 
@@ -55,17 +55,30 @@ typedef enum chain_kind_e {
 } chain_kind_t;
 
 ```
+## 1.3 Modify src_common/network.c
 
+It is not compulsory but it is highly recommended to add your chain in `scr_common/network.c` like the following examples:
 
-## Upload your app's icons
+```c
+const network_info_t NETWORK_MAPPING[] = {
+    {.chain_id = 1, .name = "Ethereum", .ticker = "ETH "},
+    {.chain_id = 3, .name = "Ropsten", .ticker = "ETH "},
+    {.chain_id = 4, .name = "Rinkeby", .ticker = "ETH "},
+    (...)
+    {.chain_id = 44787, .name = "Celo Alfajores", .ticker = "aCELO "},
+    {.chain_id = 62320, .name = "Celo Baklava", .ticker = "bCELO "},
+    {.chain_id = 11297108109, .name = "Palm Network", .ticker = "PALM "}};
+```
+
+## 1.4 Upload your app's icons
 
 Once you have created your App's icons following the [Design requirements](../design-requirements), upload them in the `/icons` folder.
 
-## Adding tokens
+## 2. Add token support (optional)
 
-If you want the app to handle your tokens' transactions, modifiy `src/main.h`, `src/tokens.c` and `src/tokens.h`, following the next examples.
+If you want the app to handle tokens transactions, modifiy `src/main.h`, `src/tokens.c` and `src/tokens.h`, following the next examples.
 
-### Modify src/main.h
+### 2.1 Modify src/main.h
 
 Add:
 
@@ -82,14 +95,14 @@ case CHAIN_KIND_TOMOCHAIN:
     break;
 ```
 
-### Modify src/tokens.c
+### 2.2 Modify src/tokens.c
 
 Add:
 ```c
 const tokenDefinition_t const TOKENS_TOMOCHAIN[NUM_TOKENS_TOMOCHAIN] = {};
 ```
 
-### Modify src/tokens.h
+### 2.3 Modify src/tokens.h
 
 Add:
 ```c
@@ -102,7 +115,7 @@ extern tokenDefinition_t const TOKENS_TOMOCHAIN[NUM_TOKENS_TOMOCHAIN];
 ```
 
 
-## Open a pull request
+## 3. Open a pull request
 
 When your application is ready, open a pull request on the Ethereum application repository.
 

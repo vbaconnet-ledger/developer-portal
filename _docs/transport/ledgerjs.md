@@ -13,7 +13,7 @@ layout: doc_tr
 
 A companion application, or wallet application, contains the business logic and is (typically) a GUI, running on a computer, a phone, or a web browser, connected to the Ledger device.
 
-This documentation will help you implement transport with a Nano device either with a **JavaScript** web wallet, a **Node.js** desktop wallet, or a **React Native** mobile app.
+This documentation will help you implement transport with a Nano device either with a **JavaScript** web wallet, a desktop wallet built with **Node.js**, or a **React Native** mobile app.
 
 <!--  -->
 {% include alert.html style="success" text="We currently do not have libraries to help the implentation with wallets written in another language. However, you are free to develop your companion app in the language of your chosing." %}
@@ -73,6 +73,12 @@ and some derivates:
 {% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
 <!--  -->
 
+## Development process
+
+To connect your application to a Ledger device and its Nano Applications:
+1. Implement the transport depending on weather you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
+2. Implement the [Nano application protocol](../app-protocol).
+
 ## Basic gist
 
 ```js
@@ -88,3 +94,4 @@ const getBtcAddress = async () => {
 };
 getBtcAddress().then(a => console.log(a));
 ```
+
