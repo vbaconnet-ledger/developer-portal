@@ -19,14 +19,17 @@ You can check the Makefile of a targeted Nano App to find this information. For 
 `DEFINES   += HAVE_WEBUSB WEBUSB_URL_SIZE_B=0 WEBUSB_URL=""`
 
 
-## Test the communication with Ledger REPL
+## Test web transport in a Nano App with Ledger REPL
 
-The [Ledger REPL](https://repl.ledger.tools/) web application is a Nano terminal to exchange binary messages with the device. It has a set of different communication channels (transports), and so it is useful to test webusb and even web bluetooth for Nano X.
+The [Ledger REPL](https://repl.ledger.tools/) web application is a Nano terminal to exchange binary messages with the device. The three principal transports implemented are webBLE, webusb and webHID.
 
-For example, if you just want to verify communication is properly established with a Nano App:
+You can check if the web transport is working in the Nano Application by using [Ledger REPL](https://repl.ledger.tools/)
 
-1. Chose your transport in the dropdown menu
-2. Plug your Ledger Nano S or X
-3. Send a basic ADPU (for example `B001000000` which gives you the App's name and version)
+1. Chose the transport mode in the dropdown menu (webusb, webhid or webBLE)
+2. Plug or connect your Ledger Nano S or X
+3. Install the Nano Application you want to test
+4. Send a basic ADPU (for example `B001000000` which gives you the App's name and version)
 
-If you get a response, this means the connexion and communication work.
+If you get a response, this means the transport has been implemented in the Nano App and it is working.
+
+You can use this tool to check normal APDU responses from the Nano App you would like to implement to your wallet application.
