@@ -1,5 +1,5 @@
 ---
-title: Bitcoin app variants
+title: Bitcoin clones app
 subtitle:
 tags: [bitcoin clone, clone]
 category: Nano Application

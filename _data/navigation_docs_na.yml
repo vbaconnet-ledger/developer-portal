@@ -38,11 +38,11 @@
   - nano-app/troubleshooting
   - nano-app/debug
 
-- title: Variant applications
+- title: Clone applications
   docs:
-  - nano-app/variant-specificities
-  - nano-app/eth-variants
-  - nano-app/btc-variants
+  - nano-app/clone-specificities
+  - nano-app/eth-clones
+  - nano-app/btc-clones
 
 - title: Publishing an application
   docs:

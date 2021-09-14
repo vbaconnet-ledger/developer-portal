@@ -147,8 +147,9 @@
 @mixin hook-base-pre(){
     padding: $base-pre-padding;
     border: $base-pre-border-width solid $base-pre-border;
-    border-radius: $base-pre-border-radius;
-    background: $base-pre-background;
+    // border-radius: $base-pre-border-radius;
+    // Removed white background for "raw" liquid code tags
+    //background: $base-pre-background;
 }
 @mixin hook-base-misc(){}
 @mixin hook-inverse-base-link(){}

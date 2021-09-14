@@ -9,7 +9,7 @@ layout: doc_na
 ---
 
 
-## What is a variant application ?
+## What is a Ethereum or Bitcoin clone application ?
 
 A variant, or clone, Nano Applications is developed when all the logic for signing transaction can be contained in the Bitcoin or the Ethereum Nano Application.
 
@@ -22,7 +22,7 @@ Just as for an independant Nano Application, you must follow our guidelines to c
 ### Developing the application
 
 Instead of building your application in a separate repository, you will make changes to the [Ethereum app](https://github.com/LedgerHQ/app-ethereum) or [Bitcoin app](https://github.com/LedgerHQ/app-bitcoin).
-Click here for [Ethereum variants](../eth-variants) and here for [Bitcoin variants](btc-variants).
+Click here for [Ethereum clones](../eth-clones) and here for [Bitcoin clones](btc-clones).
 
 ### Building the application
 
@@ -30,7 +30,7 @@ To build and load the application to a Nano S, [follow these guidelines]().
 
 ### Publishing the application
 
-If you want to publish a variant application, follow the process in [Publishing an application](../publish-introduction).
+If you want to publish a clone application, follow the process in [Publishing an application](../publish-introduction).
 
 ## Get in touch with the Ledger developer community
 
