@@ -43,7 +43,7 @@
 
 - title: Clone applications
   docs:
-  - nano-app/clone-specificities
+  - nano-app/clones-specificities
   - nano-app/eth-clones
   - nano-app/btc-clones
 
