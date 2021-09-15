@@ -180,8 +180,8 @@ strong { font-weight: $base-strong-font-weight; }
     /* 2 */
     font-size: $base-code-font-size;
     /* 3 */
-    background: $global-secondary-background; // modified by CF for V3 01.09.2021
-    color: $global-color; // modified by CF for V3 01.09.2021
+    background: lighten(#272822, 5%); // modified by CF for V3 15.09.2021
+    color: #f9f8f5; // modified by CF for V3 15.09.2021
     white-space: nowrap;
     @if(mixin-exists(hook-base-code)) {@include hook-base-code();}
 }

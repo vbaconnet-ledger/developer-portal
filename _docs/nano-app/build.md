@@ -20,7 +20,7 @@ To use the container image, you need to either install [Docker](https://docs.doc
 <img src="../images/folder-organization.png" ></div>
 <!-- --------------------------------- -->
 
-## 1. Build the container (standard way)
+## 1. Build the container (standard way)...
 
 The container can be build using standard tools:
 
@@ -33,7 +33,7 @@ podman build -t ledger-app-builder:latest .
 buildah bud -t ledger-app-builder:latest .
 ```
 
-## Or Build with App Scanner
+## ... Or Build with App Scanner
 
 Images can embed the [Coverity Scan](https://scan.coverity.com/) build tool. It is an excellent static analysis tool, and it can be very useful to find bugs in Nano apps.
 

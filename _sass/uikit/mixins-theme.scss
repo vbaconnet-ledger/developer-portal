@@ -124,7 +124,7 @@
 @mixin hook-base-link-hover(){}
 @mixin hook-base-code(){
     padding: $base-code-padding-vertical $base-code-padding-horizontal;
-    background: $base-code-background;
+    //background: $base-code-background; Removed by CF for V3 15.09.2021
 }
 @mixin hook-base-heading(){}
 @mixin hook-base-h1(){}
