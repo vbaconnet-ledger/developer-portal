@@ -9,7 +9,7 @@ layout: doc_na
 ---
 
 
-## What is a Ethereum or Bitcoin clone application ?
+## What is an Ethereum or a Bitcoin clone application ?
 
 A variant, or clone, Nano Applications is developed when all the logic for signing transaction can be contained in the Bitcoin or the Ethereum Nano Application.
 

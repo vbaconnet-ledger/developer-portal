@@ -7,7 +7,7 @@
 
 - title: Blockchain Support
   desc: How to get your currency supported on Ledger Live
-  icon: coin
+  icon: blockchain
   doc: coin/general-process
 
 - title: Token Integration
@@ -22,5 +22,5 @@
 
 - title: Connect Wallet Applications
   desc: Connect your wallet application to Ledger Nano Apps
-  icon: token
+  icon: connect
   doc: transport/ledgerjs
