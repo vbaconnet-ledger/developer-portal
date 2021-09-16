@@ -27,7 +27,7 @@ $global-primary-background: #1e87f0 !default;  /* FC primary is green? */
 $alert-primary-background: lighten(mix(white, $global-primary-background, 40%), 20%) !default;
 $alert-primary-color: $global-primary-background !default;
 $global-success-background: #32d296 !default;
-$alert-success-background: lighten(mix(white, $global-success-background, 35%),15%) !default; /* FC 2021-05-11 was 25% */
+$alert-success-background: lighten($global-success-background, 35%) !default; /* FC 2021-05-11 was 25% */
 $alert-success-color: $global-success-background !default;
 $global-warning-background: #faa05a !default;
 $alert-warning-background: lighten(mix(white, $global-warning-background, 50%), 15%) !default; /* FC 2021-05-21 1132 was 45% 15% */

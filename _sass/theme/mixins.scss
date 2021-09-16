@@ -344,7 +344,7 @@
 
         pre,
         blockquote {
-            margin-top: $global-medium-margin * .7;
+            // margin-top: $global-medium-margin * .7; Removed by CF for V3 16.09.2021
             margin-bottom: $global-medium-margin;
         }
 
@@ -576,6 +576,11 @@
       > ul li {list-style: none;}
     }
 
+    // Toc in mobile display
+    .mobile-sections h5 {
+      margin-top: 50px;
+    }
+
     // svg icon for alerts
     .svg-icon {
       display: inline-block;
@@ -612,6 +617,13 @@
       border-bottom: none !important;
       opacity: 0;
     }
+
+    // When a link is betwin code tags, so it's not orange on a black background, but we can still see it's a link
+    code a {
+      color: #f9f8f5 !important;
+      border-bottom: 1px solid #f9f8f5 !important;
+    }
+
 
     @media (max-width: 768px) {
       /* Do not display AnchorJS icon on less than 768px view point */

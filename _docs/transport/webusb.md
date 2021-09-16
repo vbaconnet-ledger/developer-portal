@@ -9,11 +9,6 @@ layout: doc_tr
 ---
 
 
-
-### FAQ: "DOM Exception" is triggered when creating the transport
-
-The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
-
 ### How to use this transport regarding WebUSB paradigm?
 
 In WebUSB, we have a "permission native" modal that appears when we need to "request" a device. This is required at-least-once for the user to accept, and then we can open the transport without triggering this modal. However, in both cases, it must happen in context of a click like explain above. Our current implementation tradeoff is to abstract this out and only trigger the permission modal if no device are listed. This might change in the future.
@@ -107,3 +102,21 @@ Create a Ledger transport with a USBDevice
 **Parameters**
 
 -   `device` **USBDevice**
+
+
+## Troubleshooting
+
+### "DOM Exception" is triggered when creating the transport
+
+The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
+
+### Chrome error while creating the transport
+
+If you get the following error while creating the transport:
+
+```bash
+message: "Cannot read property 'getDevices' of undefined"
+name: "TransportOpenUserCancelled"
+```
+
+You need to run a secure app and serve it via port 443, having at least a self-signed certificate working on it.
