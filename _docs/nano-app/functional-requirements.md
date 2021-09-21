@@ -23,8 +23,7 @@ If the display of those parameters (Token, smart contract management) is not pos
 
 To implement this requirement it is recommended to have a setting menu with the possibility to enable/disable contract data.
 
-You can find implementation example inside Ethereum, Solana or Elrond code base( link to GitHub repo to be added)
-
+You can find implementation example inside [Ethereum](https://github.com/LedgerHQ/app-ethereum), [Solana](https://github.com/LedgerHQ/app-solana) or [Elrond](https://github.com/LedgerHQ/app-elrond) code base.
 
 ## Wallet requirements
 
