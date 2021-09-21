@@ -18,6 +18,16 @@ layout: doc_na
 Ensure that the application name defined in makefile matches the one you want to have displayed on the manager.
 Ticker name must be added via ledgerjs update and not directly on makefile.
 
+## Blind signing
+
+For every transaction, the user must be able to verify on the device the amount being transferred and the destination address.
+
+If the display of those parameters (Token, smart contract management) is not possible, the transaction should be rejected by the device unless the user has acknowledged blind signing such a transaction.
+
+To implement this requirement it is recommended to have a setting menu with the possibility to enable/disable contract data.
+
+You can find implementation example inside [Ethereum](https://github.com/LedgerHQ/app-ethereum), [Solana](https://github.com/LedgerHQ/app-solana) or [Elrond](https://github.com/LedgerHQ/app-elrond) code base.
+
 ## Wallet requirements
 
 The wallet must give an option to verify the receiving address on the Nano device.
