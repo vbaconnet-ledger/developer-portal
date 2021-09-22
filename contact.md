@@ -45,7 +45,7 @@ For token additions please **fill in the form below** with the requested informa
     </a>
   </p>
   <div class="collapse" id="legalNotice">
-    Your information will only be available to LEDGER and its technical service providers and will be deleted as soon as you are signed up. It may be transferred to non-European countries that ensure an adequate level of protection or under the <a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en">standard contractual clauses</a> adopted by the EU Commission. <br><br>
+    Your information will only be available to LEDGER and its technical service providers and will be deleted as soon as you receive our invitation email. It may be transferred to non-European countries that ensure an adequate level of protection or under the <a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en">standard contractual clauses</a> adopted by the EU Commission. <br><br>
     Please note that you may withdraw your consent at any time, access your data and request their rectification or deletion. You may also request the limitation of the processing of your data. To exercise your rights or for any question on the processing of your data, please contact LEDGER’s Data Protection Officer <a href="https://privacy-request.ledger.com/">here</a>. If nevertheless you believe LEDGER did not adequately address your concerns and mishandled your data, you may lodge a complaint with the personal data protection authority of your country.
   </div>
 </div>
