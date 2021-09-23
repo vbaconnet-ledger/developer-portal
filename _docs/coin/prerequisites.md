@@ -22,16 +22,17 @@ Therefore, every new blockchain integration calls for a preliminary analysis, to
 
 The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the generic and specific aspects.
 
-This filled out form is an exemple of how you can achieve this first step: [technical_assessment_polkadot_v2.pdf](../../../files/technical_assessment_polkadot_v2.pdf)
-
-Get in touch with your usual contact at Ledger to fill your own form.
-
+This filled out form is an example of how you can do this first step: [technical_assessment_polkadot_v2.pdf](../../../files/technical_assessment_polkadot_v2.pdf)
 
 Secondly, choices must be made concerning the Specific features.
 
 And lastly, special care and careful consideration must be given to providing the Indexer Solution.
 
 The output of this phase is a detailed proposition of choices made and discussed with Ledger for agreement, before coding starts. This is done at a joint meeting to agree on the Acceptance Plan.
+
+To submit the Technical Assessment for your Blockchain, start by [making a copy this file locally]( https://docs.google.com/document/d/1pIk-TtmVtgBeyrUY8EyVjknkk-zoVUAXdxyDHluJSiM). (Do not request edit access of the original file). 
+
+After you have filled it in, please inform Ledger by contacting us in the usual way. 
 
 ***
 ## Choice of Specific features

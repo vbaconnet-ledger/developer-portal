@@ -3,7 +3,6 @@ title: Web Bluetooth
 subtitle:
 tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet application
-author:
 toc: true
 layout: doc_tr
 ---
