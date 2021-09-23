@@ -9,24 +9,24 @@ layout: doc_na
 ---
 
 
-## What is an Ethereum or a Bitcoin clone application ?
+## What is a clone application ?
 
 A variant, or clone, Nano Applications is developed when all the logic for signing transaction can be contained in the Bitcoin or the Ethereum Nano Application.
 
-The variant application is accessible in the Ledger Live Manager and requires the installation of its parent app. On opening, the user is immidiatly redirected to the parent app.
-
-Just as for an independant Nano Application, you must follow our guidelines to comply Ledger's publication requirements.
+Just as for any Nano Application, you must follow our guidelines to comply Ledger's publication requirements.
 
 ## What is the process ?
 
 ### Developing the application
 
-Instead of building your application in a separate repository, you will make changes to the [Ethereum app](https://github.com/LedgerHQ/app-ethereum) or [Bitcoin app](https://github.com/LedgerHQ/app-bitcoin).
-Click here for [Ethereum clones](../eth-clones) and here for [Bitcoin clones](btc-clones).
+Instead of building your application in a separate repository, you will make changes to the [Ethereum app](https://github.com/LedgerHQ/app-ethereum).
+Click here to develop an [Ethereum clones](../eth-clones). More types of clone applications will be added to the documentation in the future.
 
 ### Building the application
 
-To build and load the application to a Nano S, [follow these guidelines]().
+To build the clone application, [follow these guidelines](../quickstart).
+1. First launch the `make` of the Ethereum App
+2. Relaunch the `make`command with the name of your chain. E.g: `make CHAIN=ambrosus`
 
 ### Publishing the application
 

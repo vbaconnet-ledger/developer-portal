@@ -42,7 +42,6 @@
   docs:
   - nano-app/clones-specificities
   - nano-app/eth-clones
-  - nano-app/btc-clones
 
 - title: Publishing an application
   docs:
