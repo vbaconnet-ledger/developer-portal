@@ -36,6 +36,11 @@
   - nano-app/troubleshooting
   - nano-app/debug
 
+- title: Clone applications
+  docs:
+  - nano-app/clones-specificities
+  - nano-app/eth-clones
+
 - title: Publishing an application
   docs:
   - nano-app/publish-introduction
