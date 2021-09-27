@@ -2,7 +2,7 @@
 title: Manifest
 subtitle:
 tags: []
-layout: doc_pa
+layout: doc_da
 ---
 
 #### Sections in this article
