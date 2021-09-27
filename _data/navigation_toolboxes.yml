@@ -1,6 +1,6 @@
 # Boxes include navigation
 
-- title: Speculos
-  desc: Emulate Nano devices, on standard desktop computers, without any hardware device
+- title: Emulator
+  desc: Emulate Nano devices on standard desktop computers using Speculos
   icon: cog
   doc: speculos/start-here

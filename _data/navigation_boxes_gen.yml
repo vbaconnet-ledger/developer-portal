@@ -6,21 +6,21 @@
   doc: nano-app/introduction
 
 - title: Blockchain Support
-  desc: How to get your currency supported on Ledger Live
+  desc: Manage your assets directly from within Ledger Live
   icon: blockchain
   doc: coin/general-process
 
 - title: Token Integration
-  desc: How to include your favourite token in Ledger Live
+  desc: Add an ERC20 token to Ledger Live
   icon: token
   doc: token/introduction
 
-- title: DApp Integration
-  desc: Get Started integrating your service in Ledger Live
+- title: Live App
+  desc: Turn your Dapp into a Live App
   icon: dapp
   doc: dapp/introduction
 
 - title: Connect Wallet Applications
-  desc: Connect your wallet application to Ledger Nano Apps
+  desc: Bring Ledger support to your own application
   icon: connect
   doc: transport/ledgerjs
