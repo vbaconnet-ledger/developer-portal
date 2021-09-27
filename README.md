@@ -6,7 +6,18 @@ The compiled version of this repository is [developers.ledger.com](https://devel
 
 The documentation is in the \_docs folder. Make a pull request if you want to contribute.
 
-Steps to install:
-1. Install Jekyll: https://jekyllrb.com/docs/installation/
-2. `rvm install 2.7 && rvm --default use 2.7`
-3. `./dp_dev.sh`
+Steps to install for Linux:
+1. `sudo apt install git`
+2. `sudo apt install gnupg2`
+3. `sudo apt-get install libicu-dev`
+4. `sudo apt-get install cmake`
+5. Install RVM : https://rvm.io/rvm/install
+6. Restart your computer or virtual machine
+7. `rvm install 2.7 && rvm --default use 2.7`
+8. `gem install bundler:2.2.28`
+9. `gem install jekyll`
+11. `./dp_dev.sh`to build the Developer Portal and start the local server
+12. Visit localhost:4000 
+
+
+Steps for MacOS and Windows coming soon.
