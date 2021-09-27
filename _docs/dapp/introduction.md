@@ -95,15 +95,11 @@ Note the page information content depends on the chosen account in the drop-down
 
 #### 1. Ledger Live integration
 
-Unlock the Developer mode in Ledger Live [here](https://developers.ledger.com/docs/dapp/developer-mode/)
+Unlock the Developer mode in Ledger Live [here](../developer-mode/)
 
-Add your own manifest file locally [here](https://developers.ledger.com/docs/dapp/manifest/)
-
-
-
+Add your own manifest file locally [here](../manifest/)
 
 You should now be able to interact with you Dapp directly from Ledger Live interface in order to make sure all basic features are working as expected.
-
 
 <!--  -->
 {% include alert.html style="success" text="Please note the manifest file will be required when officially submitting your Dapp to us for review." %}
