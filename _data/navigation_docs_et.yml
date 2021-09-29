@@ -1,6 +1,7 @@
-- title: Integrating tokens
-  docs:
-  - token/introduction
-  - token/erc20
-  - token/asa
-  - token/trc
+# - title: Integrating tokens
+#   docs:
+#   - token/introduction
+#   - token/erc20
+#   - token/asa
+#   - token/trc
+# Removed for V3. Included in Blockchain support.

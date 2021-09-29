@@ -5,7 +5,7 @@ tags: [tokens]
 category: Token Integration
 toc: true
 author:
-layout: doc_et
+layout: doc_ci
 ---
 
 
