@@ -6,7 +6,8 @@ The compiled version of this repository is [developers.ledger.com](https://devel
 
 The documentation is in the \_docs folder. Make a pull request if you want to contribute.
 
-Steps to install for Linux:
+## Steps to install for Linux
+
 1. `sudo apt install git`
 2. `sudo apt install gnupg2`
 3. `sudo apt-get install libicu-dev`
@@ -21,7 +22,8 @@ Steps to install for Linux:
 12. Visit localhost:4000 
 
 
-Steps to install for MacOS: 
+## Steps to install for MacOS
+
 1. Install Commmand Line Developer Tools
 2. Install Homebrew with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 3. `brew install icu4c`
@@ -36,4 +38,8 @@ Steps to install for MacOS:
 14. Visit localhost:4000 
 
 
-Steps for Windows coming soon.
+## Steps to install for MacOS
+
+1. Install a program to create a virtual machine, [for example VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. [Download Ubuntu](https://ubuntu.com/download/desktop) and install it on a virtual machine
+3. Follow steps for Linux
