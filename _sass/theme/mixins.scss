@@ -591,6 +591,15 @@
       margin-right: -10px;
     }
 
+    // Suggestion links at end of doc pages 
+    .suggestion {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .suggestion a {
+        color: $safety-orange;
+    }
 
     // Icons on the home-page
     .icon-home{
