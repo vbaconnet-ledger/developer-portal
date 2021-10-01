@@ -1,8 +1,7 @@
 ---
 title: Manifest
 subtitle:
-tags: []
-toc: true
+tags: [dapp]
 layout: doc_da
 ---
 

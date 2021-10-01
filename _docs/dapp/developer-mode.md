@@ -1,7 +1,7 @@
 ---
 title: Developer mode
 subtitle:
-tags: []
+tags: [enable developer mode, manifest, ledger live]
 toc: true
 layout: doc_da
 ---
