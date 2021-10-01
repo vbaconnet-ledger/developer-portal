@@ -1,9 +1,9 @@
-- title: Installation
+- title: Speculos emulator installation
   docs:
   - speculos/installation/build
   - speculos/installation/wsl
 
-- title: Usage
+- title: Speculos emulator usage
   docs:
   - speculos/user/usage
   - speculos/user/docker
