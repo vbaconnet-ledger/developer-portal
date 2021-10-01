@@ -14,29 +14,38 @@ By having your web3 DApp supported in Ledger DApp browser, you increase the secu
 
 There are two main phases to get your Live App officially released :
 
-1. Phase 1: developments and negotiations
-2. Phase 2: review and acceptance
+1. Development and agreement
+2. Review and acceptance
 
-Phase 2 will only start when phase 1 is completed.
+### Development and agreement
 
-As its name suggests, the Phase 1 is made out of 2 main activities:
+#### Development
 
-1. Developments & tests of the DApp on your server, of the Live App itself, and of the Nano application plugin that goes along with it. You own this activity. You can outsource part of it if you want to.
-2. Negociations between you and us regarding the Terms & Conditions, and validation of the integration by Ledger.
+Development & test of the DApp on your server, of the Live App itself, and of the Nano application plugin that goes along with it. You own this activity. You can outsource part of it if you want to.
 
-Start in the order you want, or even work on both phases at the same time. The only rule is that both need to be finished before moving on.
+#### Agreement
 
-Phase 2 is about us reviewing your proposed changes and accepting them. Your support will most likely be required along the way.
+Agreement between you and us regarding the Terms & Conditions, and validation of the integration by Ledger. Agreement can be done during development.
+
+If you want to know more, or simply get in touch, reach out to us on [Slack](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw). You may also submit your Dapp and Nano application plugin [here](https://forms.gle/JP7qMQUBh4pSe77w9).
+
+
+### Review and acceptance 
+
+It is about us reviewing your proposed changes and accepting them. Your support will most likely be required along the way.
+
+
+### Tokens
 
 Additionally, please refer to [this doc](https://developers.ledger.com/docs/token/introduction/) if you need, on top of the DApp, to integrate new tokens.
 
 
 
-## Step by step guide
+## Development
 
-Each activity can start in parallel.
+Each activity can start simultaneously.
 
-### Activity 1
+### DApp adaptation on your server
 
 #### 1. Update your DApp server
 
@@ -46,9 +55,7 @@ One of the most useful features of this DApp Browser is to log-in to the user au
 
 As a DApp developer, you must add the specific iframe-provider from Ledger to your web3 provider list.
 
-The server must allow DApps to be embedded in iframes. To know more on how to proceed, have a look at [this documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors).
-
-You can easily authorize your DApp to be embedded only by Ledger Live DApp Browser by specifying the DApp Browser URL.
+The server must allow DApps to be embedded in iframes. To know more on how to proceed, have a look at [this documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors). That page explains how you can easily authorize your DApp to be embedded only by Ledger Live DApp Browser by specifying the DApp Browser URL without the wildcard.
 
 [Learn more](https://blog.ledger.com/paraswap-defi/) about the rationale behind this design choice.
 
@@ -91,13 +98,11 @@ Note the page information content depends on the chosen account in the drop-down
 
 * UI must be responsive and available for both Desktop and Mobile screen sizes.
 
-### Activity 2
+### Manifest integration in Ledger Live
 
-#### 1. Ledger Live integration
+Check and if necessary edit your manifest file [as described here](../manifest/).
 
-Unlock the Developer mode in Ledger Live [here](../developer-mode/)
-
-Add your own manifest file locally [here](../manifest/)
+Unlock the Developer mode in Ledger Live [here](../developer-mode/).
 
 You should now be able to interact with you Dapp directly from Ledger Live interface in order to make sure all basic features are working as expected.
 
@@ -105,9 +110,7 @@ You should now be able to interact with you Dapp directly from Ledger Live inter
 {% include alert.html style="success" text="Please note the manifest file will be required when officially submitting your Dapp to us for review." %}
 <!--  -->
 
-### Activity 3
-
-#### 1. Nano Application Plugin
+### Nano Application Plugin
 
 The security model Ledger Nano devices rely on is “What you see is what you sign”.
 The end user must verify and approve a transaction, by carefully verifying the information displayed on the Nano screen, before applying the signature.
@@ -135,7 +138,3 @@ You’ll find the relevant documentation on how to make your own plugin [here](h
 {% include alert.html style="success" text="The second mandatory requirement to get your DApp officially supported by Ledger is using a plugin to allow the user to verify the transaction details on the Nano device." %}
 <!--  -->
 
-
-## Contact us
-
-If you want to know more, or simply get in touch, reach out to us on [Slack](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw). You may also submit your Dapp and Nano application plugin [here](https://forms.gle/JP7qMQUBh4pSe77w9).

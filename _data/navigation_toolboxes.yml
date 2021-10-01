@@ -3,4 +3,4 @@
 - title: Emulator
   desc: Emulate Nano devices on standard desktop computers using Speculos
   icon: cog
-  doc: speculos/start-here
+  doc: speculos/installation/build

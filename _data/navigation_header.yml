@@ -20,9 +20,8 @@ left:
 
   - title: Tools
     dropdown:
-
     - title: Emulator
-      url: /docs/speculos/start-here
+      url: /docs/speculos/installation/build
 
 # Navbar right menu navigation links
 

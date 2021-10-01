@@ -1,16 +1,14 @@
-- title: Installation
+- title: Speculos emulator installation
   docs:
-  - speculos/start-here
-  - speculos/linux-installation
-  - speculos/windows-installation
+  - speculos/installation/build
+  - speculos/installation/wsl
 
-- title: Usage
+- title: Speculos emulator usage
   docs:
-  - speculos/introduction
-  - speculos/docker-image
-  - speculos/send-apdu
-  - speculos/debug
-  - speculos/rest-api
-  - speculos/automation
-  - speculos/semihosting
-
+  - speculos/user/usage
+  - speculos/user/docker
+  - speculos/user/clients
+  - speculos/user/debug
+  - speculos/user/api
+  - speculos/user/automation
+  - speculos/user/semihosting
