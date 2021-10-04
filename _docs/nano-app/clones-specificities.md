@@ -24,7 +24,7 @@ Click here to develop an [Ethereum clones](../eth-clones). More types of clone a
 
 ### Building the application
 
-To build the clone application, [follow these guidelines](../quickstart).
+To build the clone application, [follow these guidelines](../build).
 1. First launch the `make` of the Ethereum App
 2. Relaunch the `make`command with the name of your chain. E.g: `make CHAIN=ambrosus`
 
