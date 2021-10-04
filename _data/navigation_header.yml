@@ -8,11 +8,10 @@ left:
   - title: Blockchain Support
     url: /docs/coin/general-process
 
-  # - title: Token Integration
-  #   url: /docs/token/introduction
-  # Removed for V3. Inserted in Blockchain Support
+  - title: Tokens
+    url: /docs/token/token-request
 
-  - title: DApp Integration
+  - title: Live App
     url: /docs/dapp/introduction
 
   - title: Connect a wallet app
