@@ -8,8 +8,9 @@ left:
   - title: Blockchain Support
     url: /docs/coin/general-process
 
-  - title: Token Integration
-    url: /docs/token/introduction
+  # - title: Token Integration
+  #   url: /docs/token/introduction
+  # Removed for V3. Inserted in Blockchain Support
 
   - title: DApp Integration
     url: /docs/dapp/introduction
@@ -19,9 +20,8 @@ left:
 
   - title: Tools
     dropdown:
-
-    - title: Speculos
-      url: /docs/speculos/start-here
+    - title: Emulator
+      url: /docs/speculos/installation/build
 
 # Navbar right menu navigation links
 

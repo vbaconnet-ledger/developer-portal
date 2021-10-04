@@ -1,11 +1,11 @@
 ---
-title: Integrating tokens
+title: Process to add tokens
 subtitle:
 tags: [erc20, asa, trc10, trc20]
 category: Token Integration
 toc: true
 author:
-layout: doc_et
+layout: doc_ci
 ---
 
 
@@ -34,4 +34,4 @@ The list of supported assets on the [website](https://www.ledger.com/supported-c
 
 ## How to request a token addition ?
 
-Click [here](../erc20) for erc20, [here](../asa) for ASA, and [here](../trc) for TRC10/20.
+To request a token addition you can ignore other sections and go directly [here](../erc20) for erc20, [here](../asa) for ASA, and [here](../trc) for TRC10/20.

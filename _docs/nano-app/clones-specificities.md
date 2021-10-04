@@ -9,9 +9,9 @@ layout: doc_na
 ---
 
 
-## What is a clone application ?
+## What is a Nano application clone ?
 
-A variant, or clone, Nano Applications is developed when all the logic for signing transaction can be contained in the Bitcoin or the Ethereum Nano Application.
+A Nano application variant, or clone, is developed when all the logic for signing transaction can be contained in the Ethereum Nano Application.
 
 Just as for any Nano Application, you must follow our guidelines to comply Ledger's publication requirements.
 
@@ -25,8 +25,9 @@ Click here to develop an [Ethereum clones](../eth-clones). More types of clone a
 ### Building the application
 
 To build the clone application, [follow these guidelines](../quickstart).
-1. First launch the `make` of the Ethereum App
-2. Relaunch the `make`command with the name of your chain. E.g: `make CHAIN=ambrosus`
+1. First run the `make` command for the Ethereum App and run `make load`
+2. Run `make clean`
+2. Load the Nano App clone with the name of your chain. E.g: `make load CHAIN=ambrosus`
 
 ### Publishing the application
 

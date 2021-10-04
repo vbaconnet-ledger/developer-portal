@@ -1,5 +1,5 @@
 ---
-title: Ethereum clones app
+title: Ethereum Nano app clones
 subtitle:
 tags: [ethereum clone, clone]
 category: Nano Application
