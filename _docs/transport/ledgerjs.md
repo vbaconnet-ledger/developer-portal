@@ -76,7 +76,7 @@ and some derivates:
 ## Development process
 
 To connect your application to a Ledger device and its Nano Applications:
-1. Implement the transport depending on weather you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
+1. Implement the transport depending on wether you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
 2. Implement the [Nano application protocol](../app-protocol).
 
 ## Basic gist

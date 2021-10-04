@@ -21,7 +21,7 @@ To implement the connexion and communication from scratch, we recommend you to r
 
 ## ...Or use packages
 
-### Packages provided par Ledger
+### Packages provided by Ledger
 
 We provide APIs that help implementing the low level exchanges for some Nano Applications. These higher level APIs are split per app:
 
