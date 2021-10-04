@@ -1,5 +1,6 @@
 - title: Integrating tokens
   docs:
+  - token/token-request
   - token/introduction
   - token/erc20
   - token/asa
