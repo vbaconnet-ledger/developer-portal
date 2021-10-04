@@ -10,11 +10,10 @@
   icon: blockchain
   doc: coin/general-process
 
-# - title: Token Integration
-#   desc: Add an ERC20 token to Ledger Live
-#   icon: token
-#   doc: token/introduction
-# Removed for V3. Included in Blockchain support
+- title: Token Integration
+  desc: How to include your favourite token in Ledger Live
+  icon: token
+  doc: token/token-request
 
 - title: Live App
   desc: Turn your Dapp into a Live App and get listed in Ledger Live

@@ -119,7 +119,7 @@ An application crashing when running on the device (the device's screen freezes 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
 
 <!--  -->
-{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../build'>provided container image for compiling apps</a>." %}
+{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../build'>Ledger App Builder</a>." %}
 <!--  -->
 
 

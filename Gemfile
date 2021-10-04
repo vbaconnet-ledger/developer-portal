@@ -40,6 +40,8 @@ group :jekyll_plugins do
    gem 'rouge'
 end
 
+gem "nokogiri", ">= 1.12.5" #Added 4.10.21 to resolve a security issue
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
