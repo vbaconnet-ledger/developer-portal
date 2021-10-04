@@ -9,7 +9,7 @@ left:
     url: /docs/coin/general-process
 
   - title: Token Integration
-    url: /docs/token/introduction
+    url: /docs/token/token-request
 
   - title: DApp Integration
     url: /docs/dapp/introduction
