@@ -5,10 +5,10 @@
   docs:
   - nano-app/introduction
 
-- title: Getting Started
+- title: Set up and use
   docs:
-  - nano-app/quickstart
-  - nano-app/deepdive
+  - nano-app/build
+  - nano-app/load
 
 - title: Security best practices
   docs:

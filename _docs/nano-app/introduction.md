@@ -39,7 +39,7 @@ BOLOS is the operating system behind all Ledger personal security devices. It pr
 [Learn about the BOLOS platform](../bolos-introduction)
 
 #### Set up the BOLOS development environment
-In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. [Quickstart](../quickstart) with our script and/or go into [more details](../deepdive) about the script.
+In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. [Ledger App Builder](../build) is a container image which contains all dependencies to compile an application for Nano S/X.
 
 ## Contribute
 If you want to improve the documentation you can [use the contribution form](https://developers.ledger.com/contribution/) or make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
