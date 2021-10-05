@@ -50,7 +50,7 @@ For example, this model can be used to facilitate the process of auditing an HD 
 
 For a more detailed list and explanation of some of the use-cases made possible by this model, see [this section](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#use-cases) of the BIP 32 specification.
 
-In the next section, <code><a href="">hd_use_cases</a></code>, we'll talk about how all of these features are used by HD wallets and other applications.
+In the [next section](../psd-applications.md), `hd_use_cases`, we'll talk about how all of these features are used by HD wallets and other applications.
 
 <!--  -->
 {% include alert.html style="primary" text="If you'd like to play with BIP 39 mnemonics or BIP 32 derivation on a computer, take a look at this tool: <a href='https://iancoleman.io/bip39/' class='alert-link'> iancoleman.io/bip39 </a> " %}
