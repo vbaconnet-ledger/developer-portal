@@ -1,5 +1,5 @@
 ---
-title: TRC10/20
+title: TRC10 and TRC20
 subtitle:
 tags: [tokens]
 category: Token Integration
@@ -12,9 +12,13 @@ layout: doc_ci
 
 ## How to request a token addition
 
-### 1. Is my TRC10/20 token listed ?
+### 1. Is my TRC10 or TRC20 token listed ?
 
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
+
+<!--  -->
+{% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
+<!--  -->
 
 ### 2. How to get my token listed ?
 
