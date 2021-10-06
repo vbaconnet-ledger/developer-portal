@@ -8,15 +8,10 @@ toc: true
 layout: doc_tr
 ---
 
-
-<<<<<<< HEAD
-=======
-
 ### FAQ: "DOM Exception" is triggered when creating the transport
 
 The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
 
->>>>>>> main
 ### How to use this transport regarding WebUSB paradigm?
 
 In WebUSB, we have a "permission native" modal that appears when we need to "request" a device. This is required at-least-once for the user to accept, and then we can open the transport without triggering this modal. However, in both cases, it must happen in context of a click like explain above. Our current implementation tradeoff is to abstract this out and only trigger the permission modal if no device are listed. This might change in the future.
