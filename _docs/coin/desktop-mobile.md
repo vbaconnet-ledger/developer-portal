@@ -26,7 +26,7 @@ The clone will be used to test your modifications locally, using `yalc`.
 1. In  `live-common-set-supported-currencies.js` add the name you gave in the table. E.g., `mycoin`
 2. Add the error translation keys in `static/i18n/en`.
 
-### Running the Desktop projet
+### Running the Desktop project
 
 ```sh
 git clone <fork-live-desktop>
@@ -54,7 +54,7 @@ The clone will be used to test your modifications locally, using `yalc`.
 1. Similarly step as for instructions for LLD, except it is in file `live-common-setup.js`.
 2. Add the error translation keys in  `src/locales/en/common.json`
 
-### Running the Mobile projet on iOS (Mac only)
+### Running the Mobile project on iOS (Mac only)
 
 The prerequisites to running the project are found in the README file.
 
@@ -67,7 +67,7 @@ yarn run ios
 yarn start
 ```
 
-### Running the Mobile projet on Android
+### Running the Mobile project on Android
 
 1. Launch the emulator or plug-in your telephone.
 2. Use an Android environment such as Android Studio
