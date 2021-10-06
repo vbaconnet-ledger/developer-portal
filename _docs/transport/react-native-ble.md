@@ -24,7 +24,7 @@ layout: doc_tr
 
 ### Bad BLE link between the Phone and the device
 
-It can sometimes happen that the phone have a broken link, it is in this case recommended to users to go to their phone settings and manually Forget the Nano X. There is at the moment no other ways: there is no programmatic way to unpair a bonded device but you can however have a button that opens that phone settings Bluetooth section.
+In some cases, the link with the phone may break, it is in this case recommended to users to go to their phone settings and manually Forget the Nano X. There is at the moment no other way: there is no programmatic way to unpair a bonded device but you can however have a button that opens the Bluetooth section of the phone’s settings.
 
 ## Minimal getting started
 

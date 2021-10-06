@@ -88,7 +88,7 @@ root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
 ```
 
 <!--  -->
-{% include alert.html style="primary" text="If you change the <code>BOLOS_SDK</code> variable betwin two builds, you can first use <code>make clean</code> to avoid errors." %}
+{% include alert.html style="primary" text="If you change the <code>BOLOS_SDK</code> variable between two builds, you can first use <code>make clean</code> to avoid errors." %}
 <!--  -->
 
 

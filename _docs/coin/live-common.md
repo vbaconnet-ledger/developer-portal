@@ -1116,7 +1116,7 @@ It is designed for the end user frontend interface and is agnostic of the way it
 
 #### Receive
 
-The `receive` method allows to derivate address of an account with a Nano device but also display it on the device if verify is passed in.
+The `receive` method allows to derivatives address of an account with a Nano device but also display it on the device if verify is passed in.
 As you may see in `src/families/mycoin/bridge.ts`, Live Common provides a helper to implement it easily with `makeAccountBridgeReceive()`, and there is a very few reason to implement your own.
 
 #### Synchronization

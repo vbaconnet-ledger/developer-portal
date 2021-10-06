@@ -18,7 +18,7 @@ This is a package for the Speculos Nano emulator.
 
 ## Getting started
 
--   Install [Speculos](../../speculos/introduction).
+-   Install [Speculos](../../speculos/installation/build).
 -   Make sure to have a Speculos running with a APDU port and (optionally) a buttons port available.
 
 ```js

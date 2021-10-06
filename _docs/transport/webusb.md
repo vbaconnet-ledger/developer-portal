@@ -12,7 +12,7 @@ layout: doc_tr
 
 ### FAQ: "DOM Exception" is triggered when creating the transport
 
-The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
+The transport functions `create()` and `listen()` must be called in the context of a user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
 
 ### How to use this transport regarding WebUSB paradigm?
 
