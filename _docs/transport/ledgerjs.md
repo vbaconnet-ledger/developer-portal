@@ -60,32 +60,31 @@ To communicate with a Ledger device, you first need to identify which transport(
 {% include alert.html style="danger" text="<code>@ledgerhq/hw-transport-u2f</code> and <code>@ledgerhq/hw-transport-webauthn</code> have been deprecated.<br><b>We strongly advise to migrate to <code><a href='../webusb'>@ledgerhq/hw-transport-webusb</a></code> or <code><a href='../webhid'>@ledgerhq/hw-transport-webhid</a></code></b>" %}
 <!--  -->
 
-### Summary of implementations available per platform
+### Summary of implementations available per type of application
 
 
-|    Platforms          |                                            HID                                   |                                 WebUSB                                |                                  Bluetooth                                   |
+|    Types of application          |                                            HID                                   |                                 WebUSB                                |                                  Bluetooth                                   |
 |-----------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------|
-|<b>Web</b>             | <code><a href='../webhid'>hw-transport-webhid</a></code>                         | <code><a href='../webhid'>hw-transport-webusb</a> </code>             | <code><a href='../web-ble'>hw-transport-web-ble</a></code>                   |
-|<b>Electron/Node.js</b>| <code><a href='../node-hid-singleton'>hw-transport-node-hid-singleton</a></code> | NO                                                                    | NO                                                                           |
-|<b>iOS</b>             | NO                                                                               | NO                                                                    | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
-|<b>Android</b>         | <code><a href='../react-native-hid'>react-native-hid</a></code>                  | <code><a href='../webusb'>hw-transport-webusb</a></code><sup>1</sup>  | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
+|<b>Web App <sup>1</sup></b>             | <code><a href='../webhid'>hw-transport-webhid</a></code>                         | <code><a href='../webhid'>hw-transport-webusb</a> </code>             | <code><a href='../web-ble'>hw-transport-web-ble</a></code>                   |
+|<b>Desktop App <sup>2</sup></b>| <code><a href='../node-hid-singleton'>hw-transport-node-hid-singleton</a></code> | NO                                                                    | NO                                                                           |
+|<b>iOS <sup>3</sup></b>             | NO                                                                               | NO                                                                    | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
+|<b>Android <sup>3</sup></b>         | <code><a href='../react-native-hid'>react-native-hid</a></code>                  | <code><a href='../webusb'>hw-transport-webusb</a></code> <sup>4</sup>  | <code><a href='../react-native-ble'>react-native-hw-transport-ble</a></code> |
 
-1. Via Android Chrome
+1. JavaScript only
+2. Electron/Node.js only
+3. React Native only
+4. Via Android Chrome
 
 ### Summary of web browsers support
 
 You can check the following link to check the compatibility between a web browser and [WebHID](https://caniuse.com/webhid), [WebUSB](https://caniuse.com/webusb) and [Web Bluetooth](https://caniuse.com/web-bluetooth).
 
-## A unified Transport interface
+## Transport calls
 
-All these transports implement a generic interface exposed by
-[@ledgerhq/hw-transport](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport).
-There are specifics for each transport which are explained in [the next section](../webhid).
+The transport calls are essentially:
 
-A Transport is essentially:
-
-- `Transport.listen: (observer)=>Subscription`
-- `Transport.open: (descriptor)=>Promise<Transport>`
+- `transport.listen: (observer)=>Subscription`
+- `transport.open: (descriptor)=>Promise<Transport>`
 - `transport.exchange(apdu: Buffer): Promise<Buffer>`
 - `transport.close()`
 
@@ -93,6 +92,14 @@ and some derivates:
 
 - `transport.create(): Promise<Transport>`: make use of `listen` and `open` for the most simple scenario.
 - `transport.send(cla, ins, p1, p2, data): Promise<Buffer>`: a small abstraction of `exchange`
+
+All these transports implement a generic interface exposed by
+[@ledgerhq/hw-transport](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport).
+
+## Title 
+
+There are specifics for each transport which are explained in the next sections in Transport implementation.
+
 
 <!--  -->
 {% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
