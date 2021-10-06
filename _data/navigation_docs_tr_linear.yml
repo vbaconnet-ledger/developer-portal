@@ -1,7 +1,7 @@
 # This file is a duplicate of navigation_docs_tr.yml without the nested menu (subfolderitems)
 # We need it to make "previous" and "next" buttons work properly
 
-- title: Communication between a companion app and a Ledger Nano
+- title: Connecting a wallet
   docs:
   - transport/ledgerjs
   - transport/U2F
@@ -17,7 +17,7 @@
   - transport/react-native-hid
   - transport/react-native-ble
 
-- title: App protocol implementation
+- title: Nano App protocol implementation
   docs:
   - transport/app-protocol
   - transport/test-communication

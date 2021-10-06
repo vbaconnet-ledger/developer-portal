@@ -22,6 +22,31 @@ This documentation will help you implement transport with a Nano device either w
 To establish connexion and communication betwin the companion app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
 
 
+## Development process
+
+To connect your application to a Ledger device and its Nano Applications:
+1. Decide [which transport](#npm-packages-to-communicate-with-ledger-devices) you want to implement
+2. Implement the transport depending on wether you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
+3. Implement the [Nano application protocol](../app-protocol).
+
+## Basic gist
+
+```js
+import Transport from "@ledgerhq/hw-transport-node-hid";
+// import Transport from "@ledgerhq/hw-transport-webusb";
+// import Transport from "@ledgerhq/react-native-hw-transport-ble";
+import AppBtc from "@ledgerhq/hw-app-btc";
+const getBtcAddress = async () => {
+  const transport = await Transport.create();
+  const btc = new AppBtc(transport);
+  const result = await btc.getWalletPublicKey("44'/0'/0'/0/0");
+  return result.bitcoinAddress;
+};
+getBtcAddress().then(a => console.log(a));
+```
+
+
+
 ## NPM packages to communicate with Ledger devices
 
 To communicate with a Ledger device, you first need to identify which transport(s) to use.
@@ -72,26 +97,4 @@ and some derivates:
 <!--  -->
 {% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
 <!--  -->
-
-## Development process
-
-To connect your application to a Ledger device and its Nano Applications:
-1. Implement the transport depending on weather you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
-2. Implement the [Nano application protocol](../app-protocol).
-
-## Basic gist
-
-```js
-import Transport from "@ledgerhq/hw-transport-node-hid";
-// import Transport from "@ledgerhq/hw-transport-webusb";
-// import Transport from "@ledgerhq/react-native-hw-transport-ble";
-import AppBtc from "@ledgerhq/hw-app-btc";
-const getBtcAddress = async () => {
-  const transport = await Transport.create();
-  const btc = new AppBtc(transport);
-  const result = await btc.getWalletPublicKey("44'/0'/0'/0/0");
-  return result.bitcoinAddress;
-};
-getBtcAddress().then(a => console.log(a));
-```
 
