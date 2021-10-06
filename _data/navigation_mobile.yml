@@ -3,13 +3,16 @@
 - title: Nano App
   url: /docs/nano-app/introduction
 
-- title: Coin Integration
+- title: Wallet connect
+  url: /docs/transport/ledgerjs
+
+- title: Blockchain support
   url: /docs/coin/general-process
 
-- title: Token Integration
+- title: Tokens
   url: /docs/token/introduction
 
-- title: DApp Integration
+- title: DApp
   url: /docs/dapp/introduction
 
 - title: Contact
