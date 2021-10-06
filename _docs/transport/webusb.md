@@ -105,8 +105,6 @@ Create a Ledger transport with a USBDevice
 **Parameters**
 
 -   `device` **USBDevice**
-<<<<<<< HEAD
-
 
 ## Troubleshooting
 
@@ -124,5 +122,4 @@ name: "TransportOpenUserCancelled"
 ```
 
 You need to run a secure app and serve it via port 443, having at least a self-signed certificate working on it.
-=======
->>>>>>> main
+
