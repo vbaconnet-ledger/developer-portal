@@ -1,5 +1,5 @@
 ---
-title: Using ledgerjs npm packages (draft)
+title: Transport choices
 subtitle:
 tags: []
 category:
@@ -78,30 +78,3 @@ To communicate with a Ledger device, you first need to identify which transport(
 ### Summary of web browsers support
 
 You can check the following link to check the compatibility between a web browser and [WebHID](https://caniuse.com/webhid), [WebUSB](https://caniuse.com/webusb) and [Web Bluetooth](https://caniuse.com/web-bluetooth).
-
-## Transport calls
-
-The transport calls are essentially:
-
-- `transport.listen: (observer)=>Subscription`
-- `transport.open: (descriptor)=>Promise<Transport>`
-- `transport.exchange(apdu: Buffer): Promise<Buffer>`
-- `transport.close()`
-
-and some derivates:
-
-- `transport.create(): Promise<Transport>`: make use of `listen` and `open` for the most simple scenario.
-- `transport.send(cla, ins, p1, p2, data): Promise<Buffer>`: a small abstraction of `exchange`
-
-All these transports implement a generic interface exposed by
-[@ledgerhq/hw-transport](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport).
-
-## Title 
-
-There are specifics for each transport which are explained in the next sections in Transport implementation.
-
-
-<!--  -->
-{% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
-<!--  -->
-

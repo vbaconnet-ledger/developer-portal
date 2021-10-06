@@ -5,10 +5,10 @@
   icon: nano
   doc: nano-app/introduction
 
-- title: Wallet connect
+- title: Connect your wallet
   desc: How to connect a wallet to a Ledger device
   icon: cog
-  doc: transport/ledgerjs
+  doc: transport/chosing-transport
 
 - title: Blockchain support
   desc: How to get your currency supported on Ledger Live

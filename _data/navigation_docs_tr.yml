@@ -1,9 +1,9 @@
 - title: Connecting a wallet
   docs:
-  - transport/ledgerjs
-  - transport/U2F
+  - transport/chosing-transport
+  - transport/transport-implementation
 
-- title: Transport implementation
+- title: Specific implementation
   subfolderitems:
     - title: Web app
       docs:
@@ -30,3 +30,7 @@
   - transport/example-webusb-js
   - transport/example-webble-react
   - transport/example-reactnative-ble
+
+- title: U2F
+  docs:
+  - transport/U2F
