@@ -11,10 +11,10 @@ left:
   - title: Blockchain support
     url: /docs/coin/general-process
 
-  - title: Token Integration
+  - title: Tokens
     url: /docs/token/introduction
 
-  - title: DApp Integration
+  - title: DApp
     url: /docs/dapp/introduction
 
   - title: Tools
