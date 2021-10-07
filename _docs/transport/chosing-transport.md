@@ -1,5 +1,5 @@
 ---
-title: Transport choices
+title: Choosing the right protocol and implementing it 
 subtitle:
 tags: []
 category:
@@ -50,5 +50,33 @@ You can check the following link to check the compatibility between a web browse
 This documentation will help you implement transport with a Nano device either with a **JavaScript** web wallet, a desktop wallet built with **Node.js**, or a **React Native** mobile app.
 
 <!--  -->
-{% include alert.html style="success" text="We currently do not have libraries to help the implentation with wallets written in another language. However, you are free to develop your wallet app in the language of your chosing." %}
+{% include alert.html style="success" text="We currently do not have libraries to help the implentation with wallets written in another language. However, you are free to develop your wallet app in the language of your choosing." %}
 <!--  -->
+
+
+## Transport calls
+
+Typically subset of used calls:
+
+- `transport.listen: (observer)=>Subscription`
+- `transport.open: (descriptor)=>Promise<Transport>`
+- `transport.exchange(apdu: Buffer): Promise<Buffer>`
+- `transport.close()`
+
+and some derivates:
+
+- `transport.create(): Promise<Transport>`: make use of `listen` and `open` for the most simple scenario.
+- `transport.send(cla, ins, p1, p2, data): Promise<Buffer>`: a small abstraction of `exchange`
+
+
+<!--  -->
+{% include alert.html style="success" text="All these transports implement a generic interface exposed by <code><a href='https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport'>@ledgerhq/hw-transport</a></code>.
+" %}
+<!--  -->
+
+
+<!--  -->
+{% include alert.html style="success" text="<a href='https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit'>APDU</a> is the encoding primitive for all binary exchange with the devices. (it comes from smart card industry)" %}
+<!--  -->
+
+

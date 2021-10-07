@@ -15,7 +15,7 @@ layout: doc_tr
 
 ## Transport calls
 
-The transport calls are essentially:
+Typically subset of used calls:
 
 - `transport.listen: (observer)=>Subscription`
 - `transport.open: (descriptor)=>Promise<Transport>`
