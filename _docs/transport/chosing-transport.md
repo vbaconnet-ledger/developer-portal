@@ -21,7 +21,7 @@ This documentation will help you implement transport with a Nano device either w
 {% include alert.html style="success" text="We currently do not have libraries to help the implentation with wallets written in another language. However, you are free to develop your companion app in the language of your chosing." %}
 <!--  -->
 
-To establish connexion and communication betwin the companion app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
+To establish connexion and communication between the companion app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
 
 
 ## Development process

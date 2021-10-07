@@ -1,5 +1,5 @@
 ---
-title: Developing a nano app
+title: Developing and submitting a Nano app
 subtitle: Find the necessary instructions to develop an app for Ledger devices
 
 tags: []

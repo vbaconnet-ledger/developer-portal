@@ -47,7 +47,7 @@ The Common library of Ledger Live is called [Ledger-live-common](https://github.
 
 #### Communication with the Device
 
-[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of JavaScript library. It allows a javascript
+[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of packages. It allows a javascript
 application to use the API of a Nano app. Nano apps are using APDU to
 transfer data and commands to and from the external world. `ledgerjs` only
 allows to use commands developed on the Nano app.
@@ -62,9 +62,9 @@ As part of a Ledger Live blockchain support, you should provide a indexer allowi
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 
 
-## How to integrate your coin to Ledger Live
+## Breaking down the work to integrate your blockchain
 
-To integrate your coin to Ledger Live you will need to:
+To integrate your blockchain to Ledger Live you will need to:
 - Have a Nano Application (see [how to develop your Nano App](https://developers.ledger.com/docs/nano-app/introduction/))
 - Provide an indexer (see the [prerequisites](https://developers.ledger.com/docs/coin/prerequisites/))
 - Add your coin to [ledgerjs](https://developers.ledger.com/docs/coin/js-bindings/)
