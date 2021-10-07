@@ -35,7 +35,7 @@ WebUSB is currently only supported on Google Chrome / Chromium.
 
 -   In Linux, user need to install the [specific udev rules](https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh)
 -   In Mac, it should work.
--   In Windows, [WebUSB does not work out of the box](https://github.com/WICG/webusb/issues/143) but you can fix it with [Zadig](https://zadig.akeo.ie/).
+-   In Windows, [WebUSB does not work out of the box](https://github.com/WICG/webusb/issues/143) when using a Ledger Nano X but you can fix it with [Zadig](https://zadig.akeo.ie/).
 -   In Android Chrome it works.
 
 ## Install the package
