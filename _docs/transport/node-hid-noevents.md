@@ -19,13 +19,19 @@ layout: doc_tr
 
 This package uses **only** `node-hid`. Does not provide USB events.
 
-## Implementation
+## API
 
-### Parameters
+### TransportNodeHidNoEvents
+
+#### Extends Transport
+
+node-hid Transport minimal implementation
+
+#### Parameters
 
 -   `device` **HID.HID**
 
-### Examples
+#### Examples
 
 ```javascript
 import TransportNodeHid from "@ledgerhq/hw-transport-node-hid-noevents";
@@ -33,7 +39,7 @@ import TransportNodeHid from "@ledgerhq/hw-transport-node-hid-noevents";
 TransportNodeHid.create().then(transport => ...)
 ```
 
-### exchange
+#### exchange
 
 Exchange with the device using APDU protocol.
 
@@ -43,21 +49,21 @@ Exchange with the device using APDU protocol.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** a promise of apdu response
 
-### close
+#### close
 
 release the USB device.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>**
 
-### isSupported
+#### isSupported
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>**
 
-### list
+#### list
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;any>**
 
-### listen
+#### listen
 
 **Parameters**
 
@@ -65,7 +71,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 Returns **Subscription**
 
-### open
+#### open
 
 if path="" is not provided, the library will take the first device
 

@@ -65,7 +65,7 @@ $ pipenv shell
 $ ./speculos.py -m nanos ./apps/btc.elf --sdk 1.6 --seed "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about" --display headless --apdu-port 40000
 ```
 
-## Implementation
+##  API
 
 ### SpeculosTransportOpts
 

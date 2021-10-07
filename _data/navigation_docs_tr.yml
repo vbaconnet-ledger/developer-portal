@@ -7,8 +7,8 @@
   subfolderitems:
     - title: Web app
       docs:
-      - transport/webusb
       - transport/webhid
+      - transport/webusb
       - transport/web-ble
     - title: Desktop app
       docs:

@@ -13,26 +13,34 @@ layout: doc_tr
 * TOC
 {:toc}
 
+[Check browser support.](https://caniuse.com/web-bluetooth)
+
 ## Install the package
 
 `yarn add @ledgerhq/hw-transport-web-ble`
 
-## Implementation
+## API
 
-### Parameters
+### BluetoothTransport
+
+#### Extends Transport
+
+react-native bluetooth BLE implementation
+
+#### Parameters
 
 -   `device` **Device**
 -   `writeCharacteristic` **Characteristic**
 -   `notifyObservable` **Observable&lt;any>**
 -   `deviceModel` **DeviceModel**
 
-### Examples
+#### Examples
 
 ```js
 import BluetoothTransport from "@ledgerhq/hw-transport-web-ble";
 ```
 
-### exchange
+#### exchange
 
 Exchange with the device using APDU protocol.
 
@@ -42,7 +50,7 @@ Exchange with the device using APDU protocol.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** a promise of apdu response
 
-### observeAvailability
+#### observeAvailability
 
 observe event with { available: bool, type: string }
 (available is generic, type is specific)
@@ -52,7 +60,7 @@ an event is emit once and then each time it changes
 
 -   `observer` **any**
 
-### listen
+#### listen
 
 Scan for Ledger Bluetooth devices.
 On this web implementation, it only emits ONE device, the one that was selected in the UI (if any).
@@ -61,7 +69,7 @@ On this web implementation, it only emits ONE device, the one that was selected 
 
 -   `observer` **any**
 
-### open
+#### open
 
 open a bluetooth device.
 
@@ -69,7 +77,7 @@ open a bluetooth device.
 
 -   `deviceOrId` **(Device | [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))**
 
-### disconnect
+#### disconnect
 
 globally disconnect a bluetooth device by its id.
 

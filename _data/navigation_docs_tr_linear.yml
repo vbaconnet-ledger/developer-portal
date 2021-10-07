@@ -8,8 +8,8 @@
 
 - title: Specific implementation
   docs:
-  - transport/webusb
   - transport/webhid
+  - transport/webusb
   - transport/web-ble
   - transport/node-hid-singleton
   - transport/node-hid-noevents
