@@ -1,5 +1,5 @@
 ---
-title: Web Bluetooth (draft)
+title: Web Bluetooth
 subtitle:
 tags: []
 category:

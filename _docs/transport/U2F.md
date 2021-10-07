@@ -1,5 +1,5 @@
 ---
-title: Why is U2F deprecated ? (draft)
+title: Why is U2F deprecated ?
 subtitle:
 tags: []
 category:

@@ -1,5 +1,5 @@
 ---
-title: Test the communication (draft)
+title: Test the communication
 subtitle:
 tags: []
 category:

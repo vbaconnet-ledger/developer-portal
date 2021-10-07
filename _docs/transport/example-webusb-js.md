@@ -1,5 +1,5 @@
 ---
-title: Example of WebUSB implementation in a JS App (draft)
+title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: []
 category:

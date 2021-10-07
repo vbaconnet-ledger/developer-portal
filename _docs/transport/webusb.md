@@ -1,5 +1,5 @@
 ---
-title: WebUSB (draft)
+title: WebUSB
 subtitle:
 tags: []
 category:

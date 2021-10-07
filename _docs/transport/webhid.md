@@ -1,5 +1,5 @@
 ---
-title: Web HID (draft)
+title: Web HID
 subtitle:
 tags: []
 category:

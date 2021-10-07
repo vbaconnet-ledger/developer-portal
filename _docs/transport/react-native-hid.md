@@ -1,5 +1,5 @@
 ---
-title: React native HID (draft)
+title: React native HID
 subtitle:
 tags: []
 category:

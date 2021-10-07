@@ -1,5 +1,5 @@
 ---
-title: Example of Bluetooth implementation in a React Native App (draft)
+title: Example of Bluetooth implementation in a React Native App
 subtitle:
 tags: []
 category:

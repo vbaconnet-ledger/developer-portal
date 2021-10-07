@@ -1,5 +1,5 @@
 ---
-title: React native Bluetooth (draft)
+title: React native Bluetooth
 subtitle:
 tags: []
 category:

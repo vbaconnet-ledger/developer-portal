@@ -1,5 +1,5 @@
 ---
-title: Node Hid Singleton (draft)
+title: Node Hid Singleton
 subtitle:
 tags: []
 category:

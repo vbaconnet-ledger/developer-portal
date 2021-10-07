@@ -1,5 +1,5 @@
 ---
-title: Node Hid Noevents (draft)
+title: Node Hid Noevents
 subtitle:
 tags: []
 category:

@@ -1,5 +1,5 @@
 ---
-title: Node Speculos (draft)
+title: Node Speculos
 subtitle:
 tags: []
 category: Connect a wallet application

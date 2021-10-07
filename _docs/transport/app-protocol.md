@@ -1,5 +1,5 @@
 ---
-title: App protocol (draft)
+title: App protocol
 subtitle:
 tags: []
 category:

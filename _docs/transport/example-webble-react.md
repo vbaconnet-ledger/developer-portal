@@ -1,5 +1,5 @@
 ---
-title: Example of Bluetooth implementation in a React App (draft)
+title: Example of Bluetooth implementation in a React App
 subtitle:
 tags: []
 category:
