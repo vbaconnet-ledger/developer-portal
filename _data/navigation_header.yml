@@ -20,7 +20,7 @@ left:
   - title: Tools
     dropdown:
 
-    - title: Speculos
+    - title: Emulator
       url: /docs/speculos/installation/build
 
   - title: Contribution

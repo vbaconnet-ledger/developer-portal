@@ -4,12 +4,12 @@ width: expand
 hero:
     title: Ledger Developer Portal
     subtitle:
-         For Third-party Foundations and blockchain teams who want to develop their <br> currency and services in the Desktop and Mobile versions of Ledger Live
+         All the tools and resources you need to bring security to blockchain users
     image: /images/GEN/portal-intro.png
     search: true
 ---
 
-{% include boxes_gen.html columns="4" title="Take your pick ..." subtitle="Choose an option that you need help with or search above" %}
+{% include boxes_gen.html columns="4" title="Your journey to security..." subtitle="Choose an option that you need help with or search above" %}
 
 {% include boxes_toolboxes.html columns="1" title="and the toolbox" %}
 
