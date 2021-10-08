@@ -20,7 +20,7 @@ Therefore, every new blockchain integration calls for a preliminary analysis, to
 ## Technical Assessment
 
 <!-- ------------- Image ------------- -->
-<img width="395" height="548" src="../images/technical-assessment.png " style="float:right">
+<img width="395" height="548" src="../images/technical-assessment.png" style="float:right">
 <!-- --------------------------------- -->
 
 The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the generic and specific aspects.

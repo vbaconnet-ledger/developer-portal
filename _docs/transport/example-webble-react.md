@@ -1,5 +1,5 @@
 ---
-title: Example of Bluetooth implementation in a React App
+title: React Web Bluetooth
 subtitle:
 tags: []
 category:
@@ -13,9 +13,9 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## Ledger Web Bluetooth example with React
+## Example of Web Bluetooth implementation in React
 
-This is a Ledger Web Bluetooth example with React. It allows to connect to a Bluetooth Ledger device and show an Ethereum address with a QR Code.
+This is a Ledger Web Bluetooth example with React. It connects with a Ledger device using Bluetooth and shows an Ethereum address with a QR Code.
 
 ### App.js
 

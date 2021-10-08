@@ -1,5 +1,5 @@
 ---
-title: Example of WebUSB implementation in a JS App
+title: JS WebUSB
 subtitle:
 tags: []
 category:
@@ -13,7 +13,7 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## Google's Carlo WebUSB transport implementation
+## Example of WebUSB implementation in a JS App
 
 This is the `renderer.js` file for Google's Carlo application.
 

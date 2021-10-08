@@ -1,5 +1,5 @@
 ---
-title: Choosing the right protocol and implementing it 
+title: Introduction 
 subtitle:
 tags: []
 category:
@@ -14,9 +14,16 @@ layout: doc_tr
 {:toc}
 
 A wallet application contains business-service related code and typically also has a GUI. Its format can be a computer or smartphone application, or a web browser.
-The aim of this section it to get your wallet application connected to the Ledger device.
 
-## Chosing the right transport
+The aim of this section it to open a connection with your Ledger device with the right transport protocol.
+
+## Choosing the right transport
+
+<!-- ------------- Image ------------- -->
+<div style="text-align:center">
+<img width="720" src="../images/connect-wallet.jpg" ></div>
+<!-- --------------------------------- -->
+
 
 To establish connexion and communication between the wallet app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
 
@@ -56,7 +63,7 @@ This documentation will help you implement transport with a Nano device either w
 
 ## Transport calls
 
-Typically subset of used calls:
+Typically subset calls that are used:
 
 - `transport.listen: (observer)=>Subscription`
 - `transport.open: (descriptor)=>Promise<Transport>`

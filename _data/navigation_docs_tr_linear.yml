@@ -3,7 +3,7 @@
 
 - title: Connecting a wallet
   docs:
-  - transport/chosing-transport
+  - transport/connect-wallet
 
 - title: Blockchain calls
   docs:
@@ -11,7 +11,7 @@
   - transport/api-less-blockchain-calls
   - transport/test-communication
 
-- title: Examples of transport implementation
+- title: Examples
   docs:
   - transport/example-webusb-js
   - transport/example-webble-react

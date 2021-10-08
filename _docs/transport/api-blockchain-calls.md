@@ -19,9 +19,11 @@ This section describes how to call the various blockchain instructions to the Na
 
 The APIs are not written in the same way for all blockchains. In addition, while some of them are provided by ledger, others are written by the various crypto communities.
 
+Have a look at how they are coded and documented.
+
 ### Blockchain APIs provided Ledger
 
-Here is the list of all API provided
+Here is the list of all the APIs provided
 
 | Blockchain | Blockchain API |
 |-------------|--------------| 
@@ -39,4 +41,4 @@ Here is the list of all API provided
 
 You may find these libraries on the GitHub repositories written by the community. For example Cardano can be found here [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 
-We currently have no list of all community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
+We currently do not have a list of all community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
