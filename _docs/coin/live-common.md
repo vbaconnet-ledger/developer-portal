@@ -17,10 +17,10 @@ Ledger Live Common is the shared core library used by Ledger Live Desktop and Mo
 
 This library is built upon a pretty standard ES6 + Typescript stack and relies on a bunch of [ledgerjs](https://github.com/LedgerHQ/ledgerjs) packages, [RxJS 6.x](https://github.com/ReactiveX/rxjs/tree/6.x), [bignumber.js](https://github.com/MikeMcl/bignumber.js) and [React](https://github.com/facebook/react/) + [Redux](https://github.com/reduxjs/redux) for some front-end utilities and hooks.
 
-It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new coin integrations through flexibility.
+It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new blockchain integrations through flexibility.
 All integrated coins are implemented in a `src/families` dedicated folder which contains the specifics of a coin family - that can be shared by multiple crypto-assets that use the same implementation (i.e. Bitcoin-like coins share the same `bitcoin` family).
 
-**This document only concerns new coin integrations using Typecript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
+**This document only concerns new blockchain integrations using Typescript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
 
 ## Setup
 
@@ -1116,7 +1116,7 @@ It is designed for the end user frontend interface and is agnostic of the way it
 
 #### Receive
 
-The `receive` method allows to derivate address of an account with a Nano device but also display it on the device if verify is passed in.
+The `receive` method allows to derivatives address of an account with a Nano device but also display it on the device if verify is passed in.
 As you may see in `src/families/mycoin/bridge.ts`, Live Common provides a helper to implement it easily with `makeAccountBridgeReceive()`, and there is a very few reason to implement your own.
 
 #### Synchronization

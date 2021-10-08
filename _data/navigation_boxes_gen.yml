@@ -5,17 +5,17 @@
   icon: nano
   doc: nano-app/introduction
 
-- title: Coin Integration
+- title: Connect your wallet
+  desc: How to connect a wallet to a Ledger device
+  icon: connect
+  doc: transport/connect-wallet
+
+- title: Blockchain support
   desc: How to get your currency supported on Ledger Live
   icon: coin
   doc: coin/general-process
 
-- title: Token Integration
-  desc: How to include your favourite token in Ledger Live
-  icon: token
-  doc: token/token-request
-
-- title: DApp Integration
+- title: DApp
   desc: Get Started integrating your service in Ledger Live
   icon: dapp
   doc: dapp/introduction

@@ -9,9 +9,10 @@ layout: doc_na
 ---
 
 
-## What is a clone application?
+## What is a Nano application clone ?
 
-A variant, or clone, Nano Applications is developed when all the logic for signing transaction can be contained in the Ethereum Nano Application.
+
+A Nano application variant, or clone, is developed when all the logic for signing transaction can be contained in the Ethereum Nano Application.
 
 Just as for any Nano Application, you must follow our guidelines to comply Ledger's publication requirements.
 

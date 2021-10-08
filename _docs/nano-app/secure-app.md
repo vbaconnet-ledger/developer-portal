@@ -42,7 +42,7 @@ We encourage third-party security reviews. Note, however, that solid review take
 
 In order to ease security reviews and maintenance, the Ledger Security Team requires these development best practices to be met:
 
-- The app must build with no warnings using the container image intended for that purpose, [Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder).
+- The app must build with no warnings using the container image intended for that purpose, [Ledger App Builder](../build).
 - The scan-build utility from clang must be used to analyze the whole project and produce no errors.
 - Units tests must be present, preferably in the `tests/` folder and relying on the [cmocka](https://cmocka.org/) unit testing framework.
 - Functional tests must be present. They should allow APDU testing thanks to the speculos emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.

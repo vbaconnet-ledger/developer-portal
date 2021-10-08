@@ -1,5 +1,5 @@
 ---
-title: Example of Bluetooth implementation in a React Native App (draft)
+title: React Native Bluetooth
 subtitle:
 tags: []
 category:
@@ -8,11 +8,14 @@ toc: true
 layout: doc_tr
 ---
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
 
+## Ledger Web Bluetooth example in React Native
 
-## Ledger Web Bluetooth example with React Native
-
-This is a Ledger Web Bluetooth example with React Native. It allows to connect to a Bluetooth Ledger device and show an Ethereum address with a QR Code.
+This is a Ledger Web Bluetooth example in React Native. It connects with a Ledger device using Bluetooth and shows an Ethereum address with a QR Code.
 
 ### App.js
 
