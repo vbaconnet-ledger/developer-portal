@@ -23,7 +23,16 @@ The aim of this section it to open a connection with your Ledger device with the
 <div style="text-align:center">
 <img width="720" src="../images/connect-wallet.jpg" ></div>
 <!-- --------------------------------- -->
-
+5:08
+Legend: 
+<div class="transports-legend">
+ <a style="background:#008037;" href="../webhid">Web HID</a>
+ <a style="background:#0FB670;" href="../node-hid-singleton">Node HID</a>
+ <a style="background:#73E5B5;" href="../react-native-hid">React Native HID</a>
+ <a style="background:#DBB92E;" href="../webusb">Web USB</a>
+ <a style="background:#004AAD;" href="../web-ble">Web Bluetooth</a>
+ <a style="background:#6EA7F5;" href="../react-native-ble">React Native Bluetooth</a>
+</div>
 
 To establish connexion and communication between the wallet app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
 

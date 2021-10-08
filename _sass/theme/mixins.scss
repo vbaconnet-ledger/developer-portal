@@ -530,7 +530,21 @@
     //     }
     // }
 
-
+    .transports-legend {
+        display: flex;
+        justify-content: left;
+        a {
+          text-align:center;
+          border-radius:3px;
+          padding: 5px 10px;
+          margin-right: 10px;
+          border-bottom: none !important;
+          color: white !important;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
 
     .anchorjs-link {
       color: inherit !important;
