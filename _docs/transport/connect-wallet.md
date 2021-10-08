@@ -17,7 +17,7 @@ A wallet application contains business-service related code and typically also h
 
 In this section, you will learn how to:
 - Open a connection to the Nano, using a chosen transport protocol. On this page.
-- Push your blockchain-related calls to the Nano. That's on the next page.
+- Push your Nano application API calls to the Nano. That's on the next page.
 
 ## Choosing the right transport
 

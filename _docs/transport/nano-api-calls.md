@@ -1,5 +1,5 @@
 ---
-title: API Blockchain calls
+title: Nano API calls
 subtitle:
 tags: []
 category:
@@ -15,17 +15,17 @@ layout: doc_tr
 
 You have now managed to connect to the Nano.  
 
-This section describes how to call the various blockchain instructions to the Nano using the Blockchain API.  
+This section describes how to call various instructions to the Nano using a Nano API.  
 
-The APIs are not written in the same way for all blockchains. In addition, while some of them are provided by ledger, others are written by the various crypto communities.
+The APIs are not written in the same way for all Nano apps. In addition, while some of them are provided by ledger, others are written by the various crypto communities.
 
 Have a look at how they are coded and documented.
 
-### Blockchain APIs provided Ledger
+### Nano APIs provided by Ledger
 
 Here is the list of all the APIs provided
 
-| Blockchain | Blockchain API |
+| Blockchain | Nano API |
 |-------------|--------------| 
 |Algorand | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-algorand.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-algorand) [@ledgerhq/hw-app-algorand](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-algorand)   |
 |Bitcoin | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-btc.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-btc) [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)   |
@@ -37,9 +37,9 @@ Here is the list of all the APIs provided
 |Ripple | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-xrp.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-xrp) [@ledgerhq/hw-app-xrp](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-xrp)   |
 
 
-### Blockchain APIs provided by the crypto-asset community
+### Nano APIs provided by the crypto-asset community
 
 You may find these libraries on the GitHub repositories written by the community. For example Cardano can be found here [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 
-We currently do not have a list of all community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
+We currently do not have a list of all community-developed Nano APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
 

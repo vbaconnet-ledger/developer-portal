@@ -2,10 +2,10 @@
   docs:
   - transport/connect-wallet
 
-- title: Blockchain calls
+- title: Nano calls
   docs:
-  - transport/api-blockchain-calls
-  - transport/api-less-blockchain-calls
+  - transport/nano-api-calls
+  - transport/nano-api-less-calls
   - transport/test-communication
 
 - title: Examples
@@ -14,7 +14,7 @@
   - transport/example-webble-react
   - transport/example-reactnative-ble
 
-- title: Implementation Library
+- title: Transport APIs
   subfolderitems:
     - title: Web app
       docs:
@@ -24,7 +24,6 @@
     - title: Desktop app
       docs:
       - transport/node-hid-singleton
-      - transport/node-hid-noevents
       - transport/node-speculos
     - title: Mobile app
       docs:
