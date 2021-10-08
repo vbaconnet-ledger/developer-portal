@@ -17,7 +17,7 @@ A wallet application contains business-service related code and typically also h
 
 In this section, you will learn how to:
 - Open a connection to the Nano, using a chosen transport protocol. On this page.
-- Push your Nano application API calls to the Nano. That's on the next page.
+- Push your Nano application API calls to the Nano. That is on the next page.
 
 ## Choosing the right transport
 
@@ -37,6 +37,7 @@ Clickable Legend:
 </div>
 
 
+<br>
 <!--  -->
 {% include alert.html style="success" text="All these transports implement a generic interface exposed by <code><a href='https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport'>@ledgerhq/hw-transport</a></code>.
 " %}
@@ -73,5 +74,8 @@ const getBtcAddress = async () => {
 };
 getBtcAddress().then(a => console.log(a));
 ```
+ 
+<br>
+You can now use `getDeviceInfo` to get the Nano to respond.
 
 
