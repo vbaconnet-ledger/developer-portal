@@ -16,12 +16,6 @@ layout: doc_tr
 You have now managed to connect to the Nano. 
 This section describes how to call the various blockchain instructions to the Nano using the Blockchain API.  
 
-## Code from scratch...
-
-The ways to implement a Nano App protocol will vary, depending on the way the community developed their Nano app.
-
-To implement the connexion and communication from scratch, we recommend you to refer to the application documentations, for instance [BTC app](https://github.com/LedgerHQ/ledger-app-btc/blob/master/doc/btc.asc) and [ETH app](https://github.com/LedgerHQ/ledger-app-eth/blob/master/doc/ethapp.asc).
-
 
 ## ...Or use packages
 
