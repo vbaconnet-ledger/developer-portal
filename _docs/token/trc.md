@@ -15,7 +15,7 @@ layout: doc_et
 
 ## How to request a token addition
 
-### 1. Is my TRC10 or TRC20 token listed ?
+### 1. Is my TRC10 or TRC20 token listed?
 
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
 
@@ -23,7 +23,7 @@ First, make sure your token isn’t already listed by checking this table of the
 {% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
 <!--  -->
 
-### 2. How to get my token listed ?
+### 2. How to get my token listed?
 
 
 |     TRC10       |     TRC20     |
@@ -35,7 +35,7 @@ First, make sure your token isn’t already listed by checking this table of the
 {% include alert.html style="warning" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://ledger-dev.slack.com'>Ledger's Developer Slack</a>, or use <a href='https://developers.ledger.com/contact/'>this contact form</a> to get signed in." %}
 <!--  -->
 
-### What will Ledger do ?
+### What will Ledger do?
 
 We will review the list of tokens on a bi-montly basis and will apply our own internal signature process. Once signed, the new tokens will become available after a Ledger Live update. Ledger reserves the right to decide which token will be listed.
 

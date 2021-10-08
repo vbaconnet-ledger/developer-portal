@@ -13,7 +13,7 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## Why is U2F deprecated ?
+## Why is U2F deprecated?
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.
 
