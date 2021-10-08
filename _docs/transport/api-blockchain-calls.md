@@ -13,17 +13,16 @@ layout: doc_tr
 * TOC
 {:toc}
 
-You have now managed to connect to the Nano. 
+You have now managed to connect to the Nano.  
+
 This section describes how to call the various blockchain instructions to the Nano using the Blockchain API.  
 
+The APIs are not written in the same way for all blockchains. 
+Please refer to the corresponding blockchain API to make your blockchain related calls to the NanO
 
-## ...Or use packages
+### Blockchain APIs provided Ledger
 
-### Packages provided by Ledger
-
-We provide APIs that help implementing the low level exchanges for some Nano Applications. These higher level APIs are split per app:
-
-| Application API | Repo |
+| Blockchain | Blockchain API |
 |-------------|--------------| 
 |Algorand | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-algorand.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-algorand) [@ledgerhq/hw-app-algorand](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-algorand)   |
 |Bitcoin | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-btc.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-btc) [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)   |
@@ -35,8 +34,7 @@ We provide APIs that help implementing the low level exchanges for some Nano App
 |Ripple | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-xrp.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-xrp) [@ledgerhq/hw-app-xrp](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-xrp)   |
 
 
-
-### Packages provided by a crypto-asset community
+### ### Blockchain APIs provided by the crypto-asset community
 
 On each crypto-asset projects' GitHub you can find libraries that will help you to implement the exchanges, for example this [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 

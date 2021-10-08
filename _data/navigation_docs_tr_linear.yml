@@ -18,7 +18,7 @@
 
 - title: Nano App protocol implementation
   docs:
-  - transport/app-protocol
+  - transport/api-blockchain-calls
   - transport/api-less-blockchain-calls
   - transport/test-communication
 
