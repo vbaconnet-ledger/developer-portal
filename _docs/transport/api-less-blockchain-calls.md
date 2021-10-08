@@ -13,9 +13,18 @@ layout: doc_tr
 * TOC
 {:toc}
 
-## Code from scratch...
+## Raw blockchain calls
 
-The ways to implement a Nano App protocol will vary, depending on the way the community developed their Nano app.
+When there is no available Blockchain API, the way to make your blockchain calls is by constructing the call yourself, by using the syntax information found in the application documentation.
 
-To implement the connexion and communication from scratch, we recommend you to refer to the application documentations, for instance [BTC app](https://github.com/LedgerHQ/ledger-app-btc/blob/master/doc/btc.asc) and [ETH app](https://github.com/LedgerHQ/ledger-app-eth/blob/master/doc/ethapp.asc).
+Here are some an example:
+
+| Blockchain App | Application documentation |
+|-------------|--------------| 
+| Polymath | [Polymath](https://github.com/LedgerHQ/app-polymesh/blob/master/docs/APDUSPEC.md) | 
+| Filecoin | [Filecoin](https://github.com/LedgerHQ/app-filecoin/blob/master/docs/APDUSPEC.md) | 
+
+
+
+
 

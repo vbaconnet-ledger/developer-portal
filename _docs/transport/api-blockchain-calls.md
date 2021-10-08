@@ -1,5 +1,5 @@
 ---
-title: Using the Blockchain API
+title: API Blockchain calls
 subtitle:
 tags: []
 category:
@@ -21,6 +21,8 @@ The APIs are not written in the same way for all blockchains. In addition, while
 
 ### Blockchain APIs provided Ledger
 
+Here is the list of all API provided
+
 | Blockchain | Blockchain API |
 |-------------|--------------| 
 |Algorand | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-algorand.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-algorand) [@ledgerhq/hw-app-algorand](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-algorand)   |
@@ -37,4 +39,4 @@ The APIs are not written in the same way for all blockchains. In addition, while
 
 You may find these libraries on the GitHub repositories written by the community. For example Cardano can be found here [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 
-We currently have no list of community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
+We currently have no list of all community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
