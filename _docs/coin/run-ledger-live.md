@@ -175,7 +175,7 @@ const dataset: DatasetTest<Transaction> = {
 export default dataset;
 ```
 
-## How does a test work ?
+## How does a test work?
 
 The test-dataset simulates an object `Transaction` that we have as input, and a `TransactionStatus` as an output that we compare with an expected status.
 
@@ -200,7 +200,7 @@ type TestTransaction =
 
 This `TestTransaction` uses as mainAccount the account that we have set before and then execute the command `getTransactionStatus` by using the `transaction` object as input.
 
-## What are the focus when testing ?
+## What are the focus when testing?
 
 We tried to cover as many cases as possible that are in `getTransactionStatus`.
 
@@ -216,7 +216,7 @@ Requirement :
 - An elf of the Nano app for LNS (create a empty folder with like : `<device>/<firmware version>/<appName>` example `nanos/1.6.1/mycoin`. The build of your Nano app must have the following format: `app_VERSION.elf`, for example `app_1.2.3.elf`)
 - Some currencies of the coin
 
-## What is this testing ?
+## What is this testing?
 
 We are testing the broadcast part and sync part.
 

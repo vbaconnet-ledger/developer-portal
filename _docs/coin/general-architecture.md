@@ -23,7 +23,7 @@ layout: doc_ci
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
 
-## What is Ledger Live ?
+## What is Ledger Live?
 
 Ledger Live is Ledger's offical wallet application for Desktop and Mobile, providing a unique interface to maintain multiple crypto currencies
 for Ledger Nano S and X, manage devices, create accounts, receive and send cryptoassets. It communicates with hardware wallet devices to verify

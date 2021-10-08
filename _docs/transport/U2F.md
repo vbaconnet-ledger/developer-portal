@@ -1,5 +1,5 @@
 ---
-title: Why is U2F deprecated ? (draft)
+title: Why is U2F deprecated? (draft)
 subtitle:
 tags: []
 category:
@@ -11,7 +11,7 @@ layout: doc_tr
 
 
 
-## Why is U2F deprecated ?
+## Why is U2F deprecated?
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.
 
