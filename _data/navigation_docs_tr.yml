@@ -2,7 +2,19 @@
   docs:
   - transport/chosing-transport
 
-- title: Specific implementation
+- title: Blockchain calls
+  docs:
+  - transport/api-blockchain-calls
+  - transport/api-less-blockchain-calls
+  - transport/test-communication
+
+- title: Examples of transport implementation
+  docs:
+  - transport/example-webusb-js
+  - transport/example-webble-react
+  - transport/example-reactnative-ble
+
+- title: Implementation Library
   subfolderitems:
     - title: Web app
       docs:
@@ -19,18 +31,8 @@
       - transport/react-native-hid
       - transport/react-native-ble
 
-- title: Nano App protocol implementation
-  docs:
-  - transport/api-blockchain-calls
-  - transport/api-less-blockchain-calls
-  - transport/test-communication
-
-- title: Examples of transport implementation
-  docs:
-  - transport/example-webusb-js
-  - transport/example-webble-react
-  - transport/example-reactnative-ble
-
-- title: U2F
+- title: Note on U2F
   docs:
   - transport/U2F
+
+

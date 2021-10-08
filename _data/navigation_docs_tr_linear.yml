@@ -5,18 +5,7 @@
   docs:
   - transport/chosing-transport
 
-- title: Specific implementation
-  docs:
-  - transport/webhid
-  - transport/webusb
-  - transport/web-ble
-  - transport/node-hid-singleton
-  - transport/node-hid-noevents
-  - transport/node-speculos
-  - transport/react-native-hid
-  - transport/react-native-ble
-
-- title: Nano App protocol implementation
+- title: Blockchain calls
   docs:
   - transport/api-blockchain-calls
   - transport/api-less-blockchain-calls
@@ -28,6 +17,18 @@
   - transport/example-webble-react
   - transport/example-reactnative-ble
 
-- title: U2F
+- title: Implementation Library
+  docs:
+  - transport/webhid
+  - transport/webusb
+  - transport/web-ble
+  - transport/node-hid-singleton
+  - transport/node-hid-noevents
+  - transport/node-speculos
+  - transport/react-native-hid
+  - transport/react-native-ble
+
+- title: Note on U2F
   docs:
   - transport/U2F
+  

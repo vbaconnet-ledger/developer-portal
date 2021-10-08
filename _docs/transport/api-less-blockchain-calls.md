@@ -17,7 +17,7 @@ layout: doc_tr
 
 When there is no available Blockchain API, the way to make your blockchain calls is by constructing the call yourself, by using the syntax information found in the application documentation.
 
-Here are some an example:
+Here are some examples:
 
 | Blockchain App | Application documentation |
 |-------------|--------------| 
