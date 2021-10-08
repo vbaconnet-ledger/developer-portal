@@ -7,7 +7,7 @@
 
 - title: Connect your wallet
   desc: How to connect a wallet to a Ledger device
-  icon: cog
+  icon: connect
   doc: transport/chosing-transport
 
 - title: Blockchain support
