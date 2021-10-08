@@ -58,3 +58,20 @@ and some additional calls:
 - `transport.send(cla, ins, p1, p2, data): Promise<Buffer>`: a small abstraction of `exchange`
 
 
+## Try our example
+
+```js
+import Transport from "@ledgerhq/hw-transport-node-hid";
+// import Transport from "@ledgerhq/hw-transport-webusb";
+// import Transport from "@ledgerhq/react-native-hw-transport-ble";
+import AppBtc from "@ledgerhq/hw-app-btc";
+const getBtcAddress = async () => {
+  const transport = await Transport.create();
+  const btc = new AppBtc(transport);
+  const result = await btc.getWalletPublicKey("44'/0'/0'/0/0");
+  return result.bitcoinAddress;
+};
+getBtcAddress().then(a => console.log(a));
+```
+
+
