@@ -15,7 +15,9 @@ layout: doc_tr
 
 A wallet application contains business-service related code and typically also has a GUI. Its format can be a computer or smartphone application, or a web browser.
 
-The aim of this section it to open a connection with your Ledger device with the right transport protocol.
+In this section, you will learn how to 
+- Open a connection to the Nano, using a chosen transport protocol. On this page
+- pushing your Blockchain-related calls to the Nano. That's on the next page
 
 ## Choosing the right transport
 
@@ -33,13 +35,6 @@ Clickable Legend:
  <a style="background:#004AAD;" href="../web-ble">Web Bluetooth</a>
  <a style="background:#6EA7F5;" href="../react-native-ble">React Native Bluetooth</a>
 </div>
-
-To establish connexion and communication between the wallet app and the Ledger device, you will use a set of NPM packages from `ledgerjs`.
-
-To connect your application to a Ledger device and its Nano Applications:
-1. Decide [which transport](#npm-packages-to-communicate-with-ledger-devices) you want to implement
-2. Implement the transport depending on wether you are developing a [web app](../webusb), a [desktop app](../node-hid-singleton) or a [mobile app](../react-native-hid).
-3. Implement the [Nano application protocol](../app-protocol).
 
 ## Basic usage
 
