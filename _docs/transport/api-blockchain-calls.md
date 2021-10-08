@@ -1,5 +1,5 @@
 ---
-title: Blockchain protocol implementation - Using the Blockchain API
+title: Using the Blockchain API
 subtitle:
 tags: []
 category:
@@ -35,6 +35,6 @@ The APIs are not written in the same way for all blockchains. In addition, while
 
 ### Blockchain APIs provided by the crypto-asset community
 
-On each crypto-asset projects' GitHub you can find libraries that will help you to implement the exchanges, for example this [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
+You may find these libraries on the GitHub repositories written by the community. For example Cardano can be found here [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 
-We invite you to to check if this kind of libraries have been developed for the crypto-asset you would like to integrate to your wallet app.
+We currently have no list of community-developed blockchain APIs. If you wish to contribute yours, please use [this form](https://developers.ledger.com/contribution/).
