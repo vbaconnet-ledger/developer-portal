@@ -21,10 +21,10 @@ The aim of this section it to open a connection with your Ledger device with the
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="720" src="../images/connect-wallet.jpg" ></div>
+<img width="840" src="../images/connect-wallet.jpg" ></div>
 <!-- --------------------------------- -->
-5:08
-Legend: 
+
+Clickable Legend: 
 <div class="transports-legend">
  <a style="background:#008037;" href="../webhid">Web HID</a>
  <a style="background:#0FB670;" href="../node-hid-singleton">Node HID</a>
