@@ -17,8 +17,7 @@ You have now managed to connect to the Nano.
 
 This section describes how to call the various blockchain instructions to the Nano using the Blockchain API.  
 
-The APIs are not written in the same way for all blockchains. 
-Please refer to the corresponding blockchain API to make your blockchain related calls to the NanO
+The APIs are not written in the same way for all blockchains. In addition, while some of them are provided by ledger, others are written by the various crypto communities.
 
 ### Blockchain APIs provided Ledger
 
@@ -34,7 +33,7 @@ Please refer to the corresponding blockchain API to make your blockchain related
 |Ripple | [![npm](https://img.shields.io/npm/v/@ledgerhq/hw-app-xrp.svg)](https://www.npmjs.com/package/@ledgerhq/hw-app-xrp) [@ledgerhq/hw-app-xrp](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-xrp)   |
 
 
-### ### Blockchain APIs provided by the crypto-asset community
+### Blockchain APIs provided by the crypto-asset community
 
 On each crypto-asset projects' GitHub you can find libraries that will help you to implement the exchanges, for example this [Cardano JS library](https://github.com/cardano-foundation/ledgerjs-hw-app-cardano).
 
