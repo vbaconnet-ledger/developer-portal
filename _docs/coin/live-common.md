@@ -441,7 +441,7 @@ export type Transaction = TransactionCommon & {
 /**
  * MyCoin transaction from a raw JSON
  */
-export type TransactionRaw =TransactionCommonRaw & {
+export type TransactionRaw = TransactionCommonRaw & {
   family: "mycoin";
   mode: string;
   fees?: string;
@@ -506,7 +506,7 @@ import type {
 // };
 
 // export type AccountRaw = {
-  myCoinResources?: MyCoinResourcesRawp;
+  myCoinResources?: MyCoinResourcesRaw;
 // };
 ```
 
@@ -941,7 +941,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
-`bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
+`src/families/mycoin/bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
 
 - a CurrencyBridge
 - an AccountBridge
@@ -1054,7 +1054,7 @@ export default { currencyBridge, accountBridge };
 
 #### Split your code
 
-You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the differente files.
+You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the different files.
 
 The skeleton of `src/families/mycoin/bridge/js.ts` should look something like this:
 
