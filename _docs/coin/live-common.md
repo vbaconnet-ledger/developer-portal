@@ -441,7 +441,7 @@ export type Transaction = TransactionCommon & {
 /**
  * MyCoin transaction from a raw JSON
  */
-export type TransactionRaw =TransactionCommonRaw & {
+export type TransactionRaw = TransactionCommonRaw & {
   family: "mycoin";
   mode: string;
   fees?: string;
@@ -506,7 +506,7 @@ import type {
 // };
 
 // export type AccountRaw = {
-  myCoinResources?: MyCoinResourcesRawp;
+  myCoinResources?: MyCoinResourcesRaw;
 // };
 ```
 
