@@ -941,7 +941,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
-`bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
+`src/families/mycoin/bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
 
 - a CurrencyBridge
 - an AccountBridge
