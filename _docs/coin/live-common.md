@@ -1054,7 +1054,7 @@ export default { currencyBridge, accountBridge };
 
 #### Split your code
 
-You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the differente files.
+You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the different files.
 
 The skeleton of `src/families/mycoin/bridge/js.ts` should look something like this:
 
