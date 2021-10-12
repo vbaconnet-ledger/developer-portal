@@ -9,8 +9,6 @@ layout: doc_na
 ---
 
 
-
-
 ## User profile
 
 #### You are new to developing Nano Applications

@@ -5,7 +5,7 @@ tags: [erc20, asa, trc10, trc20]
 category: Token Integration
 toc: true
 author:
-layout: doc_ci
+layout: doc_et
 ---
 
 
@@ -24,6 +24,6 @@ Different tokens imply multiple names, multiple tickers, multiple identifiers an
 
 Ledger applies a specific signature to the triplet **{"ticker”,"contract_address","decimals”}**. As a consequence, the Nano is able to verify the information has not been tampered with.
 
-## How to request a token addition ?
+## How to request a token addition?
 
 Click [here](../erc20-bep20) for ERC20 and BEP20, [here](../asa) for ASA, and [here](../trc) for TRC10/20.

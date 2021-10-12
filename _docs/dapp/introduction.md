@@ -67,10 +67,8 @@ The DApp must run differently if it is called from within an iframe or not. If i
 
 A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in:
 
-```
 https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>
-```
-
+  
 For example, this is how it is used with Paraswap:
 
 [https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=https://paraswap.io?embed=true](https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=https://paraswap.io?embed=true)
@@ -85,7 +83,7 @@ Note the page information content depends on the chosen account in the drop-down
 
 * Please make sure to handle some basic edge cases.
 
-  For instance, what happens when you click on the “log out” or “disconnect” button in your Dapp. Will it be automatically logged back in the Ledger Live iframe-provider, or redirected to the standard list of providers (Metamask, connect wallet, and such…) ?
+  For instance, what happens when you click on the “log out” or “disconnect” button in your Dapp. Will it be automatically logged back in the Ledger Live iframe-provider, or redirected to the standard list of providers (Metamask, connect wallet, and such…)?
 
 * We currently have limited blockchain support. In the event your Dapp supports several EVM compatible blockchain (like Polygon or BSC), please remove the network selection option to only allow users to use the Ethereum network. We are in the process of adding other networks, but this will take some time.
 

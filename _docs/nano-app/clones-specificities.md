@@ -15,7 +15,7 @@ A Nano application variant, or clone, is developed when all the logic for signin
 
 Just as for any Nano Application, you must follow our guidelines to comply Ledger's publication requirements.
 
-## What is the process ?
+## What is the process?
 
 ### Developing the application
 

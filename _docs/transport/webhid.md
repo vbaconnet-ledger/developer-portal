@@ -8,31 +8,42 @@ toc: true
 layout: doc_tr
 ---
 
+**This page is an extract from the repository**
 
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
 
 ### FAQ: "DOM Exception" is triggered when creating the transport
 
-The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
+The transport functions `create()` and `listen()` must be called in the context of a user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebHID design. You also must run on HTTPS.
 
 ### How to use this transport?
 
-Please check [hw-transport-webusb documentation](../hw-transport-webusb) because it is very similar paradigm.
+Please check [hw-transport-webusb documentation](../webusb) because it is very similar paradigm.
 
 ### Support status
 
-WebUSB is currently only supported on Google Chrome / Chromium DEV version and by explicitly enabling `chrome://flags/#enable-experimental-web-platform-features`
+WebHID is currently only supported on Google Chrome / Chromium DEV.
 
 ## Install the package
 
 `yarn add @ledgerhq/hw-transport-webhid`
 
-## Implementation
+## API
 
-### Parameters
+### TransportWebHID
+
+#### Extends Transport
+
+WebHID Transport implementation
+
+#### Parameters
 
 -   `device` **HIDDevice**
 
-### Examples
+#### Examples
 
 ```js
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
@@ -40,13 +51,13 @@ import TransportWebHID from "@ledgerhq/hw-transport-webhid";
 TransportWebHID.create().then(transport => ...)
 ```
 
-### close
+#### close
 
 Release the transport device
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>**
 
-### exchange
+#### exchange
 
 Exchange with the device using APDU protocol.
 
@@ -56,17 +67,17 @@ Exchange with the device using APDU protocol.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** a promise of apdu response
 
-### isSupported
+#### isSupported
 
-Check if WebUSB transport is supported.
+Check if WebHID transport is supported.
 
-### list
+#### list
 
-List the WebUSB devices that was previously authorized by the user.
+List the WebHID devices that was previously authorized by the user.
 
-### listen
+#### listen
 
-Actively listen to WebUSB devices and emit ONE device
+Actively listen to WebHID devices and emit ONE device
 that was either accepted before, if not it will trigger the native permission UI.
 
 Important: it must be called in the context of a UI click!
@@ -77,15 +88,15 @@ Important: it must be called in the context of a UI click!
 
 Returns **Subscription**
 
-### request
+#### request
 
 Similar to create() except it will always display the device permission (even if some devices are already accepted).
 
-### openConnected
+#### openConnected
 
 Similar to create() except it will never display the device permission (it returns a Promise&lt;?Transport>, null if it fails to find a device).
 
-### open
+#### open
 
 Create a Ledger transport with a HIDDevice
 

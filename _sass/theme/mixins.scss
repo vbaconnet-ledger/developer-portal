@@ -606,6 +606,22 @@
       color: $global-color;
     }
 
+    .transports-legend {
+        display: flex;
+        justify-content: center;
+        a {
+          text-align:center;
+          border-radius:3px;
+          padding: 5px 10px;
+          margin-right: 10px;
+          border-bottom: none !important;
+          color: white !important;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
     // Typeform
     .typeform-widget {
       padding-top: 20px;

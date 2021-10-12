@@ -14,7 +14,7 @@ layout: doc_pa
 
 In this article, we will guide you through the process of developing and integrating your Platform application to the Ledger Live ecosystem. By having your application supported in Ledger Live, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.
 
-## What is a Platform Application ?
+## What is a Platform Application?
 
 A Platform Application is an application that leverages the Ledger Live API. By doing so it can get access to the native features of Ledger Live and to the user’s accounts and information.
 

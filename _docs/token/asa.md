@@ -5,7 +5,7 @@ tags: [tokens]
 category: Token Integration
 toc: true
 author:
-layout: doc_ci
+layout: doc_et
 ---
 
 
@@ -14,7 +14,7 @@ For ASAs, compared to ERC20, the process differs due to the fact that the tokens
 
 ## How to request a token addition
 
-### 1. Is my ASA token listed ?
+### 1. Is my ASA token listed?
 
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
 
@@ -22,7 +22,7 @@ First, make sure your token isn’t already listed by checking this table of the
 {% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
 <!--  -->
 
-### 2. How to get my token listed ?
+### 2. How to get my token listed?
 
 Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c).
 When your PR is validated by the Algorand team, they will make a PR to Ledger Github repository.
@@ -34,7 +34,7 @@ Then, you need to update the [ledgerjs package](https://github.com/LedgerHQ/ledg
 <!--  -->
 
 
-### What will Ledger do ?
+### What will Ledger do?
 
 Ledger will review the PR made by the Algorand team to [Ledger Github repository](https://github.com/LedgerHQ/app-algorand).
 Ledger will review and merge the PR made on the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).

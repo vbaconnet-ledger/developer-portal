@@ -19,7 +19,7 @@ The PIC assembly generator makes sure every dereference is relative to the Progr
 
 Traditionally, PIC code implies the BSS segment (RAM variables) is at a constant offset of the code. For example, if code is at `0xC0D00000`, then global vars may be at `0xC2D00000`, so if loaded at `0x10E00000` then global vars would be at `0x12E00000`. However, BOLOS uses a fixed address for global vars. The global variables start address and length are defined in the link script. Only the code is meant to be placed at different addresses (in flash memory, rather than RAM).
 
-The model we chose has limitations, which are related to the way `const` data and code is referenced in other `const` data. Here is a simple example:
+The model we choose has limitations, which are related to the way `const` data and code is referenced in other `const` data. Here is a simple example:
 
 ``` c
 const char array1[] = {1, 2, 3, 4};

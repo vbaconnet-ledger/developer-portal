@@ -5,6 +5,9 @@ left:
   - title: Nano App
     url: /docs/nano-app/introduction
 
+  - title: Connect your wallet
+    url: /docs/transport/connect-wallet
+
   - title: Blockchain Support
     url: /docs/coin/general-process
 
@@ -13,9 +16,6 @@ left:
 
   - title: Live App
     url: /docs/dapp/introduction
-
-  - title: Connect a wallet app
-    url: /docs/transport/ledgerjs
 
   - title: Tools
     dropdown:
