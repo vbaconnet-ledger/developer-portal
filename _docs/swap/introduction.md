@@ -2,7 +2,7 @@
 title: Introduction
 subtitle:
 tags: []
-layout: doc_pa
+layout: doc_sw
 ---
 
 #### Sections in this article
