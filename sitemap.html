@@ -34,15 +34,9 @@ width: medium
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-body sitemap">
-          <h3>Blockchain Support</h3>
-          {% for section in site.data.navigation_docs_ci %}
+          <h3>Connect your wallet</h3>
+          {% for section in site.data.navigation_docs_tr %}
             <h4>{{ section.title }}</h4>
-
-            {% for doc in section.docs %}
-              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-              {% assign doc_content = site.docs | where:"url", doc_url | first %}
-                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
-            {% endfor %}
 
             {% if section.subfolderitems %}
               {% for subsection in section.subfolderitems %}
@@ -53,11 +47,19 @@ width: medium
                     <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
                   {% endfor %}
               {% endfor %}
-            {% endif %}
 
+            {% else %}
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
+
+            {% endif %}
           {%  endfor %}
 
-          <h3>Token Integration</h3>
+          <h3>Tokens</h3>
           {% for section in site.data.navigation_docs_et %}
             <h4>{{ section.title }}</h4>
 
@@ -82,7 +84,7 @@ width: medium
             {% endif %}
           {%  endfor %}
 
-           <h3>DApp Integration</h3>
+           <h3>Live Apps</h3>
           {% for section in site.data.navigation_docs_da %}
             <h4>{{ section.title }}</h4>
 
@@ -110,9 +112,15 @@ width: medium
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-body sitemap">
-           <h3>Connect a wallet app</h3>
-          {% for section in site.data.navigation_docs_tr %}
+          <h3>Blockchain Support</h3>
+          {% for section in site.data.navigation_docs_ci %}
             <h4>{{ section.title }}</h4>
+
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign doc_content = site.docs | where:"url", doc_url | first %}
+                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
+            {% endfor %}
 
             {% if section.subfolderitems %}
               {% for subsection in section.subfolderitems %}
@@ -123,16 +131,8 @@ width: medium
                     <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
                   {% endfor %}
               {% endfor %}
-
-            {% else %}
-
-            {% for doc in section.docs %}
-              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-              {% assign doc_content = site.docs | where:"url", doc_url | first %}
-                <a href="..{{ doc_url }}">{{ doc_content.title }}</a><br>
-            {% endfor %}
-
             {% endif %}
+
           {%  endfor %}
         </div>
     </div>

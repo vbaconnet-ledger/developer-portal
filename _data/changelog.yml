@@ -7,15 +7,13 @@
 
 - title: Update to V3
   label:
-  date: September 30th, 2021
+  date: Octobre 18th, 2021
   list:
   - New design and easier navigation through articles
-  - New procedure quickstart Nano
+  - More secure procedure to build a Nano Application 
   - Documentation to connect third party wallets to Ledger devices and Nano Applications
   - Easiest process to request a token addition
-  - For developers of blockchain integration the technical assessment form can now be directly downloaded and filled in
-  - Enhanced plugin documentation ?
-  - Doc Donjon (security review Nano) ?
+  - For developers of blockchain integrations the technical assessment form can now be directly downloaded and filled in
 
 
 # Templates :
