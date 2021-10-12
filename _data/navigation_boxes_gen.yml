@@ -1,7 +1,7 @@
 # Boxes All Integrations
 
 - title: Nano App
-  desc: Complete guide to getting your blockchain supported on Nano S/X
+  desc: Get your blockchain supported on Nano S/X
   icon: nano
   doc: nano-app/introduction
 
@@ -16,6 +16,6 @@
   doc: coin/general-process
 
 - title: DApp
-  desc: Get Started integrating your service in Ledger Live
+  desc: Turn your DApp into a Live App in Ledger Live
   icon: dapp
   doc: dapp/introduction
