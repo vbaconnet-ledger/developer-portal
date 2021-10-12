@@ -15,6 +15,8 @@
   {% assign docs = site.data.navigation_docs_pa_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr_linear | map: 'docs' | join: ',' | split: ',' %}
+{% elsif category == "swap"  %}
+  {% assign docs = site.data.navigation_docs_sw | map: 'docs' | join: ',' | split: ',' %}
 {% endif %}
 
 
