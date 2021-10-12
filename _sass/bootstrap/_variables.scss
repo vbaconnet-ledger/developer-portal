@@ -9,9 +9,9 @@
 // //
 
 // // stylelint-disable
-// $white:    #fff !default;
+$white:    #fff !default;
 // $gray-100: #f8f9fa !default;
-// $gray-200: #e9ecef !default;
+$gray-200: #e9ecef !default;
 // $gray-300: #dee2e6 !default;
 // $gray-400: #ced4da !default;
 // $gray-500: #adb5bd !default;
@@ -19,7 +19,7 @@
 // $gray-700: #495057 !default;
 // $gray-800: #343a40 !default;
 // $gray-900: #212529 !default;
-// $black:    #000 !default;
+$black:    #000 !default;
 
 // $grays: () !default;
 // $grays: map-merge((
@@ -99,8 +99,8 @@
 // // Quickly modify global styling by enabling or disabling optional features.
 
 // $enable-caret:              true !default;
-// $enable-rounded:            true !default;
-// $enable-shadows:            false !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
 // $enable-gradients:          false !default;
 $enable-transitions:        true !default;
 // $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
@@ -159,18 +159,18 @@ $enable-transitions:        true !default;
 // $paragraph-margin-bottom:   1rem !default;
 
 
-// // Grid breakpoints
-// //
-// // Define the minimum dimensions at which your layout will change,
-// // adapting to different screen sizes, for use in media queries.
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
 
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px
-// ) !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 
 // @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 // @include _assert-starts-at-zero($grid-breakpoints);
@@ -204,11 +204,11 @@ $enable-transitions:        true !default;
 // $line-height-lg:              1.5 !default;
 // $line-height-sm:              1.5 !default;
 
-// $border-width:                1px !default;
+$border-width:                1px !default;
 // $border-color:                $gray-300 !default;
 
 // $border-radius:               .25rem !default;
-// $border-radius-lg:            .3rem !default;
+$border-radius-lg:            .3rem !default;
 // $border-radius-sm:            .2rem !default;
 
 // $component-active-color:      $white !default;
@@ -562,8 +562,8 @@ $transition-collapse:         height .35s ease !default;
 // $zindex-dropdown:                   1000 !default;
 // $zindex-sticky:                     1020 !default;
 // $zindex-fixed:                      1030 !default;
-// $zindex-modal-backdrop:             1040 !default;
-// $zindex-modal:                      1050 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
 // $zindex-popover:                    1060 !default;
 // $zindex-tooltip:                    1070 !default;
 
@@ -731,35 +731,35 @@ $transition-collapse:         height .35s ease !default;
 // $badge-pill-border-radius:          10rem !default;
 
 
-// // Modals
+// Modals
 
-// // Padding applied to the modal body
-// $modal-inner-padding:         1rem !default;
+// Padding applied to the modal body
+$modal-inner-padding:         1rem !default;
 
-// $modal-dialog-margin:         .5rem !default;
-// $modal-dialog-margin-y-sm-up: 1.75rem !default;
+$modal-dialog-margin:         .5rem !default;
+$modal-dialog-margin-y-sm-up: 1.75rem !default;
 
-// $modal-title-line-height:           $line-height-base !default;
+$modal-title-line-height:           $line-height-base !default;
 
-// $modal-content-bg:               $white !default;
-// $modal-content-border-color:     rgba($black, .2) !default;
-// $modal-content-border-width:     $border-width !default;
-// $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
-// $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
+$modal-content-bg:               $white !default;
+$modal-content-border-color:     rgba($black, .2) !default;
+$modal-content-border-width:     $border-width !default;
+$modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
 
-// $modal-backdrop-bg:           $black !default;
-// $modal-backdrop-opacity:      .5 !default;
-// $modal-header-border-color:   $gray-200 !default;
-// $modal-footer-border-color:   $modal-header-border-color !default;
-// $modal-header-border-width:   $modal-content-border-width !default;
-// $modal-footer-border-width:   $modal-header-border-width !default;
-// $modal-header-padding:        1rem !default;
+$modal-backdrop-bg:           $black !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   $gray-200 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-header-border-width:   $modal-content-border-width !default;
+$modal-footer-border-width:   $modal-header-border-width !default;
+$modal-header-padding:        1rem !default;
 
-// $modal-lg:                          800px !default;
-// $modal-md:                          500px !default;
-// $modal-sm:                          300px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
 
-// $modal-transition:                  transform .3s ease-out !default;
+$modal-transition:                  transform .3s ease-out !default;
 
 
 // // Alerts
