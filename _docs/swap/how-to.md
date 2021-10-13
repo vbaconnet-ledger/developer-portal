@@ -21,7 +21,7 @@ This diagram shows what is needed from the provider’s side in order to interac
 In order to communicate with Ledger’s back-end, you have to give us the mapping of the endpoints we need. <br> 
 As you can see on the diagram above, there are 4 main endpoints needed for the swap: 
 - To get the list of tradable pairs: `/providers`.
-- To query a rat: `/rate`.
+- To query a rate: `/rate`.
 - To perform a swap (with the Payload/signature required by the nano): `/swap`.
 - To query a swap status: `/status`.
 Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
