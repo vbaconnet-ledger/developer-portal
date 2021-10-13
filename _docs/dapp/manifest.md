@@ -11,21 +11,14 @@ layout: doc_da
 * TOC
 {:toc}
 
-
-Check and if necessary edit your manifest file as described [here](#example-of-manifest-json-format-for-the-lido-application).
+Check and if necessary edit your manifest file as described [below](#example-of-manifest-json-format-for-the-lido-application).
 
 Unlock the Developer mode in Ledger Live [here](../developer-mode/).
 
-You should now be able to interact with you Dapp directly from Ledger Live interface in order to make sure all basic features work as expected.
-
+You should now be ready to interact with you Dapp directly from Ledger Live interface in order to make sure all basic features work as expected.
 
 To be able to test and integrate your application, you first need to write your application Manifest file.
 This file must contain some mandatory information, such as the app package names, the components, the permissions needed, the hardware and software features, etc.
-
-<!--  -->
-{% include alert.html style="primary" text="You can use our <a href='https://github.com/LedgerHQ/ledger-live-assets/blob/develop/platform/apps/v1/schema.ts'>anifest template</a> from the Demo repository (link TBD)." %}
-<!--  -->
-
 
 ### Example of Manifest (JSON format) for the “Lido” application:
 
@@ -90,5 +83,3 @@ Type: l18n strings.
 - `permissions`:
 - `domains`:
 
-(TBD) Manifest validation tool: 
-Note: your Manifest will be automatically rejected by Ledger Live if its invalid.

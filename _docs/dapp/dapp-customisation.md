@@ -1,5 +1,5 @@
 ---
-title: A - Implementing the DApp 
+title: A - Connecting the DApp 
 subtitle:
 tags: []
 layout: doc_da
