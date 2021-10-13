@@ -16,7 +16,7 @@ Check and if necessary edit your manifest file as described [here](#example-of-m
 
 [Unlock the Developer mode](../developer-mode/)in Ledger Live.
 
-If you have followed instructions on the previous page, you should now be able to interact with the Dapp directly from Ledger Live interface and make sure all basic features work as expected.
+If you have followed instructions on the previous page, you should now be able to interact with the Dapp directly from Ledger Live interface to make sure all the basic features work as expected.
 
 
 To test and integrate your application, you first need to write your application Manifest file.
@@ -79,7 +79,7 @@ Type: string.
 Type: string.
 - `manifestVersion`: the manifest version. By default should be "1".
 Type: string.
-- `branch`: the specific branch used by Ledger to deploy the changes. Can take the values stable | experimental | debug | soon. By default you should set it to  "stable". The value “soon” will mark your app as “Coming soon” and it won’t be usable.
+- `branch`: the specific branch used by Ledger to deploy the changes. Can take the values stable | experimental | debug | soon. By default, you should set it to  "stable". The value “soon” will mark your app as “Coming soon” and it won’t be usable.
 Type: string.
 - `categories`: a JSON array of metadata information about your application. For instance : ["staking","defi" ]
 Type: list(string).
