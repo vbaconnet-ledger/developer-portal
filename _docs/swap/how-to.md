@@ -91,7 +91,7 @@ Amounts must be in the lowest unit in the field `coefficient` with its `exponent
 Example:
 - 1 **BTC** would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a **satoshi** which is `10^-8` **BTC**.<br> 
 So multiply 1 **BTC** by `10^8` → `0x5F5E100`.
-- 2 ETH would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
+- 2 **ETH** would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
 So multiply 2 **ETH** by `10^18` → `0x1BC16D674EC80000`. 
 
 
