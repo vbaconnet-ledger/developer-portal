@@ -16,7 +16,7 @@ This page is a description of the three parts of the implementation of your DApp
 
 Ledger has a [DApp browser](https://github.com/LedgerHQ/ledger-live-platform-apps) to host your web3 DApp.
 
-One of the most useful features of this DApp Browser is to be able to log-in automatically from a Ledger Live Ethereum account, therefore obviating the step to manually “Connect Wallet”.
+One of the most useful features of this DApp Browser is to be able to log-in automatically from a Ledger Live Ethereum account, therefore obviating the step to manually “Connect a Wallet”.
 
 As a DApp developer, you must add the specific iframe-provider from Ledger to your web3 provider list.
 
@@ -30,9 +30,7 @@ The DApp must run differently if it is called from within an iframe or not. If i
 
 ## 2. Test the provider locally
 
-A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in:
-
-https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=<Your_URL>
+A tool is available to test the provider integration. It is a DApp browser empty shell that uses mock data. To use it, put your URL in <b>https://ledger-live-platform-apps.vercel.app/app/dapp-browser?mock=true&url=&lt;Your_URL></b>
   
 For example, this is how it is used with Paraswap:
 
@@ -46,7 +44,7 @@ You will see that the page information content depends on the chosen account in 
 
 ## 3. Smooth out user experience
 
-* Please make sure handle basic cases are handled.
+* Please make sure basic cases are handled.
 
   For instance, check what happens when you click on the **log out** or **disconnect** button in your Dapp. The user may be automatically logged back in the Ledger Live iframe-provider, or redirected to the standard list of providers (Metamask, connect wallet, and such…).
 

@@ -16,7 +16,9 @@ This will enable the Developer tab.
 
 ![screenshot of the Developer tab](../images/developer_mode_tab.png "Developer tab")
 
-Note: This feature is available for Ledger Live version 2.32 and above only.
+ <!--  -->
+{% include alert.html style="success" text="This feature is available for Ledger Live version 2.32 and above only." %}
+<!--  -->
 
 This new section will give you access to the following content :
 
