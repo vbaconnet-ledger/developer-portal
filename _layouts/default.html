@@ -43,10 +43,11 @@
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <!-- test -->
-                <div class="container search-box">
+                <!-- Algolia Instant Search Modal -->
+                <div class="search-box">
                       <div id="search-searchbar"></div>
 
+                      <h2>Results</h2>
                       <div class="post-list" id="search-hits">
                         {% for doc in site.docs %}
                           <div class="post-item">
@@ -62,7 +63,7 @@
 
                     {% include algolia.html %}
                 </div>
-                <!-- end of test -->
+                <!-- End of Algolia Instant Search Modal -->
               </div>
             </div>
         </div>

@@ -622,6 +622,20 @@
         }
       }
 
+     // Algolia Instant Search
+     .modal-content{
+        padding: 20px;
+     } 
+
+     #search-searchbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 25px;
+        font-family:$body-font-family;
+     }
+
     // Typeform
     .typeform-widget {
       padding-top: 20px;
