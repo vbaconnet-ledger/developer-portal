@@ -38,6 +38,8 @@ group :jekyll_plugins do
    gem 'rdiscount' #FC Added 2021-04-22 1743
    gem 'kramdown'
    gem 'rouge'
+   gem 'jekyll-environment-variables'
+   gem 'jekyll-algolia', '~> 1.0'
 end
 
 gem "nokogiri", ">= 1.12.5" #Added 4.10.21 to resolve a security issue
