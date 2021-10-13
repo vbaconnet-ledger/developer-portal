@@ -10,7 +10,7 @@ layout: doc_da
 * TOC
 {:toc}
 
-To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click 10 times on the **Ledger Live version**. See image below.
+To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click 10 times on the **Ledger Live version**. See the image below.
 
 This will enable the Developer tab.
 
@@ -38,7 +38,7 @@ The first “debug”-tagged platform app displayed in the Discover section is t
 ## Allow experimental apps
 
 When enabled, this setting will display and allow “experimental”-tagged platform apps.
-Until an application is reviewed and approved by Ledger, it  must remain experimental.
+Until an application is reviewed and approved by Ledger, it must stay experimental.
 
 ## Set the catalog provider
 
@@ -52,6 +52,6 @@ This setting will enable the platform apps dev tools window, which can be useful
 
 ## Add a local app
 
-This option will enables browsing of local files and adding a local app using a local manifest.
-Application can be tested autonomously.
-To display an application in the Discover section, the corresponding manifest file must be loaded .
+Use this option to browse local files and add a local app using a local manifest.
+Applications can be tested locally.
+To display an application in the Discover section, the corresponding manifest file must be loaded.
