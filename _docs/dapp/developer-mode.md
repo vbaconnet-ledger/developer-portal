@@ -10,46 +10,46 @@ layout: doc_da
 * TOC
 {:toc}
 
-To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click ten times on the Ledger Live version.
+To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click 10 times on the **Ledger Live version**. See image below.
 
-This will make the Developer tab appear.
+This will enable the Developer tab.
 
 ![screenshot of the Developer tab](../images/developer_mode_tab.png "Developer tab")
 
-Note : this feature is available only for Ledger Live version 2.32 and above.
+Note: This feature is available for Ledger Live version 2.32 and above only.
 
 This new section will give you access to the following content :
 
-- **Allow debug apps** : Display and allow opening debug tagged platform apps.
-- **Allow experimental apps** : Display and allow opening experimental tagged platform apps.
-- **Set the catalog provider** : Switch between multiple platform apps sources (Production of Staging).
-- **Enable platform dev tools** : Enable opening platform apps dev tools window.
-- **Add a local app** : Browse local files and add a local app using a local manifest.
+- **Allow debug apps**: Display and enable “debug”-tagged platform apps.
+- **Allow experimental apps**: Display and enable experimental tagged platform apps.
+- **Set the catalog provider**: Switch between multiple platform app sources (Production of Staging).
+- **Enable platform dev tools**: Enable platform app dev tools window.
+- **Add a local app**: Browse local files and add a local app using a local manifest.
 
-We’ll dive into each section to describe how they work.
+We will dive into each section to describe how they work.
 
-## Allow debug apps
+## Enabling debug apps
 
-This setting, when enabled, will display and allow opening “debug” tagged platform apps.
-The first debug tagged platform app you will now see appear in the Discover section will be the Debugger. This app has been designed by Ledger to specifically allow you to test the API and understand how it works.
+When enabled, this setting will display and allow “debug”-tagged platform apps.
+The first “debug”-tagged platform app displayed in the Discover section is the Debugger. This app is designed by Ledger to allow you to understand and test how the API works.
 
 ## Allow experimental apps
 
-This setting, when enabled, will display and allow opening “experimental” tagged platform apps.
-As long as an application hasn’t been reviewed and approved by Ledger, it can only remain experimental.
+When enabled, this setting will display and allow “experimental”-tagged platform apps.
+Until an application is reviewed and approved by Ledger, it  must remain experimental.
 
 ## Set the catalog provider
 
-The catalog provider is a variable used to define the list of applications being displayed in the discover section. Ledger uses two lists of applications, those in staging (currently being tested), and those in production (validated already, and usually available to all our users).
+The catalog provider is a variable used to define the list of applications being displayed in the discover section. Ledger uses two lists of applications, those in staging (currently being tested), and those in production (already validated, and usually available to all users).
 
 ## Enable Platform dev tools
 
-This setting will enable opening the platform apps dev tools window, which can become handy when debugging your application.
+This setting will enable the platform apps dev tools window, which can be useful when debugging an application.
 
 ![screenshot of the Platform dev tools](../images/platform_dev_tools.png "Developer tools window")
 
 ## Add a local app
 
-This option will allow you to browse for local files and add a local app using a local manifest.
-With it you can be autonomous in testing your application.
-You’ll have to load your own manifest to make your application appear in the Discover section.
+This option will enables browsing of local files and adding a local app using a local manifest.
+Application can be tested autonomously.
+To display an application in the Discover section, the corresponding manifest file must be loaded .

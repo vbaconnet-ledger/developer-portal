@@ -1,5 +1,10 @@
 - title: Contents
   docs:
   - dapp/introduction
-  - dapp/developer-mode
+
+- title: Development how-to
+  docs:
+  - dapp/dapp-customisation
   - dapp/manifest
+  - dapp/developer-mode
+  - dapp/nano-app-plugin
