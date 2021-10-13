@@ -12,22 +12,28 @@ layout: doc_sw
 
 In order to become a swap provider in the Ledger Live ecosystem, you must submit your API following Ledger’s specifications. We will guide you through the requirements and the modifications you will need to apply to your API before sending it to us. 
 
-This diagram shows what is needed from the provider’s side in order to be interact with Ledger Live
+This diagram shows what is needed from the provider’s side in order to interact with Ledger Live.
 
 ![How to diagram](../images/how-to.png "How to diagram")
 
 ## Endpoints
 
-In order to communicate with Ledger’s backend, you have to use the list of endpoints we need. There are 4 endpoints needed for the swap.
+In order to communicate with Ledger’s back-end, you have to give us the mapping of the endpoints we need. <br> 
+As you can see on the diagram above, there are 4 main endpoints needed for the swap: 
+- To get the list of tradable pairs: `/providers`.
+- To query a rate: `/rate`.
+- To perform a swap (with the Payload/signature required by the nano): `/swap`.
+- To query a swap status: `/status`.
+Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
 
 ### Data mapping
 
-Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (link to next section “Swap Endpoint”). 
+Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (see [Swap Endpoint](#swap-endpoint) section below for more details). 
 
-As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. 
-The following tables can be found in this [swagger page](https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/v3), as well as other endpoints information.
+As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
+The following swagger page can be found [here](https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/v3).
 
-<iframe src="https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/" width="100%" height="500"></iframe>
+<iframe title="Endpoint mapping" src="https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/" width="100%" height="400"></iframe>
 
 Some requirements about the **/rate** endpoint:
 - The quote must work without user auth.
@@ -36,10 +42,10 @@ Some requirements about the **/rate** endpoint:
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
 - Should check the auth bearer token. 
-See “Swap Endpoint” section for more details.
+See [Swap Endpoint](#swap-endpoint) section below for more details.
 
-**IP address checking**
-You should provide a way to check if the user's geolocation is allowed to do coin swap, given the IP of the user.
+**IP address checking** <br>
+You should provide a way to check if the user's geolocation is allowed to do coin swap, given the IP of the user.<br>
 Our back-end can adapt to how you decide to do this, but we recommend you use a dedicated endpoint. Our back-end will send the user’s IP address to that endpoint, without logging it. In response, your endpoint should tell us if the trade is accepted or rejected.
 
 
@@ -73,7 +79,7 @@ Explanation of each fields:
 - `payin_extra_id`: eventual memo for the payment (stellar payment, for instance)
 - `refund_address`: client address to receive back the payment funds in case the provider is not able to execute the swap for some unpredictable reasons
 - `refund_extra_id`: eventual memo for the payment (stellar payment, for instance)
-payout_address: client address to receive the money resulting from a successful swap
+- `payout_address`: client address to receive the money resulting from a successful swap
 - `payout_extra_id`: eventual memo for the payment (stellar payment, for instance)
 - `currency_from`: currency that the client wants to swap
 - `currency_to`: currency that the client wants to receive from his swap
@@ -81,12 +87,12 @@ payout_address: client address to receive the money resulting from a successful 
 - `amount_to_wallet`: amount of Currency_to that the provider agrees to send to client in exchange from Amount_to_provider
 - `device_transaction_id`: swap transaction nonce provided by client at initialization
 
-Amounts must be in the lowest unit in the field `coefficient` with its `exponent`.
+Amounts must be in the lowest unit in the field `coefficient` with its `exponent`.<br>
 Example:
-1 BTC would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a `satoshi` which is `10^-8 BTC`. 
-So multiply 1 BTC by `10^8` → `0x5F5E100`.
-2 ETH would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a `wei` which is `10^-18 ETH`. 
-So multiply 2 ETH by `10^18` → `0x1BC16D674EC80000`. 
+- 1 **BTC** would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a **satoshi** which is `10^-8` **BTC**.<br> 
+So multiply 1 **BTC** by `10^8` → `0x5F5E100`.
+- 2 **ETH** would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
+So multiply 2 **ETH** by `10^18` → `0x1BC16D674EC80000`. 
 
 
 #### New field: nonce
