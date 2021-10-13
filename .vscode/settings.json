@@ -1,5 +1,24 @@
 {
     "files.exclude": {
         "**/.code-workspace": true
-    }
+    },
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/_docs/dapp/manifest.md"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "british",
+                "domain": "technical",
+                "emotions": [
+                    "friendly"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ]
+            }
+        }
+    ]
 }
