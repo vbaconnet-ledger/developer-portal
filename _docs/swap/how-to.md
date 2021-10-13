@@ -28,7 +28,7 @@ Additionally, we also need a way to know if a user will be able to trade given h
 
 ### Data mapping
 
-Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (link to next section “Swap Endpoint”). 
+Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (see [Swap Endpoint](#swap-endpoint) section below for more details). 
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
 The following swagger page can be found [here](https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/v3).
@@ -42,7 +42,7 @@ Some requirements about the **/rate** endpoint:
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
 - Should check the auth bearer token. 
-See “Swap Endpoint” section for more details.
+See [Swap Endpoint](#swap-endpoint) section below for more details.
 
 **IP address checking** <br>
 You should provide a way to check if the user's geolocation is allowed to do coin swap, given the IP of the user.<br>
@@ -89,10 +89,10 @@ Explanation of each fields:
 
 Amounts must be in the lowest unit in the field `coefficient` with its `exponent`.<br>
 Example:
-- 1 BTC would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a `satoshi` which is `10^-8 BTC`.<br> 
-So multiply 1 BTC by `10^8` → `0x5F5E100`.
-- 2 ETH would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a `wei` which is `10^-18 ETH`.<br> 
-So multiply 2 ETH by `10^18` → `0x1BC16D674EC80000`. 
+- 1 **BTC** would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a **satoshi** which is `10^-8` **BTC**.<br> 
+So multiply 1 **BTC** by `10^8` → `0x5F5E100`.
+- 2 ETH would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
+So multiply 2 **ETH** by `10^18` → `0x1BC16D674EC80000`. 
 
 
 #### New field: nonce
