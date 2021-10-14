@@ -15,8 +15,8 @@ layout: doc_tr
 
 A wallet application contains business-service related code and typically also has a GUI. Its format can be a desktop or smartphone application, or a web application.
 
-In this section, you will learn how to:
-- Open a connection to the Nano, using a chosen transport protocol. On this page.
+This section is a guide for using [github.com/LedgerHQ/ledgerjs](https://github.com/LedgerHQ/ledgerjs). You will learn how to:
+- Open a connection to a Nano, using a chosen transport protocol, on this page.
 - Push your Nano application API calls to the Nano. That is on the next page.
 
 ## Choosing the right transport
