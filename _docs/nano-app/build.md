@@ -104,7 +104,7 @@ root@656be163fe84:/app# make scan-build
 
 ### 2.3 Exit the image
 
-The build generates several files in your application folder and especially the `app.elf` that can be loaded to a [physical Nano S](../load) or an [emulated Nano X or S with Speculos](../../speculos/start-here).
+The build generates several files in your application folder and especially the `app.elf` that can be loaded to a [physical Nano S](../load) or an [emulated Nano X or S with Speculos](../../speculos/installation/build).
 
 You can exit the image, with the command `exit`.
 

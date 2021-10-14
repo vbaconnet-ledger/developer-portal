@@ -17,7 +17,7 @@ layout: doc_tr
 
 This is the `renderer.js` file for Google's Carlo application.
 
-It uses the [WebUSB package](../webusb) and the BTC Package (see more in the [App Protocol section](../app-protocol)).
+It uses the [WebUSB package](../webusb) and the BTC Package (see more in the [App Protocol section](../nano-api-calls)).
 
 ```javascript
 import "babel-polyfill";
