@@ -3,7 +3,7 @@ title: Introduction
 subtitle:
 tags: [dapp browser, decentralized app, plugin, ethereum plugin]
 category: DApp Integration
-toc: true
+toc: 
 author:
 layout: doc_da
 ---

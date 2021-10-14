@@ -1,7 +1,9 @@
 ---
 title: A - Connecting the DApp 
 subtitle:
-tags: []
+tags: [server, iframe]
+category: DApp Integration
+toc: true
 layout: doc_da
 ---
 

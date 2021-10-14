@@ -1,7 +1,9 @@
 ---
 title: Flow
 subtitle:
+category: Swap Providers
 tags: []
+toc: true
 layout: doc_sw
 ---
 
