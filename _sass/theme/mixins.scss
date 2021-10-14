@@ -636,6 +636,31 @@
         font-family:$body-font-family;
      }
 
+    .search-icon :hover {
+        color: $safety-orange ;
+    }
+
+    .post-item h3 {
+        margin-top: 50px;
+        margin-bottom: 2px;
+    }
+
+    .post-item h3 :hover {
+        color: $safety-orange;
+    }
+
+    .post-breadcrumbs {
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover {
+            color: $safety-orange;
+        }
+    }
+
+    .ais-Highlight {
+        font-weight: bold;
+    }
+
     // Typeform
     .typeform-widget {
       padding-top: 20px;

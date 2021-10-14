@@ -21,7 +21,7 @@
                 {% if page.hero.subtitle %}<p class="uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
 
                 {% if page.hero.search %}
-                <div class="hero-search">
+                <div>
 
                     <!-- Html Elements for Search -->
                     <!-- removed in V3 to change search from simple-jekyll-search to algolia -->
@@ -46,9 +46,10 @@
                     searchResults("search-hero");
 
                     </script> -->
-
-                    <!-- Button to launch Algolia search modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                    <div class="uk-position-relative" style="text-align:center;">
+                        <!-- Button to launch Algolia search modal -->
+                        <button type="button" uk-search-icon class="uk-button uk-button-default uk-button-large uk-margin-medium-top" data-toggle="modal" data-target=".bd-example-modal-lg">Search through the doc </button>
+                    </div>
                 </div>
                 {% endif %}
 
