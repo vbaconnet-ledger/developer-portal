@@ -23,7 +23,7 @@ As you can see on the diagram above, there are 4 main endpoints needed for the s
 - To get the list of tradable pairs: `/providers`.
 - To query a rate: `/rate`.
 - To perform a swap (with the Payload/signature required by the nano): `/swap`.
-- To query a swap status: `/status`.
+- To query a swap status: `/status`. <br>
 Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
 
 ### Data mapping
@@ -41,7 +41,7 @@ Some requirements about the **/rate** endpoint:
 
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
-- Should check the auth bearer token. 
+- Should check the auth bearer token.<br>
 See [Swap Endpoint](#swap-endpoint) section below for more details.
 
 **IP address checking** <br>
@@ -119,7 +119,7 @@ In the JSON response, a new field `providerSig` with a JSON Web Signature (JWS) 
 - `providerSig.header.alg` - the algorithm used for the signature: “ES256”.
 - `proverSig.header.kid` - an identifier for the public key used: “provider_name-2020“.
 - `providerSig.payload` - base 64 URL of the binary serialized protobuf message.NewTransactionResponse.
-- `providerSig.signature` - base 64 URL of the ES256 signature of providerSig.payload. More details in the “JWS signature” and “Protobuf message (payload)” sections. 
+- `providerSig.signature` - base 64 URL of the ES256 signature of providerSig.payload. More details in the [JWS signature](#jws-signature) and [Protobuf message (payload)](#protobuf-message-payload) sections. 
 
 #### JWS signature
 
@@ -147,4 +147,5 @@ s3IG1NOjw5aC9weCF5aRg"
 
 ## KYC & Registration
 
-TBD
+You will need to develop an iframe for the Login, which will also trigger the KYC when needed. <br>
+TBD: This section will be updated once we know if that iframe will go in a live app, and how it will notify the Ledger Live back-end that the Login/KYC is completed. 
