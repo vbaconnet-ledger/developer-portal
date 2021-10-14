@@ -24,7 +24,7 @@ The server must allow DApps to be embedded into iframes. To know more on how to 
 
 There is a useful [reference article](https://blog.ledger.com/paraswap-defi/) on the Ledger Blog.
 
-The package to add a [new web3 provider](https://www.npmjs.com/package/@ledgerhq/iframe provider) is available here. This simply diverts all RPC calls made from the DApp to the parent window using the PostMessage API. It does not do any Ledger-specific computing. It could in the future become a development standard to work out-of-the-box with other wallets.
+The package to add a [new web3 provider](https://www.npmjs.com/package/@ledgerhq/iframe-provider) is available here. This simply diverts all RPC calls made from the DApp to the parent window using the PostMessage API. It does not do any Ledger-specific computing. It could in the future become a development standard to work out-of-the-box with other wallets.
 
 A DApp must run differently if it is called from within an iframe or not. If it is, then directly initialize the web3 instance with the iframe provider. In this way, there is no web3modal connect flow at all, and users are automatically connected to the wallet of the parent window. To detect if a call is made from within an iframe or not, use a query param such as `?embed=true`.
 
