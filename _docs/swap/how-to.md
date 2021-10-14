@@ -33,7 +33,7 @@ Here are the details about each needed endpoint. Note that they are all pretty s
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
 The following swagger page can be found [here](https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/v3).
 
-<iframe title="Endpoint mapping" src="https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/" width="100%" height="400"></iframe>
+<iframe title="Endpoint mapping" src="https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/" width="100%" height="400" style="border:1px solid black;"></iframe>
 
 Some requirements about the **/rate** endpoint:
 - The quote must work without user auth.
