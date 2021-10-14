@@ -16,7 +16,7 @@ The main phases to get your Live App officially released are:
     A - Implement and Test your [DApp](../dapp-customisation) Server  
     B - Insert the [Manifest](../manifest) in Ledger Live  
     C - Write the [Nano App Plugin](../nano-app-plugin)  
-    D - Integrate a Token (if not already supported in Ledger Live) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please refer to [this doc](https://developers.ledger.com/docs/token/introduction/) if you want to integrate new tokens in addition to DApp.
+    &nbsp;&nbsp;&nbsp;&nbsp;\- Integrate a Token (if not already supported in Ledger Live) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please refer to [this doc](https://developers.ledger.com/docs/token/introduction/) if you want to integrate new tokens in addition to a DApp.
 
 - **Agreement** between you and Ledger regarding the Terms & Conditions, and validation of the integration by Ledger. The Agreement can be finalised during the development phase, as there may already be a common understanding.
   If you want to know more, or if you simply want get in touch then reach out to Ledger on [Slack](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw). Please reach out to us before [submitting your DApp plugin](https://ledger.typeform.com/to/qQSf7CVh).
