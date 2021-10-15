@@ -52,7 +52,9 @@
     // Fix for UIkit left and right first & last items
     .uk-navbar-container > .uk-container {
         .uk-navbar-left {
-            margin-left: -$navbar-nav-item-padding-horizontal;
+            // margin-left: -$navbar-nav-item-padding-horizontal;
+            margin-left: auto; // Added for v3
+            margin-right: auto; // Added for v3
         }
         .uk-navbar-right {
             margin-right: -$navbar-nav-item-padding-horizontal;
