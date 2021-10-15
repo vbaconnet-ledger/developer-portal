@@ -1,6 +1,6 @@
 ---
 title: General Process
-subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
+subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their blockchain on Ledger Live.
 tags: []
 author:
 toc: true
@@ -59,7 +59,7 @@ To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-l
 
 The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 
-After the Launch meeting, we will assess the feasibility and the maturity of your coin integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
+After the Launch meeting, we will assess the feasibility and the maturity of your blockchain integration project, and we will suggest an Agreement Framework, i.e. loose terms under which we agree to work. This also includes:
 
 - Resources
 - Support and communication channels
@@ -112,14 +112,15 @@ This table shows which GEN/SPE components are involved is which phase.
 | D - Specific **GUI**  |                |   <center><span class="uk-margin-small-right" uk-icon="check"></span>   |
 
 
-The table below shows what the inputs and outputs are for each phase, the work involved, as well as the main parts of this documentation are involved.
+The table below shows what the inputs and outputs are for each phase, the work involved, as well as the reference of the corresponding chapters.
 
-| Delivery<br>Phase  	|   Input<br>of the Phase	|   Work Package	|   Output<br>of the Phase	|   Main Chapters<br>involved	|
+
+| <center>Delivery<br>Phase  	|   <center>Input<br>of the Phase	|   <center>Work Package		|   <center>Chapters<br>involved	| <center>Output<br>of the Phase |
 |---	|---	|---	|---	|---	|
-|  <center>A 	|  <center>n/a 	|   Technical assessment	|   **Acceptance Plan**:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  <center>Prerequisites 	|
-|  <center>B	|     **Acceptance Plan**:<br>Technical assessment   	|   GEN Features    	|   PR CLI & GUI    	|    <center>Coding & Testing   	|
-|  <center>C 	| **Acceptance Plan**:<br>SPE Choices   	   	| SPE Features      	|  PR CLI      	|    <center>Coding & Testing   	|
-|  <center>D 	| **Acceptance Plan**:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  User journey (UI)     	|   PR  GUI    	|    <center>Coding & Testing   	|
+|  <center>A 	|  <center>n/a 	|   <center>Technical assessment	|   <center>Prerequisites 	| <center>Acceptance Plan parts:<br>Indexer Solution<br>SPE Choices<br>SPE Use-Case Tests	|  
+|  <center>B	|     <center>Acceptance Plan parts:<br>Technical assessment   	|   <center>GEN Features    	|     <center>Coding & Testing   	|  <center>PR CLI & GUI    	|
+|  <center>C 	| <center>Acceptance Plan parts:<br>SPE Choices   	   	| <center>SPE Features      	|    <center>Coding & Testing   	|  <center>PR CLI      	|
+|  <center>D 	| <center>Acceptance Plan parts:<br>SPE Choices<br>SPE Use-Case Tests   	   	|  <center>User journey (UI)     	|    <center>Coding & Testing   	|   <center>PR  GUI    	|
 
 Note PR: Pull request
 

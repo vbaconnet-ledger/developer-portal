@@ -1,32 +1,37 @@
-- title: Communication between a companion app and a Ledger Nano
+- title: Connecting a wallet
   docs:
-  - transport/ledgerjs
-  - transport/U2F
+  - transport/connect-wallet
 
-- title: Transport implementation
+- title: Nano calls
+  docs:
+  - transport/nano-api-calls
+  - transport/nano-api-less-calls
+  - transport/test-communication
+
+- title: Examples
+  docs:
+  - transport/example-webusb-js
+  - transport/example-webble-react
+  - transport/example-reactnative-ble
+
+- title: Transport APIs
   subfolderitems:
     - title: Web app
       docs:
-      - transport/webusb
       - transport/webhid
+      - transport/webusb
       - transport/web-ble
     - title: Desktop app
       docs:
       - transport/node-hid-singleton
-      - transport/node-hid-noevents
       - transport/node-speculos
     - title: Mobile app
       docs:
       - transport/react-native-hid
       - transport/react-native-ble
 
-- title: App protocol implementation
+- title: Note on U2F
   docs:
-  - transport/app-protocol
-  - transport/test-communication
+  - transport/U2F
 
-- title: Examples of transport implementation
-  docs:
-  - transport/example-webusb-js
-  - transport/example-webble-react
-  - transport/example-reactnative-ble
+

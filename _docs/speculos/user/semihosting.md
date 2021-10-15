@@ -1,9 +1,12 @@
 ---
 title: Semihosting as an additional debug mechanism
 subtitle:
-tags: []
+tags: [use speculos, emulate, emulator, Nano X emulator]
+category: Speculos
 author:
+toc: true
 layout: doc_sp
+sort: 7
 ---
 
 #### Sections in this article
@@ -11,7 +14,8 @@ layout: doc_sp
 * TOC
 {:toc}
 
-QEMU implements some semihosted operations which can be triggered from the app. For instance, messages can be printed to stderr with the following code:
+QEMU implements some semihosted operations which can be triggered from the app.
+For instance, messages can be printed to stderr with the following code:
 
 ## SYS_WRITE0
 
@@ -27,13 +31,15 @@ void debug_write(char *buf)
 }
 ```
 
-The operation number must be passed in `r0` (here `SYS_WRITE0` operation is defined to `0x04`) and arguments are in `r1`, `r2` and `r3`.
+The operation number must be passed in `r0` (here `SYS_WRITE0` operation is
+defined to `0x04`) and arguments are in `r1`, `r2` and `r3`.
 
 Usage:
 
-```
+```c
 debug_write("magic!\n");
 ```
+
 
 ## References
 

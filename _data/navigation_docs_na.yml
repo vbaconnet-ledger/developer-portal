@@ -1,17 +1,18 @@
 - title: []
   docs:
   - nano-app/introduction
+  - nano-app/types-apps
 
-- title: Getting Started
+- title: Set up and use
   docs:
-  - nano-app/quickstart
-  - nano-app/deepdive
+  - nano-app/build
+  - nano-app/load
 
 - title: Security best practices
   docs:
   - nano-app/secure-app
 
-- title: Backround information
+- title: Background information
   subfolderitems:
     - title: Display
       docs:

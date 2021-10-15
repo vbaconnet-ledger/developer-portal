@@ -1,21 +1,21 @@
 # Boxes All Integrations
 
 - title: Nano App
-  desc: Complete guide to getting your blockchain supported on Nano S/X
+  desc: Get your blockchain supported on Nano S/X
   icon: nano
   doc: nano-app/introduction
 
-- title: Coin Integration
+- title: Connect your wallet
+  desc: How to connect a wallet to a Ledger device
+  icon: connect
+  doc: transport/connect-wallet
+
+- title: Blockchain support
   desc: How to get your currency supported on Ledger Live
   icon: coin
   doc: coin/general-process
 
-- title: Token Integration
-  desc: How to include your favourite token in Ledger Live
-  icon: token
-  doc: token/introduction
-
-- title: DApp Integration
-  desc: Get Started integrating your service in Ledger Live
+- title: DApp
+  desc: Turn your DApp into a Live App in Ledger Live
   icon: dapp
   doc: dapp/introduction

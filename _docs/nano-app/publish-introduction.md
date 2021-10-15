@@ -26,10 +26,10 @@ Let’s see the typical end-to-end architecture of a BOLOS application, in the c
 
 Three pieces of software are required:
 - A BOLOS application, written in C, running on a Ledger device
-- The companion app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
+- The wallet app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
 - A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
 
-If you’re not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the companion app might be a simple daemon or a command line tool, without a GUI.
+If you’re not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the wallet app might be a simple daemon or a command line tool, without a GUI.
 
 The Ledger Manager is the service which centralizes the distribution of [BOLOS](https://developers.ledger.com/docs/nano-app/bolos-introduction/) applications on Ledger devices. It is the place where both Ledger’s apps and third party apps are distributed to users.
 
@@ -40,7 +40,7 @@ The Ledger Manager is the service which centralizes the distribution of [BOLOS](
 </figure>
 
 
-When these pieces are ready for deployment, they must be sent to Ledger for a security review. One of the things we're going to do is review the security of the BOLOS application code, and check that it functions as intended in conjunction with its companion app. Here is a non-exhaustive list of what we're looking at during the review process:
+When these pieces are ready for deployment, they must be sent to Ledger for a security review. One of the things we're going to do is review the security of the BOLOS application code, and check that it functions as intended in conjunction with its wallet app. Here is a non-exhaustive list of what we're looking at during the review process:
 
 -   Backdoors
 -   Buffer overflows
@@ -73,7 +73,7 @@ An application will be listed publicly (official Ledger support) when:
 
 -   It passed the security audit
 -   It's been tested and validated by at least someone from Ledger Customer Success Team
--   The application is compatible with a GUI companion app (CLI is not enough)
+-   The application is compatible with a wallet app with a GUI (a CLI is not enough)
 -   Ledger is ready to communicate officially about the app release (tweet, blogpost, website page update)
 -   Customer support pages are available on Ledger Help Center
 

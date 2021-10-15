@@ -17,10 +17,10 @@ Ledger Live Common is the shared core library used by Ledger Live Desktop and Mo
 
 This library is built upon a pretty standard ES6 + Typescript stack and relies on a bunch of [ledgerjs](https://github.com/LedgerHQ/ledgerjs) packages, [RxJS 6.x](https://github.com/ReactiveX/rxjs/tree/6.x), [bignumber.js](https://github.com/MikeMcl/bignumber.js) and [React](https://github.com/facebook/react/) + [Redux](https://github.com/reduxjs/redux) for some front-end utilities and hooks.
 
-It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new coin integrations through flexibility.
+It is designed to have very generic models and mechanics (for currencies, accounts, storage, synchronisation, events...) that also facilitates new blockchain integrations through flexibility.
 All integrated coins are implemented in a `src/families` dedicated folder which contains the specifics of a coin family - that can be shared by multiple crypto-assets that use the same implementation (i.e. Bitcoin-like coins share the same `bitcoin` family).
 
-**This document only concerns new coin integrations using Typecript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
+**This document only concerns new blockchain integrations using Typescript - we will use an imaginary coin named `MyCoin` as a walkthrough.**
 
 ## Setup
 
@@ -441,7 +441,7 @@ export type Transaction = TransactionCommon & {
 /**
  * MyCoin transaction from a raw JSON
  */
-export type TransactionRaw =TransactionCommonRaw & {
+export type TransactionRaw = TransactionCommonRaw & {
   family: "mycoin";
   mode: string;
   fees?: string;
@@ -506,7 +506,7 @@ import type {
 // };
 
 // export type AccountRaw = {
-  myCoinResources?: MyCoinResourcesRawp;
+  myCoinResources?: MyCoinResourcesRaw;
 // };
 ```
 
@@ -941,7 +941,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
-`bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
+`src/families/mycoin/bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
 
 - a CurrencyBridge
 - an AccountBridge
@@ -1054,7 +1054,7 @@ export default { currencyBridge, accountBridge };
 
 #### Split your code
 
-You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the differente files.
+You can now start to implement the JS bridge for <i>MyCoin</i>. It may need some changes back and forth between the types, your api wrapper, and the different files.
 
 The skeleton of `src/families/mycoin/bridge/js.ts` should look something like this:
 
@@ -1116,7 +1116,7 @@ It is designed for the end user frontend interface and is agnostic of the way it
 
 #### Receive
 
-The `receive` method allows to derivate address of an account with a Nano device but also display it on the device if verify is passed in.
+The `receive` method allows to derivatives address of an account with a Nano device but also display it on the device if verify is passed in.
 As you may see in `src/families/mycoin/bridge.ts`, Live Common provides a helper to implement it easily with `makeAccountBridgeReceive()`, and there is a very few reason to implement your own.
 
 #### Synchronization

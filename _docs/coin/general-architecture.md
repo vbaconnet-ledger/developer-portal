@@ -23,7 +23,7 @@ layout: doc_ci
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
 
-## What is Ledger Live ?
+## What is Ledger Live?
 
 Ledger Live is Ledger's offical wallet application for Desktop and Mobile, providing a unique interface to maintain multiple crypto currencies
 for Ledger Nano S and X, manage devices, create accounts, receive and send cryptoassets. It communicates with hardware wallet devices to verify
@@ -47,7 +47,7 @@ The Common library of Ledger Live is called [Ledger-live-common](https://github.
 
 #### Communication with the Device
 
-[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of JavaScript library. It allows a javascript
+[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of packages. It allows a javascript
 application to use the API of a Nano app. Nano apps are using APDU to
 transfer data and commands to and from the external world. `ledgerjs` only
 allows to use commands developed on the Nano app.
@@ -57,17 +57,8 @@ allows to use commands developed on the Nano app.
 
 The Ledger Live application wil retrieve transaction history and broadcast new transactions using different explorers.
 
-As part of a Ledger Live coin integration, you should provide a indexer allowing a Ledger Live user to synchronize his account in a timely manner. It can be an open source project or your own explorer.
+As part of a Ledger Live blockchain support, you should provide a indexer allowing a Ledger Live user to synchronize his account in a timely manner. It can be an open source project or your own explorer.
 
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 
 
-## How to integrate your coin to Ledger Live
-
-To integrate your coin to Ledger Live you will need to:
-- Have a Nano Application (see [how to develop your Nano App](https://developers.ledger.com/docs/nano-app/introduction/))
-- Provide an indexer (see the [prerequisites](https://developers.ledger.com/docs/coin/prerequisites/))
-- Add your coin to [ledgerjs](https://developers.ledger.com/docs/coin/js-bindings/)
-- Add your coin to [the Cryptoassets library](https://developers.ledger.com/docs/coin/cryptoassets-library/)
-- Add your coin to [live-common](https://developers.ledger.com/docs/coin/live-common/)
-- Add your coin to [Ledger Live desktop and mobile](https://developers.ledger.com/docs/coin/desktop-mobile/)

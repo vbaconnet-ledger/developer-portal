@@ -1,6 +1,6 @@
 ---
-title: ERC20
-subtitle:
+title: ERC20 and BEP20
+subtitle: Addition or modification
 tags: []
 toc: true
 toc_sticky: true
@@ -13,17 +13,26 @@ layout: doc_et
 * TOC
 {:toc}
 
+
 ## How to request a token addition
 
-### 1. Is my ERC20 token listed ?
+### 1. Is my ERC20 or BEP20 token listed?
 
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
 
-### 2. How to get my token listed ?
+<!--  -->
+{% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
+<!--  -->
 
-Then, fill in [this form](https://developers.ledger.com/contact/). Please make sure to share with us the details of your ERC20 token, and a link to Etherscan to allow us to double check the information.
+### 2. How to get my token listed?
 
-### 3. How do I add my token icon ?
+Fill in this form:
+
+<div data-tf-widget="Miekq8b2" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+Please make sure to share with us the details of your ERC20 or BEP20 token, and a link to Etherscan or BSCscan to allow us to double check the information.
+
+### 3. How do I add my token icon? (only for ERC20)
 
 Ledger Live relies on [this repository](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg) to manage coins and tokens icons. Please make a PR to the [repository](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg) to get your token icon visible on Ledger Live.
 
@@ -43,6 +52,6 @@ Also prefer merging all the paths together as we will parse the svg file in orde
 
 Please take a look at the other icons we have in the repository in order to see what is the required format.
 
-### What will Ledger do ?
+### What will Ledger do?
 
 We will review the list of tokens on a bi-montly basis and will apply our own internal signature process. Once signed, the new tokens will become available after a Ledger Live update. Ledger reserves the right to decide which token will be listed.

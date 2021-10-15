@@ -1,3 +1,10 @@
-- title: Contents
+- title: Web3 Live App
   docs:
   - dapp/introduction
+
+- title: Development how-to
+  docs:
+  - dapp/dapp-customisation
+  - dapp/manifest
+  - dapp/developer-mode
+  - dapp/nano-app-plugin
