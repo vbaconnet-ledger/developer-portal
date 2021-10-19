@@ -4,11 +4,11 @@ layout: default
 
 <div class="uk-section">
     <div class="uk-container">
-        <div class="uk-grid-small" data-uk-grid>
+        <div class="uk-grid-large" data-uk-grid>
 
-            <div class="sidebar-fixed-width uk-visible@l">
+            <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
-                    {% for section in site.data.navigation_docs_sw %}
+                    {% for section in site.data.navigation_docs_pl %}
                     <h5>{{ section.title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     {% for doc in section.docs %}
@@ -30,16 +30,6 @@ layout: default
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
 
                     <div class="article-content link-primary">
-
-                      {% if page.toc %}
-                      <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m mobile-sections">
-                        <h5>Sections in this article</h5>
-                        <div class="content-toc">
-                          {% toc %}
-                        </div>
-                      </div>
-                      {% endif %}
-
                         {{ content }}
                         {% if site.share.doc %}
                             <!-- FC
@@ -60,6 +50,7 @@ layout: default
                         <!-- LikeBtn.com END -->
                     </div>
 
+
                     {% include paginate-doc.html %}
 
                     <!-- {% include related-docs.html %} -->
@@ -78,18 +69,6 @@ layout: default
                 </script>
 
             </div>
-            {% if page.toc %}
-            <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
-              <div class="sidebar-toc sidebar-sticky">
-                <h5>Sections in this article</h5>
-                {% toc %}
-              </div>
-            </div>
-            {% endif %}
-        </div>
+
     </div>
 </div>
-
-{% include anchor_support.html %}
-{% include scroll.html %}
-

@@ -15,7 +15,9 @@ layout: doc_et
 
 ### 1. Is my ERC20 or BEP20 token listed?
 
-First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
+First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/v2.33.1/cryptoassets.md).
+
+Please note you can easily change the tag version to check the content of a specific Ledger Live version. 
 
 <!--  -->
 {% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}

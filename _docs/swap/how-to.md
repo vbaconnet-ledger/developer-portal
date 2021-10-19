@@ -123,7 +123,7 @@ In the JSON response, a new field `providerSig` with a JSON Web Signature (JWS) 
 - `providerSig.payload` - base 64 URL of the binary serialized protobuf message.NewTransactionResponse.
 - `providerSig.signature` - base 64 URL of the ES256 signature of providerSig.payload. More details in the [JWS signature](#jws-signature) and [Protobuf message (payload)](#protobuf-message-payload) sections. 
 
-#### JWS signature
+##### JWS signature
 
 The JWS signature should have to following structure:
 ```json

@@ -76,6 +76,7 @@ getBtcAddress().then(a => console.log(a));
 ```
  
 <br>
-You can now use `getDeviceInfo` to get the Nano to respond.
+
+You can see more examples in our dedicated Examples section.
 
 
