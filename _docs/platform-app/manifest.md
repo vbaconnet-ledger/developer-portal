@@ -55,7 +55,7 @@ Here is the list of the mandatory fields required in your Manifest file:
 Type: string.
 - `name`: the name of your application ("Lido" in this example).
 Type: string.
-- `url`: the URL of your application. Must be expressed in the following way "https://ledger-live-platform-apps.vercel.app/app/dapp-browser?dappName=Lido&nanoApp=Lido&url=YOUR_URL", with YOUR_URL being encoded with a tool like [this one](https://meyerweb.com/eric/tools/dencoder/).
+- `url`: the URL of your application. Lido being a DApp, it is embedded within a Ledger platform app. If you are a platform app (not a DApp), just enter your URL directly.
 Type: string.
 - `homepageUrl`: the homepage of your service, for instance "https://www.google.fr/"
 Type: string.
