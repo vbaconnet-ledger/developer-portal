@@ -34,9 +34,6 @@ BOLOS is the operating system behind all Ledger personal security devices. It pr
 
 ### Familiarize yourself with personal security devices (Appendix A)
 
-#### Set up the BOLOS development environment
-In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. [Ledger App Builder](../build) is a container image which contains all dependencies to compile an application for Nano S/X.
-
 Ledger personal security devices allows users to store cryptographic secrets and sign transactions securely and conveniently. It is important to understand how they work before coding a Nano Application.
 
 [Learn about the personal security devices](../psd-introduction)
