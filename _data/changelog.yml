@@ -7,14 +7,13 @@
 
 - title: Update to V3
   label:
-  date: Octobre 18th, 2021
+  date: Octobre 25th, 2021
   list:
   - New design and easier navigation through articles
-  - More secure procedure to build a Nano Application 
-  - Documentation to connect third party wallets to Ledger devices and Nano Applications
-  - Easiest process to request a token addition
-  - For developers of blockchain integrations the technical assessment form can now be directly downloaded and filled in
-
+  - More secure procedure to <a href="../docs/nano-app/build">build a Nano Application</a>
+  - Documentation to <a href="../docs/transport/connect-wallet">connect third party wallets</a> to Ledger devices and Nano Applications
+  - Easiest process to <a href="../docs/token/erc20-bep20">request a ERC20 or BEP20 token addition</a>
+  - For developers of blockchain integrations the technical assessment form can now be directly <a href="../docs/coin/prerequisites/#technical-assessment">downloaded</a> and filled in
 
 # Templates :
 # - title: Version 1.0.0

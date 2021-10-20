@@ -7,8 +7,6 @@ toc: true
 layout: doc_pa
 ---
 
-
-
 ## Context
 
 
@@ -24,9 +22,10 @@ A Platform Application is an application that leverages the Ledger Live API. By 
 
 ## Prerequisites
 
-(TBD) To set up your dev environment, you will need to:
-- Install a recent [node.js](https://nodejs.org/) and [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/),
-- Install our typescript Platform SDK library (“yarn add ledgersdk”),
-- Unlock the [Developer mode](../developer-mode) inside Ledger Live.
+To set up your dev environment, you will need to:
 
-You can access our Demo repository here (link), a github repository with a standard “Hello World” Platform App to get you started.
+* Install a recent [node.js](https://nodejs.org/) and [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/),
+* Install our typescript Platform SDK library (“yarn add @ledgerhq/live-app-sdk”),
+* Unlock the [Developer mode](../developer-mode) inside Ledger Live.
+
+We have developed a template to help you build a Live App [here](https://github.com/LedgerHQ/cra-template-live-app)

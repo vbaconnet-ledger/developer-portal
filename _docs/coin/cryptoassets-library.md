@@ -13,7 +13,7 @@ The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/pa
 Ledger Live deals with different kinds of currencies and assets: fiat currencies, cryptocurrencies, and tokens.
 They all share similar concepts but have specifics, which are defined as a Currency model.
 
-All types can be found in [@ledgerhq/cryptoassets/src/types.js](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/src/types.js)
+All types can be found in [@ledgerhq/cryptoassets/src/types.ts](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/src/types.ts)
 
 ## The Currency model
 
