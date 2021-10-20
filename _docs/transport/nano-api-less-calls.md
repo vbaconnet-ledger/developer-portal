@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Raw Nano app calls
 
 When there is no available Nano API, the way to make your Nano calls is by constructing the call yourself, by using the syntax information found in the application documentation.

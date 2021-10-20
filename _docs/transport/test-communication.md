@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## How to know if a Nano application allows a type of transport?
 
 In a Nano Application, each mode of transport is declared in the Makefile. For a wallet app to communicate with a Nano App through a device, the same mode of transport must be implemented on each side.

@@ -76,7 +76,7 @@ open a bluetooth device.
 
 **Parameters**
 
--   `deviceOrId` **(Device | [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))**
+-   `deviceOrId` **(Device \| [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))**
 
 #### disconnect
 

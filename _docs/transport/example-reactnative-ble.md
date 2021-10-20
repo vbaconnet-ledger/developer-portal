@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Ledger Web Bluetooth example in React Native
 
 This is a Ledger Web Bluetooth example in React Native. It connects with a Ledger device using Bluetooth and shows an Ethereum address with a QR Code.
