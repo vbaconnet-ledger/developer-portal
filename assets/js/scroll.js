@@ -14,8 +14,6 @@ const tocLinks = document.querySelectorAll(".sidebar-toc a");
       link.classList.remove("active");
       linkTitle = link.innerText.toUpperCase().replaceAll(" ", "-").replaceAll(",", "").replaceAll("&", "").replaceAll(".", "").replaceAll("–", "").replaceAll("…", "").replaceAll("?", "").replaceAll("’", "").replaceAll("”", "").replaceAll("“", "").replaceAll("/", "").replaceAll(":", "").replaceAll("(", "").replaceAll(")", "");
 
-      console.log(linkTitle);
-      console.log(current);
 
       if (linkTitle == current.toUpperCase()) {
         link.classList.add("active");
