@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Why is U2F deprecated?
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.

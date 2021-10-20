@@ -10,11 +10,6 @@ layout: doc_tr
 
 **This page is an extract from the repository**
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 This is a package for the Speculos Nano emulator.
 
 ## Install the package

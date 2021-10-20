@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 You have now managed to connect to the Nano.  
 
 This section describes how to call various instructions to the Nano using a Nano API.  

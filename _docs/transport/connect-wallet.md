@@ -8,11 +8,6 @@ toc: true
 layout: doc_tr
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 A wallet application contains business-service related code and typically also has a GUI. Its format can be a desktop or smartphone application, or a web application.
 
 This section is a guide for using [github.com/LedgerHQ/ledgerjs](https://github.com/LedgerHQ/ledgerjs). You will learn how to:
