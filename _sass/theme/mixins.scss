@@ -645,6 +645,18 @@
       opacity: 0;
     }
 
+    // Commment box at the bottom of all pages
+
+    .comment-box {
+        width: 100%;
+        height: 50px;
+        font-family: $global-font-family;
+        border: 2px solid #000;
+        border-radius: none;
+        float: left;
+        padding: 12px 20px;
+    }
+
     // When a link is betwin code tags, so it's not orange on a black background, but we can still see it's a link
     code a {
       color: #f9f8f5 !important;
