@@ -7,11 +7,6 @@ toc:
 layout: doc_sw
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 As a swap provider, it is possible to integrate your service to Ledger Live and appear under the “Swap” section. By becoming a swap provider in Ledger Live, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users!
 
 There are two types of integration:
