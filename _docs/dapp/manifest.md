@@ -12,14 +12,15 @@ layout: doc_da
 * TOC
 {:toc}
 
-Check and if necessary edit your manifest file as described [below](#example-of-manifest-json-format-for-the-lido-application).
-
-[Unlock the Developer mode](../developer-mode/)in Ledger Live.
 
 If you have followed instructions on the previous page, you should now be ready to interact with the Dapp directly from Ledger Live interface to make sure all the basic features work as expected.
 
 To test and integrate your application, you first need to write your application Manifest file.
 This file must contain some mandatory information, such as the app package names, the components, the permissions needed, the hardware and software features, etc.
+
+Check and if necessary edit your manifest file as described [below](#example-of-manifest-json-format-for-the-lido-application).
+
+To load your DApp locally, [Unlock the Developer mode](../developer-mode/)in Ledger Live and [add a local app](../developer-mode/#add-a-local-app).
 
 ### Example of Manifest (JSON format) for the “Lido” application:
 
