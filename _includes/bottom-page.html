@@ -5,7 +5,7 @@ const footerTop = footer.offsetTop;
 const height = footerTop - pageYOffset - 130;
  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 200) {
   	document.getElementById("sidebar-docs").style.height=`${height}px`;
-    if (document.getElementById("sidebar-toc").offsetHeight > 400) {
+    if (document.getElementById("sidebar-toc").offsetHeight > 300) {
         document.getElementById("sidebar-toc").style.height=`${height + 15}px`;
         document.getElementById("sidebar-toc").style.overflow="scroll";  
     }
