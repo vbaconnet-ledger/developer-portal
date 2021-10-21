@@ -1,5 +1,5 @@
 ---
-title: Developer mode
+title: Ledger Live Developer mode
 subtitle:
 tags: [enable developer mode, manifest, ledger live]
 category: DApp Integration

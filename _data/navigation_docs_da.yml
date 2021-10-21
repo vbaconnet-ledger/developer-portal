@@ -6,5 +6,8 @@
   docs:
   - dapp/dapp-customisation
   - dapp/manifest
-  - dapp/developer-mode
   - dapp/nano-app-plugin
+
+- title: Appendix
+  docs:
+  - dapp/developer-mode
