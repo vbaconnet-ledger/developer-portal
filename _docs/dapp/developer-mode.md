@@ -3,6 +3,7 @@ title: Developer mode
 subtitle:
 tags: [enable developer mode, manifest, ledger live]
 category: DApp Integration
+author:
 toc: true
 layout: doc_da
 ---

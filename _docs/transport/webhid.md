@@ -2,7 +2,7 @@
 title: Web HID
 subtitle:
 tags: [communication, transport, wallet, companion, package]
-category: Connect a wallet application
+category: Connect a wallet
 author:
 toc: true
 layout: doc_tr

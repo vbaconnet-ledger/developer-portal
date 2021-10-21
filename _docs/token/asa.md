@@ -3,6 +3,7 @@ title: ASA
 subtitle:
 tags: [tokens]
 category: Token Integration
+category: Tokens
 toc: true
 author:
 layout: doc_et

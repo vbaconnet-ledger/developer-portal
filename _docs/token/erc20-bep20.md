@@ -2,7 +2,7 @@
 title: ERC20 and BEP20
 subtitle: Addition or modification
 tags: [tokens]
-category: Token Integration
+category: Tokens
 toc: true
 author:
 layout: doc_et

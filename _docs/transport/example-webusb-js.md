@@ -2,7 +2,7 @@
 title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: [communication, transport, wallet, companion, package]
-category: Connect a wallet application
+category: Connect a wallet
 author:
 toc: true
 layout: doc_tr

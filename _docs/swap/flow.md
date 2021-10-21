@@ -3,7 +3,7 @@ title: Flow
 subtitle:
 category: Swap Providers
 tags: []
-toc: true
+toc:
 layout: doc_sw
 ---
 

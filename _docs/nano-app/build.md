@@ -1,10 +1,9 @@
 ---
 title: Build the application
 subtitle:
-tags: [ledger app builder, app builder, container, compile, make, setup]
+tags: []
 category: Nano Application
 author:
-toc: true
 layout: doc_na
 ---
 

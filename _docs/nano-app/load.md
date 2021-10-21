@@ -4,7 +4,6 @@ subtitle:
 tags: [compile, load app to nano, side loading, ledgerblue, make load, make delete]
 category: Nano Application
 author:
-toc: true
 layout: doc_na
 ---
 

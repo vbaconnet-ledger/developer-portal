@@ -1,9 +1,8 @@
 ---
 title: Specificities
 subtitle:
-tags: [variant, clone]
+tags: []
 category: Nano Application
-toc: true
 author:
 layout: doc_na
 ---
