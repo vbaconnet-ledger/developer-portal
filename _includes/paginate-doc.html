@@ -6,7 +6,7 @@
 {% elsif category == "coin"  %}
   {% assign docs = site.data.navigation_docs_ci_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "dapp"  %}
-  {% assign docs = site.data.navigation_docs_da_linear | map: 'docs' | join: ',' | split: ',' %}
+  {% assign docs = site.data.navigation_docs_da | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "speculos"  %}
   {% assign docs = site.data.navigation_docs_sp | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "token"  %}

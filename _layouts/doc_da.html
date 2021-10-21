@@ -10,29 +10,13 @@ layout: default
                 <div id="sidebar-docs" class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_docs_da %}
                     <h5>{{ section.title }}</h5>
-                    <!-- The following condition exists because of "subfolderitems in navigation_docs_da" -->
-                        <ul class="uk-nav uk-nav-default doc-nav">
-                        {% for doc in section.docs %}
-                          {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-                          {% assign p = site.docs | where:"url", doc_url | first %}
-                          <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-                        {% endfor %}
-                        </ul>
-                      {% if section.subfolderitems %}
-                        <ul class="uk-nav uk-nav-default doc-nav">
-                          {% for entry in section.subfolderitems %}
-                          <li>{{entry.title}}</li>
-                            <ul class="uk-nav uk-nav-default doc-nav">
-                              {% for doc in entry.docs %}
-                                {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-                                {% assign p = site.docs | where:"url", doc_url | first %}
-                                <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-                              {% endfor %}
-                            </ul>
-                          {% endfor %}
-                        </ul>
-
-                      {% endif %}
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    {% for doc in section.docs %}
+                      {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                      {% assign p = site.docs | where:"url", doc_url | first %}
+                      <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                    </ul>
                     {% endfor %}
                 </div>
             </div>
@@ -44,6 +28,7 @@ layout: default
                     <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
+
                     <div class="article-content link-primary">
 
                       {% if page.toc %}
@@ -97,6 +82,7 @@ layout: default
                 </script>
 
             </div>
+<<<<<<< HEAD
             {% if page.toc %}
             <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
               <div id="sidebar-toc" class="sidebar-toc sidebar-sticky">
@@ -106,6 +92,9 @@ layout: default
             </div>
             {% endif %}
         </div>
+=======
+
+>>>>>>> main
     </div>
 </div>
 
