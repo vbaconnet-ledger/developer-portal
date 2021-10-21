@@ -3,6 +3,7 @@ title: A - Connecting the DApp
 subtitle:
 tags: [server, iframe]
 category: DApp Integration
+author:
 toc: true
 layout: doc_da
 ---

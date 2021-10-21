@@ -2,7 +2,7 @@
 title: How it works
 subtitle:
 tags: [erc20, asa, trc10, trc20]
-category: Token Integration
+category: Tokens
 toc: true
 author:
 layout: doc_et

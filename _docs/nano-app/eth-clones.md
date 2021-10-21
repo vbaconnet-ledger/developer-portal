@@ -1,9 +1,8 @@
 ---
 title: Ethereum Nano app clones
 subtitle:
-tags: [ethereum clone, clone]
+tags: []
 category: Nano Application
-toc: true
 author:
 layout: doc_na
 ---

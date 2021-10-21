@@ -2,7 +2,7 @@
 title: BitcoinTransaction
 subtitle:
 tags: [Ledger Live Platform SDK, platform sdk, sdk, api]
-category: Ledger Live Application
+category: Platform Application
 toc: true
 layout: doc_pa
 ---
