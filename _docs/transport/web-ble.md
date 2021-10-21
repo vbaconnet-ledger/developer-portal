@@ -10,11 +10,6 @@ layout: doc_tr
 
 **This page is an extract from the repository**
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 [Check browser support.](https://caniuse.com/web-bluetooth)
 
 ## Install the package
