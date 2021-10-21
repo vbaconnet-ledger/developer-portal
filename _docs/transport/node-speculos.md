@@ -2,9 +2,8 @@
 title: Node Speculos
 subtitle:
 tags: []
-category: Connect a wallet application
+category: Connect a wallet
 author:
-toc: true
 layout: doc_tr
 ---
 

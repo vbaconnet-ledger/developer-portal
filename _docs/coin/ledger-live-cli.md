@@ -2,6 +2,7 @@
 title: Ledger Live CLI
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

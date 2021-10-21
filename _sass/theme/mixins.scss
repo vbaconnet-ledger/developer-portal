@@ -546,11 +546,27 @@
         }
       }
 
+
+    // Anchors next to titles to facilitate copy/pasting links
+
     .anchorjs-link {
       color: inherit !important;
       text-decoration: none !important; /* do not underline */
       border-bottom: none !important;
       opacity: .75;
+    }
+
+
+    // Commment box at the bottom of all pages
+
+    .comment-box {
+        width: 100%;
+        height: 50px;
+        font-family: $global-font-family;
+        // border: 2px solid #000;
+        border-radius: none;
+        float: left;
+        padding: 12px 20px;
     }
 
     @media (max-width: 768px) {

@@ -2,6 +2,7 @@
 title: Adding *MyCoin* to CryptoAssets library
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

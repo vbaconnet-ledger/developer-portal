@@ -1,7 +1,8 @@
-r---
+---
 title: Specific CLI Checklist - User tests
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

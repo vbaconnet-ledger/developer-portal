@@ -2,8 +2,7 @@
 title: Application Isolation
 subtitle: Checking the apps on the Ledger Nano S
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

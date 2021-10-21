@@ -46,7 +46,7 @@ share:
 
 # Default footer image settings
 footer:
-    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS
+    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:

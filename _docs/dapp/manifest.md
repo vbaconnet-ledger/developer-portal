@@ -1,8 +1,9 @@
 ---
 title: B - Writing the Manifest
 subtitle:
-toc: true
 tags: []
+category: Dapp Integration
+author:
 layout: doc_da
 ---
 

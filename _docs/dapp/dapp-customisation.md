@@ -2,6 +2,8 @@
 title: A - Connecting the DApp 
 subtitle:
 tags: []
+category: Dapp Integration
+author:
 layout: doc_da
 ---
 

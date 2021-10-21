@@ -2,8 +2,7 @@
 title: ERC20 and BEP20
 subtitle: Addition or modification
 tags: []
-toc: true
-toc_sticky: true
+category: Tokens
 author:
 layout: doc_et
 ---

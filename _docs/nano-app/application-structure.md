@@ -2,8 +2,7 @@
 title: Application Structure and I/O
 subtitle: I/O - aye, no?
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

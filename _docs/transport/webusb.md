@@ -2,9 +2,8 @@
 title: WebUSB
 subtitle:
 tags: []
-category:
+category: Connect a wallet
 author:
-toc: true
 layout: doc_tr
 ---
 

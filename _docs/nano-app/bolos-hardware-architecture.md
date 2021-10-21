@@ -2,8 +2,7 @@
 title: Hardware Architecture
 subtitle: Secure chips served with a helping of protocol
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

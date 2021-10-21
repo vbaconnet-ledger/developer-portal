@@ -2,6 +2,7 @@
 title: Run tests on emulated Android and iOS
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

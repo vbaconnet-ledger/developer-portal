@@ -2,6 +2,7 @@
 title: Prerequisites
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

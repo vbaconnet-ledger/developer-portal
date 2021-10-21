@@ -2,8 +2,7 @@
 title: Types of applications
 subtitle:
 tags:
-category:
-toc: true
+category: Nano Application
 author:
 layout: doc_na
 ---

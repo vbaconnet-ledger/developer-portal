@@ -2,6 +2,7 @@
 title: EthereumTransaction
 subtitle:
 tags: []
+category: Platform Application
 layout: doc_pa
 ---
 

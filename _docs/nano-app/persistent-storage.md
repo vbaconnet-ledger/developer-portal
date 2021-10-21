@@ -2,8 +2,7 @@
 title: Persistent Storage
 subtitle: Not for goldfish
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

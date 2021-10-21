@@ -2,7 +2,7 @@
 title: Introduction
 subtitle:
 tags: []
-toc:
+category: Dapp Integration
 author:
 layout: doc_da
 ---

@@ -2,6 +2,8 @@
 title: Developer mode
 subtitle:
 tags: []
+category: Dapp Integration
+author:
 layout: doc_da
 ---
 

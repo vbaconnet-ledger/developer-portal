@@ -2,6 +2,7 @@
 title: Getting your Ledger Live running
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

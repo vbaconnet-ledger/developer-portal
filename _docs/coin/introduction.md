@@ -2,6 +2,7 @@
 title: Introduction
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

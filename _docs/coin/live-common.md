@@ -2,6 +2,7 @@
 title: Adding *MyCoin* to Live-Common
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

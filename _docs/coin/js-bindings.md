@@ -2,6 +2,7 @@
 title: Adding *MyCoin* Nano App JS Bindings
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

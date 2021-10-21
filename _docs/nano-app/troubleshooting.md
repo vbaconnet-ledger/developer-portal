@@ -2,9 +2,7 @@
 title: Common Pitfalls and Troubleshooting
 subtitle:
 tags: []
-toc: true
-toc_sticky: true
-author:
+author: Nano Application
 layout: doc_na
 ---
 

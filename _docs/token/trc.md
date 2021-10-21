@@ -2,8 +2,7 @@
 title: TRC10 and TRC20
 subtitle:
 tags: []
-toc: true
-toc_sticky: true
+category: Tokens
 author:
 layout: doc_et
 ---

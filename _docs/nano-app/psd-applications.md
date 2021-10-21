@@ -2,8 +2,7 @@
 title: Applications for HD Trees
 subtitle: HD Trees and the 24 words
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

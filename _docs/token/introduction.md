@@ -2,8 +2,7 @@
 title: How it works
 subtitle:
 tags: []
-toc: true
-toc_sticky: true
+category: Tokens
 author:
 layout: doc_et
 ---

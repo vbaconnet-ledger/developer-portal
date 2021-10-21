@@ -2,8 +2,7 @@
 title: Introduction
 subtitle: PSDs - The secure portal to your assets, not a bank
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

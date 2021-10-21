@@ -2,8 +2,7 @@
 title: Memory alignment
 subtitle: Get padded if you're not aligned
 tags: []
-toc: true
-toc_sticky: true
+category: Nano Application
 author:
 layout: doc_na
 ---

@@ -2,6 +2,7 @@
 title: Building iOS Dev App
 subtitle:
 tags: []
+category: Blockchain Support
 author:
 layout: doc_ci
 ---

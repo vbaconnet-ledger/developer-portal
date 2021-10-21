@@ -2,6 +2,7 @@
 title: Default classes
 subtitle:
 tags: []
+category: Platform Application
 layout: doc_pa
 ---
 

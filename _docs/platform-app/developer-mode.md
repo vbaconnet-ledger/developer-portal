@@ -2,6 +2,7 @@
 title: Developer mode
 subtitle:
 tags: []
+category: Platform Application
 layout: doc_pa
 ---
 

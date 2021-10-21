@@ -2,6 +2,7 @@
 title: How to
 subtitle:
 tags: []
+category: Swap Provider
 layout: doc_sw
 ---
 
