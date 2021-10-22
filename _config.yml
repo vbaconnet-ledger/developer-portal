@@ -62,6 +62,13 @@ algolia:
   search_only_api_key: 2c01f0f02f9134bbd0e7fa5f1c5e6818
   extensions_to_index:
       - md
+  settings:                                                                      
+    searchableAttributes:                                                        
+    - title                                                                    
+    - unordered(categories)                                                    
+    - unordered(tags)                                                          
+    - unordered(content)                                                       
+    customRanking:  
 
 # Path to post content assets directory i.e post images, pdfs etc
 uploads:            /uploads/
