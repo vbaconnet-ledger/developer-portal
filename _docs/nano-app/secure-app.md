@@ -4,7 +4,6 @@ subtitle: Ensuring your app passes the security review
 tags: []
 category: Nano Application
 toc: true
-toc_sticky: true
 author:
 layout: doc_na
 ---
