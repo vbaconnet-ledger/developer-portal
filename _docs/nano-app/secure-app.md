@@ -12,8 +12,7 @@ layout: doc_na
 #### Sections in this article
 
 {:.no_toc}
-
-- TOC
+* TOC
 {:toc}
 
 ## Introduction
@@ -55,7 +54,7 @@ Rationale: Problems identified by `make scan-build` are easy to fix, and allow t
 
 ### Avoid Warnings During compilation
 
-Apps must build with no warnings using the container image intended for that purpose, [Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder).
+Apps must build with no warnings using the container image intended for that purpose, [Ledger App Builder](../build).
 
 Though it is not enforced yet, the `-Werror` compilation flag should be set, and no warning should be intentionally disabled.
 
@@ -70,7 +69,7 @@ Rationale : Former SDKs used to generate lots of errors - sometimes dozens - whe
 In order to ease security reviews and maintenance, the Ledger Security Team requires these development best practices to be met:
 
 - Units tests must be present, preferably in the `tests/` folder and relying on the [cmocka](https://cmocka.org/) unit testing framework.
-- Functional tests must be present. They should allow APDU testing thanks to the [Speculos](https://speculos.ledger.com/) emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.
+- Functional tests must be present. They should allow APDU testing thanks to the [Speculos](../speculos/installation/build) emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.
 
 These best practices must be automated using GitHub actions to achieve continuous integration. The [GitHub workflow](https://github.com/LedgerHQ/app-xrp/blob/master/.github/workflows/ci-workflow.yml) of the XRP app acts as a reference.
 
