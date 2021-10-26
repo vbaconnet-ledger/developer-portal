@@ -46,6 +46,8 @@ layout: default
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
                     <div class="article-content link-primary">
 
+                    {% include reading-time.html %}
+
                       {% if page.toc %}
                       <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m mobile-sections">
                         <h5>Sections in this article</h5>

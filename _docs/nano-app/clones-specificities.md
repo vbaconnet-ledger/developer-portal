@@ -23,7 +23,7 @@ Click here to develop an [Ethereum clones](../eth-clones). More types of clone a
 
 ### Building the application
 
-To build the clone application, [follow these guidelines](../quickstart).
+To build the clone application, [follow these guidelines](../build).
 1. First run the `make` command for the Ethereum App and run `make load`
 2. Run `make clean`
 2. Load the Nano App clone with the name of your chain. E.g: `make load CHAIN=ambrosus`
