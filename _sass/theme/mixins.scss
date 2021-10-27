@@ -52,7 +52,9 @@
     // Fix for UIkit left and right first & last items
     .uk-navbar-container > .uk-container {
         .uk-navbar-left {
-            margin-left: -$navbar-nav-item-padding-horizontal;
+            // margin-left: -$navbar-nav-item-padding-horizontal;
+            margin-left: auto; // Added for v3
+            margin-right: auto; // Added for v3
         }
         .uk-navbar-right {
             margin-right: -$navbar-nav-item-padding-horizontal;
@@ -551,6 +553,9 @@
       > ul {padding-left: 20px;}
       > ul li {list-style: none;}
       > h5 {padding-left: 20px; color:$global-color;}
+      max-height: 500px;
+      overflow: scroll;
+
     }
 
     .sidebar-sticky {
@@ -606,6 +611,22 @@
       color: $global-color;
     }
 
+    .transports-legend {
+        display: flex;
+        justify-content: center;
+        a {
+          text-align:center;
+          border-radius:3px;
+          padding: 5px 10px;
+          margin-right: 10px;
+          border-bottom: none !important;
+          color: white !important;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
     // Typeform
     .typeform-widget {
       padding-top: 20px;
@@ -620,6 +641,7 @@
     }
 
     // Anchors next to titles to facilitate copy/pasting links
+
     .anchorjs-link {
       color: inherit !important;
       text-decoration: none !important; /* do not underline */
@@ -627,12 +649,44 @@
       opacity: 0;
     }
 
+    // Commment box at the bottom of all pages
+
+    .comment-box {
+        width: 100%;
+        height: 50px;
+        font-family: $global-font-family;
+        border: 2px solid #000;
+        border-radius: none;
+        float: left;
+        padding: 12px 20px;
+    }
+
+    // Custom scrollbar
+
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #d6dee1;
+      //border-radius: 20px;
+      border: 6px solid transparent;
+      background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
+
     // When a link is betwin code tags, so it's not orange on a black background, but we can still see it's a link
     code a {
       color: #f9f8f5 !important;
       border-bottom: 1px solid #f9f8f5 !important;
     }
-
 
     @media (max-width: 768px) {
       /* Do not display AnchorJS icon on less than 768px view point */
@@ -656,6 +710,12 @@
         margin-top: 5px;
     }
 
+    // Reading time
+
+    .reading-time {
+        font-weight: bold;
+        font-size: 12px;
+    }
 
     // Style for sitemap
 

@@ -1,18 +1,14 @@
 ---
-title: Process to add tokens
+title: How it works
 subtitle:
 tags: [erc20, asa, trc10, trc20]
-category: Token Integration
+category: Tokens
 toc: true
 author:
-layout: doc_ci
+layout: doc_et
 ---
 
 
-
-Ledger Live currently supports ERC20 tokens on Ethereum, ASAs on Algorand and TRC10/TRC20 tokens on Tron. The process to integrate varies depending on which kind of token you would like to integrate to Ledger Live, but there are a few common specs.
-
-## How it works
 
 Similarly to transferring native assets, transferring tokens requires the end-user to confirm the transaction details on the Nano devices’ screens. Such verification is a security requirement and must be made available before the application is released by Ledger. Expected information to verify are (at least) : the amount transferred, the token name and/or ticker, the recipient address.
 
@@ -28,10 +24,6 @@ Different tokens imply multiple names, multiple tickers, multiple identifiers an
 
 Ledger applies a specific signature to the triplet **{"ticker”,"contract_address","decimals”}**. As a consequence, the Nano is able to verify the information has not been tampered with.
 
-## Token on the Ledger support website
+## How to request a token addition?
 
-The list of supported assets on the [website](https://www.ledger.com/supported-crypto-assets/) is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website. The true list of supported assets is visible [here](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets/data).  We will soon improve our process so that the [website](https://www.ledger.com/supported-crypto-assets/) reflects exactly what is available on the Ledger Live software. In the meantime, the website list contains less tokens than the actual list.
-
-## How to request a token addition ?
-
-To request a token addition you can ignore other sections and go directly [here](../erc20) for erc20, [here](../asa) for ASA, and [here](../trc) for TRC10/20.
+Click [here](../erc20-bep20) for ERC20 and BEP20, [here](../asa) for ASA, and [here](../trc) for TRC10/20.

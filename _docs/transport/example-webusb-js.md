@@ -2,19 +2,17 @@
 title: Example of WebUSB implementation in a JS App
 subtitle:
 tags: [communication, transport, wallet, companion, package]
-category: Connect a wallet application
+category: Connect a wallet
 author:
 toc: true
 layout: doc_tr
 ---
 
-
-
-## Google's Carlo WebUSB transport implementation
+## Example of WebUSB implementation in a JS App
 
 This is the `renderer.js` file for Google's Carlo application.
 
-It uses the [WebUSB package](../webusb) and the BTC Package (see more in the [App Protocol section](../app-protocol)).
+It uses the [WebUSB package](../webusb) and the BTC Package (see more in the [App Protocol section](../nano-api-calls)).
 
 ```javascript
 import "babel-polyfill";

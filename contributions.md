@@ -26,3 +26,4 @@ You can directly make a pull request on the [Developer Portal repository](https:
     Please note that you may withdraw your consent at any time, access your data and request their rectification or deletion. You may also request the limitation of the processing of your data. To exercise your rights or for any question on the processing of your data, please contact LEDGER’s Data Protection Officer <a href="https://privacy-request.ledger.com/">here</a>. If nevertheless you believe LEDGER did not adequately address your concerns and mishandled your data, you may lodge a complaint with the personal data protection authority of your country.
   </div>
 </div>
+

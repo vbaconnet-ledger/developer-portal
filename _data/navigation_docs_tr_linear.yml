@@ -1,29 +1,33 @@
 # This file is a duplicate of navigation_docs_tr.yml without the nested menu (subfolderitems)
 # We need it to make "previous" and "next" buttons work properly
 
-- title: Communication between a companion app and a Ledger Nano
+- title: Connecting a wallet
   docs:
-  - transport/ledgerjs
-  - transport/U2F
+  - transport/connect-wallet
 
-- title: Transport implementation
+- title: Nano calls
   docs:
-  - transport/webusb
-  - transport/webhid
-  - transport/web-ble
-  - transport/node-hid-singleton
-  - transport/node-hid-noevents
-  - transport/node-speculos
-  - transport/react-native-hid
-  - transport/react-native-ble
-
-- title: App protocol implementation
-  docs:
-  - transport/app-protocol
+  - transport/nano-api-calls
+  - transport/nano-api-less-calls
   - transport/test-communication
 
-- title: Examples of transport implementation
+- title: Examples
   docs:
   - transport/example-webusb-js
   - transport/example-webble-react
   - transport/example-reactnative-ble
+
+- title: Transport APIs
+  docs:
+  - transport/webhid
+  - transport/webusb
+  - transport/web-ble
+  - transport/node-hid-singleton
+  - transport/node-speculos
+  - transport/react-native-hid
+  - transport/react-native-ble
+
+- title: Note on U2F
+  docs:
+  - transport/U2F
+  

@@ -2,7 +2,6 @@
   docs:
   - coin/general-process
   - coin/general-architecture
-  - token/introduction
 
 - title: Prerequisites
   docs:
@@ -36,11 +35,3 @@
   - coin/specific-cli-checklist
   - coin/test-emulated-mobile
   - coin/bridge-test
-
-# Added for V3 as part of Blockchain Support
-- title: Adding a Token
-  docs:
-  - token/erc20
-  - token/asa
-  - token/trc
-  

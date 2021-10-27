@@ -5,18 +5,17 @@ left:
   - title: Nano App
     url: /docs/nano-app/introduction
 
+  - title: Connect your wallet
+    url: /docs/transport/connect-wallet
+
   - title: Blockchain Support
     url: /docs/coin/general-process
 
-  # - title: Token Integration
-  #   url: /docs/token/introduction
-  # Removed for V3. Inserted in Blockchain Support
+  - title: Tokens
+    url: /docs/token/introduction
 
-  - title: DApp Integration
+  - title: DApp
     url: /docs/dapp/introduction
-
-  - title: Connect a wallet app
-    url: /docs/transport/ledgerjs
 
   - title: Tools
     dropdown:

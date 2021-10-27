@@ -3,15 +3,19 @@ title: Load the app to a Nano S
 subtitle:
 tags: [compile, load app to nano, side loading, ledgerblue, make load, make delete]
 category: Nano Application
-author:
 toc: true
+author:
 layout: doc_na
 ---
 
 
 
 <!--  -->
-{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <b>Speculos</b> for loading to work. See how to <a href='../../speculos/start-here'>install</a> and <a href='../../speculos/introduction'>use</a> it. For the Nano S, you can read the following instructions." %}
+{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <b>Speculos</b> for loading to work. See how to <a href='../../speculos/installation/build'>install</a> and <a href='../../speculos/installation/build'>use</a> it. For the Nano S, you can read the following instructions." %}
+<!--  -->
+
+<!--  -->
+{% include alert.html style="warning" text="If you are a Mac or a Windows user, you should use a Linux Virtual Machine to load the application to a Nano S." %}
 <!--  -->
 
 ## 1. Define the udev rules
@@ -22,7 +26,7 @@ If you wish to load applications on your device, you will need to add the approp
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
 
-## 2. Load the application from inside the container image (Linux users only)...
+## 2. Load the application from inside the container image 
 
 <!--  -->
 {% include alert.html style="warning" text='If you want to load and delete the app directly from the container image. You need to compile the application, in the source file of your application, adding the <code>--privileged</code> option: <br> <code>$ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" <br> --privileged ledger-app-builder:latest</code>' %}
@@ -34,7 +38,7 @@ While de container image is running:
 3. You can exit the image, with the command `exit`.
 
 
-## 2. ... or load the application with ledgerblue (Linux and Mac users)
+## 2. ... or load the application with ledgerblue
 
 ### 2.1. Install ledgerblue
 

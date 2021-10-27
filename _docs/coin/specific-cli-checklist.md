@@ -14,7 +14,7 @@ layout: doc_ci
 This list can be a deliverable, presented and agreed on at the start of this part, containing all the use cases
 
 - Set an amount for staking
-- Select Validators or equivament (Bakers, etc)
+- Select Validators or equivalent (Bakers, etc)
 - View the remaining available balance
 - Get rewards
 - Handle all user-level errors

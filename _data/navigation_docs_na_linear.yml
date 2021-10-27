@@ -6,7 +6,7 @@
   - nano-app/introduction
   - nano-app/types-apps
 
-- title: Using a Nano App
+- title: Set up and use
   docs:
   - nano-app/build
   - nano-app/load
@@ -14,10 +14,6 @@
 - title: Security best practices
   docs:
   - nano-app/secure-app
-  - nano-app/development-practices
-  - nano-app/cryptography
-  - nano-app/c-enemy
-  - nano-app/business-logic-problems
 
 - title: Display
   docs:

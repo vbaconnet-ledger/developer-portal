@@ -2,13 +2,13 @@
 title: Node Speculos
 subtitle:
 tags: [communication, transport, wallet, companion, package]
-category: Connect a wallet application
+category: Connect a wallet
 author:
 toc: true
 layout: doc_tr
 ---
 
-
+**This page is an extract from the repository**
 
 This is a package for the Speculos Nano emulator.
 
@@ -18,7 +18,7 @@ This is a package for the Speculos Nano emulator.
 
 ## Getting started
 
--   Install [Speculos](../../speculos/introduction).
+-   Install [Speculos](../../speculos/installation/build).
 -   Make sure to have a Speculos running with a APDU port and (optionally) a buttons port available.
 
 ```js
@@ -62,7 +62,7 @@ $ pipenv shell
 $ ./speculos.py -m nanos ./apps/btc.elf --sdk 1.6 --seed "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about" --display headless --apdu-port 40000
 ```
 
-## Implementation
+##  API
 
 ### SpeculosTransportOpts
 

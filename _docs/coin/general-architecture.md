@@ -19,7 +19,7 @@ layout: doc_ci
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
 
-## What is Ledger Live ?
+## What is Ledger Live?
 
 Ledger Live is Ledger's offical wallet application for Desktop and Mobile, providing a unique interface to maintain multiple crypto currencies
 for Ledger Nano S and X, manage devices, create accounts, receive and send cryptoassets. It communicates with hardware wallet devices to verify
@@ -58,12 +58,3 @@ As part of a Ledger Live blockchain integration, you should provide a indexer al
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 
 
-## Breaking down the work to integrate your blockchain
-
-To integrate your blockchain to Ledger Live you will need to:
-- Have a Nano Application (see [how to develop your Nano App](https://developers.ledger.com/docs/nano-app/introduction/))
-- Provide an indexer (see the [prerequisites](https://developers.ledger.com/docs/coin/prerequisites/))
-- Add your coin to [ledgerjs](https://developers.ledger.com/docs/coin/js-bindings/)
-- Add your coin to [the Cryptoassets library](https://developers.ledger.com/docs/coin/cryptoassets-library/)
-- Add your coin to [live-common](https://developers.ledger.com/docs/coin/live-common/)
-- Add your coin to [Ledger Live desktop and mobile](https://developers.ledger.com/docs/coin/desktop-mobile/)

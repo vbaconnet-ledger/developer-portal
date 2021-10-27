@@ -2,19 +2,17 @@
 title: Introduction
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
-category: Ledger Live Application
+category: Platform Application
 toc: true
 layout: doc_pa
 ---
-
-
 
 ## Context
 
 
 In this article, we will guide you through the process of developing and integrating your Platform application to the Ledger Live ecosystem. By having your application supported in Ledger Live, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.
 
-## What is a Platform Application ?
+## What is a Platform Application?
 
 A Platform Application is an application that leverages the Ledger Live API. By doing so it can get access to the native features of Ledger Live and to the user’s accounts and information.
 
@@ -24,9 +22,10 @@ A Platform Application is an application that leverages the Ledger Live API. By 
 
 ## Prerequisites
 
-(TBD) To set up your dev environment, you will need to:
-- Install a recent [node.js](https://nodejs.org/) and [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/),
-- Install our typescript Platform SDK library (“yarn add ledgersdk”),
-- Unlock the [Developer mode](../developer-mode) inside Ledger Live.
+To set up your dev environment, you will need to:
 
-You can access our Demo repository here (link), a github repository with a standard “Hello World” Platform App to get you started.
+* Install a recent [node.js](https://nodejs.org/) and [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/),
+* Install our typescript Platform SDK library (“yarn add @ledgerhq/live-app-sdk”),
+* Unlock the [Developer mode](../developer-mode) inside Ledger Live.
+
+We have developed a template to help you build a Live App [here](https://github.com/LedgerHQ/cra-template-live-app)

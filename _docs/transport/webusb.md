@@ -2,21 +2,18 @@
 title: WebUSB
 subtitle:
 tags: [communication, transport, wallet, companion, package]
-category: Connect a wallet application
+category: Connect a wallet
 author:
 toc: true
 layout: doc_tr
 ---
 
-
-<<<<<<< HEAD
-=======
+**This page is an extract from the repository**
 
 ### FAQ: "DOM Exception" is triggered when creating the transport
 
-The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
+The transport functions `create()` and `listen()` must be called in the context of a user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
 
->>>>>>> main
 ### How to use this transport regarding WebUSB paradigm?
 
 In WebUSB, we have a "permission native" modal that appears when we need to "request" a device. This is required at-least-once for the user to accept, and then we can open the transport without triggering this modal. However, in both cases, it must happen in context of a click like explain above. Our current implementation tradeoff is to abstract this out and only trigger the permission modal if no device are listed. This might change in the future.
@@ -35,22 +32,27 @@ WebUSB is currently only supported on Google Chrome / Chromium.
 
 -   In Linux, user need to install the [specific udev rules](https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh)
 -   In Mac, it should work.
--   In Windows, [WebUSB does not work out of the box](https://github.com/WICG/webusb/issues/143) but you can fix it with [Zadig](https://zadig.akeo.ie/).
+-   In Windows, [WebUSB does not work out of the box](https://github.com/WICG/webusb/issues/143) when using a Ledger Nano X but you can fix it with [Zadig](https://zadig.akeo.ie/).
 -   In Android Chrome it works.
 
 ## Install the package
 
 `yarn add @ledgerhq/hw-transport-webusb`
 
-## Implementation
+## API
 
+### TransportWebUSB
 
-### Parameters
+#### Extends Transport
+
+WebUSB Transport implementation
+
+#### Parameters
 
 -   `device` **USBDevice**
 -   `interfaceNumber` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
-### Examples
+#### Examples
 
 ```js
 import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
@@ -58,13 +60,13 @@ import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
 TransportWebUSB.create().then(transport => ...)
 ```
 
-### close
+#### close
 
 Release the transport device
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>**
 
-### exchange
+#### exchange
 
 Exchange with the device using APDU protocol.
 
@@ -74,15 +76,15 @@ Exchange with the device using APDU protocol.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** a promise of apdu response
 
-### isSupported
+#### isSupported
 
 Check if WebUSB transport is supported.
 
-### list
+#### list
 
 List the WebUSB devices that was previously authorized by the user.
 
-### listen
+#### listen
 
 Actively listen to WebUSB devices and emit ONE device
 that was either accepted before, if not it will trigger the native permission UI.
@@ -95,23 +97,21 @@ Important: it must be called in the context of a UI click!
 
 Returns **Subscription**
 
-### request
+#### request
 
 Similar to create() except it will always display the device permission (even if some devices are already accepted).
 
-### openConnected
+#### openConnected
 
 Similar to create() except it will never display the device permission (it returns a Promise&lt;?Transport>, null if it fails to find a device).
 
-### open
+#### open
 
 Create a Ledger transport with a USBDevice
 
 **Parameters**
 
 -   `device` **USBDevice**
-<<<<<<< HEAD
-
 
 ## Troubleshooting
 
@@ -129,5 +129,4 @@ name: "TransportOpenUserCancelled"
 ```
 
 You need to run a secure app and serve it via port 443, having at least a self-signed certificate working on it.
-=======
->>>>>>> main
+
