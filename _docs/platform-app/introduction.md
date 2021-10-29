@@ -31,6 +31,6 @@ To set up your dev environment, you will need to:
 
 * Install a recent [node.js](https://nodejs.org/) and [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/),
 * Install our typescript Platform SDK library (“yarn add @ledgerhq/live-app-sdk”),
-* Unlock the [Developer mode](../developer-mode) inside Ledger Live.
+* Unlock the [Developer mode](../reference/developer-mode) inside Ledger Live.
 
 We have developed a template to help you build a Live App [here](https://github.com/LedgerHQ/cra-template-live-app)
