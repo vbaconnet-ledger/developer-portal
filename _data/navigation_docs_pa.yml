@@ -1,10 +1,30 @@
-- title: How to
+- title: Platform App
   docs:
   - platform-app/introduction
-  - platform-app/developer-mode
-  - platform-app/manifest
-  - platform-app/develop-test
-  - platform-app/release
+
+- title: Tutorial
+  docs:
+  - platform-app/tutorial/introduction
+  - platform-app/tutorial/1-setup
+  - platform-app/tutorial/2-manifest
+  - platform-app/tutorial/3-import
+  - platform-app/tutorial/4-test
+  - platform-app/tutorial/conclusion
+
+- title: How to
+  docs:
+  - platform-app/howto/setup-dev-env
+  - platform-app/howto/develop-test
+  - platform-app/howto/fund
+  - platform-app/howto/sign
+  - platform-app/howto/swap
+  - platform-app/howto/broadcast
+  - platform-app/howto/release
+
+- title: Reference
+  docs:
+  - platform-app/reference/manifest
+  - platform-app/reference/developer-mode
 
 - title: Ledger Live Platform SDK
   docs:
