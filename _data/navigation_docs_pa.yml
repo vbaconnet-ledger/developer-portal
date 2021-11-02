@@ -13,8 +13,8 @@
 
 - title: How to
   docs:
-  - platform-app/howto/setup-dev-env
-  - platform-app/howto/develop-test
+  - platform-app/howto/setup
+  - platform-app/howto/test
   - platform-app/howto/fund
   - platform-app/howto/sign
   - platform-app/howto/swap
