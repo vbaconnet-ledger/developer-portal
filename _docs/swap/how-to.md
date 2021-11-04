@@ -27,7 +27,7 @@ As you can see on the diagram above, there are 5 main endpoints needed for the s
 - To query a swap status: [/status](#post-status).
 - To perform a swap (with the Payload/signature required by the nano): [/swap](post-swap). <br>
 
-Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
+You will find the details about each needed endpoint below. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
 
@@ -64,8 +64,8 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
 ### POST /quote 
 - **Function**: Return a quote for a pair and amount.
 - **Input**: from, to, account.
-- **Output**: quoteID, rate, expiry, method (fixed/float).
-  - Optional: from, to, amountFrom, amountTo.
+- **Output**: quoteID, rate, expiry, method (fixed/float).<br>
+  Optional: from, to, amountFrom, amountTo.
 - **Payload**:
   - Success
 ```json
