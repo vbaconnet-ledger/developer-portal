@@ -41,6 +41,57 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
 | POST /swap        | Generates secure nano payload to initiate trade.     | quoteID, refundAddress, payoutAddress, nonce  Optional: from, to, amount | payload, payload_signature  + swapId?  In case of error,returns the same payload as /check_quote                                                                                                                                                                                             | **Success** {   "provider":"changelly",   "deviceTransactionId":"arch",   "from":"bnb",   "to":"bch",  "address":"blabla",  "refundAddress":"blabla",   "amountFrom":"10" }  **Error** {   code: "KYC_PENDING",   error: "Your KYC is under validation",   description: "Your KYC is under validation by an operator" } |
 | POST /status      | Returns the status of a quote / trade being executed | quoteId  OR swapId?                                                      | State (open, expired, pending_recv, pending_settlement, completed) + ??                                                                                                                                                                                                                      | **Success** {   "provider":"changelly",   "swapId"="id1",   "status":"finished" }                                                                                                                                                                                                                                       |
 
+<html>
+<table>
+<thead>
+  <tr>
+    <th>Endpoint</th>
+    <th>Function</th>
+    <th>Input</th>
+    <th>Output</th>
+    <th>Payload (JSON)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>GET /pairs</td>
+    <td>Return a list of supported pairs.</td>
+    <td>--</td>
+    <td>??</td>
+    <td>[ &lt;br&gt;<br><br>  { &lt;br&gt;<br>    "from":"btc", &lt;br&gt;<br>    "to":"bat", &lt;br&gt;<br>    "tradeMethod":[ &lt;br&gt;<br>      "fixed", &lt;br&gt;<br>      "float" &lt;br&gt;<br>    ] &lt;br&gt;<br>  }, &lt;br&gt;<br>  { &lt;br&gt;<br>    "from":"bat", &lt;br&gt;<br>    "to":"btc", &lt;br&gt;<br>    "tradeMethod":[ &lt;br&gt;<br>      "fixed", &lt;br&gt;<br>      "float" &lt;br&gt;<br>    ] &lt;br&gt;<br>  } &lt;br&gt;<br>] &lt;br&gt;</td>
+  </tr>
+  <tr>
+    <td>POST /quote</td>
+    <td>Return a quote for a pair and amount.</td>
+    <td>from, to, amount</td>
+    <td>quoteID, rate, expiry, method (fixed | float)<br><br>Optional: from, to, amountFrom, amountTo</td>
+    <td>**Success** <br>```json<br>{<br>  "quoteId":"id1",<br>  "from":"btc",<br>  "to":"bat",<br>  "amountFrom":"1",<br>  "amountTo":"4000",<br>  "rate":"37800.21",<br>  "tradeMethod":"float",<br>  "expiry":"date"<br>}<br>```</td>
+  </tr>
+  <tr>
+    <td>POST /check_quote</td>
+    <td>Checks validity of login for specified trade.</td>
+    <td>quoteID, bearerToken (can be NULL)</td>
+    <td>ok or error_state in<br><br>UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR<br><br>Error body example:<br>{<br>   code: "KYC_PENDING" ,<br>   error: "Your KYC is under validation" ,<br>   description: "Your KYC is under validation by an operator"<br>}</td>
+    <td>**Success**<br>Status code at 200<br>No HTTP body<br><br>**Error**<br>{<br>  code: "KYC_PENDING",<br>  error: "Your KYC is under validation",<br>  description: "Your KYC is under validation by an operator"<br>}</td>
+  </tr>
+  <tr>
+    <td>POST /swap</td>
+    <td>Generates secure nano payload to initiate trade.</td>
+    <td>quoteID, refundAddress, payoutAddress, nonce<br><br>Optional: from, to, amount</td>
+    <td>payload, payload_signature<br><br>+ swapId?<br><br>In case of error,returns the same payload as /check_quote</td>
+    <td>**Success**<br>{<br>  "provider":"changelly",<br>  "deviceTransactionId":"arch",<br>  "from":"bnb",<br>  "to":"bch",<br><br>"address":"blabla",<br><br>"refundAddress":"blabla",<br>  "amountFrom":"10"<br>}<br><br>**Error**<br>{<br>  code: "KYC_PENDING",<br>  error: "Your KYC is under validation",<br>  description: "Your KYC is under validation by an operator"<br>}</td>
+  </tr>
+  <tr>
+    <td>POST /status</td>
+    <td>Returns the status of a quote / trade being executed</td>
+    <td>quoteId<br><br>OR swapId?</td>
+    <td>State (open, expired, pending_recv, pending_settlement, completed) + ??</td>
+    <td>**Success**<br>{<br>  "provider":"changelly",<br>  "swapId"="id1",<br>  "status":"finished"<br>}</td>
+  </tr>
+</tbody>
+</table>
+</html>
+
 Some requirements about the **/rate** endpoint:
 - The quote must work without user auth.
 - The quote must be valid long enough (at least a few minutes).
