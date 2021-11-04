@@ -56,7 +56,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
     <td>Return a quote for a pair and amount.</td>
     <td>from, to, amount</td>
     <td>quoteID, rate, expiry, method (fixed | float)<br><br>Optional: from, to, amountFrom, amountTo</td>
-    <td>**Success** <br> <code>{<br>  "quoteId":"id1",<br>  "from":"btc",<br>  "to":"bat",<br>  "amountFrom":"1",<br>  "amountTo":"4000",<br>  "rate":"37800.21",<br>  "tradeMethod":"float",<br>  "expiry":"date"<br>}</code></td>
+    <td><b>Success</b> <br> <code>{<br> &nbsp  "quoteId":"id1",<br> &nbsp  "from":"btc",<br> &nbsp  "to":"bat",<br> &nbsp  "amountFrom":"1",<br> &nbsp  "amountTo":"4000",<br> &nbsp  "rate":"37800.21",<br> &nbsp  "tradeMethod":"float",<br> &nbsp  "expiry":"date"<br>}</code></td>
   </tr>
   <tr>
     <td>POST /check_quote</td>
@@ -77,7 +77,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
     <td>Returns the status of a quote / trade being executed</td>
     <td>quoteId<br><br>OR swapId?</td>
     <td>State (open, expired, pending_recv, pending_settlement, completed) + ??</td>
-    <td>**Success**<br>{<br>  "provider":"changelly",<br>  "swapId"="id1",<br>  "status":"finished"<br>}</td>
+    <td><b>Success</b><br>{<br>  "provider":"changelly",<br>  "swapId"="id1",<br>  "status":"finished"<br>}</td>
   </tr>
 </tbody>
 </table>
