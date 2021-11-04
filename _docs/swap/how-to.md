@@ -20,9 +20,10 @@ This diagram shows what is needed from the provider’s side in order to interac
 ## Endpoints
 
 In order to communicate with Ledger’s back-end, you have to give us the mapping of the endpoints we need. <br> 
-As you can see on the diagram above, there are 4 main endpoints needed for the swap: 
-- To get the list of tradable pairs: `/providers`.
-- To query a rate: `/rate`.
+As you can see on the diagram above, there are 5 main endpoints needed for the swap: 
+- To get the list of tradable pairs: `/pairs`.
+- To query a rate: `/quote`.
+- To check the login and KYC validity of the user, for a specific quote: `/check_quote`.
 - To perform a swap (with the Payload/signature required by the nano): `/swap`.
 - To query a swap status: `/status`. <br>
 Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
@@ -62,7 +63,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
     <td>POST /check_quote</td>
     <td>Checks validity of login for specified trade.</td>
     <td>quoteID, bearerToken (can be NULL)</td>
-    <td>ok or error_state in<br><br>UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR<br><br>Error body example:<br>{<br>   code: "KYC_PENDING" ,<br>   error: "Your KYC is under validation" ,<br>   description: "Your KYC is under validation by an operator"<br>}</td>
+    <td>ok or error_state in<br><br>UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR</td>
     <td><b>Success</b><br>Status code at 200<br>No HTTP body<br><br><b>Error</b><br><code>{<br>&nbsp;  code: "KYC_PENDING",<br>&nbsp;  error: "Your KYC is under validation",<br>&nbsp;  description: "Your KYC is under validation by an operator"<br>}</code></td>
   </tr>
   <tr>
@@ -82,8 +83,36 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
 </tbody>
 </table>
 
+**POST /swap** 
+- Function: Generates secure nano payload to initiate trade.
+- Input: quoteID, refundAddress, payoutAddress, nonce. 
+  Optional: from, to, amount.
+- Output: Payload, payload_signature + swapId?
+  In case of error, returns the same payload as /check_quote
+- Payload:
+  **Success**
+```json
+{
+   "provider":"changelly",
+   "deviceTransactionId":"arch",
+   "from":"bnb",
+   "to":"bch",
+   "address":"bc1qvy43vxkjlvv79396c3x59grhxrq4a7afwp0fqu",
+   "refundAddress":"0x31137882f060458bde9e9ac3caa27b030d8f85c1",
+   "amountFrom":"10"
+}
+```
+  **Error**
+```json
+{
+  code: "KYC_PENDING",
+  error: "Your KYC is under validation" ,
+  description: "Your KYC is under validation by an operator"  
+}
+``` 
+**POST /status**
 
-Some requirements about the **/rate** endpoint:
+Some requirements about the **/quote** endpoint:
 - The quote must work without user auth.
 - The quote must be valid long enough (at least a few minutes).
 
@@ -193,7 +222,39 @@ bdk.xTq9CYn38DdxRfocnOJpjRWv4eD-_gVEMNoz_7nHVIFRhlLZOQyk04Q6zHHucgK3S
 s3IG1NOjw5aC9weCF5aRg"
 ```
 
-## KYC & Registration
+## Login & KYC
 
-You will need to develop an iframe for the Login, which will also trigger the KYC when needed. <br>
-TBD: This section will be updated once we know if that iframe will go in a live app, and how it will notify the Ledger Live back-end that the Login/KYC is completed. 
+If you need to have a Login/KYC before the user can perform a swap, you must develop a Login/KYC widget, as well as an iframe to host that widget. 
+
+The iframe will handle the Login, and will also trigger the KYC when needed. 
+This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. 
+
+In this diagram, you can see where the Widget Login/KYC is integrated during the quote process: 
+
+![Quote flow diagram](../images/ftx-quote-flow.png "Quote flow diagram")
+
+And in this diagram, you can see the Login/ KYC Widget flow that we expect from the provider:
+
+![KYC Widget flow diagram](../images/ftx-kyc-widget-flow.png "KYC Widget diagram")
+
+Detailed spec of the messages between widgets and Ledger Live:
+
+**Login Widget**
+- Input parameters: none.
+- Output (postMessage): `userId`, `bearerToken`:
+```json
+{
+  "user_id": "xxxxxx",
+  "bearer_token": "xxxxx"  
+}
+```
+
+
+**KYC Widget**
+Input parameters (url params): `quoteId`, `bearerToken`.
+Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as **/check_quote** backend endpoint:
+```json
+{
+  code: "KYC_OK" 
+}
+```
