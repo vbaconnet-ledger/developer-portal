@@ -60,11 +60,12 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
    }
 ]
 ```
+
 ### POST /quote 
 - **Function**: Return a quote for a pair and amount.
-- **Input**: from, to, account
-- **Output**: quoteID, rate, expiry, method (fixed | float)
-  - Optional: from, to, amountFrom, amountTo
+- **Input**: from, to, account.
+- **Output**: quoteID, rate, expiry, method (fixed/float).
+  - Optional: from, to, amountFrom, amountTo.
 - **Payload**:
   - Success
 ```json
@@ -85,9 +86,9 @@ Some requirements about the **/quote** endpoint:
 
 ### POST /check_quote 
 - **Function**: Checks validity of login for specified trade.
-- **Input**: quoteID, bearerToken (can be NULL)
+- **Input**: quoteID, bearerToken (can be NULL).
 - **Output**: `ok` or `error_state` in <br>
-  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR
+  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR.
 - **Payload**:
   - Success
 Status code at 200 <br>
@@ -100,6 +101,7 @@ No HTTP body
   description: "Your KYC is under validation by an operator"  
 }
 ``` 
+
 ### POST /status
 - **Function**: Return the status of a quote / trade being executed.
 - **Input**: quoteID.
@@ -119,7 +121,7 @@ No HTTP body
 - **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
 - **Output**: Payload, payload_signature + swapId? <br>
-  In case of error, returns the same payload as /check_quote
+  In case of error, returns the same payload as `/check_quote`.
 - **Payload**:
   - Success
 ```json
