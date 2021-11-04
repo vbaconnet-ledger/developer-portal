@@ -33,3 +33,5 @@ You will then see a new row in the menu with the name of your Live App.
 ![Add local App](../../images/tuto-3-4-local-app.png "Add local app")
 
 Now that you have added your Live App in your local Ledger Live application, it’s time to open it and test it. We’ll see this in the next section.
+
+For more details about each field, check the [Developer Mode](../../reference/developer-mode) article in the Reference section. 

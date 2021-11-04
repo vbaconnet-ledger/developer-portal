@@ -20,13 +20,13 @@ The first step is to create a new project using the `live-app-sdk`. To do so, we
 
 To do so, run the following command in your terminal:
 
-```shell
+```json
 yarn create react-app live-app-tuto --template @ledgerhq/live-app
 ```
 
 This will create a new `live-app-tuto` React App. Once done, start the tuto app:
 
-```shell
+```json
 cd live-app-tuto
 yarn start
 ```
