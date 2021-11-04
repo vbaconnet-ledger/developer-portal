@@ -48,7 +48,7 @@ Create a `manifest.json` file at the root of your project and paste in the follo
 }
 ```
 
-We won’t go too much into the details of each field in this tutorial (check out the manifest file in the reference section for explanation of each field).
+We won’t go too much into the details of each field in this tutorial. Check out the [Manifest](../../reference/manifest) article in the Reference section for more details on each field.
 
 The main thing you have to care about for now is the `url` field: it must match the url of your Live App. Here it is set at `http://localhost:3000` because we are currently running our app in local for development and test purposes.
 

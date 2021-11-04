@@ -21,7 +21,7 @@ Use the following code to install our typescript Platform SDK library:
 yarn add @ledgerhq/live-app-sdk
 ```
 
-### Import the SDK to your project
+## Import the SDK to your project
 
 Use the following code to import and instantiate the Ledger Live SDK: 
 
