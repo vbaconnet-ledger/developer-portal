@@ -85,12 +85,12 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
 
 **POST /swap** 
 - Function: Generates secure nano payload to initiate trade.
-- Input: quoteID, refundAddress, payoutAddress, nonce. 
+- Input: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
-- Output: Payload, payload_signature + swapId?
+- Output: Payload, payload_signature + swapId? <br>
   In case of error, returns the same payload as /check_quote
 - Payload:
-  **Success**
+  - **Success**
 ```json
 {
    "provider":"changelly",
@@ -102,7 +102,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
    "amountFrom":"10"
 }
 ```
-  **Error**
+  - **Error**
 ```json
 {
   code: "KYC_PENDING",
