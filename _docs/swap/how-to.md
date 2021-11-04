@@ -49,7 +49,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
     <td>Return a list of supported pairs.</td>
     <td>--</td>
     <td>??</td>
-    <td>[ <br><br>  { <br>    "from":"btc",<br>    "to":"bat",<br>    "tradeMethod":[<br>      "fixed",<br>      "float"<br>    ]<br>  },<br>  {<br>    "from":"bat",<br>    "to":"btc",<br>    "tradeMethod":[<br>      "fixed",<br>      "float"<br>    ]<br>  }<br>]</td>
+    <td><code>[ <br> &nbsp;  { <br> &nbsp;&nbsp;   "from":"btc",<br> &nbsp;&nbsp;    "to":"bat",<br> &nbsp;&nbsp;    "tradeMethod":[<br> &nbsp;&nbsp;&nbsp;     "fixed",<br> &nbsp;&nbsp;&nbsp;     "float"<br> &nbsp;&nbsp;   ]<br> &nbsp;  },<br> &nbsp;  {<br> &nbsp;&nbsp;    "from":"bat",<br>&nbsp;&nbsp;    "to":"btc",<br>&nbsp;&nbsp;    "tradeMethod":[<br>&nbsp;&nbsp;&nbsp;      "fixed",<br>&nbsp;&nbsp;&nbsp;      "float"<br>&nbsp;&nbsp;    ]<br>&nbsp;  }<br>] </code></td>
   </tr>
   <tr>
     <td>POST /quote</td>
@@ -63,21 +63,21 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
     <td>Checks validity of login for specified trade.</td>
     <td>quoteID, bearerToken (can be NULL)</td>
     <td>ok or error_state in<br><br>UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR<br><br>Error body example:<br>{<br>   code: "KYC_PENDING" ,<br>   error: "Your KYC is under validation" ,<br>   description: "Your KYC is under validation by an operator"<br>}</td>
-    <td>**Success**<br>Status code at 200<br>No HTTP body<br><br>**Error**<br>{<br>  code: "KYC_PENDING",<br>  error: "Your KYC is under validation",<br>  description: "Your KYC is under validation by an operator"<br>}</td>
+    <td><b>Success</b><br>Status code at 200<br>No HTTP body<br><br><b>Error</b><br><code>{<br>&nbsp;  code: "KYC_PENDING",<br>&nbsp;  error: "Your KYC is under validation",<br>&nbsp;  description: "Your KYC is under validation by an operator"<br>}</code></td>
   </tr>
   <tr>
     <td>POST /swap</td>
     <td>Generates secure nano payload to initiate trade.</td>
     <td>quoteID, refundAddress, payoutAddress, nonce<br><br>Optional: from, to, amount</td>
     <td>payload, payload_signature<br><br>+ swapId?<br><br>In case of error,returns the same payload as /check_quote</td>
-    <td>**Success**<br>{<br>  "provider":"changelly",<br>  "deviceTransactionId":"arch",<br>  "from":"bnb",<br>  "to":"bch",<br><br>"address":"blabla",<br><br>"refundAddress":"blabla",<br>  "amountFrom":"10"<br>}<br><br>**Error**<br>{<br>  code: "KYC_PENDING",<br>  error: "Your KYC is under validation",<br>  description: "Your KYC is under validation by an operator"<br>}</td>
+    <td><b>Success</b><br><code>{<br>&nbsp;  "provider":"changelly",<br>&nbsp;  "deviceTransactionId":"arch",<br>&nbsp;  "from":"bnb",<br>&nbsp;  "to":"bch",<br><br>"address":"bc1qvy43vxkjlvv79396c3x59grhxrq4a7afwp0fqu",<br><br>"refundAddress":""0x31137882f060458bde9e9ac3caa27b030d8f85c1",<br>  "amountFrom":"10"<br>}<br><br><b>Error</b><br>{<br>&nbsp;  code: "KYC_PENDING",<br>&nbsp;  error: "Your KYC is under validation",<br>&nbsp;  description: "Your KYC is under validation by an operator"<br>}</code></td>
   </tr>
   <tr>
     <td>POST /status</td>
     <td>Returns the status of a quote / trade being executed</td>
     <td>quoteId<br><br>OR swapId?</td>
     <td>State (open, expired, pending_recv, pending_settlement, completed) + ??</td>
-    <td><b>Success</b><br>{<br>  "provider":"changelly",<br>  "swapId"="id1",<br>  "status":"finished"<br>}</td>
+    <td><b>Success</b><br><code>{<br>&nbsp;  "provider":"changelly",<br>&nbsp;  "swapId"="id1",<br>&nbsp;  "status":"finished"<br>}</code></td>
   </tr>
 </tbody>
 </table>
