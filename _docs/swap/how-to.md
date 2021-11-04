@@ -21,11 +21,11 @@ This diagram shows what is needed from the provider’s side in order to interac
 
 In order to communicate with Ledger’s back-end, you have to give us the mapping of the endpoints we need. <br> 
 As you can see on the diagram above, there are 5 main endpoints needed for the swap: 
-- To get the list of tradable pairs: `/pairs`.
-- To query a rate: `/quote`.
-- To check the login and KYC validity of the user, for a specific quote: `/check_quote`.
-- To perform a swap (with the Payload/signature required by the nano): `/swap`.
-- To query a swap status: `/status`. <br>
+- To get the list of tradable pairs: [/pairs](#get-pairs).
+- To query a rate: [/quote](#post-quote).
+- To check the login and KYC validity of the user, for a specific quote: [/check_quote](#post-check_quote).
+- To query a swap status: [/status](#post-status).
+- To perform a swap (with the Payload/signature required by the nano): [/swap](post-swap). <br>
 
 Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
 
@@ -80,6 +80,7 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
    "expiry": "date"  
 }
 ``` 
+
 Some requirements about the **/quote** endpoint:
 - The quote must work without user auth.
 - The quote must be valid long enough (at least a few minutes).
@@ -253,7 +254,7 @@ In this diagram, you can see where the Widget Login/KYC is integrated during the
 
 ![Quote flow diagram](../images/ftx-quote-flow.png "Quote flow diagram")
 
-And in this diagram, you can see the Login/ KYC Widget flow that we expect from the provider:
+And in this diagram, you can see the Login/KYC Widget flow that we expect from the provider:
 
 ![KYC Widget flow diagram](../images/ftx-kyc-widget-flow.png "KYC Widget diagram")
 
@@ -271,8 +272,8 @@ Detailed spec of the messages between widgets and Ledger Live:
 
 
 **KYC Widget**
-Input parameters (url params): `quoteId`, `bearerToken`.
-Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as **/check_quote** backend endpoint:
+- Input parameters (url params): `quoteId`, `bearerToken`.
+- Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as [/check_quote](#post-check_quote) backend endpoint:
 ```json
 {
   code: "KYC_OK" 
