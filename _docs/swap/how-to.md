@@ -26,64 +26,95 @@ As you can see on the diagram above, there are 5 main endpoints needed for the s
 - To check the login and KYC validity of the user, for a specific quote: `/check_quote`.
 - To perform a swap (with the Payload/signature required by the nano): `/swap`.
 - To query a swap status: `/status`. <br>
-Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
 
-### Data mapping
-
-Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (see [Swap Endpoint](#swap-endpoint) section below for more details). 
+Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
 
-<table>
-<thead>
-  <tr>
-    <th>Endpoint</th>
-    <th>Function</th>
-    <th>Input</th>
-    <th>Output</th>
-    <th>Payload (JSON)</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>GET /pairs</td>
-    <td>Return a list of supported pairs.</td>
-    <td>--</td>
-    <td>??</td>
-    <td><code>[ <br> &nbsp;  { <br> &nbsp;&nbsp;   "from":"btc",<br> &nbsp;&nbsp;    "to":"bat",<br> &nbsp;&nbsp;    "tradeMethod":[<br> &nbsp;&nbsp;&nbsp;     "fixed",<br> &nbsp;&nbsp;&nbsp;     "float"<br> &nbsp;&nbsp;   ]<br> &nbsp;  },<br> &nbsp;  {<br> &nbsp;&nbsp;    "from":"bat",<br>&nbsp;&nbsp;    "to":"btc",<br>&nbsp;&nbsp;    "tradeMethod":[<br>&nbsp;&nbsp;&nbsp;      "fixed",<br>&nbsp;&nbsp;&nbsp;      "float"<br>&nbsp;&nbsp;    ]<br>&nbsp;  }<br>] </code></td>
-  </tr>
-  <tr>
-    <td>POST /quote</td>
-    <td>Return a quote for a pair and amount.</td>
-    <td>from, to, amount</td>
-    <td>quoteID, rate, expiry, method (fixed | float)<br><br>Optional: from, to, amountFrom, amountTo</td>
-    <td><b>Success</b> <br> <code>{<br> &nbsp;  "quoteId":"id1",<br> &nbsp;  "from":"btc",<br> &nbsp;  "to":"bat",<br> &nbsp;  "amountFrom":"1",<br> &nbsp;  "amountTo":"4000",<br> &nbsp;  "rate":"37800.21",<br> &nbsp;  "tradeMethod":"float",<br> &nbsp;  "expiry":"date"<br>}</code></td>
-  </tr>
-  <tr>
-    <td>POST /check_quote</td>
-    <td>Checks validity of login for specified trade.</td>
-    <td>quoteID, bearerToken (can be NULL)</td>
-    <td>ok or error_state in<br><br>UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR</td>
-    <td><b>Success</b><br>Status code at 200<br>No HTTP body<br><br><b>Error</b><br><code>{<br>&nbsp;  code: "KYC_PENDING",<br>&nbsp;  error: "Your KYC is under validation",<br>&nbsp;  description: "Your KYC is under validation by an operator"<br>}</code></td>
-  </tr>
-  <tr>
-    <td>POST /swap</td>
-    <td>Generates secure nano payload to initiate trade.</td>
-    <td>quoteID, refundAddress, payoutAddress, nonce<br><br>Optional: from, to, amount</td>
-    <td>payload, payload_signature<br><br>+ swapId?<br><br>In case of error,returns the same payload as /check_quote</td>
-    <td><b>Success</b><br><code>{<br>&nbsp;  "provider":"changelly",<br>&nbsp;  "deviceTransactionId":"arch",<br>&nbsp;  "from":"bnb",<br>&nbsp;  "to":"bch",<br><br>"address":"bc1qvy43vxkjlvv79396c3x59grhxrq4a7afwp0fqu",<br><br>"refundAddress":""0x31137882f060458bde9e9ac3caa27b030d8f85c1",<br>  "amountFrom":"10"<br>}<br><br><b>Error</b><br>{<br>&nbsp;  code: "KYC_PENDING",<br>&nbsp;  error: "Your KYC is under validation",<br>&nbsp;  description: "Your KYC is under validation by an operator"<br>}</code></td>
-  </tr>
-  <tr>
-    <td>POST /status</td>
-    <td>Returns the status of a quote / trade being executed</td>
-    <td>quoteId<br><br>OR swapId?</td>
-    <td>State (open, expired, pending_recv, pending_settlement, completed) + ??</td>
-    <td><b>Success</b><br><code>{<br>&nbsp;  "provider":"changelly",<br>&nbsp;  "swapId"="id1",<br>&nbsp;  "status":"finished"<br>}</code></td>
-  </tr>
-</tbody>
-</table>
+**IP address checking** <br>
+Additionally, we also need a way to know if a user will be able to do coin swap given his IP.<br>
+Our back-end can adapt to how you decide to do this, but we recommend you use a dedicated endpoint. Our back-end will send the user’s IP address to that endpoint, without logging it. In response, your endpoint should tell us if the trade is accepted or rejected.
 
-#### POST /swap 
+### GET /pairs 
+- **Function**: Return a list of supported pairs.
+- **Input**: --
+- **Output**: ??
+- **Payload**:
+```json
+[
+   {
+      "from":"btc",
+      "to":"bat",
+      "tradeMethod":[
+         "fixed",
+         "float"
+      ]
+   },
+   {
+      "from":"bat",
+      "to":"btc",
+      "tradeMethod":[
+         "fixed",
+         "float"
+      ]
+   }
+]
+```
+### POST /quote 
+- **Function**: Return a quote for a pair and amount.
+- **Input**: from, to, account
+- **Output**: quoteID, rate, expiry, method (fixed | float)
+  - Optional: from, to, amountFrom, amountTo
+- **Payload**:
+  - Success
+```json
+{
+   "quoteId":"id1",
+   "from":"btc",
+   "to":"bat",
+   "amountFrom":"1",
+   "amountTo":"40000",
+   "rate":"37800.21",
+   "tradeMethod":"float",
+   "expiry": "date"  
+}
+``` 
+Some requirements about the **/quote** endpoint:
+- The quote must work without user auth.
+- The quote must be valid long enough (at least a few minutes).
+
+### POST /check_quote 
+- **Function**: Checks validity of login for specified trade.
+- **Input**: quoteID, bearerToken (can be NULL)
+- **Output**: `ok` or `error_state` in <br>
+  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR
+- **Payload**:
+  - Success
+Status code at 200 <br>
+No HTTP body
+  - Error
+```json
+{
+  code: "KYC_PENDING",
+  error: "Your KYC is under validation" ,
+  description: "Your KYC is under validation by an operator"  
+}
+``` 
+### POST /status
+- **Function**: Return the status of a quote / trade being executed.
+- **Input**: quoteID.
+- **Output**: State (open, expired, pending_recv, pending_settlement, completed) + ??
+- **Payload**:
+  - Success
+```json
+{
+   "provider":"changelly",
+   "swapId":"id1",
+   "status":"finished"
+}
+```
+
+### POST /swap 
 - **Function**: Generates secure nano payload to initiate trade.
 - **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
@@ -110,23 +141,10 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
   description: "Your KYC is under validation by an operator"  
 }
 ``` 
-#### POST /status
-
-Some requirements about the **/quote** endpoint:
-- The quote must work without user auth.
-- The quote must be valid long enough (at least a few minutes).
 
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
 - Should check the auth bearer token.<br>
-See [Swap Endpoint](#swap-endpoint) section below for more details.
-
-**IP address checking** <br>
-You should provide a way to check if the user's geolocation is allowed to do coin swap, given the IP of the user.<br>
-Our back-end can adapt to how you decide to do this, but we recommend you use a dedicated endpoint. Our back-end will send the user’s IP address to that endpoint, without logging it. In response, your endpoint should tell us if the trade is accepted or rejected.
-
-
-### Swap endpoint
 
 #### Protobuf message (payload)
 
