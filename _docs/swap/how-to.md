@@ -250,17 +250,16 @@ If you need to have a Login/KYC before the user can perform a swap, you must dev
 The iframe will handle the Login, and will also trigger the KYC when needed. 
 This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. 
 
+**Quote flow**
+
 In this diagram, you can see where the Widget Login/KYC is integrated during the quote process: 
 
-![Quote flow diagram](../images/ftx-quote-flow.png "Quote flow diagram")
-
-And in this diagram, you can see the Login/KYC Widget flow that we expect from the provider:
-
-![KYC Widget flow diagram](../images/ftx-kyc-widget-flow.png "KYC Widget diagram")
-
-Detailed spec of the messages between widgets and Ledger Live:
+![Quote flow diagram](../images/swap-ftx-quote-flow.png "Quote flow diagram")
 
 **Login Widget**
+
+![Login widget diagram](../images/swap-ftx-login.png "Login widget diagram")
+
 - Input parameters: none.
 - Output (postMessage): `userId`, `bearerToken`:
 ```json
@@ -270,8 +269,10 @@ Detailed spec of the messages between widgets and Ledger Live:
 }
 ```
 
-
 **KYC Widget**
+
+![KYC widget diagram](../images/swap-ftx-kyc.png "KYC widget diagram")
+
 - Input parameters (url params): `quoteId`, `bearerToken`.
 - Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as [/check_quote](#post-check_quote) backend endpoint:
 ```json
@@ -279,3 +280,9 @@ Detailed spec of the messages between widgets and Ledger Live:
   code: "KYC_OK" 
 }
 ```
+
+**Trade execution flow**
+
+In this diagram, you can see the trade execution flow after the Login/KYC is validated: 
+
+![Trade execution flow diagram](../images/swap-ftx-trade-flow.png "Trade execution flow diagram")
