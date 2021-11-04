@@ -40,8 +40,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
 | POST /check_quote | Checks validity of login for specified trade.        | quoteID, bearerToken (can be NULL)                                       | ok or error_state in  UNKNOWN_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPGRADE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR  Error body example: {    code: "KYC_PENDING" ,    error: "Your KYC is under validation" ,    description: "Your KYC is under validation by an operator" } | **Success** Status code at 200 No HTTP body  **Error** {   code: "KYC_PENDING",   error: "Your KYC is under validation",   description: "Your KYC is under validation by an operator" }                                                                                                                                 |
 | POST /swap        | Generates secure nano payload to initiate trade.     | quoteID, refundAddress, payoutAddress, nonce  Optional: from, to, amount | payload, payload_signature  + swapId?  In case of error,returns the same payload as /check_quote                                                                                                                                                                                             | **Success** {   "provider":"changelly",   "deviceTransactionId":"arch",   "from":"bnb",   "to":"bch",  "address":"blabla",  "refundAddress":"blabla",   "amountFrom":"10" }  **Error** {   code: "KYC_PENDING",   error: "Your KYC is under validation",   description: "Your KYC is under validation by an operator" } |
 | POST /status      | Returns the status of a quote / trade being executed | quoteId  OR swapId?                                                      | State (open, expired, pending_recv, pending_settlement, completed) + ??                                                                                                                                                                                                                      | **Success** {   "provider":"changelly",   "swapId"="id1",   "status":"finished" }                                                                                                                                                                                                                                       |
-
-<html>
+<br>
 <table>
 <thead>
   <tr>
@@ -90,7 +89,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
   </tr>
 </tbody>
 </table>
-</html>
+
 
 Some requirements about the **/rate** endpoint:
 - The quote must work without user auth.
