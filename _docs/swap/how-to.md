@@ -83,14 +83,14 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
 </tbody>
 </table>
 
-**POST /swap** 
-- Function: Generates secure nano payload to initiate trade.
-- Input: quoteID, refundAddress, payoutAddress, nonce. <br>
+#### POST /swap 
+- **Function**: Generates secure nano payload to initiate trade.
+- **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
-- Output: Payload, payload_signature + swapId? <br>
+- **Output**: Payload, payload_signature + swapId? <br>
   In case of error, returns the same payload as /check_quote
-- Payload:
-  - **Success**
+- **Payload**:
+  - Success
 ```json
 {
    "provider":"changelly",
@@ -102,7 +102,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
    "amountFrom":"10"
 }
 ```
-  - **Error**
+  - Error
 ```json
 {
   code: "KYC_PENDING",
@@ -110,7 +110,7 @@ As an example, you can refer to  [Changelly’s API](https://github.com/changell
   description: "Your KYC is under validation by an operator"  
 }
 ``` 
-**POST /status**
+#### POST /status
 
 Some requirements about the **/quote** endpoint:
 - The quote must work without user auth.
