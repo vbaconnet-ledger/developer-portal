@@ -1,13 +1,12 @@
 <div>
   <h5>How would you improve this page?</h5>
-  <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
-    <input type="hidden" id="accessKey" name="accessKey" value="774fe280-f773-4a57-9f77-e7c935ed368b">
-    <textarea id="comment" name="$comment" placeholder="Comment" required="required" class="comment-box"></textarea>
-    <input type="hidden" id="page" name="$page" value="{{ page.title }}">
-    <input type="hidden" id="category" name="$category" value="{{ page.category }}">
+  <form id="contact-form" action="https://formkeep.com/f/90e16cbb8870" method="post">
+    <textarea id="comment" name="Comment" placeholder="Comment" minlength="20" required="required" class="comment-box"></textarea>
+    <input type="hidden" id="page" name="Page" value="{{ page.title }}">
+    <input type="hidden" id="category" name="Category" value="{{ page.category }}">
     <br>
     <br>
-    <input type="checkbox" id="participation" name="$participation"><label class="comment-disclaimer" for="checkbox">Contributors will be chosen randomly to receive rewards. Check this box to participate.</label>
+    <input type="checkbox" id="participation" name="Participation"><label class="comment-disclaimer" for="checkbox">Contributors will be chosen randomly to receive rewards. Check this box to participate.</label>
     <br>
     <div id="submit">
       <input type="submit" value="Submit" class="uk-button uk-button-primary uk-button-default uk-button-small uk-margin-small-top"/>
@@ -23,7 +22,7 @@ document.getElementById("participation").addEventListener('change', function() {
     var submit = document.getElementById('submit');
     var input = document.createElement("input");
                 input.type = "text";
-                input.name = "$mail";
+                input.name = "Mail";
                 input.id = "mail";
                 input.placeholder="Please enter your email";
                 input.required = "required";
@@ -46,13 +45,13 @@ document.getElementById("participation").addEventListener('change', function() {
     if (document.getElementById("mail")){
       var mail = document.getElementById("mail").value;
     } else {
-      var mail = "none";
+      var mail = "none@gmail.com";
     }
 
-    fetch('https://api.staticforms.xyz/submit', {
+    fetch('https://formkeep.com/f/90e16cbb8870', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ "accessKey": document.getElementById("accessKey").value, "$comment": document.getElementById("comment").value, "$page": document.getElementById("page").value, "$category": document.getElementById("category").value, "$mail": mail, "$participation": document.getElementById("participation").checked })
+        body: JSON.stringify({ "Comment": document.getElementById("comment").value, "Page": document.getElementById("page").value, "Category": document.getElementById("category").value, "Mail": mail, "Participation": document.getElementById("participation").checked })
     })
   });
   
