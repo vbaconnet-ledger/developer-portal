@@ -25,14 +25,14 @@ To use the container image, you need to either install [Docker](https://docs.doc
 
 ## 1. Build the container (standard way)...
 
-The container can be build using standard tools:
+The container can be build using standard tools, run one of the following commands:
 
 ```bash
-# Docker
+# If you're using Docker
 sudo docker build -t ledger-app-builder:latest .
-# Podman (from https://podman.io/)
+# If you're using Podman (from https://podman.io/)
 podman build -t ledger-app-builder:latest .
-# Buildah (from https://buildah.io/)
+# If you're using Buildah (from https://buildah.io/)
 buildah bud -t ledger-app-builder:latest .
 ```
 
@@ -42,14 +42,14 @@ Images can embed the [Coverity Scan](https://scan.coverity.com/) build tool. It 
 
 The build tool must be downloaded before building the image. The archive can be downloaded from <https://scan.coverity.com/download>. Download is available to everyone, but it requires to create an account. After having registered, download Coverity Build Tool 2020.09 for Linux64 and place the downloaded archive in the `coverity` directory.
 
-Then, build the container with:
+Then, build the container with one of the following commands:
 
 ```bash
-# Docker
+# If you're using Docker
 sudo docker build -t ledger-app-scanner:latest .
-# Podman (from https://podman.io/)
+# If you're using Podman (from https://podman.io/)
 podman build -t ledger-app-scanner:latest .
-# Buildah (from https://buildah.io/)
+# If you're using Buildah (from https://buildah.io/)
 buildah bud -t ledger-app-scanner:latest .
 ```
 
