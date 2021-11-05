@@ -11,6 +11,8 @@ layout: doc_sw
 * TOC
 {:toc}
 
+## What do we need ?
+
 In order to become a swap provider in the Ledger Live ecosystem, you must submit your API following Ledger’s specifications. We will guide you through the requirements and the modifications you will need to apply to your API before sending it to us. 
 
 This diagram shows what is needed from the provider’s side in order to interact with Ledger Live.
