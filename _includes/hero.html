@@ -12,7 +12,6 @@
     <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
 
         {% include navbar.html %}
-
         <div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
             <div class="uk-container uk-container-small">
                 {% if page.hero.image %}
@@ -22,10 +21,12 @@
                 {% if page.hero.subtitle %}<p class="uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
 
                 {% if page.hero.search %}
-                <div class="hero-search">
+                <div>
 
                     <!-- Html Elements for Search -->
-                    <div class="uk-position-relative">
+                    <!-- removed in V3 to change search from simple-jekyll-search to algolia -->
+
+                    <!-- <div class="uk-position-relative">
                         <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
                             <span class="uk-search-icon-flip" data-uk-search-icon></span>
                             <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
@@ -44,8 +45,11 @@
 
                     searchResults("search-hero");
 
-                    </script>
-
+                    </script> -->
+                    <div class="uk-position-relative" style="text-align:center;">
+                        <!-- Button to launch Algolia search modal -->
+                        <button type="button" uk-search-icon class="uk-button uk-button-default uk-button-large uk-margin-medium-top" style="background-color: black" data-toggle="modal" data-target=".bd-example-modal-lg">Search  </button>
+                    </div>
                 </div>
                 {% endif %}
 

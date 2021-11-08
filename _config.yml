@@ -55,6 +55,21 @@ disqus:
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics: GTM-W5FKZ2N
 
+# Algolia search
+algolia:
+  application_id: 'WV98VMIU7C'
+  index_name: dev_portal
+  search_only_api_key: 2c01f0f02f9134bbd0e7fa5f1c5e6818
+  extensions_to_index:
+      - md
+  settings:                                                                      
+    searchableAttributes:                                                        
+    - title                                                                    
+    - unordered(categories)                                                    
+    - unordered(tags)                                                          
+    - unordered(content)                                                       
+    customRanking:  
+
 # Path to post content assets directory i.e post images, pdfs etc
 uploads:            /uploads/
 
