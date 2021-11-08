@@ -4,6 +4,8 @@
     Estimated reading time: Less than a minute
   {% elsif words < 360 %}
   	Estimated reading time: One minute
+  {% elsif words > 1800 %}
+    Estimated reading time: More than 10 minutes
   {% else %}
     Estimated reading time: {{ words | divided_by:180 }} minutes
   {% endif %}
