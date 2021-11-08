@@ -13,7 +13,7 @@ To activate the Developer mode in Ledger Live, go to the **Settings/About** sect
 
 This will make the Developer tab appear.
 
-![screenshot of the Developer tab](../images/developer_mode_tab.png "Developer tab")
+![screenshot of the Developer tab](../../images/developer_mode_tab.png "Developer tab")
 
 Note : this feature is available only for Ledger Live version 2.32 and above.
 
@@ -45,7 +45,7 @@ The catalog provider is a variable used to define the list of applications being
 
 This setting will enable opening the platform apps dev tools window, which can become handy when debugging your application.
 
-![screenshot of the Platform dev tools](../images/platform_dev_tools.png "Developer tools window")
+![screenshot of the Platform dev tools](../../images/platform_dev_tools.png "Developer tools window")
 
 ## Add a local app
 
