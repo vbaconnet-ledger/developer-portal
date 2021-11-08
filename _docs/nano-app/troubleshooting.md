@@ -1,15 +1,14 @@
 ---
 title: Common Pitfalls and Troubleshooting
 subtitle:
-tags: []
-author: Nano Application
+tags: [not enough ram, ram, stack overflow, exception, try catch finally, application crashing, app crashing, unaligned ram]
+category: Nano Application
+toc: true
+author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

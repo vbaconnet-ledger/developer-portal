@@ -1,15 +1,11 @@
 ---
 title: How to
 subtitle:
+category: Swap Providers
 tags: []
-category: Swap Provider
+toc: true
 layout: doc_sw
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 In order to become a swap provider in the Ledger Live ecosystem, you must submit your API following Ledger’s specifications. We will guide you through the requirements and the modifications you will need to apply to your API before sending it to us. 
 

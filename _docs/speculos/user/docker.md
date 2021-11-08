@@ -9,10 +9,7 @@ layout: doc_sp
 sort: 2
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## How to use the Docker image
 

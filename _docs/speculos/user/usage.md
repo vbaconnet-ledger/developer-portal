@@ -9,10 +9,7 @@ layout: doc_sp
 sort: 1
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 After having [installed the requirements and built](../../installation/build) speculos:
 

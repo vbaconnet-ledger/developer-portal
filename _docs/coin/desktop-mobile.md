@@ -1,16 +1,12 @@
 ---
 title: Adding *MyCoin* to Ledger Live Desktop and Mobile
 subtitle:
-tags: []
+tags: [lld, llm]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ***
 
@@ -43,7 +39,7 @@ cd ledger-live-common
 yalc publish
 ```
 
-## Ledger Live  Mobile
+## Ledger Live Mobile
 
 1. Fork [github.com/LedgerHQ/ledger-live-mobile](https://github.com/LedgerHQ/ledger-live-mobile)
 2. Clone the repo

@@ -1,16 +1,12 @@
 ---
-title: JS WebUSB
+title: Example of WebUSB implementation in a JS App
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet
 author:
+toc: true
 layout: doc_tr
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Example of WebUSB implementation in a JS App
 

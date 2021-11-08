@@ -1,16 +1,14 @@
 ---
 title: Functional requirements
 subtitle:
-tags: []
+tags: [app name, ticker, wallet, companion, staking]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Guidelines on app name and ticker
 

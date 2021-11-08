@@ -1,16 +1,12 @@
 ---
 title: Adding *MyCoin* Nano App JS Bindings
 subtitle:
-tags: []
+tags: [ledgerjs, getAddress, signTransaction]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 You will need to provide a JS implementation to interact with your coin Nano app on the Ledger Nano.
 These bindings can either be implemented directly into live-common (as a folder in your coin family folder), or published in [LedgerJS/packages](https://github.com/LedgerHQ/ledgerjs) as a package - i.e. `hw-app-mycoin`.

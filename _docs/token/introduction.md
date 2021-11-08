@@ -1,16 +1,14 @@
 ---
 title: How it works
 subtitle:
-tags: []
+tags: [erc20, asa, trc10, trc20]
 category: Tokens
+toc: true
 author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 Similarly to transferring native assets, transferring tokens requires the end-user to confirm the transaction details on the Nano devices’ screens. Such verification is a security requirement and must be made available before the application is released by Ledger. Expected information to verify are (at least) : the amount transferred, the token name and/or ticker, the recipient address.
 

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-    {% include head.html %}
+
 
     <body>
+
+    {% include head.html %}
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_analytics }}"
@@ -23,15 +25,48 @@
     {% include offcanvas.html %}
 
     {% if page.layout != 'doc' %}
-        {% include footer.html %}
+      {% include footer.html %}
     {% endif %}
 
     {% if page.layout == 'doc' %}
-        {% include hook-pre-closing-body-doc.html %}
+      {% include hook-pre-closing-body-doc.html %}
     {% endif %}
 
     {% include hook-pre-closing-body.html %}
 
-    </body>
+    <!-- scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+       <!-- Modal for Algolia search -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Algolia Instant Search Modal -->
+                <div class="search-box">
+                      <div id="search-searchbar"></div>
 
+                      <h2>Results</h2>
+                      <div class="post-list" id="search-hits">
+                        {% for doc in site.docs %}
+                          <div class="post-item">
+                            <h2>
+                              <a class="post-link" href="{{ post.url | relative_url }}">
+                                {{ doc.title | escape }}
+                              </a>
+                            </h2>
+
+                            <div class="post-snippet">{{ doc.subtitle }}</div>
+                          </div>
+                        {% endfor %}
+
+                    {% include algolia.html %}
+                </div>
+                <!-- End of Algolia Instant Search Modal -->
+              </div>
+            </div>
+        </div>
+
+    </body>
 </html>

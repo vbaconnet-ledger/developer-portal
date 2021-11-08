@@ -1,16 +1,14 @@
 ---
 title: Applications for HD Trees
 subtitle: HD Trees and the 24 words
-tags: []
+tags: [psd, personal security devices, device, path, derivation path, address]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

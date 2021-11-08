@@ -1,16 +1,14 @@
 ---
 title: TRC10 and TRC20
 subtitle:
-tags: []
+tags: [tokens]
 category: Tokens
+toc: true
 author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## How to request a token addition
 

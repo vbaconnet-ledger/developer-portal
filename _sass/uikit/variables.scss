@@ -80,7 +80,7 @@ $inverse-badge-color: $inverse-global-inverse-color !default;
 $inverse-badge-hover-color: $inverse-global-inverse-color !default;
 $base-body-background: $global-background !default;
 $global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$base-body-font-family: $global-font-family !default;
+$base-body-font-family: $body-font-family !default; // Modified by CF for V3
 $base-body-font-weight: normal !default;
 $global-font-size: 16px !default;
 $base-body-font-size: $global-font-size !default;
@@ -308,7 +308,7 @@ $comment-meta-color: $global-muted-color !default;
 $comment-list-margin-top: $global-large-margin !default;
 $comment-list-padding-left: 30px !default;
 $comment-list-padding-left-m: 100px !default;
-$container-max-width: 1200px !default;
+$container-max-width: 1300px !default; // Modified by CF for V3
 $container-xsmall-max-width: 750px !default;
 $container-small-max-width: 900px !default;
 $container-large-max-width: 1400px !default;

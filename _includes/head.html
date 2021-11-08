@@ -1,12 +1,12 @@
 <head>
   {% if jekyll.environment == 'production' %}
-      <!-- OneTrust Cookies Consent Notice start for ledger.com -->
+  <!-- OneTrust Cookies Consent Notice start for ledger.com -->
     <script type="text/javascript" src="https://cdn.cookielaw.org/consent/5ff3ecce-44bd-4ef3-b746-ec81546bf82a/OtAutoBlock.js" ></script>
     <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="5ff3ecce-44bd-4ef3-b746-ec81546bf82a" ></script>
     <script type="text/javascript">
     function OptanonWrapper() { }
     </script>
-    <!-- OneTrust Cookies Consent Notice end for ledger.com -->
+  <!-- OneTrust Cookies Consent Notice end for ledger.com -->
   {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,13 @@
   {% seo %}
   <meta property="og:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
+ 
+  <!-- Algolia InstantSearch stylesheets -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+  <!-- -->
+
+  <link rel="shortcut icon" type="image/png" href="{{ "/favicon.ico" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>

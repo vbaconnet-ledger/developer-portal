@@ -4,13 +4,9 @@ subtitle:
 tags: []
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Checklist
 

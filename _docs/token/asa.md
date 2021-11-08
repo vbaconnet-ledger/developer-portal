@@ -1,16 +1,15 @@
 ---
 title: ASA
 subtitle:
-tags: []
+tags: [tokens]
+category: Token Integration
 category: Tokens
+toc: true
 author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 For ASAs, compared to ERC20, the process differs due to the fact that the tokens details are hardcoded within the Algorand Nano application instead of being streamed to the device. Furthermore, the ownership of the Algorand Nano Application source code lies with the Algorand team. Request for updates must be validated by them before being reviewed by Ledger.
 
@@ -26,7 +25,7 @@ First, make sure your token isn’t already listed by checking this table of the
 
 ### 2. How to get my token listed?
 
-Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c). 
+Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c).
 When your PR is validated by the Algorand team, they will make a PR to Ledger Github repository.
 
 Then, you need to update the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).

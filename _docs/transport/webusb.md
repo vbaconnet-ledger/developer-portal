@@ -1,18 +1,14 @@
 ---
 title: WebUSB
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet
 author:
+toc: true
 layout: doc_tr
 ---
 
 **This page is an extract from the repository**
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ### FAQ: "DOM Exception" is triggered when creating the transport
 
@@ -116,3 +112,21 @@ Create a Ledger transport with a USBDevice
 **Parameters**
 
 -   `device` **USBDevice**
+
+## Troubleshooting
+
+### "DOM Exception" is triggered when creating the transport
+
+The transport functions `create()` and `listen()` must be called in the context of an user interaction (like a **"click"** event), otherwise it fails with DOM Exception. This is by WebUSB design. You also must run on HTTPS.
+
+### Chrome error while creating the transport
+
+If you get the following error while creating the transport:
+
+```bash
+message: "Cannot read property 'getDevices' of undefined"
+name: "TransportOpenUserCancelled"
+```
+
+You need to run a secure app and serve it via port 443, having at least a self-signed certificate working on it.
+

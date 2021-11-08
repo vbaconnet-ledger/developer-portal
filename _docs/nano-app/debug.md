@@ -1,16 +1,14 @@
 ---
 title: Application Debug
 subtitle: Making testing easier
-tags: []
+tags: [ledgerblue, debugging firmware, printf, pin bypass]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

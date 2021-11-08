@@ -13,12 +13,15 @@
     }
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav) {
         transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-        border-bottom: 1px solid $global-primary-background;
-        color: $global-primary-background;
+// V2   border-bottom: 1px solid $global-primary-background;
+// V2   color: $global-primary-background;
+        border-bottom: 1px solid $safety-orange; // Added by CF for V3 31.08.2021
+        color: $safety-orange; // Added by CF for V3 31.08.2021
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
-        border-bottom-color: lighten($global-primary-background, 25%);
+// V2   border-bottom-color: lighten($global-primary-background, 25%);
+        border-bottom-color: lighten($safety-orange, 25%); // Added by CF for V3 31.08.2021
         text-decoration: none;
     }
 
@@ -49,7 +52,9 @@
     // Fix for UIkit left and right first & last items
     .uk-navbar-container > .uk-container {
         .uk-navbar-left {
-            margin-left: -$navbar-nav-item-padding-horizontal;
+            // margin-left: -$navbar-nav-item-padding-horizontal;
+            margin-left: auto; // Added for v3
+            margin-right: auto; // Added for v3
         }
         .uk-navbar-right {
             margin-right: -$navbar-nav-item-padding-horizontal;
@@ -62,7 +67,7 @@
 }
 
 @mixin hook-button(){
-    border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
+// Removed for V3: border-radius: 4px; //FC 2021-06-01 1128 eg Send button radius
 }
 
 @mixin hook-button-misc(){
@@ -191,7 +196,7 @@
 }
 
 @mixin hook-alert(){
-    border-radius: $border-rounded-border-radius;
+// Removed for V3 : border-radius: $border-rounded-border-radius;
 }
 
 @mixin hook-alert-misc(){
@@ -219,7 +224,8 @@
         font-size: $global-small-font-size;
     }
     > span {
-        color: $global-primary-background;
+        // Removed for V3: color: $global-primary-background;
+        color: $global-color; // Added by CF for V3 (color of the icon on the home page)
     }
 }
 
@@ -340,7 +346,7 @@
 
         pre,
         blockquote {
-            margin-top: $global-medium-margin * .7;
+            // margin-top: $global-medium-margin * .7; Removed by CF for V3 16.09.2021
             margin-bottom: $global-medium-margin;
         }
 
@@ -355,6 +361,7 @@
 
 @mixin hook-table-misc() {
     table {
+        table-layout: fixed; // Added by CF for V3 31.08.2021 (to fit with right sidebar-toc)
         font-size: $global-small-font-size;
         border-collapse: collapse;
         border-spacing: 0;
@@ -371,6 +378,7 @@
         }
         td {
             vertical-align: top;
+            overflow: scroll; // Added by CF for V3 31.08.2021 (to fit with right sidebar-toc)
         }
         th {
             text-align: left;
@@ -439,6 +447,7 @@
     }
     .remove-underline, .remove-underline:hover{
         text-decoration: none;
+        color: $safety-orange;
     }
     .uk-container.uk-container-xsmall {
         max-width: 700px;
@@ -489,11 +498,12 @@
     }
 
     .sidebar-fixed-width {
+        padding-left: 10px; // Modified by CF for V3 31.08.2021
         width: $docs-sidebar-width;
     }
     .sidebar-docs {
-        width: $docs-sidebar-width - $global-medium-gutter;
-        padding-right: $global-medium-gutter;
+        width: $docs-sidebar-width; // Modified by CF for V3 31.08.2021
+        line-height: 1.1; // Modified by CF for V3 31.08.2021
         top: 112px;
         bottom: 70px;
         overflow-y: scroll;
@@ -530,6 +540,79 @@
     //     }
     // }
 
+    // Right TOC Sidebar added by CF for V3
+   .sidebar-toc {
+      top: 95px;
+      width:250px;
+      // background: white;
+      border-left: solid 1px black;
+      margin-left: 35px;
+      padding-top:20px;
+      padding-right: 10px;
+      text-decoration: none;
+      > ul {padding-left: 20px;}
+      > ul li {list-style: none;}
+      > li {padding-left: 20px;} // added because of display bug on "coin/general-process"
+      > li ul li {list-style: none;} // added because of display bug on "coin/general-process"
+      > h5 {padding-left: 20px; color:$global-color;}
+      max-height: 500px;
+      overflow: scroll;
+
+    }
+
+    .sidebar-sticky {
+      position: fixed;
+    }
+
+    .sidebar-toc a {
+      border-bottom: none !important;
+    }
+
+    .sidebar-toc a.active {
+      font-weight: bold;
+      background-color: lighten( $safety-orange, 45% );
+    }
+
+
+    .content-toc {
+      border-left: solid 2px #d9dde0;
+      font-size: 16px;
+      width:300px;
+      padding-top:20px;
+      padding-right:18px;
+      > ul li {list-style: none;}
+    }
+
+    // Toc in mobile display
+    .mobile-sections h5 {
+      margin-top: 50px;
+    }
+
+    // svg icon for alerts
+    .svg-icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      margin-bottom: 2.5px;
+      margin-right: -10px;
+    }
+
+    // Suggestion links at end of doc pages 
+    .suggestion {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .suggestion a {
+        color: $safety-orange;
+    }
+
+    // Icons on the home-page
+    .icon-home{
+      color: $global-color;
+    }
+
     .transports-legend {
         display: flex;
         justify-content: center;
@@ -546,6 +629,57 @@
         }
       }
 
+     // Algolia Instant Search
+     .modal-content{
+        padding: 20px;
+     } 
+
+     #search-searchbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 25px;
+        font-family:$body-font-family;
+     }
+
+    .search-icon :hover {
+        color: $safety-orange ;
+    }
+
+    .post-item h3 {
+        margin-top: 50px;
+        margin-bottom: 2px;
+    }
+
+    .post-item h3 :hover {
+        color: $safety-orange;
+    }
+
+    .post-breadcrumbs {
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover {
+            color: $safety-orange;
+        }
+    }
+
+    .ais-Highlight {
+        font-weight: bold;
+    }
+
+    // Typeform
+    .typeform-widget {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    // Legal text
+    .legal-notice{
+      font-size:12px;
+      font-weight:bold;
+      a{color:$global-color !important; border-bottom: 1px solid $global-color !important }
+    }
 
     // Anchors next to titles to facilitate copy/pasting links
 
@@ -553,9 +687,8 @@
       color: inherit !important;
       text-decoration: none !important; /* do not underline */
       border-bottom: none !important;
-      opacity: .75;
+      opacity: 0;
     }
-
 
     // Commment box at the bottom of all pages
 
@@ -563,7 +696,7 @@
         width: 100%;
         height: 50px;
         font-family: $global-font-family;
-        // border: 2px solid #000;
+        border: 2px solid #000;
         border-radius: none;
         float: left;
         padding: 12px 20px;
@@ -572,6 +705,33 @@
     .comment-disclaimer {
         font-weight: bold;
         font-size: 12px;
+    }
+
+    // Custom scrollbar
+
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #d6dee1;
+      //border-radius: 20px;
+      border: 6px solid transparent;
+      background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
+
+    // When a link is betwin code tags, so it's not orange on a black background, but we can still see it's a link
+    code a {
+      color: #f9f8f5 !important;
+      border-bottom: 1px solid #f9f8f5 !important;
     }
 
     @media (max-width: 768px) {
@@ -596,15 +756,44 @@
         margin-top: 5px;
     }
 
+    // Reading time
+
+    .reading-time {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    // Style for sitemap
+
+    .sitemap {
+      text-align: start;
+    }
+
+    @media (max-width: $breakpoint-medium) {
+        .sitemap {
+          text-align: center;
+        }
+    }
+
+    .sitemap h5{
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sitemap h4 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
     .doc-nav > li.uk-active > a {
         position: relative;
         &:before {
             content: "";
             position: absolute;
-            top: 15px;
+            top: 13px; // Modified from 15 to 13 by CF for V3 01.09.2021 (small dash in front of active elements in left side bar)
             left: -14px;
             width: 7px;
-            border-top: 1px solid $global-primary-background;
+            border-top: 2px solid $safety-orange; // Modified px and color by CF for V3 01.09.2021 (color is temporary)
         }
     }
 
@@ -631,7 +820,7 @@
             margin: 60px auto 0 auto;
             .uk-search-input {
                 height: 80px;
-                border-radius: 50px;
+                // Removed for V3 : border-radius: 50px;
                 font-size: 1.25rem;
                 font-style: normal;
                 padding-left: 36px;
@@ -719,10 +908,11 @@
             font-size: $text-lead-font-size;
             overflow: hidden;
             border: solid 1px $border-light; //FC 2021-06-01 1119 to add a separator betw popular articles
-            border-radius: $border-radius-small;
+            // Removed for V3 border-radius: $border-radius-small;
             padding: 20px;
             font-weight: 500;
-            color: $global-primary-background;
+            // Removed for V3: color: $global-primary-background;
+            color: $global-color; // Added by CF for V3 01.09.2021
 
             &::after {
                 content: "";
@@ -732,13 +922,13 @@
                 @include svg-fill($featured-right-image, "#000", $accordion-icon-color);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                background-color: $accordion-icon-background-color;
                 border-radius: 20px;
             }
 
             &:hover {
                 text-decoration: none;
-                color: $global-primary-background;
+                border: solid 1px #000000;
+                // Removed for V3 color: $global-primary-background;
             }
 
         }
@@ -868,7 +1058,7 @@
                 left: calc(30% - 2px);
                 bottom: 0;
                 width: $timeline-border-width;
-                background: $global-primary-background;
+                background: $safety-orange;
             }
 
             &:after {
@@ -904,7 +1094,7 @@
                     position: absolute;
                     width: $timeline-dot-diameter;
                     height: $timeline-dot-diameter;
-                    border: $timeline-border-width solid $global-primary-background;
+                    border: $timeline-border-width solid $safety-orange;
                     background-color: #fff;
                     border-radius: 100%;
                     top: 0;
