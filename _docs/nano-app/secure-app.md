@@ -8,12 +8,6 @@ author:
 layout: doc_na
 ---
 
-#### Sections in this article
-
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Introduction
 
 Developing applications for Ledger devices is an intricate process. The security of the user funds relies on the fact that the application works in a correct and secure manner and that potential attackers cannot misuse it to extract private data and/or sign requests which are not authorized by the user. The app should guard against such attacks because they have a very low entry point -- a Ledger device attached to a compromised host might be a victim of the attacker's program sending invalid/non-standard requests to the device.

@@ -20,7 +20,7 @@ ruby '2.7.4'
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 #gem "github-pages", group: :jekyll_plugins
 gem "github-pages", "~> 214", group: :jekyll_plugins #FC Added 2021-04-22 1746
- 
+
 gem 'github-linguist', '~> 7.14'
 
 # If you have any plugins, put them here!
@@ -36,9 +36,12 @@ group :jekyll_plugins do
    gem "kramdown-parser-gfm" #FC Added
    gem "jekyll-sitemap" #FC Added 2021-04-22 1727
    gem 'rdiscount' #FC Added 2021-04-22 1743
+   gem 'kramdown'
+   gem 'rouge'
 end
 
 gem "nokogiri", ">= 1.12.5" #Added 4.10.21 to resolve a security issue
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+

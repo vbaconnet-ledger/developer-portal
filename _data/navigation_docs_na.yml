@@ -1,4 +1,4 @@
-- title: []
+- title: Introduction
   docs:
   - nano-app/introduction
   - nano-app/types-apps
@@ -11,7 +11,7 @@
 - title: Security best practices
   docs:
   - nano-app/secure-app
-
+  
 - title: Background information
   subfolderitems:
     - title: Display

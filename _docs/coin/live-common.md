@@ -1,16 +1,12 @@
 ---
-title: Adding *MyCoin* to Live-Common
+title: Adding *MyCoin* to live-common
 subtitle:
-tags: []
+tags: [Ledger Live Common, typescript, environment variables, local packages]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Introduction
 

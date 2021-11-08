@@ -1,15 +1,13 @@
 ---
 title: TransactionCommon
 subtitle:
-tags: []
+tags: [Ledger Live Platform SDK, platform sdk, sdk, api]
 category: Platform Application
+toc: true
 layout: doc_pa
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Properties
 

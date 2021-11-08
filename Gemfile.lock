@@ -306,9 +306,11 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-toc
+  kramdown
   kramdown-parser-gfm
   nokogiri (>= 1.12.5)
   rdiscount
+  rouge
   tzinfo-data
   webrick (~> 1.7)
 

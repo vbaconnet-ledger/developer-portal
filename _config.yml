@@ -13,7 +13,7 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               favicon.png  # FC 2021-06-01 1216 ***
+logo:               ledger.png
 
 navbar:
     sticky:         true
@@ -46,7 +46,7 @@ share:
 
 # Default footer image settings
 footer:
-    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS
+    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
@@ -59,11 +59,12 @@ google_analytics: GTM-W5FKZ2N
 uploads:            /uploads/
 
 # Build settings
-markdown:           kramdown
-highlighter:        rouge
+markdown: kramdown
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
+
 sass:
   style: :expanded
 

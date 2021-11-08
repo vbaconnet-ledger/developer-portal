@@ -1,16 +1,12 @@
 ---
 title: Why is U2F deprecated ?
 subtitle:
-tags: []
+tags: [communication, transport]
 category: Connect a wallet
 author:
+toc: true
 layout: doc_tr
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Why is U2F deprecated?
 

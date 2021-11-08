@@ -1,3 +1,6 @@
+# This file is a duplicate of navigation_docs_pa.yml without the nested menu (subfolderitems)
+# We need it to make "previous" and "next" buttons work properly
+
 - title: How to
   docs:
   - platform-app/introduction

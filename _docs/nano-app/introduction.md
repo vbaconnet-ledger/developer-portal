@@ -1,16 +1,12 @@
 ---
 title: Developing and submitting a Nano app
-subtitle: Find the necessary instructions to develop an app for Ledger devices
-tags: []
+subtitle: Find the necessary instructions to develop and submit an app for Ledger devices
+tags: [development phases, develop nano app, submit an app, submission]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 
 ## User profile

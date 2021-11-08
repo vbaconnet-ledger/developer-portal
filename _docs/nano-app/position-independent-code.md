@@ -1,16 +1,14 @@
 ---
 title: Position-Independent Code
 subtitle:
-tags: []
+tags: [pic, link address, execution address, dereferencing]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 
 ## PIC and Model Implications

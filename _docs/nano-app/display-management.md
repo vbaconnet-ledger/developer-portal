@@ -1,16 +1,14 @@
 ---
 title: Display Management
 subtitle: With Oscars for on-screen performance
-tags: []
+tags: [on-screen display, screen, ux flow, ux, layouts]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

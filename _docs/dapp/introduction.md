@@ -1,9 +1,10 @@
 ---
 title: Introduction
 subtitle:
-tags: []
-category: Dapp Integration
+tags: [dapp browser, decentralized app, plugin, ethereum plugin]
+category: DApp Integration
 author:
+toc: 
 layout: doc_da
 ---
 

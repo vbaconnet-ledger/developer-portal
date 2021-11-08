@@ -1,13 +1,25 @@
+<!-- Added new svg icons for V3 CF 10.09.2021 -->
+<svg style="display: none">
+  <defs>
+    <svg id="note" data-name="note" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 780"><path d="M921.7,728.39v96h96v-96Zm-272,232c0-174,136-310,310-310s310,136,310,310c0,169-136,310-310,310S649.7,1134.39,649.7,960.39Zm-80,0c0,218,172,390,390,390,219,0,390-178,390-390,0-218-172-390-390-390S569.7,742.39,569.7,960.39Zm273,145v65h245v-65h-80v-219h-155v65h80v154Z" transform="translate(-569.7 -570.39)"/></svg>
+    <svg id="tip" data-name="tip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 780"><path d="M926,1137,746,956l56-56,124,123,220-219,56,56Zm34,222c219,0,390-178,390-390,0-218-172-390-390-390S570,751,570,969,742,1359,960,1359Z" transform="translate(-570 -578.98)"/></svg>
+    <svg id="important" data-name="important" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 780"><path d="M912,1084v96h96v-96ZM650,960c0-174,136-310,310-310s310,136,310,310c0,169-136,310-310,310S650,1134,650,960Zm-80,0c0,218,172,390,390,390,219,0,390-178,390-390,0-218-172-390-390-390S570,742,570,960Zm347-74,9,138h67l10-138V742H917Z" transform="translate(-570 -570)"/></svg>
+    <svg id="warning" data-name="warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 780"><path d="M919,865.41v79l9,98h63l10-98v-79Zm-7,234v94h94v-94Zm347,149H661l299-542Zm-299-705-430,780h860Z" transform="translate(-530 -543.41)"/></svg>
+  </defs>
+</svg>
+
+
+
 <!-- alert.html FC 2021-05-21 2207 -->
 <div{% if include.style %} class="uk-alert-{{ include.style }}"{% endif %} data-uk-alert>
     {% if include.style == 'success' %}
-        <span> <i class="fas fa-info-circle"></i> &ensp; <b>Note</b><br> {{ include.text }}</span>
+        <span><svg class="svg-icon"><use xlink:href="#note"></use></svg> &ensp; <b>Note</b><br> {{ include.text }}</span>
     {% elsif include.style == 'primary' %}
-        <span> <i class="fa fa-check-square"></i> &ensp; <b>Tip</b><br> {{ include.text }}</span>
+        <span><svg class="svg-icon"><use xlink:href="#tip"></use></svg> &ensp; <b>Tip</b><br> {{ include.text }}</span>
     {% elsif include.style == 'warning' %}
-        <span> <i class="fas fa-exclamation-triangle"></i> &ensp; <b>Important</b><br> {{ include.text }}</span>
+        <span> <svg class="svg-icon"><use xlink:href="#warning"></use></svg> &ensp; <b>Important</b><br> {{ include.text }}</span>
     {% elsif include.style == 'danger' %}
-        <span> <i class="fas fa-radiation"></i> &ensp; <b>Warning</b><br> {{ include.text }}</span>
+        <span> <svg class="svg-icon"><use xlink:href="#warning"></use></svg> &ensp; <b>Warning</b><br> {{ include.text }}</span>
     {% else %}
         {{ include.text }}
     {% endif %}

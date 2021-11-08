@@ -1,16 +1,11 @@
 ---
 title: Introduction
 subtitle:
-tags: []
+tags: [platform app, platform application, live app, ledger live app]
 category: Platform Application
+toc: true
 layout: doc_pa
 ---
-
-#### Sections in this article
-
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Context
 

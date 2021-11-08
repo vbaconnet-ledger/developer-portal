@@ -4,7 +4,7 @@ width: expand
 hero:
     title: Ledger Developer Portal
     subtitle:
-         All the tools and resources you need to bring security to blockchain users
+        All the tools and resources you need to bring security to blockchain users
     image: /images/GEN/portal-intro.png
     search: true
 ---

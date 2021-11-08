@@ -8,7 +8,7 @@ left:
   - title: Connect your wallet
     url: /docs/transport/connect-wallet
 
-  - title: Blockchain support
+  - title: Blockchain Support
     url: /docs/coin/general-process
 
   - title: Tokens
@@ -19,12 +19,8 @@ left:
 
   - title: Tools
     dropdown:
-
     - title: Emulator
       url: /docs/speculos/installation/build
-
-  - title: Changelog
-    url: /changelog-timeline
 
 # Navbar right menu navigation links
 

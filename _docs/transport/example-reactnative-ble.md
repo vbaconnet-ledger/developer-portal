@@ -1,16 +1,12 @@
 ---
-title: React Native Bluetooth
+title: Example of Bluetooth implementation in a React Native App
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet
 author:
+toc: true
 layout: doc_tr
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Ledger Web Bluetooth example in React Native
 

@@ -78,14 +78,14 @@
 .highlight .il { color: #fd971f } /* Literal.Number.Integer.Long */
 
 
-// To uncomment after next graphic charter is applied
-// p code.highlighter-rouge,
-// p kbd {
-//     color: #f9f8f5 ;
-//     background-color: lighten(#272822, 5%) ;
-//     font-family: $global-font-family, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-// }
+p code.highlighter-rouge,
+p kbd {
+    color: #f9f8f5 ;
+    background-color: lighten(#272822, 5%) ;
+    font-family: $global-font-family, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
 
-// kbd {
-//     border: 1px solid #272822;
-// }
+kbd {
+    border: 1px solid #272822;
+}
+
