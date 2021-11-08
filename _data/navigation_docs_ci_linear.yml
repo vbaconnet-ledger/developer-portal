@@ -19,10 +19,8 @@
   - coin/introduction
   - coin/cryptoassets-library
   - coin/js-bindings
-  - coin/desktop-mobile
   - coin/live-common
-  - coin/live-common-integration-01
-  - coin/live-common-integration-02
+  - coin/desktop-mobile
 
 - title: Testing
   docs:

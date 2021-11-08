@@ -1,5 +1,5 @@
 ---
-title: Introduction and setup
+title: Adding *MyCoin* to live-common
 subtitle:
 tags: [Ledger Live Common, typescript, environment variables, local packages]
 category: Blockchain Support
@@ -161,6 +161,7 @@ Ensure the `.yalc` directory is included then in the package.json:
 <!--  -->
 {% include alert.html style="warning" text="Do not commit changes due to the usage of <code>yalc</code> as it may result in wrong behaviour." %}
 <!--  -->
+
 
 ## Step by Step integration
 

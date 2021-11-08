@@ -16,13 +16,9 @@
   - coin/introduction
   - coin/cryptoassets-library
   - coin/js-bindings
+  - coin/live-common
   - coin/desktop-mobile
-  subfolderitems:
-    - title: Adding *MyCoin* to Live-Common
-      docs:
-      - coin/live-common
-      - coin/live-common-integration-01
-      - coin/live-common-integration-02
+
 
 - title: Testing
   docs:
