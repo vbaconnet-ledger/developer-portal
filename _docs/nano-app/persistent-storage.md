@@ -1,16 +1,14 @@
 ---
 title: Persistent Storage
 subtitle: Not for goldfish
-tags: []
+tags: [flash memory, RAM]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

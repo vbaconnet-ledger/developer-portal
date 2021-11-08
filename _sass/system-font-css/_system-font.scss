@@ -7,11 +7,26 @@
 	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+// V2
+// @font-face {
+//   font-family: MuseoSans;
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("./MuseoSans_500.otf"); //FC 2021-06-01 1140
+// }
+
 @font-face {
-	font-family: MuseoSans;
+	font-family: HMAlphaMono;
 	font-style: normal;
 	font-weight: 500;
-	src: url("./MuseoSans_500.otf"); //FC 2021-06-01 1140
+	src: url("./HMAlphaMono-Medium.otf"); //Added by CF for V3 31.08.2021
+}
+
+@font-face {
+  font-family: InterRegular;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Inter-Regular.otf"); //Added by CF for V3 31.08.2021
 }
 
 @font-face {

@@ -124,7 +124,7 @@
 @mixin hook-base-link-hover(){}
 @mixin hook-base-code(){
     padding: $base-code-padding-vertical $base-code-padding-horizontal;
-    background: $base-code-background;
+    //background: $base-code-background; Removed by CF for V3 15.09.2021
 }
 @mixin hook-base-heading(){}
 @mixin hook-base-h1(){}
@@ -147,8 +147,9 @@
 @mixin hook-base-pre(){
     padding: $base-pre-padding;
     border: $base-pre-border-width solid $base-pre-border;
-    border-radius: $base-pre-border-radius;
-    background: $base-pre-background;
+    // border-radius: $base-pre-border-radius;
+    // Removed white background for "raw" liquid code tags
+    //background: $base-pre-background;
 }
 @mixin hook-base-misc(){}
 @mixin hook-inverse-base-link(){}
@@ -1220,7 +1221,7 @@
         background-color: $inverse-search-default-background;
         @if(mixin-exists(hook-inverse-search-default-input)) {@include hook-inverse-search-default-input();}
     }
-    
+
     .uk-search-default .uk-search-input:focus {
         background-color: $inverse-search-default-focus-background;
         @if(mixin-exists(hook-inverse-search-default-input-focus)) {@include hook-inverse-search-default-input-focus();}

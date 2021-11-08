@@ -4,13 +4,10 @@ subtitle:
 tags: []
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## General overview
 
@@ -22,7 +19,7 @@ layout: doc_ci
 
 
 ## Breakdown
-The following pages describe how include a blockchain and its coin in Ledger Live.
+The following pages describe how to include a blockchain in Ledger Live.
 
 There are 4 main parts to code
 1. **CryptoAssets** (Follow instructions [here](../cryptoassets-library))

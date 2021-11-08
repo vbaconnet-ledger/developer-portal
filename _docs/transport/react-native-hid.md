@@ -1,18 +1,14 @@
 ---
 title: React native HID
 subtitle:
-tags: []
+tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet
 author:
+toc: true
 layout: doc_tr
 ---
 
 **This page is an extract from the repository**
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Install the package
 

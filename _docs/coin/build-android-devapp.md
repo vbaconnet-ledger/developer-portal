@@ -1,17 +1,12 @@
 ---
 title: Building Android Dev App
 subtitle:
-tags: []
+tags: [ledger-live-mobile, llm, android emulator, android simulator]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 <!-- 2021-04-07 written by Henri Ly -->
 

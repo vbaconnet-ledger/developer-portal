@@ -1,16 +1,12 @@
 ---
 title: General Process
-subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their blockchain on Ledger Live.
-tags: []
+subtitle: This article describes the general process and way of working Ledger will follow while interacting with the teams wishing to add their currency on Ledger Live.
+tags: [coin, protocol, ledger live, integration, ledger live integration]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## General Ledger Live Overview
 
@@ -80,7 +76,7 @@ Ledger will still review pull requests, but on a best effort basis only. Please 
 
 Ledger will review PR according to the agreed roadmap as closely as possible.
 
-***
+
 ## Ledger Live Development Phases
 
 We have identified several phases, each giving rise to a deliverable.
@@ -123,7 +119,7 @@ The table below shows what the inputs and outputs are for each phase, the work i
 
 Note PR: Pull request
 
-***
+
 
 ### A - Technical Assessment
 
@@ -133,7 +129,7 @@ Importantly, it also contains research and choices concerning the Indexer/Explor
 
 The **output of this phase** is a presentation to Ledger of those technical choices
 
-***
+
 ### B - CLI and GUI integration - General (GEN) features
 
 **General features are Receive, Synch, Send**
@@ -152,7 +148,7 @@ The **output of this phase** is a presentation to Ledger of those technical choi
 3 - **Code Review and functional test**
 \- Code Delivery for Review by Ledger
 
-***
+
 ### C - CLI integration - Specific (SPE) features
 
 **Staking operations, Reward related actions**
@@ -169,7 +165,7 @@ The **output of this phase** is a presentation to Ledger of those technical choi
 3 - **Code Review**
 \- Code Delivery for Review by Ledger
 
-***
+
 ### D - GUI integration - Specific (SPE) features
 
 1 - **Analysis**

@@ -1,16 +1,14 @@
 ---
 title: Low-level display management
 subtitle: Hold your breath. Then jump in
-tags: []
+tags: [bagl, asynchronous display, macros, ux, events, button push ]
 category: Nano Application
+toc: true
 author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

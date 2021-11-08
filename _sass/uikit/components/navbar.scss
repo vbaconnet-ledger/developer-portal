@@ -422,6 +422,7 @@ $navbar-dropbar-z-index:                         $global-z-index - 20 !default;
  */
 
 .uk-navbar-dropdown-nav > li > a {
+    font-family: $global-font-family;
     color: $navbar-dropdown-nav-item-color;
     @if(mixin-exists(hook-navbar-dropdown-nav-item)) {@include hook-navbar-dropdown-nav-item();}
 }

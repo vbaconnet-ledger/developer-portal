@@ -1,16 +1,12 @@
 ---
 title: A - Connecting the DApp 
 subtitle:
-tags: []
-category: Dapp Integration
+tags: [server, iframe]
+category: DApp Integration
 author:
+toc: true
 layout: doc_da
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 This page is a description of the three parts of the implementation of your DApp.
 

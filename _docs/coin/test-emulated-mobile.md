@@ -1,16 +1,12 @@
 ---
 title: Run tests on emulated Android and iOS
 subtitle:
-tags: []
+tags: [emulator, live-common, ledger-live-mobile, llm]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 <!-- 2021-03-30 based on 2548924630 in Confluence -->
 

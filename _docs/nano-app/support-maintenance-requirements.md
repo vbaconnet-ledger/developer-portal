@@ -3,14 +3,12 @@ title: Support and maintenance requirements
 subtitle:
 tags: []
 category: Nano Application
-author: 
+toc: true
+author:
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Support
 

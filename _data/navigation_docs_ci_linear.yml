@@ -1,0 +1,35 @@
+# This file is a duplicate of navigation_docs_ci.yml without the nested menu (subfolderitems)
+# We need it to make "previous" and "next" buttons work properly
+
+- title: Getting Started
+  docs:
+  - coin/general-process
+  - coin/general-architecture
+
+- title: Prerequisites
+  docs:
+  - coin/prerequisites
+
+- title: Tools
+  docs:
+  - coin/ledger-live-cli
+
+- title: Coding
+  docs:
+  - coin/introduction
+  - coin/cryptoassets-library
+  - coin/js-bindings
+  - coin/live-common
+  - coin/desktop-mobile
+
+- title: Testing
+  docs:
+  - coin/tests
+  - coin/run-ledger-live
+  - coin/build-ios-devapp
+  - coin/build-android-devapp
+  - coin/run-ios-android-devapp
+  - coin/general-cli-checklist
+  - coin/specific-cli-checklist
+  - coin/test-emulated-mobile
+  - coin/bridge-test

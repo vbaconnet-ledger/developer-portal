@@ -8,12 +8,6 @@ author:
 layout: doc_na
 ---
 
-#### Sections in this article
-
-{:.no_toc}
-* TOC
-{:toc}
-
 ## Introduction
 
 Developing applications for Ledger devices is an intricate process. The security of the user funds relies on the fact that the application works in a correct and secure manner and that potential attackers cannot misuse it to extract private data and/or sign requests which are not authorized by the user. The app should guard against such attacks because they have a very low entry point -- a Ledger device attached to a compromised host might be a victim of the attacker's program sending invalid/non-standard requests to the device.
@@ -68,7 +62,7 @@ Rationale : Former SDKs used to generate lots of errors - sometimes dozens - whe
 In order to ease security reviews and maintenance, the Ledger Security Team requires these development best practices to be met:
 
 - Units tests must be present, preferably in the `tests/` folder and relying on the [cmocka](https://cmocka.org/) unit testing framework.
-- Functional tests must be present. They should allow APDU testing thanks to the [Speculos](../speculos/installation/build) emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.
+- Functional tests must be present. They should allow APDU testing thanks to the [Speculos](../../speculos/installation/build) emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.
 
 These best practices must be automated using GitHub actions to achieve continuous integration. The [GitHub workflow](https://github.com/LedgerHQ/app-xrp/blob/master/.github/workflows/ci-workflow.yml) of the XRP app acts as a reference.
 

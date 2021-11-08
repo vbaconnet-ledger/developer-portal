@@ -11,13 +11,14 @@
   docs:
   - coin/ledger-live-cli
 
-- title: Coding
+- title: Adding a Coin
   docs:
   - coin/introduction
   - coin/cryptoassets-library
   - coin/js-bindings
   - coin/live-common
   - coin/desktop-mobile
+
 
 - title: Testing
   docs:

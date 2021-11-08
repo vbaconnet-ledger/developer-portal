@@ -1,25 +1,20 @@
 ---
 title: Architecture and work breakdown structure
 subtitle: This section describes the high level technical architecture of Ledger Live and how the different components interact.
-tags: []
+tags: [ledger live, live-common, ledgerjs, ledger-live-desktop, ledger-live-mobile]
 category: Blockchain Support
 author:
+toc: true
 layout: doc_ci
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
 
 ## Global architecture overview
 
 <!-- ------------- Image ------------- -->
-![app_architecture](../images/app_architecture.png)
+![app_architecture](../images/general-architecture-live.png)
 <!-- --------------------------------- -->
 
-- The Ledger device acts as a signing box and it defers most of the technical complexity to a **wallet application** (Ledger Live or a third-party wallet). The wallet application contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
+- The Ledger device acts as a signing box and it defers most of the technical complexity to Ledger Live (Ledger's official **wallet application**). Ledger Live contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
 - The Nano application acts as a transaction signer key in a deterministic way. Having a publicly listed Nano application is a mandatory requirement before getting your blockchain supported on Ledger Live.
 - In the case of Ledger Live, and for performance reason, a third layer is handling the indexing of transaction for a given blockchain.
 
@@ -48,7 +43,7 @@ The Common library of Ledger Live is called [Ledger-live-common](https://github.
 
 #### Communication with the Device
 
-[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of packages. It allows a javascript
+[ledgerjs](https://github.com/LedgerHQ/ledgerjs) is a set of packages. It allows a JavaScript
 application to use the API of a Nano app. Nano apps are using APDU to
 transfer data and commands to and from the external world. `ledgerjs` only
 allows to use commands developed on the Nano app.
@@ -58,7 +53,7 @@ allows to use commands developed on the Nano app.
 
 The Ledger Live application wil retrieve transaction history and broadcast new transactions using different explorers.
 
-As part of a Ledger Live blockchain support, you should provide a indexer allowing a Ledger Live user to synchronize his account in a timely manner. It can be an open source project or your own explorer.
+As part of a Ledger Live blockchain integration, you should provide a indexer allowing a Ledger Live user to synchronize his account in a timely manner. It can be an open source project or your own explorer.
 
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 

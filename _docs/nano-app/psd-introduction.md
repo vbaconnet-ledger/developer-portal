@@ -1,7 +1,7 @@
 ---
 title: Introduction
 subtitle: PSDs - The secure portal to your assets, not a bank
-tags: []
+tags: [psd, personal security devices, device]
 category: Nano Application
 author:
 layout: doc_na

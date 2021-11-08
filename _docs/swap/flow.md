@@ -1,15 +1,11 @@
 ---
 title: Flow
 subtitle:
+category: Swap Providers
 tags: []
-category: Swap Provider
+toc: true
 layout: doc_sw
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## High level flow
 

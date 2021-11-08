@@ -4,14 +4,12 @@ subtitle:
 tags: [use speculos, emulate, emulator, Nano X emulator]
 category: Speculos
 author:
+toc: true
 layout: doc_sp
 sort: 4
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 Debug an app thanks to GDB:
 

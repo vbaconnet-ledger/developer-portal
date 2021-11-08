@@ -1,16 +1,13 @@
 ---
 title: Application Environment
 subtitle:
-tags: []
+tags: [bolos]
 category: Nano Application
-author: 
+toc: true
 layout: doc_na
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 ## Introduction
 

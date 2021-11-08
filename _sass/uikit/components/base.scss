@@ -180,7 +180,8 @@ strong { font-weight: $base-strong-font-weight; }
     /* 2 */
     font-size: $base-code-font-size;
     /* 3 */
-    color: $base-code-color;
+    background: lighten(#272822, 5%); // modified by CF for V3 15.09.2021
+    color: #f9f8f5; // modified by CF for V3 15.09.2021
     white-space: nowrap;
     @if(mixin-exists(hook-base-code)) {@include hook-base-code();}
 }
@@ -389,6 +390,7 @@ h2, .uk-h2 {
 h3, .uk-h3 {
     font-size: $base-h3-font-size;
     line-height: $base-h3-line-height;
+    margin-top: 80px; // Modified by CF for V3 16.09.2021
     @if(mixin-exists(hook-base-h3)) {@include hook-base-h3();}
 }
 

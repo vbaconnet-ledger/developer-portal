@@ -1,15 +1,11 @@
 ---
 title: How to
 subtitle:
+category: Swap Providers
 tags: []
-category: Swap Provider
+toc: true
 layout: doc_sw
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## What do we need ?
 

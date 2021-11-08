@@ -13,7 +13,7 @@ lang:               en
 permalink:          /:title/
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               favicon.png  # FC 2021-06-01 1216 ***
+logo:               ledger.png
 
 navbar:
     sticky:         true
@@ -46,7 +46,7 @@ share:
 
 # Default footer image settings
 footer:
-    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS
+    copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
@@ -55,15 +55,31 @@ disqus:
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics: GTM-W5FKZ2N
 
+# Algolia search
+algolia:
+  application_id: 'WV98VMIU7C'
+  index_name: dev_portal
+  search_only_api_key: 2c01f0f02f9134bbd0e7fa5f1c5e6818
+  extensions_to_index:
+      - md
+  settings:                                                                      
+    searchableAttributes:                                                        
+    - title                                                                    
+    - unordered(categories)                                                    
+    - unordered(tags)                                                          
+    - unordered(content)                                                       
+    customRanking:  
+
 # Path to post content assets directory i.e post images, pdfs etc
 uploads:            /uploads/
 
 # Build settings
-markdown:           kramdown
-highlighter:        rouge
+markdown: kramdown
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
+
 sass:
   style: :expanded
 

@@ -3,17 +3,21 @@
         <div class="uk-container">
             <div data-uk-navbar>
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-visible@m" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
-                    <a class="uk-navbar-item uk-logo uk-visible@m" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                    <a class="uk-navbar-item uk-logo uk-visible@l" style="width:220px;" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
+                    <!--<a class="uk-navbar-item uk-logo uk-visible@l" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
 
-                    <ul class="uk-navbar-nav uk-visible@m">
+                    <ul class="uk-navbar-nav uk-visible@l">
                         {% for link in site.data.navigation_header.left %}
+                        {% assign url = page.url | split: "/" %}
+                        {% assign category = url[2] %}
+                        {% assign link_url = link.url | split: "/" %}
+                        {% assign link_category = link_url[2] %}
                             {% if link.url contains 'http' %}
                                 {% assign domain = '' %}
                             {% else %}
                                 {% assign domain = '' | relative_url %}
                             {% endif %}
-                            {% if link.url == page.url %}
+                            {% if link_category == category %}
                                 {% assign current = ' class="uk-active"' %}
                             {% else %}
                                 {% assign current = null %}
@@ -30,13 +34,15 @@
                                             <div class="uk-navbar-dropdown">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     {% for child in link.dropdown %}
+                                                    {% assign child_url = child.url | split: "/" %}
+                                                    {% assign child_category = child_url[2] %}
                                                     {% if child.url != null %}
                                                         {% if child.url contains 'http' %}
                                                             {% assign domain = '' %}
                                                         {% else %}
                                                             {% assign domain = '' | relative_url %}
                                                         {% endif %}
-                                                        {% if child.url == page.url %}
+                                                        {% if child_category == category %}
                                                             {% assign current = ' class="uk-active"' %}
                                                         {% else %}
                                                             {% assign current = null %}
@@ -56,14 +62,16 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="uk-navbar-center uk-hidden@m">
-                    <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                <div class="uk-navbar-center uk-hidden@l">
+                    <a class="uk-navbar-item uk-logo" style="width:350px;" href="{{ "/" | relative_url }}"><img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}"></a>
+                    <!--<a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
                 </div>
                 <div class="uk-navbar-right">
                     {% if site.navbar.search %}
                         {% unless page.hero%}
                             <div>
-                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                            <!-- removed in V3 to change search from simple-jekyll-search to algolia -->
+                            <!-- <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
                                 <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
                                     <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
                                         <input id="search-navbar" class="uk-search-input" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autofocus autocomplete="off">
@@ -76,15 +84,18 @@
                                 searchInput: document.getElementById('search-navbar'),
                                 resultsContainer: document.getElementById('search-navbar-results'),
                                 noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}"><b>{category}</b> {title}</a></li>',
                                 json: "{{ '/search.json' | relative_url }}"
                             });
                             searchResults("search-navbar");
-                            </script>
+                            </script> -->
+                            
+                            <!-- Button to launch Algolia search modal -->
+                            <a class="uk-visible@l search-icon" uk-search-icon href="#" data-toggle="modal" data-target=".bd-example-modal-lg"></a>  
                         {% endunless %}
                     {% endif %}
 
-                    <ul class="uk-navbar-nav uk-visible@m">
+                    <ul class="uk-navbar-nav uk-visible@l">
                         {% for link in site.data.navigation_header.right %}
                             {% if link.url contains 'http' %}
                                 {% assign domain = '' %}
@@ -135,9 +146,9 @@
                     </ul>
 
                     {% if site.data.translation[site.lang].mobile_nav_site %}
-                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">{{ site.data.translation[site.lang].mobile_nav_site }}</span></a>
+                        <a class="uk-navbar-toggle uk-hidden@l" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">{{ site.data.translation[site.lang].mobile_nav_site }}</span></a>
                     {% else %}
-                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+                        <a class="uk-navbar-toggle uk-hidden@l" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
                     {% endif %}
 
                 </div>

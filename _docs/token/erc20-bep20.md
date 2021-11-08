@@ -1,16 +1,14 @@
 ---
 title: ERC20 and BEP20
 subtitle: Addition or modification
-tags: []
+tags: [tokens]
 category: Tokens
+toc: true
 author:
 layout: doc_et
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+
 
 
 ## How to request a token addition
