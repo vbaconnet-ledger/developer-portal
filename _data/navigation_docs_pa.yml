@@ -29,7 +29,6 @@
     - title: Ledger Live Platform SDK
       docs:
       - platform-app/modules
-      subfolderitems:
         - title: Classes
           docs:
           - platform-app/classes
