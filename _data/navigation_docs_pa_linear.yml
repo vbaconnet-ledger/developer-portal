@@ -23,8 +23,9 @@
 
 - title: Reference
   docs:
-  - platform-app/reference/manifest
-  - platform-app/reference/developer-mode
+  - platform-app/reference/manifest 
+  - platform-app/reference/developer-mode 
+  - platform-app/reference/faq 
 
 - title: Ledger Live Platform SDK
   docs:
