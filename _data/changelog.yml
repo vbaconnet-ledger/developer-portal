@@ -1,13 +1,7 @@
 # Changelog page source
-- title: New developer portal
-  label:
-  date: June 17th, 2021
-  list:
-  - The developer portal is a new unique documentation platform for third-party foundations and blockchain teams. For the first time, all essential documentation for third-party integrators is brought together in one place. It gathers all the information needed to easily build Nano Apps and integrate coins, tokens or DApps to Ledger Live.
-
 - title: Update to V3
   label:
-  date: Octobre 25th, 2021
+  date: November 8th, 2021
   list:
   - New design and easier navigation through articles
   - More secure procedure to <a href="../docs/nano-app/build">build a Nano Application</a>
@@ -15,40 +9,8 @@
   - Easiest process to <a href="../docs/token/erc20-bep20">request a ERC20 or BEP20 token addition</a>
   - For developers of blockchain integrations the technical assessment form can now be directly <a href="../docs/coin/prerequisites/#technical-assessment">downloaded</a> and filled in
 
-# Templates :
-# - title: Version 1.0.0
-#   label: STABLE
-#   date: Oct 21, 2017
-#   list:
-#   - Added Slideshow component
-#   - Added style support for radio and minusbox in Firefox
-#   - Removed class from Section component
-#   - Allow fullscreen mode for videos in Lightbox
-#   - Fixed responsive images in modal for IE11
-#   - Fix Grid and Margin component for cells with no height
-#   - Larger horizontal padding for form input and textarea
-
-# - title: Version 1.0.0
-#   label: BETA 1
-#   date: Sep 01, 2017
-#   list:
-#   - Allow fullscreen mode for YouTube videos in Lightbox
-#   - Fix icons not displaying if connected in rapid succession
-#   - Fix scrollbar jumping in Switcher
-
-# - title: Version 0.6.0
-#   label:
-#   date: Aug 15, 2017
-#   list:
-#   - Added style support for radio and checkbox in Firefox
-#   - Removed class from Section component
-#   - Add workaround to mitigate the duplicating icons issue
-#   - Fixed responsive images in modal for IE11
-
-# - title: Version 0.5.0
-#   label:
-#   date: Oct 21, 2017
-#   list:
-#   - Media options now support any valid media query syntax
-#   - Added style support for radio and checkbox in Firefox
-#   - Fix whitespace trimming in dist
+- title: New developer portal
+  label:
+  date: June 17th, 2021
+  list:
+  - The developer portal is a new unique documentation platform for third-party foundations and blockchain teams. For the first time, all essential documentation for third-party integrators is brought together in one place. It gathers all the information needed to easily build Nano Apps and integrate coins, tokens or DApps to Ledger Live.
