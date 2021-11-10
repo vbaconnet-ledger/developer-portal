@@ -7,6 +7,8 @@ toc: true
 layout: doc_sw
 ---
 
+## What do we need ?
+
 In order to become a swap provider in the Ledger Live ecosystem, you must submit your API following Ledger’s specifications. We will guide you through the requirements and the modifications you will need to apply to your API before sending it to us. 
 
 This diagram shows what is needed from the provider’s side in order to interact with Ledger Live.
@@ -16,37 +18,134 @@ This diagram shows what is needed from the provider’s side in order to interac
 ## Endpoints
 
 In order to communicate with Ledger’s back-end, you have to give us the mapping of the endpoints we need. <br> 
-As you can see on the diagram above, there are 4 main endpoints needed for the swap: 
-- To get the list of tradable pairs: `/providers`.
-- To query a rate: `/rate`.
-- To perform a swap (with the Payload/signature required by the nano): `/swap`.
-- To query a swap status: `/status`. <br>
-Additionally, we also need a way to know if a user will be able to trade given his IP (see **IP address checking** below).
+As you can see on the diagram above, there are 5 main endpoints needed for the swap: 
+- To get the list of tradable pairs: [/pairs](#get-pairs).
+- To query a rate: [/quote](#post-quote).
+- To check the login and KYC validity of the user, for a specific quote: [/check_quote](#post-check_quote).
+- To query a swap status: [/status](#post-status).
+- To perform a swap (with the Payload/signature required by the nano): [/swap](post-swap). <br>
 
-### Data mapping
-
-Here are the details about each needed endpoint. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure (see [Swap Endpoint](#swap-endpoint) section below for more details). 
+You will find the details about each needed endpoint below. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
-The following swagger page can be found [here](https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/v3).
 
-<iframe title="Endpoint mapping" src="https://swap-stg.ledger.com/docs/index.html?url=/docs/docs.yaml#/" width="100%" height="400" style="border:1px solid black;"></iframe>
+**IP address checking** <br>
+Additionally, we also need a way to know if a user will be able to do coin swap given his IP.<br>
+Our back-end can adapt to how you decide to do this, but we recommend you use a dedicated endpoint. Our back-end will send the user’s IP address to that endpoint, without logging it. In response, your endpoint should tell us if the trade is accepted or rejected.
 
-Some requirements about the **/rate** endpoint:
+### GET /pairs 
+- **Function**: Return a list of supported pairs.
+- **Input**: --
+- **Output**: ??
+- **Payload**:
+```json
+[
+   {
+      "from":"btc",
+      "to":"bat",
+      "tradeMethod":[
+         "fixed",
+         "float"
+      ]
+   },
+   {
+      "from":"bat",
+      "to":"btc",
+      "tradeMethod":[
+         "fixed",
+         "float"
+      ]
+   }
+]
+```
+
+### POST /quote 
+- **Function**: Return a quote for a pair and amount.
+- **Input**: from, to, account.
+- **Output**: quoteID, rate, expiry, method (fixed/float).<br>
+  Optional: from, to, amountFrom, amountTo.
+- **Payload**:
+  - Success
+```json
+{
+   "quoteId":"id1",
+   "from":"btc",
+   "to":"bat",
+   "amountFrom":"1",
+   "amountTo":"40000",
+   "rate":"37800.21",
+   "tradeMethod":"float",
+   "expiry": "date"  
+}
+``` 
+
+Some requirements about the **/quote** endpoint:
 - The quote must work without user auth.
 - The quote must be valid long enough (at least a few minutes).
+
+### POST /check_quote 
+- **Function**: Checks validity of login for specified trade.
+- **Input**: quoteID, bearerToken (can be NULL).
+- **Output**: `ok` or `error_state` in <br>
+  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR.
+- **Payload**:
+  - Success
+Status code at 200 <br>
+No HTTP body
+  - Error
+```json
+{
+  code: "KYC_PENDING",
+  error: "Your KYC is under validation" ,
+  description: "Your KYC is under validation by an operator"  
+}
+``` 
+
+### POST /status
+- **Function**: Return the status of a quote / trade being executed.
+- **Input**: quoteID.
+- **Output**: State (open, expired, pending_recv, pending_settlement, completed) + ??
+- **Payload**:
+  - Success
+```json
+{
+   "provider":"changelly",
+   "swapId":"id1",
+   "status":"finished"
+}
+```
+
+### POST /swap 
+- **Function**: Generates secure nano payload to initiate trade.
+- **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
+  Optional: from, to, amount.
+- **Output**: Payload, payload_signature + swapId? <br>
+  In case of error, returns the same payload as `/check_quote`.
+- **Payload**:
+  - Success
+```json
+{
+   "provider":"changelly",
+   "deviceTransactionId":"arch",
+   "from":"bnb",
+   "to":"bch",
+   "address":"bc1qvy43vxkjlvv79396c3x59grhxrq4a7afwp0fqu",
+   "refundAddress":"0x31137882f060458bde9e9ac3caa27b030d8f85c1",
+   "amountFrom":"10"
+}
+```
+  - Error
+```json
+{
+  code: "KYC_PENDING",
+  error: "Your KYC is under validation" ,
+  description: "Your KYC is under validation by an operator"  
+}
+``` 
 
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
 - Should check the auth bearer token.<br>
-See [Swap Endpoint](#swap-endpoint) section below for more details.
-
-**IP address checking** <br>
-You should provide a way to check if the user's geolocation is allowed to do coin swap, given the IP of the user.<br>
-Our back-end can adapt to how you decide to do this, but we recommend you use a dedicated endpoint. Our back-end will send the user’s IP address to that endpoint, without logging it. In response, your endpoint should tell us if the trade is accepted or rejected.
-
-
-### Swap endpoint
 
 #### Protobuf message (payload)
 
@@ -142,7 +241,46 @@ bdk.xTq9CYn38DdxRfocnOJpjRWv4eD-_gVEMNoz_7nHVIFRhlLZOQyk04Q6zHHucgK3S
 s3IG1NOjw5aC9weCF5aRg"
 ```
 
-## KYC & Registration
+## Login & KYC
 
-You will need to develop an iframe for the Login, which will also trigger the KYC when needed. <br>
-TBD: This section will be updated once we know if that iframe will go in a live app, and how it will notify the Ledger Live back-end that the Login/KYC is completed. 
+If you need to have a Login/KYC before the user can perform a swap, you must develop a Login/KYC widget, as well as an iframe to host that widget. 
+
+The iframe will handle the Login, and will also trigger the KYC when needed. 
+This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. 
+
+**Quote flow**
+
+In this diagram, you can see where the Widget Login/KYC is integrated during the quote process: 
+
+![Quote flow diagram](../images/swap-ftx-quote-flow.png "Quote flow diagram")
+
+**Login Widget**
+
+![Login widget diagram](../images/swap-ftx-login.png "Login widget diagram")
+
+- Input parameters: none.
+- Output (postMessage): `userId`, `bearerToken`:
+```json
+{
+  "user_id": "xxxxxx",
+  "bearer_token": "xxxxx"  
+}
+```
+
+**KYC Widget**
+
+![KYC widget diagram](../images/swap-ftx-kyc.png "KYC widget diagram")
+
+- Input parameters (url params): `quoteId`, `bearerToken`.
+- Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as [/check_quote](#post-check_quote) backend endpoint:
+```json
+{
+  code: "KYC_OK" 
+}
+```
+
+**Trade execution flow**
+
+In this diagram, you can see the trade execution flow after the Login/KYC is validated: 
+
+![Trade execution flow diagram](../images/swap-ftx-trade-flow.png "Trade execution flow diagram")
