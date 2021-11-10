@@ -30,6 +30,6 @@ Ledger designed and implemented Paraswap, the first Ethereum plugin.
 You will find documentation to make your plugin [here](https://github.com/LedgerHQ/app-ethereum/blob/named-external-plugins/doc/ethapp_plugins.asc).
 
 <!--  -->
-{% include alert.html style="success" text="The second mandatory requirement to obtain official support by Ledger for your DApp is using a plugin to verify transaction details on the Nano device." %}
+{% include alert.html style="tip" text="The second mandatory requirement to obtain official support by Ledger for your DApp is using a plugin to verify transaction details on the Nano device." %}
 <!--  -->
 

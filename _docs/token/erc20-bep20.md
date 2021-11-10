@@ -20,7 +20,7 @@ First, make sure your token isn’t already listed by checking this table of the
 Please note you can easily change the tag version to check the content of a specific Ledger Live version. 
 
 <!--  -->
-{% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
+{% include alert.html style="tip" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
 <!--  -->
 
 ### 2. How to get my token listed?

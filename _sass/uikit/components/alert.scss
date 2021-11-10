@@ -92,40 +92,40 @@ $alert-danger-color:                             $global-danger-background !defa
  ========================================================================== */
 
 /*
- * Primary
+ * Primary - Renamed as "note" on the 10th of Nov 2021 for more clarity in documentation
  */
 
-.uk-alert-primary {
+.uk-alert-note {
     background: $alert-primary-background;
     color: $alert-primary-color;
     @if(mixin-exists(hook-alert-primary)) {@include hook-alert-primary();}
 }
 
 /*
- * Success
+ * Success - Renamed as "tip" on the 10th of Nov 2021 for more clarity in documentation
  */
 
-.uk-alert-success {
+.uk-alert-tip {
     background: $alert-success-background;
     color: $alert-success-color;
     @if(mixin-exists(hook-alert-success)) {@include hook-alert-success();}
 }
 
 /*
- * Warning
+ * Warning - Renamed as "important" on the 10th of Nov 2021 for more clarity in documentation
  */
 
-.uk-alert-warning {
+.uk-alert-important {
     background: $alert-warning-background;
     color: $alert-warning-color;
     @if(mixin-exists(hook-alert-warning)) {@include hook-alert-warning();}
 }
 
 /*
- * Danger
+ * Danger - Renamed as "warning" on the 10th of Nov 2021 for more clarity in documentation
  */
 
-.uk-alert-danger {
+.uk-alert-warning {
     background: $alert-danger-background;
     color: $alert-danger-color;
     @if(mixin-exists(hook-alert-danger)) {@include hook-alert-danger();}
