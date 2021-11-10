@@ -61,7 +61,7 @@ After the Launch meeting, we will assess the feasibility and the maturity of you
 - Contact points for Technical and Documentation issues
 
 <!--  -->
-{% include alert.html style="success" text="Roadmaps and terms can be changed by any party along the way, of course, as long as these changes are talked about and agreed together." %}
+{% include alert.html style="tip" text="Roadmaps and terms can be changed by any party along the way, of course, as long as these changes are talked about and agreed together." %}
 <!--  -->
 
 

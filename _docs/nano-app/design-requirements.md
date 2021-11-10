@@ -49,7 +49,7 @@ The Device icon must be displayed on the first welcome screen.
 Most of the time, Bolos apps expose few functionalities to the user. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons !) and also because of the screen size which offer only 128\*32 pixels. Ledger provides some guidance to avoid third party developers to reinvent the wheel.
 
 <!--  -->
-{% include alert.html style="primary" text="See the <a href='../display-management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
+{% include alert.html style="note" text="See the <a href='../display-management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
 <!--  -->
 
 

@@ -28,7 +28,7 @@ import { WindowMessageTransport } from "ledger-live-platform-sdk";
 const llapi = new LedgerLiveApi(new WindowMessageTransport());
 ```
 <!--  -->
-{% include alert.html style="success" text="The package name for the import is not definitive yet." %}
+{% include alert.html style="tip" text="The package name for the import is not definitive yet." %}
 <!--  -->
 
 (TBD) Demo repo

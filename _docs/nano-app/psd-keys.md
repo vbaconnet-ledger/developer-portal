@@ -50,7 +50,7 @@ For a more detailed list and explanation of some of the use-cases made possible 
 In the [next section](../psd-applications), `hd_use_cases`, we'll talk about how all of these features are used by HD wallets and other applications.
 
 <!--  -->
-{% include alert.html style="primary" text="If you'd like to play with BIP 39 mnemonics or BIP 32 derivation on a computer, take a look at this tool: <a href='https://iancoleman.io/bip39/' class='alert-link'> iancoleman.io/bip39 </a> " %}
+{% include alert.html style="note" text="If you'd like to play with BIP 39 mnemonics or BIP 32 derivation on a computer, take a look at this tool: <a href='https://iancoleman.io/bip39/' class='alert-link'> iancoleman.io/bip39 </a> " %}
 <!--  -->
 
 **Footnotes**

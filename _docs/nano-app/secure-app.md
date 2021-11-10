@@ -13,7 +13,7 @@ layout: doc_na
 Developing applications for Ledger devices is an intricate process. The security of the user funds relies on the fact that the application works in a correct and secure manner and that potential attackers cannot misuse it to extract private data and/or sign requests which are not authorized by the user. The app should guard against such attacks because they have a very low entry point -- a Ledger device attached to a compromised host might be a victim of the attacker's program sending invalid/non-standard requests to the device.
 
 <!--  -->
-{% include alert.html style="warning" text="This guide is meant to be a summary of all important aspects of Ledger Apps security and it shall be read by developers before developing an app for Ledger." %}
+{% include alert.html style="important" text="This guide is meant to be a summary of all important aspects of Ledger Apps security and it shall be read by developers before developing an app for Ledger." %}
 <!--  -->
 
 ## Development practices
@@ -40,7 +40,7 @@ It will output an HTML report describing all the potential vulnerabilities it ha
 Once all the problems have been fixed, we recommend integrating this check in your CI tool. Integration on GitHub Actions can follow the model of the Boilerplate app: <https://github.com/LedgerHQ/app-boilerplate/blob/f62531462548488cb547cb5ffe63ee0bb576f290/.github/workflows/ci-workflow.yml#L27-L46>. Integrating such check in CI ensures no trivial vulnerability has been introduced in new code.
 
 <!--  -->
-{% include alert.html style="warning" text="Ledger will not sign an app if potential errors have been detected by Clang Static Analyzer." %}
+{% include alert.html style="important" text="Ledger will not sign an app if potential errors have been detected by Clang Static Analyzer." %}
 <!--  -->
 
 Rationale: Problems identified by `make scan-build` are easy to fix, and allow the security team to detect the more obvious vulnerabilities. Moreover, it prevents developers from using unsafe string manipulation functions such as `strcpy`. Using such tool improves code quality over time.
@@ -52,7 +52,7 @@ Apps must build with no warnings using the container image intended for that pur
 Though it is not enforced yet, the `-Werror` compilation flag should be set, and no warning should be intentionally disabled.
 
 <!--  -->
-{% include alert.html style="warning" text="Ledger will not sign an app if warnings are emitted during compilation." %}
+{% include alert.html style="important" text="Ledger will not sign an app if warnings are emitted during compilation." %}
 <!--  -->
 
 Rationale : Former SDKs used to generate lots of errors - sometimes dozens - when compiling an application. This had the unfortunate consequence of discouraging developers from reading the compilation output and miss potentially important alerts that could be well be vulnerabilities.
@@ -126,7 +126,7 @@ First, we recommended the first level in this hierarchy of subkeys be always tie
 Next, all coins must follow the logic defined in [BIP-0044](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki). If a coin is already registered in [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) then its associated application must derive keys in the registered subtree only. If it is not already registered then a subtree or "path" must be chosen and not be in conflict with any other application that might be using this subtree already.
 
 <!--  -->
-{% include alert.html style="warning" text="Ledger will not sign apps whose BIP32 prefixes have not been properly set." %}
+{% include alert.html style="important" text="Ledger will not sign apps whose BIP32 prefixes have not been properly set." %}
 <!--  -->
 
 Restricting the derivation path can be done by setting the `--path` property in the app Makefile.
@@ -146,13 +146,13 @@ APP_LOAD_PARAMS=--curve ed25519 --curve prime256r1 --path "44'/535348'" --path "
 ```
 
 <!--  -->
-{% include alert.html style="warning" text="Ledger will not sign apps where lock on curves has not been properly set." %}
+{% include alert.html style="important" text="Ledger will not sign apps where lock on curves has not been properly set." %}
 <!--  -->
 
 Rationale: Setting prefixes is crucial, as it limits the amount of damage an attacker can cause if they manage to compromise an application. If a vulnerability is exploited on a poorly written or backdoored application, an attacker should not be able to exploit it to extract private keys from other apps, such as Bitcoin or Ethereum keys.
 
 <!--  -->
-{% include alert.html style="warning" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
+{% include alert.html style="important" text="If your application derives keys on the hardened path 44'/60' then the chainID parameter must be different from 0 or 1. This is necessary to avoid replaying transactions broadcoast on Ethereum-like chains on Ethereum. As a general recommendation, and to ensure a good level of privacy for the end user, we recommend to always use the correct coin type in the derivation path as defined in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md' class='alert-link'> slip44 </a>" %}
 <!--  -->
 
 ## Application Architecture
@@ -258,20 +258,20 @@ Warning: If you allow signing untrusted hashes (while displaying a prompt to the
 ### Signing/disclosing keys without user approval
 
 <!--  -->
-{% include alert.html style="warning" text="You must always require user approval for signing transactions/messages." %}
+{% include alert.html style="important" text="You must always require user approval for signing transactions/messages." %}
 <!--  -->
 
 Rationale: If you do not require user consent for signing important data, an attacker can use your device as a signing black box and sign whatever they want.
 
 <!--  -->
-{% include alert.html style="primary" text="You might also consider approvals for extracting public keys, as some users might want extended privacy." %}
+{% include alert.html style="note" text="You might also consider approvals for extracting public keys, as some users might want extended privacy." %}
 <!--  -->
 
 1. They might not want to reveal their *root/account* public key, only address keys
 2. They might not want to reveal address public key until it is required. (Some cryptocurrencies use addresses that are hash of public keys. It is therefore enough to send the address to the host).
 
 <!--  -->
-{% include alert.html style="primary" text="There is a trade-off between privacy and usability here. If you want privacy, it would require a user interaction every time they want to use Ledger device, as opposed to only interaction while signing transactions. The behaviour could also be manually set in the application options." %}
+{% include alert.html style="note" text="There is a trade-off between privacy and usability here. If you want privacy, it would require a user interaction every time they want to use Ledger device, as opposed to only interaction while signing transactions. The behaviour could also be manually set in the application options." %}
 <!--  -->
 
 ### Don't roll your own crypto primitives

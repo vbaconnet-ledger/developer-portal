@@ -35,5 +35,5 @@ Ledger offers a co-branded partnership that will help you customize your marketi
 
 
 <!--  -->
-{% include alert.html style="success" text="Co-branded partnerships or affiliate links do not give a project priority in Ledger's marketing plan timeline." %}
+{% include alert.html style="tip" text="Co-branded partnerships or affiliate links do not give a project priority in Ledger's marketing plan timeline." %}
 <!--  -->

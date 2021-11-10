@@ -11,11 +11,11 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="success" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <b>Speculos</b> for loading to work. See how to <a href='../../speculos/installation/build'>install</a> and <a href='../../speculos/installation/build'>use</a> it. For the Nano S, you can read the following instructions." %}
+{% include alert.html style="tip" text="The <b>Nano X</b> does not support side loading, therefore you must use the device emulator <b>Speculos</b> for loading to work. See how to <a href='../../speculos/installation/build'>install</a> and <a href='../../speculos/installation/build'>use</a> it. For the Nano S, you can read the following instructions." %}
 <!--  -->
 
 <!--  -->
-{% include alert.html style="warning" text="If you are a Mac or a Windows user, you should use a Linux Virtual Machine to load the application to a Nano S." %}
+{% include alert.html style="important" text="If you are a Mac or a Windows user, you should use a Linux Virtual Machine to load the application to a Nano S." %}
 <!--  -->
 
 ## 1. Define the udev rules
@@ -29,7 +29,7 @@ wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_ud
 ## 2. Load the application from inside the container image 
 
 <!--  -->
-{% include alert.html style="warning" text='If you want to load and delete the app directly from the container image. You need to compile the application, in the source file of your application, adding the <code>--privileged</code> option: <br> <code>$ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" <br> --privileged ledger-app-builder:latest</code>' %}
+{% include alert.html style="important" text='If you want to load and delete the app directly from the container image. You need to compile the application, in the source file of your application, adding the <code>--privileged</code> option: <br> <code>$ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" <br> --privileged ledger-app-builder:latest</code>' %}
 <!--  -->
 
 While de container image is running:
@@ -68,7 +68,7 @@ deactivate
 #### Clone the SDK
 
 <!--  -->
-{% include alert.html style="warning" text="The Nano S SDK must first be locally cloned and stored in <code>BOLOS_SDK</code> for the loading to work." %}
+{% include alert.html style="important" text="The Nano S SDK must first be locally cloned and stored in <code>BOLOS_SDK</code> for the loading to work." %}
 <!--  -->
 
 Use the following commands:
@@ -86,5 +86,5 @@ export BOLOS_SDK=<path-to>nanos-secure-sdk
 4. You can deactivate the virtual environment with the command `deactivate`.
 
 <!--  -->
-{% include alert.html style="primary" text="Before loading an application, make sure you have enough space on the device." %}
+{% include alert.html style="note" text="Before loading an application, make sure you have enough space on the device." %}
 <!--  -->
