@@ -13,7 +13,7 @@ layout: doc_na
 
 2. Before commiting your changes remember to sign your commits.
 
-{% include alert.html style="warning" text="For security reasons, the repository is set up to accept only pull requests with signed commits. To sign your commits, use the -S flag : <code>$ git commit -S -m your commit message</code>" %}
+{% include alert.html style="important" text="For security reasons, the repository is set up to accept only pull requests with signed commits. To sign your commits, use the -S flag : <code>$ git commit -S -m your commit message</code>" %}
 
 ## 1. Modify the Makefile
 
@@ -27,7 +27,7 @@ APPNAME = "TomoChain"
 ```
 
 <!--  -->
-{% include alert.html style="warning" text="It is necessary to choose a Derivation Path and a Chain ID specific to your network to prevent the risk of replay attack (Introduced by EIP155) that can happen when using the same Derivation Path ( m/44'/60'/0') and Chain ID as Ethereum. This could expose your users to loss of funds.<br>
+{% include alert.html style="important" text="It is necessary to choose a Derivation Path and a Chain ID specific to your network to prevent the risk of replay attack (Introduced by EIP155) that can happen when using the same Derivation Path ( m/44'/60'/0') and Chain ID as Ethereum. This could expose your users to loss of funds.<br>
 You can either use the same Derivation Path but define a new chain ID (make sure this is not used by another network) or use slip44/BIP44 standard to reserve a dedicated coin type that will allow you to define a new derivation path." %}
 <!--  -->
 
