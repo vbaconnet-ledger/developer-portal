@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 subtitle:
 tags: [platform app, platform application, live app, ledger live app, faq]
 category: Platform Application
-toc: true
+toc:
 layout: doc_pa
 ---
 
