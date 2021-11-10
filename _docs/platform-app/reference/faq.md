@@ -9,13 +9,11 @@ layout: doc_pa
 
 
 
-| Question           |  Answer | 
+| Question        |  Answer        | 
 | --------------- | -------------- | 
-| Question A  | Answer A     | 
+| Is there  a recommended big number library  | Yes, [bignumber.js](www.npmjs.com/package/bignumber.js) | 
 | --------------- | -------------- | 
-| Question B  | Answer B     | 
+| What are the graphics design recommendations in terms of look/color/font?  | Your app should have your own identity. <br>Please don't use Ledger's. | 
 | --------------- | -------------- | 
-| Question C  | Answer C     | 
-| --------------- | -------------- | 
-| Question D  | Answer D     | 
+
 
