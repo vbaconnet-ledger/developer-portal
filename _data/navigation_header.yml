@@ -14,13 +14,15 @@ left:
   - title: Tokens
     url: /docs/token/introduction
 
-  - title: DApp
-    url: /docs/dapp/introduction
+  - title: Live App
+    url: /docs/live-app/introduction
 
   - title: Tools
     dropdown:
     - title: Emulator
       url: /docs/speculos/installation/build
+    - title: Ledger Live developer mode
+      url: /docs/developer-mode/introduction
 
 # Navbar right menu navigation links
 

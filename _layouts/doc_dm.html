@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-grid-medium" data-uk-grid>
+
+            <div class="sidebar-fixed-width uk-visible@l">
+                <div id="sidebar-docs" class="sidebar-docs uk-position-fixed uk-margin-top">
+                    {% for section in site.data.navigation_docs_dm %}
+                    <h5>{{ section.title }}</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    {% for doc in section.docs %}
+                      {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                      {% assign p = site.docs | where:"url", doc_url | first %}
+                      <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="uk-width-1-1 uk-width-expand@m">
+
+                <article class="uk-article">
+
+                    <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+
+                    {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
+
+                    {% include reading-time.html %}
+
+                    <div class="article-content link-primary">
+
+                      {% if page.toc %}
+                      <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m mobile-sections">
+                        <h5>Sections in this article</h5>
+                        <div class="content-toc">
+                          {% include toc.html html=content %}
+                        </div>
+                      </div>
+                      {% endif %}
+
+                        {{ content }}
+                        {% if site.share.doc %}
+                            <!-- FC
+                            {% include share.html %}
+                            -->
+                        {% endif %}
+                    </div>
+
+                    {% include hook-post-content-doc.html %}
+
+                    <hr class="uk-margin-medium">
+
+                    <div>
+                      <h5>Did you find this page helpful?</h5>
+                        <!-- LikeBtn.com BEGIN -->
+                        <span class="likebtn-wrapper" data-theme="custom" data-icon_l="sgn8-p" data-icon_d="sgn8-m" data-white_label="true" data-show_like_label="false" data-counter_type="percent" data-popup_disabled="true" data-share_enabled="false" data-tooltip_enabled="false"></span>
+                        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+                        <!-- LikeBtn.com END -->
+                    </div>
+                    <br>
+
+                    <br>
+
+
+                    {% include comments.html %}
+
+                    {% include paginate-doc.html %}
+
+                    <!-- {% include related-docs.html %} -->
+
+                    {% if site.disqus.shortname %}
+                        {% include disqus_comments.html %}
+                    {% endif %}
+                </article>
+
+                <script>
+                    // Table of contents scroll to
+                    UIkit.scroll('#markdown-toc a', {
+                        duration: 400,
+                        offset: 120
+                    });
+                </script>
+
+            </div>
+            {% if page.toc %}
+            <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
+              <div id="sidebar-toc" class="sidebar-toc sidebar-sticky">
+                <h5>Sections in this article</h5>
+                {% include toc.html html=content %}
+              </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- JS for anchor links -->
+{% include anchor_support.html %}
+<!-- JS right side bar following scroll -->
+{% include scroll.html %}
+<!-- JS for side bar not overlapping footer -->
+{% include bottom-page.html %}
