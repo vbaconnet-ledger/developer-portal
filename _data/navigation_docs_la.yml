@@ -24,26 +24,25 @@
       - live-app/howto/swap
       - live-app/howto/broadcast
       - live-app/howto/release
-
-- title: SDK (reference)
-  docs:
-  - live-app/modules
-  subfolderitems:
-    - title: Classes
+    - title: SDK
       docs:
-      - live-app/classes
-    - title: Enums
-      docs:
-      - live-app/device-model
-      - live-app/exchange-type
-      - live-app/families
-      - live-app/fees-level
-    - title: Interfaces
-      docs:
-      - live-app/transport
-      - live-app/transaction-common
-      - live-app/bitcoin-transaction
-      - live-app/ethereum-transaction
+      - live-app/modules
+      - subfolderitems:
+        - title: Classes
+          docs:
+          - live-app/classes
+        - title: Enums
+          docs:
+          - live-app/device-model
+          - live-app/exchange-type
+          - live-app/families
+          - live-app/fees-level
+        - title: Interfaces
+          docs:
+          - live-app/transport
+          - live-app/transaction-common
+          - live-app/bitcoin-transaction
+          - live-app/ethereum-transaction
 
 - title: Web3 Live App
   docs:

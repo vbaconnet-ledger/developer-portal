@@ -26,12 +26,24 @@ layout: default
                               {% for doc in entry.docs %}
                                 {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
                                 {% assign p = site.docs | where:"url", doc_url | first %}
-                                <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                                {% if p.title %}
+                                    <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                                {% else %}
+                                    {% for section in doc.subfolderitems %}
+                                        <li>{{ section.title }}</li>
+                                        <ul class="uk-nav uk-nav-default doc-nav">
+                                                {% for doc in section.docs %}
+                                                {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                                                {% assign p = site.docs | where:"url", doc_url | first %}
+                                                <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                                                {% endfor %}
+                                        </ul>
+                                    {% endfor %}
+                                {% endif %}
                               {% endfor %}
                             </ul>
                           {% endfor %}
                         </ul>
-
                       {% endif %}
                     {% endfor %}
                 </div>
