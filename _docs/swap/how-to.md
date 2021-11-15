@@ -29,7 +29,7 @@ You will find the details about each needed endpoint below. <br>
 Note that since the APIs are integrated through Ledger backend, the provider APIs don't need to follow this documentation exact pattern as long as the correct data is provided.
 
 <!--  -->
-{% include alert.html style="important" text="The only exception being the **/swap** endpoint that needs to return the binary payload and signature with our exact specified format since it will be interpreted by the Nano directly." %}
+{% include alert.html style="important" text="The only exception being the <b>/swap</b> endpoint that needs to return the binary payload and signature with our exact specified format since it will be interpreted by the Nano directly." %}
 <!--  -->
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
