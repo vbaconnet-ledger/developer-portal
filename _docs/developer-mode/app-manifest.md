@@ -4,7 +4,7 @@ subtitle:
 tags: []
 category: Ledger Live Developer Mode
 toc: 
-layout: doc_dm
+layout: doc
 ---
 
 To be able to test and integrate your application, you first need to write your application Manifest file.

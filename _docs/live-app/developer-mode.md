@@ -5,7 +5,7 @@ tags: [enable developer mode, manifest, ledger live]
 category: DApp Integration
 author:
 toc: true
-layout: doc_la
+layout: doc
 ---
 
 To activate the Developer mode in Ledger Live, go to the **Settings/About** section, and click 10 times on the **Ledger Live version**. See the image below.

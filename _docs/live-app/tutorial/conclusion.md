@@ -2,7 +2,7 @@
 title: Conclusion
 subtitle:
 tags: []
-layout: doc_la
+layout: doc
 ---
 
 Congratulations, you have now created, initialized and setup a basic Live App leveraging the `live-app-sdk`.

@@ -2,7 +2,7 @@
 title: Import
 subtitle:
 tags: []
-layout: doc_la
+layout: doc
 ---
 
 If not done already, you must have Ledger Live Desktop installed on your computer. Head over to the [download page](https://www.ledger.com/ledger-live/download) to get started.

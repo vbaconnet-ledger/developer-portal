@@ -21,6 +21,10 @@ layout: default
   {% assign docs = site.data.navigation_docs_tr %}
 {% elsif category == "swap"  %}
   {% assign docs = site.data.navigation_docs_sw %}
+{% elsif category == "developer-mode"  %}
+  {% assign docs = site.data.navigation_docs_dm %}
+{% elsif category == "live-app"  %}
+  {% assign docs = site.data.navigation_docs_la %}
 {% endif %}
 
 <div class="uk-section">

@@ -4,7 +4,7 @@ subtitle:
 tags: [platform app, platform application, live app, ledger live app, faq]
 category: Platform Application
 toc:
-layout: doc_la
+layout: doc
 ---
 
 

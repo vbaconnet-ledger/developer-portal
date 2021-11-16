@@ -4,7 +4,7 @@ subtitle:
 tags: []
 category: Ledger Live Developer Mode
 toc: 
-layout: doc_dm
+layout: doc
 ---
 
 TBW

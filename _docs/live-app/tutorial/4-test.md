@@ -2,7 +2,7 @@
 title: Test
 subtitle:
 tags: []
-layout: doc_pa
+layout: doc
 ---
 
 Before proceeding with the following steps, make sure you have at least one Ethereum account created. Head over to [this page](https://support.ledger.com/hc/en-us/articles/4404389482641-Add-your-accounts?docs=true) for more informations regarding the procedure to add a cryptoasset account inside of Ledger Live.

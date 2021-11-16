@@ -4,7 +4,7 @@ subtitle:
 tags: [Ledger Live Platform SDK, platform sdk, sdk, api]
 category: Platform Application
 toc: true
-layout: doc_la
+layout: doc
 ---
 
 

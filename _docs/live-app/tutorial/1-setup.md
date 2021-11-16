@@ -2,7 +2,7 @@
 title: Setup
 subtitle:
 tags: []
-layout: doc_la
+layout: doc
 ---
 
 The first step is to create a new project using the `live-app-sdk`. To do so, we will use the [`live-app` Create React App template](https://www.npmjs.com/package/@ledgerhq/cra-template-live-app) in order to bootstrap a React TypeScript web app initialized with the `live-app-sdk`.

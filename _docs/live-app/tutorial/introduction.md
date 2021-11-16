@@ -3,7 +3,7 @@ title: Introduction
 subtitle:
 tags: []
 toc: true
-layout: doc_la
+layout: doc
 ---
 
 ## Live App setup tutorial

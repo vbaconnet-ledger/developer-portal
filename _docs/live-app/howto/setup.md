@@ -4,7 +4,7 @@ subtitle:
 tags: []
 category: Platform Application
 toc: true
-layout: doc_la
+layout: doc
 ---
 
 #### Sections in this article

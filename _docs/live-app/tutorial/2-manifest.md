@@ -2,7 +2,7 @@
 title: Manifest
 subtitle:
 tags: []
-layout: doc_la
+layout: doc
 ---
 
 Now that you have created your Live App, let’s create the associated manifest.
