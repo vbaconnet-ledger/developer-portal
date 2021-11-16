@@ -25,7 +25,12 @@ As you can see on the diagram above, there are 5 main endpoints needed for the s
 - To query a swap status: [/status](#post-status).
 - To perform a swap (with the Payload/signature required by the nano): [/swap](post-swap). <br>
 
-You will find the details about each needed endpoint below. Note that they are all pretty standard, except for **POST /swap**, which needs to follow our exact structure. 
+You will find the details about each needed endpoint below. <br>
+Note that since the APIs are integrated through Ledger backend, the provider APIs don't need to follow this documentation exact pattern as long as the correct data is provided.
+
+<!--  -->
+{% include alert.html style="important" text="The only exception being the <b>/swap</b> endpoint that needs to return the binary payload and signature with our exact specified format since it will be interpreted by the Nano directly." %}
+<!--  -->
 
 As an example, you can refer to  [Changelly’s API](https://github.com/changelly/api-changelly), a provider that is already integrated to Ledger Live. <br> 
 
@@ -36,7 +41,7 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
 ### GET /pairs 
 - **Function**: Return a list of supported pairs.
 - **Input**: --
-- **Output**: ??
+- **Output**: Array of supported swap pairs, with supported quote type (fixed / float).
 - **Payload**:
 ```json
 [
@@ -59,9 +64,12 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
 ]
 ```
 
+**Fixed quote**: The quote price is guaranteed until execution (or until end of quote validity period). <br>
+**Float quote**: The quote price is indicative only, real price is computed at execution time
+
 ### POST /quote 
 - **Function**: Return a quote for a pair and amount.
-- **Input**: from, to, account.
+- **Input**: from, to, amount.
 - **Output**: quoteID, rate, expiry, method (fixed/float).<br>
   Optional: from, to, amountFrom, amountTo.
 - **Payload**:
@@ -80,16 +88,16 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
 ``` 
 
 Some requirements about the **/quote** endpoint:
-- The quote must work without user auth.
+- The quote must work without user auth. It can require a Ledger auth.
 - The quote must be valid long enough (at least a few minutes).
 
 ### POST /check_quote 
-- **Function**: Checks validity of login for specified trade.
+- **Function**: Checks validity of login and KYC for a specific quote / trade.
 - **Input**: quoteID, bearerToken (can be NULL).
 - **Output**: `ok` or `error_state` in <br>
   UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR.
 - **Payload**:
-  - Success
+  - Success <br>
 Status code at 200 <br>
 No HTTP body
   - Error
@@ -104,36 +112,25 @@ No HTTP body
 ### POST /status
 - **Function**: Return the status of a quote / trade being executed.
 - **Input**: quoteID.
-- **Output**: State (open, expired, pending_recv, pending_settlement, completed) + ??
+- **Output**: State (open, expired, pending_recv, pending_settlement, completed). Statuses should have the same look as `error_state` in **/check_quote**.
 - **Payload**:
   - Success
 ```json
 {
-   "provider":"changelly",
-   "swapId":"id1",
+   "quoteId":"id1",
    "status":"finished"
 }
 ```
 
 ### POST /swap 
-- **Function**: Generates secure nano payload to initiate trade.
+- **Function**: Generates a secure binary payload for the nano in order to authorize the transaction.
 - **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
-- **Output**: Payload, payload_signature + swapId? <br>
-  In case of error, returns the same payload as `/check_quote`.
+- **Output**: payload, payload_signature. <br>
+  In case of error, returns the same payload as **/check_quote**.
 - **Payload**:
-  - Success
-```json
-{
-   "provider":"changelly",
-   "deviceTransactionId":"arch",
-   "from":"bnb",
-   "to":"bch",
-   "address":"bc1qvy43vxkjlvv79396c3x59grhxrq4a7afwp0fqu",
-   "refundAddress":"0x31137882f060458bde9e9ac3caa27b030d8f85c1",
-   "amountFrom":"10"
-}
-```
+  - Success <br>
+  Refer to payload in the [JWS signature](#jws-signature) section below.
   - Error
 ```json
 {
@@ -146,6 +143,18 @@ No HTTP body
 The **/swap** endpoint is trickier, and needs to follow this structure, as well as some requirements:
 - Signed prop. format for the user nano.
 - Should check the auth bearer token.<br>
+
+Here is a little diagram to explain how the `payload` and the `payload_signature` are generated: 
+![Payload and Payload Signature generation diagram](../images/payload-signature-generation.png "Payload and Payload signature generation")
+- `payload`: the trade parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools we do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) we get the `payload` field.  
+- `payload_signature`: From the binary encoding of the previous [protobuf](https://developers.google.com/protocol-buffers) (Byte Array), we sign it with [ES256](https://ldapwiki.com/wiki/ES256) and the provider's private key to get a Signature Byte Array. Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) we get the `payload_signature`.
+
+
+#### Input field: nonce
+
+A nonce field will be passed as parameter of the **/swap** endpoint.<br>
+It is a 32 bytes nonce which is generated by the hardware wallet to avoid replay attacks.<br> 
+It will be base 64 URL encoded before being sent to the **/swap** endpoint
 
 #### Protobuf message (payload)
 
@@ -190,28 +199,9 @@ So multiply 1 **BTC** by `10^8` → `0x5F5E100`.
 - 2 **ETH** would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
 So multiply 2 **ETH** by `10^18` → `0x1BC16D674EC80000`. 
 
+#### Output field: providerSig
 
-#### New field: nonce
-
-The following JSON field should be added to your API:
-
-- In the JSON request for a swap, a new field `nonce` for the 32 bytes nonce which is generated by the hardware wallet to avoid replay attacks. It will be base 64 URL encoded by the Ledger Live.
-
-```json
-{"from": "btc", 
- "to": "eth",
- "address": "0xee*******5E3DFc214",
- "amountFrom": "1",
- "rateId": "f3dd48106a63b*********b7ab5413d32c7b96301a7e82",
- "refundAddress": "1Bvjij5653y9****BGPuQBPzTZpb",
- "nonce": "r5mP6AbVNua5FsNw-oFD4tFJUrXQA1tYwMsmrg4Ft2Q"}
- ```
-
-#### New field: providerSig
-
-The following JSON field should be added to your API:
-
-In the JSON response, a new field `providerSig` with a JSON Web Signature (JWS) in compact form within:
+The real return value of the **/swap** endpoint is the `providerSig` field with the JSON Web Signature (JWS) in compact form within:
 - `providerSig.header.alg` - the algorithm used for the signature: “ES256”.
 - `proverSig.header.kid` - an identifier for the public key used: “provider_name-2020“.
 - `providerSig.payload` - base 64 URL of the binary serialized protobuf message.NewTransactionResponse.
@@ -243,10 +233,17 @@ s3IG1NOjw5aC9weCF5aRg"
 
 ## Login & KYC
 
-If you need to have a Login/KYC before the user can perform a swap, you must develop a Login/KYC widget, as well as an iframe to host that widget. 
+If you need to have a Login/KYC before the user can perform a swap, you must develop two widgets. <br>
 
-The iframe will handle the Login, and will also trigger the KYC when needed. 
-This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. 
+<!--  -->
+{% include alert.html style="note" text="A widget is simply a web page hosted by the provider loaded in an iframe in Ledger Live, with specific parameters and a convention on how to exit the widget.
+" %}
+<!--  -->
+
+The iframe will handle the Login, and will also trigger the KYC when needed. <br>
+This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. <br>
+These widgets will need to be able to communicate relevant results to Ledger Live and our backend, using `postMessage`.
+
 
 **Quote flow**
 
@@ -255,6 +252,8 @@ In this diagram, you can see where the Widget Login/KYC is integrated during the
 ![Quote flow diagram](../images/swap-ftx-quote-flow.png "Quote flow diagram")
 
 **Login Widget**
+
+The Login widget handles the login process and returns a `bearer_token` to be used in all authenticated calls for the user.
 
 ![Login widget diagram](../images/swap-ftx-login.png "Login widget diagram")
 
@@ -269,6 +268,9 @@ In this diagram, you can see where the Widget Login/KYC is integrated during the
 
 **KYC Widget**
 
+The KYC widget handles the KYC process for a user, when required. <br>
+Ledger Live uses the **/check_quote** endpoint to verify whether a KYC is required and passes relevant user and trade info to the widget as parameters.
+
 ![KYC widget diagram](../images/swap-ftx-kyc.png "KYC widget diagram")
 
 - Input parameters (url params): `quoteId`, `bearerToken`.
@@ -280,6 +282,10 @@ In this diagram, you can see where the Widget Login/KYC is integrated during the
 ```
 
 **Trade execution flow**
+
+<!--  -->
+{% include alert.html style="note" text="This part is entirely executed by ledger Live and is for reference, it doesn't require any specific integration." %}
+<!--  -->
 
 In this diagram, you can see the trade execution flow after the Login/KYC is validated: 
 
