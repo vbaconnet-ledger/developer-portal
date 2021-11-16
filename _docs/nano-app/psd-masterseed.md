@@ -5,7 +5,7 @@ tags: [psd, personal security devices, device, serialization, cryptography, mnem
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

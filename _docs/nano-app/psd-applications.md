@@ -5,7 +5,7 @@ tags: [psd, personal security devices, device, path, derivation path, address]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

@@ -2,7 +2,7 @@
 title: Conclusion
 subtitle:
 tags: []
-layout: doc_pa
+layout: doc
 ---
 
 #### Sections in this article

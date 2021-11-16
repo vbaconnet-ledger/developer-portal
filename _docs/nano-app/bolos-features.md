@@ -5,7 +5,7 @@ tags: [bolos, cryptographic secrets, passphrases, attestation, chain of trust, s
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

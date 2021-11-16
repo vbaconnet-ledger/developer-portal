@@ -5,7 +5,7 @@ tags: [app name, ticker, wallet, companion, staking]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

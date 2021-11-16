@@ -5,7 +5,7 @@ tags: [dapp browser, decentralized app, plugin, ethereum plugin]
 category: DApp Integration
 author:
 toc: 
-layout: doc_da
+layout: doc
 ---
 
 By having your web3 DApp supported in a Ledger DApp browser, you increase the security of your application and also make it easier for your users, while simultaneously having access to over 3 million Ledger Live users.

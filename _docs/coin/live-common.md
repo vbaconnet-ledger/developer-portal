@@ -5,7 +5,7 @@ tags: [Ledger Live Common, typescript, environment variables, local packages]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## Introduction

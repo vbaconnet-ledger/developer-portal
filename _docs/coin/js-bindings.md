@@ -5,7 +5,7 @@ tags: [ledgerjs, getAddress, signTransaction]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 You will need to provide a JS implementation to interact with your coin Nano app on the Ledger Nano.

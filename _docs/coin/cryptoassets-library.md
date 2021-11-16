@@ -5,7 +5,7 @@ tags: [define explorer, explorers, currency model, unit]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.

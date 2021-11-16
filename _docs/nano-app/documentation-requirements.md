@@ -5,7 +5,7 @@ tags: [writing documentation, nano app documentation]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

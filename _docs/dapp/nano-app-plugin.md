@@ -4,7 +4,7 @@ subtitle:
 tags: []
 category: Dapp Integration
 author:
-layout: doc_da
+layout: doc
 ---
 
 The security model for Ledger Nano devices is “What you see is what you sign”.

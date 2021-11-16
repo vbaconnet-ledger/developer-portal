@@ -5,7 +5,7 @@ tags: [apdu, protocol, apdu protocol]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
