@@ -5,7 +5,7 @@ tags: [bagl, asynchronous display, macros, ux, events, button push ]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

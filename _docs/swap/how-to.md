@@ -4,7 +4,7 @@ subtitle:
 category: Swap Providers
 tags: []
 toc: true
-layout: doc_sw
+layout: doc
 ---
 
 ## What do we need ?

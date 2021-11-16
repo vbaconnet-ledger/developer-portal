@@ -5,7 +5,7 @@ tags: [technical assessment, indexer]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.

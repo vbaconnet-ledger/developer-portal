@@ -5,7 +5,7 @@ tags: [flash memory, RAM]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

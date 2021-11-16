@@ -5,7 +5,7 @@ tags: [nano app, nano application, dapp plugin, dapp, other applications, applic
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 ## Nano App

@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 A wallet application contains business-service related code and typically also has a GUI. Its format can be a desktop or smartphone application, or a web application.

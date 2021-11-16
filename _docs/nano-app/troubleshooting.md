@@ -5,7 +5,7 @@ tags: [not enough ram, ram, stack overflow, exception, try catch finally, applic
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

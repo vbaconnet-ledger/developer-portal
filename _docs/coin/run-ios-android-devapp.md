@@ -5,7 +5,7 @@ tags: [ledger-live-common, ledger-live-common proxy, proxy, testing test, tests]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-03-30 also based on 2177138906 in Confluence -->

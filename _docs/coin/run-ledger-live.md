@@ -5,7 +5,7 @@ tags: [ledger-live-common, test-dataset, test, testing, speculos, bot, the bot]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## Getting started

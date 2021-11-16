@@ -5,7 +5,7 @@ tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
