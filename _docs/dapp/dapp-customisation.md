@@ -5,7 +5,7 @@ tags: [server, iframe]
 category: DApp Integration
 author:
 toc: true
-layout: doc_da
+layout: doc
 ---
 
 This page is a description of the three parts of the implementation of your DApp.

@@ -5,7 +5,7 @@ tags: [pic, link address, execution address, dereferencing]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

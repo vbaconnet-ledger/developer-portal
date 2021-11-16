@@ -5,7 +5,7 @@ tags: [psd, personal security devices, device, deterministic, cryptography, pass
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

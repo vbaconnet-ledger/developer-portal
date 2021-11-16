@@ -5,7 +5,7 @@ tags: [transaction status, account synchronisation, accounts, run tests]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-03-30 based on 1809613975 in Confluence -->

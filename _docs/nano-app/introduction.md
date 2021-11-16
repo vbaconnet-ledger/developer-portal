@@ -5,7 +5,7 @@ tags: [development phases, develop nano app, submit an app, submission]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

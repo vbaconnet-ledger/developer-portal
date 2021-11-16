@@ -5,7 +5,7 @@ tags: [on-screen display, screen, ux flow, ux, cherry-picking, define steps]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

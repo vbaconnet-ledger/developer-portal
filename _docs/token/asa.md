@@ -6,7 +6,7 @@ category: Token Integration
 category: Tokens
 toc: true
 author:
-layout: doc_et
+layout: doc
 ---
 
 

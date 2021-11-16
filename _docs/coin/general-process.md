@@ -5,7 +5,7 @@ tags: [coin, protocol, ledger live, integration, ledger live integration]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## General Ledger Live Overview

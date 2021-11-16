@@ -5,7 +5,7 @@ tags: [ledger live, live-common, ledgerjs, ledger-live-desktop, ledger-live-mobi
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## Global architecture overview

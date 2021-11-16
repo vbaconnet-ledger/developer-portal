@@ -5,7 +5,7 @@ tags: [ledger-live-mobile, llm, xcode, swift, ios emulator, ios simulator]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-03-30 based on 2177138906 in Confluence -->

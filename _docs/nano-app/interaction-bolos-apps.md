@@ -5,7 +5,7 @@ tags: [syscall, error model, error codes, try catch finally]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

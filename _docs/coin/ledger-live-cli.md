@@ -5,7 +5,7 @@ tags: [clone ledger live]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ### Set up

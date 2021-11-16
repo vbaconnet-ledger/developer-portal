@@ -5,7 +5,7 @@ tags: [erc20, asa, trc10, trc20]
 category: Tokens
 toc: true
 author:
-layout: doc_et
+layout: doc
 ---
 
 

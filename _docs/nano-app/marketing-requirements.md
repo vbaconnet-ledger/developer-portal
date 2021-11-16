@@ -5,7 +5,7 @@ tags: [twitter, retweet, blog post, press release]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 ## Marketing plan 
