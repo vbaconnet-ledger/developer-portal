@@ -90,3 +90,12 @@ Explanation of each fields:
 - `in_address`: the account of the client.
 - `device_transaction_id`: the fund transaction nonce provided by the client at initialization.
 
+### Payloads generation
+
+How are generated the outputs `exchangePayload` and `payloadSignature` that you must return ? <br>
+Here is a diagram to explain this: 
+
+![Payload and Payload Signature generation diagram](../../images/payload-signature-generation.png "Payload and Payload signature generation")
+
+- `exchangePayload`: The funding parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `payload` field.  
+- `payloadSignature`: From the binary encoding of the previous [protobuf](https://developers.google.com/protocol-buffers) (Byte Array), you sign it with [ES256](https://ldapwiki.com/wiki/ES256) and your private key to get a Signature Byte Array. Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `payload_signature`.
