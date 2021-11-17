@@ -31,7 +31,7 @@ When your PR is validated by the Algorand team, they will make a PR to Ledger Gi
 Then, you need to update the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).
 
 <!--  -->
-{% include alert.html style="important" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://ledger-dev.slack.com'>Ledger's Developer Slack</a>, or use <a href='https://developers.ledger.com/contact/'>this contact form</a> to get signed in." %}
+{% include alert.html style="important" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://discord.gg/AxfAsPCNUc'>Ledger's Discord server</a>." %}
 <!--  -->
 
 

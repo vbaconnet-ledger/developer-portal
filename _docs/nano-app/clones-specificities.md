@@ -34,4 +34,4 @@ If you want to publish a clone application, follow the process in [Publishing an
 
 ## Get in touch with the Ledger developer community
 
-If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the #introductions channel and get help in the #support and ledgerjs channels. Otherwise, send us a request by filling [this contact form](https://developers.ledger.com/contact/).
+Join us on the [Ledger's Discord server](https://discord.gg/AxfAsPCNUc) and introduce yourself to the developer community in the **#introductions** channel.
