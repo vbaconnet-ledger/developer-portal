@@ -44,14 +44,6 @@ share:
     twitter:        username # Enable by adding Twitter handle
     facebook:       true # Enable by setting true (Facebook handle not required)
 
-# Image for social media cards
-defaults:
-  - 
-    scope:
-      path: ""
-    values:
-      image: /assets/images/portal-intro.jpg
-
 # Default footer image settings
 footer:
     copyright:      Copyright © <a href="https://ledger.com/">Ledger</a> SAS. All rights reserved. <br>Ledger, Ledger Nano S, Ledger Vault, Bolos are registered trademarks of Ledger SAS.
@@ -129,6 +121,11 @@ defaults:
       type:         docs
     values:
       layout:       doc
+  # image for social media cards   
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/portal-intro.jpg
 
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com
