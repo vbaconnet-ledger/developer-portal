@@ -46,7 +46,8 @@ share:
 
 # Image for social media cards
 defaults:
-  - scope:
+  - 
+    scope:
       path: ""
     values:
       image: /assets/images/portal-intro.jpg
