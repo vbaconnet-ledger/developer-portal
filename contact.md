@@ -23,16 +23,6 @@ If **you are a developer** and you are already signed up to the Ledger Devs Slac
 Otherwise, **send us a request by filling the form below**.
 
 
-#### If you have been redirected here for a token addition
-
-For token additions please **fill in the form below** with the requested information.
-
-<!-- {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}-->
-
-
-<!-- Old form:
-  {% include formkeep.html %} -->
-
 <div class="typeform-widget" data-url="https://form.typeform.com/to/pqO00Add?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 <div class="legal-notice">
