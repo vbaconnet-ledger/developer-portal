@@ -37,6 +37,9 @@ social:
     pinterest:
     vimeo:
 
+twitter:
+  username: ledger
+
 # Share button
 share:
     post:           true # Display share buttons on a post page
