@@ -59,7 +59,7 @@ Go to the submission form [here](https://ledger.typeform.com/to/qQSf7CVh).
 ## Things to do
 
 ### Get in touch with the Ledger developer community
-Join [our Discord server](https://discord.gg/AxfAsPCNUc) and introduce yourself to the developer community in the **#introductions** channel.
+Join [our Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.
 
 ### Set up the BOLOS development environment
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. The environment is [all set in a Docker image](../build).

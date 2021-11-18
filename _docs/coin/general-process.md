@@ -50,7 +50,7 @@ In most cases however, you will want to have your blockchain officially supporte
 <!-- --------------------------------- -->
 Assuming you are on course for a **Participant Integration**, here is how we suggest working together.
 
-To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger's Discord server](https://discord.gg/AxfAsPCNUc). 
+To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger's Discord server](https://discord.gg/Ledger). 
 
 The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 

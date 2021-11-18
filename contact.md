@@ -7,7 +7,7 @@ permalink: /contact/
 
 #### If you are a developer
 
-If **you are a developer** join us [on our Discord server](https://discord.gg/AxfAsPCNUc) and introduce yourself to the developer community in the **#introductions** channel.
+If **you are a developer** join us [on our Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.
 
 [Read this](../discord) if you are new to Discord.
 

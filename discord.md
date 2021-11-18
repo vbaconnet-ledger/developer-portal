@@ -8,7 +8,7 @@ permalink: /discord/
 #### The first time you connect to our server
 
 
-Upon your first connexion to our [Discord server](https://discord.gg/W2eXm8SgUv) will have access to two channels: the **server-guide** and the **verify** channel.
+Upon your first connexion to our [Discord server](https://discord.gg/Ledger) will have access to two channels: the **server-guide** and the **verify** channel.
 
 Please read the server guide to learn about the server rules and information about the roles on the server. You will then get verified buy clicking the requested emoji on the verification channel.
 
