@@ -60,11 +60,18 @@ google_analytics: GTM-W5FKZ2N
 
 # Algolia search
 algolia:
-  application_id: 'WV98VMIU7C'
+  application_id: 'CQSKUI8IBV'
   index_name: dev_portal
-  search_only_api_key: 2c01f0f02f9134bbd0e7fa5f1c5e6818
-  extensions_to_index:
-      - md
+  search_only_api_key: b6bd2aad536ec6cfebe309a5c97c03e4
+  files_to_exclude:
+    - _docs/platform-app/*.md
+    - _docs/platform-app/**/*.md
+    - _docs/swap/*.md
+    - _docs/speculos/dev/*.md
+    - index.md
+    - 404.html
+    - 404.md 
+    - sitemap.html
   settings:                                                                      
     searchableAttributes:                                                        
     - title                                                                    
