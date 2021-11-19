@@ -25,9 +25,7 @@
 
                     <!-- Html Elements for Search -->
                     <!-- removed in V3 to change search from simple-jekyll-search to algolia -->
-                    <!-- Temporarily put back old search bar 10.11.21 -->
-
-                    <div class="uk-position-relative">
+<!--                     <div class="uk-position-relative">
                         <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
                             <span class="uk-search-icon-flip" data-uk-search-icon></span>
                             <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
@@ -46,12 +44,11 @@
 
                     searchResults("search-hero");
 
-                    </script>
-                    <!-- Temporarily removed Algolia Search 10.11.21 -->
-<!--                     <div class="uk-position-relative" style="text-align:center;">
-                        Button to launch Algolia search modal
-                        <button type="button" uk-search-icon class="uk-button uk-button-default uk-button-large uk-margin-medium-top" style="background-color: black" data-toggle="modal" data-target=".bd-example-modal-lg">Search  </button>
-                    </div> -->
+                    </script> -->
+                    <!-- Button to launch Algolia search modal -->
+                    <div class="uk-position-relative" style="text-align:center;">
+                        <button type="button" uk-search-icon class="uk-button uk-button-default uk-button-large uk-margin-medium-top" style="background-color: black" data-toggle="modal" data-target=".bd-example-modal-lg">Search/ask anything  </button>
+                    </div>
                 </div>
                 {% endif %}
 

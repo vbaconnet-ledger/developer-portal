@@ -70,7 +70,7 @@ Our back-end can adapt to how you decide to do this, but we recommend you use a 
 ### POST /quote 
 - **Function**: Return a quote for a pair and amount.
 - **Input**: from, to, amount.
-- **Output**: quoteID, rate, expiry, method (fixed/float).<br>
+- **Output**: quoteID, rate, expiry, method (fixed/float), minAmountFrom, maxAmountFrom, payoutNetworkFees.<br>
   Optional: from, to, amountFrom, amountTo.
 - **Payload**:
   - Success

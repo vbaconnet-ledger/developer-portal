@@ -13,7 +13,7 @@ hero:
 
 {% include boxes_toolboxes.html columns="1" title="and the toolbox" %}
 
-{% include cta.html title="Join the Ledger Devs Slack workspace" button_text="Fill this form" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
+{% include cta.html title="Join Ledger's Discord server" button_text="Click here" button_url="/contact/" subtitle="Get in touch with us for details on setup" %}
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast Ledger Live" %}
 
