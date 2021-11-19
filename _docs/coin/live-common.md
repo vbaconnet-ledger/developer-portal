@@ -1934,7 +1934,7 @@ When signing a transaction, the user is shown on his device all the parameters o
 
 The list of all displayed fields on device are provided by the `getDeviceTransactionConfig` function, which must return all transaction fields for a given transaction.
 
-`src/families/mycoin/getDeviceTransactionConfig.ts`:
+`src/families/mycoin/deviceTransactionConfig.ts`:
 ```ts
 import type { AccountLike, Account, TransactionStatus } from "../../types";
 import type { Transaction } from "./types";
