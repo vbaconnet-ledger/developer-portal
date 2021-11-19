@@ -17,4 +17,4 @@ DApp Plugins are developed to integrate an Ethereum DApp to Ledger live. Ledger 
 More information [here](../../dapp/introduction).
 
 ## Utility applications
-These applications leverage Ledger technology but are not involved in managing crypto assets. They interact with Ledger devices and BOLOS operating system and can serve many purposes. They can be, for exemple, a password manager application, or a two factors authentication application.
+These applications leverage Ledger technology but are not involved in managing crypto assets. They interact with Ledger devices and BOLOS operating system and can serve many purposes. They can be, for example, a password manager application, or a two-factor authentication application.
