@@ -13,10 +13,14 @@ const search = instantsearch({
     var searchResults = $('.search-results');
     if (helper.state.query === '') {
       searchResults.hide();
+      const title = document.querySelector('#search-hits');
+      title.style.display = 'none';
       return;
     }
     helper.search();
     searchResults.show();
+    const title = document.querySelector('#search-hits');
+    title.style.display = 'block';
   }
 });
 
