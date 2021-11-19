@@ -85,4 +85,4 @@ case CHAIN_KIND_TOMOCHAIN:
 
 When your application is ready, open a pull request on the Ethereum application repository.
 
-Please get in touch with our team on the [Ledger Dev Slack workspace](https://developers.ledger.com/contact/) to get your PR reviewed.
+Please get in touch with our team on the [Ledger's Discord server](https://discord.gg/Ledger) to get your PR reviewed.
