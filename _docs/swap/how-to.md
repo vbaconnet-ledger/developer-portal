@@ -240,18 +240,13 @@ If you need to have a Login/KYC before the user can perform a swap, you must dev
 " %}
 <!--  -->
 
-The iframe will handle the Login, and will also trigger the KYC when needed. <br>
-This iframe will need to be able to communicate relevant events with the SWAP FORM and our backend, using `postMessage`. <br>
-These widgets will need to be able to communicate relevant results to Ledger Live and our backend, using `postMessage`.
-
-
-**Quote flow**
+### Quote flow
 
 In this diagram, you can see where the Widget Login/KYC is integrated during the quote process: 
 
 [![Quote flow diagram](../images/swap-ftx-quote-flow.png)](../images/swap-ftx-quote-flow.png)
 
-**Login Widget**
+### Login Widget
 
 The Login widget handles the login process and returns a `bearer_token` to be used in all authenticated calls for the user.
 
@@ -266,7 +261,7 @@ The Login widget handles the login process and returns a `bearer_token` to be us
 }
 ```
 
-**KYC Widget**
+### KYC Widget
 
 The KYC widget handles the KYC process for a user, when required. <br>
 Ledger Live uses the **/check_quote** endpoint to verify whether a KYC is required and passes relevant user and trade info to the widget as parameters.
@@ -281,7 +276,7 @@ Ledger Live uses the **/check_quote** endpoint to verify whether a KYC is requir
 }
 ```
 
-**Trade execution flow**
+### Trade execution flow
 
 <!--  -->
 {% include alert.html style="note" text="This part is entirely executed by ledger Live and is for reference, it doesn't require any specific integration." %}
