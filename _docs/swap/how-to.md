@@ -95,7 +95,7 @@ Some requirements about the **/quote** endpoint:
 - **Function**: Checks validity of login and KYC for a specific quote / trade.
 - **Input**: quoteID, bearerToken (can be NULL).
 - **Output**: `ok` or `error_state` in <br>
-  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE-REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR.
+  UNKNOW_USER, KYC_UNDEFINED, KYC_PENDING, KYC_FAILED, KYC_UPDRAGE_REQUIRED, OVER_TRADE_LIMIT, UNKNOWN_ERROR.
 - **Payload**:
   - Success <br>
 Status code at 200 <br>
