@@ -14,7 +14,6 @@ To secure the funding of the card, Ledger developed an exchange app that you are
 As you can see on the following diagram, there are three interactions between Ledger Live and your iframe. This three interactions are the ones that are needed from your side.  
 
 ![Secure funding high level design](../../images/baanx-secure-funding.png "Secure funding high level design")
-[ ![](../../images/baanx-secure-funding.png) ](../../images/baanx-secure-funding.png)
 
 The three main functions you need for the funding are: 
 - List the accounts: `listAccounts`,
