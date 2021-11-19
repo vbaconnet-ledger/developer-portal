@@ -22,7 +22,7 @@ left:
     - title: Emulator
       url: /docs/speculos/installation/build
     - title: Ledger Live developer mode
-      url: /docs/developer-mode/introduction
+      url: /docs/developer-mode/use-cases
 
 # Navbar right menu navigation links
 

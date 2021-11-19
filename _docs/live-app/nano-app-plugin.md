@@ -1,5 +1,5 @@
 ---
-title: C - Nano App Plugin
+title: Nano App Plugin
 subtitle:
 tags: []
 category: Dapp Integration

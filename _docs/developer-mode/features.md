@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Features
 subtitle:
 tags: []
 category: Ledger Live Developer Mode

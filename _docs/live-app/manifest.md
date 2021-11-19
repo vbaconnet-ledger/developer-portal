@@ -1,5 +1,5 @@
 ---
-title: B - Writing the Manifest
+title: Writing the Manifest
 subtitle:
 tags: [dapp]
 category: DApp Integration
