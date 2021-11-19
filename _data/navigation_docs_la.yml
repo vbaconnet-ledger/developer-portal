@@ -1,6 +1,7 @@
 - title: Start here
   docs:
   - live-app/introduction
+  - live-app/process
   - live-app/faq
 
 - title: Ledger Live SDK

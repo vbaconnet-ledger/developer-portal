@@ -2,7 +2,7 @@
 title: Setup
 subtitle:
 tags: []
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---

@@ -2,7 +2,7 @@
 title: Introduction
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---

@@ -2,7 +2,7 @@
 title: Test
 subtitle:
 tags: []
-category: Platform Application
+category: Live Application
 layout: doc
 toc: true
 ---
