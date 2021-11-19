@@ -46,7 +46,6 @@ The catalog provider is a variable used to define the list of applications being
 This setting will enable opening the platform apps dev tools window, which can become handy when debugging your application.
 
 ![screenshot of the Platform dev tools](../../images/platform_dev_tools.png "Developer tools window")
-[![](../../images/platform_dev_tools.png)](../../images/platform_dev_tools.png)
 
 ## Add a local app
 
