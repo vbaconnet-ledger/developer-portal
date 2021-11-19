@@ -37,4 +37,5 @@
 - title: Web Application
   docs:
   - transport/web-integration
-  - transport/web-hid
+  - transport/web-hid-usb
+  - transport/web-bluetooth

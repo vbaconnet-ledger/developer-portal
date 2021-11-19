@@ -116,7 +116,7 @@ Your folder must look like this.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="210" src="../images/folder.png" ></div>
+<img width="210" src="../images/folderUsbHid.png" ></div>
 <!-- --------------------------------- -->
 
 
@@ -202,6 +202,8 @@ To do that install the following package by running the command :
     - `npm install @ledgerhq/logs`
 - Install <a href="https://parceljs.org/">parcel</a>, it is a build tool which will help you package your application to run it in the browser:
     - `npm install --save-dev parcel`
+- Install <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a>, it is a package that will help you ask your Ledger Nano to access the bitcoin address:
+    - `npm install --save @ledgerhq/hw-app-btc`
 
 Then depending on your choice install one of the corresponding packages:
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> which provide you with all the methods to interact with  your Ledger with a HID connexion:
