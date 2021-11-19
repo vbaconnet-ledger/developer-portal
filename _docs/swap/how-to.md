@@ -13,7 +13,7 @@ In order to become a swap provider in the Ledger Live ecosystem, you must submit
 
 This diagram shows what is needed from the provider’s side in order to interact with Ledger Live.
 
-![How to diagram](../images/how-to.png "How to diagram")
+[![How to diagram](../images/how-to.png)](../images/how-to.png)
 
 ## Endpoints
 
@@ -145,7 +145,7 @@ The **/swap** endpoint is trickier, and needs to follow this structure, as well 
 - Should check the auth bearer token.<br>
 
 Here is a little diagram to explain how the `payload` and the `payload_signature` are generated: 
-![Payload and Payload Signature generation diagram](../images/payload-signature-generation.png "Payload and Payload signature generation")
+[![Payload and Payload Signature generation diagram](../images/payload-signature-generation.png)](../images/payload-signature-generation.png)
 - `payload`: the trade parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools we do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) we get the `payload` field.  
 - `payload_signature`: From the binary encoding of the previous [protobuf](https://developers.google.com/protocol-buffers) (Byte Array), we sign it with [ES256](https://ldapwiki.com/wiki/ES256) and the provider's private key to get a Signature Byte Array. Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) we get the `payload_signature`.
 
@@ -249,13 +249,13 @@ These widgets will need to be able to communicate relevant results to Ledger Liv
 
 In this diagram, you can see where the Widget Login/KYC is integrated during the quote process: 
 
-![Quote flow diagram](../images/swap-ftx-quote-flow.png "Quote flow diagram")
+[![Quote flow diagram](../images/swap-ftx-quote-flow.png)](../images/swap-ftx-quote-flow.png)
 
 **Login Widget**
 
 The Login widget handles the login process and returns a `bearer_token` to be used in all authenticated calls for the user.
 
-![Login widget diagram](../images/swap-ftx-login.png "Login widget diagram")
+[![Login widget diagram](../images/swap-ftx-login.png)](../images/swap-ftx-login.png)
 
 - Input parameters: none.
 - Output (postMessage): `userId`, `bearerToken`:
@@ -271,7 +271,7 @@ The Login widget handles the login process and returns a `bearer_token` to be us
 The KYC widget handles the KYC process for a user, when required. <br>
 Ledger Live uses the **/check_quote** endpoint to verify whether a KYC is required and passes relevant user and trade info to the widget as parameters.
 
-![KYC widget diagram](../images/swap-ftx-kyc.png "KYC widget diagram")
+[![KYC widget diagram](../images/swap-ftx-kyc.png)](../images/swap-ftx-kyc.png)
 
 - Input parameters (url params): `quoteId`, `bearerToken`.
 - Output parameters (postMessage): `KYC_OK` if the KYC is completed and sufficient for the given `quoteId`, otherwise same errors as [/check_quote](#post-check_quote) backend endpoint:
@@ -289,4 +289,4 @@ Ledger Live uses the **/check_quote** endpoint to verify whether a KYC is requir
 
 In this diagram, you can see the trade execution flow after the Login/KYC is validated: 
 
-![Trade execution flow diagram](../images/swap-ftx-trade-flow.png "Trade execution flow diagram")
+[![Trade execution flow diagram](../images/swap-ftx-trade-flow.png)](../images/swap-ftx-trade-flow.png)
