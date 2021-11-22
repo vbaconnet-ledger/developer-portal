@@ -6,7 +6,7 @@
 
 # Site title and description
 title:              Developers
-description:        Integrating with Ledger Live
+description:        Integrating with Ledger
 lang:               en
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
