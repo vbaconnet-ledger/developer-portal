@@ -10,46 +10,6 @@ layout: doc_tr
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
 
-## Prerequisites
-
-Beforehand we have to install some dependencies. First install <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. To ensure you have it installed in your machine open a new terminal and run:
-- ``` node -v ``` must display something like ``` v14.18.0 ``` (the version may differ)
-- ``` npm -v ```  must display something like ``` 6.14.15 ``` (the version may differ)
-
-
-Now that node and npm are installed, you have to install the <a href="https://www.ledger.com/ledger-live/download">Ledger Live</a> desktop application in order to connect your Ledger Nano X.
-After the installation of Ledger Live is finished open Ledger Live and go to the “Manager” tab.
-In this integration we will use the ethereum application from your Ledger.
-
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/ledgerlivetabs.png" ></div>
-<!-- --------------------------------- -->
-
-Then connect your Ledger Nano X to your machine make sure to unlock it.
-
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerCodePin.jpg" ></div>
-<!-- --------------------------------- -->
-
-Then Ledger Live will ask you to allow the Ledger Nano X, just press the two buttons simultaneously to allow it.
-
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerConnect.png" >
-<img width="420" src="../images/ledgerAllow.jpg" >
-</div>
-<!-- --------------------------------- -->
-
-Now you can install the ethereum application into your Ledger Nano X
-
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/ethereumInstallation.png" ></div>
-<!-- --------------------------------- -->
-
-
 ## Implementation for Web Bluetooth on Nano X
 
 Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
@@ -375,7 +335,7 @@ Therefore start the developpement server:
 <!--  -->
 
 
-Now the application is built and running. Open the browser and go to <a href="http://localhost:1234">“localhost:3000”</a>, it will display :
+Now the application is up and running. Open the browser and go to <a href="http://localhost:1234">“localhost:3000”</a>, it will display :
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
