@@ -1,5 +1,5 @@
 ---
-title: Web HID integration
+title: Node HID integration
 subtitle:
 tags: []
 category: Connect a wallet

@@ -1,5 +1,5 @@
 ---
-title: Web HID integration
+title: Web USB/HID
 subtitle:
 tags: []
 category: Connect a wallet
@@ -10,7 +10,7 @@ layout: doc_tr
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
 
-## Implementation for Web USB and Web HID on Nano S/X
+## Web App USB and HID
 
 The implementation of a web application which use the USB or HID protocol is exactly the same. The only difference is that instead of using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a> you will use <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> and vise versa.
 
@@ -193,12 +193,10 @@ Add some script :
 }
 ```
 
+## Web App Test
+
 Now that the Setup is finished, the app has to be built in order to be displayed.
-To build the app run the script created previously:
-
-- `npm run build`
-
-And start the developpement server:
+Start the developpement server:
 
 - `npm run start`
 
@@ -235,7 +233,7 @@ Then if all goes well you must have the bitcoin address you just create [previou
 
 Congratulations you have successfully built your first application connected with Ledger !!!
 
-## Implementation for Web USB and Web HID on Android chrome on Nano S/X
+## Web USB and Web HID on Android chrome
 
 Android chrome support the use of the Ledger device by HID and USB.
 In mobile phone only android can support the web application.
@@ -270,7 +268,7 @@ To test your application on android, a little change has to be made. Just add th
 ```
 
 The browser will ask you that the website is malicious, to continue click on “advanced settings” and then on “continue to the localhost site”.
-Now you can test to connect your Ledger device on your android just like the [previous step](#implementation-for-web-usb-and-web-hid-on-nano-s/x).
+Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-usb-and-hid).
 
 
 
