@@ -11,6 +11,9 @@ layout: doc
 
 Many applications such as Paraswap, Moonpay or Lido, have been integrated in the Discover section of the Ledger Live application. This allows our users to have easier access to different services but also discover new ways to handle their crypto-assets. 
 
+<img src="../images/discover-section.png" alt="Discover section" style="max-width: 800px;"/>
+
+
 In this section you will find the information about how to transform your Dapp or classical application into a Live App.
 
 ### Development steps
