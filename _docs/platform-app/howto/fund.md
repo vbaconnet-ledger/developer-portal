@@ -104,7 +104,7 @@ And `0x1BC16D674EC80000` encoded into a 16 bytes array in big endian is `[0x00, 
 **Payloads generation**
 
 How are generated `exchangePayload` and `payloadSignature` ? <br>
-Here is a diagram [TO BE UPDATED] to explain this: 
+Here is a diagram to explain this: 
 
 [![Payload and Payload Signature generation diagram](../../images/funding-payload-signature-generation.png)](../../images/funding-payload-signature-generation.png)
 
