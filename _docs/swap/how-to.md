@@ -196,10 +196,10 @@ Amounts must be in the lowest unit of the coin, encoded into a 16 bytes array in
 Example:
 - 1 **BTC** would be `0x5F5E100` (100000000 in hexadecimal). The smallest unit is a **satoshi** which is `10^-8` **BTC**.<br> 
 So multiply 1 **BTC** by `10^8` → `0x5F5E100`. <br>
-And `0x5F5E100` encoded into a 16 bytes array in big endian is `[0,x00 ... 0x00, 0x05, 0xF5, 0xE1, 0x00]`.
+And `0x5F5E100` encoded into a 16 bytes array in big endian is `[0x00, ... 0x00, 0x05, 0xF5, 0xE1, 0x00]`.
 - 2 **ETH** would be `0x1BC16D674EC80000` (or 2000000000000000000). The smallest unit is a **wei** which is `10^-18` **ETH**.<br> 
 So multiply 2 **ETH** by `10^18` → `0x1BC16D674EC80000`. <br>
-And `0x1BC16D674EC80000` encoded into a 16 bytes array in big endian is `[0x1B, 0xC1 ... 0xC8, 0x00, 0x00]`.
+And `0x1BC16D674EC80000` encoded into a 16 bytes array in big endian is `[0x00, ... 0x00, 0x1B, 0xC1, 0x6D, 0x67, 0x4E, 0xC8, 0x00, 0x00]`.
 
 #### Output field: providerSig
 
