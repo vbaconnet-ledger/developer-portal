@@ -296,7 +296,7 @@ Leaving parts of private or secret keys lying around in memory is not a security
 
 However, if the key has not properly been erased, a security issue could lead to the leak of this key, even if it is not used anymore. An attacker able to read arbitrary memory from the app, or execute arbitrary code, will be able to read the content of the stack segment, hence the parts of the key which have not been erased.
 
-Here is an exemple of a common and **wrong way** of doing this:
+Here is an example of a common and **wrong way** of doing this:
 
 ``` c
 uint8_t privateKeyData[64];

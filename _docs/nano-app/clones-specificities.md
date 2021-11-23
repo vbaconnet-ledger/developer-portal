@@ -19,7 +19,7 @@ Just as for any Nano Application, you must follow our guidelines to comply Ledge
 ### Developing the application
 
 Instead of building your application in a separate repository, you will make changes to the [Ethereum app](https://github.com/LedgerHQ/app-ethereum).
-Click here to develop an [Ethereum clones](../eth-clones). More types of clone applications will be added to the documentation in the future.
+Click here to develop an [Ethereum clone](../eth-clones). More types of clone applications will be added to the documentation in the future.
 
 ### Building the application
 

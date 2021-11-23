@@ -5,6 +5,10 @@ title: First time on Discord?
 permalink: /discord/
 ---
 
+#### Who is it for?
+
+Ledger's Discord server is for developers that are integrating their projects with Ledger. If you need customer support, please visit [the help center](https://support.ledger.com).
+
 #### The first time you connect to our server
 
 

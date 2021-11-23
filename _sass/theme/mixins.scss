@@ -643,8 +643,12 @@
         font-family:$body-font-family;
      }
 
+    .search-icon {
+        color: $safety-orange;
+    }
+
     .search-icon :hover {
-        color: $safety-orange ;
+        color: black ;
     }
 
     .post-item h3 {
@@ -801,7 +805,7 @@
         margin-top: -28px;
         margin-bottom: 30px;
         img {
-            max-height: 340px; // FC 2021-06-01 1216 Height of the top image on the Landing page
+            max-height: 250px; // Height of the top image on the Landing page 
         }
     }
 

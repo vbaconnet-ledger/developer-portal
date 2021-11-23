@@ -12,7 +12,7 @@
     {% assign container = '' %}
 {% endif %}
 
-<div class="uk-section">
+<div class="uk-section" style="padding-top: 0px;">
     <div class="uk-container{{container}}">
 
         {% if include.title %}
@@ -27,10 +27,10 @@
             {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
             {% assign doc = site.docs | where:"url", doc_url | first %}
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-xlight">
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-xlight" style="padding:20px;">
                     <a class="uk-position-cover" href="{{ doc.url | relative_url }}"></a>
                     {% if item.icon %}
-                    <span data-uk-icon="icon: {{ item.icon }}; ratio: 3.4" class=""></span>
+                    <span data-uk-icon="icon: {{ item.icon }}; ratio: 3.4" style="height:80px;"></span>
                     {% endif %}
                     <h3 class="uk-card-title uk-margin">{{ item.title }}</h3>
                     {% if item.desc %}
