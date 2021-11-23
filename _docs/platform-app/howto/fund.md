@@ -106,7 +106,7 @@ And `0x1BC16D674EC80000` encoded into a 16 bytes array in big endian is `[0x00, 
 How are generated `exchangePayload` and `payloadSignature` ? <br>
 Here is a diagram [TO BE UPDATED] to explain this: 
 
-![Payload and Payload Signature generation diagram](../../images/funding-payload-signature-generation.png "Payload and Payload signature generation")
+[![Payload and Payload Signature generation diagram](../../images/funding-payload-signature-generation.png)](../../images/funding-payload-signature-generation.png)
 
 - `exchangePayload`: The funding parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `exchangePayload` field.  
 - `payloadSignature`: From the binary encoding of the previous [protobuf](https://developers.google.com/protocol-buffers) (Byte Array), you sign it with [ES256](https://ldapwiki.com/wiki/ES256) and your private key to get a Signature Byte Array. Finally, with [base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `payloadSignature`.
