@@ -23,7 +23,7 @@ As you can see on the diagram above, there are 5 main endpoints needed for the s
 - To query a rate: [/quote](#post-quote).
 - To check the login and KYC validity of the user, for a specific quote: [/check_quote](#post-check_quote).
 - To query a swap status: [/status](#post-status).
-- To perform a swap (with the Payload/signature required by the nano): [/swap](post-swap). <br>
+- To perform a swap (with the Payload/signature required by the nano): [/swap](#post-swap). <br>
 
 You will find the details about each needed endpoint below. <br>
 Note that since the APIs are integrated through Ledger backend, the provider APIs don't need to follow this documentation exact pattern as long as the correct data is provided.
