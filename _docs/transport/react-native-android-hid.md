@@ -110,13 +110,36 @@ cd myApp
 During the initialization it is installing required "CocoaPods" dependencies and it may takes times.
 
 Now that the folder is initialized, open it in an editor.
-Create a file named "App.js" in the root folder.
+Create a file named "App.js" and "polyfill.js" in the root folder.
 Your folder must look like this.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
 <img width="210" src="../images/folder-rn-android.png" ></div>
 <!-- --------------------------------- -->
+
+
+In polyfill.js copy paste the following code :
+
+#### polyfill.js
+```javascript
+global.Buffer = require("buffer").Buffer;
+```
+Then import the polyfill in "index.js" like below:
+
+#### index.js
+```javascript
+/**
+ * @format
+ */
+
+import "./polyfill";    //import this
+import {AppRegistry} from 'react-native';
+import App from './src/App';
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent(appName, () => App);
+```
 
 
 In App.js copy paste the following code :
@@ -209,6 +232,10 @@ const styles = StyleSheet.create({
 Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
+- Install <a href="https://www.npmjs.com/package/buffer">Buffer</a>:
+```console
+ npm install --save buffer
+```
 - Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you the log of all the error from your connexion with your Ledger device that may appear when developing:
 ```console
  npm install @ledgerhq/logs
@@ -242,6 +269,7 @@ This is how your “package.json” has to look like.
     "@ledgerhq/hw-app-eth": "^6.15.2",
     "@ledgerhq/logs": "^6.10.0",
     "@ledgerhq/react-native-hid": "^6.11.2",
+    "buffer": "^6.0.3",
     "react": "17.0.2",
     "react-native": "0.66.3"
   },
@@ -268,7 +296,7 @@ A little modification have to be made in the “build.gradle” in the "android"
 <img width="840" src="../images/change-minSDK.png" ></div>
 <!-- --------------------------------- -->
 
-You can now test it.
+You can now test the application you have built.
 
 ## Web App Test
 
@@ -328,7 +356,7 @@ When launching the application it will be display like the below image.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="210" src="../images/android-device-hid.png" ></div>
+<img width="210" src="../images/android-device-hid.jpg" ></div>
 <!-- --------------------------------- -->
 
 Connect your Ledger Nano to your android device, unlock it and run the ethereum application.
@@ -346,7 +374,7 @@ Now that the two devices are connected to each other the address must have been 
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="210" src="../images/android-device-hid.png" ></div>
+<img width="210" src="../images/android-device-hid-address.jpg" ></div>
 <!-- --------------------------------- -->
 
 Congratulations you have successfully built your first application connected with Ledger !!!
