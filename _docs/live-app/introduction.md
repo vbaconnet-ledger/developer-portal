@@ -1,37 +1,59 @@
 ---
-title: Introduction
+title: Development steps
 subtitle:
 tags: [platform app, live application, ledger live app, dapp]
 category: Live App
-toc:
+toc: true
 layout: doc
 ---
 
+This section you will help you transform your Web3 application or classical application into a Live App.
+
+Live Apps are services that have been integrated into Ledger Live Discover section. Many applications such as Paraswap, Moonpay or Lido, have already been integrated. This allows our users to have easier access to different services but also discover new ways to handle their crypto-assets. 
 
 
-Many applications such as Paraswap, Moonpay or Lido, have been integrated in the Discover section of the Ledger Live application. This allows our users to have easier access to different services but also discover new ways to handle their crypto-assets. 
 
-<img src="../images/discover-section.png" alt="Discover section" style="max-width: 800px;"/>
-
-
-In this section you will find the information about how to transform your Dapp or classical application into a Live App.
+<img src="../images/discover-section.png" alt="Discover section"/>
 
 ### Development steps
 
-Whether you're integrating a DApp or another type of application, you will need to know if you have to:
+Whether you're integrating a Web3 application or another type of application, you will need to know if you have to:
 
-| Type of App     |  [Use the SDK](../intro-sdk)   | [Write a manifest](../manifest) | [Adapt web3 provider list](../dapp-customisation)     | [Create a Nano Plugin](../nano-app-plugin) | 
-| --------------- | -------------- | ---------------- | ---------------------------- | -------------------- | 
-| <b>DApp</b>	  | No             | Yes		      | Yes 						 | Yes                  |
-| <b>Other</b>	  | Yes            | Yes              | No                           | <a href="#im-integrating-a-centralized-app-do-i-need-a-nano-plugin">It depends</a>         |
-
-
-#### I'm integrating a centralized app, do I need a Nano Plugin?
-
-It will depend on what your application allows the user to do and how it will interact with the Nano and blockchain. For more information get in touch with us [on our Discord server](https://discord.gg/Ledger).
+| Type of App            |  Use the SDK | Adapt web3 provider list | Write a manifest | Create a &nbsp;Nano Plugin |
+| ---------------------- | ------------ | ------------------------ | ---------------- | -------------------- |
+| <b>Web3 App</b>        | No           | Yes		               | Yes 		      | Yes, in most cases   |
+|<b>Other (centralized)</b>| Yes        | No                       | Yes              | No                   |
 
 
+#### Ledger Live SDK
 
-##### Temporary image (remove before publishing)
+The Ledger Live SDK helps you integrate your centralized Live App into Ledger Live without having to code all the Ledger Live API logic. If you are integrating an Web3 DApp, you won't need it as it will be run from inside our DApp browser.
 
-![Platform App](../images/wording-cropped.png)
+[Click here](../intro-sdk) to know more.
+
+
+#### Web3 provider list adaptation
+
+Since, as mentionned above, Web3 DApp a running in Ledger Live through our DApp browser, you will need to adapt your Web3 provider list.
+
+[Click here](../intro-dapp) to know more.
+
+#### Manifest
+
+The manifest is mandatory for all types of Live Apps. It is like an ID card for your application that will be use by Ledger Live when the application is opened in the Discover section.
+
+[Click here](../manifest) to know more.
+
+
+#### Nano App plugin
+
+Plugins are some very specific applications that handle dedicated smart contract methods, therefore making unverifiable contract data readable on the Nano screen.
+
+[Click here](../nano-app-plugin) to know more.
+
+
+#### Special cases
+
+The development steps may differ depending on the application you want to integrate. Please get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.
+
+

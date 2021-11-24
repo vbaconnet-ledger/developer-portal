@@ -15,5 +15,3 @@ layout: doc
 | --------------- | -------------- | 
 | What are the graphics design recommendations in terms of look/color/font?  | Your app should have your own identity. <br>Please don't use Ledger's. | 
 | --------------- | -------------- | 
-
-

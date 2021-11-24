@@ -9,4 +9,4 @@ layout: doc
 
 
 
-TBD: calender / PRs etc
+TBD: calendar / PRs etc

@@ -16,7 +16,7 @@ In this article, we will guide you through the process of developing and integra
 
 A Platform Application is an application that leverages the Ledger Live API. By doing so it can get access to the native features of Ledger Live and to the user’s accounts and information.
 
-[In a previous article](https://developers.ledger.com/docs/dapp/introduction/), we described the process to get a Decentralized Application (DApp) listed in the Ledger Live Discover section. The DApps running in this section are in fact executed within the first Platform Application Ledger designed : the Dapp Browser.
+[In a previous article](../intro-dapp/), we described the process to get a Decentralized Application (DApp) listed in the Ledger Live Discover section. The DApps running in this section are in fact executed within the first Platform Application Ledger designed : the Dapp Browser.
 
 ![interaction between Ledger Live and the Live Apps](../images/ledger_live_interaction_live_apps.png "interaction between Ledger Live and the Live Apps")
 

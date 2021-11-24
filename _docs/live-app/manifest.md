@@ -19,7 +19,9 @@ This file must contain some mandatory information, such as the app package names
 
 Check and if necessary edit your manifest file as described [below](#example-of-manifest-json-format-for-the-lido-application).
 
-To load your DApp locally, [Unlock the Developer mode](../developer-mode/)in Ledger Live and [add a local app](../developer-mode/#add-a-local-app).
+### Load your Live App locally
+
+To load your Live App locally, [Unlock the Developer mode](../../developer-mode/features) in Ledger Live and [add a local app](../../developer-mode/features#add-a-local-app).
 
 ### Example of Manifest (JSON format) for the “Lido” application:
 

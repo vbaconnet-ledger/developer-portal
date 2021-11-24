@@ -4,7 +4,16 @@
   - live-app/process
   - live-app/faq
 
-- title: Ledger Live SDK
+- title: Web3 Live Apps
+  docs:
+  - live-app/intro-dapp
+  - live-app/dapp-customisation
+
+- title: Manifest
+  docs:
+  - live-app/manifest
+
+- title: Other Live Apps
   docs:
   - live-app/intro-sdk
   subfolderitems:
@@ -45,17 +54,7 @@
           - live-app/bitcoin-transaction
           - live-app/ethereum-transaction
 
-- title: Web3 Live App
-  docs:
-  - live-app/intro-dapp
-  - live-app/dapp-customisation
-
-- title: Manifest
-  docs:
-  - live-app/manifest
-
 - title: Nano App Plugin
   docs:
   - live-app/nano-app-plugin
-
 
