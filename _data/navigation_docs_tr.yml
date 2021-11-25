@@ -29,14 +29,11 @@
       - transport/desktop-integration
       - transport/node-electron-hid
 
-- title: Application Architecture
+- title: Architecture
 
   docs:
-  - transport/connect-wallet
-
-- title: Architecture Dataflow
-  docs:
-  - transport/connect-wallet
+  - transport/application-architecture
+  - transport/architecture-dataflow
 
 - title: End-2-end Tutorial
   docs:
