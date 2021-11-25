@@ -15,14 +15,26 @@ Live Apps are services that have been integrated into Ledger Live Discover secti
 
 <img src="../images/discover-section.png" alt="Discover section"/>
 
+
+### What kind of applications can be integrated?
+
+#### Web3 DApps
+
+DApps can be integrated as Live Applications, using our DApp browser.
+
+#### SDK services  
+
+We call SDK services all applications than are not Decentralized Applications and rely on the Ledger Live SDK to be integrated.
+
+
 ### Development steps
 
 Whether you're integrating a Web3 application or another type of application, you will need to know if you have to:
 
 | Type of App            |  Use the SDK | Adapt web3 provider list | Write a manifest | Create a &nbsp;Nano Plugin |
 | ---------------------- | ------------ | ------------------------ | ---------------- | -------------------- |
-| <b>Web3 App</b>        | No           | Yes		               | Yes 		      | Yes, in most cases   |
-|<b>Other (centralized)</b>| Yes        | No                       | Yes              | No                   |
+| <b>DApps</b>        | No           | Yes		               | Yes 		      | Yes, in most cases   |
+|<b>SDK services</b>| Yes        | No                       | Yes              | No                   |
 
 
 #### Ledger Live SDK
