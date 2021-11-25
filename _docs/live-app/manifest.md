@@ -1,5 +1,5 @@
 ---
-title: Writing the Manifest
+title: Write and load the manifest
 subtitle:
 tags: [dapp]
 category: DApp Integration

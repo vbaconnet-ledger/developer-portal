@@ -1,5 +1,5 @@
 ---
-title: Connecting the DApp 
+title: Update the provider list
 subtitle:
 tags: [server, iframe]
 category: DApp Integration

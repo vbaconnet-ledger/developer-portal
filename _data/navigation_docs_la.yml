@@ -4,16 +4,15 @@
   - live-app/process
   - live-app/faq
 
-- title: Web3 Live Apps
+- title: DApp
   docs:
-  - live-app/intro-dapp
   - live-app/dapp-customisation
 
 - title: Manifest
   docs:
   - live-app/manifest
 
-- title: SDK Services
+- title: Non DApp
   docs:
   - live-app/intro-sdk
   subfolderitems:

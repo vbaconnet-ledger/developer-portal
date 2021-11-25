@@ -9,32 +9,22 @@ layout: doc
 
 This section you will help you transform your Web3 application or classical application into a Live App.
 
-Live Apps are services that have been integrated into Ledger Live Discover section. Many applications such as Paraswap, Moonpay or Lido, have already been integrated. This allows our users to have easier access to different services but also discover new ways to handle their crypto-assets. 
+Live Apps are services that have been integrated into Ledger Live Discover section. Many applications such as Paraswap, Moonpay or Lido, have already been integrated. 
 
+By having your application supported in a Ledger DApp browser, you increase the security of your application and also make it easier for your users, while simultaneously having access to over 3 million Ledger Live users.
 
 
 <img src="../images/discover-section.png" alt="Discover section"/>
 
 
-### What kind of applications can be integrated?
-
-#### Web3 DApps
-
-DApps can be integrated as Live Applications, using our DApp browser.
-
-#### SDK services  
-
-We call SDK services all applications than are not Decentralized Applications and rely on the Ledger Live SDK to be integrated.
-
-
 ### Development steps
 
-Whether you're integrating a Web3 application or another type of application, you will need to know if you have to:
+What you will need to do to integrate your application as a Live App will differ depending on it being a DApp or a classical non decentralized application.
 
-| Type of App            |  Use the SDK | Adapt web3 provider list | Write a manifest | Create a &nbsp;Nano Plugin |
-| ---------------------- | ------------ | ------------------------ | ---------------- | -------------------- |
-| <b>DApps</b>        | No           | Yes		               | Yes 		      | Yes, in most cases   |
-|<b>SDK services</b>| Yes        | No                       | Yes              | No                   |
+|             |  Use the Ledger Live SDK | Update your web3 provider list| Write a manifest | Create a Nano Plugin |
+| ----------- | ------------ | ------------------------ | ---------------- | -------------------------- |
+| <b>To integrate a DApp, you will:</b>| No   | Yes		| Yes 		       | Yes, in most cases         |
+|<b>To integrate a non DApp, you will:</b>| Yes  | No   | Yes              | No                         |
 
 
 #### Ledger Live SDK
@@ -44,11 +34,11 @@ The Ledger Live SDK helps you integrate your centralized Live App into Ledger Li
 [Click here](../intro-sdk) to know more.
 
 
-#### Web3 provider list adaptation
+#### Web3 provider list update
 
 Since, as mentionned above, Web3 DApp a running in Ledger Live through our DApp browser, you will need to adapt your Web3 provider list.
 
-[Click here](../intro-dapp) to know more.
+[Click here](../dapp-customisation) to know more.
 
 #### Manifest
 
@@ -64,7 +54,7 @@ Plugins are some very specific applications that handle dedicated smart contract
 [Click here](../nano-app-plugin) to know more.
 
 
-#### Special cases
+### Special cases
 
 The development steps may differ depending on the application you want to integrate. Please get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.
 
