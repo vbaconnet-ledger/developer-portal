@@ -22,7 +22,8 @@
       docs:
       - transport/mobile-integration
       - transport/react-native-android-hid
-      - transport/react-native-bluetooth
+      - transport/react-native-bluetooth-android
+      - transport/react-native-bluetooth-ios
     - title: Desktop Application
       docs:
       - transport/desktop-integration
