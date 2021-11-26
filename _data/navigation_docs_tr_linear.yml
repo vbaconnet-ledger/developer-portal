@@ -3,7 +3,7 @@
 
 - title: Connecting a wallet
   docs:
-  - transport/connect-wallet
+  - transport/overview
 
 - title: Nano calls
   docs:

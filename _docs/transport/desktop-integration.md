@@ -8,7 +8,7 @@ toc: true
 layout: doc_tr
 ---
 
-Web packages from ledger will help you build a desktop application where you can connect your ledger device. However, many subtle prerequisites are required in order to build the application.
+Packages from ledger will help you build a desktop application where you can connect your Ledger device. However, many subtle prerequisites are required in order to build the application.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">

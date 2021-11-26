@@ -31,7 +31,7 @@ For Mobile applications you can integrate through React Native libraries HID and
 <img width="840" src="../images/mobile-integration.png" ></div>
 <!-- --------------------------------- -->
 
-Getting started with Mobile App integration => <a href="../">here</a>
+Getting started with Mobile App integration => <a href="../mobile-integration">here</a>
 
 ## Desktop Application
 For a desktop application your option is to use Node HID Transport layer. The library is only supported on Electron/Node.js
