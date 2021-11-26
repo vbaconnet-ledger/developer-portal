@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 Ledger hardware wallets are capable of connecting through different types of technologies and can be interfaces using different patterns.
 
