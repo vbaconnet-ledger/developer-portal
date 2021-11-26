@@ -107,7 +107,9 @@ react-native init myApp
 cd myApp
 ```
 
-During the initialization it is installing required "CocoaPods" dependencies and it may takes times.
+<!--  -->
+{% include alert.html style="success" text="During the initialization it is installing required 'CocoaPods' dependencies and it may takes times." %}
+<!--  -->
 
 Now that the folder is initialized, open it in an editor.
 Create a file named "App.js" and "polyfill.js" in the root folder.
@@ -135,7 +137,7 @@ Then import the polyfill in "index.js" like below:
 
 import "./polyfill";    //import this
 import {AppRegistry} from 'react-native';
-import App from './src/App';
+import App from './App';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);
@@ -303,14 +305,9 @@ You can now test the application you have built.
 The app testing will be executed on your personnal phone, why ? Because the android studio environment does not allow you to use neither bluetooth or usb connexion.
 Please refer to the below information.
 
-#### Android Emulator Limitations
-The functional limitations of the emulator include:
-- No support for placing or receiving actual phone calls. However, You can simulate phone calls (placed and received) through the emulator console
-- No support for USB
-- No support for device-attached headphones
-- No support for determining SD card insert/eject
-- No support for WiFi, Bluetooth, NFC
-
+<!--  -->
+{% include alert.html style="success" text="Please refer to the information for <a href='https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application'>Android Emulator Limitation</a>." %}
+<!--  -->
 
 #### Testing
 To integrate in application on your android smartphone you have enable the developper rôle.
