@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
