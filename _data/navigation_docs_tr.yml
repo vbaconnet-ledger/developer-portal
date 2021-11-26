@@ -1,36 +1,86 @@
-- title: Connecting a wallet
+- title: Overview
+  docs:
+  - transport/overview
+
+- title: Connectivity capabilities
+  docs:
+  - transport/connectivity-capabilities
+
+- title: Choose the right transport
+  docs:
+  - transport/choose-the-transport
+
+- title: Integration Walkthrough
+  subfolderitems:
+    - title: Web Application
+      docs:
+      - transport/web-integration
+      - transport/web-hid-usb
+      - transport/web-bluetooth
+
+    - title: Mobile Application
+      docs:
+      - transport/mobile-integration
+      - transport/react-native-android-hid
+      - transport/react-native-bluetooth
+    - title: Desktop Application
+      docs:
+      - transport/desktop-integration
+      - transport/node-electron-hid
+
+- title: Application Architecture
+
   docs:
   - transport/connect-wallet
 
-- title: Web Application
-  subfolderitems:
-      - title: Introduction
-        docs:
-        - transport/web-integration
-      - title: Integration
-        docs:
-        - transport/web-hid-usb
-        - transport/web-bluetooth
+- title: Architecture Dataflow
+  docs:
+  - transport/connect-wallet
 
-- title: Mobile Application
-  subfolderitems:
-      - title: Introduction
-        docs:
-        - transport/mobile-integration
-      - title: Integration
-        docs:
-        - transport/react-native-android-hid
-        - transport/react-native-bluetooth
+- title: End-2-end Tutorial
+  docs:
+  - transport/connect-wallet
 
-- title: Desktop Application
-  subfolderitems:
-      - title: Introduction
-        docs:
-        - transport/desktop-integration
-      - title: Integration
-        docs:
-        - transport/node-electron-hid
-
-- title: FAQs
+- title: FAQ
   docs:
   - transport/U2F
+
+- title: Troubleshooting
+  docs:
+  - transport/connect-wallet
+
+
+
+
+
+
+
+
+# - title: Web Application
+#   subfolderitems:
+#       - title: Introduction
+#         docs:
+#         - transport/web-integration
+#       - title: Integration
+#         docs:
+#         - transport/web-hid-usb
+#         - transport/web-bluetooth
+
+# - title: Mobile Application
+#   subfolderitems:
+#       - title: Introduction
+#         docs:
+#         - transport/mobile-integration
+#       - title: Integration
+#         docs:
+#         - transport/react-native-android-hid
+#         - transport/react-native-bluetooth
+
+# - title: Desktop Application
+#   subfolderitems:
+#       - title: Introduction
+#         docs:
+#         - transport/desktop-integration
+#       - title: Integration
+#         docs:
+#         - transport/node-electron-hid

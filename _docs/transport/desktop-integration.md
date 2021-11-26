@@ -1,5 +1,5 @@
 ---
-title: Desktop Integration
+title: Introduction
 subtitle:
 tags: []
 category: Connect a wallet

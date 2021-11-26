@@ -1,5 +1,5 @@
 ---
-title: Web Integration
+title: Introduction
 subtitle:
 tags: []
 category: Connect a wallet
@@ -116,13 +116,13 @@ Now you have a bitcoin account, congratulations!
 Web USB application will allow you to create a web application which connects to your ledger via the USB protocol.
 Some browsers support the USB connection between your computer and your ledger, refer to <a href="https://caniuse.com/webusb">browser support</a> for more information.
 
-An example of integration is available here <a href="../web-usb">Getting started with Web USB</a>
+An example of integration is available here <a href="../web-hid-usb">Getting started with Web USB</a>
 
 
 ## Web HID application
 Web HID application will allow you to create a web application which connects to your ledger via the HID protocol. Web HID is exactly the same as Web USB, however, the packages are different.Some browsers support the USB connection between your computer and your ledger, refer to <a href="https://caniuse.com/webhid">browser support</a> for more information.
 
-An example of integration is available here <a href="../web-hid">Getting started with Web HID</a>
+An example of integration is available here <a href="../web-hid-usb">Getting started with Web HID</a>
 
 
 ## Web Bluetooth application (Only nano X)

@@ -1,5 +1,5 @@
 ---
-title: Web Bluetooth integration
+title: Web Bluetooth
 subtitle:
 tags: []
 category: Connect a wallet
@@ -10,7 +10,7 @@ layout: doc_tr
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
 
-## Implementation for Web Bluetooth on Nano X
+## Web App Bluetooth (only Nano X)
 
 Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
 
@@ -323,6 +323,7 @@ This is how your “package.json” has to look like.
 }
 
 ```
+## Web App Test
 
 Now that the Setup is finished, the app has to be available in order to be displayed.
 Therefore start the developpement server:
