@@ -1,5 +1,5 @@
 ---
-title: Development steps
+title: Live App
 subtitle:
 tags: [platform app, live application, ledger live app, dapp]
 category: Live App
@@ -7,7 +7,7 @@ toc: true
 layout: doc
 ---
 
-This section you will help you transform your Web3 application or classical application into a Live App.
+This section will help you transform your Web3 application or classical application into a Live App.
 
 Live Apps are services that have been integrated into Ledger Live Discover section. Many applications such as Paraswap, Moonpay or Lido, have already been integrated. 
 
@@ -21,10 +21,10 @@ By having your application supported in a Ledger DApp browser, you increase the 
 
 What you will need to do to integrate your application as a Live App will differ depending on it being a DApp or a classical non decentralized application.
 
-|             |  Use the Ledger Live SDK | Update your web3 provider list| Write a manifest | Create a Nano Plugin |
+|             |  ... Use the <br>[Ledger Live SDK](../intro-sdk) | ... Update the <br>[web3 provider list](../dapp-customisation) | ... Write a <br>[manifest](../manifest) | ... Create a <br>[Nano Plugin](../nano-plugin/nano-app-plugin) |
 | ----------- | ------------ | ------------------------ | ---------------- | -------------------------- |
-| <b>To integrate a DApp, you will:</b>| No   | Yes		| Yes 		       | Yes, in most cases         |
-|<b>To integrate a non DApp, you will:</b>| Yes  | No   | Yes              | No                         |
+| <b>To integrate a DApp, you need to...</b>| <center>No   | <center><b>Yes</b>		| <center><b>Yes</b> 		       | <center><b>Yes, in most cases</b>        |
+|<b>To integrate a non DApp, you need to...</b>| <center><b>Yes</b>  | <center>No   | <center><b>Yes</b>              | <center>No                         |
 
 
 #### Ledger Live SDK
@@ -36,7 +36,7 @@ The Ledger Live SDK helps you integrate your centralized Live App into Ledger Li
 
 #### Web3 provider list update
 
-Since, as mentionned above, Web3 DApp a running in Ledger Live through our DApp browser, you will need to adapt your Web3 provider list.
+Since, as mentioned above, Web3 DApp a running in Ledger Live through our DApp browser, you will need to adapt your Web3 provider list.
 
 [Click here](../dapp-customisation) to know more.
 
@@ -51,7 +51,7 @@ The manifest is mandatory for all types of Live Apps. It is like an ID card for 
 
 Plugins are some very specific applications that handle dedicated smart contract methods, therefore making unverifiable contract data readable on the Nano screen.
 
-[Click here](../nano-app-plugin) to know more.
+[Click here](../nano-plugin/nano-app-plugin) to know more.
 
 
 ### Special cases

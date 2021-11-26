@@ -12,7 +12,7 @@
   docs:
   - live-app/manifest
 
-- title: Non DApp
+- title: Non-DApp
   docs:
   - live-app/intro-sdk
 
@@ -50,4 +50,17 @@
 
 - title: Nano App Plugin
   docs:
-  - live-app/nano-app-plugin
+  - live-app/nano-plugin/nano-app-plugin
+  - live-app/nano-plugin/overview
+  - live-app/nano-plugin/environment-setup
+  - live-app/nano-plugin/code-overview
+  - live-app/nano-plugin/boilerplate-plugin
+  - live-app/nano-plugin/selectors
+  - live-app/nano-plugin/init-contract
+  - live-app/nano-plugin/provide-parameter
+  - live-app/nano-plugin/finalize
+  - live-app/nano-plugin/provide-token
+  - live-app/nano-plugin/query-contract-id
+  - live-app/nano-plugin/query-contract-ui
+  - live-app/nano-plugin/testing
+  - live-app/nano-plugin/flow

@@ -12,7 +12,7 @@
   docs:
   - live-app/manifest
 
-- title: Non DApp
+- title: Non-DApp
   docs:
   - live-app/intro-sdk
   subfolderitems:
@@ -52,8 +52,29 @@
           - live-app/transaction-common
           - live-app/bitcoin-transaction
           - live-app/ethereum-transaction
-
+          
 - title: Nano App Plugin
   docs:
-  - live-app/nano-app-plugin
-
+  - live-app/nano-plugin/nano-app-plugin
+  - live-app/nano-plugin/overview
+  - live-app/nano-plugin/environment-setup
+  - live-app/nano-plugin/code-overview
+  subfolderitems:
+    - title: Intro
+      docs:
+      - live-app/nano-plugin/boilerplate-plugin
+      - live-app/nano-plugin/selectors
+    - title: Selectors detailed
+      docs:
+      - live-app/nano-plugin/init-contract
+      - live-app/nano-plugin/provide-parameter
+      - live-app/nano-plugin/finalize
+      - live-app/nano-plugin/provide-token
+      - live-app/nano-plugin/query-contract-id
+      - live-app/nano-plugin/query-contract-ui
+    - title: 
+      docs:
+      - live-app/nano-plugin/testing
+    - title: 
+      docs:
+      - live-app/nano-plugin/flow
