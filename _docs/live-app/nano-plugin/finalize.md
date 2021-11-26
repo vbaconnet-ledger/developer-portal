@@ -4,7 +4,7 @@ subtitle:
 tags: [dapp]
 category: DApp Integration
 author:
-toc: true
+toc: 
 layout: doc
 ---
 
