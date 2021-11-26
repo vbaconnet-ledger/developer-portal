@@ -5,29 +5,30 @@
   docs:
   - transport/overview
 
-- title: Nano calls
+- title: Transport
   docs:
-  - transport/nano-api-calls
-  - transport/nano-api-less-calls
-  - transport/test-communication
+  - transport/choose-the-transport
 
-- title: Examples
+- title: Integration Walkthrough
   docs:
-  - transport/example-webusb-js
-  - transport/example-webble-react
-  - transport/example-reactnative-ble
+  - transport/prerequisites
+  - transport/web-hid-usb
+  - transport/web-bluetooth
+  - transport/react-native-android-hid
+  - transport/react-native-bluetooth-android
+  - transport/react-native-bluetooth-ios
+  - transport/node-electron-hid
 
-- title: Transport APIs
+- title: Architecture
   docs:
-  - transport/webhid
-  - transport/webusb
-  - transport/web-ble
-  - transport/node-hid-singleton
-  - transport/node-speculos
-  - transport/react-native-hid
-  - transport/react-native-ble
+  - transport/application-architecture
+  - transport/architecture-dataflow
 
-- title: Note on U2F
+- title: End-2-end Tutorial
+  docs:
+  - transport/connect-wallet
+
+- title: FAQ & Troubleshooting
   docs:
   - transport/U2F
-  
+  - transport/test-communication

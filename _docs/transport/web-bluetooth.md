@@ -10,6 +10,8 @@ layout: doc_tr
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
 
+## Prerequisites
+To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
 ## Web App Bluetooth (only Nano X)
 
 Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
@@ -22,8 +24,10 @@ It is time to implement the application and test it. This web application will b
 First open a terminal , during this tutorial the project will be named “examples-web-bluetooth”.
 Run the following command to create the project and go into it:
 
-- `npx create-react-app examples-web-bluetooth`
-- `cd examples-web-bluetooth`
+```console
+npx create-react-app examples-web-bluetooth
+cd examples-web-bluetooth
+```
 
 Now that the project is initialized, open it in an editor.
 You will see a React app initialized with a "src" folder where you will find all the code.
@@ -266,13 +270,21 @@ Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
 - Install <a href="https://www.npmjs.com/package/qrcode">qrcode</a> which allow you to create a QR code:
-    - `npm install --save qrcode`
+```console
+npm install --save qrcode
+```
 - Install <a href="https://www.npmjs.com/package/eip55">eip55</a>, it is a package that will encode your ethereum address and can verify your address after encode:
-    - `npm install --save eip55`
+```console
+npm install --save eip55
+```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
-    - `npm install --save @ledgerhq/hw-app-eth`
+```console
+npm install --save @ledgerhq/hw-app-eth
+```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble"> @ledgerhq/hw-transport-web-ble</a> which provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion:
-    - `npm install --save @ledgerhq/hw-transport-web-ble`
+```console
+npm install --save @ledgerhq/hw-transport-web-ble
+```
 
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.

@@ -9,7 +9,7 @@ layout: doc_tr
 ---
 
 In this section you will see how to create a React Native application using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hid">@ledgerhq/react-native-hid</a> (Only on Android).
-During this project some general prerequisites are mandatory and you can find them <a href="../mobile-integration">here</a>.
+During this project some general prerequisites are mandatory and you can find them <a href="../prerequisites">here</a>.
 
 Then you can now go through the necessary prerequisite for Android development.
 
@@ -37,8 +37,6 @@ Then you have to install the latest SDK version. Therefore select the packages s
 <div style="text-align:center">
 <img width="840" src="../images/android-studio-SDK.png" ></div>
 <!-- --------------------------------- -->
-
-### For MacOS
 
 #### Install Homebrew
 Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party web sites, we can get the real advantage of Homebrew with few lines of code.

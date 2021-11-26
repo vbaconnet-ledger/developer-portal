@@ -1,51 +1,43 @@
-- title: Overview
+- title: Connecting a wallet
   docs:
   - transport/overview
 
-- title: Connectivity capabilities
-  docs:
-  - transport/connectivity-capabilities
-
-- title: Choose the right transport
+- title: Transport
   docs:
   - transport/choose-the-transport
 
 - title: Integration Walkthrough
   subfolderitems:
+    - title: Prerequisites
+      docs:
+      - transport/prerequisites
     - title: Web Application
       docs:
-      - transport/web-integration
       - transport/web-hid-usb
       - transport/web-bluetooth
 
     - title: Mobile Application
       docs:
-      - transport/mobile-integration
       - transport/react-native-android-hid
       - transport/react-native-bluetooth-android
       - transport/react-native-bluetooth-ios
     - title: Desktop Application
       docs:
-      - transport/desktop-integration
       - transport/node-electron-hid
 
 - title: Architecture
-
   docs:
   - transport/application-architecture
   - transport/architecture-dataflow
 
-- title: End-2-end Tutorial
+- title: End-2-end Tutorials
   docs:
   - transport/connect-wallet
 
-- title: FAQ
+- title: FAQ & Troubleshooting
   docs:
   - transport/U2F
-
-- title: Troubleshooting
-  docs:
-  - transport/connect-wallet
+  - transport/test-communication
 
 
 
