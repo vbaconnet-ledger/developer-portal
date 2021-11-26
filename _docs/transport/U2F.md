@@ -5,7 +5,7 @@ tags: [communication, transport]
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 ## Why is U2F deprecated?

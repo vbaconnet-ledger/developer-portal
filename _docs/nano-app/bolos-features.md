@@ -5,7 +5,7 @@ tags: [bolos, cryptographic secrets, passphrases, attestation, chain of trust, s
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -50,7 +50,7 @@ It is extremely unlikely for the Device private key to become compromised, becau
 
 
 <!--  -->
-{% include alert.html style="primary" text="For more information about the benefits of Ledger's use of a Secure Element for verifying device authenticity, see our blog post <a href='https://www.ledger.com/how-to-protect-hardware-wallets-against-tampering/' class='alert-link'> How to protect hardware wallets against tampering </a> (though keep in mind that not all of the information in this article applies to Ledger's latest products)." %}
+{% include alert.html style="note" text="For more information about the benefits of Ledger's use of a Secure Element for verifying device authenticity, see our blog post <a href='https://www.ledger.com/how-to-protect-hardware-wallets-against-tampering/' class='alert-link'> How to protect hardware wallets against tampering </a> (though keep in mind that not all of the information in this article applies to Ledger's latest products)." %}
 <!--  -->
 
 
@@ -137,5 +137,5 @@ Below is a definition of all of the parties involved in our public key cryptogra
 **Custom CA Certificate** A Custom Certificate Authority has a public-private keypair, where the public key is [enrolled on the device](#custom-ca-public-key-enrollment). The Custom CA's private key can then be used to establish an authenticated [Secure Channel](#secure-channel) with the device and sign applications.
 
 <!--  -->
-{% include alert.html style="success" text="A Custom CA may be a BOLOS application developer or a third party company that would like to give their application manager special administration permissions with a BOLOS device." %}
+{% include alert.html style="tip" text="A Custom CA may be a BOLOS application developer or a third party company that would like to give their application manager special administration permissions with a BOLOS device." %}
 <!--  -->

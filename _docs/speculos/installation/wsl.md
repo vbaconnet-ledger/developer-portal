@@ -4,15 +4,10 @@ subtitle:
 tags: [install speculos, emulate, emulator, Nano X emulator, speculos]
 category: Speculos
 author:
-toc: true
-layout: doc_sp
+toc: 
+layout: doc
 sort: 2
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 Building in WSL 2 (Windows Subsystem for Linux 2) is identical to the procedure in [building](../build).
 

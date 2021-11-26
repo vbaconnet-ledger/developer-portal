@@ -5,7 +5,7 @@ tags: [writing documentation, nano app documentation]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -17,7 +17,7 @@ Ledger continually works to make its products and services easy and safe to use.
 As the wallet apps are maintained by third-party members of the Ledger community, the documentation on how to use these third-party services needs to be provided during the app review process. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
 
 <!--  -->
-{% include alert.html style="warning" text="Without approval of your documentation, your app will not be released." %}
+{% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}
 <!--  -->
 
 ## Documentation by Ledger

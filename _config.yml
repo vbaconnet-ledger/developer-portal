@@ -6,7 +6,7 @@
 
 # Site title and description
 title:              Developers
-description:        Integrating with Ledger Live
+description:        Integrating with Ledger
 lang:               en
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
@@ -37,6 +37,9 @@ social:
     pinterest:
     vimeo:
 
+twitter:
+  username: ledger
+
 # Share button
 share:
     post:           true # Display share buttons on a post page
@@ -57,11 +60,18 @@ google_analytics: GTM-W5FKZ2N
 
 # Algolia search
 algolia:
-  application_id: 'WV98VMIU7C'
+  application_id: 'CQSKUI8IBV'
   index_name: dev_portal
-  search_only_api_key: 2c01f0f02f9134bbd0e7fa5f1c5e6818
-  extensions_to_index:
-      - md
+  search_only_api_key: b6bd2aad536ec6cfebe309a5c97c03e4
+  files_to_exclude:
+    - _docs/platform-app/*.md
+    - _docs/platform-app/**/*.md
+    - _docs/swap/*.md
+    - _docs/speculos/dev/*.md
+    - index.md
+    - 404.html
+    - 404.md 
+    - sitemap.html
   settings:                                                                      
     searchableAttributes:                                                        
     - title                                                                    
@@ -121,6 +131,11 @@ defaults:
       type:         docs
     values:
       layout:       doc
+  # image for social media cards   
+  - scope:
+      path: ""
+    values:
+      image: /uploads//images/portal-intro.jpg
 
 # Site subpath, e.g. /blog
 # Site base hostname & protocol, e.g. http://example.com

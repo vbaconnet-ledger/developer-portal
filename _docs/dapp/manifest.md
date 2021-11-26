@@ -5,7 +5,7 @@ tags: [dapp]
 category: DApp Integration
 author:
 toc: true
-layout: doc_da
+layout: doc
 ---
 
 To be able to test and integrate your application, you first need to write your application Manifest file.

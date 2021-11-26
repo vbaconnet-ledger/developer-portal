@@ -4,8 +4,8 @@ subtitle:
 tags: [use speculos, emulate, emulator, Nano X emulator]
 category: Speculos
 author:
-toc: true
-layout: doc_sp
+toc: 
+layout: doc
 sort: 4
 ---
 

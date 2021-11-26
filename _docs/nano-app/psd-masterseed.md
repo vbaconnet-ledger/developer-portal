@@ -5,7 +5,7 @@ tags: [psd, personal security devices, device, serialization, cryptography, mnem
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -29,7 +29,7 @@ The result of this process is that your device will generate a single mnemonic s
 
 
 <!--  -->
-{% include alert.html style="primary" text="<b>Can someone guess my seed?</b> There are 2<sup>256</sup> different possible 24-word mnemonic seeds. For comparison, the number of atoms on Earth is estimated to be around 2<sup>166</sup>. Just let that sink in for a second. The chance of someone else being able to guess your seed is astronomically small, to say the least." %}
+{% include alert.html style="note" text="<b>Can someone guess my seed?</b> There are 2<sup>256</sup> different possible 24-word mnemonic seeds. For comparison, the number of atoms on Earth is estimated to be around 2<sup>166</sup>. Just let that sink in for a second. The chance of someone else being able to guess your seed is astronomically small, to say the least." %}
 <!--  -->
 
 **But all we have here is a sequence of 24 words, how can the device use this as a cryptographic secret?**

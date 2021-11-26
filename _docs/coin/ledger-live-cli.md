@@ -5,7 +5,7 @@ tags: [clone ledger live]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ### Set up
@@ -27,7 +27,7 @@ ledger-live deviceInfo   # should display information about connected device
 ```
 
 <!--  -->
-{% include alert.html style="success" text="Ensure <code>yarn global bin</code> is in your $PATH. You can build automatically the CLI by running <code>yarn watch</code> in a separate terminal to ensure <code>ledger-live</code> bin is always up-to-date with your work." %}
+{% include alert.html style="tip" text="Ensure <code>yarn global bin</code> is in your $PATH. You can build automatically the CLI by running <code>yarn watch</code> in a separate terminal to ensure <code>ledger-live</code> bin is always up-to-date with your work." %}
 <!--  -->
 
 If everything is fine, you are ready to start integrating your blockchain!

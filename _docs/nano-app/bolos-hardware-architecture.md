@@ -5,7 +5,7 @@ tags: [bolos, chips, processors, secure element proxy, seproxyhal]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

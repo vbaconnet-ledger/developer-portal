@@ -4,7 +4,7 @@ subtitle:
 tags: [platform app, platform application, live app, ledger live app]
 category: Platform Application
 toc: true
-layout: doc_pa
+layout: doc
 ---
 
 
@@ -38,5 +38,5 @@ Once Ledger finishes the review, your application is added to the Ledger Live �
 
 ## Contact us
 
-If you wish to contact us, please have a look at [this page](https://developers.ledger.com/contact/) where we describe all the relevant communication channels you can use. If you are a developer and wish to get in touch with our engineering team, don’t wait and reach out to us [on Slack](https://join.slack.com/t/ledger-dev/shared_invite/zt-iskfi3kl-CXw9Uz2dOOYSLKe_e4tcmw). Please introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **#ledgerjs** channels.
+If you are a developer and wish to get in touch with our engineering team, don’t wait and reach out to us [on Discord](https://discord.gg/Ledger). Please introduce yourself to the developer community in the **#introductions** channel.
 

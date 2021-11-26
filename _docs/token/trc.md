@@ -5,7 +5,7 @@ tags: [tokens]
 category: Tokens
 toc: true
 author:
-layout: doc_et
+layout: doc
 ---
 
 
@@ -17,7 +17,7 @@ layout: doc_et
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/develop/cryptoassets.md).
 
 <!--  -->
-{% include alert.html style="success" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
+{% include alert.html style="tip" text="The list of supported assets on the <a href='https://www.ledger.com/supported-crypto-assets/'>website</a> is managed through an internal Ledger process. For the moment it’s difficult to guarantee the exact mapping between tokens available on Ledger Live and listed on the website." %}
 <!--  -->
 
 ### 2. How to get my token listed?
@@ -29,7 +29,7 @@ First, make sure your token isn’t already listed by checking this table of the
 | 2. A specific signature is required on the [Tron Nano App](https://github.com/LedgerHQ/app-tron). | 2. Update both `src/tokens.c` and `src/tokens.h` in the [Tron Nano App](https://github.com/LedgerHQ/app-tron). |
 
 <!--  -->
-{% include alert.html style="warning" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://ledger-dev.slack.com'>Ledger's Developer Slack</a>, or use <a href='https://developers.ledger.com/contact/'>this contact form</a> to get signed in." %}
+{% include alert.html style="important" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://discord.gg/Ledger'>Ledger's Discord server</a>" %}
 <!--  -->
 
 ### What will Ledger do?

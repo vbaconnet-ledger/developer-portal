@@ -8,7 +8,20 @@
 const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   indexName: '{{ site.algolia.index_name }}',
-  apiKey: '{{ site.algolia.search_only_api_key }}'
+  apiKey: '{{ site.algolia.search_only_api_key }}',
+    searchFunction: function(helper) {
+    var searchResults = $('.search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      const title = document.querySelector('#search-hits');
+      title.style.display = 'none';
+      return;
+    }
+    helper.search();
+    searchResults.show();
+    const title = document.querySelector('#search-hits');
+    title.style.display = 'block';
+  }
 });
 
 
@@ -33,11 +46,12 @@ const hitTemplate = function(hit) {
   }
 
   const content = hit._highlightResult.html.value;
+  const category = hit._highlightResult.category.value;
 
   return `
     <div class="post-item">
 
-      <h3><a class="post-link" href="${url}">${hit.category}: ${title}</a></h3>
+      <h3><a class="post-link" href="${url}">${category}: ${title}</a></h3>
       <b>Tags:</b> ${tags} <br>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
       <div class="post-snippet">${content.replace(/<img.*>/, '')}</div>
@@ -48,8 +62,8 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    placeholder: 'Search/ask anything',
+    poweredBy: false
   })
 );
 

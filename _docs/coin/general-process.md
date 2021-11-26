@@ -5,7 +5,7 @@ tags: [coin, protocol, ledger live, integration, ledger live integration]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## General Ledger Live Overview
@@ -50,7 +50,7 @@ In most cases however, you will want to have your blockchain officially supporte
 <!-- --------------------------------- -->
 Assuming you are on course for a **Participant Integration**, here is how we suggest working together.
 
-To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the Ledger Dev Slack. If you're not sign in yet, please make a request using [this form](https://developers.ledger.com/contact/).
+To set up a Launch meeting please make a request to Fabrice Dautriat (@Fabrice-ledger), on the [Ledger's Discord server](https://discord.gg/Ledger). 
 
 The aim of the Launch meeting is to present and discuss together your project objective, and a high-level roadmap.
 
@@ -61,7 +61,7 @@ After the Launch meeting, we will assess the feasibility and the maturity of you
 - Contact points for Technical and Documentation issues
 
 <!--  -->
-{% include alert.html style="success" text="Roadmaps and terms can be changed by any party along the way, of course, as long as these changes are talked about and agreed together." %}
+{% include alert.html style="tip" text="Roadmaps and terms can be changed by any party along the way, of course, as long as these changes are talked about and agreed together." %}
 <!--  -->
 
 

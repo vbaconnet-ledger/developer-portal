@@ -5,20 +5,20 @@ tags: [emulator, live-common, ledger-live-mobile, llm]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-03-30 based on 2548924630 in Confluence -->
 
 <!--  -->
-{% include alert.html style="success" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
+{% include alert.html style="tip" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:
 <ul>
 <li><a href='../build-android-devapp/' class='alert-link'>Building Android Dev App</a></li>
 <li><a href='../build-ios-devapp/' class='alert-link'>Building iOS Dev App</a></li></ul>" %}
 <!--  -->
 
 <!--  -->
-{% include alert.html style="warning" text="Different terminals have to be opened at the same time. Obviously, that could be terminal tabs. In this guide, <code>terminal X</code> refers indifferently to a terminal or one of its tabs." %}
+{% include alert.html style="important" text="Different terminals have to be opened at the same time. Obviously, that could be terminal tabs. In this guide, <code>terminal X</code> refers indifferently to a terminal or one of its tabs." %}
 <!--  -->
 
 

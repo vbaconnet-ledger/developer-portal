@@ -5,7 +5,7 @@ tags: [define explorer, explorers, currency model, unit]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 The [@ledgerhq/cryptoassets](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/cryptoassets) package contains all definitions of cryptoassets that could be useful to Ledger Live.
@@ -127,7 +127,7 @@ type CryptoCurrency = CurrencyCommon & {
 };
 ```
 <!--  -->
-{% include alert.html style="success" text="CoinType is generally found in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md'>github.com/satoshilabs/slips/blob/master/slip-0044.md</a>, although unicity is not quaranteed across networks (testnets, etc...)." %}
+{% include alert.html style="tip" text="CoinType is generally found in <a href='https://github.com/satoshilabs/slips/blob/master/slip-0044.md'>github.com/satoshilabs/slips/blob/master/slip-0044.md</a>, although unicity is not quaranteed across networks (testnets, etc...)." %}
 <!--  -->
 
 ### ExplorerView
@@ -146,7 +146,7 @@ type ExplorerView = {
 ```
 
 <!--  -->
-{% include alert.html style="success" text="Find a reliable explorer. If you find more than one explorer, list them from most to less popular. Ledger Live will likely use the first explorer as default." %}
+{% include alert.html style="tip" text="Find a reliable explorer. If you find more than one explorer, list them from most to less popular. Ledger Live will likely use the first explorer as default." %}
 <!--  -->
 
 ### TokenCurrency specific fields

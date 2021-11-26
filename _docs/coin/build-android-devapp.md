@@ -5,7 +5,7 @@ tags: [ledger-live-mobile, llm, android emulator, android simulator]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-04-07 written by Henri Ly -->

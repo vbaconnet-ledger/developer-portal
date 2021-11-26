@@ -3,7 +3,7 @@ title: Test
 subtitle:
 tags: []
 category: Platform Application
-layout: doc_pa
+layout: doc
 ---
 
 #### Sections in this article

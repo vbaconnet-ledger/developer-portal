@@ -5,7 +5,7 @@ tags: [bolos, framework, operating system]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

@@ -4,7 +4,7 @@ subtitle:
 tags: [bolos]
 category: Nano Application
 toc: true
-layout: doc_na
+layout: doc
 ---
 
 
