@@ -16,7 +16,7 @@ We refer to blind signing when the user cannot verify transaction details becaus
 This is often the case when users interact with smart contracts. Indeed, as each smart contract interaction is different, there is no easy way for the BOLOS application to easily parse the message to be signed.
 
 To solve this problem, Ledger has designed <b>plugins</b>. Plugins are some very specific applications that handle dedicated smart contract methods, therefore making unverifiable contract data readable on the Nano screen.
-
+ 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
 <img width="680" src="../images/plugin.png">
