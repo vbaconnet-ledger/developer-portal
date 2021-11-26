@@ -1,5 +1,5 @@
 ---
-title: Web Integration
+title: Desktop Integration
 subtitle:
 tags: []
 category: Connect a wallet
@@ -8,29 +8,22 @@ toc: true
 layout: doc_tr
 ---
 
-Web packages from ledger will help you build a web application where you can connect your ledger device. However, many subtle prerequisites are required in order to build the application.
+Web packages from ledger will help you build a desktop application where you can connect your ledger device. However, many subtle prerequisites are required in order to build the application.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-<img width="840" src="../images/webAppsummary.png" ></div>
+<img width="840" src="../images/desktop-integration.png" ></div>
 <!-- --------------------------------- -->
 
-Before diving into the code you have to understand your needs. Ledger provide you with three different integration, and each integration is provided with the package corresponding:
-- Web USB : <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a>
-- Web HID : <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a>
-- Web bluetooth ( Only for nano X ) : <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble">@ledgerhq/hw-transport-web-ble</a>
-
-Each integration is provided with different package, and you have to check the browser support:
-- Web USB : <a href="https://caniuse.com/webusb">browser support</a> for USB
-- Web HID : <a href="https://caniuse.com/webhid">browser support</a> for HID
-- Web Bluetooth : <a href="https://caniuse.com/web-bluetooth">browser support</a> for Bluetooth
+Before diving into the code you have to understand that desktop application is only available for the HID type of connexion. Ledger provide you with an electon integration, and this integration is provided with the package:
+- Node HID : <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid">@ledgerhq/hw-transport-node-hid</a>
 
 
 ## Prerequisites
 
 Beforehand we have to install some dependencies. First install <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. To ensure you have it installed in your machine open a new terminal and run:
-- ``` node -v ``` must display something like ``` v14.18.0 ``` (the version may differ)
-- ``` npm -v ```  must display something like ``` 6.14.15 ``` (the version may differ)
+- ``` node -v ``` The commands should print the versions of Node.js and npm accordingly.
+- ``` npm -v ```  The commands should print the versions of Node.js and npm accordingly.
 
 
 Now that node and npm are installed, you have to install the <a href="https://www.ledger.com/ledger-live/download">Ledger Live</a> desktop application in order to connect your Ledger device.
@@ -58,7 +51,7 @@ Then Ledger Live will ask you to allow the Ledger device, just press the two but
 </div>
 <!-- --------------------------------- -->
 
-Now you can install the bitcoin application into your Ledger Nano S/X.
+Now you can install the bitcoin application into your Ledger Nano S/X
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
@@ -112,25 +105,8 @@ Now you have a bitcoin account, congratulations!
 <!-- --------------------------------- -->
 
 
-## Web USB application
-Web USB application will allow you to create a web application which connects to your ledger via the USB protocol.
-Some browsers support the USB connection between your computer and your ledger, refer to <a href="https://caniuse.com/webusb">browser support</a> for more information.
+## Node HID application
+Node HID application will allow you to create a desktop electron application which connects to your Ledger device via the HID protocol.
 
-An example of integration is available here <a href="../web-usb">Getting started with Web USB</a>
-
-
-## Web HID application
-Web HID application will allow you to create a web application which connects to your ledger via the HID protocol. Web HID is exactly the same as Web USB, however, the packages are different.Some browsers support the USB connection between your computer and your ledger, refer to <a href="https://caniuse.com/webhid">browser support</a> for more information.
-
-An example of integration is available here <a href="../web-hid">Getting started with Web HID</a>
-
-
-## Web Bluetooth application (Only nano X)
-Web Bluetooth application will allow you to create a web application which connects to your ledger via bluetooth.Some browsers support the USB connection between your computer and your ledger, refer to <a href="https://caniuse.com/web-bluetooth">browser support</a> for more information.
-
-An example of integration is available here  <a href="../web-bluetooth">Getting started with Web Bluetooth</a>
-
-
-
-
+An example of integration is available here <a href="../node-electron-hid">Getting started with Node Electron HID</a>
 

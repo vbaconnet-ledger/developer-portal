@@ -2,40 +2,35 @@
   docs:
   - transport/connect-wallet
 
-- title: Nano calls
-  docs:
-  - transport/nano-api-calls
-  - transport/nano-api-less-calls
-  - transport/test-communication
-
-- title: Examples
-  docs:
-  - transport/example-webusb-js
-  - transport/example-webble-react
-  - transport/example-reactnative-ble
-
-- title: Transport APIs
+- title: Web Application
   subfolderitems:
-    - title: Web app
-      docs:
-      - transport/webhid
-      - transport/webusb
-      - transport/web-ble
-    - title: Desktop app
-      docs:
-      - transport/node-hid-singleton
-      - transport/node-speculos
-    - title: Mobile app
-      docs:
-      - transport/react-native-hid
-      - transport/react-native-ble
+      - title: Introduction
+        docs:
+        - transport/web-integration
+      - title: Integration
+        docs:
+        - transport/web-hid-usb
+        - transport/web-bluetooth
 
-- title: Note on U2F
+- title: Mobile Application
+  subfolderitems:
+      - title: Introduction
+        docs:
+        - transport/mobile-integration
+      - title: Integration
+        docs:
+        - transport/react-native-android-hid
+        - transport/react-native-bluetooth
+
+- title: Desktop Application
+  subfolderitems:
+      - title: Introduction
+        docs:
+        - transport/desktop-integration
+      - title: Integration
+        docs:
+        - transport/node-electron-hid
+
+- title: FAQs
   docs:
   - transport/U2F
-
-- title: Web Application
-  docs:
-  - transport/web-integration
-  - transport/web-hid-usb
-  - transport/web-bluetooth
