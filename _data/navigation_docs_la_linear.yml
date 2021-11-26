@@ -50,7 +50,6 @@
 
 - title: Nano App Plugin
   docs:
-  - live-app/nano-plugin/nano-app-plugin
   - live-app/nano-plugin/overview
   - live-app/nano-plugin/environment-setup
   - live-app/nano-plugin/code-overview

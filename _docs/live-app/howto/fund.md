@@ -27,7 +27,7 @@ List the accounts added by the user on Ledger Live.
 
 [listAccounts](../../classes/#listaccounts):
 
-```json
+```js
 async listAccounts(): Promise<Account[]> {
     const rawAccounts = await this._request<RawAccount[]>("account.list");
 
@@ -41,7 +41,7 @@ Start the exchange process by generating a nonce on Ledger device.
 
 [initExchange](../../classes/#initexchange):
 
-```json
+```js
  async initExchange(
     _exchangeType: ExchangeType,
     _partnerName: string
@@ -57,7 +57,7 @@ Complete an exchange process by passing by the exchange content and its signatur
 
 [completeExchange](../../classes/#completeexchange):
 
-```json
+```js
 async completeExchange(
     _exchangePayload: ExchangePayload,
     _payloadSignature: EcdsaSignature,
@@ -72,7 +72,7 @@ The **exchangePayload** is a protobuf message containing the transaction data. I
 
 Your protobuf message should have the following structure: 
 
-```json
+```js
 message NewFundResponse {
    string    user_id = 1; 
    string    account_name = 2; 

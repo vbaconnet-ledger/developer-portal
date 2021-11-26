@@ -4,12 +4,8 @@ subtitle:
 tags: []
 category: Live Application
 layout: doc
+toc: true
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Submit the form
 

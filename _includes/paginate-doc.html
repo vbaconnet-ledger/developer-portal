@@ -5,14 +5,10 @@
   {% assign docs = site.data.navigation_docs_na_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "coin"  %}
   {% assign docs = site.data.navigation_docs_ci_linear | map: 'docs' | join: ',' | split: ',' %}
-{% elsif category == "dapp"  %}
-  {% assign docs = site.data.navigation_docs_da | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "speculos"  %}
   {% assign docs = site.data.navigation_docs_sp | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "token"  %}
   {% assign docs = site.data.navigation_docs_et | map: 'docs' | join: ',' | split: ',' %}
-{% elsif category == "platform-app"  %}
-  {% assign docs = site.data.navigation_docs_pa_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "swap"  %}
