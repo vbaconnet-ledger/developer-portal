@@ -5,7 +5,7 @@ tags: []
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 

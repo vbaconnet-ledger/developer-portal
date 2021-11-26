@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 In this section you will see how to create a React Native application using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>.

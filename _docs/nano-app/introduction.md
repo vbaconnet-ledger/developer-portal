@@ -5,7 +5,7 @@ tags: [development phases, develop nano app, submit an app, submission]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -59,7 +59,7 @@ Go to the submission form [here](https://ledger.typeform.com/to/qQSf7CVh).
 ## Things to do
 
 ### Get in touch with the Ledger developer community
-If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the **#introductions** channel and get help in the **#support** and **ledgerjs** channels. Otherwise, send us a request by filling [this contact form](../../../contact).
+Join [our Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.
 
 ### Set up the BOLOS development environment
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. The environment is [all set in a Docker image](../build).
@@ -76,5 +76,4 @@ Other languages are possible (no details here).
 
 
 ## Contribute
-If you want to improve the documentation you can the comment box at the bottom of each page or make suggestions on the [Ledger's Developer Slack](https://ledger-dev.slack.com)
-
+If you want to improve the documentation you can the comment box at the bottom of each page, open a pull request on our repository.

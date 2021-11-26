@@ -5,7 +5,7 @@ tags: [transaction status, account synchronisation, accounts, run tests]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 <!-- 2021-03-30 based on 1809613975 in Confluence -->
@@ -38,7 +38,7 @@ For a specific currency, the seed used needs to be frozen, it’s mean that no n
 By doing so we can ensure that the account synchronisation and the transaction status will always provide the same results.
 
 <!--  -->
-{% include alert.html style="warning" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
+{% include alert.html style="important" text="<b>Prerequisite</b> - Your computer is expected to have been set up accordingly. Please follow the following guides for this purpose:<br>
 <div> <ul>
 <li><a href='https://ledgerhq.atlassian.net/wiki/spaces/WALLETCO/pages/2610659678/Ledger+Live+Common#ledger-live-cli-setup' class='alert-link'>ledger-live CLI</a></li>
 <li>Physical Nano device or an <a href='https://developers.ledger.com/docs/speculos/installation/build' class='alert-link'>emulated device with Speculos</a></li>

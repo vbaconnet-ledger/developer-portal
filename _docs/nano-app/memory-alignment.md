@@ -5,7 +5,7 @@ tags: [development constraints, pointers]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 

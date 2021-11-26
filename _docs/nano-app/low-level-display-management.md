@@ -5,7 +5,7 @@ tags: [bagl, asynchronous display, macros, ux, events, button push ]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -13,7 +13,7 @@ layout: doc_na
 ## Introduction
 
 <!--  -->
-{% include alert.html style="warning" text="This article only concerns about 1% of users who wish to get a deeper understanding and/or design more advanced flows. Feel free to skip it." %}
+{% include alert.html style="important" text="This article only concerns about 1% of users who wish to get a deeper understanding and/or design more advanced flows. Feel free to skip it." %}
 <!--  -->
 
 ## BAGLs and BOLOS
@@ -45,7 +45,7 @@ To facilitate the process of implementing an asynchronous display manager loop, 
 See [the sample apps](https://github.com/LedgerHQ/ledger-sample-apps) for examples of how to use these macros.
 
   <!--  -->
-{% include alert.html style="success" text="After a Display Status has been sent, the application must wait, asynchronously, for the Display Processed Event before being able to continue to display more elements of the GUI." %}
+{% include alert.html style="tip" text="After a Display Status has been sent, the application must wait, asynchronously, for the Display Processed Event before being able to continue to display more elements of the GUI." %}
 <!--  -->
 
 

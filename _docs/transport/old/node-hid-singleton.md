@@ -5,7 +5,7 @@ tags: [communication, transport, wallet, companion, package]
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 **This page is an extract from the repository**
@@ -17,7 +17,7 @@ layout: doc_tr
 This package uses `node-hid` and `usb-detection`. Keep transport opened and re-use it as a singleton, one device at a time on a computer but more robust implementation.
 
 <!--  -->
-{% include alert.html style="success" text='It is recommended not to use <code>hw-transport-node-hid\*</code> transport in the "renderer thread" but instead to spawn a dedicated thread. Otherwise the USB connection is blocking the thread and can cause performance issues' %}
+{% include alert.html style="tip" text='It is recommended not to use <code>hw-transport-node-hid\*</code> transport in the "renderer thread" but instead to spawn a dedicated thread. Otherwise the USB connection is blocking the thread and can cause performance issues' %}
 <!--  -->
 
 ## API

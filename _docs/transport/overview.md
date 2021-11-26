@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 The objective of this documentation is to help crypto assets service providers to add to their service the capability to connect Ledger hardware devices in order to preserve clients self custody and always let them keep crypto assets in their hardware wallet.

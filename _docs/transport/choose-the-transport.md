@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 On the client side device (Desktop & Mobile) several technologies can be used to communicate with Ledger hardware devices.

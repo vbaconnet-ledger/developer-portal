@@ -5,7 +5,7 @@ tags: [server, iframe]
 category: DApp Integration
 author:
 toc: true
-layout: doc_da
+layout: doc
 ---
 
 This page is a description of the three parts of the implementation of your DApp.
@@ -37,7 +37,7 @@ For example, this is how it is used with Paraswap:
 You will see that the page information content depends on the chosen account in the drop-down list in the page header.
 
 <!--  -->
-{% include alert.html style="success" text="The first requirement is that the DApp must work flawlessly within this test tool." %}
+{% include alert.html style="tip" text="The first requirement is that the DApp must work flawlessly within this test tool." %}
 <!--  -->
 
 ## 3. Smooth out user experience

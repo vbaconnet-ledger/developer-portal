@@ -5,7 +5,7 @@ tags: []
 category: Connect a wallet
 author:
 toc: true
-layout: doc_tr
+layout: doc
 ---
 
 Packages from ledger will help you build a mobile application where you can connect your Ledger device. However, many subtle prerequisites are required in order to build the application.

@@ -5,7 +5,7 @@ tags: [technical assessment, indexer]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 Cryptocurrencies projects have always been technically complex, involving state-of-the-art technologies and designs in cryptography and decentralization, among others.
@@ -30,7 +30,7 @@ And lastly, special care and careful consideration must be given to providing th
 
 The output of this phase is a detailed proposition of choices made and discussed with Ledger for agreement, before coding starts. This is done at a joint meeting to agree on the Acceptance Plan.
 
-To submit the Technical Assessment for your Blockchain, start by [making a copy this file locally]( https://docs.google.com/document/d/1pIk-TtmVtgBeyrUY8EyVjknkk-zoVUAXdxyDHluJSiM). (Do not request edit access of the original file). 
+To submit the Technical Assessment for your Blockchain, start by [making a copy of this file locally]( https://docs.google.com/document/d/1pIk-TtmVtgBeyrUY8EyVjknkk-zoVUAXdxyDHluJSiM). (Do not request edit access of the original file). 
 
 After you have filled it in, please inform Ledger by contacting us in the usual way. 
 

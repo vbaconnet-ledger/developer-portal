@@ -5,7 +5,7 @@ tags: [psd, personal security devices, device, path, derivation path, address]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -22,7 +22,7 @@ For each cryptocurrency, there is a node on the tree where all of the keys for t
 
 
 <!--  -->
-{% include alert.html style="warning" text="In the Ledger Ethereum Wallet desktop app, addresses are not derived according to BIP 44. Instead of using the derivation path <code>m / 44' / 60' / account' / change / address_index</code> (as defined by BIP 44 for Ethereum), the Ledger Ethereum Wallet desktop app uses the derivation path <code>m / 44' / 60' / 0' / address_index</code>." %}
+{% include alert.html style="important" text="In the Ledger Ethereum Wallet desktop app, addresses are not derived according to BIP 44. Instead of using the derivation path <code>m / 44' / 60' / account' / change / address_index</code> (as defined by BIP 44 for Ethereum), the Ledger Ethereum Wallet desktop app uses the derivation path <code>m / 44' / 60' / 0' / address_index</code>." %}
 <!--  -->
 
 

@@ -5,7 +5,7 @@ tags: [ledgerblue, debugging firmware, printf, pin bypass]
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -14,7 +14,7 @@ layout: doc_na
 
 
 <!--  -->
-{% include alert.html style="warning" text="The <a href='../build/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
+{% include alert.html style="important" text="The <a href='../build/' class='alert-link'>BOLOS development environment</a> is required for the following article. It applies only for the Nano S, with its SE (Secure Element) firmware either in version 1.5.5 or 1.6.0." %}
 <!--  -->
 
 
@@ -67,11 +67,11 @@ The debugging firmware enables the `PRINTF` macro, however you have to define it
 Usually, `PRINTF` is already defined to void, with this line `DEFINES += PRINTF\(...\)=`. Check if `PRINTF` is already defined somewhere else in your Makefile, and comment out this definition so it doesn't override the one that you just set.
 
 <!--  -->
-{% include alert.html style="warning" text="The <code>PRINTF</code> macro is a debugging feature, it is not intended to be used in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile: put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
+{% include alert.html style="important" text="The <code>PRINTF</code> macro is a debugging feature, it is not intended to be used in production. When compiling an application for release purpose, please verify that <code>PRINTF</code> is disabled in your Makefile: put back the line <code>DEFINES += PRINTF\(...\)=</code> and comment out the other one." %}
 <!--  -->
 
 <!--  -->
-{% include alert.html style="warning" text="The <code>PRINTF</code> macro can only be used in between successive calls to <code>io_exchange</code>. Calling it outside of <code>io_exchange</code> will result in unexpected behaviour. <code>PRINTF</code> sends a status on the <a href='../bolos-hardware-architecture/#seproxyhal' class='alert-link'> SEPH </a>. Only one status can be sent in a row, otherwise the SEPH crashes. For this reason, don't use <code>PRINTF</code> just after status-sending calls, such as <code>UX_DISPLAY</code>. This macro packs a call to <i>io_seproxyhal_display</i> and is often the reason for application crashes. The only solution is to move your call to <code>PRINTF</code> somewhere else in your code." %}
+{% include alert.html style="important" text="The <code>PRINTF</code> macro can only be used in between successive calls to <code>io_exchange</code>. Calling it outside of <code>io_exchange</code> will result in unexpected behaviour. <code>PRINTF</code> sends a status on the <a href='../bolos-hardware-architecture/#seproxyhal' class='alert-link'> SEPH </a>. Only one status can be sent in a row, otherwise the SEPH crashes. For this reason, don't use <code>PRINTF</code> just after status-sending calls, such as <code>UX_DISPLAY</code>. This macro packs a call to <i>io_seproxyhal_display</i> and is often the reason for application crashes. The only solution is to move your call to <code>PRINTF</code> somewhere else in your code." %}
 <!--  -->
 
 
@@ -127,7 +127,7 @@ In Ledger app development, it is necessary to enter your PIN code each time you 
 
 
 <!--  -->
-{% include alert.html style="warning" text="A Ledger device with a custom CA installed can not pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it pass the check, uninstall your custom CA and all the applications installed through it." %}
+{% include alert.html style="important" text="A Ledger device with a custom CA installed can not pass the Ledger Genuine Check, which is required to install applications from the Ledger Live. To make it pass the check, uninstall your custom CA and all the applications installed through it." %}
 <!--  -->
 
 **Uninstalling a custom CA is very quick:**

@@ -4,7 +4,7 @@ subtitle:
 tags: []
 category: Nano Application
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -19,7 +19,7 @@ Just as for any Nano Application, you must follow our guidelines to comply Ledge
 ### Developing the application
 
 Instead of building your application in a separate repository, you will make changes to the [Ethereum app](https://github.com/LedgerHQ/app-ethereum).
-Click here to develop an [Ethereum clones](../eth-clones). More types of clone applications will be added to the documentation in the future.
+Click here to develop an [Ethereum clone](../eth-clones). More types of clone applications will be added to the documentation in the future.
 
 ### Building the application
 
@@ -34,4 +34,4 @@ If you want to publish a clone application, follow the process in [Publishing an
 
 ## Get in touch with the Ledger developer community
 
-If you’re already signed up to the Ledger Devs Slack workspace, introduce yourself to the developer community in the #introductions channel and get help in the #support and ledgerjs channels. Otherwise, send us a request by filling [this contact form](https://developers.ledger.com/contact/).
+Join us on the [Ledger's Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.

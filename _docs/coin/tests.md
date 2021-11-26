@@ -5,7 +5,7 @@ tags: [test toolchain]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## Setting up the Test Toolchain

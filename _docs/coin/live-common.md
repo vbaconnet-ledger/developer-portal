@@ -5,7 +5,7 @@ tags: [Ledger Live Common, typescript, environment variables, local packages]
 category: Blockchain Support
 author:
 toc: true
-layout: doc_ci
+layout: doc
 ---
 
 ## Introduction
@@ -78,7 +78,7 @@ Here is a typical family folder structure (TS integration):
 ```
 
 <!--  -->
-{% include alert.html style="primary" text="You can refer to existing implementations to complete given examples, like <a href='https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot'>Polkadot integration</a>" %}
+{% include alert.html style="note" text="You can refer to existing implementations to complete given examples, like <a href='https://github.com/LedgerHQ/ledger-live-common/tree/master/src/families/polkadot'>Polkadot integration</a>" %}
 <!--  -->
 
 
@@ -95,7 +95,7 @@ You should not update those files manually, but call a dedicated script:
 ./scripts/sync-families-dispatch.sh
 ```
 
-{% include alert.html style="success" text="you may need to add <code>mycoin</code> to the <code>withoutNetworkInfo</code> in this script if you don't use a NetworkInfo type." %}
+{% include alert.html style="tip" text="you may need to add <code>mycoin</code> to the <code>withoutNetworkInfo</code> in this script if you don't use a NetworkInfo type." %}
 
 
 **As soon as you add a file in the family (that is part of the generated folder) you will need to execute this script before building.** Otherwise, your implementation will not be known by the live-common library.
@@ -159,7 +159,7 @@ Ensure the `.yalc` directory is included then in the package.json:
   ],
 ```
 <!--  -->
-{% include alert.html style="warning" text="Do not commit changes due to the usage of <code>yalc</code> as it may result in wrong behaviour." %}
+{% include alert.html style="important" text="Do not commit changes due to the usage of <code>yalc</code> as it may result in wrong behaviour." %}
 <!--  -->
 
 
@@ -457,7 +457,7 @@ export type MyCoinPreloadData = {
 export const reflect = (_declare: *) => {};
 ```
 <!--  -->
-{% include alert.html style="success" text="Core types should be exported for legacy compatibility with existing libcore integrations." %}
+{% include alert.html style="tip" text="Core types should be exported for legacy compatibility with existing libcore integrations." %}
 <!--  -->
 
 
@@ -544,7 +544,7 @@ export { toMyCoinResourcesRaw, fromMyCoinResourcesRaw };
 ```
 
 <!--  -->
-{% include alert.html style="success" text="If your integration of <i>MyCoin</i> does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
+{% include alert.html style="tip" text="If your integration of <i>MyCoin</i> does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
 <!--  -->
 
 
@@ -649,7 +649,7 @@ export default {
 ```
 
 <!--  -->
-{% include alert.html style="success" text="<code>formatOperationSpecifics()</code> and <code>formatAccountSpecifics()</code> are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging." %}
+{% include alert.html style="tip" text="<code>formatOperationSpecifics()</code> and <code>formatAccountSpecifics()</code> are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging." %}
 <!--  -->
 
 The same idea applies also to the `Transaction` type which needs to be serialized and formatted for CLI:
@@ -723,7 +723,7 @@ The best way to implement your API in Live Common is to create a dedicated `api`
   └── sdk.types.ts
 ```
 <!--  -->
-{% include alert.html style="success" text="Try to separate as much as possible your different APIs (if you use multiple providers) and use typings to ensure you map correctly API responses to Ledger Live types" %}
+{% include alert.html style="tip" text="Try to separate as much as possible your different APIs (if you use multiple providers) and use typings to ensure you map correctly API responses to Ledger Live types" %}
 <!--  -->
 
 You will likely need to export thoses functions, but implemention is up-to-developer:
@@ -750,7 +750,7 @@ See [Polkadot Coin Integration's api](https://github.com/LedgerHQ/ledger-live-co
 Here is an example of a <i>MyCoin</i> API implementation using a fictive SDK that uses something like WebSocket to fetch data.
 
 <!--  -->
-{% include alert.html style="success" text="We don't recommend using WebSocket as it could have drawbacks and is more difficult to scale up and put behind a reverse proxy. If possible, use HTTPS requests as much as possible." %}
+{% include alert.html style="tip" text="We don't recommend using WebSocket as it could have drawbacks and is more difficult to scale up and put behind a reverse proxy. If possible, use HTTPS requests as much as possible." %}
 <!--  -->
 
 ```ts
@@ -1098,7 +1098,7 @@ export default { currencyBridge, accountBridge };
 ```
 
 <!--  -->
-{% include alert.html style="success" text="You could implement all the methods in a single file, but for better readability and maintainability, you should split your code into multiple files." %}
+{% include alert.html style="tip" text="You could implement all the methods in a single file, but for better readability and maintainability, you should split your code into multiple files." %}
 <!--  -->
 
 ### Account Bridge
@@ -1661,7 +1661,7 @@ This function must return the optimistic operation, patched with the `hash` gene
 Once the operation is synced from <i>MyCoin</i> API, the AccountBridge will remove this optimistic operation from the `pendingOperations`.
 
 <!--  -->
-{% include alert.html style="success" text="When there are some pending operations, synchronization will occur every minutes." %}
+{% include alert.html style="tip" text="When there are some pending operations, synchronization will occur every minutes." %}
 <!--  -->
 
 #### Estimate Max Spendable
@@ -1934,7 +1934,7 @@ When signing a transaction, the user is shown on his device all the parameters o
 
 The list of all displayed fields on device are provided by the `getDeviceTransactionConfig` function, which must return all transaction fields for a given transaction.
 
-`src/families/mycoin/getDeviceTransactionConfig.ts`:
+`src/families/mycoin/deviceTransactionConfig.ts`:
 ```ts
 import type { AccountLike, Account, TransactionStatus } from "../../types";
 import type { Transaction } from "./types";
@@ -1982,7 +1982,7 @@ function getDeviceTransactionConfig({
 export default getDeviceTransactionConfig;
 ```
 <!--  -->
-{% include alert.html style="warning" text="Since a not-well-informed user could be tricked to sign transaction with wrong recipients, we never show the <code>destination</code> fields in Ledger Live applications, in order for users to get used to always verify it externally." %}
+{% include alert.html style="important" text="Since a not-well-informed user could be tricked to sign transaction with wrong recipients, we never show the <code>destination</code> fields in Ledger Live applications, in order for users to get used to always verify it externally." %}
 <!--  -->
 
 ### React hooks (optional / advanced)

@@ -5,7 +5,7 @@ tags: [not enough ram, ram, stack overflow, exception, try catch finally, applic
 category: Nano Application
 toc: true
 author:
-layout: doc_na
+layout: doc
 ---
 
 
@@ -107,19 +107,19 @@ With our error model, there are two common failure scenarios.
     In the above example, `a` does not need to be declared `volatile` because it is never modified.
 
 <!--  -->
-{% include alert.html style="success" text="For more clarity and coherence, we recommend using the error codes defined in the SDKs wherever possible (see <code>EXCEPTION</code>, <code>INVALID_PARAMETER</code>, etc. in <code>os.h</code>). If you decide to use custom error codes, use custom error codes for each error case." %}
+{% include alert.html style="tip" text="For more clarity and coherence, we recommend using the error codes defined in the SDKs wherever possible (see <code>EXCEPTION</code>, <code>INVALID_PARAMETER</code>, etc. in <code>os.h</code>). If you decide to use custom error codes, use custom error codes for each error case." %}
 <!--  -->
 
 ## The Application crashed
 
-An application crashing when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For exemple:
+An application crashing when running on the device (the device's screen freezes and stops responding to the APDU) can be caused by a number of issues. For example:
 - The Secure Element is isolated due to invalid handling of [SEPROXYHAL](https://developers.ledger.com/docs/nano-app/bolos-hardware-architecture/#seproxyhal) packets
 - Theres a core fault on the device (perhaps due to a [misaligned memory access](../memory-alignment) or an attempt to access restricted memory)
 
 If it occurs, simplify the app and strip away as much code as possible until the problem can be isolated.
 
 <!--  -->
-{% include alert.html style="success" text="This errors happen rarely and you should not encounter them if you're using the <a href='../build'>Ledger App Builder</a>." %}
+{% include alert.html style="tip" text="This errors happen rarely and you should not encounter them if you're using the <a href='../build'>Ledger App Builder</a>." %}
 <!--  -->
 
 
