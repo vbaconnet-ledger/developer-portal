@@ -10,20 +10,24 @@ layout: doc
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
 
+## Prerequisites
+To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
 ## Web App Bluetooth (only Nano X)
 
 Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
 
 Please be aware that the bluetooth implementation is only supported by a few browser.
-You can check the <a href="https://caniuse.com/web-bluetooth">browser support</a> for the package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble">@ledgerhq/hw-transport-web-ble</a>
+You can check the <a href="https://caniuse.com/web-bluetooth">browser support</a> for the Web Bluetooth.
 
 It is time to implement the application and test it. This web application will be implemented using React which is a frontend Javascript framework.
 
-First open a terminal , during this tutorial the project will be named “examples-web-bluetooth”.
+First open a terminal and create a new project, during this tutorial the project will be named “examples-web-bluetooth”.
 Run the following command to create the project and go into it:
 
-- `npx create-react-app examples-web-bluetooth`
-- `cd examples-web-bluetooth`
+```console
+npx create-react-app examples-web-bluetooth
+cd examples-web-bluetooth
+```
 
 Now that the project is initialized, open it in an editor.
 You will see a React app initialized with a "src" folder where you will find all the code.
@@ -32,7 +36,7 @@ To implement the Ledger connexion you have to change and create three files.
 
 The implementation will not dive into the other file as this is not the focus of this tutorial.
 
-Dive into the folder named “src” to modify/create the three files mentionned previously.The files are named "App.js", "App.css” and “QRCode.js” that you will create in the "src" folder.
+Dive into the folder named “src” to modify/create the three files. The files are named "App.js", "App.css” and “QRCode.js”.
 Your folder must look like this.
 
 <!-- ------------- Image ------------- -->
@@ -266,13 +270,21 @@ Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
 - Install <a href="https://www.npmjs.com/package/qrcode">qrcode</a> which allow you to create a QR code:
-    - `npm install --save qrcode`
+```console
+npm install --save qrcode
+```
 - Install <a href="https://www.npmjs.com/package/eip55">eip55</a>, it is a package that will encode your ethereum address and can verify your address after encode:
-    - `npm install --save eip55`
+```console
+npm install --save eip55
+```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
-    - `npm install --save @ledgerhq/hw-app-eth`
+```console
+npm install --save @ledgerhq/hw-app-eth
+```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble"> @ledgerhq/hw-transport-web-ble</a> which provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion:
-    - `npm install --save @ledgerhq/hw-transport-web-ble`
+```console
+npm install --save @ledgerhq/hw-transport-web-ble
+```
 
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.
@@ -328,10 +340,12 @@ This is how your “package.json” has to look like.
 Now that the Setup is finished, the app has to be available in order to be displayed.
 Therefore start the developpement server:
 
-- `npm run start`
+```console
+npm run start
+```
 
 <!--  -->
-{% include alert.html style="danger" text="All the browser do not support the bluetooth please look at the <code><a href='https://caniuse.com/web-bluetooth'>browser support</a></code>.
+{% include alert.html style="warning" text="All the browser do not support the bluetooth please look at the <code><a href='https://caniuse.com/web-bluetooth'>browser support</a></code>.
 " %}
 <!--  -->
 

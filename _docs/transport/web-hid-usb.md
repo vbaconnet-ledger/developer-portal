@@ -10,6 +10,8 @@ layout: doc
 
 In this section we will guide you through the creation of a little application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
 
+## Prerequisites
+To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
 ## Web App USB and HID
 
 The implementation of a web application which use the USB or HID protocol is exactly the same. The only difference is that instead of using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a> you will use <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> and vise versa.
@@ -17,12 +19,16 @@ The implementation of a web application which use the USB or HID protocol is exa
 It is time to implement the application and test it. First open a terminal and create a new folder, during this tutorial the folder will be named “examples-web-hid-usb”.
 Run the following command to create the folder and go into it:
 
-- `mkdir examples-web-hid`
-- `cd examples-web-hid`
+```console
+mkdir examples-web-hid
+cd examples-web-hid
+```
 
 Then, initialise the project by running the following:
 
-- `npm init`
+```console
+npm init
+```
 
 During the initialization multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
 
@@ -98,7 +104,7 @@ document.body.addEventListener("click", async () => {
     $main.appendChild(h2);
 
     //Display the address on the Ledger device and ask to verify the address
-    await appBtc.getWalletPublicKey({format:"44'/0'/0'/0/0", verify: true});
+    await appBtc.getWalletPublicKey("44'/0'/0'/0/0", {format:"legacy", verify: true});
   } catch (e) {
 
     //Catch any error thrown and displays it on the screen
@@ -113,13 +119,22 @@ document.body.addEventListener("click", async () => {
 Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-- `npm install --save babel-polyfill`
+- Install <a href="https://babeljs.io/docs/en/babel-polyfill">babel-polyfill</a>:
+```console
+npm install --save babel-polyfill
+```
 - Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you the log of all the error from your connexion with your Ledger device that may appear when developing:
-    - `npm install @ledgerhq/logs`
+```console
+npm install --save @ledgerhq/logs
+```
 - Install <a href="https://parceljs.org/">parcel</a>, it is a build tool which will help you package your application to run it in the browser:
-    - `npm install --save-dev parcel`
+```console
+npm install --save-dev parcel
+```
 - Install <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a>, it is a package that will help you ask your Ledger Nano to access the bitcoin address:
-    - `npm install --save @ledgerhq/hw-app-btc`
+```console
+npm install --save @ledgerhq/hw-app-btc
+```
 
 Then depending on your choice install one of the corresponding packages:
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> which provide you with all the methods to interact with  your Ledger with a HID connexion:
@@ -142,7 +157,7 @@ This is how your “package.json” has to look like.
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0",
   },
@@ -177,7 +192,7 @@ Add some script :
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0",
   },
@@ -198,7 +213,9 @@ Add some script :
 Now that the Setup is finished, the app has to be built in order to be displayed.
 Start the developpement server:
 
-- `npm run start`
+```console
+npm run start
+```
 
 Now the application is up and running. Open the browser and go to <a href="http://localhost:1234">“localhost:1234”</a>, it will display :
 
@@ -268,7 +285,7 @@ To test your application on android, a little change has to be made. Just add th
 ```
 
 The browser will ask you that the website is malicious, to continue click on “advanced settings” and then on “continue to the localhost site”.
-Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-usb-and-hid).
+Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
 
 
 

@@ -10,6 +10,8 @@ layout: doc
 
 In this section we will guide you through the creation of a desktop electron application. This application will be connected to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
 
+## Prerequisites
+To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
 ## Implementation for Web USB and Web HID on Nano S/X
 
 During this application we will use the Ledger node hid package which is <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid">@ledgerhq/hw-transport-node-hid</a>
@@ -17,12 +19,16 @@ During this application we will use the Ledger node hid package which is <a href
 It is time to implement the application and test it. First open a terminal and create a new folder, during this tutorial the folder will be named “examples-node-electron-hid”.
 Run the following command to create the folder and go into it:
 
-- `mkdir examples-node-electron-hid`
-- `cd examples-node-electron-hid`
+```console
+mkdir examples-node-electron-hid
+cd examples-node-electron-hid
+```
 
 Then, initialise the project by running:
 
-- `npm init`
+```console
+npm init
+```
 
 During the initialization multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
 
@@ -200,17 +206,29 @@ Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
 - Install <a href="https://www.electronjs.org/">electron</a>, it is a build tool which will help you package your application to run it in as a desktop application:
-    - `npm install --save-dev electron`
+```console
+npm install --save-dev electron
+```
 - Install <a href="https://www.npmjs.com/package/@babel/polyfill">babel polyfill</a>:
-    - `npm install --save babel-polyfill`
+```console
+npm install --save babel-polyfill
+```
 - Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you with the log of all the error from your connexion with your Ledger device that may appear when developing:
-    - `npm install @ledgerhq/logs`
+```console
+npm install @ledgerhq/logs
+```
 - Install <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a>, it is a package that will help you ask your Ledger Nano to access the bitcoin address:
-    - `npm install --save @ledgerhq/hw-app-btc`
+```console
+npm install --save @ledgerhq/hw-app-btc
+```
 - Install <a href="https://browserify.org/">browserify</a>, it is a package that will help you use "require" like Node does:
-    - `npm install --save browserify`
+```console
+npm install --save browserify
+```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid">@ledgerhq/hw-transport-node-hid</a> which provide you with all the methods to interact with  your Ledger with a HID connexion:
-    - `npm install --save @ledgerhq/hw-transport-node-hid`
+```console
+npm install --save @ledgerhq/hw-transport-node-hid
+```
 
 Now that the dependencies are installed you can find them in the “package.js”.
 During the initialization of the project thanks to npm, the default value for the entry file was "index.js".
@@ -276,7 +294,9 @@ Add a script :
 ```
 
 Now that the Setup is finished, let's start the application.
-- `npm run start`
+```console
+npm run start
+```
 
 Now the application is up and running. A window must have been launched on your machine, it will display :
 

@@ -9,9 +9,9 @@ layout: doc
 ---
 
 In this section you will see how to create a React Native application using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>.
-During this project some general prerequisites are mandatory and you can find them <a href="../mobile-integration">here</a>.
+During this project some general prerequisites are mandatory and you can find them <a href="../prerequites">here</a>.
 
-Then you can now go through the necessary prerequisite for Android and iOS development.
+Then you can now go through the necessary prerequisite for iOS development.
 
 ## Prerequisites
 
