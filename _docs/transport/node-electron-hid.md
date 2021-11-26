@@ -26,7 +26,8 @@ cd examples-node-electron-hid
 
 Then, initialise the project by running:
 
-```console npm init
+```console
+npm init
 ```
 
 During the initialization multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.

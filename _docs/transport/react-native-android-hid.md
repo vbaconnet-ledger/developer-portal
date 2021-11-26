@@ -24,7 +24,7 @@ When the installation is finished open Android Studio:
 <img width="840" src="../images/android-studio.png" ></div>
 <!-- --------------------------------- -->
 
-Then go to settings => Appearence & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
+Then go to Settings => Appearence & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
@@ -90,7 +90,9 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-Do the same if you are using zsh or anything else. But the file will be named differently (eg. zsh => .zprofile)
+Do the same if you are using zsh or anything else.
+
+But the file will be named differently (eg. zsh => .zprofile)
 
 Now that we have set up the prerequisites, you can now create the application.
 In this integration we will use the ethereum application.
@@ -125,7 +127,7 @@ In polyfill.js copy paste the following code :
 ```javascript
 global.Buffer = require("buffer").Buffer;
 ```
-Then import the polyfill in "index.js" like below:
+Then import the "polyfill.js" in "index.js" like below:
 
 #### index.js
 ```javascript
@@ -238,7 +240,7 @@ To do that install the following package by running the command :
 ```
 - Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you the log of all the error from your connexion with your Ledger device that may appear when developing:
 ```console
- npm install @ledgerhq/logs
+ npm install --save @ledgerhq/logs
 ```
 - Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
 ```console
@@ -301,14 +303,13 @@ You can now test the application you have built.
 ## Web App Test
 
 The app testing will be executed on your personnal phone, why ? Because the android studio environment does not allow you to use neither bluetooth or usb connexion.
-Please refer to the below information.
 
 <!--  -->
 {% include alert.html style="success" text="Please refer to the information for <a href='https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application'>Android Emulator Limitation</a>." %}
 <!--  -->
 
 #### Testing
-To integrate in application on your android smartphone you have enable the developper rôle.
+To integrate in application on your android smartphone you have enable the developer role.
 To do that go to  Settings > About Phone > Build Number , and tap 7 times on build number to enable the developper settings.
 
 Now go to Settings > System > Advanced > Developer Options and enable the  "USB debugging" as well as "Install via USB"

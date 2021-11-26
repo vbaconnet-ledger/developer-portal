@@ -17,11 +17,11 @@ To start with the Web Integration go through the <a href="../prerequisites">Prer
 Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
 
 Please be aware that the bluetooth implementation is only supported by a few browser.
-You can check the <a href="https://caniuse.com/web-bluetooth">browser support</a> for the package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble">@ledgerhq/hw-transport-web-ble</a>
+You can check the <a href="https://caniuse.com/web-bluetooth">browser support</a> for the Web Bluetooth.
 
 It is time to implement the application and test it. This web application will be implemented using React which is a frontend Javascript framework.
 
-First open a terminal , during this tutorial the project will be named “examples-web-bluetooth”.
+First open a terminal and create a new project, during this tutorial the project will be named “examples-web-bluetooth”.
 Run the following command to create the project and go into it:
 
 ```console
@@ -36,7 +36,7 @@ To implement the Ledger connexion you have to change and create three files.
 
 The implementation will not dive into the other file as this is not the focus of this tutorial.
 
-Dive into the folder named “src” to modify/create the three files mentionned previously.The files are named "App.js", "App.css” and “QRCode.js” that you will create in the "src" folder.
+Dive into the folder named “src” to modify/create the three files. The files are named "App.js", "App.css” and “QRCode.js”.
 Your folder must look like this.
 
 <!-- ------------- Image ------------- -->
@@ -340,10 +340,12 @@ This is how your “package.json” has to look like.
 Now that the Setup is finished, the app has to be available in order to be displayed.
 Therefore start the developpement server:
 
-- `npm run start`
+```console
+npm run start
+```
 
 <!--  -->
-{% include alert.html style="danger" text="All the browser do not support the bluetooth please look at the <code><a href='https://caniuse.com/web-bluetooth'>browser support</a></code>.
+{% include alert.html style="warning" text="All the browser do not support the bluetooth please look at the <code><a href='https://caniuse.com/web-bluetooth'>browser support</a></code>.
 " %}
 <!--  -->
 

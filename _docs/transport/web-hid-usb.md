@@ -119,13 +119,13 @@ document.body.addEventListener("click", async () => {
 Now that the code is paste, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-Install <a href="https://babeljs.io/docs/en/babel-polyfill">babel-polyfill</a>:
+- Install <a href="https://babeljs.io/docs/en/babel-polyfill">babel-polyfill</a>:
 ```console
 npm install --save babel-polyfill
 ```
 - Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you the log of all the error from your connexion with your Ledger device that may appear when developing:
 ```console
-npm install @ledgerhq/logs
+npm install --save @ledgerhq/logs
 ```
 - Install <a href="https://parceljs.org/">parcel</a>, it is a build tool which will help you package your application to run it in the browser:
 ```console
@@ -157,7 +157,7 @@ This is how your “package.json” has to look like.
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0",
   },
@@ -192,7 +192,7 @@ Add some script :
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0",
   },
@@ -285,7 +285,7 @@ To test your application on android, a little change has to be made. Just add th
 ```
 
 The browser will ask you that the website is malicious, to continue click on “advanced settings” and then on “continue to the localhost site”.
-Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-usb-and-hid).
+Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
 
 
 
