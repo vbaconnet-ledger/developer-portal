@@ -4,15 +4,15 @@
   - live-app/process
   - live-app/faq
 
-- title: DApp
-  docs:
-  - live-app/dapp-customisation
-
-- title: Manifest
+- title: A - Manifest
   docs:
   - live-app/manifest
 
-- title: Non-DApp
+- title: B - Web3 provider list
+  docs:
+  - live-app/dapp-customisation
+
+- title: C - Ledger Live SDK
   docs:
   - live-app/intro-sdk
 
@@ -48,7 +48,7 @@
   - live-app/bitcoin-transaction
   - live-app/ethereum-transaction
 
-- title: Nano App Plugin
+- title: D - Nano App Plugin
   docs:
   - live-app/nano-plugin/overview
   - live-app/nano-plugin/environment-setup
