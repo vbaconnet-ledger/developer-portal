@@ -1,5 +1,5 @@
 ---
-title: Code walkthrough
+title: Introduction
 subtitle:
 tags: [dapp]
 category: DApp Integration

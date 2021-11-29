@@ -57,10 +57,10 @@
   docs:
   - live-app/nano-plugin/overview
   - live-app/nano-plugin/environment-setup
-  - live-app/nano-plugin/code-overview
   subfolderitems:
-    - title: Intro
+    - title: Code walkthrough
       docs:
+      - live-app/nano-plugin/code-overview
       - live-app/nano-plugin/boilerplate-plugin
       - live-app/nano-plugin/selectors
       - subfolderitems:
