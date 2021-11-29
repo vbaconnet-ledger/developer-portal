@@ -8,8 +8,8 @@ toc: true
 
 To import the manifest:
 1. [Install Ledger Live Desktop](https://www.ledger.com/ledger-live/download)
-2.  Enable the Developer mode
-3.  Add your manifest
+2. Enable the Developer mode 
+3. Add your manifest
 
 ## Enabling the Developer mode
 
