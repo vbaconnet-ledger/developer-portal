@@ -44,19 +44,19 @@ B0010000
 ```
 
 Its response format is:
-| Offset        | Length   | Meaning
-|---------------|----------|--------------
-| 0             |  1       | Format of the response: 0x01
-| 1             |  1       | Length of the ASCII name of the running component (noted `L_name`)
-| 2             | `L_name` | ASCII name of the running component
-| 2 + `L_name`  |  1       | Length of the ASCII version of the running component (noted `L_ver`)
-| 2 + `L_name` + 1  |  `L_ver`  | ASCII version of the running component
+| Offset        | Length   | Meaning |
+|---------------|----------|-------------- |
+| 0             |  1       | Format of the response: 0x01 |
+| 1             |  1       | Length of the ASCII name of the running component (noted `L_name`) |
+| 2             | `L_name` | ASCII name of the running component |
+| 2 + `L_name`  |  1       | Length of the ASCII version of the running component (noted `L_ver`) |
+| 2 + `L_name` + 1  |  `L_ver`  | ASCII version of the running component |
 
 
 Its status code format is:
-| Status code | Meaning
-|-------------|-----------------------
-| 0x9000      | Success of the operation
+| Status code | Meaning |
+|-------------|----------------------- |
+| 0x9000      | Success of the operation |
 
 Call example at the time of writing this page: [In the Ledger Live source code](https://github.com/LedgerHQ/ledger-live-common/blob/16a69f34d5531ec5422a83d8108210a6b891a235/src/hw/getAppAndVersion.ts#L10)
 
@@ -110,7 +110,7 @@ This APDU command is used for opening a given application on the connected Hardw
 
 When successfully processed, the user flow is presented as following (example on a nano S product with the Bitcoin application):
 
-![image info](./images/open_app_bitcoin.png)
+![image info](../images/open_app_bitcoin.png)
 
 And the user needs to press both buttons:
 - on the first screen in order to validate the opening of the mentioned application,
@@ -125,12 +125,12 @@ e0d80000 | Lc | Application Name
 - Application Name: The ASCII-represented application name.
 
 The response is only a status code:
-| Status code | Meaning
-|-------------|-----------------------
-| 0x670A      | Lc is 0x00 whereas an application name is required
-| 0x6807      | The requested application is not present
-| 0x9000      | Success of the operation
-| Any other   | An application is already launched on the product
+| Status code | Meaning |
+|-------------|----------------------- |
+| 0x670A      | Lc is 0x00 whereas an application name is required |
+| 0x6807      | The requested application is not present |
+| 0x9000      | Success of the operation |
+| Any other   | An application is already launched on the product |
 
 Call example at the time of writing this page: [In the Ledger Live source code](https://github.com/LedgerHQ/ledger-live-common/blob/16a69f34d5531ec5422a83d8108210a6b891a235/src/hw/openApp.ts#L3)
 
