@@ -44,6 +44,7 @@ B0010000
 ```
 
 Its response format is:
+
 | Offset        | Length   | Meaning |
 |---------------|----------|-------------- |
 | 0             |  1       | Format of the response: 0x01 |
@@ -54,6 +55,7 @@ Its response format is:
 
 
 Its status code format is:
+
 | Status code | Meaning |
 |-------------|----------------------- |
 | 0x9000      | Success of the operation |
@@ -125,6 +127,7 @@ e0d80000 | Lc | Application Name
 - Application Name: The ASCII-represented application name.
 
 The response is only a status code:
+
 | Status code | Meaning |
 |-------------|----------------------- |
 | 0x670A      | Lc is 0x00 whereas an application name is required |
