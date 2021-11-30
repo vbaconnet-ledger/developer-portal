@@ -7,6 +7,7 @@
   - transport/nano-api-calls
   - transport/nano-api-less-calls
   - transport/test-communication
+  - transport/open-close-info-on-apps
 
 - title: Examples
   docs:
