@@ -16,9 +16,6 @@
   - platform-app/howto/setup
   - platform-app/howto/test
   - platform-app/howto/fund
-  - platform-app/howto/sign
-  - platform-app/howto/swap
-  - platform-app/howto/broadcast
   - platform-app/howto/release
 
 - title: Reference
