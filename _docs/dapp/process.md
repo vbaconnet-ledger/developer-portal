@@ -1,5 +1,5 @@
 ---
-title: Release phases
+title: Process
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
 category: Live Application
@@ -7,6 +7,11 @@ toc:
 layout: doc
 ---
 
+This section will help you transform your Web3 application into a Live App.
+
+Live Apps are services that have been integrated into Ledger Live Discover section. Many applications such as Paraswap, Moonpay or Lido, have already been integrated. 
+
+By having your application supported in a Ledger DApp browser, you increase the security of your application and also make it easier for your users, while simultaneously having access to over 3 million Ledger Live users.
 
 The main phases to get your Live App officially released are:
 

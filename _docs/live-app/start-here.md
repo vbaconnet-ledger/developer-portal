@@ -1,5 +1,5 @@
 ---
-title: Live App
+title: Start here
 subtitle:
 tags: [platform app, live application, ledger live app, dapp]
 category: Live App
@@ -13,6 +13,6 @@ A Live App is an app available in the discover section of the Ledger Live Applic
 <img src="../images/live-app.jpg" alt="Discover section"/>
 
 
-Click here to access the documentation about DApps and here to access the documentation about other types of apps.
+Click [here](../../dapp/process) to access the documentation about DApps and [here](../../platform-app/introduction) to access the documentation about other types of apps.
 
 We recommend you'd get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.

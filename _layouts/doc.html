@@ -15,6 +15,10 @@ layout: default
   {% assign docs = site.data.navigation_docs_et %}
 {% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr %}
+{% elsif category == "dapp"  %}
+  {% assign docs = site.data.navigation_docs_da %}
+{% elsif category == "platform-app"  %}
+  {% assign docs = site.data.navigation_docs_pa %}
 {% elsif category == "swap"  %}
   {% assign docs = site.data.navigation_docs_sw %}
 {% elsif category == "developer-mode"  %}
@@ -41,8 +45,8 @@ layout: default
                       {% if section.subfolderitems %}
                         <ul class="uk-nav uk-nav-default doc-nav">
                           {% for entry in section.subfolderitems %}
-                          <li><a class="" data-toggle="collapse" href="#{{entry.title}}" role="button" aria-expanded="false" aria-controls="{{entry.title}}">{{entry.title}}</a></li>
-                            <ul class="uk-nav uk-nav-default doc-nav collapse" id="{{entry.title}}">
+                          <li>{{entry.title}}</li>
+                            <ul class="uk-nav uk-nav-default doc-nav">
                               {% for doc in entry.docs %}
                                 {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
                                 {% assign p = site.docs | where:"url", doc_url | first %}

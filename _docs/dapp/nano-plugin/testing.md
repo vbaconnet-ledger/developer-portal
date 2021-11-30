@@ -47,7 +47,7 @@ If you look carefully, you will see the `boilerplate/` folder inside the `tests/
 
 ### The ABIs folder
 
-The Application Binary Interfaces of your contracts are stored in the `abis/` folder. In our example, the contract address of `Uniswapv2` is `0x7a250d5630b4cf539739df2c5dacb4c659f2488d`. Its ABI is obtained on Etherscan[https://etherscan.io/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#code](https://etherscan.io/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#code). We simply need to take the ABI, put it in a file named after the contract address, and append the extension ".json".
+The Application Binary Interfaces of your contracts are stored in the `abis/` folder. In our example, the contract address of `Uniswapv2` is `0x7a250d5630b4cf539739df2c5dacb4c659f2488d`. Its ABI is obtained on [Etherscan](https://etherscan.io/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#code). We simply need to take the ABI, put it in a file named after the contract address, and append the extension ".json".
 So `0x7a250d5630b4cf539739df2c5dacb4c659f2488d.json` is the name of the file, and its content is the ABI of this contract.
 You can add as many contracts as you like here. They must be named appropriately (in lowercase, ending with `.json`) and must contain a valid ABI.
 
@@ -144,7 +144,7 @@ There are two main ways to create a test transaction:
 
 Option two is faster and easier: however, option one will give you more control and flexibility on your test transactions.
 
-If you choose the second option, you obtain the raw transaction hex by looking up the Etherscan transaction, e.g. [https://etherscan.io/tx/0x0160b3aec12fd08e6be0040616c7c38248efb4413168a3372fc4d2db0e5961bb](https://etherscan.io/tx/0x0160b3aec12fd08e6be0040616c7c38248efb4413168a3372fc4d2db0e5961bb), then click in on the three dots in the upper right corner and click `Get Raw Tx Hex`. This opens a page like [this one](https://etherscan.io/getRawTx?tx=0x0160b3aec12fd08e6be0040616c7c38248efb4413168a3372fc4d2db0e5961bb). Voila!
+If you choose the second option, you obtain the raw transaction hex by looking up the [Etherscan transaction](https://etherscan.io/tx/0x0160b3aec12fd08e6be0040616c7c38248efb4413168a3372fc4d2db0e5961bb), then click in on the three dots in the upper right corner and click `Get Raw Tx Hex`. This opens a page like [this one](https://etherscan.io/getRawTx?tx=0x0160b3aec12fd08e6be0040616c7c38248efb4413168a3372fc4d2db0e5961bb). Voila!
 
 Then rename `swap_exact_eth_for_tokens.test.js`, open it and edit it.
 Comments are included throughout the code to help you along.
