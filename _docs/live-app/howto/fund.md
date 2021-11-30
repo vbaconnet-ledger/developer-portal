@@ -9,7 +9,7 @@ layout: doc
 
 ## Introduction
 
-To secure the funding of the card, Ledger developed an exchange app that you are able to call in your iframe through the device Ledger Live Widget API. You will have to modify your web service to generate the appropriate request for the exchange app. In this document, we will guide you through this process.
+To securely spend crypto, Ledger developed an exchange app that you are able to call in your iframe through the device Ledger Live Widget API. You will have to modify your web service to generate the appropriate request for the exchange app. In this document, we will guide you through this process.
 
 As you can see on the following diagram, there are three interactions between Ledger Live and your iframe. This three interactions are the ones that are needed from your side.  
 
