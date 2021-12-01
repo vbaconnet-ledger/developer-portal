@@ -1,35 +1,30 @@
 ---
 title: Overview
-subtitle:
+subtitle: Introduction on wallet connection
 tags: []
 category: Connect a wallet
-author:
+author: Ledger
 toc: true
 layout: doc
 ---
+## Context
+The objective of this documentation is to help **crypto assets service providers** to add to their service the capability to connect Ledger hardware devices (Nano S & Nano X) to preserve clients' self custody and always let them keep crypto assets in their hardware wallet.
 
-The objective of this documentation is to help crypto assets service providers to add to their service the capability to connect Ledger hardware devices in order to preserve clients self custody and always let them keep crypto assets in their hardware wallet.
-
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/overview.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Paraswap providing the capability to connect your Ledger Wallet](../images/overview.png)  
+*Fig. 1: Paraswap provides the capability to connect your Ledger Wallet*
 
 ## Connectivity Capabilities
-Ledger hardware wallets are capable of connecting through different types of technologies and can be interfaces using different patterns.
+Ledger hardware wallets are capable of connecting through different types of technologies and can be interfaced using different patterns. 
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/connectivity1.png" ></div>
-<!-- --------------------------------- -->
-
+{: .center}
+![Ledger Nano S & Nano X connectivity capabilities](../images/connectivity1.png)  
+*Fig. 2: Ledger Nano S & Nano X connectivity capabilities*
 
 Ledger hardware devices connect with Desktops & Mobile devices through USB OTG & Bluetooth.
 
+{: .center}
+![Ledger technical connection protocols](../images/connectivity2.png)  
+*Fig. 3: Ledger technical connection protocols*
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/connectivity2.png" ></div>
-<!-- --------------------------------- -->
-
-Now choose the right transport for your application => <a href="../choose-the-transport">here</a>
+Now let's choose the right transport for your application on [next step](../choose-the-transport)
