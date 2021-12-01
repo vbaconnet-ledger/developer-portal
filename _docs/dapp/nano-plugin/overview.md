@@ -57,18 +57,18 @@ Here is an overview of what the flow looks like:
 <div class="mermaid">
 sequenceDiagram
     Eth App ->> Plugin: Are you installed on this device?
-    Note right of Plugin: Fail if no plugin found
+    Note right of Plugin: Fail if<br>no plugin found
     Plugin -->> Eth App: Yes, bring it on!
     Note left of Eth App: Parse transaction
     Eth App ->> Plugin: Here is the contract data
-    Note right of Plugin: Extract important fields
+    Note right of Plugin: Extract<br>important fields
     Plugin -->> Eth App: Ok
     Note left of Eth App: Compute stuff
     Note left of Eth App: Prepare the display
     Eth App ->> Plugin: What must I display with this?
-    Note right of Plugin: Decide what to display
+    Note right of Plugin: Decide<br>what to display
     Plugin -->> Eth App: 'Swap ETH 1 for DAI 10000'
-    Note left of Eth App: Display the message
+    Note left of Eth App: Display<br>the message
 </div>
 <script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
 

@@ -15,17 +15,17 @@ Each screen has a screen number (also called `screenIndex`). When the Ethereum A
 <div class="mermaid"> 
 sequenceDiagram 
     Eth App -> Plugin: We're on screen 1 
-    Note right of Plugin: Determine what needs to be displayed 
+    Note right of Plugin: Determine what <br>needs to be displayed
     Plugin --> Eth App:  
     Note left of Eth App: User sees screen 
-    Note left of Eth App: User presses right button 
+    Note left of Eth App: User presses<br>right button 
     Eth App -> Plugin: We're on screen 2 
-    Note right of Plugin: Determine what needs to be displayed 
+    Note right of Plugin: Determine what <br>needs to be displayed 
     Plugin --> Eth App: 
-    Note left of Eth App: User sees the screen 
-    Note left of Eth App: User presses *left* screen 
+    Note left of Eth App: User sees screen 
+    Note left of Eth App: User presses<br>*left* screen 
     Eth App -> Plugin: We're on-screen *1* 
-    Note right of Plugin: Determine what needs to be displayed 
+    Note right of Plugin: Determine what <br>needs to be displayed 
     Plugin --> Eth App: 
     Note left of Eth App: etc 
 </div> 
