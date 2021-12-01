@@ -7,8 +7,10 @@ toc: true
 layout: doc
 ---
 
-## Why do I need the developer mode? 
+## I am transforming my DApp or non-DApp into a Live App
 
-## Because when I develop a Live App I need... 
+When you want to test locally how your [Live App](../docs/live-app) works in Ledger Live, you will need to unlock the developer mode to import your app's manifest. 
 
-## Because when I develop a Nano App, I need... 
+## I am developing a Nano App
+
+Before an official release, your Nano App can be release in "Developer mode". When you activate the developer mode setting you will be able to see how your app works in Ledger Live.

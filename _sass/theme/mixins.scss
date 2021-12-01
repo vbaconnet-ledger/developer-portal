@@ -790,6 +790,25 @@
       margin-bottom: 10px;
     }
 
+    // Style for mermaid
+
+    .mermaid > svg > g > text {
+        font-family: $body-font-family !important;
+    }
+
+    .mermaid > svg > g > rect.note {
+        width: 160px !important;
+        stroke: black !important;
+        fill: #DCDCDC !important;
+    }
+
+    .mermaid > svg > g > rect.actor {
+        stroke: #463A9E !important;
+        fill: #d0cde7 !important;
+    }
+
+    // 
+
     .doc-nav > li.uk-active > a {
         position: relative;
         &:before {

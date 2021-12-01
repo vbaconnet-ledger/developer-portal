@@ -87,7 +87,7 @@ There we have it. The array starts at <code>0x80</code>, which is exactly the of
 
 With this in mind, let's continue writing the parser.
 
-But first let's add a parameter `offset` to our `context` (in `boilerplate_plugin.h`):`
+But first let's add a parameter `offset` to our `context` (in `boilerplate_plugin.h`):
 ```c
 typedef struct context_t {
     // other code...
