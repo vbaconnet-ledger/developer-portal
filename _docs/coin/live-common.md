@@ -945,7 +945,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 #### Starting with a mock
 
-TO BE WRITTEN
+This is a barebone template of a mock bridge implementation.
 
 ```ts
 import { BigNumber } from "bignumber.js";
