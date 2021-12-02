@@ -3,7 +3,7 @@
 left:
 
   - title: Nano App
-    url: /docs/nano-app/introduction
+    url: /docs/nano-app/nano-app
 
   - title: Connect your wallet
     url: /docs/transport/connect-wallet
