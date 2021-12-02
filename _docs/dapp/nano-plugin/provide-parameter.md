@@ -51,7 +51,7 @@ Notice we also need to set the next parameter to parse. We set it to `PATH_OFFSE
 <!--  -->
 {% include alert.html style="tip" text="Arrays (and structs) are special kinds of parameters. They are \"dynamic\", meaning their size is fixed because <code>path</code> has any number of elements. Dynamic parameters are parsed using an offset to the array, and by looking up the array size.
 <br>
-Let's work with an example. Here is the [data](https://etherscan.io/tx/0xdf6ea6b4e45d53416713f72e6ab36f6979ad59839b9c83e0bc64b12b460bfc81) for an actual <code>swapExactEthForTokens</code>
+Let's work with an example. <a href='https://etherscan.io/tx/0xdf6ea6b4e45d53416713f72e6ab36f6979ad59839b9c83e0bc64b12b460bfc81'>Here is the data</a> for an actual <code>swapExactEthForTokens</code>
 <br> <!--  put code around each line, otherwise spaces are difficult to control -->
 <code> [0]:  0000000000000000000000000000000000000000000000000000000001ced03f </code><br>
 <code> [1]:  0000000000000000000000000000000000000000000000000000000000000080 </code><br>

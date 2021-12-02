@@ -12,8 +12,8 @@ The first case condition is `handle_init_contract`.
 In the corresponding `handle_init_contract.c`, `selectorIndex` is set as the first parameter to parse. Let's dive deeper into the parameters.
 
 Methods in a smart contract have parameters (or arguments). For example, `swapExactEthforTokens` has this format:
-*Note: **swapExactEthforTokens** is not in the Boilerplate code*
-```
+
+```js
 swapExactETHForTokens(uint256 amountOutMin,
                                                            address[] path,
                                                            address to,

@@ -16,8 +16,8 @@ To address **1**, let's think about what we want to display.
 As we are simply swapping tokens, the useful information is the amount of ETH sent, the amount of tokens received, and the beneficiary.  
 It looks something like this:
 ```
-| Swap    | Receive Min  | Beneficiary |
-| ETH xx  | USDT xx      | 0x...       |
+| Swap     | Receive Min | Beneficiary |
+| ETH xx  | USDT xx         | 0x...           |
 ```
 <!--  -->
 {% include alert.html style="tip" text="

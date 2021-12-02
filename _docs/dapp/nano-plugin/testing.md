@@ -92,7 +92,7 @@ Note that only two `erc20OfInterest` can be added. This is a memory constraint o
 ### Build the plugin and the Ethereum app
 
 To build the plugin, go back to your docker setup. 
-Open a new terminal window, and in the `plugin_dev/` folder, run`./start.sh`.
+Open a new terminal window, and in the `plugin-tools/` folder, run`./start.sh`.
 
 In the container, go to the plugin repository, then to the `tests/` folder.
 
@@ -140,7 +140,7 @@ We also recommend combining Nano S and X tests in the same file.
 
 There are two main ways to create a test transaction:
 1. Build your transaction based on the contract ABI and `populateTransaction`: see the first test for NanoS in `swap_exact_eth_for_tokens.test.js`.
-2. Look up a transaction from Etherscan: see the NanoX test in `swap_exact_eth_for_tokens.test.js`.
+2. Replay a transaction from Etherscan: see the NanoX test in `swap_exact_eth_for_tokens.test.js`.
 
 Option two is faster and easier: however, option one will give you more control and flexibility on your test transactions.
 
