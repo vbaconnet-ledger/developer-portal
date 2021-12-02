@@ -1,10 +1,14 @@
 # This file is a duplicate of navigation_docs_na.yml without the nested menu (subfolderitems)
 # We need it to make "previous" and "next" buttons work properly
 
-- title: Introduction
+- title: Before you start
   docs:
   - nano-app/introduction
   - nano-app/types-apps
+
+- title: Process
+  docs:
+  - nano-app/publish-introduction
 
 - title: Set up and use
   docs:
@@ -13,10 +17,6 @@
   - nano-app/open-close-info-on-apps
   - nano-app/troubleshooting
   - nano-app/debug
-
-- title: Process
-  docs:
-  - nano-app/publish-introduction
 
 - title: Security
   docs:
@@ -54,7 +54,7 @@
 - title: Design 
   docs:
   - nano-app/design-requirements
-  
+
 - title: Support and maintenance 
   docs:
   - nano-app/support-maintenance-requirements

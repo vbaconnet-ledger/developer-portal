@@ -1,5 +1,5 @@
 ---
-title: Types of applications
+title: Types of apps and global architecture
 subtitle:
 tags: [nano app, nano application, dapp plugin, dapp, other applications, applications, apps]
 category: Nano Application
@@ -7,6 +7,19 @@ toc: true
 author:
 layout: doc
 ---
+
+## Types of apps
+
+### Nano App
+This is the application that allows the users to manage their crypto-assets with their Ledger devices. It is the first step to an integration of your coin or token to the Ledger environment and to an integration of your blockchain to Ledger Live.
+The following sections will help you develop this type of application.
+
+### DApp plugins
+DApp Plugins are developed to integrate an Ethereum DApp to Ledger live. Ledger Live has a DApp browser where your DApp will be visible and usable through an iframe. Ethereum DApps can be developed for example to lend or borrow, swap, trade, pay with cryptoassets or manage your portfolio.
+More information [here](../../dapp/introduction).
+
+### Utility applications
+These applications leverage Ledger technology but are not involved in managing crypto assets. They interact with Ledger devices and BOLOS operating system and can serve many purposes. They can be, for example, a password manager application, or a two-factor authentication application.
 
 ## Global architecture
 
@@ -44,17 +57,3 @@ When these pieces are ready for deployment, they must be sent to Ledger for a se
 -   Correct usability (see [Design Guidelines](#design-guidelines))
 
 Review time depends on Ledger’s available resources and code complexity. The more unique and complex the code, the longer the review. Please note that forks of supported BOLOS apps will require a new review. The decision to reject or revoke an app is at Ledger’s sole discretion. We will make our best efforts to provide a rationale for such decisions. Upon fixing identified issues, app authors will be allowed to re-submit their apps.
-
-
-## Types of apps
-
-### Nano App
-This is the application that allows the users to manage their crypto-assets with their Ledger devices. It is the first step to an integration of your coin or token to the Ledger environment and to an integration of your blockchain to Ledger Live.
-The following sections will help you develop this type of application.
-
-### DApp plugins
-DApp Plugins are developed to integrate an Ethereum DApp to Ledger live. Ledger Live has a DApp browser where your DApp will be visible and usable through an iframe. Ethereum DApps can be developed for example to lend or borrow, swap, trade, pay with cryptoassets or manage your portfolio.
-More information [here](../../dapp/introduction).
-
-### Utility applications
-These applications leverage Ledger technology but are not involved in managing crypto assets. They interact with Ledger devices and BOLOS operating system and can serve many purposes. They can be, for example, a password manager application, or a two-factor authentication application.

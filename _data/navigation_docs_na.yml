@@ -1,7 +1,11 @@
-- title: Introduction
+- title: Before you start
   docs:
   - nano-app/introduction
   - nano-app/types-apps
+
+- title: Process
+  docs:
+  - nano-app/publish-introduction
 
 - title: Set up and use
   docs:
@@ -10,10 +14,6 @@
   - nano-app/open-close-info-on-apps
   - nano-app/troubleshooting
   - nano-app/debug
-
-- title: Process
-  docs:
-  - nano-app/publish-introduction
 
 - title: Requirements and coding
   subfolderitems:
