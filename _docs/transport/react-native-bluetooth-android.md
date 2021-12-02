@@ -7,17 +7,17 @@ author:
 toc: true
 layout: doc
 ---
-
-In this section you will see how to create a React Native application using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>.
-During this project some general prerequisites are mandatory and you can find them <a href="../prerequisites">here</a>.
+## Introduction
+In this section you will see how to create a React Native application using the [@ledgerhq/react-native-hw-transport-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble).
+During this project some general prerequisites are mandatory and you can find them [here](../prerequisites).
 
 Then you can now go through the necessary prerequisite for Android development.
 
 ## Prerequisites
 
 #### Install Homebrew
-Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party web sites, we can get the real advantage of Homebrew with few lines of code.
-Install Homebrew using bellow command in Terminal.
+Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party websites, we can get the real advantage of Homebrew with few lines of code.
+Install Homebrew using the bellow command in Terminal.
 
 ```console
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
@@ -26,7 +26,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 
 #### Install watchman
-React Native uses watchman to detect real time code changes and it automatically build and push the update to your device without manually refreshing.
+React Native uses watchman to detect real-time code changes and it automatically builds and pushes the update to your device without manually refreshing.
 
 ```console
 brew install watchman
@@ -34,7 +34,7 @@ brew install watchman
 
 
 #### Install Java JRE and JDK
-If you don’t have a complete installation of Java, the build scripts for react-native tend to complain and fail . Downloading Android Studio is not enough solution since it comes bundled with its own JRE.
+If you don’t have a complete installation of Java, the build scripts for react-native tend to complain and fail. Downloading Android Studio is not enough solution since it comes bundled with its own JRE.
 
 ```console
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
@@ -43,7 +43,7 @@ brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 #### Install React Native
 React Native allows the application to be written in Javascript and then the React Native Compiler will convert your Javascript code into native code for Android environments.
-React Native command line interface can be install using npm as bellow.
+React Native command line interface can be installed using npm as below.
 
 ```console
 npm install -g react-native-cli
@@ -51,31 +51,29 @@ npm install -g react-native-cli
 
 
 ### Android development prerequisites
-Beforehand to develop an Android application we have to install <a href="https://developer.android.com/studio">Android Studio</a>. First download and install <a href="https://developer.android.com/studio">Android Studio</a>, choose the version of your operating system.
+Beforehand to develop an Android application we have to install Android Studio. First download and install [Android Studio](https://developer.android.com/studio), choose the version of your operating system.
 
 When the installation is finished open Android Studio:
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/android-studio.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Android Studio Window](../images/android-studio.png){:width="840"}   
+*Fig. 1: Android Studio Window*
 
-Then go to settings => Appearence & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/android-studio-settings.png" ></div>
-<!-- --------------------------------- -->
+Then go to settings => Appearance & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
+
+{: .center}
+![Android Studio Settings](../images/android-studio-settings.png){:width="840"}   
+*Fig. 2: Android Studio Settings*
 
 Then you have to install the latest SDK version. Therefore select the packages shown below and apply to install the packages.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/android-studio-SDK.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}   
+*Fig. 3: Android Studio SDK Settings*
 
 #### Set the environnement variables
-If you are using a bash, put the environment variabe into the bash_profile as below:
+If you are using bash, put the environment variable into the bash_profile as below:
 
 ```console
 cd ~/
@@ -93,12 +91,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 Do the same if you are using zsh or anything else. But the file will be named differently (eg. zsh => .zprofile)
 
-Now that we have set up the prerequisites, you can now create the application.
-In this integration we will use the ethereum application.
-
 ## Mobile App Build
 
-It is time to implement the application and test it. First open a terminal and create a new project, during this tutorial the project will be named “ledgerApp”.
+Now that we have set up the prerequisites, you can now create the application.
+In this integration, we will use the ethereum application.
+### Project Initialization
+It is time to implement the application and test it. First, open a terminal and create a new project, during this tutorial the project will be named “ledgerApp”.
 
 Run the following command to create the project and go into it:
 
@@ -108,13 +106,14 @@ cd ledgerApp
 ```
 
 <!--  -->
-{% include alert.html style="success" text="During the initialization it is installing required 'CocoaPods' dependencies and it may takes times." %}
+{% include alert.html style="tip" text="During the initialization, it is installing required 'CocoaPods' dependencies and it may take time." %}
 <!--  -->
 
+### Code Implementation
 Now that the folder is initialized, open it in an editor.
 Create a folder named "src" in the root folder.
 
-Create a file named "polyfill.js" in the root folder and copy paste the following code :
+Create a file named "polyfill.js" in the root folder and copy-paste the following code :
 
 #### polyfill.js
 ```javascript
@@ -136,7 +135,7 @@ import {name as appName} from './app.json';
 AppRegistry.registerComponent(appName, () => App);
 ```
 
-Move the file named "App.js" in the "src" folder and copy paste the following code :
+Move the file named "App.js" in the "src" folder and copy-paste the following code :
 #### App.js
 ```javascript
 import React, { Component } from "react";
@@ -176,7 +175,7 @@ class App extends Component {
 export default App;
 ```
 
-Create the file named "DeviceItem.js" in the "src" folder and copy paste the following code :
+Create the file named "DeviceItem.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import {
@@ -235,7 +234,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Create the file named "DeviceSelectionScreen.js" in the "src" folder and copy paste the following code :
+Create the file named "DeviceSelectionScreen.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import {
@@ -392,7 +391,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Create the file named "ShowAddressScreen.js" in the "src" folder and copy paste the following code :
+Create the file named "ShowAddressScreen.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -497,47 +496,54 @@ const styles = StyleSheet.create({
 
 Your folder must look like this.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/folder-rn-ble.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Folder of the Application](../images/folder-rn-ble.png){:width="210"}   
+*Fig. 4: Folder of the Application*
 
+### Dependencies Installation
 Now the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-- Install <a href="https://www.npmjs.com/package/react-native-qrcode-svg">react-native-qrcode-svg</a> which allow you to create a QR code:
+#### Install [react-native-qrcode-svg](https://www.npmjs.com/package/react-native-qrcode-svg)  
+This package allow you to create a QR code.  
 ```console
 npm install --save react-native-qrcode-svg
 ```
-- Install <a href="https://www.npmjs.com/package/react-native-svg">react-native-svg</a>, it is a package mandatory to use <a href="https://www.npmjs.com/package/react-native-qrcode-svg">react-native-qrcode-svg</a> :
+#### Install [react-native-svg](https://www.npmjs.com/package/react-native-svg)  
+This package is a package mandatory to use [react-native-qrcode-svg](https://www.npmjs.com/package/react-native-qrcode-svg).  
 ```console
 npm install --save react-native-svg
 ```
-- Install <a href="https://www.npmjs.com/package/rxjs">rxjs</a>, it is a rewrite of "Reactive-Extensions/RxJS" and is the latest production-ready version of RxJS :
+#### Install [rxjs](https://www.npmjs.com/package/rxjs)  
+This package is a rewrite of "Reactive-Extensions/RxJS" and is the latest production-ready version of RxJS.  
 ```console
 npm install --save react-native-svg
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>. which provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion:
+#### Install [@ledgerhq/react-native-hw-transport-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble)  
+This Ledger package provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion.  
 ```console
 npm install --save @ledgerhq/react-native-hw-transport-ble
 ```
-- Install <a href="https://www.npmjs.com/package/react-native-ble-plx">react-native-ble-plx</a> which scan the bluetooth devices:
+#### Install [react-native-ble-plx](https://www.npmjs.com/package/react-native-ble-plx)  
+This package scan the bluetooth devices.  
 ```console
 npm install --save react-native-ble-plx
 npx react-native link react-native-ble-plx
 ```
-- Install <a href="https://www.npmjs.com/package/buffer">Buffer</a>:
+#### Install [Buffer](https://www.npmjs.com/package/buffer)  
 ```console
  npm install --save buffer
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
+#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)  
+This Ledger package will help you ask your Ledger device to access the ethereum address.  
 ```console
 npm install --save @ledgerhq/hw-app-eth
 ```
+
+#### Package.json dependencies
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.
 
-#### package.json
 ```javascript
 {
   "name": "ledgerApp",
@@ -577,28 +583,28 @@ This is how your “package.json” has to look like.
 }
 
 ```
-
+#### Build.gradle Modification
 A little modification have to be made in the “build.gradle” in the "android" folder : `minSdkVersion = 21` => `minSdkVersion = 24`.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/change-minSDK.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}   
+*Fig. 5: Build.gradle Modify the minSdkVersion*
 
 You can now test the application you have built.
 
 ## Mobile App Test
 
-The app testing will be executed on your personnal phone, why ? Because the android studio emulator environment does not allow you to use neither bluetooth or usb connexion.
+The app testing will be executed on your smartphone, why? Because the android studio emulator environment does not allow you to use either Bluetooth or USB connexion.
 
 
 
 <!--  -->
-{% include alert.html style="success" text="Please refer to the information for <a href='https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application'>Android Emulator Limitation</a>." %}
+{% include alert.html style="tip" text="Please refer to the information for <a href='https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application' class='alert-link'> Android Emulator Limitation </a>." %}
 <!--  -->
 
-To integrate in application on your smartphone you have enable the developper rôle.
-To do that go to  Settings > About Phone > Build Number , and tap 7 times on build number to enable the developper settings.
+### Enable Developer Settings
+To integrate an application on your smartphone you have to enable the developer rôle.
+To do that go to  Settings > About Phone > Build Number, and tap 7 times on build number to enable the developer settings.
 
 Now go to Settings > System > Advanced > Developer Options and enable the  "USB debugging" as well as "Install via USB"
 
@@ -606,110 +612,111 @@ Connect your phone to your machine, and run the below command to see if your dev
 ```console
 adb devices
 ```
-if all goes well you have to find the phone in the list of device like the below image.
+if all goes well you have to find the phone in the list of devices like the below image.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/adb-devices.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Device Connected On The Machine](../images/adb-devices.png){:width="210"}   
+*Fig. 6: Device Connected On The Machine*
+
 
 <!--  -->
-{% include alert.html style="success" text="For more information about enabling the developper settings on your android device go to <a href='https://developer.android.com/studio/debug/dev-options'>android studio docs</a>." %}
+{% include alert.html style="tip" text="For more information about enabling the developer settings on your android device go to <a href='https://developer.android.com/studio/debug/dev-options' class='alert-link'> android studio docs </a>." %}
 <!--  -->
 
-
-You can now open a terminal and navigate into your "ledgerApp" folder, then start the server by running below command:
+### Start the Development Server
+You can now open a terminal and navigate into your "ledgerApp" folder, then start the server by running the below command:
 ```console
 npm start
 ```
-
+### Install the App on Device
 Let the terminal where "metro" is running open and open a new terminal.
 In this terminal go into your project folder:
 ```console
 cd ledgerApp
 ```
 
-Finaly run the below command to install the application on your android device. It's assumed that you have connected your smartphone and your device is recognize by the command `adb devices` like the previous step mention.
+Finally, run the below command to install the application on your android device. It's assumed that you have connected your smartphone and your device is recognized by the command `adb devices` as the [Previous Step](#enable-developer-settings) mentioned.
 ```console
 npm run android
 ```
 
 A popup will be prompt on your android device to install the application.
-Of course click on "Yes" to install it in order to test it.
+Of course, click on "Yes" to install it and to test it.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="320" src="../images/mobile-install-app.jpg" >
-</div>
-<!-- --------------------------------- -->
 
-When launching the application it will be display like the below image, you must have the bluetooth and location activated.
+{: .center}
+![Mobile Application Installation](../images/mobile-install-app.jpg){:width="320"}   
+*Fig. 7: Mobile Application Installation*
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/android-rn-ble.jpg" >
-</div>
-<!-- --------------------------------- -->
-If the above image is not your result, it may displays you that:
+### Launching the Application
+When launching the application it will be displayed like the below image, you must have the Bluetooth and location activated.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="310" src="../images/android-ble-error.jpg" >
-<img width="310" src="../images/android-settings-1.jpg" >
-<img width="310" src="../images/android-settings-2.jpg" >
-<img width="310" src="../images/android-settings-3.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Application Displayed on Smartphone](../images/android-rn-ble.jpg){:width="210"}   
+*Fig. 8: Application Displayed on Smartphone*
+
+If the above image is not your result, it may display to you that:
+
+{: .center}
+![Bluetooth Not Authorized](../images/android-ble-error.jpg){:width="300"} ![App Settings 1](../images/android-settings-1.jpg){:width="300"}  
+![App Settings 2](../images/android-settings-2.jpg){:width="300"} ![App Settings 3](../images/android-settings-3.jpg){:width="300"}  
+*Fig. 9: Authorize the Bluetooth*
+
 
 
 <!--  -->
-{% include alert.html style="success" text="For more information about enabling the bluetooth settings on your android device go to the troubleshooting tab." %}
+{% include alert.html style="tip" text="For more information about enabling the Bluetooth settings on your android device go to the troubleshooting tab." %}
 <!--  -->
 
+
+### Pairing the Ledger Nano X
 To pair your Ledger Nano X you must unlock it.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerCodePin.jpg" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}   
+*Fig. 10: Ledger Code Pin*
 
 Now try to pair the Ledger Nano X to your android smartphone.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/android-rn-ble-list.jpg" >
-<img width="210" src="../images/android-rn-pairing.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Pairing the Ledger Nano X](../images/android-rn-ble-list.jpg){:width="210"} ![Pairing the Ledger Nano X](../images/android-rn-pairing.jpg){:width="210"}  
+*Fig. 11: Pairing the Ledger Nano X*
 
+### Pairing and Launching the Ethereum App on Nano X
 When pairing the pairing code will be displayed on your Ledger Nano X to confirm the pairing.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerPairing.jpg" >
-<img width="420" src="../images/ledgerEth.jpg" >
-<img width="420" src="../images/ledgerReady.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}  
+*Fig. 12: Ledger Enter Code Pin*
+
+{: .center}
+![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+*Fig. 13: Ledger Application*
+
+{: .center}
+![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+*Fig. 14: Ledger Run Application*
 
 Now that the pairing is done, the Nano X is ready with the ethereum application.
-If all goes well you must see the address of your ethereum account displayed like below.
+If all goes well you must see the address of your ethereum account displayed.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/android-rn-ble-address.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Address Account Displayed on Smartphone](../images/android-rn-ble-address.jpg){:width="210"}   
+*Fig. 15: Address Account Displayed on Smartphone*
 
-For security purpose we display on your Nano X the same ethereum address for you to confirm.
+### Verify the Address
+For security purposes, we display on your Nano X the same ethereum address for you to confirm.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerVerify.jpg" >
-<img width="420" src="../images/ledgerAddress.jpg" >
-<img width="420" src="../images/ledgerApprove.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}   
+*Fig. 16: Ledger Verify Screen*
 
+{: .center}
+![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}   
+*Fig. 17: Ledger Verify Address Screen*
+
+{: .center}
+![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}   
+*Fig. 18: Ledger Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger on Android!!!

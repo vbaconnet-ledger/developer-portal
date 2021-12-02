@@ -7,17 +7,17 @@ author:
 toc: true
 layout: doc
 ---
-
-In this section you will see how to create a React Native application using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>.
-During this project some general prerequisites are mandatory and you can find them <a href="../prerequites">here</a>.
+## Introduction
+In this section, you will see how to create a React Native application using the [@ledgerhq/react-native-hw-transport-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble).
+During this project some general prerequisites are mandatory and you can find them [here](../prerequisites).
 
 Then you can now go through the necessary prerequisite for iOS development.
 
 ## Prerequisites
 
 #### Install Homebrew
-Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party web sites, we can get the real advantage of Homebrew with few lines of code.
-Install Homebrew using bellow command in Terminal.
+Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party websites, we can get the real advantage of Homebrew with few lines of code.
+Install Homebrew using the bellow command in Terminal.
 
 ```console
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
@@ -26,7 +26,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 
 #### Install watchman
-React Native uses watchman to detect real time code changes and it automatically build and push the update to your device without manually refreshing.
+React Native uses watchman to detect real-time code changes and it automatically builds and pushes the update to your device without manually refreshing.
 
 ```console
 brew install watchman
@@ -34,7 +34,7 @@ brew install watchman
 
 
 #### Install Java JRE and JDK
-If you don’t have a complete installation of Java, the build scripts for react-native tend to complain and fail . Downloading Android Studio is not enough solution since it comes bundled with its own JRE.
+If you don’t have a complete installation of Java, the build scripts for react-native tend to complain and fail. Downloading Android Studio is not enough solution since it comes bundled with its own JRE.
 
 ```console
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
@@ -43,7 +43,7 @@ brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 #### Install React Native
 React Native allows the application to be written in Javascript and then the React Native Compiler will convert your Javascript code into native code for iOS and Android environments.
-React Native command line interface can be install using npm as bellow.
+React Native command line interface can be installed using npm as below.
 
 ```console
 npm install -g react-native-cli
@@ -52,33 +52,32 @@ npm install -g react-native-cli
 
 ### iOS development prerequisites
 
-To develop an iOS application we have to install <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">Xcode</a> via the Mac App Store.
+To develop an iOS application we have to install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) via the Mac App Store.
 
-When the installation finished, open Xcode then go to Settings => Locations.
+When the installation is finished, open Xcode then go to Settings => Locations.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/Xcode-settings.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Xcode Settings](../images/Xcode-settings.png){:width="840"}   
+*Fig. 1: Xcode Settings*
 
-Selecting the most recent version from the "Command Line Tools" dropdown.
+Select the most recent version from the "Command Line Tools" dropdown.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/Xcode-locations.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Xcode Location Settings](../images/Xcode-locations.png){:width="840"}   
+*Fig. 2: Xcode Location Settings*
 
-Finaly install cocoapods by running the below command line in a terminal:
+Finally, install cocoapods by running the below command line in a terminal:
 ```console
 sudo gem install cocoapods
 ```
 
-Now that we have set up the prerequisites, you can now create the application.
-In this integration we will use the ethereum application.
 
 ## Mobile App Build
+Now that we have set up the prerequisites, you can now create the application.
+In this integration, we will use the ethereum application.
 
-It is time to implement the application and test it. First open a terminal and create a new project, during this tutorial the project will be named “ledgerApp”.
+### Project Initialization
+It is time to implement the application and test it. First, open a terminal and create a new project, during this tutorial the project will be named “ledgerApp”.
 
 Run the following command to create the project and go into it:
 
@@ -88,13 +87,14 @@ cd ledgerApp
 ```
 
 <!--  -->
-{% include alert.html style="success" text="During the initialization it is installing required 'CocoaPods' dependencies and it may takes times." %}
+{% include alert.html style="tip" text="During the initialization, it is installing required 'CocoaPods' dependencies and it may take time." %}
 <!--  -->
 
+### Code Implementation
 Now that the folder is initialized, open it in an editor.
 Create a folder named "src" in the root folder.
 
-Create a file named "polyfill.js" in the root folder and copy paste the following code :
+Create a file named "polyfill.js" in the root folder and copy-paste the following code :
 
 #### polyfill.js
 ```javascript
@@ -116,7 +116,7 @@ import {name as appName} from './app.json';
 AppRegistry.registerComponent(appName, () => App);
 ```
 
-Move the file named "App.js" in the "src" folder and copy paste the following code :
+Move the file named "App.js" in the "src" folder and copy-paste the following code :
 #### App.js
 ```javascript
 import React, { Component } from "react";
@@ -156,7 +156,7 @@ class App extends Component {
 export default App;
 ```
 
-Create the file named "DeviceItem.js" in the "src" folder and copy paste the following code :
+Create the file named "DeviceItem.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import {
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Create the file named "DeviceSelectionScreen.js" in the "src" folder and copy paste the following code :
+Create the file named "DeviceSelectionScreen.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import {
@@ -372,7 +372,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Create the file named "ShowAddressScreen.js" in the "src" folder and copy paste the following code :
+Create the file named "ShowAddressScreen.js" in the "src" folder and copy-paste the following code :
 ```javascript
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -477,47 +477,53 @@ const styles = StyleSheet.create({
 
 Your folder must look like this.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/folder-rn-ble.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Folder of the Application](../images/folder-rn-ble.png){:width="210"}   
+*Fig. 3: Folder of the Application*
 
+### Dependencies Installation
 Now the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-- Install <a href="https://www.npmjs.com/package/react-native-qrcode-svg">react-native-qrcode-svg</a> which allow you to create a QR code:
+#### Install [react-native-qrcode-svg](https://www.npmjs.com/package/react-native-qrcode-svg)  
+This package allow you to create a QR code.  
 ```console
 npm install --save react-native-qrcode-svg
 ```
-- Install <a href="https://www.npmjs.com/package/react-native-svg">react-native-svg</a>, it is a package mandatory to use <a href="https://www.npmjs.com/package/react-native-qrcode-svg">react-native-qrcode-svg</a> :
+#### Install [react-native-svg](https://www.npmjs.com/package/react-native-svg)  
+This package is a package mandatory to use [react-native-qrcode-svg](https://www.npmjs.com/package/react-native-qrcode-svg).  
 ```console
 npm install --save react-native-svg
 ```
-- Install <a href="https://www.npmjs.com/package/rxjs">rxjs</a>, it is a rewrite of "Reactive-Extensions/RxJS" and is the latest production-ready version of RxJS :
+#### Install [rxjs](https://www.npmjs.com/package/rxjs)  
+This package is a rewrite of "Reactive-Extensions/RxJS" and is the latest production-ready version of RxJS.  
 ```console
 npm install --save react-native-svg
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble">@ledgerhq/react-native-hw-transport-ble</a>. which provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion:
+#### Install [@ledgerhq/react-native-hw-transport-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hw-transport-ble)  
+This Ledger package provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion.  
 ```console
 npm install --save @ledgerhq/react-native-hw-transport-ble
 ```
-- Install <a href="https://www.npmjs.com/package/react-native-ble-plx">react-native-ble-plx</a> which scan the bluetooth devices:
+#### Install [react-native-ble-plx](https://www.npmjs.com/package/react-native-ble-plx)  
+This package scan the bluetooth devices.  
 ```console
 npm install --save react-native-ble-plx
 npx react-native link react-native-ble-plx
 ```
-- Install <a href="https://www.npmjs.com/package/buffer">Buffer</a>:
+#### Install [Buffer](https://www.npmjs.com/package/buffer)  
 ```console
  npm install --save buffer
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
+#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)  
+This Ledger package will help you ask your Ledger device to access the ethereum address.  
 ```console
 npm install --save @ledgerhq/hw-app-eth
 ```
+#### Package.json dependencies
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.
 
-#### package.json
 ```javascript
 {
   "name": "ledgerApp",
@@ -558,120 +564,123 @@ This is how your “package.json” has to look like.
 
 ```
 
-Then the pod have to be installed in the "ios" folder:
+#### Pod Installation
+
+Then the pod has to be installed in the "ios" folder:
 ```console
 cd ios/
 pod install
 pod update
 ```
 
-Launch Xcode and open the ios folder in "ledgerApp" folder to add the "NSBluetoothAlwaysUsageDescription" key to the "info.plist".
+#### Enable The Bluetooth Usage
+Launch Xcode and open the ios folder in the "ledgerApp" folder to add the "NSBluetoothAlwaysUsageDescription" key to the "info.plist".
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/Xcode.png" >
-<img width="840" src="../images/Xcode-project.png" >
-<img width="840" src="../images/infoplist.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Open a Project on Xcode](../images/Xcode.png){:width="840"}   
+*Fig. 4: Open a Project on Xcode*
 
+{: .center}
+![Choose the Project](../images/Xcode-project.png){:width="840"}   
+*Fig. 5: Choose the Project*
+
+{: .center}
+![Add NSBluetoothAlwaysUsageDescription in info.plist](../images/infoplist.png){:width="840"}   
+*Fig. 6: Add NSBluetoothAlwaysUsageDescription in info.plist*
 
 You can now test the application you have built.
 
 ## Mobile App Test
 
-The app testing will be executed on your personnal phone, why ? Because Xcode emulator environment does not allow you to use neither bluetooth or usb connexion.
+The app testing will be executed on your smartphone, why? Because the Xcode emulator environment does not allow you to use either Bluetooth or USB connexion.
+
 
 <!--  -->
-{% include alert.html style="success" text="Please refer to the information for <a href='https://developer.apple.com/forums/thread/14983'>iOS Emulator limitation</a>." %}
+{% include alert.html style="tip" text="Please refer to the information for <a href='https://developer.apple.com/forums/thread/14983' class='alert-link'> iOS Emulator limitation </a>." %}
 <!--  -->
 
+
+### Application Build on Xcode
 Now to build your application on your Apple device you have to connect Xcode to an Apple account as demonstrated below.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/Xcode-signing-capabilities.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Connect Xcode to an Apple Account](../images/Xcode-signing-capabilities.png){:width="840"}   
+*Fig. 7: Connect Xcode to an Apple Account*
 
-Then connect your Apple device to your machine in order to build the application directly on the Apple device.
+Then connect your Apple device to your machine to build the application directly on the Apple device.
 If all goes well the device name will be displayed on the top of the Xcode window, all you have to do is click on the triangle icon on the top left corner to build the app on your Apple device.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/Xcode-build.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Build the Application](../images/Xcode-build.png){:width="840"}   
+*Fig. 8: Build the Application*
 
+### Trusting the Apple Development
 To accept the installation of the application.
 You have to trust the "Apple development" on your device. Follow the steps below.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/iphone-settings-1.png" >
-<img width="210" src="../images/iphone-settings-2.png" >
-<img width="210" src="../images/iphone-settings-3.png" >
-<img width="210" src="../images/iphone-settings-4.png" >
-<img width="210" src="../images/iphone-settings-5.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Iphone Settings](../images/iphone-settings-1.png){:width="210"} ![Iphone Settings](../images/iphone-settings-2.png){:width="210"} ![Iphone Settings](../images/iphone-settings-3.png){:width="210"}  
+![Iphone Settings](../images/iphone-settings-4.png){:width="210"} ![Iphone Settings](../images/iphone-settings-5.png){:width="210"}   
+*Fig. 9: Trusting the Apple Development*
 
-You can finaly test the application by launching it.
+You can finally test the application by launching it.
 
-When launching the application it will be display like the below image, you must have the bluetooth and location activated.
+### Launching the Application
+When launching the application it will be displayed like the below image, you must have the Bluetooth and location activated.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/iphone-rn-ble1.png" >
-<img width="210" src="../images/iphone-rn-ble2.png" >
-<img width="210" src="../images/iphone-rn-ble3.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Launching the Application](../images/iphone-rn-ble1.png){:width="210"} ![Launching the Application](../images/iphone-rn-ble2.png){:width="210"} ![Launching the Application](../images/iphone-rn-ble3.png){:width="210"}  
+*Fig. 10: Launching the Application*
 
+### Pairing the Ledger Nano X
 To pair your Ledger Nano X you must unlock it.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerCodePin.jpg" ></div>
-<!-- --------------------------------- -->
+
+{: .center}
+![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}   
+*Fig. 11: Ledger Code Pin*
 
 Now try to pair the Ledger Nano X to your Apple device.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/iphone-rn-ble4.png" >
-<img width="210" src="../images/iphone-rn-ble5.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Pairing the Ledger Nano](../images/iphone-rn-ble4.png){:width="210"} ![Pairing the Ledger Nano](../images/iphone-rn-ble5.png){:width="210"}  
+*Fig. 12: Pairing the Ledger Nano X*
 
+### Pairing and Launching the Ethereum App on Nano X
 When pairing the pairing code will be displayed on your Ledger Nano X to confirm the pairing.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerPairing.jpg" >
-<img width="420" src="../images/ledgerEth.jpg" >
-<img width="420" src="../images/ledgerReady.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}  
+*Fig. 13: Ledger Enter Code Pin*
+
+{: .center}
+![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+*Fig. 14: Ledger Application*
+
+{: .center}
+![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+*Fig. 15: Ledger Run Application*
 
 Now that the pairing is done, the Nano X is ready with the ethereum application.
-If all goes well you must see the address of your ethereum account displayed like below.
+If all goes well you must see the address of your ethereum account displayed.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/iphone-rn-ble6.png" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Address Account Displayed on Smartphone](../images/iphone-rn-ble6.png){:width="210px"}   
+*Fig. 16: Address Account Displayed on Smartphone*
 
-For security purpose we display on your Nano X the same ethereum address for you to confirm.
+### Verify the Address
+For security purposes, we display on your Nano X the same ethereum address for you to confirm.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerVerify.jpg" >
-<img width="420" src="../images/ledgerAddress.jpg" >
-<img width="420" src="../images/ledgerApprove.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}   
+*Fig. 17: Ledger Verify Screen*
 
+{: .center}
+![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}   
+*Fig. 18: Ledger Verify Address Screen*
 
-Congratulations you have successfully built your first application connected with Ledger on Apple device!!!
+{: .center}
+![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}   
+*Fig. 19: Ledger Approve Screen*
+
+Congratulations you have successfully built your first application connected with Ledger on an Apple device!!!

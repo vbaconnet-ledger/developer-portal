@@ -7,16 +7,17 @@ author:
 toc: true
 layout: doc
 ---
-
-In this section we will guide you through the creation of a little application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
+## Introduction
+In this section, we will guide you through the creation of an application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
 
 ## Prerequisites
-To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
+To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
 ## Web App USB and HID
 
-The implementation of a web application which use the USB or HID protocol is exactly the same. The only difference is that instead of using the <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a> you will use <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> and vise versa.
+The implementation of a web application that use the USB or HID protocol is the same. The only difference is that instead of using the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) you will use [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) and vise versa.
 
-It is time to implement the application and test it. First open a terminal and create a new folder, during this tutorial the folder will be named “examples-web-hid-usb”.
+### Project Initialization
+It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named “examples-web-hid-usb”.
 Run the following command to create the folder and go into it:
 
 ```console
@@ -24,25 +25,26 @@ mkdir examples-web-hid
 cd examples-web-hid
 ```
 
-Then, initialise the project by running the following:
+Then, initialize the project by running the following:
 
 ```console
 npm init
 ```
 
-During the initialization multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
 
-Now that the folder is initialized, open it in an editor.
+Now that the folder is initialized open it in an editor.
 Create a folder named “src” and two files named “index.html” and “main.js” in the “src” folder.
 Your folder must look like this.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/folderUsbHid.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Folder USB and HID](../images/folderUsbHid.png)  
+*Fig. 1: Folder of the Application*
 
+### Code Implementation
 
-In index.html copy paste the following code :
+Now we will implement the code.  
+In index.html copy-paste the following code :
 #### index.html
 ```html
 <!doctype html>
@@ -59,7 +61,7 @@ In index.html copy paste the following code :
 ```
 
 
-In main.js copy paste the following code :
+In main.js copy-paste the following code :
 #### main.js
 ```javascript
 import "babel-polyfill";
@@ -87,7 +89,7 @@ document.body.addEventListener("click", async () => {
     //trying to connect to your Ledger device with HID protocol
     const transport = await TransportWebHID.create();
 
-    //listen to the events which is sent by the Ledger packages in order to debug the app
+    //listen to the events which are sent by the Ledger packages in order to debug the app
     listen(log => console.log(log))
 
     //When the Ledger connected it is trying to display the bitcoin address
@@ -115,39 +117,42 @@ document.body.addEventListener("click", async () => {
   }
 });
 ```
-
-Now that the code is paste, the dependencies of the code have to be installed.
+### Dependencies Installation
+Now that the code is pasted, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-- Install <a href="https://babeljs.io/docs/en/babel-polyfill">babel-polyfill</a>:
+#### Install [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill):
 ```console
 npm install --save babel-polyfill
 ```
-- Install the Ledger package <a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a> which provide you the log of all the error from your connexion with your Ledger device that may appear when developing:
+#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
+
+This package provides you the log of all the error from your connexion with your Ledger device that may appear when developing.  
 ```console
 npm install --save @ledgerhq/logs
 ```
-- Install <a href="https://parceljs.org/">parcel</a>, it is a build tool which will help you package your application to run it in the browser:
+#### Install [parcel](https://parceljs.org/)  
+This package is a build tool that will help you package your application to run it in the browser.  
 ```console
 npm install --save-dev parcel
 ```
-- Install <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a>, it is a package that will help you ask your Ledger Nano to access the bitcoin address:
+#### Install [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)  
+This package will help you ask your Ledger Nano to access the bitcoin address.  
 ```console
 npm install --save @ledgerhq/hw-app-btc
 ```
-
+#### Install the Transport HID or USB package
 Then depending on your choice install one of the corresponding packages:
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a> which provide you with all the methods to interact with  your Ledger with a HID connexion:
+- Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Ledger with an HID connexion:
     - `npm install --save @ledgerhq/hw-transport-webhid`
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a> which provide you with all the methods to interact with  your Ledger with a USB connexion:
+- Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Ledger with a USB connexion:
     - `npm install --save @ledgerhq/hw-transport-webusb`
 
+
+#### Package.json Dependencies
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.
 
-
-
-#### package.json
 ```javascript
 {
   "name": "examples-web-hid-usb",
@@ -172,17 +177,16 @@ This is how your “package.json” has to look like.
 }
 ```
 
-A little modification have to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
+A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/packageJsonModify.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![PackageJson modify](../images/packageJsonModify.png)  
+*Fig. 2: Modifying the package.json*
 
 Add some script :
 - `“build”: “parcel build”`
 - `“start”: “parcel”`
-#### package.json
+#### Package.json Script
 ```javascript
 {
   "name": "examples-web-hid-usb",
@@ -210,52 +214,57 @@ Add some script :
 
 ## Web App Test
 
-Now that the Setup is finished, the app has to be built in order to be displayed.
-Start the developpement server:
+### Start the Development Server
+Now that the Setup is finished, the app has to be built to be displayed.
+Start the development server:
 
 ```console
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to <a href="http://localhost:1234">“localhost:1234”</a>, it will display :
+Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webapp1.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Application running on browser](../images/webapp1.png)  
+*Fig. 3: Application Running on Browser*
+### Plug Your Ledger Device
+Before clicking on the text connect your Ledger to the USB port, unlock it and run the bitcoin application.
+The steps are described below.
 
-Before clicking on the text connect your ledger in the USB port, unlock it and run the bitcoin application.
-The steps is described below.
+{: .center}
+![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+*Fig. 4: Ledger Enter Code Pin*
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerCodePin.jpg" >
-<img width="420" src="../images/ledgerBtc.jpg" >
-<img width="420" src="../images/ledgerReady.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}   
+*Fig. 5: Ledger Application*
 
+{: .center}
+![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+*Fig. 6: Ledger Run Application*
+
+### Connect Your Ledger to the Application
 Now you can click on the text and a popup will be prompt. Choose your Ledger device and click connexion
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webapp2.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Connect the Ledger](../images/webapp2.png)  
+*Fig. 7: Connect the Ledger*
 
 Then if all goes well you must have the bitcoin address you just create [previously](#prerequisites)
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webapp3.png" ></div>
-<!-- --------------------------------- -->
 
-Congratulations you have successfully built your first application connected with Ledger !!!
+{: .center}
+![Address Account Displayed](../images/webapp3.png)  
+*Fig. 8: Address Account Displayed*
+
+Congratulations, you have successfully built your first application connected with Ledger !!!
 
 ## Web USB and Web HID on Android chrome
 
-Android chrome support the use of the Ledger device by HID and USB.
-In mobile phone only android can support the web application.
-Moreover, on android just chrome is able to support the web application.
+Android chrome supports the use of the Ledger device by HID and USB.
+On a mobile phone, only android can support the web application.
+Moreover, on android, just chrome can support the web application.
 
+### Test on Android chrome
 To test your application on android, a little change has to be made. Just add the “--https” flag in your start script, and run the script.
 
 #### package.json
@@ -284,7 +293,7 @@ To test your application on android, a little change has to be made. Just add th
 }
 ```
 
-The browser will ask you that the website is malicious, to continue click on “advanced settings” and then on “continue to the localhost site”.
+The browser will ask you that the website is malicious, to continue, click on “advanced settings” and then on “continue to the localhost site”.
 Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
 
 
