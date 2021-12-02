@@ -22,6 +22,8 @@ left:
     - title: Emulator
       url: /docs/speculos/introduction
 
+  - title: Ledger.com
+    url: https://www.ledger.com
 # Navbar right menu navigation links
 
 right:
