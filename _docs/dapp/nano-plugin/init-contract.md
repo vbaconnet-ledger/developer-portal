@@ -58,6 +58,7 @@ typedef enum {
     MIN_AMOUNT_RECEIVED, // Min amount of tokens the user will get
     TOKEN_RECEIVED, // Address of the tokens the user is swapping to
     BENEFICIARY, // Address of the recipient of the tokens
+    // ...
 } parameter;
 ```
 
