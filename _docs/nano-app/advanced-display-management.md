@@ -298,7 +298,7 @@ Add all the business logic in the `.c` file. A helper function is used throughou
 ``` c
 // This is a special function you must call for bnnn_paging to work properly in an edgecase.
 // It does some weird stuff with the `G_ux` global which is defined by the SDK.
-// No need to dig deeper into the code, a simple copy paste will do.
+// No need to dig deeper into the code, a simple copy-paste will do.
 void bnnn_paging_edgecase() {
     G_ux.flow_stack[G_ux.stack_count - 1].prev_index = G_ux.flow_stack[G_ux.stack_count - 1].index - 2;
     G_ux.flow_stack[G_ux.stack_count - 1].index--;

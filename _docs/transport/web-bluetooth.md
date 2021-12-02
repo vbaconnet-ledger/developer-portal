@@ -7,21 +7,21 @@ author:
 toc: true
 layout: doc
 ---
-
-In this section we will guide you through the creation of a little application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
+## Introduction
+In this section, we will guide you through the creation of an application. This application will connect to your Ledger Nano X to display the address of your account (eg. bitcoin account, ethereum account).
 
 ## Prerequisites
-To start with the Web Integration go through the <a href="../prerequisites">Prerequisites</a> before diving into the implementation.
+To start with the Web Integration go through the [Prerequisites](../prerequisites) before diving into the implementation.
 ## Web App Bluetooth (only Nano X)
 
-Ledger Nano S as it does not have a bluetooth functionality you can only use Ledger Nano X with bluetooth.
+Ledger Nano S does not have Bluetooth functionality you can only use Ledger Nano X with Bluetooth.
 
-Please be aware that the bluetooth implementation is only supported by a few browser.
-You can check the <a href="https://caniuse.com/web-bluetooth">browser support</a> for the Web Bluetooth.
-
+Please be aware that the Bluetooth implementation is only supported by a few browsers.
+You can check the [browser support](https://caniuse.com/web-bluetooth) for the Web Bluetooth.
+### Project Initialization
 It is time to implement the application and test it. This web application will be implemented using React which is a frontend Javascript framework.
 
-First open a terminal and create a new project, during this tutorial the project will be named “examples-web-bluetooth”.
+First, open a terminal and create a new project, during this tutorial the project will be named “examples-web-bluetooth”.
 Run the following command to create the project and go into it:
 
 ```console
@@ -30,7 +30,7 @@ cd examples-web-bluetooth
 ```
 
 Now that the project is initialized, open it in an editor.
-You will see a React app initialized with a "src" folder where you will find all the code.
+You will see a React app initialized with an "src" folder where you will find all the code.
 
 To implement the Ledger connexion you have to change and create three files.
 
@@ -39,13 +39,14 @@ The implementation will not dive into the other file as this is not the focus of
 Dive into the folder named “src” to modify/create the three files. The files are named "App.js", "App.css” and “QRCode.js”.
 Your folder must look like this.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="210" src="../images/folderWebBle.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Folder of the Application](../images/folderWebBle.png){:width="210"}   
+*Fig. 1: Folder of the Application*
 
+### Code Implementation
 
-In App.js copy paste the following code :
+Now we will implement the code.  
+In App.js copy-paste the following code :
 #### App.js
 ```javascript
 import React, { Component } from "react";
@@ -179,7 +180,7 @@ export default App;
 ```
 
 
-In App.css copy paste the following code :
+In App.css copy-paste the following code :
 #### App.css
 ```css
 .App {
@@ -214,7 +215,7 @@ In App.css copy paste the following code :
 ```
 
 
-And create the "QRCode.js" file in the "src" folder, then copy paste the following code :
+And create the "QRCode.js" file in the "src" folder, then copy-paste the following code :
 #### QRCode.js
 ```javascript
 import React, { PureComponent } from "react";
@@ -262,34 +263,40 @@ export default class QRCode extends PureComponent<Props> {
 ```
 
 <!--  -->
-{% include alert.html style="success" text="Some error will be emphasizes by your editor because the 'QRCode.js' use some features from typescript. But you can skip those errors as it will not affect the application.
+{% include alert.html style="tip" text="Some error will be emphasized by your editor because of the 'QRCode.js' use some features from typescript. But you can skip those errors as they will not affect the application.
 " %}
 <!--  -->
 
-Now that the code is paste, the dependencies of the code have to be installed.
+### Dependencies Installation
+Now that the code is pasted, the dependencies of the code have to be installed.
 To do that install the following package by running the command :
 
-- Install <a href="https://www.npmjs.com/package/qrcode">qrcode</a> which allow you to create a QR code:
+#### Install [qrcode](https://www.npmjs.com/package/qrcode) 
+This package allow you to create a QR code.  
 ```console
 npm install --save qrcode
 ```
-- Install <a href="https://www.npmjs.com/package/eip55">eip55</a>, it is a package that will encode your ethereum address and can verify your address after encode:
+#### Install [eip55](https://www.npmjs.com/package/eip55)
+This package will encode your ethereum address and can verify your address after encoding.  
 ```console
 npm install --save eip55
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a>, it is a package that will help you ask your Ledger device to access the ethereum address:
+#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)
+This Ledger package will help you ask your Ledger device to access the ethereum address:
 ```console
 npm install --save @ledgerhq/hw-app-eth
 ```
-- Install the Ledger package <a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble"> @ledgerhq/hw-transport-web-ble</a> which provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion:
+#### Install [@ledgerhq/hw-transport-web-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble)
+This Ledger package provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion.  
 ```console
 npm install --save @ledgerhq/hw-transport-web-ble
 ```
 
+
+#### Package.json Dependencies
 Now that the dependencies are installed you can find them in the “package.js”.
 This is how your “package.json” has to look like.
 
-#### package.json
 ```javascript
 {
   "name": "examples-web-bluetooth",
@@ -336,65 +343,74 @@ This is how your “package.json” has to look like.
 
 ```
 ## Web App Test
-
-Now that the Setup is finished, the app has to be available in order to be displayed.
-Therefore start the developpement server:
+### Start the Development Server
+Now that the Setup is finished, the app has to be available to be displayed.
+Therefore start the development server:
 
 ```console
 npm run start
 ```
 
 <!--  -->
-{% include alert.html style="warning" text="All the browser do not support the bluetooth please look at the <code><a href='https://caniuse.com/web-bluetooth'>browser support</a></code>.
+{% include alert.html style="warning" text="All the browser do not support the Bluetooth please look at the <a href='https://caniuse.com/web-bluetooth' class='alert-link'> browser support </a>.
 " %}
 <!--  -->
 
 
-Now the application is up and running. Open the browser and go to <a href="http://localhost:1234">“localhost:3000”</a>, it will display :
+Now the application is up and running. Open the browser and go to [localhost:3000](http://localhost:3000), it will display :
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webBle1.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Application Running on Browser](../images/webBle1.png){:width="840"}   
+*Fig. 2: Application Running on Browser*  
 
-Before clicking on the button, connect your ledger in the USB port, unlock it and run the bitcoin application.
-The steps is described below.
+### Launch Bitcoin App
+Before clicking on the button, unlock it and run the Ethereum application.
+The steps are described below.
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerCodePin.jpg" >
-<img width="420" src="../images/ledgerEth.jpg" >
-<img width="420" src="../images/ledgerReady.jpg" >
-</div>
-<!-- --------------------------------- -->
+{: .center}
+![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+*Fig. 4: Ledger Enter Code Pin*
 
+{: .center}
+![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+*Fig. 5: Ledger Application*
+
+{: .center}
+![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+*Fig. 6: Ledger Run Application*
+
+### Connect Your Ledger to the Application
 Now you can click on the button and a popup will be prompt. Choose your Ledger Nano X and click connexion
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webBle2.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Connect the Ledger with Bluetooth](../images/webBle2.png){:width="840"}   
+*Fig. 7: Connect the Ledger with Bluetooth*
 
 Then another popup will be prompt to ask you to confirm the pairing
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webBle3.png" ></div>
-<!-- --------------------------------- -->
 
-Finaly if all goes well the address must be displayed with the QR code
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/webBle4.png" ></div>
-<!-- --------------------------------- -->
+{: .center}
+![Request of Pairing](../images/webBle3.png){:width="840"}   
+*Fig. 8: Request of Pairing*
 
-For security reason the address will also be displayed to your Ledger Nano X to verify and confirm the address.
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="420" src="../images/ledgerVerify.jpg" >
-<img width="420" src="../images/ledgerAddress.jpg" >
-<img width="420" src="../images/ledgerApprove.jpg" >
-</div>
-<!-- --------------------------------- -->
+Finally, if all goes well the address must be displayed with the QR code
 
+{: .center}
+![Address Account Displayed](../images/webBle4.png){:width="840"}   
+*Fig. 9: Address Account Displayed*
+
+### Verify the Address on Your Ledger Device
+For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
+
+{: .center}
+![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}   
+*Fig. 10: Ledger Verify Screen*
+
+{: .center}
+![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}   
+*Fig. 11: Ledger Verify Address Screen*
+
+{: .center}
+![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}   
+*Fig. 12: Ledger Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger Nano X !!!

@@ -10,7 +10,7 @@ layout: doc
 
 For the client's side device (Desktop & Mobile), several technologies can be used to communicate with Ledger hardware devices.
 
-Based on your current service core technology, you could choose different types of integration. First of all, it will depend of your current service implementation technology.
+Based on your current service core technology, you could choose different types of integration. First of all, it will depend on your current service implementation technology.
 
 ### WebApp
 For a web application three options are possible :

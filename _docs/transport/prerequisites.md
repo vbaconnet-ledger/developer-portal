@@ -27,7 +27,7 @@ The commands should print the versions of Node.js and npm accordingly.
 ## Ledger Live Installation
 
 Now that node and npm are installed, you have to install the [Ledger Live](https://www.ledger.com/ledger-live/download) desktop application to connect your Ledger device.
-After the installation open, Ledger Live and go to the **Manager** tab.
+After the installation, open Ledger Live and go to the **Manager** tab.
 
 {: .center}
 ![Ledger Live Prerequisites](../images/ledgerlivetabs.png)  
