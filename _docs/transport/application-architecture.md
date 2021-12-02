@@ -9,24 +9,36 @@ layout: doc
 ---
 
 
-<!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="840" src="../images/application-architecture.png" ></div>
-<!-- --------------------------------- -->
+## Architecture Overview  
+
+
+In order to understand deeply the interactions between different components of the application, we need to understand the architecture of the application.
+The overall architecture of the integration is based on the following layers:
+
+{: .center}
+![Ledger Live Prerequisites](../images/application-architecture.png){: width="100%" }
+*Fig. 1: Overall Architecture*
+
+On the client side we have your core application containing your business logic and workflows.
+You need to integrate at least the LedgerJS Transport Library in order to discuss with the Ledger device.
+
+Some major networks have dedicated JS Library, like Bitcoin / Ethereum. You should use them if you are planning to integrate with these apps. This will provide a good abstraction level and allow you to use a proper SDK.
+You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-usb-hid).
+
 
 ## Nano API calls
 
 This section describes what are the role of the Nano API.
 Indeed we call Nano API the "LedgerJS Dedicated App Lib" on the above image at the top of the page.
-You must have encontered few of the APIs if you have gone through the <a href='../web-integration'>Integration Walkthrough</a>.
-In the <a href='../web-integration'>Integration Walkthrough</a> we have mostly used the Bitcoin and Ethereum API provided by ledger.
+You must have encontered few of the APIs if you have gone through the [Integration Walkthrough](../web-usb-hid).
+In the Walkthroughs, we have mostly used the Bitcoin and Ethereum API provided by Ledger.
 
 The Nano API role is to help you to carry out operations in the "Nano Apps" (rf. image at the top).
 
 The APIs are not written in the same way for all Nano apps. In addition, while some of them are provided by ledger, others are written by the various crypto communities.
 
 You can have a look at how they are coded and documented at the <a href='https://github.com/LedgerHQ/ledgerjs'>LedgerHQ repository</a>.
-You can also see the different Nano API provided by ledger below.
+You can also see the different Nano API provided by Ledger below.
 
 ### Nano APIs provided by Ledger
 
@@ -64,7 +76,7 @@ Here is the list of all the APIs from the community that you can find on npm.
 
 ## Nano API-less calls
 
-When there is no available Nano API, the way to make your Nano calls is by constructing the call yourself, by using the syntax information found in the application documentation.
+When there is no available Nano API, the way to make your Nano calls is by constructing the ADPU call yourself, by using the syntax information found in each application documentation.
 
 Here are some examples:
 

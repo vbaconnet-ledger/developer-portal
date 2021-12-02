@@ -1,16 +1,17 @@
 - title: Connecting a wallet
   docs:
   - transport/overview
-
-- title: Transport
-  docs:
   - transport/choose-the-transport
 
+
+# - title: Transport
+#   docs:
+#   - transport/choose-the-transport
+
 - title: Integration Walkthrough
+  docs:
+  - transport/prerequisites
   subfolderitems:
-    - title: Prerequisites
-      docs:
-      - transport/prerequisites
     - title: Web Application
       docs:
       - transport/web-hid-usb
@@ -30,9 +31,9 @@
   - transport/application-architecture
   - transport/architecture-dataflow
 
-- title: End-2-end Tutorials
-  docs:
-  - transport/connect-wallet
+# - title: End-2-end Tutorials
+#   docs:
+#   - transport/connect-wallet
 
 - title: FAQ & Troubleshooting
   docs:
