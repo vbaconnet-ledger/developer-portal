@@ -10,7 +10,10 @@ layout: default
 
         <article class="uk-article">
 
-            <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+            <h1 class="uk-article-title">{{ page.title | escape }}</h1> 
+            {% if page.icon %}
+                <span data-uk-icon="icon: {{page.icon}}; ratio: 2.2" class=""></span>
+            {% endif %}
 
             <div class="article-content link-primary">
                 {{ content }}

@@ -16,7 +16,10 @@
   url: ../secure-app
 
 - title: UI guidelines
-  url: ../secure-app
+  url: ../display-management
+
+- title: BOLOS
+  url: ../bolos-introduction
 
 
 

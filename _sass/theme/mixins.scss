@@ -608,6 +608,15 @@
         color: $safety-orange;
     }
 
+    // Quick links Nano landing page
+    .quick-links a {
+        color: $safety-orange;
+    }
+
+    .quick-links ul {
+        list-style-type: none;
+    }
+
     // Icons on the home-page
     .icon-home{
       color: $global-color;
