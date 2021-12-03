@@ -2,12 +2,12 @@
 
 - title: Before you start
   desc: What types of Nano Apps exist and what you should know before starting
-  doc: nano-app/introduction/
+  doc: nano-app/introduction
 
 - title: Process
   desc: Every step of the release process
-  doc: nano-app/publish-introduction/
+  doc: nano-app/publish-introduction
 
 - title: Requirements
   desc: Requirements to get your Nano App published
-  doc: nano-app/requirements/
+  doc: nano-app/requirements
