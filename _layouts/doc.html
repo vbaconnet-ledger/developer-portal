@@ -70,6 +70,13 @@ layout: default
                         </ul>
                       {% endif %}
                     {% endfor %}
+                    {% if category == "live-app" %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../dapp/process/">DApp</a>
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../platform-app/introduction">Non-DApp</a>
+                    {% endif %}
+                    {% if category == "dapp" or category == "platform-app" %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" style="margin-bottom:20px;" href="../../live-app/start-here">Back to the Live App intro</a>
+                    {% endif %}
                 </div>
             </div>
 
