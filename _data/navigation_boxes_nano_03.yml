@@ -3,3 +3,4 @@
 - title: Clones
   desc: The special case of Bitcoin and Ethereum clones
   doc: nano-app/clones-specificities
+  icon: grid

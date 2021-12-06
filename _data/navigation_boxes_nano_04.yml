@@ -3,7 +3,9 @@
 - title: Appendix A
   desc: Personal security devices
   doc: nano-app/psd-introduction
+  icon: comments
 
 - title: Appendix B
   desc: The BOLOS Platform
   doc: nano-app/bolos-introduction
+  icon: comments
