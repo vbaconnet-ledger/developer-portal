@@ -26,5 +26,5 @@ The solution we suggest is to use either `@ledgerhq/hw-transport-webusb` or `@le
 
 The main difference relies on the fact we can create a session with the device. **This works with a browser Permission, so the security is getting better for the user**. The challenge on the integration side, is that you must use the Transport in the context of a User Event Click. Because technically, we can only open the device in context of a click of a button, typically a "Sign Transaction" button you may already have in your interface.
 
-You can see integrations of WebUSB in the [ledgerjs-examples repository](https://github.com/LedgerHQ/ledgerjs-examples).
+You can see integrations of WebUSB in the [ledgerjs-examples repository](hhttps://github.com/LedgerHQ/ledgerjs-examples/tree/new-examples).
 
