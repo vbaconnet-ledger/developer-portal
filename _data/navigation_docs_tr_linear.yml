@@ -3,32 +3,32 @@
 
 - title: Connecting a wallet
   docs:
+  - transport/overview
+
+- title: Transport
+  docs:
+  - transport/choose-the-transport
+
+- title: Integration Walkthrough
+  docs:
+  - transport/prerequisites
+  - transport/web-hid-usb
+  - transport/web-bluetooth
+  - transport/react-native-android-hid
+  - transport/react-native-bluetooth-android
+  - transport/react-native-bluetooth-ios
+  - transport/node-electron-hid
+
+- title: Architecture
+  docs:
+  - transport/application-architecture
+  - transport/architecture-dataflow
+
+- title: End-2-end Tutorial
+  docs:
   - transport/connect-wallet
 
-- title: Nano calls
-  docs:
-  - transport/nano-api-calls
-  - transport/nano-api-less-calls
-  - transport/test-communication
-  - transport/open-close-info-on-apps
-
-- title: Examples
-  docs:
-  - transport/example-webusb-js
-  - transport/example-webble-react
-  - transport/example-reactnative-ble
-
-- title: Transport APIs
-  docs:
-  - transport/webhid
-  - transport/webusb
-  - transport/web-ble
-  - transport/node-hid-singleton
-  - transport/node-speculos
-  - transport/react-native-hid
-  - transport/react-native-ble
-
-- title: Note on U2F
+- title: FAQ & Troubleshooting
   docs:
   - transport/U2F
-  
+  - transport/test-communication

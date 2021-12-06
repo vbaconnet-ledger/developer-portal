@@ -17,7 +17,7 @@ Install our typescript Platform SDK library:
 yarn add @ledgerhq/live-app-sdk
 ```
 
-## Import the SDK to your project
+## Import and connect the SDK to your project
 
 Import and instantiate the Ledger Live SDK: 
 
@@ -28,4 +28,5 @@ import { WindowMessageTransport } from "@ledgerhq/live-app-sdk";
 ---
 
 const llapi = new LedgerLiveApi(new WindowMessageTransport());
+llapi.connect();
 ```

@@ -7,6 +7,8 @@
   docs:
   - nano-app/build
   - nano-app/load
+  - nano-app/open-close-info-on-apps
+
 
 - title: Security best practices
   docs:

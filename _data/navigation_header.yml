@@ -6,7 +6,7 @@ left:
     url: /docs/nano-app/introduction
 
   - title: Connect your wallet
-    url: /docs/transport/connect-wallet
+    url: /docs/transport/overview
 
   - title: Blockchain Support
     url: /docs/coin/general-process
@@ -24,6 +24,8 @@ left:
     - title: Ledger Live developer mode
       url: /docs/developer-mode/use-cases
 
+  - title: Ledger.com
+    url: https://www.ledger.com
 # Navbar right menu navigation links
 
 right:
