@@ -8,7 +8,7 @@
 - title: Connect your wallet
   desc: How to connect a wallet to a Ledger device
   icon: connect
-  doc: transport/connect-wallet
+  doc: transport/overview
 
 - title: Blockchain support
   desc: How to get your currency supported on Ledger Live
