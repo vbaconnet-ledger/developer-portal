@@ -1,24 +1,29 @@
 # repo include content
-
-- title: Load an app on a Nano S
-  url: ../load
-
 - title: Submit a Nano application for listing
   url: https://ledger.typeform.com/to/qQSf7CVh
 
+- title: Load an app on a Nano S
+  section: Set up and use
+  url: ../load
+
 - title: Set up your developer environment
+  section: Set up and use
   url: ../build
 
 - title: What is required to have your app listed?
+  section: Before you start
   url: ../introduction
 
 - title: Security guidelines
+  section: Requirements and coding > Security
   url: ../secure-app
 
 - title: UI guidelines
+  section: Requirements and coding > Display
   url: ../display-management
 
 - title: BOLOS
+  section: Appendix B
   url: ../bolos-introduction
 
 
