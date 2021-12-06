@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Release and deliverables
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
@@ -8,10 +8,7 @@ author:
 layout: doc
 ---
 
-
-## Release and deliverables
-
-### Release processes
+## Release processes
 
 There are different release levels for a given application:
 
@@ -34,7 +31,7 @@ An application will be listed publicly (official Ledger support) when:
 -   Ledger is ready to communicate officially about the app release (tweet, blogpost, website page update)
 -   Customer support pages are available on Ledger Help Center
 
-### Deliverables summary
+## Deliverables summary
 
 -   Bolos app Release Candidate source code (preferably a git repository)
 -   Companion app (binaries or package, for Windows/MacOS/Linux)
@@ -48,7 +45,7 @@ An application will be listed publicly (official Ledger support) when:
     -   Sign a transaction on the Ledger device
 
 
-### Release processes and deliverables overview
+## Release processes and deliverables overview
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
