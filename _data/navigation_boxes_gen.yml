@@ -5,8 +5,8 @@
   icon: nano
   doc: nano-app/introduction
 
-- title: Connect your wallet
-  desc: How to connect a wallet to a Ledger device
+- title: Connect your app
+  desc: Support a Nano on your desktop/web app
   icon: connect
   doc: transport/overview
 
