@@ -46,7 +46,7 @@ List the accounts added by the user on Ledger Live.
 
 [listAccounts](../../classes/#listaccounts):
 
-```json
+```javascript
 async listAccounts(): Promise<Account[]> {
     const rawAccounts = await this._request<RawAccount[]>("account.list");
 
@@ -59,7 +59,7 @@ Let the user choose an account in Ledger Live, providing filters for choosing cu
 
 [requestAccount](../../classes/#requestaccount): 
 
-```json
+```javascript
 async requestAccount(
     params: {
       currencies?: string[];
@@ -81,7 +81,7 @@ The `transaction` parameter (type) must be built by yourself, it isn't returned 
 
 [transaction](../../modules/#transaction):
 
-```json
+```javascript
 export interface TransactionCommon {
   amount: BigNumber;
   recipient: string;
