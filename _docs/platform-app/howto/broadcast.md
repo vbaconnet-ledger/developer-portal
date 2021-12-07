@@ -1,5 +1,5 @@
 ---
-title: Broadcast (TBD)
+title: Broadcast
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
 category: Platform Application
