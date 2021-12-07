@@ -1,8 +1,9 @@
 ---
 title: Sign
 subtitle:
-tags: []
+tags: [platform app, platform application, live app, ledger live app]
 category: Platform Application
+toc: true
 layout: doc
 ---
 
@@ -12,7 +13,7 @@ Signing a transaction is pretty straight-forward.
 
 [signTransaction](../../classes/#signtransaction):
 
-```json
+```javascript
 async signTransaction(
     accountId: string,
     transaction: Transaction,
