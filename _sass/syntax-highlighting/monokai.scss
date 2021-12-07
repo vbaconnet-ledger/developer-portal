@@ -13,22 +13,22 @@
 
 .highlight .hll { background-color: #49483e }
 .highlight  { background: #272822; color: #f9f8f5 }
-.highlight .c { color: #75715e } /* Comment */
+.highlight .c { color: #A3A08F } /* Comment */ // It was #75715e. Modified on December the 7th, 2021, for more visibility.
 .highlight .err { color: #f92672 } /* Error */
 .highlight .k { color: #ae81ff } /* Keyword */
 .highlight .l { color: #fd971f } /* Literal */
 .highlight .n { color: #f9f8f5 } /* Name */
 .highlight .o { color: #a1efe4 } /* Operator */
 .highlight .p { color: #f9f8f5 } /* Punctuation */
-.highlight .cm { color: #75715e } /* Comment.Multiline */
-.highlight .cp { color: #75715e } /* Comment.Preproc */
-.highlight .c1 { color: #75715e } /* Comment.Single */
-.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .cm { color: #A3A08F } /* Comment.Multiline */
+.highlight .cp { color: #A3A08F } /* Comment.Preproc */
+.highlight .c1 { color: #A3A08F } /* Comment.Single */
+.highlight .cs { color: #A3A08F } /* Comment.Special */
 .highlight .gd { color: #f92672 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gh { color: #f9f8f5; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #a6e22e } /* Generic.Inserted */
-.highlight .gp { color: #75715e; font-weight: bold } /* Generic.Prompt */
+.highlight .gp { color: #A3A08F; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #a1efe4; font-weight: bold } /* Generic.Subheading */
 .highlight .kc { color: #ae81ff } /* Keyword.Constant */
@@ -62,7 +62,7 @@
 .highlight .mo { color: #fd971f } /* Literal.Number.Oct */
 .highlight .sb { color: #a6e22e } /* Literal.String.Backtick */
 .highlight .sc { color: #f9f8f5 } /* Literal.String.Char */
-.highlight .sd { color: #75715e } /* Literal.String.Doc */
+.highlight .sd { color: #A3A08F } /* Literal.String.Doc */
 .highlight .s2 { color: #a6e22e } /* Literal.String.Double */
 .highlight .se { color: #fd971f } /* Literal.String.Escape */
 .highlight .sh { color: #a6e22e } /* Literal.String.Heredoc */
