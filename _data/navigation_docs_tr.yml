@@ -3,11 +3,6 @@
   - transport/overview
   - transport/choose-the-transport
 
-
-# - title: Transport
-#   docs:
-#   - transport/choose-the-transport
-
 - title: Integration Walkthrough
   docs:
   - transport/prerequisites

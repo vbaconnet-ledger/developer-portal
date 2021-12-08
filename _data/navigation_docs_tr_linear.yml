@@ -4,9 +4,6 @@
 - title: Connecting an app
   docs:
   - transport/overview
-
-- title: Transport
-  docs:
   - transport/choose-the-transport
 
 - title: Integration Walkthrough
@@ -24,9 +21,9 @@
   - transport/application-architecture
   - transport/architecture-dataflow
 
-- title: End-2-end Tutorial
-  docs:
-  - transport/connect-wallet
+# - title: End-2-end Tutorial
+#   docs:
+#   - transport/connect-wallet
 
 - title: FAQ & Troubleshooting
   docs:

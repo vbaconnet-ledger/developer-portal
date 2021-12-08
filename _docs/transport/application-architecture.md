@@ -23,7 +23,7 @@ On the client side we have your core application containing your business logic 
 You need to integrate at least the LedgerJS Transport Library in order to discuss with the Ledger device.
 
 Some major networks have dedicated JS Library, like Bitcoin / Ethereum. You should use them if you are planning to integrate with these apps. This will provide a good abstraction level and allow you to use a proper SDK.
-You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-usb-hid).
+You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-hid-usb).
 
 
 ## Nano API calls
