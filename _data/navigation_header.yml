@@ -21,8 +21,6 @@ left:
     dropdown:
     - title: Emulator
       url: /docs/speculos/introduction
-    - title: Ledger Live developer mode
-      url: /docs/developer-mode/use-cases
 
   - title: Ledger.com
     url: https://www.ledger.com

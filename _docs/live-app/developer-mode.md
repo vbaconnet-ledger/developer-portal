@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Enabling the developer mode
 subtitle:
 tags: []
 category: Ledger Live Developer Mode

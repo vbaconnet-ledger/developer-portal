@@ -21,7 +21,7 @@ Check and if necessary edit your manifest file as described [below](#example-of-
 
 ### Load your Live App locally
 
-To load your Live App locally, [Unlock the Developer mode](../../developer-mode/features) in Ledger Live and [add a local app](../../developer-mode/features#add-a-local-app).
+To load your Live App locally, [Unlock the Developer mode](../../live-app/developer-mode) in Ledger Live and [add a local app](../../live-app/developer-mode#add-a-local-app).
 
 ### Example of Manifest (JSON format) for the “Lido” application:
 
