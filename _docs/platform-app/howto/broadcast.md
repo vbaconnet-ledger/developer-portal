@@ -28,7 +28,7 @@ To broadcast a transaction, you will need to use the `broadcastSignedTransaction
 As you can see, you need the `accountId` and the `signedTransaction`.
   
 ## Account Id
-To get the `accountID`, you have two options. You can either use the `listAccounts` or the `requestAccount` functions.
+To get the `accountId`, you have two options. You can either use the `listAccounts` or the `requestAccount` functions.
 
 ### List account
 List the accounts added by the user on Ledger Live.
