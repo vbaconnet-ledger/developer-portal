@@ -3,7 +3,7 @@
 - title: Nano App
   desc: Get your blockchain supported on Nano S/X
   icon: nano
-  doc: nano-app/introduction
+  doc: nano-app/start-here
 
 - title: Connect your app
   desc: Support a Nano on your desktop/web app

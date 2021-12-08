@@ -30,9 +30,11 @@ layout: default
 <div class="uk-section">
     <div class="uk-container">
         <div class="uk-grid-medium" data-uk-grid>
-
             <div class="sidebar-fixed-width uk-visible@l">
                 <div id="sidebar-docs" class="sidebar-docs uk-position-fixed uk-margin-top">
+                    {% if category == "nano-app"  %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../start-here">Back to the Nano App intro</a>
+                    {% endif %}
                     {% for section in docs %}
                     <h5>{{ section.title }}</h5>
                         <ul class="uk-nav uk-nav-default doc-nav">

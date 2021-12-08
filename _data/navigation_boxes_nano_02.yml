@@ -1,0 +1,11 @@
+# Boxes All Integrations
+
+- title: Set up and use
+  desc: Get your developement environment up and running
+  doc: nano-app/build
+  icon: laptop
+
+- title: Coding
+  desc: "How it is done: display management, memory, I/O" 
+  doc: nano-app/display-management
+  icon: code
