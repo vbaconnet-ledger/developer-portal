@@ -2,7 +2,7 @@
 title: Develop and Test
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---
@@ -19,7 +19,7 @@ To develop the web version of your application, you need to use the Ledger Live 
 
 Use the following code to import and instantiate the Ledger Live SDK:
 
-```json
+```js
 import LedgerLiveApi from "ledger-live-platform-sdk";
 import { WindowMessageTransport } from "ledger-live-platform-sdk";
 

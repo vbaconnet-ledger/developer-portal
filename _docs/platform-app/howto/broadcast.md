@@ -2,7 +2,7 @@
 title: Broadcast (TBD)
 subtitle:
 tags: []
-category: Platform Application
+category: Live Application
 layout: doc
 ---
 

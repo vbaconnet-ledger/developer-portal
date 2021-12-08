@@ -9,18 +9,22 @@ layout: default
   {% assign docs = site.data.navigation_docs_na %}
 {% elsif category == "coin"  %}
   {% assign docs = site.data.navigation_docs_ci %}
-{% elsif category == "dapp"  %}
-  {% assign docs = site.data.navigation_docs_da %}
 {% elsif category == "speculos"  %}
   {% assign docs = site.data.navigation_docs_sp %}
 {% elsif category == "token"  %}
   {% assign docs = site.data.navigation_docs_et %}
-{% elsif category == "platform-app"  %}
-  {% assign docs = site.data.navigation_docs_pa %}
 {% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr %}
+{% elsif category == "dapp"  %}
+  {% assign docs = site.data.navigation_docs_da %}
+{% elsif category == "platform-app"  %}
+  {% assign docs = site.data.navigation_docs_pa %}
 {% elsif category == "swap"  %}
   {% assign docs = site.data.navigation_docs_sw %}
+{% elsif category == "developer-mode"  %}
+  {% assign docs = site.data.navigation_docs_dm %}
+{% elsif category == "live-app"  %}
+  {% assign docs = site.data.navigation_docs_la %}
 {% endif %}
 
 <div class="uk-section">
@@ -68,6 +72,13 @@ layout: default
                         </ul>
                       {% endif %}
                     {% endfor %}
+                    {% if category == "live-app" %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../dapp/process/">DApp</a>
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../platform-app/introduction">Non-DApp</a>
+                    {% endif %}
+                    {% if category == "dapp" or category == "platform-app" %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" style="margin-bottom:20px;" href="../../live-app/start-here">Back to the Live App intro</a>
+                    {% endif %}
                 </div>
             </div>
 
@@ -84,7 +95,7 @@ layout: default
 
                       {% if page.toc %}
                       <div class="uk-width-medium uk-nav-default link-primary uk-hidden@m mobile-sections">
-                        <h5>Sections in this article</h5>
+                        <h5>Sections in this page</h5>
                         <div class="content-toc">
                           {% include toc.html html=content %}
                         </div>
@@ -138,7 +149,7 @@ layout: default
             {% if page.toc %}
             <div class="uk-width-medium uk-nav-default link-primary uk-visible@m">
               <div id="sidebar-toc" class="sidebar-toc sidebar-sticky">
-                <h5>Sections in this article</h5>
+                <h5>Sections in this page</h5>
                 {% include toc.html html=content %}
               </div>
             </div>

@@ -5,16 +5,9 @@ tags: []
 layout: doc
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
-## Create a Manifest
-
 Now that you have created your Live App, let’s create the associated manifest.
 
-A manifest is a `.json` file providing information about your Live App.
+A manifest is a `.json` file providing information about your Live App to Ledger Live.
 
 Create a `manifest.json` file at the root of your project and paste in the following content:
 
@@ -48,8 +41,9 @@ Create a `manifest.json` file at the root of your project and paste in the follo
 }
 ```
 
-We won’t go too much into the details of each field in this tutorial. Check out the [Manifest](../../reference/manifest) article in the Reference section for more details on each field.
+We will not go into much details about each field in this tutorial. Check out the [Manifest](../../reference/manifest) article in the Reference section for more information.
 
-The main thing you have to care about for now is the `url` field: it must match the url of your Live App. Here it is set at `http://localhost:3000` because we are currently running our app in local for development and test purposes.
+For this tutorial we will only focus on the `url` field. It must match the url of your Live App. Here it is set at `http://localhost:3000` because we are currently running our app in local for development and test purposes.
 
-Now that we have our Live App manifest, we need to add it into Ledger Live, this is what we will see in the next section.
+Now that we have our Live App manifest, we need to import it into Ledger Live, this is what we will see in the next section.
+

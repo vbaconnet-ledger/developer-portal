@@ -1,8 +1,8 @@
 ---
 title: Web Bluetooth
 subtitle:
-tags: []
-category: Connect a wallet
+tags: [transport, device, wallet app, communicate, wallet, companion]
+category: Connect your app
 author:
 toc: true
 layout: doc
