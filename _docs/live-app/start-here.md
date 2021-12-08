@@ -7,6 +7,10 @@ toc:
 layout: doc
 ---
 
+<div class="uk-text-center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 A Live App is an app available in the discover section of the Ledger Live Application. To transform your DApp or your classical application into a Live App, this is what you will need to do:
 
 
