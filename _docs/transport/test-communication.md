@@ -1,8 +1,8 @@
 ---
 title: Test the communication
 subtitle:
-tags: [communication, transport, wallet, companion, package, repl]
-category: Connect a wallet
+tags: [transport, device, wallet app, communicate, wallet, companion]
+category: CConnect your app
 author:
 toc: true
 layout: doc
