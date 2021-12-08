@@ -12,6 +12,9 @@
                         {% assign category = url[2] %}
                         {% assign link_url = link.url | split: "/" %}
                         {% assign link_category = link_url[2] %}
+                        {% if category == "dapp" or category == "platform-app" %}
+                            {% assign category = "live-app" %}
+                        {% endif %}
                             {% if link.url contains 'http' %}
                                 {% assign domain = '' %}
                             {% else %}
