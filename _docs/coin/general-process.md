@@ -8,6 +8,10 @@ toc: true
 layout: doc
 ---
 
+<div class="uk-text-center">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/zEYnDHh5NRM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## General Ledger Live Overview
 
 If you already have a public Nano application and are looking for a way to get your blockchain supported on Ledger Live, then congratulations, you are in the right place.
