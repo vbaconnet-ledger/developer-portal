@@ -23,13 +23,7 @@ async signTransaction(
        */
       useApp: string;
     }
-  ): Promise<RawSignedTransaction> {
-    return this._request<RawSignedTransaction>("transaction.sign", {
-      accountId,
-      transaction: serializeTransaction(transaction),
-      params: params || {},
-    });
-  }
+  ): Promise<RawSignedTransaction> 
 ```
 
 The two mandatory parameters that you need in order to sign a transaction are:
@@ -47,11 +41,7 @@ List the accounts added by the user on Ledger Live.
 [listAccounts](../../classes/#listaccounts):
 
 ```javascript
-async listAccounts(): Promise<Account[]> {
-    const rawAccounts = await this._request<RawAccount[]>("account.list");
-
-    return rawAccounts.map(deserializeAccount);
-  }
+async listAccounts(): Promise<Account[]>
 ```
 ### Request account
 
@@ -65,14 +55,7 @@ async requestAccount(
       currencies?: string[];
       allowAddAccount?: boolean;
     } = {}
-  ): Promise<Account> {
-    const rawAccount = await this._request<RawAccount>(
-      "account.request",
-      params
-    );
-
-    return deserializeAccount(rawAccount);
-  }
+  ): Promise<Account> 
 ```
 
 ## Transaction
