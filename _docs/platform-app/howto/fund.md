@@ -2,18 +2,16 @@
 title: Fund
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---
 
 ## Introduction
 
-To secure the funding of the card, Ledger developed an exchange app that you are able to call in your iframe through the device Ledger Live Widget API. You will have to modify your web service to generate the appropriate request for the exchange app. In this document, we will guide you through this process.
+To securely spend crypto, Ledger developed an exchange app that you are able to call in your iframe through the device Ledger Live Widget API. You will have to modify your web service to generate the appropriate request for the exchange app. In this document, we will guide you through this process.
 
 As you can see on the following diagram, there are three interactions between Ledger Live and your iframe. This three interactions are the ones that are needed from your side.  
-
-![Secure funding high level design](../../images/baanx-secure-funding.png "Secure funding high level design")
 
 The three main functions you need for the funding are: 
 - List the accounts: `listAccounts`,
@@ -27,7 +25,7 @@ List the accounts added by the user on Ledger Live.
 
 [listAccounts](../../classes/#listaccounts):
 
-```json
+```js
 async listAccounts(): Promise<Account[]> {
     const rawAccounts = await this._request<RawAccount[]>("account.list");
 
@@ -41,7 +39,7 @@ Start the exchange process by generating a nonce on Ledger device.
 
 [initExchange](../../classes/#initexchange):
 
-```json
+```js
  async initExchange(
     _exchangeType: ExchangeType,
     _partnerName: string
@@ -57,7 +55,7 @@ Complete an exchange process by passing by the exchange content and its signatur
 
 [completeExchange](../../classes/#completeexchange):
 
-```json
+```js
 async completeExchange(
     _exchangePayload: ExchangePayload,
     _payloadSignature: EcdsaSignature,
@@ -72,7 +70,7 @@ The **exchangePayload** is a protobuf message containing the transaction data. I
 
 Your protobuf message should have the following structure: 
 
-```json
+```js
 message NewFundResponse {
    string    user_id = 1; 
    string    account_name = 2; 

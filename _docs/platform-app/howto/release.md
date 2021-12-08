@@ -2,14 +2,10 @@
 title: Release
 subtitle:
 tags: []
-category: Platform Application
+category: Live Application
 layout: doc
+toc: true
 ---
-
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
 
 ## Submit the form
 
@@ -40,5 +36,5 @@ Once Ledger finishes the review, your application is added to the Ledger Live �
 
 ## Contact us
 
-If you are a developer and wish to get in touch with our engineering team, don’t wait and reach out to us [on Discord](https://discord.gg/Ledger). Please introduce yourself to the developer community in the **#introductions** channel.
+If you wish to contact us, please have a look at [this page](https://developers.ledger.com/contact/) where we describe all the relevant communication channels you can use. If you are a developer and wish to get in touch with our engineering team, don’t wait and reach out to us [on Discord](https://discord.gg/Ledger).  Please introduce yourself to the developer community in the #introductions channel.
 

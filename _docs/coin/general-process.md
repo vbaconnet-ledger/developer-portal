@@ -100,7 +100,7 @@ The **D** Phase (Specific GUI) relies on User flow diagrams, which must have bee
 This table shows which GEN/SPE components are involved is which phase.
 
 | Phase           | <center>General (GEN) | <center>Specific (SPE) |
-| --------------- | -------------- | ---- |
+| --------------- | -------------- | ---- 
 | A - Technical Assessment | <center><span class="uk-margin-small-right" uk-icon="check"></span>     |  <center><span class="uk-margin-small-right" uk-icon="check"></span>   |
 | B - General **CLI** & **GUI** |         <center><span class="uk-margin-small-right" uk-icon="check"></span>        |     |
 | C - Specific **CLI**  |                |   <center><span class="uk-margin-small-right" uk-icon="check"></span>   |

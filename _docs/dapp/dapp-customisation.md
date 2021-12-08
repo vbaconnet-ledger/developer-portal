@@ -1,5 +1,5 @@
 ---
-title: A - Connecting the DApp 
+title: Update the provider list
 subtitle:
 tags: [server, iframe]
 category: DApp Integration
@@ -37,7 +37,7 @@ For example, this is how it is used with Paraswap:
 You will see that the page information content depends on the chosen account in the drop-down list in the page header.
 
 <!--  -->
-{% include alert.html style="tip" text="The first requirement is that the DApp must work flawlessly within this test tool." %}
+{% include alert.html style="note" text="The first requirement is that the DApp must work flawlessly within this test tool." %}
 <!--  -->
 
 ## 3. Smooth out user experience

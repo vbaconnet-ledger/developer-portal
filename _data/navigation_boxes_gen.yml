@@ -15,8 +15,8 @@
   icon: coin
   doc: coin/general-process
 
-- title: DApp
-  desc: Turn your DApp into a Live App in Ledger Live
+- title: Live App
+  desc: Turn your DApp or regular app into a Live App in Ledger Live
   icon: dapp
-  doc: dapp/introduction
+  doc: live-app/start-here
 
