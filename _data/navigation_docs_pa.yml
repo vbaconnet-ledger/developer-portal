@@ -15,7 +15,6 @@
   docs:
   - platform-app/howto/setup
   - platform-app/howto/test
-  - platform-app/howto/fund
   - platform-app/howto/release
 
 - title: Reference
