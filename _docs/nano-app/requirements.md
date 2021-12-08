@@ -1,7 +1,7 @@
 ---
 title: Requirements
 subtitle:
-tags: []
+tags: [publish]
 category: Nano App
 toc:
 layout: doc
@@ -43,8 +43,4 @@ You must agree to the [Support and maintenance requirements](../support-maintena
 
 ### Warranty and Liability
 You must agree to the [Warranty and liability disclaimer](../warranty-disclaimer)
-
-
-[XXXXXXXX](../XXXXXXXXXXXXXX)
-
 

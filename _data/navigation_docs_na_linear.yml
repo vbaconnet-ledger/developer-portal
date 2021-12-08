@@ -18,6 +18,10 @@
   - nano-app/troubleshooting
   - nano-app/debug
 
+- title: Requirements
+  docs:
+  - nano-app/requirements
+  
 - title: Security
   docs:
   - nano-app/secure-app

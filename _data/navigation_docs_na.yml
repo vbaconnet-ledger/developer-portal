@@ -16,6 +16,8 @@
   - nano-app/debug
 
 - title: Requirements and coding
+  docs:
+    - nano-app/requirements
   subfolderitems:
     - title: Security
       docs:
