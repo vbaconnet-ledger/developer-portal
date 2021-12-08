@@ -14,7 +14,7 @@ The following sections will help you develop this type of application.
 
 ## DApp plugins
 DApp Plugins are developed to integrate an Ethereum DApp to Ledger live. Ledger Live has a DApp browser where your DApp will be visible and usable through an iframe. Ethereum DApps can be developed for example to lend or borrow, swap, trade, pay with cryptoassets or manage your portfolio.
-More information [here](../../dapp/introduction).
+More information [here](../../dapp/process).
 
 ## Utility applications
 These applications leverage Ledger technology but are not involved in managing crypto assets. They interact with Ledger devices and BOLOS operating system and can serve many purposes. They can be, for example, a password manager application, or a two-factor authentication application.

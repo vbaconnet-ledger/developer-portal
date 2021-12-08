@@ -18,7 +18,7 @@ toc: true
 
 In the Ledger Live developer tab, enable the option **Enable Platform dev tools**. It will allow you to use a browser-like developer tools window to inspect your application.
 
-Then click on **Browse** next to **Add a local app** and import your application's [Manifest file](../../manifest).
+Then click on **Browse** next to **Add a local app** and import your application's [Manifest file](../../reference/manifest).
 
 ![Browse button](../../images/tuto-3-3-browse.png "Browse button")
 

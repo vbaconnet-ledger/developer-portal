@@ -33,4 +33,4 @@ Your app is now visible in the menu.
 
 Now that you have added your Live App in your local Ledger Live application, it’s time to open it and test it. We’ll see this in the next section.
 
-For more details about each field of the Developer Mode, [click here](../../../developer-mode). 
+For more details about each field of the Developer Mode, [click here](../../reference/developer-mode). 

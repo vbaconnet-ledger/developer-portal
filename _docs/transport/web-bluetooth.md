@@ -357,7 +357,7 @@ npm run start
 <!--  -->
 
 
-Now the application is up and running. Open the browser and go to [localhost:3000](http://localhost:3000), it will display :
+Now the application is up and running. Open the browser and go to `localhost:3000`, it will display :
 
 {: .center}
 ![Application Running on Browser](../images/webBle1.png){:width="840"}   

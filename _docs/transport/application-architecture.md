@@ -30,7 +30,7 @@ You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-us
 
 This section describes what are the role of the Nano API.
 Indeed we call Nano API the "LedgerJS Dedicated App Lib" on the above image at the top of the page.
-You must have encontered few of the APIs if you have gone through the [Integration Walkthrough](../web-usb-hid).
+You must have encontered few of the APIs if you have gone through the [Integration Walkthrough](../web-hid-usb).
 In the Walkthroughs, we have mostly used the Bitcoin and Ethereum API provided by Ledger.
 
 The Nano API role is to help you to carry out operations in the "Nano Apps" (rf. image at the top).
