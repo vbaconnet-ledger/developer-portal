@@ -17,12 +17,7 @@ To broadcast a transaction, you will need to use the `broadcastSignedTransaction
   async broadcastSignedTransaction(
     accountId: string,
     signedTransaction: RawSignedTransaction
-  ): Promise<string> {
-    return this._request("transaction.broadcast", {
-      accountId,
-      signedTransaction,
-    });
-  }
+  ): Promise<string>
 ```
   
 As you can see, you need the `accountId` and the `signedTransaction`.
@@ -36,11 +31,7 @@ List the accounts added by the user on Ledger Live.
 [listAccounts](../../classes/#listaccounts):
 
 ```javascript
-async listAccounts(): Promise<Account[]> {
-    const rawAccounts = await this._request<RawAccount[]>("account.list");
-
-    return rawAccounts.map(deserializeAccount);
-  }
+async listAccounts(): Promise<Account[]> 
 ```
 ### Request account
 Let the user choose an account in Ledger Live, providing filters for choosing currency or allowing add account.
@@ -53,14 +44,7 @@ async requestAccount(
       currencies?: string[];
       allowAddAccount?: boolean;
     } = {}
-  ): Promise<Account> {
-    const rawAccount = await this._request<RawAccount>(
-      "account.request",
-      params
-    );
-
-    return deserializeAccount(rawAccount);
-  }
+  ): Promise<Account> 
 ```
 ## Signed Transaction
 Refer to the page [How to: sign](https://developers.ledger.com/docs/platform-app/howto/sign/).
