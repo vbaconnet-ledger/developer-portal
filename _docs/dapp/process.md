@@ -1,8 +1,8 @@
 ---
 title: Process
 subtitle:
-tags: [platform app, platform application, live app, ledger live app]
-category: Live Application
+tags: [live app, ledger live app, dapp]
+category: "Live App: Dapp integration"
 toc:
 layout: doc
 ---

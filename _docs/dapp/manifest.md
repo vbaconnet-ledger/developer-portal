@@ -1,8 +1,8 @@
 ---
 title: Write and load the manifest
 subtitle:
-tags: [dapp]
-category: DApp Integration
+tags: [dapp, developer mode, local version]
+category: "Live App: Dapp integration"
 author:
 toc: true
 layout: doc

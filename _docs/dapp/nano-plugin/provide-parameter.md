@@ -1,8 +1,8 @@
 ---
 title: Provide parameter
 subtitle:
-tags: [dapp]
-category: DApp Integration
+tags: [dapp, nano plugin]
+category: "Live App: Dapp integration"
 author:
 toc:
 layout: doc
