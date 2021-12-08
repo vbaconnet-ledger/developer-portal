@@ -1,8 +1,8 @@
 ---
 title: Update the provider list
 subtitle:
-tags: [server, iframe]
-category: DApp Integration
+tags: [server, iframe, live app]
+category: "Live App: Dapp integration"
 author:
 toc: true
 layout: doc
