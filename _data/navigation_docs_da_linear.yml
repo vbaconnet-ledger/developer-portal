@@ -7,7 +7,7 @@
   - dapp/dapp-customisation
   - dapp/manifest
 
-- title: Nano App Plugin
+- title: DApp Plugin
   docs:
   - dapp/nano-plugin/overview
   - dapp/nano-plugin/environment-setup

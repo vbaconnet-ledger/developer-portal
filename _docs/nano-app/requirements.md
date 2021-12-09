@@ -7,7 +7,7 @@ toc:
 layout: doc
 ---
 
-This page is a summary of all the requirements for fast and efficient Nano App development.
+This is a summary of all the requirements for fast and efficient Nano App development.
 
 Make sure you have read all the requirements before starting to code.
 And make sure you have double-checked them before submitting your Nano App.
@@ -36,6 +36,7 @@ In particular, you must submit the flow with your app
 [Marketing requirements](../marketing-requirements)
 
 ### Design
+The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
 [Design requirements](../design-requirements)
 
 ### Support and Maintenance

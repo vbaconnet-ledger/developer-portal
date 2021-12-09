@@ -18,7 +18,7 @@ The main phases to get your Live App officially released are:
 - **Development** which includes:
   - Updating the [Web3 provider list](../dapp-customisation)
   - Writing the [manifest](../manifest)
-  - Creating a [Nano App Plugin](../nano-plugin/overview)
+  - Creating a [DApp Plugin](../nano-plugin/overview)
  
 - **Agreement** between you and Ledger regarding the Terms & Conditions, and validation of the integration by Ledger. The Agreement can be finalised during the development phase, as there may already be a common understanding.
   If you want to know more, or if you simply want get in touch then reach out to Ledger on [Discord](https://discord.gg/Ledger).

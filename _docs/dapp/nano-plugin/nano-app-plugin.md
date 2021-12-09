@@ -1,7 +1,7 @@
 ---
-title: Nano App Plugin
+title: DApp Plugin
 subtitle:
-tags: [dapp, nano plugin]
+tags: [dapp, DApp plugin]
 category: "Live App: Dapp integration"
 author:
 layout: doc
