@@ -7,6 +7,10 @@
   docs:
   - nano-app/publish-introduction
 
+- title: Requirements
+  docs:
+  - nano-app/requirements
+
 - title: Set up and use
   docs:
   - nano-app/build
@@ -15,9 +19,8 @@
   - nano-app/troubleshooting
   - nano-app/debug
 
-- title: Requirements and coding
+- title: Coding
   docs:
-    - nano-app/requirements
   subfolderitems:
     - title: Security
       docs:
@@ -61,7 +64,7 @@
   - nano-app/clones-specificities
   - nano-app/eth-clones
 
-- title: Appendix A - Personal security devices
+- title: Learn - Personal security devices
   docs:
   - nano-app/psd-introduction
   - nano-app/psd-masterseed
@@ -69,7 +72,7 @@
   - nano-app/psd-applications
   - nano-app/psd-application-isolation
 
-- title: Appendix B - The BOLOS Platform
+- title: Learn - The BOLOS Platform
   docs:
   - nano-app/bolos-introduction
   - nano-app/bolos-features
