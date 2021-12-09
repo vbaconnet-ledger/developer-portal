@@ -8,7 +8,7 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of an application. This application will create a transaction that will be sign with the Ledger Nano before sending it to the blockchain.
+In this section, we will guide you through the creation of an application. This application will create a transaction that will be signed with the Ledger Nano before sending it to the blockchain.
 The purpose of the application is to transfer ethereum from your ethereum account on your Ledger to another account created beforehand on Metamask.
 
 ## Prerequisites
@@ -16,7 +16,7 @@ To start with the Web Integration go through the [Prerequisites](../prerequisite
 
 ### Install Metamask and Connect your Ledger
 To install Metamask go to the [official website](https://metamask.io/). 
-Now, log in and create a test account that will receive the ethereum token from your Ledger Nano ethereum account.
+Now, login and create a test account that will receive the ethereum token from your Ledger Nano ethereum account.
 
 {: .center}
 ![Login Metamask](../images/login-metamask.png){:width="840"}   
@@ -26,13 +26,13 @@ Now, log in and create a test account that will receive the ethereum token from 
 ![Login Metamask](../images/account-metamask.png){:width="840"}   
 *Fig. 2: Account Metamask*
 
-What is more, connect your ledger account to the metamask as well. It will help you see the balance on your Ledger ethereum account.
+What is more, connect your ledger account to the Metamask as well. It will help you see the balance on your Ledger ethereum account.
 
 {: .center}
 ![Connect Ledger Wallet](../images/connect-ledger-metamask.png){:width="840"}   
 *Fig. 3: Connect Ledger Wallet*
 
-After Choosing Ledger hardware wallet, you will be ask to connect your Ledger Nano. Go ahead and select your Ledger Nano.
+After Choosing Ledger hardware wallet, you will be asked to connect your Ledger Nano. Go ahead and select your Ledger Nano.
 
 {: .center}
 ![Select Your Ledger](../images/connect-ledger-metamask2.png){:width="840"}   
@@ -52,7 +52,7 @@ If all goes well you will see your first account and your Ledger hardware accoun
 
 
 ### Send Ether token to your Ledger Nano ethereum account
-To send some ethereum token on the Ropsten network, go to one of the ropsten faucet website:
+To send some ethereum tokens on the Ropsten network, go to one of the ropsten faucet websites:
 1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
 2. [Dimensions Network](https://faucet.dimensions.network/)
 
@@ -75,7 +75,7 @@ Go to the [Dimensions Network](https://faucet.dimensions.network/) website put y
 
 ## Tutorial implementation
 
-In this implementation, we will be building a web application with vanilla javascript that use the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the ledger.
+In this implementation, we will be building a web application with vanilla javascript that uses the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the ledger.
 
 ### Project Initialization
 It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-tutorial”.
@@ -299,7 +299,7 @@ This package will help you ask your Ledger Nano to access the ethereum address.
 npm install --save @ledgerhq/hw-app-eth
 ```
 #### Install [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid)  
-The Ledger package provide you with all the methods to interact with  your Ledger with an HID connexion.  
+The Ledger package provides you with all the methods to interact with your Ledger with an HID connexion.  
 ```console
 npm install --save @ledgerhq/hw-transport-webhid
 ```
@@ -408,23 +408,23 @@ Now choose the Ledger Nano to connect it to the browser.
 ![Connect the Ledger Nano](../images/tutorial-1-pairing.png)  
 *Fig. 16: Connect the Ledger Nano*
 
-If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockcain or from your Ledger Nano application.
+If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
 
 {: .center}
 ![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)  
 *Fig. 17: Application After Connecting Ledger Nano*
 
 
-### Create transaction to transfer ethereum
+### Create a transaction to transfer ethereum
 
-Now that the inputs are filled with data. It is time to transfer some ethereum token from your Ledger ethereum account to a metamask account.  
+Now that the inputs are filled with data. It is time to transfer some ethereum tokens from your Ledger ethereum account to a Metamask account.  
 Therefore, click on "Create Transaction" to create the transaction which will be signed by your ledger before sending it to the blockchain.  
 
 {: .center}
 ![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)  
 *Fig. 18: Application After Connecting Ledger Nano*
 
-Will the transaction proceed and finalize, an URL will be displayed on the screen. This URL is an link to Ropsten Etherscan to review the transaction.  
+Will the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Ropsten Etherscan to review the transaction.  
 There you can find all the information concerning the transaction you have previously sent.
 
 {: .center}
