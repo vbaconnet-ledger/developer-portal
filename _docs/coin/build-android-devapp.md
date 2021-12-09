@@ -66,7 +66,7 @@ Locate your SDK path, and add it to your env, the expected path is :
 
 If you have some modification you want to test from your live-common you can
 
-`yalc add @ledger-live/common` (if you have `yalc publish` your live-common)
+`yalc add @ledgerhq/live-common` (if you have `yalc publish` your live-common)
 and rerun
 `yarn install`
 

@@ -5,16 +5,9 @@ tags: []
 layout: doc
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-
-## Conclusion
-
 Congratulations, you have now created, initialized and setup a basic Live App leveraging the `live-app-sdk`.
 
-You have initialized the associated manifest file for this Live App and have imported it inside your local Ledger Live application in order to test it.
+You have created the associated manifest file for this Live App and have imported it inside your local Ledger Live application to test it.
 
 Finally, you have enabled and interacted with the available Developer tools to inspect your Live App behaviour in the same way you would with any web app in any web browser.
 

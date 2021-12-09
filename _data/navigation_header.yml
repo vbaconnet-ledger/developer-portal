@@ -3,7 +3,7 @@
 left:
 
   - title: Nano App
-    url: /docs/nano-app/introduction
+    url: /docs/nano-app/start-here
 
   - title: Connect your app
     url: /docs/transport/overview
@@ -14,8 +14,8 @@ left:
   - title: Tokens
     url: /docs/token/introduction
 
-  - title: DApp
-    url: /docs/dapp/introduction
+  - title: Live App
+    url: /docs/live-app/start-here
 
   - title: Tools
     dropdown:

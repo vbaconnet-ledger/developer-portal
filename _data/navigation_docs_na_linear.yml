@@ -1,19 +1,28 @@
 # This file is a duplicate of navigation_docs_na.yml without the nested menu (subfolderitems)
 # We need it to make "previous" and "next" buttons work properly
 
-- title: Introduction
+- title: Before you start
   docs:
   - nano-app/introduction
   - nano-app/types-apps
+
+- title: Process
+  docs:
+  - nano-app/publish-introduction
 
 - title: Set up and use
   docs:
   - nano-app/build
   - nano-app/load
   - nano-app/open-close-info-on-apps
+  - nano-app/troubleshooting
+  - nano-app/debug
 
-
-- title: Security best practices
+- title: Requirements
+  docs:
+  - nano-app/requirements
+  
+- title: Security
   docs:
   - nano-app/secure-app
 
@@ -29,29 +38,39 @@
   - nano-app/position-independent-code
   - nano-app/memory-alignment
 
-- title: I/O
+- title: I/O  
   docs:
   - nano-app/interaction-bolos-apps
   - nano-app/application-structure
 
-- title: Debug
+- title: Functional 
   docs:
-  - nano-app/troubleshooting
-  - nano-app/debug
+  - nano-app/functional-requirements
+
+- title: Documentation 
+  docs:
+  - nano-app/documentation-requirements
+
+- title: Marketing 
+  docs:
+  - nano-app/marketing-requirements
+
+- title: Design 
+  docs:
+  - nano-app/design-requirements
+
+- title: Support and maintenance 
+  docs:
+  - nano-app/support-maintenance-requirements
+
+- title: Warranty and liability
+  docs:
+  - nano-app/warranty-disclaimer
 
 - title: Clone applications
   docs:
   - nano-app/clones-specificities
   - nano-app/eth-clones
-
-- title: Publishing an application
-  docs:
-  - nano-app/publish-introduction
-  - nano-app/functional-requirements
-  - nano-app/documentation-requirements
-  - nano-app/marketing-requirements
-  - nano-app/design-requirements
-  - nano-app/support-maintenance-requirements
 
 - title: Appendix A - Personal security devices
   docs:

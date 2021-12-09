@@ -1,4 +1,4 @@
-- title: Platform App
+- title: "Live App: Non-DApp" 
   docs:
   - platform-app/introduction
 
@@ -15,20 +15,11 @@
   docs:
   - platform-app/howto/setup
   - platform-app/howto/test
-  - platform-app/howto/fund
-  - platform-app/howto/sign
-  - platform-app/howto/swap
-  - platform-app/howto/broadcast
   - platform-app/howto/release
 
 - title: Reference
   docs:
-  - platform-app/reference/manifest 
-  - platform-app/reference/developer-mode 
-  - platform-app/reference/faq 
-
-- title: Ledger Live Platform SDK
-  docs:
+  - platform-app/reference/manifest
   - platform-app/modules
   - platform-app/classes
   - platform-app/device-model

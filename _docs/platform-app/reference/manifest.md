@@ -2,7 +2,7 @@
 title: Manifest
 subtitle:
 tags: [platform app, platform application, live app, ledger live app]
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---
@@ -11,8 +11,6 @@ layout: doc
 
 To be able to test and integrate your application, you first need to write your application Manifest file.
 This file must contain some mandatory information, such as the app package names, the components, the permissions needed, the hardware and software features, etc.
-
-Tip: You can use our [Manifest template](https://github.com/LedgerHQ/ledger-live-assets/blob/develop/platform/apps/v1/schema.ts) from the Demo repository (link TBD).
 
 Example of Manifest (JSON format) for the “Lido” application:
 
