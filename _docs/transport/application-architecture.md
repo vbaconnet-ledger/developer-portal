@@ -1,8 +1,8 @@
 ---
 title: Application Architecture
 subtitle:
-tags: []
-category: Connect a wallet
+tags: [transport, device, wallet app, communicate, wallet, companion]
+category: Connect your app
 author:
 toc: true
 layout: doc
@@ -23,14 +23,14 @@ On the client side we have your core application containing your business logic 
 You need to integrate at least the LedgerJS Transport Library in order to discuss with the Ledger device.
 
 Some major networks have dedicated JS Library, like Bitcoin / Ethereum. You should use them if you are planning to integrate with these apps. This will provide a good abstraction level and allow you to use a proper SDK.
-You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-usb-hid).
+You can see how to use them in [Integration Walkthrough - Web USB/HID](../web-hid-usb).
 
 
 ## Nano API calls
 
 This section describes what are the role of the Nano API.
 Indeed we call Nano API the "LedgerJS Dedicated App Lib" on the above image at the top of the page.
-You must have encontered few of the APIs if you have gone through the [Integration Walkthrough](../web-usb-hid).
+You must have encontered few of the APIs if you have gone through the [Integration Walkthrough](../web-hid-usb).
 In the Walkthroughs, we have mostly used the Bitcoin and Ethereum API provided by Ledger.
 
 The Nano API role is to help you to carry out operations in the "Nano Apps" (rf. image at the top).

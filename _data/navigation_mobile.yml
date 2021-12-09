@@ -1,9 +1,9 @@
 # Mobile menu navigation links
 
 - title: Nano App
-  url: /docs/nano-app/introduction
+  url: /docs/nano-app/start-here
 
-- title: Connect your wallet
+- title: Connect your app
   url: /docs/transport/overview
 
 - title: Blockchain support
@@ -12,5 +12,5 @@
 - title: Tokens
   url: /docs/token/introduction
 
-- title: DApp
-  url: /docs/dapp/introduction
+- title: Live App
+  url: /docs/live-app/start-here

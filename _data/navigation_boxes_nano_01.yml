@@ -1,0 +1,16 @@
+# Boxes All Integrations
+
+- title: Introduction
+  desc: What types of Nano Apps exist and what you should know before starting
+  doc: nano-app/introduction
+  icon: file
+
+- title: Process
+  desc: Every step of the release process
+  doc: nano-app/publish-introduction
+  icon: settings
+
+- title: Requirements
+  desc: Requirements to get your Nano App published
+  doc: nano-app/requirements
+  icon: check

@@ -8,7 +8,6 @@ author:
 layout: doc
 ---
 
-
 ## User profile
 
 #### You are new to developing Nano Applications

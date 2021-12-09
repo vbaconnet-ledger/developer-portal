@@ -1,8 +1,8 @@
 ---
 title: Broadcast
 subtitle:
-tags: [platform app, platform application, live app, ledger live app]
-category: Platform Application
+tags: [platform app, platform application, live app, ledger live app, live application]
+category: Live Application
 toc: true
 layout: doc
 ---

@@ -11,7 +11,7 @@
   background-color: $card-bg;
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
+  // @include border-radius($card-border-radius);
 
   > hr {
     margin-right: 0;
@@ -109,31 +109,31 @@
   margin-left: -($card-spacer-x / 2);
 }
 
-// Card image
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: $card-img-overlay-padding;
-}
+// // Card image
+// .card-img-overlay {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   padding: $card-img-overlay-padding;
+// }
 
-.card-img {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-radius($card-inner-border-radius);
-}
+// .card-img {
+//   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+//   @include border-radius($card-inner-border-radius);
+// }
 
-// Card image caps
-.card-img-top {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-top-radius($card-inner-border-radius);
-}
+// // Card image caps
+// .card-img-top {
+//   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+//   @include border-top-radius($card-inner-border-radius);
+// }
 
-.card-img-bottom {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-bottom-radius($card-inner-border-radius);
-}
+// .card-img-bottom {
+//   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+//   @include border-bottom-radius($card-inner-border-radius);
+// }
 
 
 // Card deck

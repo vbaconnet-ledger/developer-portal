@@ -80,6 +80,13 @@ algolia:
     - unordered(tags)                                                          
     - unordered(content)                                                       
     customRanking:  
+    attributesToHighlight:                                                       
+      - category                                                                 
+      - content                                                                  
+      - headings                                                                 
+      - html                                                                     
+      - tags                                                                     
+      - title    
 
 # Path to post content assets directory i.e post images, pdfs etc
 uploads:            /uploads/
