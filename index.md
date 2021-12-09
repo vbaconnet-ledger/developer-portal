@@ -6,7 +6,7 @@ hero:
     subtitle:
         All the tools and resources you need to bring security to blockchain users
     search: true
-    icon: cog
+    icon: cogs
 ---
 
 {% include boxes_gen.html columns="4" %}
