@@ -1,13 +1,30 @@
-- title: Web3 Live App
+- title: "Live App: DApp" 
   docs:
-  - dapp/introduction
+  - dapp/process
 
 - title: Development how-to
   docs:
   - dapp/dapp-customisation
   - dapp/manifest
-  - dapp/nano-app-plugin
 
-- title: Appendix
+- title: DApp Plugin
   docs:
-  - dapp/developer-mode
+  - dapp/nano-plugin/overview
+  - dapp/nano-plugin/environment-setup
+  subfolderitems:
+    - title: Code walkthrough
+      docs:
+      - dapp/nano-plugin/code-overview
+      - dapp/nano-plugin/boilerplate-plugin
+      - dapp/nano-plugin/selectors
+      - subfolderitems:
+          - title: Selectors detailed
+            docs:
+            - dapp/nano-plugin/init-contract
+            - dapp/nano-plugin/provide-parameter
+            - dapp/nano-plugin/finalize
+            - dapp/nano-plugin/provide-token
+            - dapp/nano-plugin/query-contract-id
+            - dapp/nano-plugin/query-contract-ui
+      - dapp/nano-plugin/testing
+      - dapp/nano-plugin/flow

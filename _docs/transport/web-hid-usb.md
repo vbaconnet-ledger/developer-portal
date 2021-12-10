@@ -1,8 +1,8 @@
 ---
 title: Web USB/HID
 subtitle:
-tags: []
-category: Connect a wallet
+tags: [transport, device, wallet app, communicate, wallet, companion]
+category: Connect your app
 author:
 toc: true
 layout: doc
@@ -222,7 +222,7 @@ Start the development server:
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
+Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
 
 {: .center}
 ![Application running on browser](../images/webapp1.png)  

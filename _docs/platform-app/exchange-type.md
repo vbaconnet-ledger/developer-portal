@@ -2,7 +2,7 @@
 title: ExchangeType
 subtitle:
 tags: [Ledger Live Platform SDK, platform sdk, sdk, api]
-category: Platform Application
+category: Live Application
 toc: true
 layout: doc
 ---

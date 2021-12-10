@@ -176,7 +176,7 @@ Here is a detailed description of each step:
 4. **Display:** This step iterates over those fields. Each of them must be made human-readable through formatting and then displayed on screen. The formatting should take place only then and not sooner.
 5. **Signing:** if the user validates the transaction then it is signed and its signature is sent back to the user by the application.
 
-Rationale: From experience reviewing lots of applications, the above structure allows writing easy-to-follow, maintainable and testable applications.  Easy-to-follw because each step only does one thing.
+Rationale: From experience reviewing lots of applications, the above structure allows writing easy-to-follow, maintainable and testable applications.  Easy-to-follow because each step only does one thing.
 Maintainable because adding a transaction type only affects steps 2 and 3, minimizing changes. Testable because each step can be tested independently, increasing code coverage.
 
 Last important consequence is the ability to write reusable components. The functions related to receiving, structures used during the selection phase, formatters and parsing building blocks can be reused in another application.

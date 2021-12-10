@@ -2,25 +2,15 @@
 title: Release
 subtitle:
 tags: []
-category: Platform Application
+category: Live Application
 layout: doc
+toc: true
 ---
 
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+## Contact us
 
-## Submit the form
+You can reach out to us [on Discord](https://discord.gg/Ledger). Please introduce yourself and your project to the developer community in the #introductions channel. You will provided with information about how to send your application.
 
-Once your application is ready, start the release process by filling the “Submit form” here (link).
-
-Ledger will then review your application and get in touch with you.
-
-## Send your Manifest file
-
-As part of your application submission, you’ll be requested to provide us with your manifest file.
-You can use our [manifest template](https://github.com/LedgerHQ/ledger-live-assets/blob/develop/platform/apps/v1/schema.ts) from the Demo repository (link). Please make sure to test it within your own Ledger Live first to ensure it’s fully functional.
 
 ## Wait for the Ledger review
 
@@ -37,8 +27,4 @@ An application will be listed publicly (official Ledger support) only when:
 - A video of your application running in the Ledger Discover section has been provided in the application form.
 
 Once Ledger finishes the review, your application is added to the Ledger Live “Discover” section, and all our users are able to use it.
-
-## Contact us
-
-If you are a developer and wish to get in touch with our engineering team, don’t wait and reach out to us [on Discord](https://discord.gg/Ledger). Please introduce yourself to the developer community in the **#introductions** channel.
 

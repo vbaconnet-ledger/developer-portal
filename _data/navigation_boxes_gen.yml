@@ -3,10 +3,10 @@
 - title: Nano App
   desc: Get your blockchain supported on Nano S/X
   icon: nano
-  doc: nano-app/introduction
+  doc: nano-app/start-here
 
-- title: Connect your wallet
-  desc: How to connect a wallet to a Ledger device
+- title: Connect your app
+  desc: Support a Nano on your desktop/web app
   icon: connect
   doc: transport/overview
 
@@ -15,8 +15,8 @@
   icon: coin
   doc: coin/general-process
 
-- title: DApp
-  desc: Turn your DApp into a Live App in Ledger Live
+- title: Live App
+  desc: Turn your DApp or regular app into a Live App in Ledger Live
   icon: dapp
-  doc: dapp/introduction
+  doc: live-app/start-here
 

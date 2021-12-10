@@ -1,21 +1,30 @@
-- title: Introduction
+- title: Before you start
   docs:
   - nano-app/introduction
   - nano-app/types-apps
+
+- title: Process
+  docs:
+  - nano-app/publish-introduction
+
+- title: Requirements
+  docs:
+  - nano-app/requirements
 
 - title: Set up and use
   docs:
   - nano-app/build
   - nano-app/load
   - nano-app/open-close-info-on-apps
+  - nano-app/troubleshooting
+  - nano-app/debug
 
-
-- title: Security best practices
+- title: Coding
   docs:
-  - nano-app/secure-app
-  
-- title: Background information
   subfolderitems:
+    - title: Security
+      docs:
+      - nano-app/secure-app
     - title: Display
       docs:
       - nano-app/display-management
@@ -26,31 +35,36 @@
       - nano-app/persistent-storage
       - nano-app/position-independent-code
       - nano-app/memory-alignment
-    - title: I/O
+    - title: I/O  
       docs:
       - nano-app/interaction-bolos-apps
       - nano-app/application-structure
+    - title: Functional 
+      docs:
+      - nano-app/functional-requirements
+    - title: Documentation 
+      docs:
+      - nano-app/documentation-requirements
+    - title: Marketing 
+      docs:
+      - nano-app/marketing-requirements
+    - title: Design 
+      docs:
+      - nano-app/design-requirements
+    - title: Support and maintenance 
+      docs:
+      - nano-app/support-maintenance-requirements
 
-- title: Debug
-  docs:
-  - nano-app/troubleshooting
-  - nano-app/debug
+    - title: Warranty and liability
+      docs:
+      - nano-app/warranty-disclaimer
 
 - title: Clone applications
   docs:
   - nano-app/clones-specificities
   - nano-app/eth-clones
 
-- title: Publishing an application
-  docs:
-  - nano-app/publish-introduction
-  - nano-app/functional-requirements
-  - nano-app/documentation-requirements
-  - nano-app/marketing-requirements
-  - nano-app/design-requirements
-  - nano-app/support-maintenance-requirements
-
-- title: Appendix A - Personal security devices
+- title: Learn - Personal security devices
   docs:
   - nano-app/psd-introduction
   - nano-app/psd-masterseed
@@ -58,7 +72,7 @@
   - nano-app/psd-applications
   - nano-app/psd-application-isolation
 
-- title: Appendix B - The BOLOS Platform
+- title: Learn - The BOLOS Platform
   docs:
   - nano-app/bolos-introduction
   - nano-app/bolos-features

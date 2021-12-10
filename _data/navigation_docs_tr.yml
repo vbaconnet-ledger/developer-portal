@@ -1,12 +1,7 @@
-- title: Connecting a wallet
+- title: Connecting an app
   docs:
   - transport/overview
   - transport/choose-the-transport
-
-
-# - title: Transport
-#   docs:
-#   - transport/choose-the-transport
 
 - title: Integration Walkthrough
   docs:

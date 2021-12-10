@@ -2,7 +2,7 @@
 title: Why is U2F deprecated ?
 subtitle:
 tags: [communication, transport]
-category: Connect a wallet
+category: Connect your app
 author:
 toc: true
 layout: doc
@@ -12,7 +12,7 @@ layout: doc
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.
 
-**We strongly advise to migrate to [`@ledgerhq/hw-transport-webusb`](../webusb) or [`@ledgerhq/hw-transport-webhid`](../webhid).**
+**We strongly advise to migrate to [`@ledgerhq/hw-transport-webusb`](../web-hid-usb) or [`@ledgerhq/hw-transport-webhid`](../web-hid-usb).**
 
 - U2F is a technology that was hijacked by Ledger in 2016-2018 in order to achieve Web integrations of our devices. It was done at a time where was no other alternative and no way to communicate with "HID" or "WebUSB" technologies in a seemless manner.
 - WebHID and WebUSB are technologies that offer a better alternative and are specfically designed to be used for bi-directional communication with USB hardware.
@@ -26,5 +26,5 @@ The solution we suggest is to use either `@ledgerhq/hw-transport-webusb` or `@le
 
 The main difference relies on the fact we can create a session with the device. **This works with a browser Permission, so the security is getting better for the user**. The challenge on the integration side, is that you must use the Transport in the context of a User Event Click. Because technically, we can only open the device in context of a click of a button, typically a "Sign Transaction" button you may already have in your interface.
 
-You can see integrations of WebUSB in the [ledgerjs-examples repository](https://github.com/LedgerHQ/ledgerjs-examples).
+You can see integrations of WebUSB in the [ledgerjs-examples repository](https://github.com/LedgerHQ/ledgerjs-examples/tree/new-examples).
 

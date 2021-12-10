@@ -8,14 +8,13 @@ author:
 layout: doc
 ---
 
-
 ## User profile
 
 #### You are new to developing Nano Applications
 
 Please read this section entirely.
 
-#### You understand BOLOS and personal security devices
+#### You already understand BOLOS and Personal Security Devices (PSDs)
 
 You can skip the first paragraph and go to [Things to do](#things-to-do).
 
@@ -26,31 +25,22 @@ You can skip the first paragraph and go to [Things to do](#things-to-do).
 
 ## Things to know
 
-### Familiarize yourself with the BOLOS platform (Appendix B)
+### The BOLOS platform (Learn - Bolos)
 
 BOLOS is the operating system behind all Ledger personal security devices. It provides a lightweight, open-source framework for developers to build source code portable applications that run in a secure environment.
 
 [Learn about the BOLOS platform](../bolos-introduction)
 
-### Familiarize yourself with personal security devices (Appendix A)
+### Personal Security Devices (Learn - PSDs)
 
 Ledger personal security devices allows users to store cryptographic secrets and sign transactions securely and conveniently. It is important to understand how they work before coding a Nano Application.
 
 [Learn about the personal security devices](../psd-introduction)
 
-### Submit your app for the Ledger Live manager
-Make sure that your app is ready before submitting it for review and that you have followed instructions from our documentation.
+### Submission process
 
-#### Design guidelines
-The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
-See the [design guidelines here](../design-requirements).
+To submit your app for the Ledger Live manager, make sure that your app is ready before submitting it for review and that you have followed  our documentation.
 
-#### Internal process
-When an app is submitted it will go through 3 main steps which are the functional review, the security review and the documentation review.
-
-Click the links to see [security requirements](../security-requirements), [documentation requirements](../documentation-requirements), and [functional requirements](../display-management).
-
-#### Submission
 Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
 
 Go to the submission form [here](https://ledger.typeform.com/to/qQSf7CVh).
@@ -61,12 +51,14 @@ Go to the submission form [here](https://ledger.typeform.com/to/qQSf7CVh).
 ### Get in touch with the Ledger developer community
 Join [our Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.
 
+### Process & Requirements
+Make sure you understand the [Process](../publish-introduction/) and the [Requirements](../requirements.md)
+
 ### Set up the BOLOS development environment
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. The environment is [all set in a Docker image](../build).
 
 ### Code
-
-Nano applications can be developed in C on the Blockchain Open Ledger Operating System (BOLOS).
+[Coding](../secure-app/)Nano applications is done in C on the Blockchain Open Ledger Operating System (BOLOS).
 
 To develop a Nano Application you will need to:
 - Use Linux or a VM with Linux installed
