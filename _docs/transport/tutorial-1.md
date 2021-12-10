@@ -1,5 +1,5 @@
 ---
-title: Transfer of ethereum between accounts
+title: Transfer of Ethers between accounts
 subtitle:
 tags: []
 category: Connect a wallet
