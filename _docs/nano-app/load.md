@@ -32,7 +32,7 @@ wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_ud
 {% include alert.html style="important" text='If you want to load and delete the app directly from the container image. You need to compile the application, in the source file of your application, adding the <code>--privileged</code> option: <br> <code>$ sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app" <br> --privileged ledger-app-builder:latest</code>' %}
 <!--  -->
 
-While de container image is running:
+While the container image is running:
 1. Plug and unlock the Nano S.
 3. Use `make load` to load the app to the Nano S and `make delete` to delete it.
 3. You can exit the image, with the command `exit`.

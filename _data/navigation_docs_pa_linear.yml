@@ -14,6 +14,8 @@
 - title: How to
   docs:
   - platform-app/howto/setup
+  - platform-app/howto/sign
+  - platform-app/howto/broadcast
   - platform-app/howto/test
   - platform-app/howto/release
 

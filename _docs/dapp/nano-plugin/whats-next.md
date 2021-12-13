@@ -1,7 +1,7 @@
 ---
 title: What's next
 subtitle:
-tags: [dapp, nano plugin]
+tags: [dapp, DApp plugin]
 category: "Live App: Dapp integration"
 author:
 toc: true
