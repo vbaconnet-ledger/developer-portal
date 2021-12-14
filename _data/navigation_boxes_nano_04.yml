@@ -3,9 +3,9 @@
 - title: Learn - PSDs
   desc: Personal security devices
   doc: nano-app/psd-introduction
-  icon: comments
+  icon: learn
 
 - title: Learn - Bolos
   desc: The BOLOS Platform
   doc: nano-app/bolos-introduction
-  icon: comments
+  icon: learn
