@@ -28,7 +28,8 @@
 
 - title: End-2-end Tutorials
   docs:
-  - transport/tutorial-1
+  - transport/tutorial-1-hid-ethereum
+  - transport/tutorial-1-usb-solana
 
 - title: FAQ & Troubleshooting
   docs:
