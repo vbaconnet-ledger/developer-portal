@@ -7,7 +7,7 @@ toc:
 layout: doc
 ---
 
-As a swap provider, it is possible to integrate your service to Ledger Live and appear under the “Swap” section. By becoming a swap provider in Ledger Live, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users!
+As a swap provider, it is possible to integrate your service to Ledger Live and appear under the “Swap” section. By becoming a swap provider in Ledger Live, you offer security, ease and accessibility to millions of users!
 
 There are two types of integration:
 - On-chain providers can develop a Ledger Live App and are integrated for now in the “Discover” section (like [Paraswap](https://www.ledger.com/blog/more-swapping-freedom-access-paraswap-directly-through-ledger-live)). 
