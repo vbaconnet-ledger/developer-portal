@@ -59,7 +59,7 @@ The canary must be checked regularly. You can run the check every time `io_event
 
 With our error model, there are two common failure scenarios.
 
-1. You must be careful to always close a try context when jumping out of it. For example, in the block of code below, the `CLOSE_TRY` macro must be used to close the try context before returning from the function in the case that `i > 0`. However, in the `CATCH` clause, the try has already been closed automatically so `CLOSE_TRY` is not necessary.
+1. You must be careful to always close a `TRY` context when jumping out of it. For example, in the block of code below, the `CLOSE_TRY` macro must be used to close the `TRY` context before returning from the function in the case that `i > 0`. However, in the `CATCH` clause, the `TRY` has already been closed automatically so `CLOSE_TRY` is not necessary.
 
     ``` c
     bool is_positive(int8_t i) {
@@ -79,7 +79,7 @@ With our error model, there are two common failure scenarios.
     }
     ```
 
-2. When modifying variables within a try / catch / finally context, always declare those variables `volatile`. This will avoid the compiler making invalid assumptions when optimizing your code because it doesn't understand how our exception model works.
+2. When modifying variables within a `try` / `catch` / `finally` context, always declare those variables `volatile`. This will avoid the compiler making invalid assumptions when optimizing your code because it doesn't understand how our exception model works.
 
     ``` c
     uint16_t multiply(uint8_t a, uint8_t b) {

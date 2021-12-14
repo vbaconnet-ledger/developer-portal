@@ -1,5 +1,5 @@
 ---
-title: Requirements
+title: Summary
 subtitle:
 tags: [publish]
 category: Nano App
@@ -7,9 +7,9 @@ toc:
 layout: doc
 ---
 
-This is a summary of all the requirements for fast and efficient Nano App development.
+This is a summary of the requirements guidelines that detailed in the Code part.
 
-Make sure you have read all the requirements before starting to code.
+For fast and efficient Nano App development, make sure you have read all the requirements before starting to code.
 And make sure you have double-checked them before submitting your Nano App.
 
 
@@ -21,13 +21,13 @@ The Nano App must fololw the [Display requirements](../display-management). Thes
 In particular, you must submit the flow with your app
 
 ### Memory
-[Memory requirements](../persistent-storage) include the initialization of memory, the method of writing to memory, for example.
+There are strict rules for using memory. [Memory requirements](../persistent-storage) include the initialization of memory, the method of writing to memory, for example. The page also describes how erase/write cycles should be optimized for flash memory, and the proper use of cache memory.
 
 ### I/O
-[I/O requirements](../interaction-bolos-apps)
+The [I/O requirements](../interaction-bolos-apps) pages talk about error codes, the proper and clean way of using try contexts.
 
 ### Functional
-[Functional requirements](../functional-requirements)
+The [Functional requirements](../functional-requirements) lists General requirements, as well as Blind signing, Wallet requirements, and those for smart contracts, Token support and Staking features.
 
 ### Documentation
 [Documentation requirements](../documentation-requirements)

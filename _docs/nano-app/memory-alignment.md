@@ -78,9 +78,9 @@ struct Example1
 ```
 
 ``` c
- [xxxxxxxx] -------- [xxxxxxxx  xxxxxxxx]
- [xxxxxxxx  xxxxxxxx  xxxxxxxx  xxxxxxxx]
- [xxxxxxxx] --------  --------  --------
+ [xxxxxxxx] -------- [xxxxxxxx   xxxxxxxx]
+ [xxxxxxxx   xxxxxxxx   xxxxxxxx   xxxxxxxx]
+ [xxxxxxxx] --------   --------   --------
 ```
 
 In this example, it is possible to reorganize the structure's fields to avoid alignment-induced padding, but sometimes padding will not be avoidable.
@@ -192,7 +192,7 @@ if (*pointer == 0x0001) { /* This dereferencing makes the application crash. */
 }
 ```
 
-The same reasoning applies to pointing on structures:
+The same reasoning applies when pointing on structures:
 
 ``` c
 // Same example as within the previous paragraph, being ordered
@@ -235,11 +235,11 @@ if (pointer->field_2 == 0x0001) { /* This dereferencing makes the application cr
 
 Unaligned pointers can thus occur in cases where a pointer:
 
- -   declared as positioning on some data type (or structure)
+ -   is declared as positioning on some data type (or structure),
  -   is used to point on a memory area actually containing another type of data,
- -   and is dereferenced.
+ -   is dereferenced.
 
-In order to produce robust to alignment constraints C source code, avoid using pointers in such a way.
+In order to produce robust to alignment constraints C source code, avoid using pointers in this way.
 
 ## External links
 
