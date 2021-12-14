@@ -14,7 +14,7 @@ And make sure you have double-checked them before submitting your Nano App.
 
 
 ### Security
-Your Nano App must comply wioth all the [Security requirements](../secure-app). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (List is non-exclusive.)
+Your Nano App must comply with all the [Security requirements](../secure-app). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (List is non-exclusive.)
 
 ### Display Management
 The Nano App must fololw the [Display requirements](../display-management). These deal with flow an layouts.  
