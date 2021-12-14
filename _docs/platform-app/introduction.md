@@ -15,7 +15,7 @@ To integrate a **non-DApp**, you need to:
 
 ## Context
 
-In this article, we will guide you through the process of developing and integrating your classical application (non DApp or Platform app) to the Ledger Live ecosystem. By having your application supported in Ledger Live, you increase the security and ease of use for your users, while simultaneously having access to over 3 million Ledger Live users.
+In this article, we will guide you through the process of developing and integrating your classical application (non DApp or Platform app) to the Ledger Live ecosystem. By having your application supported in Ledger Live, you offer security, ease and accessibility to millions of users.
 
 ## What is a Platform App?
 
