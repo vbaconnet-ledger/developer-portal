@@ -390,7 +390,7 @@ h2, .uk-h2 {
 h3, .uk-h3 {
     font-size: $base-h3-font-size;
     line-height: $base-h3-line-height;
-    margin-top: 80px; // Modified by CF for V3 16.09.2021
+    margin-top: 40px; // Modified by CF 14.12.2021
     @if(mixin-exists(hook-base-h3)) {@include hook-base-h3();}
 }
 
