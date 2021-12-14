@@ -16,7 +16,7 @@ By having your application supported in a Ledger DApp browser, you increase the 
 The main phases to get your Live App officially released are:
 
 - **Development** which includes:
-  - Updating the [Web3 provider list](../dapp-customisation)
+  - Adding a [Web3 provider](../dapp-customisation)
   - Writing the [manifest](../manifest)
   - Creating a [DApp Plugin](../nano-plugin/overview)
  

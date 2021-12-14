@@ -12,32 +12,30 @@ layout: doc
 To be able to test and integrate your application, you first need to write your application Manifest file.
 This file must contain some mandatory information, such as the app package names, the components, the permissions needed, the hardware and software features, etc.
 
-Example of Manifest (JSON format) for the “Lido” application:
+Example of Manifest (JSON format) for Moonpay application:
 
 ```json
 {
-    "id": "lido",
-    "name": "Lido",
-    "url": "https://ledger-live-platform-apps.vercel.app/app/dapp-browser?dappName=Lido&nanoApp=Lido&url=https%3A%2F%2Fstake.lido.fi%2F%3Fref%3D0x558247e365be655f9144e1a0140D793984372Ef3%26embed%3Dtrue",
-    "homepageUrl": "https://lido.fi/",
-    "icon": "https://cdn.live.ledger.com/icons/platform/lido.png",
+    "id": "moonpay",
+    "name": "Moonpay",
+    "url": "https://buy.moonpay.com",
+    "homepageUrl": "https://www.moonpay.com",
+    "icon": "https://cdn.live.ledger.com/icons/platform/moonpay.png",
     "platform": "all",
     "apiVersion": "0.0.1",
     "manifestVersion": "1",
     "branch": "stable",
-    "categories": [
-      "staking",
-      "defi"
-    ],
+    "categories": ["buy"],
     "currencies": [
+      "bitcoin",
       "ethereum"
     ],
     "content": {
       "shortDescription": {
-        "en": "Stake your ETH with Lido to earn daily staking rewards."
+        "en": "A fast, simple, and secure way to buy crypto."
       },
       "description": {
-        "en": "Stake your ETH with Lido to earn daily staking rewards."
+        "en": "MoonPay accepts all major payment methods and over 30 fiat currencies, enabling people from all over the world to buy crypto."
       }
     },
     "permissions": [],
@@ -50,9 +48,9 @@ Example of Manifest (JSON format) for the “Lido” application:
 Here is the list of the mandatory fields required in your Manifest file:
 - `id`: the identification of your application. Must be in lowercase.
 Type: string.
-- `name`: the name of your application ("Lido" in this example).
+- `name`: the name of your application ("Moonpay" in this example).
 Type: string.
-- `url`: the URL of your application. Lido being a DApp, it is embedded within a Ledger platform app. If you are a platform app (not a DApp), just enter your URL directly.
+- `url`: the URL of your web application.
 Type: string.
 - `homepageUrl`: the homepage of your service, for instance "https://www.google.fr/"
 Type: string.
