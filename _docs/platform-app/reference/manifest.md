@@ -46,6 +46,7 @@ Example of Manifest (JSON format) for Moonpay application:
 ```
 
 Here is the list of the mandatory fields required in your Manifest file:
+
 - `id`: the identification of your application. Must be in lowercase.
 Type: string.
 - `name`: the name of your application ("Moonpay" in this example).
