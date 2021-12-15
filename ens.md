@@ -1,11 +1,13 @@
 ---
 layout: page
 width: small
-title: Ethereum Name Service
+title: "Claimable Airdrop: Ethereum Name Service"
+notifier: true
 permalink: /airdrops/ens
 ---
 
 Ethereum Name Service is a distributed, open, and extensible naming system based on the Ethereum blockchain. ENS’s job is to map human-readable names like ‘alice.eth’ to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, and metadata.
+
 Ethereum Name Service is airdropping 25% of the total supply to “.ETH” domain holders. The snapshot was taken on October 31st, 2021 and eligible users have until May 4th, 2022 to claim the tokens.
 
 **Step-by-Step Guide:**
