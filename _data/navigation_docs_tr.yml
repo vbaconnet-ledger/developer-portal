@@ -30,6 +30,7 @@
   docs:
   - transport/tutorial-1-hid-ethereum
   - transport/tutorial-1-usb-solana
+  - transport/tutorial-2-web-bluetooth
 
 - title: FAQ & Troubleshooting
   docs:
