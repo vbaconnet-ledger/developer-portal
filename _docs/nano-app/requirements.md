@@ -13,11 +13,16 @@ For fast and efficient Nano App development, make sure you have read all the req
 And make sure you have double-checked them before submitting your Nano App.
 
 
+
+### Flow
+Your must submit the user operations Flow.
+See the ETH template example given.
+
 ### Security
-Your Nano App must comply wioth all the [Security requirements](../secure-app). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (List is non-exclusive.)
+Your Nano App must comply with all the [Security requirements](../secure-app). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (List is non-exclusive.)
 
 ### Display Management
-The Nano App must fololw the [Display requirements](../display-management). These deal with flow an layouts.  
+The Nano App must follow the [Display requirements](../display-management). These deal with flow an layouts.  
 In particular, you must submit the flow with your app
 
 ### Memory
@@ -30,13 +35,16 @@ The [I/O requirements](../interaction-bolos-apps) pages talk about error codes, 
 The [Functional requirements](../functional-requirements) lists General requirements, as well as Blind signing, Wallet requirements, and those for smart contracts, Token support and Staking features.
 
 ### Documentation
-[Documentation requirements](../documentation-requirements)
+Documentation is important for the Approval of your app, as your app will not be released without it.
+Your documentation must follow the [Documentation requirements](../documentation-requirements) so that Ledger uses a solid common documentation basis.
+
 
 ### Marketing
 [Marketing requirements](../marketing-requirements)
 
 ### Design
 The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
+You must download the template on the page, fill it it with your Icon, and include filled template in your app submission form.
 [Design requirements](../design-requirements)
 
 ### Support and Maintenance
