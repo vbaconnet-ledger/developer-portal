@@ -9,9 +9,28 @@ layout: doc
 ---
 ## Introduction
 In this section, we will guide you through the creation of an application. This application will call a smart contract to read and write.
-
 ## Prerequisites
-To start with, go through the [Prerequisites](../prerequisites) before diving into the implementation.
+To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+### Send Ether token to your Ledger Nano ethereum account
+To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
+1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
+2. [Dimensions Network](https://faucet.dimensions.network/)
+
+#### Ropsten Ethereum Network
+Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
+
+{: .center}
+![Ropsten Ethereum Faucet](../images/tutorial-1-faucet1.png){:width="840"}   
+*Fig. 1: Ropsten Ethereum Faucet*
+
+
+
+#### Dimensions Network
+Go to the [Dimensions Network](https://faucet.dimensions.network/) website put your Wallet Public Key on the input, do the captcha and click on "Send me test Ether"
+
+{: .center}
+![Ropsten Ethereum Faucet](../images/tutorial-1-faucet2.png){:width="840"}   
+*Fig. 2: Ropsten Ethereum Faucet*
 
 ## Web App Bluetooth (only Nano X)
 Ledger Nano S does not have Bluetooth functionality you can only use Ledger Nano X with Bluetooth.
