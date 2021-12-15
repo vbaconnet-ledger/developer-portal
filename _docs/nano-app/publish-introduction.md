@@ -31,19 +31,6 @@ An application will be listed publicly (official Ledger support) when:
 -   Ledger is ready to communicate officially about the app release (tweet, blogpost, website page update)
 -   Customer support pages are available on Ledger Help Center
 
-## Deliverables summary
-
--   Bolos app Release Candidate source code (preferably a git repository)
--   Companion app (binaries or package, for Windows/MacOS/Linux)
--   Adobe Illustrator templates filled with your icons (see [Design Guidelines](../design-requirements))
--   Contact information (Name, Surname, Legal Entity, URL, email address, phone number)
--   Link to tutorial hosted on third party website (see [Third Party Applications Support](../support-maintenance-requirements))
--   Video of your application running on the Ledger device
-    -   Verify public address on the Ledger device
-    -   Display transaction information before allowing signature
-    -   Reject a transaction on the Ledger device
-    -   Sign a transaction on the Ledger device
-
 
 ## Release processes and deliverables overview
 

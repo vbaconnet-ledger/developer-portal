@@ -37,14 +37,6 @@ Ledger personal security devices allows users to store cryptographic secrets and
 
 [Learn about the personal security devices](../psd-introduction)
 
-### Submission process
-
-To submit your app for the Ledger Live manager, make sure that your app is ready before submitting it for review and that you have followed  our documentation.
-
-Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
-
-Go to the submission form [here](https://ledger.typeform.com/to/qQSf7CVh).
-
 
 ## Things to do
 
