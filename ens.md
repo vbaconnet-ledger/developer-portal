@@ -10,8 +10,9 @@ Ethereum Name Service is a distributed, open, and extensible naming system based
 
 Ethereum Name Service is airdropping 25% of the total supply to “.ETH” domain holders. The snapshot was taken on October 31st, 2021 and eligible users have until May 4th, 2022 to claim the tokens.
 
+
 **Step-by-Step Guide:**
-1. Visit the Ethereum Name Service airdrop claim page.
+1. Visit the [Ethereum Name Service airdrop claim page](https://airdrops.io/visit/if92/).
 2. Connect your ETH wallet.
 3. If you’re eligible, then you will be able to claim free ENS tokens.
 4. A total of 25% of the total supply has been allocated to eligible users.
@@ -20,4 +21,4 @@ Ethereum Name Service is airdropping 25% of the total supply to “.ETH” domai
 7. The individual allocation will be based on the number of days the account owned at least one ENS name and the days until the expiration of the last name on the account.
 8. There’s also a 2x multiplier to accounts that has a Primary ENS Name set.
 9. Eligible users have until May 4th, 2022 to claim the tokens.
-10. For more information regarding the airdrop, see this article.
+10. For more information regarding the airdrop, [see this article](https://airdrops.io/visit/hf92/).
