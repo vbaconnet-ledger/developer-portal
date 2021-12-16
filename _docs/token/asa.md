@@ -28,7 +28,7 @@ First, make sure your token isn’t already listed by checking this table of the
 Update the [Algorand Nano app](https://github.com/algorand/ledger-app-algorand/blob/master/src/algo_asa.c).
 When your PR is validated by the Algorand team, they will make a PR to Ledger Github repository.
 
-Then, you need to update the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).
+Then, the Algorand team will update the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).
 
 <!--  -->
 {% include alert.html style="important" text="To ensure both these topics are handled properly, we invite you to contact our engineering team through the <a href='https://discord.gg/Ledger'>Ledger's Discord server</a>." %}

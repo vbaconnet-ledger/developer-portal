@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% assign url = page.url | split: "/" %}
   {% assign category = url[2] %}
-  {% if category == "swap" %}
+  {% if category == "swap" or category == "ens" or category == "hangry-animals" %}
     <meta name="robots" content="noindex nofollow">
   {% endif %}
   {% seo %}

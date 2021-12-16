@@ -666,6 +666,10 @@
         color: black ;
     }
 
+    .post-item {
+        border-bottom: black solid 2px;
+    }
+
     .post-item h3 {
         margin-top: 50px;
         margin-bottom: 2px;
@@ -825,13 +829,14 @@
 
     .doc-nav > li.uk-active > a {
         position: relative;
+        color: $safety-orange; // Added by CF 13.12.2021
         &:before {
             content: "";
             position: absolute;
             top: 13px; // Modified from 15 to 13 by CF for V3 01.09.2021 (small dash in front of active elements in left side bar)
             left: -14px;
             width: 7px;
-            border-top: 2px solid $safety-orange; // Modified px and color by CF for V3 01.09.2021 (color is temporary)
+            border-top: 2px solid $safety-orange; // Modified px and color by CF for V3 01.09.2021
         }
     }
 
