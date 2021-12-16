@@ -786,6 +786,36 @@
         font-size: 12px;
     }
 
+    // Copy Code button
+
+    pre.highlight {
+        position: relative;
+    }
+
+    .copy {
+        background-color: #272822;
+        color: white;
+        position: absolute;
+        right: 1.2rem;
+        top: 1.2rem;
+        border: solid 1px white;
+    }
+
+
+
+    pre.highlight > button {
+      opacity: 0;
+    }
+
+    pre.highlight:hover > button {
+      opacity: 1;
+    }
+
+    pre.highlight > button:active,
+    pre.highlight > button:focus {
+      opacity: 1;
+    }
+
     // Style for sitemap
 
     .sitemap {
