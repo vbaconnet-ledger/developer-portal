@@ -1,5 +1,5 @@
 ---
-title: ERC20 and BEP20
+title: ERC20, BEP20 and Polygon tokens
 subtitle: Addition or modification
 tags: [tokens]
 category: Tokens
@@ -13,7 +13,7 @@ layout: doc
 
 ## How to request a token addition
 
-### 1. Is my ERC20 or BEP20 token listed?
+### 1. Is my ERC20, BEP20 or Polygon token listed?
 
 First, make sure your token isn’t already listed by checking this table of the [supported crypto-assets](https://github.com/LedgerHQ/ledger-live-desktop/blob/v2.33.1/cryptoassets.md).
 
@@ -29,7 +29,7 @@ Fill in this form:
 
 <div data-tf-widget="Miekq8b2" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
-Please make sure to share with us the details of your ERC20 or BEP20 token, and a link to Etherscan or BSCscan to allow us to double check the information.
+Please make sure to share with us the details of your ERC20, BEP20 or Polygon token, and a link to Etherscan, BSCscan or Polygonscan to allow us to double check the information.
 
 ### What will Ledger do?
 
