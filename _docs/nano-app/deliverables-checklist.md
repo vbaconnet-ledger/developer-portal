@@ -28,14 +28,14 @@ The forme once completed contains all of the deliverables detailed below.
 
 ### Your app and environment
 
-- Bolos app Release Candidate source code (preferably a Git repository)
+- Nano application source code (GitHub repository link)
 - Either a companion app working on Windows/MacOS/Linux...
 - ...Or link to a CLI repository
 
 ### Documentation and support (Keep together?)
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-maintenance-requirements))
-- Link to the published tutorial hosted on third party website 
+    - The doc must include the link to the published tutorial hosted on third party website 
 - Link to customer support (Discord, Telegram, etc)
 
 ### Your app specifications(?)
@@ -64,7 +64,7 @@ I certify that...:
 
 I certify that...:
 
-- ...My app repository have a test folder that contains Unit Tests list and functional Tests
+- ...My app repository has a test folder that contains Unit Tests list and functional Tests
 - ...The App has been fully tested with a companion app or a CLI
 
 ### Compliance
@@ -72,7 +72,7 @@ I certify that...:
 I certify that...:
 
 - ...I have read the [coding guidelines](../display-management)
-- ...I have read the [marketing page](../marketing-requirements) and I have informed Ledger on my marketing actions
+- ...I have read the [marketing page](../marketing-requirements) 
 - ...I have read the [support and maintenance page](../support-maintenance-requirements)
 - ...I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
