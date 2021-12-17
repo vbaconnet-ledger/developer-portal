@@ -20,7 +20,7 @@ You can skip the first paragraph and go to [Things to do](#things-to-do).
 
 ## Development phases
 
-![Development phases](../images/nanoappdevphases.png)
+[![Development phases](../images/nanoappdevphases.png)](../images/nanoappdevphases.png) 
 
 
 ## Things to know
