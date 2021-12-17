@@ -1,20 +1,20 @@
 ---
 title: Transfer of Ethers between accounts
 subtitle:
-tags: []
-category: Connect a wallet
+tags: [transport, device, wallet app, communicate, wallet, companion]
+category: Connect your app
 author:
 toc: true
 layout: doc
 ---
 ## Introduction
 In this section, we will guide you through the creation of an application. This application will create a transaction that will be signed with the Ledger Nano before sending it to the blockchain.
-The purpose of the application is to transfer ethereum from your ethereum account on your Ledger to another account.
+The purpose of the application is to transfer ethers from your ethereum account on your Ledger to another account.
 
 ## Prerequisites
 To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
 ### Send Ether token to your Ledger Nano ethereum account
-To send some ethereum tokens on the Ropsten network, go to one of the ropsten faucet websites:
+To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
 1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
 2. [Dimensions Network](https://faucet.dimensions.network/)
 
@@ -281,6 +281,11 @@ The Ledger package provides you with all the methods to interact with your Ledge
 ```console
 npm install --save @ledgerhq/hw-transport-webhid
 ```
+#### Install [ethers](https://docs.ethers.io/v5/)  
+The package provides you with all the methods to interact with the ethereum blockchain.  
+```console
+npm install --save ethers
+```
 
 
 #### Package.json Dependencies
@@ -303,7 +308,8 @@ This is how your “package.json” has to look like.
   },
   "dependencies": {
     "@ledgerhq/hw-app-eth": "^6.18.0",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2"
+    "@ledgerhq/hw-transport-webhid": "^6.11.2",
+    "ethers": "^5.5.1"
   }
 }
 ```
@@ -323,7 +329,7 @@ Add some script :
     "name": "e2e-tutorial",
     "version": "1.0.0",
     "description": "",
-    "srouce": "index.html",
+    "source": "index.html",
     "scripts": {
         "start": "parcel"       // Add this line
     },
@@ -395,14 +401,14 @@ If all goes well, the input fields will be filled with data. The greyed input is
 
 ### Create a transaction to transfer ethereum
 
-Now that the inputs are filled with data. It is time to transfer some ethereum tokens from your Ledger ethereum account to another account (you can keep the default account on the "index.js" file).  
+Now that the inputs are filled with data. It is time to transfer some ether tokens from your Ledger ethereum account to another account (you can keep the default account on the "index.js" file).  
 Therefore, click on "Create Transaction" to create the transaction which will be signed by your ledger before sending it to the blockchain.  
 
 {: .center}
 ![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)  
 *Fig. 12: Application After Connecting Ledger Nano*
 
-Will the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Ropsten Etherscan to review the transaction.  
+When the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Ropsten Etherscan to review the transaction.  
 There you can find all the information concerning the transaction you have previously sent.
 
 {: .center}

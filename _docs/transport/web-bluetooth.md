@@ -363,7 +363,7 @@ Now the application is up and running. Open the browser and go to `localhost:300
 ![Application Running on Browser](../images/webBle1.png){:width="840"}   
 *Fig. 2: Application Running on Browser*  
 
-### Launch Bitcoin App
+### Launch Ethereum App
 Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 
