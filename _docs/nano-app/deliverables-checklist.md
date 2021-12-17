@@ -58,20 +58,20 @@ I certify that...:
 
 - ...I have read the security guidelines
 - ...I have used the Clang Static Analyzer in my GitHub workflow 
-- ...All Vulnerabilities are detected and corrected (no Pass through)
+- ...All Vulnerabilities are detected and corrected
 
 ### Test
 
 I certify that...:
 
-- ...my app repository have a test folder that contains Unit Tests list and functional Tests
+- ...My app repository have a test folder that contains Unit Tests list and functional Tests
+- ...The App has been fully tested with a companion app or a CLI
 
 ### Compliance
 
 I certify that...:
 
 - ...I have read the [coding guidelines](../display-management)
-- ...The App has been fully tested with a companion app or a CLI
 - ...I have read the [marketing page](../marketing-requirements) and I have informed Ledger on my marketing actions
 - ...I have read the [support and maintenance page](../support-maintenance-requirements)
 - ...I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)

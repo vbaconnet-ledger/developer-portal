@@ -12,25 +12,20 @@ layout: doc
 
 ## Introduction
 
-Ledger continually works to make its products and services easy and safe to use. Since the Ledger hardware wallet platform is open-source, members of the Ledger community are welcome to develop BOLOS apps. After a review and approval by Ledger, their apps can be installed through the Ledger Live Manager and used with third-party wallet apps (web or desktop app).
-
-As the wallet apps are maintained by third-party members of the Ledger community, the documentation on how to use these third-party services needs to be provided during the app review process. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
+It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
 
 <!--  -->
 {% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}
 <!--  -->
 
-## Documentation by Ledger
+### Documentation by Ledger
 
-[Ledger Customer Support](https://support.ledgerwallet.com/hc/en-us) will write and publish an article ([example](https://support.ledgerwallet.com/hc/en-us/articles/360007583514-Ontology-ONT-)) that describes:
-- Short introduction: what the app does, what crypto assets it can manage, using what service. Who has developed it. Ledger Nano S and Nano X supported?
-- Requirements: What’s needed before starting.
-- Installation instructions: How to install the app using Ledger Live.
-- Next steps: link to third party documentation and where to get support.
+Just for your information, [Ledger Customer Support](https://support.ledgerwallet.com/hc/en-us) will publish [a brief article](https://support.ledgerwallet.com/hc/en-us/articles/360007583514-Ontology-ONT-) based on your documentation. 
 
-## Third Party Documentation
 
-Third Party will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
+## Content guidelines
+
+You will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
 - Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
 - Requirements: What’s needed before starting.
 - Installation instructions: How to install the app using Ledger Live.
@@ -46,7 +41,7 @@ Third Party will write and host an article ([example](https://blog.cyberrepublic
     - Explicitly instruct to verify transaction details on the device display, before confirming and signing it.
 - Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities).
 
-## Writing tips
+## Style guidelines
 
 - Write short and concise sentences.
 - Write clear section titles.
