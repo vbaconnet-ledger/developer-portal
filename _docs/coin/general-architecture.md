@@ -11,7 +11,7 @@ layout: doc
 ## Global architecture overview
 
 <!-- ------------- Image ------------- -->
-![app_architecture](../images/general-architecture-live.png)
+[![App architecture](../images/general-architecture-live.png)](../images/general-architecture-live.png)
 <!-- --------------------------------- -->
 
 - The Ledger device acts as a signing box and it defers most of the technical complexity to Ledger Live (Ledger's official **wallet application**). Ledger Live contains the business logic and is (typically) a GUI, running on a computer or a phone connected to the device.
@@ -32,7 +32,7 @@ The Ledger Live mobile app is compatible with **iOS** and **Android**.
 ### Ledger Live architecture
 
 <!-- ------------- Image ------------- -->
-![global-architecture](../images/global-architecture.png)
+[![Global Architecture](../images/global-architecture.png)](../images/global-architecture.png)
 <!-- --------------------------------- -->
 
 The Ledger Live application act as a relay between the different blockchains, and the hardware wallets.
