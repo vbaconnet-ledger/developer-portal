@@ -10,11 +10,11 @@ layout: doc
 
 ## Submission process
 
-To submit your app for the Ledger Live manager, make sure that your app is ready before submitting it for review and that you have followed our documentation.
+Make sure that your app is ready before submitting it for review and that you have followed our documentation.
 
 Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
 
-Go to the submission form here.
+Before filling the form, make sure you've read the deliverables summary and the checklist.
 
 
 ## Deliverables summary
