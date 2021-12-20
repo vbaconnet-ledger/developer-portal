@@ -30,25 +30,25 @@ Now that node and npm are installed, you have to install the [Ledger Live](https
 After the installation, open Ledger Live and go to the **Manager** tab.
 
 {: .center}
-![Ledger Live Prerequisites](../images/ledgerlivetabs.png)  
+[![Ledger Live Prerequisites](../images/ledgerlivetabs.png)](../images/ledgerlivetabs.png){: style="border-bottom:none"}
 *Fig. 1: Ledger Live Prerequisites*
 
 Then connect your Ledger to your machine and make sure to unlock the Ledger Device.
 
 {: .center}
-![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="480px"}   
+[![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none"}
 *Fig. 2: Ledger Device Unlock*
 
 Then Ledger Live will ask you to allow the Ledger device, just press the two buttons simultaneously to allow it.
 
 
 {: .center}
-![Ledger Live Animation](../images/ledgerConnect.png){:width="420px"}   
+[![Ledger Live Animation](../images/ledgerConnect.png){:width="420px"}](../images/ledgerConnect.png){: style="border-bottom:none"}  
 *Fig. 3: Ledger Live Animation*
 
 
 {: .center}
-![Ledger Live Notification on Ledger Device](../images/ledgerAllow.jpg){:width="420px"}   
+[![Ledger Live Notification on Ledger Device](../images/ledgerAllow.jpg){:width="420px"}](../images/ledgerAllow.jpg){: style="border-bottom:none"}
 *Fig. 4: Ledger Live Notification on Ledger Device*
 
 
@@ -60,7 +60,7 @@ In this integration, we will use the Ethereum and bitcoin application from your 
 
 
 {: .center}
-![Ethereum App Installation](../images/ethereumInstallation.png){:width="840"}   
+[![Ethereum App Installation](../images/ethereumInstallation.png){:width="840"}](../images/ethereumInstallation.png){: style="border-bottom:none"}
 *Fig. 5: Ethereum App Installation*
 
 
@@ -77,39 +77,39 @@ Then do the following steps to create your Bitcoin account:
 - Open the Bitcoin app on your ledger device
 
 {: .center}
-![Bitcoin App Launch](../images/ledgerBtc.jpg){:width="420"}   
+[![Bitcoin App Launch](../images/ledgerBtc.jpg){:width="420"}](../images/ledgerBtc.jpg){: style="border-bottom:none"}
 *Fig. 6: Bitcoin App Launch*
 
 
 {: .center}
-![Bitcoin App Ready](../images/ledgerReady.jpg){:width="420"}   
+[![Bitcoin App Ready](../images/ledgerReady.jpg){:width="420"}](../images/ledgerReady.jpg){: style="border-bottom:none"}
 *Fig. 7: Bitcoin App Ready*
 
 - Then you can create an account by going to the **Manager** tab and click on **Add account**.
 
 {: .center}
-![Bitcoin App Add Account](../images/bitcoinInstalled.png){:width="840"}   
+[![Bitcoin App Add Account](../images/bitcoinInstalled.png){:width="840"}](../images/bitcoinInstalled.png){: style="border-bottom:none"}
 *Fig. 8: Bitcoin App Add Account*
 
 
 - Click on **Add account** button.
 
 {: .center}
-![Bitcoin Account Creation](../images/step1account.png){:width="840"}   
+[![Bitcoin Account Creation](../images/step1account.png){:width="840"}](../images/step1account.png){: style="border-bottom:none"}  
 *Fig. 9: Bitcoin Account Creation*
 
 
 - Your account is created.
 
 {: .center}
-![Bitcoin Account Selection](../images/step2account.png){:width="840"}   
+[![Bitcoin Account Selection](../images/step2account.png){:width="840"}](../images/step2account.png){: style="border-bottom:none"}
 *Fig. 10: Bitcoin Account Selection*
 
 
 You have now a secured bitcoin account on your Ledger Device, congratulations!
 
 {: .center}
-![Bitcoin Account Created](../images/step3account.png){:width="840"}   
+[![Bitcoin Account Created](../images/step3account.png){:width="840"}](../images/step3account.png){: style="border-bottom:none"}
 *Fig. 11: Bitcoin Account Created*
 
 

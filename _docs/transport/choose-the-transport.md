@@ -19,7 +19,7 @@ For a web application three options are possible :
 - Web Bluetooth (Nano X)
 
 {: .center}
-![WebApp](../images/webAppsummary.png)
+[![WebApp](../images/webAppsummary.png)](../images/webAppsummary.png)
 *Fig. 1: WebApp Transports*
 
 Getting started with WebApp integration:
@@ -33,7 +33,7 @@ For Mobile applications, you can integrate through React Native libraries HID an
 - React Native Bluetooth (Nano X)
 
 {: .center}
-![Mobile Application Transports](../images/mobile-integration.png)
+[![Mobile Application Transports](../images/mobile-integration.png)](../images/mobile-integration.png)
 *Fig. 2: Mobile Application Transports*
 
 Getting started with React Native Mobile App integration:
@@ -47,7 +47,7 @@ For a desktop application, your option is to use Node HID Transport layer. The l
 
 
 {: .center}
-![Desktop Application Transports](../images/desktop-integration.png)
+[![Desktop Application Transports](../images/desktop-integration.png)](../images/desktop-integration.png)
 *Fig. 2: Desktop Application Transports*
 
 Getting started with Desktop App integration [Node HID](../node-electron-hid)
