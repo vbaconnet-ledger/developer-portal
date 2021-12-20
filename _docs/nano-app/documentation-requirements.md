@@ -39,7 +39,9 @@ You will write and host an article ([example](https://blog.cyberrepublic.org/202
 - How to send crypto assets
     - Document all the steps and form fields to fill.
     - Explicitly instruct to verify transaction details on the device display, before confirming and signing it.
-- Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities).
+- Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities). 
+
+In addition: The final version of the google doc will be published on: \<insert URL here> 
 
 ## Style guidelines
 

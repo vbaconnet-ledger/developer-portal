@@ -28,20 +28,23 @@ The forme once completed contains all of the deliverables detailed below.
 
 ### Your app and environment
 
-- Nano application source code (GitHub repository link)
-- Either a companion app working on Windows/MacOS/Linux...
+- Nano App source code (GitHub repository)
+- Either a companion wallet working on Windows/MacOS/Linux...
 - ...Or link to a CLI repository
 
-### Documentation and support (Keep together?)
+### Documentation
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-maintenance-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
-- Link to customer support (Discord, Telegram, etc)
 
-### Your app specifications(?)
+### Support
 
-- UI Flow of how your application works
+- Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
+
+### Your app specifications
+
 - Adobe Illustrator templates filled with your two icons (see [Design Guidelines](../design-requirements))
+- UI Flow of how your application works
 - Video of your application running on the Ledger device
     -   Verify public address on the Ledger device
     -   Display transaction information before allowing signature
