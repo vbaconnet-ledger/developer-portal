@@ -18,7 +18,11 @@ Live-common lib is used to test Ledger Live in a headless way:
 
 
 <!-- ------------- Image ------------- -->
-<img width="50%" src="../images/bridge-test-framework.png">
+<div class="uk-text-center">
+    <a href="../images/bridge-test-framework.png" style="border-bottom:none;">
+      <img width="50%" src="../images/bridge-test-framework.png">
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 

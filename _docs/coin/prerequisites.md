@@ -17,7 +17,7 @@ Therefore, every new blockchain integration calls for a preliminary analysis, to
 ## Technical Assessment
 
 <!-- ------------- Image ------------- -->
-<a href="../images/technical-assessment.png" class="lightbox-image">
+<a href="../images/technical-assessment.png">
 	<img width="395" height="548" src="../images/technical-assessment.png" style="float:right">
 </a>
 <!-- --------------------------------- -->
@@ -49,7 +49,7 @@ The technical choices made concerning Specific features regard all staking opera
 
 <!-- ------------- Image ------------- -->
 <div style="text-align:center">
-	<a href="../images/blockchain_infra.png" class="lightbox-image">
+	<a href="../images/blockchain_infra.png">
 		<img align="centre" width="471" height="315" src="../images/blockchain_infra.png" >
 	</a>
 </div>
