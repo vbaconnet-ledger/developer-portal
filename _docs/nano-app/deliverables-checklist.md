@@ -1,5 +1,5 @@
 ---
-title: Deliverables checklist
+title: Submit your Nano App
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
@@ -16,14 +16,15 @@ Once your app is ready and you have made sure it follows our guidelines, you can
 
 Before filling the form, make sure you've read the deliverables summary and the checklist.
 
-The forme once completed contains all of the deliverables detailed below. 
+The form once completed contains all of the deliverables detailed below. 
 
-## Deliverables summary
+## Submission form content
 
 ### General information
 
 - Nano App name
 - Legal Entity name
+- Postal address
 - Email address
 
 ### Your app and environment

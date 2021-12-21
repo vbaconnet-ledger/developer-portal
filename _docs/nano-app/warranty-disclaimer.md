@@ -29,5 +29,3 @@ By publishing an app, you are giving Ledger the right to communicate about the s
 
 The application you submit must be distributed under the MIT open source license.
 Nothing will impair Ledger’s right to develop, promote or distribute applications that perform the same of similar functions as the application you’ve submitted for publication. 
-
-By submitting this form, I confirm that I have read and agree to the above terms and Ledger's privacy policy.
