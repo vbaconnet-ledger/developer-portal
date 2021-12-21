@@ -19,7 +19,12 @@ Your must submit the user operations Flow.
 See the ETH template example given.
 
 ### Security
-Your Nano App must comply with all the [Security requirements](../secure-app). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (List is non-exclusive.)
+Your Nano App must comply with all the [Security requirements](../secure-app) (Updated in Sep 2021). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (The lst is not exhaustive)
+
+Ledger will not pass the Security Audit for an App if potential errors have been detected by Clang Static Analyzer.  
+Make sure you use the Clang Static Analyzer in GitHub your workflow, and that all Vulnerabilities are detected and corrected
+
+Your Repos must have a test folder that contains Unit Tests list and your functional Tests.
 
 ### Display Management
 The Nano App must follow the [Display requirements](../display-management). These deal with flow an layouts.  
