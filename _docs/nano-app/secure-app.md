@@ -57,9 +57,9 @@ Though it is not enforced yet, the `-Werror` compilation flag should be set, and
 
 Rationale : Former SDKs used to generate lots of errors - sometimes dozens - when compiling an application. This had the unfortunate consequence of discouraging developers from reading the compilation output and miss potentially important alerts that could be well be vulnerabilities.
 
-### Best practices
+### Test requirements and Code review
 
-In order to ease security reviews and maintenance, the Ledger Security Team requires these development best practices to be met:
+In order to ease security reviews and maintenance, the Ledger Security Team requires these development requirements to be met:
 
 - Units tests must be present, preferably in the `tests/` folder and relying on the [cmocka](https://cmocka.org/) unit testing framework.
 - Functional tests must be present. They should allow APDU testing thanks to the [Speculos](../../speculos/installation/build) emulator (or a real device). We recommend using [pytest](https://pytest.org) as a testing framework if tests are written in Python.
