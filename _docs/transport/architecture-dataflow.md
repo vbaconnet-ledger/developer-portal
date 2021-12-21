@@ -17,7 +17,7 @@ These exchanges allow to read data from Ledger Device & Sign Transactions with i
 
 
 {: .center}
-![Application Sequence Diagram](../images/application-sequence.png)
+[![Application Sequence Diagram](../images/application-sequence.png)](../images/application-sequence.png)
 *Fig. 1: Application Sequence Diagram*
 
 
