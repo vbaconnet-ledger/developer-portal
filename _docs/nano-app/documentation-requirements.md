@@ -20,8 +20,9 @@ As the wallet apps are maintained by third-party members of the Ledger community
 {% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}
 <!--  -->
 
-## Documentation by Ledger
+## Ledger Documentation
 
+Your documentation must follow the requirements below  so that Ledger uses a solid common documentaion basis.
 [Ledger Customer Support](https://support.ledgerwallet.com/hc/en-us) will write and publish an article ([example](https://support.ledgerwallet.com/hc/en-us/articles/360007583514-Ontology-ONT-)) that describes:
 - Short introduction: what the app does, what crypto assets it can manage, using what service. Who has developed it. Ledger Nano S and Nano X supported?
 - Requirements: What’s needed before starting.

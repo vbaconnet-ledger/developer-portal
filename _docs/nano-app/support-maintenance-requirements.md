@@ -12,7 +12,7 @@ layout: doc
 
 ## Support
 
-Ledger does not provide support for third party applications. It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager (please follow these guidelines).
+Ledger does not provide support for third party applications. It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager. Please follow the [documentation-requirements](../documentation-requirements)
 
 Along with your publication request, app sources and tutorial, please provide information that will allow the Ledger support team to redirect users to relevant support resources:
 - Identity: Name, Surname, Legal Entity

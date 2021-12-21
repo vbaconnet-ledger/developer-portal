@@ -14,8 +14,10 @@ If you a develop a Nano Application for a public release, the following will occ
 
 |                     On your side                  |                         On Ledger's side                         |
 |--------------------------------------------------------------|--------------------------------------------------------|
-|          [Twitter announcement](#twitter-announcement)<br><b>Mandatory</b>            |      Retweet by @Ledger or @Ledger_Support <br>Website update<br><b>Guaranteed</b>    |
-| Device giveway<br>[Blog post/Press Release](#blog-post-press-release)<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |
+|          [Twitter announcement](#twitter-announcement)<br><b>Mandatory</b>            |      Retweet by @Ledger or @Ledger_Support <br>Website update<br><b>Optional (1)</b>    |
+| Device giveway<br>[Blog post/Press Release](#blog-post--press-release)<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |
+
+(1) Depends on the roadmap
 
 ## Twitter announcement
 
@@ -27,7 +29,7 @@ It must include the following:
 
 ## Blog post / Press Release
 
-If the Blockchain is in top 50 CMC, the blog post can include a quote from the CEO, CTO, a Founder, or another c-level executive regarding the collaboration and the impact it will have on your project.
+If the Blockchain is in top 50 CMC, the blog post can include a quote from your CEO, CTO, one of your Founders, or another c-level executive regarding the collaboration and the impact it will have on your project.
 
 ## Co-branding devices give away 
 

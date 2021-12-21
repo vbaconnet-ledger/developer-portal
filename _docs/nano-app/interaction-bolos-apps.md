@@ -18,7 +18,7 @@ When an application performs a syscall, the Secure Element switches to Superviso
 
 ## Error Model
 
-If you are familiar with C programming, you will be used to error codes as the default error model. However, when programming in the embedded world, this traditional model reaches its limits, and can quickly overcomplicate large codebases. Therefore, we've implemented a try / catch system that supports nesting (direct or transitive) using the `setjmp` and `longjmp` API to facilitate writing robust code.
+If you are familiar with C programming, you will be used to error codes as the default error model. However, when programming in the embedded world, this traditional model reaches its limits, and can quickly overcomplicate large codebases. Therefore, we've implemented a `TRY`  / `CATCH` system that supports nesting (direct or transitive) using the `setjmp` and `longjmp` API to facilitate writing robust code.
 
 Here is an example of a typical try / catch / finally construct:
 
@@ -38,7 +38,7 @@ However there is a single constraint to be aware of with our try / catch system:
 
 You should use the error codes defined in the SDKs wherever possible (see `EXCEPTION`, `INVALID_PARAMETER`, etc. in `os.h`). If you decide to use custom error codes, never use an error code of `0`.
 
-Developers should avoid creating a new try context wherever possible in order to reduce code size and stack usage. Preferably, an application should only have a single top-level try context at the application entry point (in `main()`).
+Developers should avoid creating a new `TRY` context wherever possible in order to reduce code size and stack usage. Preferably, an application should only have a single top-level `TRY` context at the application entry point (in `main()`).
 
 ## Syscall Requirements
 
@@ -54,5 +54,5 @@ BEGIN_TRY {
 } END_TRY;
 ```
 
-However, as mentioned above, it is preferred to use as few try contexts as possible (not one per syscall). A single, top-level try context can be used to catch any exception thrown by any syscall performed by the application.
+However, as mentioned above, it is preferred to use as few `TRY` contexts as possible (not one per syscall). A single, top-level `TRY` context can be used to catch any exception thrown by any syscall performed by the application.
 
