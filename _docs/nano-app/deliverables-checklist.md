@@ -43,7 +43,7 @@ The forme once completed contains all of the deliverables detailed below.
 
 ### Your app specifications
 
-- Adobe Illustrator templates filled with your two icons (see [Design Guidelines](../design-requirements))
+- Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
 - UI Flow of how your application works
 - Video of your application running on the Ledger device
     -   Verify public address on the Ledger device
