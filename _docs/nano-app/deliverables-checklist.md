@@ -53,10 +53,9 @@ The form once completed contains all of the deliverables detailed below.
     -   Sign a transaction on the Ledger device
 
 
+### Declaration
 
-## Checklist
-
-### Security
+#### Security
 
 I certify that...:
 
@@ -64,14 +63,14 @@ I certify that...:
 - ...I have used the Clang Static Analyzer in my GitHub workflow 
 - ...All Vulnerabilities are detected and corrected
 
-### Test
+#### Test
 
 I certify that...:
 
 - ...My app repository has a test folder that contains Unit Tests list and functional Tests
 - ...The App has been fully tested with a companion app or a CLI
 
-### Compliance
+#### Compliance
 
 I certify that...:
 
@@ -80,3 +79,7 @@ I certify that...:
 - ...I have read the [support and maintenance page](../support-maintenance-requirements)
 - ...I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
+
+## Submission form
+
+Once you are ready, you can [fill in the form here](https://ledger.typeform.com/to/ZFVKrEHN).
