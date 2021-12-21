@@ -40,7 +40,7 @@ Dive into the folder named “src” to modify/create the three files. The files
 Your folder must look like this.
 
 {: .center}
-![Folder of the Application](../images/folderWebBle.png){:width="210"}   
+[![Folder of the Application](../images/folderWebBle.png){:width="210"}](../images/folderWebBle.png)  
 *Fig. 1: Folder of the Application*
 
 ### Code Implementation

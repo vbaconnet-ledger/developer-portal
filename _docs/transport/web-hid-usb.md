@@ -38,7 +38,7 @@ Create a folder named “src” and two files named “index.html” and “main
 Your folder must look like this.
 
 {: .center}
-[![Folder USB and HID](../images/folderUsbHid.png)](../images/folderUsbHid.png){: style="border-bottom:none"}
+![Folder USB and HID](../images/folderUsbHid.png)  
 *Fig. 1: Folder of the Application*
 
 ### Code Implementation
@@ -180,7 +180,7 @@ This is how your “package.json” has to look like.
 A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
 
 {: .center}
-[![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png){:style="border-bottom:none"}
+[![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png)   
 *Fig. 2: Modifying the package.json*
 
 Add some script :
@@ -225,37 +225,35 @@ npm run start
 Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
 
 {: .center}
-[![Application running on browser](../images/webapp1.png)](../images/webapp1.png){:style="border-bottom:none"} 
+![Application running on browser](../images/webapp1.png)  
 *Fig. 3: Application Running on Browser*
 ### Plug Your Ledger Device
 Before clicking on the text connect your Ledger to the USB port, unlock it and run the bitcoin application.
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){:style="border-bottom:none"}  
+![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}   
 *Fig. 4: Ledger Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){:style="border-bottom:none"}
-
+![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}   
 *Fig. 5: Ledger Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){:style="border-bottom:none"}
-
+![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
 *Fig. 6: Ledger Run Application*
 
 ### Connect Your Ledger to the Application
 Now you can click on the text and a popup will be prompt. Choose your Ledger device and click connexion
 
 {: .center}
-[![Connect the Ledger](../images/webapp2.png)](../images/webapp2.png){:style="border-bottom:none"}
+![Connect the Ledger](../images/webapp2.png)  
 *Fig. 7: Connect the Ledger*
 
-Then if all goes well you must have the bitcoin address you just create [previously](#prerequisites){:style="border-bottom:none"}
+Then if all goes well you must have the bitcoin address you just create [previously](#prerequisites)
 
 {: .center}
-[![Address Account Displayed](../images/webapp3.png)](../images/webapp3.png){:style="border-bottom:none"}  
+![Address Account Displayed](../images/webapp3.png)  
 *Fig. 8: Address Account Displayed*
 
 Congratulations, you have successfully built your first application connected with Ledger !!!
@@ -297,6 +295,4 @@ To test your application on android, a little change has to be made. Just add th
 
 The browser will ask you that the website is malicious, to continue, click on “advanced settings” and then on “continue to the localhost site”.
 Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
-
-
 
