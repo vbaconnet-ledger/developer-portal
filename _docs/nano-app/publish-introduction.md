@@ -48,8 +48,9 @@ An application will be listed publicly (official Ledger support) when:
 ## Release processes and deliverables overview
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+    <a href="../images/listing-program.png" style="border-bottom:none;">
+        <img src="../images/listing-program.png" class="align-center" alt="Ledger listing program" />
+    </a>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/listing-program.png" class="align-center" alt="Ledger listing program" />
-</figure>
-

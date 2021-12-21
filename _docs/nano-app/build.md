@@ -20,8 +20,11 @@ layout: doc
 To use the container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img src="../images/folder-organization.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/folder-organization.png" style="border-bottom:none;">
+		<img src="../images/folder-organization.png" >
+	</a>
+</div>
 <!-- --------------------------------- -->
 
 ## 1. Build the container (standard way)...

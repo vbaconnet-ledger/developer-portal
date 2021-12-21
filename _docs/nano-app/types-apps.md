@@ -26,10 +26,15 @@ These applications leverage Ledger technology but are not involved in managing c
 Let’s see the typical end-to-end architecture of a BOLOS application, in the case of an app for a cryptocurrency:
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+	<figure>
+	    <a href="../images/app_architecture.png" style="border-bottom:none;">
+			<img src="../images/app_architecture.png" class="align-center" alt="End-to-end architecture of a BOLOS application" />
+		</a>
+	<figcaption>End-to-end architecture of a BOLOS application</figcaption>
+	</figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/app_architecture.png" class="align-center" alt="End-to-end architecture of a BOLOS application" /><figcaption aria-hidden="true">End-to-end architecture of a BOLOS application</figcaption>
-</figure>
 
 Three pieces of software are required:
 - A BOLOS application, written in C, running on a Ledger device
@@ -41,10 +46,15 @@ If you’re not developing an app adding support for a cryptocurrency, then you 
 The Ledger Manager is the service which centralizes the distribution of [BOLOS](https://developers.ledger.com/docs/nano-app/bolos-introduction/) applications on Ledger devices. It is the place where both Ledger’s apps and third party apps are distributed to users.
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+	<figure>
+	    <a href="../images/manager.png" style="border-bottom:none;">
+			<img src="../images/manager.png" class="align-center" alt="The Ledger Manager" />
+		</a>
+		<figcaption aria-hidden="true">The Ledger Manager</figcaption>
+	</figure>
+<div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/manager.png" class="align-center" alt="The Ledger Manager" /><figcaption aria-hidden="true">The Ledger Manager</figcaption>
-</figure>
 
 
 When these pieces are ready for deployment, they must be sent to Ledger for a security review. One of the things we're going to do is review the security of the BOLOS application code, and check that it functions as intended in conjunction with its wallet app. Here is a non-exhaustive list of what we're looking at during the review process:

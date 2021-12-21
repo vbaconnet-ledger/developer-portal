@@ -37,10 +37,16 @@ This way, all of the important information about your transaction history is sto
 ## Summary
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+	<figure>
+		<a href="../images/where_are_my_assets.png" style="border-bottom:none;">
+			<img src="../images/where_are_my_assets.png" class="align-center" alt="A diagram of a hierarchical deterministic wallet; everything in the box labelled &quot;hierarchical deterministic tree&quot; is recoverable if your wallet is lost, destroyed, or reset because it is all derived from the master seed" />
+		</a>
+		<figcaption aria-hidden="true">A diagram of a hierarchical deterministic wallet; everything in the box labelled "hierarchical deterministic tree" is recoverable if your wallet is lost, destroyed, or reset because it is all derived from the master seed</figcaption>
+	</figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/where_are_my_assets.png" class="align-center" alt="A diagram of a hierarchical deterministic wallet; everything in the box labelled &quot;hierarchical deterministic tree&quot; is recoverable if your wallet is lost, destroyed, or reset because it is all derived from the master seed" /><figcaption aria-hidden="true">A diagram of a hierarchical deterministic wallet; everything in the box labelled "hierarchical deterministic tree" is recoverable if your wallet is lost, destroyed, or reset because it is all derived from the master seed</figcaption>
-</figure>
+
 
 An HD wallet has a few very important properties, so let's reiterate:
 
