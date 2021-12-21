@@ -13,8 +13,9 @@ layout: doc
 
 A Live App is an app available in the discover section of the Ledger Live Application. To transform your DApp or your classical application into a Live App, this is what you will need to do:
 
-
-<img src="../images/live-app.jpg" alt="Discover section"/>
+<!---- image ---->
+[![Discover section](../images/live-app.jpg)](../images/live-app.jpg)     
+<!--------------->
 
 
 We recommend you'd get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.

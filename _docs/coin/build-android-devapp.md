@@ -48,8 +48,11 @@ It takes some time to load the project. During this time, create an emulator (or
 
 Click the AVD Manager icon on the upper right of Android Studio :
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="120" src="../images/avd_manager_icon.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/avd_manager_icon.png" style="border-bottom:none;">
+		<img width="120" src="../images/avd_manager_icon.png" >
+	</a>
+</div>
 <!-- --------------------------------- -->
 
 Create the device that you want to have for test, don't go too low on API level or it may not work.

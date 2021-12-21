@@ -19,10 +19,15 @@ In order to accomplish this, we attached an additional STM32 microcontroller (th
 ## Multiple Processors: Secure Element Proxy
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+	<figure>
+	<a href="../images/bolos_architecture.png" style="border-bottom: none;">
+		<img src="../images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" />
+	</a>
+	<figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
+	</figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/bolos_architecture.png" class="align-center" alt="A detailed BOLOS architecture diagram" /><figcaption aria-hidden="true">A detailed BOLOS architecture diagram</figcaption>
-</figure>
 
 BOLOS is split between two hardware chips, one being secure (the ST31 Secure Element), and the other having JTAG enabled and acting as a proxy (the STM32 MCU).
 
@@ -44,10 +49,15 @@ The protocol works as follows:
 and waits for another Event.
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+	<figure>
+	<a href="../images/seproxyhal.png" style="border-bottom: none;">
+		<img src="../images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" />
+	</a>
+	<figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
+	</figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/seproxyhal.png" class="align-center" alt="SEPROXYHAL protocol concept" /><figcaption aria-hidden="true">SEPROXYHAL protocol concept</figcaption>
-</figure>
 
 As a matter of fact, due to buffer size, requests to display something to the screen are sent using a Status. When the MCU has finished processing the Display Status, it issues a Display Processed Event indicating that it is ready to receive another Display Status. As a result, displaying multiple elements on the screen (in order to build an entire user interface) must be done asynchronously from the core application logic. This process is facilitated by a UX helper implemented in the SDK, which will be discussed further in the next chapter.
 

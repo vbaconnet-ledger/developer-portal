@@ -11,10 +11,8 @@ layout: doc
 
 ## General overview
 
-***
-
 <!-- ------------- Image ------------- -->
-![](../images/code-blocks.png)
+[![General overview](../images/code-blocks.png)](../images/code-blocks.png)
 <!-- --------------------------------- -->
 
 

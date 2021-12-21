@@ -28,20 +28,29 @@ This page explains how to install the Ledger Live dev app for iOS on macOS.
     - verify that "Ledger SAS"  appears as a Team member
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="680" src="../images/2177138906/2175697305.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2175697305.png" style="border-bottom:none;">
+        <img width="680" src="../images/2177138906/2175697305.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 Here, you can also check that you're using the correct toolchain and that you have an iOS simulator installed. It is advisable to have multiple simulators.
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="680" src="../images/2177138906/2175730132.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2175730132.png" style="border-bottom:none;">
+        <img width="680" src="../images/2177138906/2175730132.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="680" src="../images/2177138906/2177171698.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2177171698.png" style="border-bottom:none;">
+        <img width="680" src="../images/2177138906/2177171698.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 
@@ -75,8 +84,11 @@ yarn pod
 This command may fail. Like this, for example.
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="680" src="../images/2177138906/2177171709.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2177171709.png" style="border-bottom:none;">
+        <img width="680" src="../images/2177138906/2177171709.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 One solution is to run:
@@ -96,8 +108,11 @@ yarn start
 Wait until you see a message indicating "Loading dependency graph, done."
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="680" src="../images/2177138906/2177204490.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2177204490.png" style="border-bottom:none;">
+        <img width="680" src="../images/2177138906/2177204490.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->
 
 Return to the first terminal, and run
@@ -111,6 +126,9 @@ It will compile the whole iOS application, so go and grab a coffee.
 Then eventually, an iOS simulator will open, and after some time again, you'll see a LL [DEV] application on the screen.
 
 <!-- ------------- Image ------------- -->
-<div style="text-align:center">
-<img width="340" src="../images/2177138906/2177237212.png" ></div>
+<div class="uk-text-center">
+    <a href="../images/2177138906/2177237212.png" style="border-bottom:none;">
+        <img width="340" src="../images/2177138906/2177237212.png" >
+    </a>
+</div>
 <!-- --------------------------------- -->

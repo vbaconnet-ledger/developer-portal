@@ -17,7 +17,9 @@ Therefore, every new blockchain integration calls for a preliminary analysis, to
 ## Technical Assessment
 
 <!-- ------------- Image ------------- -->
-<img width="395" height="548" src="../images/technical-assessment.png" style="float:right">
+<a href="../images/technical-assessment.png">
+	<img width="395" height="548" src="../images/technical-assessment.png" style="float:right">
+</a>
 <!-- --------------------------------- -->
 
 The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the generic and specific aspects.
@@ -46,7 +48,11 @@ The technical choices made concerning Specific features regard all staking opera
 [//]: 786 × 525
 
 <!-- ------------- Image ------------- -->
-<img align="centre" width="471" height="315" src="../images/blockchain_infra.png" >
+<div style="text-align:center">
+	<a href="../images/blockchain_infra.png">
+		<img align="centre" width="471" height="315" src="../images/blockchain_infra.png" >
+	</a>
+</div>
 <!-- --------------------------------- -->
 
 Both UTXO and account-based blockchains can contain a serious amount of transactions for any given account. Because Ledger Live shows the complete list of operations to the end user, the synchronisation process can take a long time, especially if addressing the blockchain node directly.
@@ -58,5 +64,5 @@ Ledger runs its own indexing services but can also rely on third parties to oper
 ### Choosing the right Indexer solution for your your project
 
 <!-- ------------- Image ------------- -->
-![indexer_decision_tree.png](../images/indexer-decision-tree.png)
+[![Indexer decision tree](../images/indexer-decision-tree.png)](../images/indexer-decision-tree.png)
 <!-- --------------------------------- -->

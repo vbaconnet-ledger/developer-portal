@@ -26,9 +26,11 @@
   - transport/application-architecture
   - transport/architecture-dataflow
 
-# - title: End-2-end Tutorials
-#   docs:
-#   - transport/connect-wallet
+- title: End-2-end Tutorials
+  docs:
+  - transport/tutorial-1-hid-ethereum
+  - transport/tutorial-1-usb-solana
+  - transport/tutorial-2-web-bluetooth
 
 - title: FAQ & Troubleshooting
   docs:
