@@ -22,7 +22,7 @@ To send some sol tokens on the Devnet network, go to one of the solana faucet we
 Go to the [Solana Faucet](https://solfaucet.com/) website put your Wallet Public Key on the input and click on "Devnet"
 
 {: .center}
-![Solana Faucet](../images/solana-faucet.png){:width="840"}   
+[![Solana Faucet](../images/solana-faucet.png){:width="840"}](../images/solana-faucet.png){: style="border-bottom:none;"}   
 *Fig. 1: Solana Faucet*
 
 
@@ -64,7 +64,7 @@ Create files named “index.html”, “index.js” and "styles.css" in the root
 Your folder must look like this.
 
 {: .center}
-![Folder tutorial](../images/folder-e2e-1.png)  
+[![Folder tutorial](../images/folder-e2e-1.png)](../images/folder-e2e-1.png){: style="border-bottom:none;"}   
 *Fig. 2: Folder of the Application*
 
 ### Code Implementation
@@ -332,7 +332,7 @@ This is how your “package.json” has to look like.
 A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “index.html”`.
 
 {: .center}
-![PackageJson modify](../images/tutorialJsonModify.png)  
+[![PackageJson modify](../images/tutorialJsonModify.png)](../images/tutorialJsonModify.png){: style="border-bottom:none;"}   
 *Fig. 3: Modifying the package.json*
 
 Add some script :
@@ -375,7 +375,7 @@ npm run start
 Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
 
 {: .center}
-![Application running on browser](../images/tutorial-1-solana.png)  
+[![Application running on browser](../images/tutorial-1-solana.png)](../images/tutorial-1-solana.png){: style="border-bottom:none;"}   
 *Fig. 3: Application Running on Browser*
 
 ### Plug Your Ledger Device
@@ -383,15 +383,15 @@ Before clicking on the text connect your Ledger to the USB port, unlock it and r
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 4: Ledger Enter Code Pin*
 
 {: .center}
-![Run Solana Application on Ledger Nano](../images/ledgerEth.jpg){:width="480px"}   
+[![Run Solana Application on Ledger Nano](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}    
 *Fig. 5: Run Solana Application on Ledger Nano*
 
 {: .center}
-![Solana Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="480px"}   
+[![Solana Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
 *Fig. 6: Solana Application is Running on Ledger Nano*
 
 
@@ -400,19 +400,19 @@ Now you can click on the "Connect your Wallet" button and a modal will be opened
 Click on the Ledger logo.
 
 {: .center}
-![Choice of Wallet](../images/tutorial-1-solana-pairing.png)  
+[![Choice of Wallet](../images/tutorial-1-solana-pairing.png)](../images/tutorial-1-solana-pairing.png){: style="border-bottom:none;"}   
 *Fig. 7: Choice of Wallet*
 
 Now choose the Ledger Nano to connect it to the browser.
 
 {: .center}
-![Connect the Ledger Nano](../images/tutorial-1-solana-wallet.png)  
+[![Connect the Ledger Nano](../images/tutorial-1-solana-wallet.png)](../images/tutorial-1-solana-wallet.png){: style="border-bottom:none;"}   
 *Fig. 8: Connect the Ledger Nano*
 
 If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
 
 {: .center}
-![Application After Connecting Ledger Nano](../images/tutorial-1-solana-info.png)  
+[![Application After Connecting Ledger Nano](../images/tutorial-1-solana-info.png)](../images/tutorial-1-solana-info.png){: style="border-bottom:none;"}   
 *Fig. 9: Application After Connecting Ledger Nano*
 
 
@@ -422,24 +422,24 @@ Now that the inputs are filled with data. It is time to transfer some sol tokens
 Therefore, click on "Create Transaction" to create the transaction which will be signed by your ledger before sending it to the blockchain.  
 
 {: .center}
-![Application After Connecting Ledger Nano](../images/tutorial-1-solana-create.png)  
+[![Application After Connecting Ledger Nano](../images/tutorial-1-solana-create.png)](../images/tutorial-1-solana-create.png){: style="border-bottom:none;"}   
 *Fig. 10: Application After Connecting Ledger Nano*
 
 When the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Solana Explorer to review the transaction.  
 There you can find all the information concerning the transaction you have previously sent.
 
 {: .center}
-![Result after Sending Transaction](../images/tutorial-1-solana-transaction.png)  
+[![Result after Sending Transaction](../images/tutorial-1-solana-transaction.png)](../images/tutorial-1-solana-transaction.png){: style="border-bottom:none;"}   
 *Fig. 11: Transaction Information URL*
 
 If you go on Solana Explorer you can see the information of your transaction.
 
 {: .center}
-![Result after Sending Transaction](../images/solana-explorer-1.png)  
+[![Result after Sending Transaction](../images/solana-explorer-1.png)](../images/solana-explorer-1.png){: style="border-bottom:none;"}   
 *Fig. 12: Result on Solana Explorer after Sending Transaction*
 
 {: .center}
-![Result after Sending Transaction](../images/solana-explorer-2.png)  
+[![Result after Sending Transaction](../images/solana-explorer-2.png)](../images/solana-explorer-2.png){: style="border-bottom:none;"}   
 *Fig. 13: Result on Solana Explorer after Sending Transaction*
 
 

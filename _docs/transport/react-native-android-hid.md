@@ -23,19 +23,19 @@ First download and install [Android Studio](https://developer.android.com/studio
 When the installation is finished open Android Studio:
 
 {: .center}
-[![Android Studio Window](../images/android-studio.png){:width="840"}](../images/android-studio.png)   
+[![Android Studio Window](../images/android-studio.png){:width="840"}](../images/android-studio.png){: style="border-bottom:none;"}   
 *Fig. 1: Android Studio Window*
 
 Then go to Settings => Appearance & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
 
 {: .center}
-[![Android Studio Settings](../images/android-studio-settings.png){:width="840"}](../images/android-studio-settings.png)   
+[![Android Studio Settings](../images/android-studio-settings.png){:width="840"}](../images/android-studio-settings.png){: style="border-bottom:none;"}   
 *Fig. 2: Android Studio Settings*
 
 Then you have to install the latest SDK version. Therefore select the packages shown below and apply to install the packages.
 
 {: .center}
-[![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}](../images/android-studio-SDK.png)   
+[![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}](../images/android-studio-SDK.png){: style="border-bottom:none;"}   
 *Fig. 3: Android Studio SDK Settings*
 
 #### Install Homebrew
@@ -117,7 +117,7 @@ Create a file named "App.js" and "polyfill.js" in the root folder.
 Your folder must look like this.
 
 {: .center}
-[![Folder of the Application](../images/folder-rn-android.png){:width="210"}](../images/folder-rn-android.png)   
+[![Folder of the Application](../images/folder-rn-android.png){:width="210"}](../images/folder-rn-android.png){: style="border-bottom:none;"}   
 *Fig. 4: Folder of the Application*
 
 
@@ -298,7 +298,7 @@ This is how your “package.json” has to look like.
 A little modification have to be made in the “build.gradle” in the "android" folder : `minSdkVersion = 21` => `minSdkVersion = 24`.
 
 {: .center}
-[![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}](../images/change-minSDK.png)   
+[![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}](../images/change-minSDK.png){: style="border-bottom:none;"}   
 *Fig. 5: Build.gradle Modify the minSdkVersion*
 
 
@@ -325,7 +325,7 @@ adb devices
 if all goes well you have to find the phone in the list of devices like the below image.
 
 {: .center}
-[![Device Connected On The Machine](../images/adb-devices.png){:width="210"}](../images/adb-devices.png)   
+[![Device Connected On The Machine](../images/adb-devices.png){:width="210"}](../images/adb-devices.png){: style="border-bottom:none;"}   
 *Fig. 6: Device Connected On The Machine*
 
 <!--  -->
@@ -356,7 +356,7 @@ Of course, click on "Yes" to install it and to test it.
 When launching the application it will be displayed like the below image.
 
 {: .center}
-[![Application Displayed on Smartphone](../images/android-device-hid.jpg){:width="210"}](../images/android-device-hid.jpg)   
+[![Application Displayed on Smartphone](../images/android-device-hid.jpg){:width="210"}](../images/android-device-hid.jpg){: style="border-bottom:none;"}   
 *Fig. 7: Application Displayed on Smartphone*
 
 ### Plug Your Ledger Device
@@ -364,21 +364,21 @@ Connect your Ledger Nano to your android device, unlock it and run the ethereum 
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg)  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 8: Ledger Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg)   
+[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 9: Ledger Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Ledger Run Application*
 
 Now that the two devices are connected, the address must have been displayed like below.
 
 {: .center}
-[![Address Account Displayed on Smartphone](../images/android-device-hid-address.jpg){:width="210"}](../images/android-device-hid-address.jpg)   
+[![Address Account Displayed on Smartphone](../images/android-device-hid-address.jpg){:width="210"}](../images/android-device-hid-address.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Address Account Displayed on Smartphone*
 
 Congratulations you have successfully built your first application connected with Ledger !!!

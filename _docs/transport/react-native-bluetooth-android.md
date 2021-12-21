@@ -56,20 +56,20 @@ Beforehand to develop an Android application we have to install Android Studio. 
 When the installation is finished open Android Studio:
 
 {: .center}
-[![Android Studio Window](../images/android-studio.png){:width="840"}](../images/android-studio.png)   
+[![Android Studio Window](../images/android-studio.png){:width="840"}](../images/android-studio.png){: style="border-bottom:none;"}   
 *Fig. 1: Android Studio Window*
 
 
 Then go to settings => Appearance & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
 
 {: .center}
-[![Android Studio Settings](../images/android-studio-settings.png){:width="840"}](../images/android-studio-settings.png)   
+[![Android Studio Settings](../images/android-studio-settings.png){:width="840"}](../images/android-studio-settings.png){: style="border-bottom:none;"}   
 *Fig. 2: Android Studio Settings*
 
 Then you have to install the latest SDK version. Therefore select the packages shown below and apply to install the packages.
 
 {: .center}
-[![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}](../images/android-studio-SDK.png)   
+[![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}](../images/android-studio-SDK.png){: style="border-bottom:none;"}   
 *Fig. 3: Android Studio SDK Settings*
 
 #### Set the environnement variables
@@ -497,7 +497,7 @@ const styles = StyleSheet.create({
 Your folder must look like this.
 
 {: .center}
-[![Folder of the Application](../images/folder-rn-ble.png){:width="210"}](../images/folder-rn-ble.png)   
+[![Folder of the Application](../images/folder-rn-ble.png){:width="210"}](../images/folder-rn-ble.png){: style="border-bottom:none;"}   
 *Fig. 4: Folder of the Application*
 
 ### Dependencies Installation
@@ -587,7 +587,7 @@ This is how your “package.json” has to look like.
 A little modification have to be made in the “build.gradle” in the "android" folder : `minSdkVersion = 21` => `minSdkVersion = 24`.
 
 {: .center}
-[![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}](../images/change-minSDK.png)   
+[![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}](../images/change-minSDK.png){: style="border-bottom:none;"}   
 *Fig. 5: Build.gradle Modify the minSdkVersion*
 
 You can now test the application you have built.
@@ -615,7 +615,7 @@ adb devices
 if all goes well you have to find the phone in the list of devices like the below image.
 
 {: .center}
-[![Device Connected On The Machine](../images/adb-devices.png){:width="210"}](../images/adb-devices.png)   
+[![Device Connected On The Machine](../images/adb-devices.png){:width="210"}](../images/adb-devices.png){: style="border-bottom:none;"}   
 *Fig. 6: Device Connected On The Machine*
 
 
@@ -652,14 +652,14 @@ Of course, click on "Yes" to install it and to test it.
 When launching the application it will be displayed like the below image, you must have the Bluetooth and location activated.
 
 {: .center}
-[![Application Displayed on Smartphone](../images/android-rn-ble.jpg){:width="210"}](../images/android-rn-ble.jpg)   
+[![Application Displayed on Smartphone](../images/android-rn-ble.jpg){:width="210"}](../images/android-rn-ble.jpg){: style="border-bottom:none;"}   
 *Fig. 8: Application Displayed on Smartphone*
 
 If the above image is not your result, it may display to you that:
 
 {: .center}
-[![Bluetooth Not Authorized](../images/android-ble-error.jpg){:width="300"}](../images/android-ble-error.jpg) [![App Settings 1](../images/android-settings-1.jpg){:width="300"}](../images/android-settings-1.jpg)  
-[![App Settings 2](../images/android-settings-2.jpg){:width="300"}](../images/android-settings-2.jpg) [![App Settings 3](../images/android-settings-3.jpg){:width="300"}](../images/android-settings-3.jpg)  
+[![Bluetooth Not Authorized](../images/android-ble-error.jpg){:width="300"}](../images/android-ble-error.jpg){: style="border-bottom:none;"} [![App Settings 1](../images/android-settings-1.jpg){:width="300"}](../images/android-settings-1.jpg){: style="border-bottom:none;"}  
+[![App Settings 2](../images/android-settings-2.jpg){:width="300"}](../images/android-settings-2.jpg){: style="border-bottom:none;"} [![App Settings 3](../images/android-settings-3.jpg){:width="300"}](../images/android-settings-3.jpg){: style="border-bottom:none;"}  
 *Fig. 9: Authorize the Bluetooth*
 
 
@@ -673,50 +673,50 @@ If the above image is not your result, it may display to you that:
 To pair your Ledger Nano X you must unlock it.
 
 {: .center}
-[![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}](../images/ledgerCodePin.jpg)   
+[![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Ledger Code Pin*
 
 Now try to pair the Ledger Nano X to your android smartphone.
 
 {: .center}
-[![Pairing the Ledger Nano X](../images/android-rn-ble-list.jpg){:width="210"}](../images/android-rn-ble-list.jpg) [![Pairing the Ledger Nano X](../images/android-rn-pairing.jpg){:width="210"}](../images/android-rn-pairing.jpg)  
+[![Pairing the Ledger Nano X](../images/android-rn-ble-list.jpg){:width="210"}](../images/android-rn-ble-list.jpg){: style="border-bottom:none;"} [![Pairing the Ledger Nano X](../images/android-rn-pairing.jpg){:width="210"}](../images/android-rn-pairing.jpg){: style="border-bottom:none;"}  
 *Fig. 11: Pairing the Ledger Nano X*
 
 ### Pairing and Launching the Ethereum App on Nano X
 When pairing the pairing code will be displayed on your Ledger Nano X to confirm the pairing.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}](../images/ledgerPairing.jpg)  
+[![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}](../images/ledgerPairing.jpg){: style="border-bottom:none;"}  
 *Fig. 12: Ledger Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg)   
+[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 13: Ledger Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 14: Ledger Run Application*
 
 Now that the pairing is done, the Nano X is ready with the ethereum application.
 If all goes well you must see the address of your ethereum account displayed.
 
 {: .center}
-[![Address Account Displayed on Smartphone](../images/android-rn-ble-address.jpg){:width="210"}](../images/android-rn-ble-address.jpg)   
+[![Address Account Displayed on Smartphone](../images/android-rn-ble-address.jpg){:width="210"}](../images/android-rn-ble-address.jpg){: style="border-bottom:none;"}   
 *Fig. 15: Address Account Displayed on Smartphone*
 
 ### Verify the Address
 For security purposes, we display on your Nano X the same ethereum address for you to confirm.
 
 {: .center}
-[![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg)   
+[![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 16: Ledger Verify Screen*
 
 {: .center}
-[![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg)   
+[![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 17: Ledger Verify Address Screen*
 
 {: .center}
-[![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg)   
+[![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 18: Ledger Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger on Android!!!
