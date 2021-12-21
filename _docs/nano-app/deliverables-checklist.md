@@ -1,5 +1,5 @@
 ---
-title: Submit your Nano App
+title: How to submit your Nano App
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
@@ -8,15 +8,13 @@ author:
 layout: doc
 ---
 
-## Submission process
+## Introduction
 
-Make sure that your app is ready before submitting it for review and that you have followed our documentation.
+The submission of a Nano App is completed through a form.
 
-Once your app is ready and you have made sure it follows our guidelines, you can submit it by completing a form. Make sure you thoroughly complete it as it will impact the speed of the release process.
+On this page you will find the content of the form, to prepare for your submission.
 
-Before filling the form, make sure you've read the deliverables summary and the checklist.
-
-The form once completed contains all of the deliverables detailed below. 
+Before filling in the form, make sure that your app is ready and that you have followed our documentation and guidelines ([see declaration](#declaration)). Make sure you thoroughly complete the form as it will impact the speed of the release process.
 
 ## Submission form content
 
