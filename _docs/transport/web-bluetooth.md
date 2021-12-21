@@ -40,7 +40,7 @@ Dive into the folder named “src” to modify/create the three files. The files
 Your folder must look like this.
 
 {: .center}
-![Folder of the Application](../images/folderWebBle.png){:width="210"}   
+[![Folder of the Application](../images/folderWebBle.png){:width="210"}](../images/folderWebBle.png)  
 *Fig. 1: Folder of the Application*
 
 ### Code Implementation
@@ -363,7 +363,7 @@ Now the application is up and running. Open the browser and go to `localhost:300
 ![Application Running on Browser](../images/webBle1.png){:width="840"}   
 *Fig. 2: Application Running on Browser*  
 
-### Launch Bitcoin App
+### Launch Ethereum App
 Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 

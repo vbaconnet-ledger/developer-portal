@@ -45,10 +45,16 @@ It is possible to install a debugging firmware on the device's MCU (Microcontrol
 If you can notice a small `dbg` block at the bottom of the screen, it's a success !
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+        <figure>
+                <a href="../images/debug_nano.jpg" style="border-bottom:none;">
+                        <img src="../images/debug_nano.jpg" class="align-center" alt="A Nano S with the debugging firmware" />
+                </a>
+        <figcaption>A Nano S with the debugging firmware</figcaption>
+        </figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/debug_nano.jpg" class="align-center" alt="A Nano S with the debugging firmware" /><figcaption aria-hidden="true">A Nano S with special debug firmware</figcaption>
-</figure>
+
 
 Uninstalling this debugging firmware is also very easy:
 1. Download the [normal firmware](https://drive.google.com/open?id=1YfdU1dNycojdtuKU_hHctLFzJZzhDFuY).
@@ -87,10 +93,16 @@ PRINTF("I prefer it lower-cased:\n %.*h \n", 4, buffer);
 ```
 
 <!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+        <figure>
+                <a href="../images/deadbeef.png" style="border-bottom:none;">
+                        <img src="../images/deadbeef.png" class="align-center" alt="Result of the example code printed inside a terminal" />
+                </a>
+        <figcaption>Result of the example code printed inside a terminal</figcaption>
+        </figure>
+</div>
 <!-- --------------------------------- -->
-<figure>
-<img src="../images/deadbeef.png" class="align-center" alt="Result of the example code printed inside a terminal" /><figcaption aria-hidden="true">Result of the example code printed inside a terminal</figcaption>
-</figure>
+
 
 ## Console Printing
 

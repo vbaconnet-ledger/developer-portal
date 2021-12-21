@@ -180,7 +180,7 @@ This is how your “package.json” has to look like.
 A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
 
 {: .center}
-![PackageJson modify](../images/packageJsonModify.png)  
+[![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png)   
 *Fig. 2: Modifying the package.json*
 
 Add some script :
@@ -232,7 +232,7 @@ Before clicking on the text connect your Ledger to the USB port, unlock it and r
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}   
 *Fig. 4: Ledger Enter Code Pin*
 
 {: .center}
@@ -295,6 +295,4 @@ To test your application on android, a little change has to be made. Just add th
 
 The browser will ask you that the website is malicious, to continue, click on “advanced settings” and then on “continue to the localhost site”.
 Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
-
-
 
