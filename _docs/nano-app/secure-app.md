@@ -8,6 +8,15 @@ author:
 layout: doc
 ---
 
+## Requirements Note --
+
+Your Nano App must comply with all the Security requirements (Updated in Sep 2021). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (The lst is not exhaustive)
+
+Ledger will not pass the Security Audit for an App if potential errors have been detected by Clang Static Analyzer.  
+Make sure you use the Clang Static Analyzer in GitHub your workflow, and that all Vulnerabilities are detected and corrected
+
+Your Repos must have a test folder that contains Unit Tests list and your functional Tests.
+
 ## Introduction
 
 Developing applications for Ledger devices is an intricate process. The security of the user funds relies on the fact that the application works in a correct and secure manner and that potential attackers cannot misuse it to extract private data and/or sign requests which are not authorized by the user. The app should guard against such attacks because they have a very low entry point -- a Ledger device attached to a compromised host might be a victim of the attacker's program sending invalid/non-standard requests to the device.

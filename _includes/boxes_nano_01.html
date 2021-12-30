@@ -2,7 +2,6 @@
     {% assign columns = include.columns %}
 {% endif %}
 
-
 <div class="uk-section" style="padding-top: 0px; padding-bottom: 0px">
     <div class="uk-container uk-container-small">
 
@@ -21,7 +20,7 @@
             {% if item.title %}
             {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
             {% assign doc = site.docs | where:"url", doc_url | first %}
-            <div>
+            <div style="display:block;">
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-xlight uk-width-medium@m" style="padding:20px;">
                     <a class="uk-position-cover" href="{{ doc.url | relative_url }}"></a>
                     {% if item.icon %}

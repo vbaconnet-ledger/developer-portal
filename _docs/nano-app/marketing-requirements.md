@@ -10,14 +10,14 @@ layout: doc
 
 ## Marketing plan 
 
-If you a develop a Nano Application for a public release, the following will occur:
+For public releases of your Nano Application, this is what is made:
 
 |                     On your side                  |                         On Ledger's side                         |
 |--------------------------------------------------------------|--------------------------------------------------------|
 |          [Twitter announcement](#twitter-announcement)<br><b>Mandatory</b>            |      Retweet by @Ledger or @Ledger_Support <br>Website update<br><b>Optional (1)</b>    |
-| Device giveway<br>[Blog post/Press Release](#blog-post--press-release)<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |
+| Device give-away<br>[Blog post/Press Release](#blog-post--press-release)<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |  
 
-(1) Depends on the roadmap
+(1) Depending on the roadmap
 
 ## Twitter announcement
 
@@ -31,11 +31,11 @@ It must include the following:
 
 If the Blockchain is in top 50 CMC, the blog post can include a quote from your CEO, CTO, one of your Founders, or another c-level executive regarding the collaboration and the impact it will have on your project.
 
-## Co-branding devices give away 
+## Co-branded device give-aways 
 
 Ledger offers a co-branded partnership that will help you customize your marketing, reward your community. All details from standard to dropshipping options are given on [our website](https://www.ledger.com/co-branded-partnership).
 
 
 <!--  -->
-{% include alert.html style="tip" text="Co-branded partnerships or affiliate links do not give a project priority in Ledger's marketing plan timeline." %}
+{% include alert.html style="important" text="Co-branded partnerships or affiliate links do <b>not change</b> the Ledger marketing plan timeline." %}
 <!--  -->

@@ -1,5 +1,5 @@
 ---
-title: Design requirements
+title: Design
 subtitle:
 tags: [icon, logo, app icon, device icon, manager icon, graphics, glyphs]
 category: Nano Application
@@ -8,7 +8,9 @@ author:
 layout: doc
 ---
 
-
+## Requirements Note --
+The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
+You must download the template on the page, fill it it with your Icon, and include filled template in your app submission form.
 
 ## Guidelines
 
@@ -53,7 +55,7 @@ Most of the time, Bolos apps expose few functionalities to the user. However, de
 <!--  -->
 
 
-Even though the screen is small, you don't want to bloat it with plenty of tiny text to fit everything in a single time. Instead, multiple successives screens are the way to go, with a configurable time interval between each screen switch. Doing this allows you to split and segment the information to display. It is also a good practice to inform the user of what is the kind of information currently displayed, by giving it a title. In some cases, even when the information is segmented by type, there won't be enough space for it to fit entirely on screen. Rather than splitting this information in multiple screens, it is better to use automatic scrolling display. Here is an example that sums it up:
+Even though the screen is small, you don't want to bloat it with plenty of tiny text to fit everything in a single time. Instead, multiple successive screens are the way to go, with a configurable time interval between each screen switch. Doing this allows you to split and segment the information to display. It is also a good practice to inform the user of what is the kind of information currently displayed, by giving it a title. In some cases, even when the information is segmented by type, there won't be enough space for it to fit entirely on screen. Rather than splitting this information in multiple screens, it is better to use automatic scrolling display. Here is an example that sums it up:
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
@@ -97,3 +99,4 @@ The design of your app must be free from any encumbrances and must not infringe 
 You represent and warrant that the app you are making available on Ledger Live is in compliance with all relevant laws and regulations.
 
 You agree to hold Ledger harmless of any claim arising out of the use of the design and or distribution of your app .
+

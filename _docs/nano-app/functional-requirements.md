@@ -9,7 +9,6 @@ layout: doc
 ---
 
 
-
 ## Guidelines on app name and ticker
 
 Ensure that the application name defined in makefile matches the one you want to have displayed on the manager.

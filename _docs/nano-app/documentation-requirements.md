@@ -12,7 +12,9 @@ layout: doc
 
 ## Introduction
 
-It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
+Documentation is important for the Approval of your app, as your app will not be released without it.
+
+It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager. Here are guidelines for writing such documentation and it should be followed very carefully.
 
 <!--  -->
 {% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}

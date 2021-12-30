@@ -10,18 +10,15 @@
   docs:
   - nano-app/publish-introduction
   - nano-app/deliverables-checklist
+  - nano-app/submission-form
 
-- title: Set up and use
+- title: Toolkit
   docs:
   - nano-app/build
   - nano-app/load
   - nano-app/open-close-info-on-apps
   - nano-app/troubleshooting
   - nano-app/debug
-
-- title: Requirements and Guidelines
-  docs:
-  - nano-app/requirements
   
 - title: Security
   docs:
@@ -44,7 +41,7 @@
   - nano-app/interaction-bolos-apps
   - nano-app/application-structure
 
-- title: Functional 
+- title: Function 
   docs:
   - nano-app/functional-requirements
 
@@ -52,17 +49,18 @@
   docs:
   - nano-app/documentation-requirements
 
-- title: Marketing 
-  docs:
-  - nano-app/marketing-requirements
-
-- title: Design 
-  docs:
-  - nano-app/design-requirements
-
 - title: Support and maintenance 
   docs:
   - nano-app/support-maintenance-requirements
+
+- title: Nano App Specifications 
+  docs:
+  - nano-app/design-requirements
+  - nano-app/ui-flow-video
+
+- title: Marketing 
+  docs:
+  - nano-app/marketing-requirements
 
 - title: Warranty and liability
   docs:

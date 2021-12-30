@@ -6,11 +6,6 @@
   icon: introduction
 
 - title: Process
-  desc: Every step of the release process
+  desc: Every step of the development and release process
   doc: nano-app/publish-introduction
   icon: process
-
-- title: Requirements
-  desc: Requirements to get your Nano App published
-  doc: nano-app/requirements
-  icon: requirements

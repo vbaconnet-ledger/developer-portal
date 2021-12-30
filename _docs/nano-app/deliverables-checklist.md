@@ -1,5 +1,5 @@
 ---
-title: How to submit your Nano App
+title: Submission form Content
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
@@ -10,37 +10,39 @@ layout: doc
 
 ## Introduction
 
-The submission of a Nano App is completed through a form.
+The submission of a Nano App is completed through a form. This will ask you for all the various items required together in one place.
 
-On this page you will find the content of the form, to prepare for your submission.
+Below, you will find the details of the form content, per section. You can use this page as a checklist to gather everything that is required.
 
-Before filling in the form, make sure that your app is ready and that you have followed our documentation and guidelines ([see declaration](#declaration)). Make sure you thoroughly complete the form as it will impact the speed of the release process.
+Make sure you have followed our documentation and guidelines ([see declaration](#self-declaration)). 
 
-## Submission form content
 
-### General information
+## Section details
+
+### 1 - General information
 
 - Nano App name
 - Legal Entity name
 - Postal address
 - Email address
 
-### Your app and environment
+### 2 - Nano app and environment
 
-- Nano App source code (GitHub repository)
-- Either a companion wallet working on Windows/MacOS/Linux...
-- ...Or link to a CLI repository
+- Nano App source code (GitHub repository),   
+- and either  
+  - a link to a CLI repository, or
+  - a companion wallet running on Windows/MacOS/Linux (mandatory for Public release)
 
-### Documentation
+### 3 - Documentation
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-maintenance-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
 
-### Support
+### 4 - Support
 
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
-### Your app specifications
+### 5 - Nano app specifications
 
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
 - UI Flow of how your application works
@@ -51,33 +53,26 @@ Before filling in the form, make sure that your app is ready and that you have f
     -   Sign a transaction on the Ledger device
 
 
-### Declaration
+### 6 - Self Declaration
 
 #### Security
 
-I certify that...:
-
-- ...I have read the security guidelines
-- ...I have used the Clang Static Analyzer in my GitHub workflow 
-- ...All Vulnerabilities are detected and corrected
+**I certify that**:  
+- I have read the [security guidelines](../secure-app)  
+- I have used the Clang Static Analyzer in my GitHub workflow 
+- All vulnerabilities have been detected and corrected
 
 #### Test
 
-I certify that...:
-
-- ...My app repository has a test folder that contains Unit Tests list and functional Tests
-- ...The App has been fully tested with a companion app or a CLI
+**I certify that**:  
+- My app repository has a test folder that contains the Unit Tests list and the functional Tests
+- The App has been fully tested with a companion app or a CLI
 
 #### Compliance
 
-I certify that...:
+**I certify that**:  
+- I have read the [coding guidelines](../display-management)
+- I have read the [marketing page](../marketing-requirements) 
+- I have read the [support and maintenance page](../support-maintenance-requirements)
+- I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
-- ...I have read the [coding guidelines](../display-management)
-- ...I have read the [marketing page](../marketing-requirements) 
-- ...I have read the [support and maintenance page](../support-maintenance-requirements)
-- ...I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
-
-
-## Submission form
-
-Once you are ready, you can [fill in the form here](https://ledger.typeform.com/to/ZFVKrEHN).
