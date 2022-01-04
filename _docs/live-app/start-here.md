@@ -16,15 +16,17 @@ Live Apps are displayed in the discover section of Ledger Live.
 <!---- image ---->
 [![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)     
 <!--------------->
-
-To include your DApp or your non-DApp into a Live App, this is what you will need to do:
+   
+    
+Depending on whether you have a **DApp** or a **non-DApp** to insert into Ledger Live, this diagram summarizes what you need to do.  
+See the left or right part respectively. 
 
 <!---- image ---->
 [![Discover section](../images/live-app.jpg)](../images/live-app.jpg)     
 <!--------------->
 
-
-We recommend you'd get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.
+- We recommend you get in touch with us on the [Ledger Discord server](https://discord.gg/Ledger) to discuss your project.  
+- Your integration work is detailed in the sections below. Click on the corresponding card to continue.  
 
 <div style="text-align:center;">
   <div class="row justify-content-around">
