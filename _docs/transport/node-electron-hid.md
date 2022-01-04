@@ -38,7 +38,7 @@ Create the files “index.html”, “main.js” and “renderer.js”.
 Your folder must look like this.
 
 {: .center}
-![Folder of the Application](../images/folderNodeHID.png){:width="210px"}  
+[![Folder of the Application](../images/folderNodeHID.png){:width="210px"}](../images/folderNodeHID.png)  
 *Fig. 1: Folder of the Application*
 ### Code Implementation
 
@@ -309,28 +309,28 @@ npm run start
 Now the application is up and running. A window must have been launched on your machine, it will display :
 
 {: .center}
-![Node Desktop Application](../images/electron-node-hid-window.png){:width="840px"}  
+[![Node Desktop Application](../images/electron-node-hid-window.png){:width="840px"}](../images/electron-node-hid-window.png)  
 *Fig. 2: Node Desktop Application*
 ### Plug Your Ledger Device
 Connect your ledger to the USB port, unlock it and run the bitcoin application.
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg)  
 *Fig. 3: Ledger Enter Code Pin*
 
 {: .center}
-![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}   
+[![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg)   
 *Fig. 4: Ledger Application*
 
 {: .center}
-![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
 *Fig. 5: Ledger Run Application*
 
 Then if all goes well you must have displayed on the screen the bitcoin address you just create [previously](#prerequisites)
 
 {: .center}
-![Address Account Displayed](../images/electron-node-address.png){:width="840px"}  
+[![Address Account Displayed](../images/electron-node-address.png){:width="840px"}](../images/electron-node-address.png)  
 *Fig. 6: Address Account Displayed*
 
 Congratulations you have successfully built your first application connected with Ledger !!!

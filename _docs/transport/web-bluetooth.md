@@ -40,7 +40,7 @@ Dive into the folder named “src” to modify/create the three files. The files
 Your folder must look like this.
 
 {: .center}
-[![Folder of the Application](../images/folderWebBle.png){:width="210"}](../images/folderWebBle.png)  
+[![Folder of the Application](../images/folderWebBle.png){:width="210"}](../images/folderWebBle.png){: style="border-bottom:none;"}  
 *Fig. 1: Folder of the Application*
 
 ### Code Implementation
@@ -360,7 +360,7 @@ npm run start
 Now the application is up and running. Open the browser and go to `localhost:3000`, it will display :
 
 {: .center}
-![Application Running on Browser](../images/webBle1.png){:width="840"}   
+[![Application Running on Browser](../images/webBle1.png){:width="840"}](../images/webBle1.png){: style="border-bottom:none;"}   
 *Fig. 2: Application Running on Browser*  
 
 ### Launch Ethereum App
@@ -368,49 +368,49 @@ Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 4: Ledger Enter Code Pin*
 
 {: .center}
-![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 5: Ledger Application*
 
 {: .center}
-![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 6: Ledger Run Application*
 
 ### Connect Your Ledger to the Application
 Now you can click on the button and a popup will be prompt. Choose your Ledger Nano X and click connexion
 
 {: .center}
-![Connect the Ledger with Bluetooth](../images/webBle2.png){:width="840"}   
+[![Connect the Ledger with Bluetooth](../images/webBle2.png){:width="840"}](../images/webBle2.png){: style="border-bottom:none;"}   
 *Fig. 7: Connect the Ledger with Bluetooth*
 
 Then another popup will be prompt to ask you to confirm the pairing
 
 {: .center}
-![Request of Pairing](../images/webBle3.png){:width="840"}   
+[![Request of Pairing](../images/webBle3.png){:width="840"}](../images/webBle3.png){: style="border-bottom:none;"}   
 *Fig. 8: Request of Pairing*
 
 Finally, if all goes well the address must be displayed with the QR code
 
 {: .center}
-![Address Account Displayed](../images/webBle4.png){:width="840"}   
+[![Address Account Displayed](../images/webBle4.png){:width="840"}](../images/webBle4.png){: style="border-bottom:none;"}   
 *Fig. 9: Address Account Displayed*
 
 ### Verify the Address on Your Ledger Device
 For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}   
+[![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Ledger Verify Screen*
 
 {: .center}
-![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}   
+[![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Ledger Verify Address Screen*
 
 {: .center}
-![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}   
+[![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 12: Ledger Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger Nano X !!!

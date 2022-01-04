@@ -16,7 +16,7 @@ In order to understand deeply the interactions between different components of t
 The overall architecture of the integration is based on the following layers:
 
 {: .center}
-![Ledger Live Prerequisites](../images/application-architecture.png){: width="100%" }
+[![Ledger Live Prerequisites](../images/application-architecture.png){: width="100%" }](../images/application-architecture.png)
 *Fig. 1: Overall Architecture*
 
 On the client side we have your core application containing your business logic and workflows.

@@ -22,7 +22,7 @@ To send some ethers on the Ropsten network, go to one of the ropsten faucet webs
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
 
 {: .center}
-![Ropsten Ethereum Faucet](../images/tutorial-1-faucet1.png){:width="840"}   
+[![Ropsten Ethereum Faucet](../images/tutorial-1-faucet1.png){:width="840"}](../images/tutorial-1-faucet1.png){: style="border-bottom:none;"}   
 *Fig. 1: Ropsten Ethereum Faucet*
 
 
@@ -31,7 +31,7 @@ Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your
 Go to the [Dimensions Network](https://faucet.dimensions.network/) website put your Wallet Public Key on the input, do the captcha and click on "Send me test Ether"
 
 {: .center}
-![Ropsten Ethereum Faucet](../images/tutorial-1-faucet2.png){:width="840"}   
+[![Ropsten Ethereum Faucet](../images/tutorial-1-faucet2.png){:width="840"}](../images/tutorial-1-faucet2.png){: style="border-bottom:none;"}   
 *Fig. 2: Ropsten Ethereum Faucet*
 
 
@@ -61,7 +61,7 @@ Create files named “index.html”, “index.js” and "styles.css" in the root
 Your folder must look like this.
 
 {: .center}
-![Folder tutorial](../images/folder-e2e-1.png)  
+[![Folder tutorial](../images/folder-e2e-1.png)](../images/folder-e2e-1.png){: style="border-bottom:none;"}  
 *Fig. 3: Folder of the Application*
 
 ### Code Implementation
@@ -318,7 +318,7 @@ This is how your “package.json” has to look like.
 A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “index.html”`.
 
 {: .center}
-![PackageJson modify](../images/tutorialJsonModify.png)  
+[![PackageJson modify](../images/tutorialJsonModify.png)](../images/tutorialJsonModify.png){: style="border-bottom:none;"}  
 *Fig. 4: Modifying the package.json*
 
 Add some script :
@@ -358,7 +358,7 @@ npm run start
 Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
 
 {: .center}
-![Application running on browser](../images/tutorial-1-view.png)  
+[![Application running on browser](../images/tutorial-1-view.png)](../images/tutorial-1-view.png){: style="border-bottom:none;"}  
 *Fig. 5: Application Running on Browser*
 
 ### Plug Your Ledger Device
@@ -366,15 +366,15 @@ Before clicking on the text connect your Ledger to the USB port, unlock it and r
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 6: Ledger Enter Code Pin*
 
 {: .center}
-![Run Ethereum Application on Ledger Nano](../images/ledgerEth.jpg){:width="480px"}   
+[![Run Ethereum Application on Ledger Nano](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 7: Run Ethereum Application on Ledger Nano*
 
 {: .center}
-![Ethereum Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="480px"}   
+[![Ethereum Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 8: Ethereum Application is Running on Ledger Nano*
 
 
@@ -383,19 +383,19 @@ Now you can click on the "Connect your Wallet" button and a modal will be opened
 Click on the Ledger logo.
 
 {: .center}
-![Choice of Wallet](../images/tutorial-1-connect.png)  
+[![Choice of Wallet](../images/tutorial-1-connect.png)](../images/tutorial-1-connect.png){: style="border-bottom:none;"}  
 *Fig. 9: Choice of Wallet*
 
 Now choose the Ledger Nano to connect it to the browser.
 
 {: .center}
-![Connect the Ledger Nano](../images/tutorial-1-pairing.png)  
+[![Connect the Ledger Nano](../images/tutorial-1-pairing.png)](../images/tutorial-1-pairing.png){: style="border-bottom:none;"}  
 *Fig. 10: Connect the Ledger Nano*
 
 If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
 
 {: .center}
-![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)  
+[![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
 *Fig. 11: Application After Connecting Ledger Nano*
 
 
@@ -405,20 +405,20 @@ Now that the inputs are filled with data. It is time to transfer some ether toke
 Therefore, click on "Create Transaction" to create the transaction which will be signed by your ledger before sending it to the blockchain.  
 
 {: .center}
-![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)  
+[![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
 *Fig. 12: Application After Connecting Ledger Nano*
 
 When the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Ropsten Etherscan to review the transaction.  
 There you can find all the information concerning the transaction you have previously sent.
 
 {: .center}
-![Result after Sending Transaction](../images/tutorial-1-result.png)  
+[![Result after Sending Transaction](../images/tutorial-1-result.png)](../images/tutorial-1-result.png){: style="border-bottom:none;"}  
 *Fig. 13: Result after Sending Transaction*
 
 If you go on Etherscan you can see the information of your transaction.
 
 {: .center}
-![Result after Sending Transaction](../images/tutorial-1-etherscan.png)  
+[![Result after Sending Transaction](../images/tutorial-1-etherscan.png)](../images/tutorial-1-etherscan.png){: style="border-bottom:none;"}  
 *Fig. 14: Transaction Information on Ropsten Etherscan*
 
 

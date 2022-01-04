@@ -57,13 +57,13 @@ To develop an iOS application we have to install [Xcode](https://apps.apple.com/
 When the installation is finished, open Xcode then go to Settings => Locations.
 
 {: .center}
-![Xcode Settings](../images/Xcode-settings.png){:width="840"}   
+[![Xcode Settings](../images/Xcode-settings.png){:width="840"}](../images/Xcode-settings.png){: style="border-bottom:none;"}   
 *Fig. 1: Xcode Settings*
 
 Select the most recent version from the "Command Line Tools" dropdown.
 
 {: .center}
-![Xcode Location Settings](../images/Xcode-locations.png){:width="840"}   
+[![Xcode Location Settings](../images/Xcode-locations.png){:width="840"}](../images/Xcode-locations.png){: style="border-bottom:none;"}   
 *Fig. 2: Xcode Location Settings*
 
 Finally, install cocoapods by running the below command line in a terminal:
@@ -478,7 +478,7 @@ const styles = StyleSheet.create({
 Your folder must look like this.
 
 {: .center}
-![Folder of the Application](../images/folder-rn-ble.png){:width="210"}   
+[![Folder of the Application](../images/folder-rn-ble.png){:width="210"}](../images/folder-rn-ble.png){: style="border-bottom:none;"}   
 *Fig. 3: Folder of the Application*
 
 ### Dependencies Installation
@@ -577,15 +577,15 @@ pod update
 Launch Xcode and open the ios folder in the "ledgerApp" folder to add the "NSBluetoothAlwaysUsageDescription" key to the "info.plist".
 
 {: .center}
-![Open a Project on Xcode](../images/Xcode.png){:width="840"}   
+[![Open a Project on Xcode](../images/Xcode.png){:width="840"}](../images/Xcode.png){: style="border-bottom:none;"}   
 *Fig. 4: Open a Project on Xcode*
 
 {: .center}
-![Choose the Project](../images/Xcode-project.png){:width="840"}   
+[![Choose the Project](../images/Xcode-project.png){:width="840"}](../images/Xcode-project.png){: style="border-bottom:none;"}   
 *Fig. 5: Choose the Project*
 
 {: .center}
-![Add NSBluetoothAlwaysUsageDescription in info.plist](../images/infoplist.png){:width="840"}   
+[![Add NSBluetoothAlwaysUsageDescription in info.plist](../images/infoplist.png){:width="840"}](../images/infoplist.png){: style="border-bottom:none;"}   
 *Fig. 6: Add NSBluetoothAlwaysUsageDescription in info.plist*
 
 You can now test the application you have built.
@@ -604,14 +604,14 @@ The app testing will be executed on your smartphone, why? Because the Xcode emul
 Now to build your application on your Apple device you have to connect Xcode to an Apple account as demonstrated below.
 
 {: .center}
-![Connect Xcode to an Apple Account](../images/Xcode-signing-capabilities.png){:width="840"}   
+[![Connect Xcode to an Apple Account](../images/Xcode-signing-capabilities.png){:width="840"}](../images/Xcode-signing-capabilities.png){: style="border-bottom:none;"}   
 *Fig. 7: Connect Xcode to an Apple Account*
 
 Then connect your Apple device to your machine to build the application directly on the Apple device.
 If all goes well the device name will be displayed on the top of the Xcode window, all you have to do is click on the triangle icon on the top left corner to build the app on your Apple device.
 
 {: .center}
-![Build the Application](../images/Xcode-build.png){:width="840"}   
+[![Build the Application](../images/Xcode-build.png){:width="840"}](../images/Xcode-build.png){: style="border-bottom:none;"}   
 *Fig. 8: Build the Application*
 
 ### Trusting the Apple Development
@@ -619,8 +619,8 @@ To accept the installation of the application.
 You have to trust the "Apple development" on your device. Follow the steps below.
 
 {: .center}
-![Iphone Settings](../images/iphone-settings-1.png){:width="210"} ![Iphone Settings](../images/iphone-settings-2.png){:width="210"} ![Iphone Settings](../images/iphone-settings-3.png){:width="210"}  
-![Iphone Settings](../images/iphone-settings-4.png){:width="210"} ![Iphone Settings](../images/iphone-settings-5.png){:width="210"}   
+[![Iphone Settings](../images/iphone-settings-1.png){:width="210"}](../images/iphone-settings-1.png) [![Iphone Settings](../images/iphone-settings-2.png){:width="210"}](../images/iphone-settings-2.png) [![Iphone Settings](../images/iphone-settings-3.png){:width="210"}](../images/iphone-settings-3.png)  
+[![Iphone Settings](../images/iphone-settings-4.png){:width="210"}](../images/iphone-settings-4.png) [![Iphone Settings](../images/iphone-settings-5.png){:width="210"}](../images/iphone-settings-5.png)   
 *Fig. 9: Trusting the Apple Development*
 
 You can finally test the application by launching it.
@@ -629,7 +629,7 @@ You can finally test the application by launching it.
 When launching the application it will be displayed like the below image, you must have the Bluetooth and location activated.
 
 {: .center}
-![Launching the Application](../images/iphone-rn-ble1.png){:width="210"} ![Launching the Application](../images/iphone-rn-ble2.png){:width="210"} ![Launching the Application](../images/iphone-rn-ble3.png){:width="210"}  
+[![Launching the Application](../images/iphone-rn-ble1.png){:width="210"}](../images/iphone-rn-ble1.png) [![Launching the Application](../images/iphone-rn-ble2.png){:width="210"}](../images/iphone-rn-ble2.png) [![Launching the Application](../images/iphone-rn-ble3.png){:width="210"}](../images/iphone-rn-ble3.png)  
 *Fig. 10: Launching the Application*
 
 ### Pairing the Ledger Nano X
@@ -637,50 +637,50 @@ To pair your Ledger Nano X you must unlock it.
 
 
 {: .center}
-![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}   
+[![Ledger Code Pin](../images/ledgerCodePin.jpg){:width="420"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Ledger Code Pin*
 
 Now try to pair the Ledger Nano X to your Apple device.
 
 {: .center}
-![Pairing the Ledger Nano](../images/iphone-rn-ble4.png){:width="210"} ![Pairing the Ledger Nano](../images/iphone-rn-ble5.png){:width="210"}  
+[![Pairing the Ledger Nano](../images/iphone-rn-ble4.png){:width="210"}](../images/iphone-rn-ble4.png) [![Pairing the Ledger Nano](../images/iphone-rn-ble5.png){:width="210"}](../images/iphone-rn-ble5.png)  
 *Fig. 12: Pairing the Ledger Nano X*
 
 ### Pairing and Launching the Ethereum App on Nano X
 When pairing the pairing code will be displayed on your Ledger Nano X to confirm the pairing.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}](../images/ledgerPairing.jpg){: style="border-bottom:none;"}  
 *Fig. 13: Ledger Enter Code Pin*
 
 {: .center}
-![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 14: Ledger Application*
 
 {: .center}
-![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 15: Ledger Run Application*
 
 Now that the pairing is done, the Nano X is ready with the ethereum application.
 If all goes well you must see the address of your ethereum account displayed.
 
 {: .center}
-![Address Account Displayed on Smartphone](../images/iphone-rn-ble6.png){:width="210px"}   
+[![Address Account Displayed on Smartphone](../images/iphone-rn-ble6.png){:width="210px"}](../images/iphone-rn-ble6.png){: style="border-bottom:none;"}   
 *Fig. 16: Address Account Displayed on Smartphone*
 
 ### Verify the Address
 For security purposes, we display on your Nano X the same ethereum address for you to confirm.
 
 {: .center}
-![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}   
+[![Ledger Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 17: Ledger Verify Screen*
 
 {: .center}
-![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}   
+[![Ledger Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 18: Ledger Verify Address Screen*
 
 {: .center}
-![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}   
+[![Ledger Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 19: Ledger Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger on an Apple device!!!

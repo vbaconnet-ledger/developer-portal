@@ -20,7 +20,7 @@ To send some ethers on the Ropsten network, go to one of the ropsten faucet webs
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
 
 {: .center}
-![Ropsten Ethereum Faucet](../images/tutorial-1-faucet1.png){:width="840"}   
+[![Ropsten Ethereum Faucet](../images/tutorial-1-faucet1.png){:width="840"}](../images/tutorial-1-faucet1.png){: style="border-bottom: none;"}   
 *Fig. 1: Ropsten Ethereum Faucet*
 
 
@@ -29,7 +29,7 @@ Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your
 Go to the [Dimensions Network](https://faucet.dimensions.network/) website put your Wallet Public Key on the input, do the captcha and click on "Send me test Ether"
 
 {: .center}
-![Ropsten Ethereum Faucet](../images/tutorial-1-faucet2.png){:width="840"}   
+[![Ropsten Ethereum Faucet](../images/tutorial-1-faucet2.png){:width="840"}](../images/tutorial-1-faucet2.png){: style="border-bottom: none;"}   
 *Fig. 2: Ropsten Ethereum Faucet*
 
 ## Web App Bluetooth (only Nano X)
@@ -60,7 +60,7 @@ Dive into the folder named “src” to modify/create the three files. The files
 Your folder must look like this.
 
 {: .center}
-![Folder of the Application](../images/tutorial-2-folder.png){:width="210"}   
+[![Folder of the Application](../images/tutorial-2-folder.png){:width="210"}](../images/tutorial-2-folder.png){: style="border-bottom: none;"}   
 *Fig. 1: Folder of the Application*
 
 ### Code Implementation
@@ -396,7 +396,7 @@ npm run start
 Now the application is up and running. Open the browser and go to [localhost:3000](http://localhost:3000), it will display :
 
 {: .center}
-![Application Running on Browser](../images/tutorial-2-connect.png){:width="840"}   
+[![Application Running on Browser](../images/tutorial-2-connect.png){:width="840"}](../images/tutorial-2-connect.png){: style="border-bottom: none;"}   
 *Fig. 2: Application Running on Browser*  
 
 ### Launch Ethereum App
@@ -404,29 +404,29 @@ Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 
 {: .center}
-![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom: none;"}  
 *Fig. 3: Ledger Enter Code Pin*
 
 {: .center}
-![Ledger Application](../images/ledgerEth.jpg){:width="480px"}   
+[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom: none;"}   
 *Fig. 4: Ledger Application*
 
 {: .center}
-![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom: none;"}   
 *Fig. 5: Ledger Run Application*
 
 ### Connect Your Ledger to the Application
 Now you can click on the button and a popup will be prompt. Choose your Ledger Nano X and click connexion
 
 {: .center}
-![Connect the Ledger with Bluetooth](../images/tutorial-2-pairing.png){:width="840"}   
+[![Connect the Ledger with Bluetooth](../images/tutorial-2-pairing.png){:width="840"}](../images/tutorial-2-pairing.png){: style="border-bottom: none;"}   
 *Fig. 6: Connect the Ledger with Bluetooth*
 
 ### Read the data of a Smart Contract
 Now you can click on the button "Get Data" to read the data of the smart contract. Then the data will be displayed on the screen.
 
 {: .center}
-![Get data from a smart contract](../images/tutorial-2-getdata.png){:width="840"}   
+[![Get data from a smart contract](../images/tutorial-2-getdata.png){:width="840"}](../images/tutorial-2-getdata.png){: style="border-bottom: none;"}   
 *Fig. 7: Get data from a smart contract*
 
 
@@ -434,22 +434,22 @@ Now you can click on the button "Get Data" to read the data of the smart contrac
 Now instead of reading data, we will overwrite the data by calling a function of the smart contract which is "UpdateData".
 
 {: .center}
-![Change data from a smart contract](../images/tutorial-2-changedata.png){:width="840"}   
+[![Change data from a smart contract](../images/tutorial-2-changedata.png){:width="840"}](../images/tutorial-2-changedata.png){: style="border-bottom: none;"}    
 *Fig. 8: Change data from a smart contract*
 
 ### Verify the Address on Your Ledger Device
 For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-![Ledger Review Screen](../images/ledger-tx-review.jpg){:width="320"} ![Ledger Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}   
+[![Ledger Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Ledger Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jp)   
 *Fig. 9: Ledger Review Screen  \ Fig. 10: Ledger Amount Screen*
 
 {: .center}
-![Ledger Address Screen](../images/ledger-tx-address.jpg){:width="320"} ![Ledger Network Screen](../images/ledger-tx-network.jpg){:width="320"}   
+[![Ledger Address Screen](../images/ledger-tx-address.jpg){:width="320"}](../images/ledger-tx-address.jpg) [![Ledger Network Screen](../images/ledger-tx-network.jpg){:width="320"}](../images/ledger-tx-network.jpg)   
 *Fig. 11: Ledger Address Screen   \   Fig. 12: Ledger Network Screen*
 
 {: .center}
-![Ledger Max Fees Screen](../images/ledger-tx-fees.jpg){:width="320"} ![Ledger Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="320"}   
+[![Ledger Max Fees Screen](../images/ledger-tx-fees.jpg){:width="320"}](../images/ledger-tx-fees.jpg) [![Ledger Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="320"}](../images/ledger-tx-accept.jpg)   
 *Fig. 13: Ledger Max Fees Screen   \  Fig. 14: Ledger Accept and Send Screen*
 
 
@@ -462,13 +462,13 @@ For security reasons, the address will also be displayed to your Ledger Nano X t
 By updating the data a transaction is created to change this data, it can be verified on Ropsten Etherscan.
 
 {: .center}
-![Ropsten Etherscan](../images/tutorial-2-etherscan1.png){:width="840"}   
+[![Ropsten Etherscan](../images/tutorial-2-etherscan1.png){:width="840"}](../images/tutorial-2-etherscan1.png){: style="border-bottom: none;"}    
 *Fig. 15: Ropsten Etherscan*
 
 Wait till the status passes to Success.
 
 {: .center}
-![Ropsten Etherscan](../images/tutorial-2-etherscan2.png){:width="840"}   
+[![Ropsten Etherscan](../images/tutorial-2-etherscan2.png){:width="840"}](../images/tutorial-2-etherscan2.png){: style="border-bottom: none;"}    
 *Fig. 16: Ropsten Etherscan*
 
 ### Verify the update of data
@@ -476,11 +476,11 @@ Wait till the status passes to Success.
 Finally, to verify if the update was done in the previous section. Return to your web application and again click on "Get data".
 
 {: .center}
-![Verify the data](../images/tutorial-2-getdata2.png){:width="840"}   
+[![Verify the data](../images/tutorial-2-getdata2.png){:width="840"}](../images/tutorial-2-getdata2.png){: style="border-bottom: none;"}    
 *Fig. 17: Verify the data*
 
 {: .center}
-![Verify the data](../images/tutorial-2-getdata3.png){:width="840"}   
+[![Verify the data](../images/tutorial-2-getdata3.png){:width="840"}](../images/tutorial-2-getdata3.png){: style="border-bottom: none;"}    
 *Fig. 18: Verify the data*
 
 Congratulations, you have successfully built your first application connected with Ledger !!!
