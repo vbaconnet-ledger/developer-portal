@@ -14,7 +14,10 @@ layout: doc
 Live Apps are displayed in the discover section of Ledger Live.    
 
 <!---- image ---->
-[![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)     
+
+{: .center}
+[![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)    
+
 <!--------------->
    
     
@@ -22,7 +25,7 @@ Depending on whether you have a **DApp** or a **non-DApp** to insert into Ledger
 See the left or right part respectively. 
 
 <!---- image ---->
-[![Discover section](../images/live-app.jpg)](../images/live-app.jpg)     
+[![Discover section](../images/live-app.jpg)](../images/live-app.jpg)   
 <!--------------->
 
 - We recommend you get in touch with us on the [Ledger Discord server](https://discord.gg/Ledger) to discuss your project.  
