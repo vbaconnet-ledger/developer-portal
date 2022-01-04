@@ -22,6 +22,8 @@ If the display of those parameters (Token, smart contract management) is not pos
 
 To implement this requirement it is recommended to have a setting menu with the possibility to enable/disable contract data.
 
+If blind signing is implemented, it must be off by default.
+
 You can find implementation example inside [Ethereum](https://github.com/LedgerHQ/app-ethereum), [Solana](https://github.com/LedgerHQ/app-solana) or [Elrond](https://github.com/LedgerHQ/app-elrond) code base.
 
 ## Wallet requirements
@@ -37,4 +39,4 @@ If this is not the case, you need to implement a blind signature setting on the 
 
 ## Staking feature
 
-For every staking operation, ledger users must be able to verify the amount, validator/nominator address(es)
+For every staking operation, Ledger users must be able to verify the amount, validator/nominator address(es)

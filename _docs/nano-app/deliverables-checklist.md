@@ -45,12 +45,9 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 ### 5 - Nano app specifications
 
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
-- UI Flow of how your application works
-- Video of your application running on the Ledger device
-    -   Verify public address on the Ledger device
-    -   Display transaction information before allowing signature
-    -   Reject a transaction on the Ledger device
-    -   Sign a transaction on the Ledger device
+- [UI Flow](../nano-app/ui-flow-video/#ui-flow) of how your application works
+- [Video](../nano-app/ui-flow-video/#video) of your application running on the Ledger device
+
 
 
 ### 6 - Self Declaration

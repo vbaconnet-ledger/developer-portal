@@ -22,6 +22,14 @@ Please create your flow following the Ethereum example.
 
 ## Video
 
+Video of your application running on the Ledger device
+- Verify public address on the Ledger device
+- Display transaction information before allowing signature
+- Reject a transaction on the Ledger device
+- Sign a transaction on the Ledger device
+
+
+
 #### ---------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Tech Writer notes - UI Flow

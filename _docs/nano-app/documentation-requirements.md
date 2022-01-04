@@ -19,7 +19,7 @@ layout: doc
 
 Documentation is important for the Approval of your app, as your app will not be released without it.
 
-It is required for third party teams to provide and host a complete tutorial that will guide users before the app is released on the Ledger Manager. Here are guidelines for writing such documentation and it should be followed very carefully.
+It is required for third party teams to provide and host a complete tutorial for users before the app is released on the Ledger Manager. Here are the rules for writing this documentation and it should be followed very carefully.
 
 <!--  -->
 {% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}
@@ -35,7 +35,7 @@ Your documentation must follow the requirements below  so that Ledger uses a sol
 - Next steps: link to third party documentation and where to get support.
 
 
-## Content guidelines
+## Content
 
 You will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
 - Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
@@ -55,7 +55,7 @@ You will write and host an article ([example](https://blog.cyberrepublic.org/202
 
 In addition: The final version of the google doc will be published on: \<insert URL here> 
 
-## Style guidelines
+## Style
 
 - Write short and concise sentences.
 - Write clear section titles.
