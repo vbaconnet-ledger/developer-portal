@@ -19,29 +19,15 @@
 
 - title: Requirements
   docs:
-  subfolderitems:
-    - title: Security
-      docs:
-      - nano-app/secure-app
-    - title: Function
-      docs:
-      - nano-app/functional-requirements
-    - title: Documentation 
-      docs:
-      - nano-app/documentation-requirements
-    - title: Support and maintenance 
-      docs:
-      - nano-app/support-maintenance-requirements
-    - title: Nano App Specifications 
-      docs:
-      - nano-app/design-requirements
-      - nano-app/ui-flow-video
-    - title: Marketing 
-      docs:
-      - nano-app/marketing-requirements
-    - title: Warranty and liability
-      docs:
-      - nano-app/warranty-disclaimer
+  - nano-app/secure-app
+  - nano-app/functional-requirements
+  - nano-app/companion-requirements
+  - nano-app/documentation-requirements
+  - nano-app/support-maintenance-requirements
+  - nano-app/design-requirements
+  - nano-app/ui-flow-video
+  - nano-app/marketing-requirements
+  - nano-app/warranty-disclaimer
 
 - title: Guidelines
   docs:

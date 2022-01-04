@@ -1,5 +1,5 @@
 ---
-title: Developing Secure Ledger Apps
+title: Security requirements
 subtitle: Ensuring your app passes the security review
 tags: []
 category: Nano Application

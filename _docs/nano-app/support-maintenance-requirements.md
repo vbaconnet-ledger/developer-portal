@@ -23,8 +23,15 @@ If you use community channels for support, you must ensure that it is moderated.
 
 ## Maintenance Requirement Summary
 
-|    Release Type       |          Unaudited     |          Audited       &          Public        |
-|-----------------------|------------------------|------------------------------------------------|
-|  This requirement <br> for subsequent releases is: |  They are done by PR only.<br> No other action required    |   They <b>must go through a new</b> security audit and a functional review|  
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+You are responsible of the maintenance of your Nano App. 
 
 To have your application updates released on time, we recommend you inform Ledger as soon as possible and submit the changes at least one month before the desired release date.
+
+
+|    Release Type       |          Unaudited     |          Audited       &          Public        |
+|-----------------------|------------------------|------------------------------------------------|
+|  The updates: |  are done by PR only.<br> No other action required    |   <b>must go through a new</b> security audit and a functional review|  

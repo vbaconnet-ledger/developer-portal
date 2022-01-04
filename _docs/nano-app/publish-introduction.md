@@ -37,6 +37,14 @@ Depending on the release type, different deliverables are required to be include
 </div>
 <!-- --------------------------------- -->
   
+<!-- ------------- Image ------------- -->
+<div class="uk-text-center">
+    <a href="../images/listing-program-legend.png" style="border-bottom:none;">
+        <img src="../images/listing-program-legend.png" width="200" class="align-center" alt="Ledger listing program deliverables" />
+    </a>
+</div>
+<!-- --------------------------------- -->
+
 These are the Ledger reviews per release type:
   
 <!-- ------------- Image ------------- -->
@@ -46,3 +54,4 @@ These are the Ledger reviews per release type:
     </a>
 </div>
 <!-- --------------------------------- -->
+
