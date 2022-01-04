@@ -11,7 +11,7 @@ layout: doc
   <iframe width="560" height="315" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Live Apps are displayed in the discover section of Ledger Live.  -G-     
+Live Apps are displayed in the discover section of Ledger Live.    
 
 <!---- image ---->
 [![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)     
