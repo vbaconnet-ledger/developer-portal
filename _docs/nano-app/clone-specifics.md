@@ -1,5 +1,5 @@
 ---
-title: Specificities
+title: Specifics
 subtitle:
 tags: []
 category: Nano Application

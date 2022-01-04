@@ -8,6 +8,14 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+You are required to read and agree to the terms below.
+
 The publication of a third-party developed application on Ledger Manager (“the Service”) is provided by Ledger on an “as-is” and “as-available” basis. Ledger does not warrant that it will be accurate, error-free of uninterrupted. 
 
 The Service is subject to change without notice, which may require that the app you have developed undergoes an update to ensure ongoing compatibility with Ledger software, services and hardware products. 

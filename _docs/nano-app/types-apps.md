@@ -38,7 +38,7 @@ Let’s see the typical end-to-end architecture of a BOLOS application, in the c
 
 Three pieces of software are required:
 - A BOLOS application, written in C, running on a Ledger device
-- The wallet app, with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
+- The with business logic and typically a GUI, running on a computer or a phone connected to the Ledger device
 - A transaction explorer that interfaces between the front-end and the cryptocurrency daemon, running either locally (in the case of a full node) or remotely (light wallet)
 
 If you’re not developing an app adding support for a cryptocurrency, then you can ignore the 3rd piece. Depending on your use case, the wallet app might be a simple daemon or a command line tool, without a GUI.

@@ -24,23 +24,6 @@
   docs:
   - nano-app/secure-app
 
-- title: Display
-  docs:
-  - nano-app/display-management
-  - nano-app/advanced-display-management
-  - nano-app/low-level-display-management
-
-- title: Memory
-  docs:
-  - nano-app/persistent-storage
-  - nano-app/position-independent-code
-  - nano-app/memory-alignment
-
-- title: I/O  
-  docs:
-  - nano-app/interaction-bolos-apps
-  - nano-app/application-structure
-
 - title: Function 
   docs:
   - nano-app/functional-requirements
@@ -66,9 +49,26 @@
   docs:
   - nano-app/warranty-disclaimer
 
+- title: Display
+  docs:
+  - nano-app/display-management
+  - nano-app/advanced-display-management
+  - nano-app/low-level-display-management
+
+- title: Memory
+  docs:
+  - nano-app/persistent-storage
+  - nano-app/position-independent-code
+  - nano-app/memory-alignment
+
+- title: I/O  
+  docs:
+  - nano-app/interaction-bolos-apps
+  - nano-app/application-structure
+
 - title: Clone applications
   docs:
-  - nano-app/clones-specificities
+  - nano-app/clone-specifics
   - nano-app/eth-clones
 
 - title: Learn - Personal security devices

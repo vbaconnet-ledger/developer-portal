@@ -8,9 +8,11 @@ author:
 layout: doc
 ---
 
+## Support Requirement Summary
 
-
-## Support
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
 Ledger does not provide support for third party applications. Third party teams must host a complete tutorial to guide users before the app is released on the Ledger Live Manager. Please follow the [documentation-requirements](../documentation-requirements)
 
@@ -19,7 +21,10 @@ Along with your tutorial, please provide information that will allow the Ledger 
 
 If you use community channels for support, you must ensure that it is moderated.
 
-## Maintenance
+## Maintenance Requirement Summary
 
-After your application  release, every change made must go through a new security audit and a functional review before being released.
-To have your application updates released on time, we advise you to inform Ledger’s team as soon as possible and submit the changes at least one month before the desired release date.
+|    Release Type       |          Unaudited     |          Audited       &          Public        |
+|-----------------------|------------------------|------------------------------------------------|
+|  This requirement <br> for subsequent releases is: |  They are done by PR only.<br> No other action required    |   They <b>must go through a new</b> security audit and a functional review|  
+
+To have your application updates released on time, we recommend you inform Ledger as soon as possible and submit the changes at least one month before the desired release date.

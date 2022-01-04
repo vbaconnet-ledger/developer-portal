@@ -8,6 +8,13 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+
 ## UI Flow
 
 Please create your flow following the Ethereum example.

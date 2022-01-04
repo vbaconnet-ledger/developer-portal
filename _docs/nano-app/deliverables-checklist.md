@@ -26,12 +26,12 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 - Postal address
 - Email address
 
-### 2 - Nano app and environment
+### 2 - Nano app and Companion Wallet
 
 - Nano App source code (GitHub repository),   
-- and either  
-  - a link to a CLI repository, or
-  - a companion wallet running on Windows/MacOS/Linux (mandatory for Public release)
+- and its Companion Wallet: either  
+  - a link to the CLI repository, or
+  - a link to the GUI running on Windows/MacOS/Linux (mandatory for Public release)
 
 ### 3 - Documentation
 
@@ -66,7 +66,7 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 
 **I certify that**:  
 - My app repository has a test folder that contains the Unit Tests list and the functional Tests
-- The App has been fully tested with a companion app or a CLI
+- The App has been fully tested with a companion wallet (CLI or GUI)
 
 #### Compliance
 

@@ -8,6 +8,13 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+
 ## Requirements Note --
 The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
 You must download the template on the page, fill it it with your Icon, and include filled template in your app submission form.

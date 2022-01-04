@@ -1,5 +1,5 @@
 ---
-title: Documentation requirements
+title: Documentation
 subtitle: Ensuring your documentation is well documented
 tags: [writing documentation, nano app documentation]
 category: Nano Application
@@ -8,6 +8,11 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
 
 ## Introduction

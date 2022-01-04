@@ -8,7 +8,13 @@ author:
 layout: doc
 ---
 
-## Requirements Note --
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |  Highly recommended      |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+## Requirement Note --
 
 Your Nano App must comply with all the Security requirements (Updated in Sep 2021). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (The lst is not exhaustive)
 

@@ -6,6 +6,11 @@
   icon: toolkit
 
 - title: Requirements
-  desc: Including Guidelines and Tips
-  doc: nano-app/display-management
+  desc: Needed to submit your App
+  doc: nano-app/secure-app
   icon: requirements
+
+- title: Guidelines
+  desc: Including Tips
+  doc: nano-app/display-management
+  icon: pencil

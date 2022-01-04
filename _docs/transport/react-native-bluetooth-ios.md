@@ -1,7 +1,7 @@
 ---
 title: React Native Bluetooth on iOS (Nano X only)
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true

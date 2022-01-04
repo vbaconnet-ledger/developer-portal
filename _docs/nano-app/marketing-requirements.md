@@ -8,6 +8,13 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    Not needed    |   Recommended     |   <b>Mandatory</b>     |
+
+
 ## Marketing plan 
 
 For public releases of your Nano Application, this is what is made:
