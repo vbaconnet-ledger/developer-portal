@@ -44,7 +44,7 @@ Ledger personal security devices allows users to store cryptographic secrets and
 Join our [Discord server](https://discord.gg/Ledger) and introduce yourself to the developer community in the **#introductions** channel.
 
 ### Process & Requirements
-Make sure you understand the [Process](../publish-introduction/) and follow the [Requirements](../secure-app) starting here. The [Guidelines](../display-management) will also help you on certain technical topics. 
+Make sure you understand the [Process](../publish-introduction/) and follow the [Requirements](../requirements-intro) starting here. The [Guidelines](../display-management) will also help you on certain technical topics. 
 
 ### Set up the BOLOS development environment
 In order to build or compile BOLOS applications for Ledger devices, the appropriate environment must be set up. This environment consists in an SDK and two compilers. The environment is all set in [a Docker image](../build).
