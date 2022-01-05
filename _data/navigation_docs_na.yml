@@ -19,6 +19,7 @@
 
 - title: Requirements
   docs:
+  - nano-app/requirements-intro
   - nano-app/secure-app
   - nano-app/functional-requirements
   - nano-app/companion-requirements
