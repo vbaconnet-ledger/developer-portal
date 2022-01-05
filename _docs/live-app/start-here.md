@@ -15,7 +15,7 @@ Live Apps are displayed in the discover section of Ledger Live.
 
 <!---- image ---->
 
-{: .center}
+{: .uk-text-center}
 [![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)    
 
 <!--------------->
