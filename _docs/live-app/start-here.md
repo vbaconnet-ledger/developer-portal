@@ -11,14 +11,25 @@ layout: doc
   <iframe width="560" height="315" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-A Live App is an app available in the discover section of the Ledger Live Application. To transform your DApp or your classical application into a Live App, this is what you will need to do:
+Live Apps are displayed in the discover section of Ledger Live.    
 
 <!---- image ---->
-[![Discover section](../images/live-app.jpg)](../images/live-app.jpg)     
+
+{: .uk-text-center}
+[![Discover section](../images/discover-section.jpg)](../images/discover-section.jpg)    
+
+<!--------------->
+   
+    
+Depending on whether you have a **DApp** or a **non-DApp** to insert into Ledger Live, this diagram summarizes what you need to do.  
+See the left or right part respectively. 
+
+<!---- image ---->
+[![Discover section](../images/live-app.jpg)](../images/live-app.jpg)   
 <!--------------->
 
-
-We recommend you'd get in touch with us on [the Ledger Discord server](https://discord.gg/Ledger) to discuss your project.
+- We recommend you get in touch with us on the [Ledger Discord server](https://discord.gg/Ledger) to discuss your project.  
+- Your integration work is detailed in the sections below. Click on the corresponding card to continue.  
 
 <div style="text-align:center;">
   <div class="row justify-content-around">
