@@ -45,8 +45,6 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 
 **I certify that**:  
 - I have read the [coding guidelines](../display-management)
-- I have read the [maintenance page](../maintenance-requirements)
-- I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
 
 ### 3 - Nano app and Companion Wallet
@@ -66,16 +64,24 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 - I have read the [support page](../support-requirements)
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
-### 6 - Nano app specifications
+### 6 - Maintenance
+
+- I have read the [maintenance page](../maintenance-requirements) and will abide to the requirements
+
+### 7 - Nano app specifications
 
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
 - [UI Flow](../ui-flow-video/#ui-flow) of how your application works
 - [Video](../ui-flow-video/#video) of your application running on the Ledger device
 
-### 7 - Marketing 
+### 8 - Marketing 
 
-- Marketing plan
 - I have read the [marketing page](../marketing-requirements) 
+- Marketing plan
+
+### 9 - Warranty and liability
+
+- I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
 
 
