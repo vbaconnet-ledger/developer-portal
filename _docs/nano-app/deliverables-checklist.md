@@ -47,32 +47,33 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 - I have read the [coding guidelines](../display-management)
 
 
-### 3 - Nano app and Companion Wallet
+### 3 - Nano app 
 
-- Nano App source code (GitHub repository),   
-- and its Companion Wallet: either  
+- Nano App source code (GitHub repository)
+- Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
+- [UI Flow](../ui-flow-video/#ui-flow) of how your application works
+- [Video](../ui-flow-video/#video) of your application running on the Ledger device
+
+
+### 4 - Companion Wallet
+
+- A link to the Companion Wallet: either  
   - a link to the CLI repository, or
   - a link to the GUI running on Windows/MacOS/Linux (mandatory for Public release)
 
-### 4 - Documentation
+### 5 - Documentation
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
 
-### 5 - Support
+### 6 - Support
 
 - I have read the [support page](../support-requirements)
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
-### 6 - Maintenance
+### 7 - Maintenance
 
 - I have read the [maintenance page](../maintenance-requirements) and will abide to the requirements
-
-### 7 - Nano app specifications
-
-- Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
-- [UI Flow](../ui-flow-video/#ui-flow) of how your application works
-- [Video](../ui-flow-video/#video) of your application running on the Ledger device
 
 ### 8 - Marketing 
 
