@@ -27,7 +27,8 @@
   - nano-app/functional-requirements
   - nano-app/companion-requirements
   - nano-app/documentation-requirements
-  - nano-app/support-maintenance-requirements
+  - nano-app/support-requirements
+  - nano-app/maintenance-requirements
   - nano-app/design-requirements
   - nano-app/ui-flow-video
   - nano-app/marketing-requirements
