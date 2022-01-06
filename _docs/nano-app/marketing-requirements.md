@@ -1,5 +1,5 @@
 ---
-title: 8 - Marketing requirements
+title: 8 - Marketing
 subtitle:
 tags: [twitter, retweet, blog post, press release]
 category: Nano Application

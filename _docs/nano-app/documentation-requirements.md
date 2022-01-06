@@ -1,5 +1,5 @@
 ---
-title: 6 - Documentation requirements
+title: 6 - Documentation
 subtitle: Ensuring your documentation is well documented
 tags: [writing documentation, nano app documentation]
 category: Nano Application

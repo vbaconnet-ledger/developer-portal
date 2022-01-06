@@ -1,5 +1,5 @@
 ---
-title: 2- Security requirements
+title: 2- Security
 subtitle: Ensuring your app passes the security review
 tags: []
 category: Nano Application

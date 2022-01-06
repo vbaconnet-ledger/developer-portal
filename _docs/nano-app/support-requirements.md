@@ -1,5 +1,5 @@
 ---
-title: 7 - Support requirements
+title: 7 - Support
 subtitle:
 tags: []
 category: Nano Application

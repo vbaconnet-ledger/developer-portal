@@ -1,5 +1,5 @@
 ---
-title: 4 - Companion wallet requirements
+title: 4 - Companion wallet
 subtitle:
 tags: [app name, ticker, companion wallet, staking]
 category: Nano Application
