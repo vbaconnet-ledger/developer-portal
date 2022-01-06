@@ -45,8 +45,7 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 
 **I certify that**:  
 - I have read the [coding guidelines](../display-management)
-- I have read the [marketing page](../marketing-requirements) 
-- I have read the [support and maintenance page](../support-maintenance-requirements)
+- I have read the [maintenance page](../maintenance-requirements)
 - I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 
 
@@ -59,11 +58,12 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 
 ### 4 - Documentation
 
-- Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-maintenance-requirements))
+- Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
 
 ### 5 - Support
 
+- I have read the [support page](../support-requirements)
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
 ### 6 - Nano app specifications
@@ -71,6 +71,11 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
 - [UI Flow](../ui-flow-video/#ui-flow) of how your application works
 - [Video](../ui-flow-video/#video) of your application running on the Ledger device
+
+### 7 - Marketing 
+
+- Marketing plan
+- I have read the [marketing page](../marketing-requirements) 
 
 
 
