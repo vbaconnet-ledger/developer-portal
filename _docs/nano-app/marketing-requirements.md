@@ -14,6 +14,7 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    Not needed    |   Recommended     |   <b>Mandatory</b>     |
 
+The requirement is to submit a Google Doc containing the marketing plan that includes roadmap, dates, and actions. See details below.
 
 ## Marketing actions
 

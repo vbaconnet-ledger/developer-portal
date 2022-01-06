@@ -3,7 +3,7 @@ title: Warranty and liability disclaimer
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application
-toc:
+toc: true
 author:
 layout: doc
 ---
@@ -14,7 +14,9 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
-You are required to read and agree to the terms below.
+The requirement is to read and agree to the terms below.
+
+## Disclaimer
 
 The publication of a third-party developed application on Ledger Manager (“the Service”) is provided by Ledger on an “as-is” and “as-available” basis. Ledger does not warrant that it will be accurate, error-free of uninterrupted. 
 

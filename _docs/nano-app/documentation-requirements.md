@@ -14,6 +14,7 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
+The requirement is to submit documentation in a Google Doc format for review according to instructions below. 
 
 ## Introduction
 
@@ -37,7 +38,7 @@ Your documentation must follow the requirements below  so that Ledger uses a sol
 
 ## Content
 
-You will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
+The article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) must describe:
 - Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
 - Requirements: What’s needed before starting.
 - Installation instructions: How to install the app using Ledger Live.
@@ -52,8 +53,7 @@ You will write and host an article ([example](https://blog.cyberrepublic.org/202
     - Document all the steps and form fields to fill.
     - Explicitly instruct to verify transaction details on the device display, before confirming and signing it.
 - Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities). 
-
-In addition: The final version of the google doc will be published on: \<insert URL here> 
+- Since you will host the final version of the document you are required to prepare the URL address and include it clearly in the Google Doc.
 
 ## Style
 

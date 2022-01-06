@@ -14,6 +14,9 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |  Highly recommended      |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
+
+The requirement is to read and apply instructions below.
+
 ## Requirement Note --
 
 Your Nano App must comply with all the Security requirements (Updated in Sep 2021). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (The lst is not exhaustive)

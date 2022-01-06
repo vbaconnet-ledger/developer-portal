@@ -14,6 +14,7 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
+You are required to submit a UI flow (file) and a video (URL) as described below.
 
 ## UI Flow
 
