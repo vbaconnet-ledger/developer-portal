@@ -1,5 +1,5 @@
 ---
-title: Nano App
+title: 3 - Nano App
 subtitle:
 tags: [app name, ticker, staking]
 category: Nano Application
