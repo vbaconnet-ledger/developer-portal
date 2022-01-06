@@ -1,5 +1,5 @@
 ---
-title: 9 - Warranty and liability disclaimer
+title: 9 - Warranty and liability
 subtitle:
 tags: [publish an app, publish, release app, release, release process]
 category: Nano Application

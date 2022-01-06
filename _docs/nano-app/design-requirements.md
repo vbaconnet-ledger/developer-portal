@@ -1,5 +1,5 @@
 ---
-title: "* Design requirements"
+title: "* Design"
 subtitle:
 tags: [icon, logo, app icon, device icon, manager icon, graphics, glyphs]
 category: Nano Application
