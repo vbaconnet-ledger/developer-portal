@@ -26,30 +26,20 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 - Postal address
 - Email address
 
-### 2 - Self Declaration
 
-#### Security
+### 2 - Security
 
-**I certify that**:  
 - I have read the [security guidelines](../secure-app)  
 - I have used the Clang Static Analyzer in my GitHub workflow 
 - All vulnerabilities have been detected and corrected
 
-#### Test
-
-**I certify that**:  
-- My app repository has a test folder that contains the Unit Tests list and the functional Tests
-- The App has been fully tested with a companion wallet (CLI or GUI)
-
-#### Compliance
-
-**I certify that**:  
-- I have read the [coding guidelines](../display-management)
-
 
 ### 3 - Nano app 
 
+- I have read the [coding guidelines](../display-management)
 - Nano App source code (GitHub repository)
+- My app repository has a test folder that contains the Unit Tests list and the functional Tests
+- The App has been fully tested with a companion wallet (CLI or GUI)
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
 - [UI Flow](../ui-flow-video/#ui-flow) of how your application works
 - [Video](../ui-flow-video/#video) of your application running on the Ledger device
