@@ -1,5 +1,5 @@
 ---
-title: "* UI flow and video"
+title: UI flow and video
 subtitle:
 tags: [nano app, nano application, applications, deliverables]
 category: Nano Application

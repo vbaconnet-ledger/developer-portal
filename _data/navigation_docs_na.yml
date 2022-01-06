@@ -21,9 +21,12 @@
   docs:
   - nano-app/requirements-intro
   - nano-app/secure-app
-  - nano-app/functional-requirements
-  - nano-app/design-requirements
-  - nano-app/ui-flow-video
+  - subfolderitems:
+    - title: 3 - Nano App
+      docs:
+      - nano-app/functional-requirements
+      - nano-app/design-requirements
+      - nano-app/ui-flow-video
   - nano-app/companion-requirements
   - nano-app/maintenance-requirements
   - nano-app/documentation-requirements
