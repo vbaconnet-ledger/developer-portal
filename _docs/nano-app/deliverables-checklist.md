@@ -47,9 +47,7 @@ Make sure you have followed our documentation and guidelines ([see declaration](
 
 ### 4 - Companion Wallet
 
-- A link to the Companion Wallet: either  
-  - a link to the CLI repository, or
-  - a link to the GUI running on Windows/MacOS/Linux (mandatory for Public release)
+- A link to the Companion Wallet
 
 
 ### 5 - Maintenance
