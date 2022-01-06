@@ -12,7 +12,7 @@ layout: doc
 
 |    Release Type       |          Unaudited     |          Audited       |          Public        |
 |-----------------------|------------------------|------------------------|------------------------|
-|  This requirement is: |  Highly recommended      |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+|  This requirement is: |  Highly recommended    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
 
 The requirement is to read and apply instructions below.

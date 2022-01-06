@@ -1,5 +1,5 @@
 ---
-title: Functional requirements
+title: Nano App
 subtitle:
 tags: [app name, ticker, staking]
 category: Nano Application
@@ -8,6 +8,11 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
 ## Guidelines on app name and ticker
 
@@ -25,11 +30,6 @@ To implement this requirement it is recommended to have a setting menu with the 
 If blind signing is implemented, it must be off by default.
 
 You can find implementation example inside [Ethereum](https://github.com/LedgerHQ/app-ethereum), [Solana](https://github.com/LedgerHQ/app-solana) or [Elrond](https://github.com/LedgerHQ/app-elrond) code base.
-
-## Wallet requirements
-
-The wallet must give an option to verify the receiving address on the Nano device.
-It should also have an affiliate link next connect with ledger option
 
 ## Smart contracts & token support
 
