@@ -51,24 +51,29 @@ Make sure you have followed our documentation and guidelines ([see declaration](
   - a link to the CLI repository, or
   - a link to the GUI running on Windows/MacOS/Linux (mandatory for Public release)
 
-### 5 - Documentation
+
+### 5 - Maintenance
+
+- I have read the [maintenance page](../maintenance-requirements) and will abide to the requirements
+
+
+### 6 - Documentation
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
 
-### 6 - Support
+
+### 7 - Support
 
 - I have read the [support page](../support-requirements)
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
-### 7 - Maintenance
-
-- I have read the [maintenance page](../maintenance-requirements) and will abide to the requirements
 
 ### 8 - Marketing 
 
 - I have read the [marketing page](../marketing-requirements) 
 - Marketing plan
+
 
 ### 9 - Warranty and liability
 

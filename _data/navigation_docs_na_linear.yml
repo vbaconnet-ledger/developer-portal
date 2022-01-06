@@ -25,12 +25,12 @@
   - nano-app/requirements-intro
   - nano-app/secure-app
   - nano-app/functional-requirements
-  - nano-app/companion-requirements
-  - nano-app/documentation-requirements
-  - nano-app/support-requirements
-  - nano-app/maintenance-requirements
   - nano-app/design-requirements
   - nano-app/ui-flow-video
+  - nano-app/companion-requirements
+  - nano-app/maintenance-requirements
+  - nano-app/documentation-requirements
+  - nano-app/support-requirements
   - nano-app/marketing-requirements
   - nano-app/warranty-disclaimer
 
