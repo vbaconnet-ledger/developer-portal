@@ -18,13 +18,13 @@ You are required to submit a UI flow (file) and a video (URL) as described below
 
 ## UI Flow
 
-Please create your flow following the Ethereum example.
+Please create your flow following [the Ethereum example](../docs/eth-flow.pdf).
 
 
 ## Video
 
-Video of your application running on the Ledger device
-- Verify public address on the Ledger device
-- Display transaction information before allowing signature
+On the video demo you must: 
+- Verify a public address on the Ledger device
+- Display the transaction information before allowing the signature
 - Reject a transaction on the Ledger device
 - Sign a transaction on the Ledger device
