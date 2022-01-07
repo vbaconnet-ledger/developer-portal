@@ -18,7 +18,7 @@ You are required to submit a UI flow (file) and a video (URL) as described below
 
 ## UI Flow
 
-Please create your flow following the Ethereum example.
+Please create your flow following the [Ethereum example](../docs/eth-flow.pdf).
 
 
 ## Video
