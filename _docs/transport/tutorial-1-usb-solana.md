@@ -13,42 +13,21 @@ The purpose of the application is to transfer sol from your solana account on yo
 
 ## Prerequisites
 To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
-### Send Sol token to your Ledger Nano solana account
-To send some sol tokens on the Devnet network, go to one of the solana faucet websites or do it with the solana cli:
-1. [Solana Faucet](https://solfaucet.com/)
-2. [Solana CLI](https://docs.solana.com/cli/transfer-tokens)
 
-#### Solana Faucet
-Go to the [Solana Faucet](https://solfaucet.com/) website put your Wallet Public Key on the input and click on "Devnet"
-
-{: .center}
-[![Solana Faucet](../images/solana-faucet.png){:width="840"}](../images/solana-faucet.png){: style="border-bottom:none;"}   
-*Fig. 1: Solana Faucet*
-
-
-
-#### Solana CLI
-Go to the [Solana CLI](https://docs.solana.com/cli/transfer-tokens) website, there are the steps to add some sol to your account.
-
-```console
-solana airdrop 1 <RECIPIENT_ACCOUNT_ADDRESS> --url https://api.devnet.solana.com
-```
-For example
-```console
-solana airdrop 1 72tCcW6F4gRWJLCXf3RGejNDZBwUvWCfxHTdxoLGV4ht --url https://api.devnet.solana.com
-```
+### Install the Solana Nano App and create a Solana account
+First you need to install the Solana Nano App from Ledger Live as shown in the [prerequisites](../prerequisites) for Ethereum.
 
 ## Tutorial implementation
 
 In this implementation, we will be building a web application with vanilla javascript that uses the USB protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) to communicate with the ledger.
 
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-tutorial”.
+It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-sol-tutorial”.
 Run the following command to create the folder and go into it:
 
 ```console
-mkdir e2e-tutorial
-cd e2e-tutorial
+mkdir e2e-sol-tutorial
+cd e2e-sol-tutorial
 ```
 
 Then, initialize the project by running the following:
@@ -60,7 +39,7 @@ npm init
 During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
 
 Now that the folder is initialized open it in an editor.
-Create files named “index.html”, “index.js” and "styles.css" in the root folder.
+Create files named "index.html", "index.js" and "style.css" in the root folder. Create an "assets" folder and put [this logo](../images/ledger-logo.jpg) inside.
 Your folder must look like this.
 
 {: .center}
@@ -78,7 +57,7 @@ In index.html copy-paste the following code :
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
@@ -137,7 +116,7 @@ In index.html copy-paste the following code :
           </div>
           <div class="modal-body d-flex justify-content-center">
             <button id="connect-ledger" class="rounded-3 align-self-center" data-bs-dismiss="modal">
-              <img src="./assets/ledger-seeklogo.com.svg" class="card-img-top" alt="Ledger">
+              <img src="./assets/ledger-logo.jpg" class="card-img-top" alt="Ledger">
             </button>
           </div>
         </div>
@@ -236,7 +215,7 @@ document.getElementById("tx-transfer").onclick = async function () {
 ```
 
 In style.css copy-paste the following code :
-#### styles.css
+#### style.css
 ```css
 .modal-content{
     width: 300px;
@@ -301,17 +280,17 @@ npm install --save bs58
 
 
 #### Package.json Dependencies
-Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+Now that the dependencies are installed you can find them in the "package.js".
+This is how your "package.json" has to look like.
 
 ```javascript
 {
-  "name": "e2e-tutorial",
+  "name": "e2e-sol-tutorial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" // You can remove this script
+    "test": "echo \"Error: no test specified\" && exit 1" 
   },
   "author": "",
   "license": "ISC",
@@ -328,24 +307,21 @@ This is how your “package.json” has to look like.
 }
 ```
 
+#### Modify Package.json
+Modify two lines:
+- On the 5th line: `"main": "index.js"` => `"source": "index.html"`
+- On the 7th line: `"test": "echo \"Error: no test specified\" && exit 1"`=>`"start": "parcel" `
 
-A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “index.html”`.
+Your file should know look like this:
 
-{: .center}
-[![PackageJson modify](../images/tutorialJsonModify.png)](../images/tutorialJsonModify.png){: style="border-bottom:none;"}   
-*Fig. 3: Modifying the package.json*
-
-Add some script :
-- `“start”: “parcel”`
-#### Package.json Script
 ```javascript
 {
-    "name": "e2e-tutorial",
+    "name": "e2e-sol-tutorial",
     "version": "1.0.0",
     "description": "",
-    "source": "index.html",
+    "source": "index.html", // 5th line
     "scripts": {
-        "start": "parcel"       // Add this line
+        "start": "parcel" // 7th line
     },
     "author": "",
     "license": "ISC",
@@ -372,7 +348,7 @@ Start the development server:
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
+Now the application is up and running. Open Chrome and go to `localhost:1234`, it will display :
 
 {: .center}
 [![Application running on browser](../images/tutorial-1-solana.png)](../images/tutorial-1-solana.png){: style="border-bottom:none;"}   
@@ -409,12 +385,36 @@ Now choose the Ledger Nano to connect it to the browser.
 [![Connect the Ledger Nano](../images/tutorial-1-solana-wallet.png)](../images/tutorial-1-solana-wallet.png){: style="border-bottom:none;"}   
 *Fig. 8: Connect the Ledger Nano*
 
-If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
+After connecting the Nano, click on "Get Information". If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
 
 {: .center}
 [![Application After Connecting Ledger Nano](../images/tutorial-1-solana-info.png)](../images/tutorial-1-solana-info.png){: style="border-bottom:none;"}   
 *Fig. 9: Application After Connecting Ledger Nano*
 
+### Send Sol token to your Ledger Nano solana account
+To send some sol tokens on the Devnet network, you can either go to one of the solana faucet websites or do it with the solana cli:
+- [Solana Faucet](https://solfaucet.com/)
+- [Solana CLI](https://docs.solana.com/cli/transfer-tokens)
+
+If you are looking for the easier and quicker way, use the Solana Faucet. If you would rather use the Solana CLI, please read this documentation to [install it](https://docs.solana.com/cli) before starting sending Sol.
+
+#### Option n°1 - Solana Faucet
+Go to the [Solana Faucet](https://solfaucet.com/) website put your Wallet Public Key (displayed on the web app) on the input and click on "Devnet"
+
+{: .center}
+[![Solana Faucet](../images/solana-faucet.png){:width="840"}](../images/solana-faucet.png){: style="border-bottom:none;"}   
+*Fig. 1: Solana Faucet*
+
+#### Option n°2 -Solana CLI
+Go to the [Solana CLI](https://docs.solana.com/cli/transfer-tokens) website, there are the steps to add some sol to your account.
+
+```console
+solana airdrop 1 <RECIPIENT_ACCOUNT_ADDRESS> --url https://api.devnet.solana.com
+```
+For example
+```console
+solana airdrop 1 72tCcW6F4gRWJLCXf3RGejNDZBwUvWCfxHTdxoLGV4ht --url https://api.devnet.solana.com
+```
 
 ### Create a transaction to transfer sol
 
