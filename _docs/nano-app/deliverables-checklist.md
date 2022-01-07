@@ -14,7 +14,7 @@ The submission of a Nano App is completed through a form. This will ask you for 
 
 Below, you will find the details of the form content, per section. You can use this page as a checklist to gather everything that is required.
 
-Make sure you have followed our documentation and guidelines ([see declaration](#self-declaration)). 
+The numbering below follows the one in the Requirements chapter.  
 
 
 ## Section details

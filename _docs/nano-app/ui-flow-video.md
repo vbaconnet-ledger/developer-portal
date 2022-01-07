@@ -28,12 +28,12 @@ Please create your flow following the given [Ethereum example](../docs/eth-flow.
 
 It contains the basic functions App information, Receive and send operations.  
 
+You free to choose the format of your own document (pdf, jpg, tif or Google doc).  
+
 Include all the operations that your Nano app contains.  
 
 Try to apply the same kind of flow design for all of them.  
   
-You free to choose the format of your own document (pdf, jpg, tif or Google doc).  
-
 
 ## Video
 
