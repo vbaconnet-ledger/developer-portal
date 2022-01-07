@@ -37,9 +37,9 @@ You free to choose the format of your own document (pdf, jpg, tif or Google doc)
 
 ## Video
 
-Video of your application running on the Ledger device
-- Verify public address on the Ledger device
-- Display transaction information before allowing signature
+On the video demo you must: 
+- Verify a public address on the Ledger device
+- Display the transaction information before allowing the signature
 - Reject a transaction on the Ledger device
 - Sign a transaction on the Ledger device
 
