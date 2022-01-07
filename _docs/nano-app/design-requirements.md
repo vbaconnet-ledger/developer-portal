@@ -17,25 +17,37 @@ layout: doc
 
 The requirements are to submit two icons and to follow the design instructions below. You agree to the design warranty liability close.
 
-## Requirements Note --
-The design of your device app will be added to our website to inform that your app is available. You must provide two icons that are compliant with the criteria established by our team.
-You must download the template on the page, fill it it with your Icon, and include filled template in your app submission form.
-
 ## Guidelines
 
-The design of your device app will be added to our website to inform that your app is available. Please provide us your design in the required format and measurements.
+### Icons
+
+You must provide two icons that are compliant with the criteria established by our team.
+You must download the template on the page, fill it it with your Icon, and include filled template in your app submission form.
 
 There are 2 mandatory icons that should be provided for Ledger to release an app:
 
--   The Device icon, displayed on the Nano S dashboard
--   The Manager icon, displayed in the Manager application list
+-   The Device icon, displayed on the Nano dashboard
+-   The Manager icon, displayed in the Manager application list in Ledger Live
 
-Below are the Adobe Illustrator templates for such icons, please respect their guidance.
+#### General
 
--   The color palette for Blue icons contains 16 colors maximum
--   The icon file does not contain any alpha channel
--   In order to blend well with the Blue's Dashboard background, the 4 rounded white corners of the blue icon are set to this RGB value: \#F9F9F9 (and not \#FFFFFF)
--   Nano X icons are 14x14 px in size. Developers can create their Nano X icons from the 16x16 px Nano S one with the following command on Linux (install the package **imagemagick** first): `convert nanos_app_<token>.gif -crop 14x14+1+1 +repage -negate nanox_app_<token>.gif`
+- The icon file does not contain any alpha channel
+- Gradients are not allowed
+- The background color should be solid
+
+#### Device icon
+
+- Pixel art icon
+- Black and white only
+- Safe area: 2px
+
+#### Manager icon
+
+- RVB colors only
+- Pictogram color should be white
+- Pictrogram stroke should be 4pt
+
+#### Icon templates
 
 **Click on each image to download the corresponding .ai file, and fill them directly before sending them back. They should correspond to the icons used to compile your app.**
 
@@ -55,51 +67,75 @@ Below are the Adobe Illustrator templates for such icons, please respect their g
 </a>
 </figure>
 
-The Device icon must be displayed on the first welcome screen.
 
-Most of the time, Bolos apps expose few functionalities to the user. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons !) and also because of the screen size which offer only 128\*32 pixels. Ledger provides some guidance to avoid third party developers to reinvent the wheel.
+### Interface
+
+Most of the time, Nano Apps have few functionalities. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons) and the screen size (128\*32 pixels). The following guidelines will give a good basis to ensure user-friendliness.
 
 <!--  -->
 {% include alert.html style="note" text="See the <a href='../display-management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
 <!--  -->
 
+#### Welcome screen
 
-Even though the screen is small, you don't want to bloat it with plenty of tiny text to fit everything in a single time. Instead, multiple successive screens are the way to go, with a configurable time interval between each screen switch. Doing this allows you to split and segment the information to display. It is also a good practice to inform the user of what is the kind of information currently displayed, by giving it a title. In some cases, even when the information is segmented by type, there won't be enough space for it to fit entirely on screen. Rather than splitting this information in multiple screens, it is better to use automatic scrolling display. Here is an example that sums it up:
+The Device icon must be displayed on the first welcome screen.
+
+#### Information display
+
+1. It is a good practice to inform the user of what kind of information is currently displayed, by giving it a title.
+2. To avoid having to much text on the same screen you can:
+	- Use multiple successive screens with a configurable time interval bewteen each screen switch
+	- Use automatic scrolling display
 
 <!-- ------------- Image ------------- -->
-<!-- --------------------------------- -->
-<figure>
-<img src="../images/scroll.gif" class="align-center" alt="Example: transaction confirmation screen" /><figcaption aria-hidden="true">Example: transaction confirmation screen</figcaption>
+<figure class="uk-text-center">
+<img src="../images/scroll.gif" alt="Example: transaction confirmation screen" /><figcaption aria-hidden="true">Example with two alternating screens.</figcaption>
 </figure>
+<!-- --------------------------------- -->
 
-On this example two pieces of information are shown: an amount of bitcoins, and a destination address. The two screens are alternating until the user validates or cancel. A title describes each information. Automatic scrolling is used for addresses that are too long to be displayed.
+In the example above, two pieces of information are shown: an amount of bitcoins, and a destination address. The two screens alternates until the user validates or cancel. A title describes each information. Automatic scrolling is used for the address as it is too long to be displayed.
 
-Graphical pointers (glyphs) shows the effects of the right and left buttons. There are four principal functions fulfilled by pressing buttons:
+#### Graphical pointers
 
--   Making a binary choice for answering a question asked by the device (1 button)
--   Moving in a menu (1 button)
--   Selecting a menu entry (2 buttons)
--   Proceeding with a disclaimer (2 buttons)
+The user can perform four principal actions by pressing 1 button or 2 buttons simultaneously:
+-   Make a binary choice to answer a question asked by the device (1 button)
+-   Browse through the entries of a menu (1 button)
+-   Select a menu entry (2 buttons)
+-   Proceed with a disclaimer (2 buttons)
 
-To propose a binary choice to the user, 2 glyphs representing the 2 choices should be placed on each side of the screen (a cross symbol to cancel and a validation symbol to accept). You can display a question and relevant information in between the glyphs, like in the upper example.
+The graphical pointers (glyphs) indicates which action can be performed on a screen.
 
-To move inside a menu, be it vertical or horizontal, the same technique is applied with different glyphs. We recommend using arrows: up and down for a vertical menu, left and right for a horizontal one).
+**Binary choice**
+
+To propose a binary choice to the user, 2 glyphs representing the 2 choices should be placed on each side of the screen:
+- a cross symbol to cancel 
+- a validation symbol to accept 
+You can display a question and relevant information in between the glyphs, like in the upper example.
+
+**Browse**
+
+To browse through a menu, be it vertical or horizontal, the same technique is applied with different glyphs. We recommend using arrows: 
+- up and down for a vertical menu
+- left and right for a horizontal menu
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
-<figure>
+<figure class="uk-text-center">
 <img src="../images/horizontal_menu.png" class="align-center" alt="Example use of arrows in an horizontal menu" /><figcaption aria-hidden="true">Example use of arrows in an horizontal menu</figcaption>
 </figure>
 
 <!-- ------------- Image ------------- -->
 <!-- --------------------------------- -->
-<figure>
+<figure class="uk-text-center">
 <img src="../images/vertical_menu.png" class="align-center" alt="Example use of arrows in a vertical menu" /><figcaption aria-hidden="true">Example use of arrows in a vertical menu</figcaption>
 </figure>
 
-Once positioned on the right menu entry, the user can select the entry by pressing both buttons. This action is not represented by glyphs. Same goes when going through a set of disclaimer screens: only text is displayed, and the user goes to the next part by pressing both buttons. This is a consistent behavior across the device, so you can assume that users are used to it. It should feel obvious when the user has to press two buttons to go through something in your app.
+**Select and proceed**
 
-Ledger does not impose the icons nor the interface for third party applications, however user friendliness and guidelines compliance is something being reviewed during the integration process. Therefore, a very poor design might be a cause of delay in your release roadmaps. Don't neglect it !
+Once positioned on the right menu entry, the user can select the entry by pressing both buttons. This action is not represented by glyphs. Same goes when going through a set of disclaimer screens: only text is displayed, and the user goes to the next part by pressing both buttons. 
+
+This is a consistent behavior across the device, so you can assume that users are used to it.
+
 
 ## Design Warranty
 
