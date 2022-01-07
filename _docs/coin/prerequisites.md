@@ -24,7 +24,7 @@ Therefore, every new blockchain integration calls for a preliminary analysis, to
 
 The Technical assessment phase consists firstly in acquiring a thorough understanding of the blockchain protocol, considering the generic and specific aspects.
 
-This filled out form is an example of how you can do this first step: [technical_assessment_polkadot_v2.pdf](../../../files/technical_assessment_polkadot_v2.pdf)
+This filled out form is an example of how you can do this first step: [technical_assessment_polkadot_v2.pdf](../files/technical_assessment_polkadot_v2.pdf)
 
 Secondly, choices must be made concerning the Specific features.
 
