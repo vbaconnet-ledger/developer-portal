@@ -57,7 +57,7 @@ npm init
 During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
 
 Now that the folder is initialized open it in an editor.
-Create files named “index.html”, “index.js” and "styles.css" in the root folder.
+Create files named "index.html", "index.js" and "style.css" in the root folder. Create an "assets" folder and put [this logo](../images/ledger-logo.jpg) inside.
 Your folder must look like this.
 
 {: .center}
@@ -75,7 +75,7 @@ In index.html copy-paste the following code :
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
@@ -135,7 +135,7 @@ In index.html copy-paste the following code :
           </div>
           <div class="modal-body d-flex justify-content-center">
             <button id="connect-ledger" class="rounded-3 align-self-center" data-bs-dismiss="modal">
-              <img src="./assets/ledger-seeklogo.com.svg" class="card-img-top" alt="Ledger">
+              <img src="./assets/ledger-logo.jpg" class="card-img-top" alt="Ledger">
             </button>
           </div>
         </div>
@@ -234,7 +234,7 @@ document.getElementById("tx-transfer").onclick = async function () {
 ```
 
 In style.css copy-paste the following code :
-#### styles.css
+#### style.css
 ```css
 .modal-content{
     width: 300px;
@@ -289,8 +289,8 @@ npm install --save ethers
 
 
 #### Package.json Dependencies
-Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+Now that the dependencies are installed you can find them in the "package.js".
+This is how your "package.json" has to look like.
 
 ```javascript
 {
@@ -299,7 +299,7 @@ This is how your “package.json” has to look like.
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" // You can remove this script
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -315,23 +315,21 @@ This is how your “package.json” has to look like.
 ```
 
 
-A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “index.html”`.
+#### Modify Package.json
+Modify two lines:
+- On the 5th line: `"main": "index.js"` => `"source": "index.html"`
+- On the 7th line: `"test": "echo \"Error: no test specified\" && exit 1"`=>`"start": "parcel" `
 
-{: .center}
-[![PackageJson modify](../images/tutorialJsonModify.png)](../images/tutorialJsonModify.png){: style="border-bottom:none;"}  
-*Fig. 4: Modifying the package.json*
+Your file should know look like this:
 
-Add some script :
-- `“start”: “parcel”`
-#### Package.json Script
 ```javascript
 {
-    "name": "e2e-tutorial",
+    "name": "e2e-sol-tutorial",
     "version": "1.0.0",
     "description": "",
-    "source": "index.html",
+    "source": "index.html", // 5th line
     "scripts": {
-        "start": "parcel"       // Add this line
+        "start": "parcel" // 7th line
     },
     "author": "",
     "license": "ISC",
@@ -339,8 +337,11 @@ Add some script :
         "parcel": "^2.0.1"
     },
     "dependencies": {
-        "@ledgerhq/hw-app-eth": "^6.18.0",
-        "@ledgerhq/hw-transport-webhid": "^6.11.2"
+        "@ledgerhq/hw-app-solana": "^6.15.0",
+        "@ledgerhq/hw-transport-webusb": "^6.19.0",
+        "@ledgerhq/logs": "^6.10.0",
+        "@solana/web3.js": "^1.31.0",
+        "bs58": "^4.0.1"
     }
 }
 ```
