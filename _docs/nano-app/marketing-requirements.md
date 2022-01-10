@@ -1,5 +1,5 @@
 ---
-title: 8 - Marketing
+title: 7 - Marketing
 subtitle:
 tags: [twitter, retweet, blog post, press release]
 category: Nano Application
