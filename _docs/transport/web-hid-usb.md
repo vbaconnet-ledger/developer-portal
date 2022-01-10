@@ -8,42 +8,51 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of an application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
+In this section, we will guide you through the creation of an application. This application will connect to your Nano to display the address of an account (eg. Bitcoin account, Ethereum account).
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before starting ensure you have gone through the [Prerequisites](../prerequisites).
+
 ## Web App USB and HID
 
-The implementation of a web application that use the USB or HID protocol is the same. The only difference is that instead of using the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) you will use [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) and vise versa.
+An application that uses Web USB or Web HID has the same implementation and uses the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) or [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
 
-### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named “examples-web-hid-usb”.
-Run the following command to create the folder and go into it:
+### Initialization
+First, open a terminal and create a new folder in your usual working directory. For this tutorial, the folder will be named "example-web-hid-usb".
+
+Run:
 
 ```console
-mkdir examples-web-hid
-cd examples-web-hid
+mkdir example-web-hid
+cd example-web-hid
 ```
 
-Then, initialize the project by running the following:
+Initialize the project by running:
 
 ```console
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized open it in an editor.
-Create a folder named “src” and two files named “index.html” and “main.js” in the “src” folder.
+Run:
+
+```console
+mkdir src
+touch src/index.html
+touch src/main.js
+```
+
 Your folder must look like this.
 
 {: .center}
 [![Folder USB and HID](../images/folderUsbHid.png)](../images/folderUsbHid.png){: style="border-bottom:none;"}  
-*Fig. 1: Folder of the Application*
+*Fig. 1: Files structure*
 
-### Code Implementation
+### Coding
 
-Now we will implement the code.  
+Open the folder example-web-hid-usb in an code editor.
+
 In index.html copy-paste the following code :
 #### index.html
 ```html
@@ -118,44 +127,45 @@ document.body.addEventListener("click", async () => {
 });
 ```
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill):
+#### Install the packages
+
+Run:
+
 ```console
 npm install --save babel-polyfill
-```
-#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
-
-This package provides you the log of all the error from your connexion with your Ledger device that may appear when developing.  
-```console
 npm install --save @ledgerhq/logs
-```
-#### Install [parcel](https://parceljs.org/)  
-This package is a build tool that will help you package your application to run it in the browser.  
-```console
 npm install --save-dev parcel
-```
-#### Install [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)  
-This package will help you ask your Ledger Nano to access the bitcoin address.  
-```console
 npm install --save @ledgerhq/hw-app-btc
 ```
+
+|      Package      |    What does it do?     |  
+| ----------------- | ----------------------- |
+| [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill) | It Adds support to the web browsers for features. |
+| [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs) | It provides you the log of all the errors from your connexion with your Nano that may appear when developing. |
+| [parcel](https://parceljs.org/) | It is a build tool that will help you package your application to run it in the browser. |
+| [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc) | It will help you ask your Nano to access the Bitcoin address.|
+
+
 #### Install the Transport HID or USB package
 Then depending on your choice install one of the corresponding packages:
 - Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Ledger with an HID connexion:
-    - `npm install --save @ledgerhq/hw-transport-webhid`
+    ```console
+    npm install --save @ledgerhq/hw-transport-webhid
+    ```
 - Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Ledger with a USB connexion:
-    - `npm install --save @ledgerhq/hw-transport-webusb`
+    ```console
+    `npm install --save @ledgerhq/hw-transport-webusb`
+    ``` 
 
 
 #### Package.json Dependencies
-Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+Now that the dependencies are installed you can find them in the "package.js".
+This is how your "package.json" should to look like.
 
 ```javascript
 {
-  "name": "examples-web-hid-usb",
+  "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -177,19 +187,19 @@ This is how your “package.json” has to look like.
 }
 ```
 
-A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
+A little modification has to be made in the "package.json" : `"main": "index.js"` => `"source": "src/index.html"`.
 
 {: .center}
 [![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png){: style="border-bottom:none;"}   
 *Fig. 2: Modifying the package.json*
 
 Add some script :
-- `“build”: “parcel build”`
-- `“start”: “parcel”`
+- `"build": "parcel build"`
+- `"start": "parcel"`
 #### Package.json Script
 ```javascript
 {
-  "name": "examples-web-hid-usb",
+  "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
@@ -265,12 +275,12 @@ On a mobile phone, only android can support the web application.
 Moreover, on android, just chrome can support the web application.
 
 ### Test on Android chrome
-To test your application on android, a little change has to be made. Just add the “--https” flag in your start script, and run the script.
+To test your application on android, a little change has to be made. Just add the "--https" flag in your start script, and run the script.
 
 #### package.json
 ```javascript
 {
-  "name": "examples-web-hid-usb",
+  "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
@@ -293,6 +303,6 @@ To test your application on android, a little change has to be made. Just add th
 }
 ```
 
-The browser will ask you that the website is malicious, to continue, click on “advanced settings” and then on “continue to the localhost site”.
+The browser will ask you that the website is malicious, to continue, click on "advanced settings" and then on "continue to the localhost site".
 Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
 
