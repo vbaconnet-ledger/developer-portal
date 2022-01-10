@@ -15,7 +15,7 @@ layout: doc
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
 
-The requirements are to submit two icons and to follow the design instructions below. You agree to the design warranty liability close.
+The requirements are to submit two icons and to follow the design instructions below. You agree to the design warranty liability clause.
 
 ## Guidelines
 

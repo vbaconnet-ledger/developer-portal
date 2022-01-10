@@ -7,7 +7,7 @@ author:
 layout: doc
 ---
 
-The following requirements are here to provide a secure and unified experperience for Ledger devices users. 
+The following requirements are here to provide a secure and unified experience for Ledger devices users. 
 
 To make sure the review process of your Nano App goes smoothly and quickly, we recommend you read the requirements before starting to code. 
 

@@ -14,7 +14,7 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
-The requirement is to submit documentation in a Google Doc format for review according to instructions below. 
+The requirement is to submit the documentation in a Google Doc format for review or an URL to the already published documentation. If it is already published, ensure it follows the instructions below.
 
 ## Introduction
 
