@@ -8,7 +8,7 @@ author:
 layout: doc
 ---
 
-## Support Requirement Summary
+## Requirement Summary
 
 |    Release Type       |          Unaudited     |          Audited       |          Public        |
 |-----------------------|------------------------|------------------------|------------------------|
