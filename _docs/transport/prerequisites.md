@@ -10,7 +10,11 @@ layout: doc
 
 ## Summary
 
-To connect your app you will need to install Node and NPM, Ledger Live, the Nano App of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana), and at least one account for each coin (except for Solana).
+To connect your app you will need to install:
+- [Node and NPM](#node)
+- [Ledger Live](#ledger-live-installation)
+- [The Nano App](#nano-app-installation) of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana)
+- At least [one account](#account-creation) for each coin (except for Solana).
 
 ## Node
 
@@ -119,19 +123,3 @@ You have now a secured bitcoin account on your Ledger Device, congratulations!
 {: .center}
 [![Bitcoin Account Created](../images/step3account.png){:width="840"}](../images/step3account.png){: style="border-bottom:none;"}   
 *Fig. 11: Bitcoin Account Created*
-
-
-Now you can move to the next steps depending on your use case :
-
- - **Web Application**
-    - [HID/USB](../web-hid-usb)
-    - [Bluetooth](../web-bluetooth)
- 
- - **Mobile Application - React Native**
-    - [HID - Android Only](../react-native-android-hid)
-    - [Bluetooth - iOS](../react-native-bluetooth-android)
-    - [Bluetooth - Android](../react-native-bluetooth-ios)
-
- - **Desktop Application**
-    - [Node HID](../node-electron-hid)
- 
