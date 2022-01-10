@@ -159,16 +159,26 @@ Then depending on your choice install one of the corresponding packages:
     ``` 
 
 
-#### Package.json Dependencies
-Now that the dependencies are installed you can find them in the "package.js".
-This is how your "package.json" should to look like.
+#### Package.json
+
+Modify `"main": "index.js"` to `"source": "src/index.html"`.
+
+And ensure you have this line in your package.json:
+```javascript
+  "scripts": {
+    "build": "parcel build", //Add this line
+    "start": "parcel"        //Add this line
+  },
+```
+
+Your "package.json" should to look like this:
 
 ```javascript
 {
   "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html", // This line was modified
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
@@ -180,49 +190,16 @@ This is how your "package.json" should to look like.
       "parcel": "^2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", // You can remove this script, it will be removed
+    "build": "parcel build", // This line was added
+    "start": "parcel"        // This line was added
   },
   "author": "",
   "license": "ISC"
 }
 ```
 
-A little modification has to be made in the "package.json" : `"main": "index.js"` => `"source": "src/index.html"`.
 
-{: .center}
-[![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png){: style="border-bottom:none;"}   
-*Fig. 2: Modifying the package.json*
-
-Add some script :
-- `"build": "parcel build"`
-- `"start": "parcel"`
-#### Package.json Script
-```javascript
-{
-  "name": "example-web-hid-usb",
-  "version": "1.0.0",
-  "description": "",
-  "source": "src/index.html",
-  "dependencies": {
-    "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
-    "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
-  },
-  "devDependencies": {
-    "parcel": "^2.0.0"
-  },
-  "scripts": {
-    "build": "parcel build", //Add this line
-    "start": "parcel"        //Add this line
-  },
-  "author": "",
-  "license": "ISC"
-}
-```
-
-## Web App Test
+## Web App launch
 
 ### Start the Development Server
 Now that the Setup is finished, the app has to be built to be displayed.
@@ -274,7 +251,7 @@ Android chrome supports the use of the Ledger device by HID and USB.
 On a mobile phone, only android can support the web application.
 Moreover, on android, just chrome can support the web application.
 
-### Test on Android chrome
+### Launch on Android chrome
 To test your application on android, a little change has to be made. Just add the "--https" flag in your start script, and run the script.
 
 #### package.json
