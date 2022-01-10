@@ -15,7 +15,7 @@ Before starting ensure you have gone through the [prerequisites](../prerequisite
 
 ## Web App USB and HID
 
-An application that uses Web USB or Web HID has the same implementation and uses the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) or [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
+An application that uses WebUSB or WebHID has the same implementation and uses the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) or [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
 
 ### Initialization
 First, open a terminal and create a new folder in your usual working directory. For this tutorial, the folder will be named "example-web-hid-usb".
@@ -50,11 +50,12 @@ Your folder must look like this.
 *Fig. 1: File structure*
 
 ### Coding
-
 Open the folder example-web-hid-usb in an code editor.
 
-In index.html copy-paste the following code :
 #### index.html
+In index.html copy-paste the following code :
+
+
 ```html
 <!doctype html>
 <html lang="en">
@@ -70,15 +71,16 @@ In index.html copy-paste the following code :
 ```
 
 
+#### main.js
+
 In main.js copy-paste the following code:
 
 <!--  -->
 {% include alert.html style="important" text="Comment out or remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
 <!--  -->
 
-#### main.js
 ```javascript
-import "babel-polyfill";
+import 'core-js/actual';
 import { listen } from "@ledgerhq/logs";
 import AppBtc from "@ledgerhq/hw-app-btc";
 
@@ -137,7 +139,7 @@ document.body.addEventListener("click", async () => {
 Run:
 
 ```console
-npm install --save babel-polyfill
+npm install --save core-js
 npm install --save @ledgerhq/logs
 npm install --save-dev parcel
 npm install --save @ledgerhq/hw-app-btc
@@ -145,7 +147,7 @@ npm install --save @ledgerhq/hw-app-btc
 
 |     Package       |    What does it do?     |  
 | ----------------- | ----------------------- |
-| [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill) | It Adds support to the web browsers for features. |
+| [core-js](https://www.npmjs.com/package/core-js) | Modular standard library for JavaScript. |
 | [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs) | It provides you the log of all the errors from your connexion with your Nano that may appear when developing. |
 | [parcel](https://parceljs.org/) | It is a build tool that will help you package your application to run it in the browser. |
 | [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc) | It will help you ask your Nano to access the Bitcoin address.|
@@ -188,7 +190,7 @@ Your "package.json" should to look like this:
     "@ledgerhq/hw-transport-webhid": "^6.11.2", 
     "@ledgerhq/hw-transport-webusb": "^6.11.2", 
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0"
+    "core-js": "^3.20.2"
   },
   "devDependencies": {
       "parcel": "^2.0.0"
@@ -257,7 +259,7 @@ Congratulations, you have successfully built your first application connected wi
 <!--  -->
 
 
-## Web USB and Web HID on Android chrome
+## WebUSB and WebHID on Android chrome
 
 Android chrome supports the use of the Ledger device by HID and USB.
 On a mobile phone, only android can support the web application.
@@ -278,7 +280,7 @@ To test your application on android, a little change has to be made. Just add th
     "@ledgerhq/hw-transport-webhid": "^6.11.2", 
     "@ledgerhq/hw-transport-webusb": "^6.11.2",
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0"
+    "core-js": "^3.20.2"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
