@@ -10,7 +10,7 @@ layout: doc
 
 ## Summary
 
-To connect your app you will need to install Node and NPM, Ledger Live, the Nano App of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana), and at least one account for each coin.
+To connect your app you will need to install Node and NPM, Ledger Live, the Nano App of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana), and at least one account for each coin (except for Solana).
 
 ## Node
 
