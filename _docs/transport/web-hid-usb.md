@@ -8,10 +8,10 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of an application. This application will connect to your Nano to display the address of an account (eg. Bitcoin account, Ethereum account).
+In this section, we will guide you through the creation of a web application. This application will connect to your Nano to display the address of a Bitcoin account. If you want it for Ethereum you can easily modify it.
 
 ## Prerequisites
-Before starting ensure you have gone through the [Prerequisites](../prerequisites).
+Before starting ensure you have gone through the [prerequisites](../prerequisites).
 
 ## Web App USB and HID
 
@@ -47,7 +47,7 @@ Your folder must look like this.
 
 {: .center}
 [![Folder USB and HID](../images/folderUsbHid.png)](../images/folderUsbHid.png){: style="border-bottom:none;"}  
-*Fig. 1: Files structure*
+*Fig. 1: File structure*
 
 ### Coding
 
@@ -70,7 +70,11 @@ In index.html copy-paste the following code :
 ```
 
 
-In main.js copy-paste the following code and comment or remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid).
+In main.js copy-paste the following code:
+
+<!--  -->
+{% include alert.html style="important" text="Comment out or remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
+<!--  -->
 
 #### main.js
 ```javascript
@@ -88,7 +92,6 @@ const initial = "<h1>Connect your Nano and open the Bitcoin app. Click anywhere 
 const $main = document.getElementById("main");
 $main.innerHTML = initial;
 
-
 document.body.addEventListener("click", async () => {
   $main.innerHTML = initial;
   try {
@@ -102,7 +105,7 @@ document.body.addEventListener("click", async () => {
     //listen to the events which are sent by the Ledger packages in order to debug the app
     listen(log => console.log(log))
 
-    //When the Ledger connected it is trying to display the bitcoin address
+    //When the Ledger device connected it is trying to display the bitcoin address
     const appBtc = new AppBtc(transport);
     const { bitcoinAddress } = await appBtc.getWalletPublicKey(
       "44'/0'/0'/0/0",
@@ -140,7 +143,7 @@ npm install --save-dev parcel
 npm install --save @ledgerhq/hw-app-btc
 ```
 
-|      Package      |    What does it do?     |  
+|     Package       |    What does it do?     |  
 | ----------------- | ----------------------- |
 | [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill) | It Adds support to the web browsers for features. |
 | [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs) | It provides you the log of all the errors from your connexion with your Nano that may appear when developing. |
@@ -167,8 +170,8 @@ Modify `"main": "index.js"` to `"source": "src/index.html"`.
 And ensure you have this line in your package.json:
 ```javascript
   "scripts": {
-    "build": "parcel build", //Add this line
-    "start": "parcel"        //Add this line
+    "build": "parcel build", 
+    "start": "parcel"
   },
 ```
 
@@ -179,11 +182,11 @@ Your "package.json" should to look like this:
   "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html", // This line was modified
+  "source": "src/index.html",
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
+    "@ledgerhq/hw-transport-webhid": "^6.11.2", 
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", 
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0"
   },
@@ -191,8 +194,8 @@ Your "package.json" should to look like this:
       "parcel": "^2.0.0"
   },
   "scripts": {
-    "build": "parcel build", // This line was added
-    "start": "parcel"        // This line was added
+    "build": "parcel build", 
+    "start": "parcel"
   },
   "author": "",
   "license": "ISC"
@@ -200,7 +203,7 @@ Your "package.json" should to look like this:
 ```
 
 <!--  -->
-{% include alert.html style="important" text="Do not put comments in package.json or it will result in a parsing error." %}
+{% include alert.html style="important" text="In package.json, remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
 <!--  -->
 
 ## Web App launch
@@ -223,23 +226,23 @@ Before clicking on the text connect your Nano to the USB port, unlock it and run
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
-*Fig. 4: Ledger Enter Code Pin*
+[![Enter Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
+*Fig. 4: Enter Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
-*Fig. 5: Ledger Application*
+[![Selection Bitcoin](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
+*Fig. 5: Select Bictoin*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
-*Fig. 6: Ledger Run Application*
+[![Run App](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+*Fig. 6: The App is running*
 
 ### Connect Your Nano to the Application
 Now you can click on the text and a popup will be prompt. Choose your Nano and click connexion
 
 {: .center}
-[![Connect the Ledger](../images/webapp2.png)](../images/webapp2.png){: style="border-bottom:none;"}  
-*Fig. 7: Connect the Ledger*
+[![Connect your Nano](../images/webapp2.png)](../images/webapp2.png){: style="border-bottom:none;"}  
+*Fig. 7: Connect your Nano*
 
 Then if all goes well you must have the bitcoin address you just create [previously](#prerequisites)
 
@@ -247,7 +250,12 @@ Then if all goes well you must have the bitcoin address you just create [previou
 [![Address Account Displayed](../images/webapp3.png)](../images/webapp3.png){: style="border-bottom:none;"}  
 *Fig. 8: Address Account Displayed*
 
-Congratulations, you have successfully built your first application connected with Ledger !!!
+Congratulations, you have successfully built your first application connected with a Nano !
+
+<!--  -->
+{% include alert.html style="note" text="Note that if your finalize the operation on your Nano by accepting or rejecting, the corresponding message appears on your web application." %}
+<!--  -->
+
 
 ## Web USB and Web HID on Android chrome
 
@@ -267,8 +275,8 @@ To test your application on android, a little change has to be made. Just add th
   "source": "src/index.html",
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webhid": "^6.11.2", 
+    "@ledgerhq/hw-transport-webusb": "^6.11.2",
     "@ledgerhq/logs": "^6.10.0",
     "babel-polyfill": "^6.26.0"
   },
@@ -277,12 +285,16 @@ To test your application on android, a little change has to be made. Just add th
   },
   "scripts": {
     "build": "parcel build",
-    "start": "parcel --https"        //Change this line
+    "start": "parcel --https" 
   },
   "author": "",
   "license": "ISC"
 }
 ```
+
+<!--  -->
+{% include alert.html style="important" text="In package.json, remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
+<!--  -->
 
 The browser will ask you that the website is malicious, to continue, click on "advanced settings" and then on "continue to the localhost site".
 Now you can test to connect your Nano on your android just like the [previous step](#web-app-test).
