@@ -8,9 +8,13 @@ toc: true
 layout: doc
 ---
 
+## Summary
+
+To connect your app you will need to install Node and NPM, Ledger Live, the Nano App of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana), and at least one account for each coin.
+
 ## Node
 
-Beforehand we have to install some prerequisites. First install <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. To ensure you have it installed in your machine open a new terminal and run:
+If not already installed, install <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. You can check if you have it installed by checking the version with the following commands:
 
 ```
 $ node -v
@@ -21,6 +25,10 @@ $ npm -v
 ```
 
 The commands should print the versions of Node.js and npm accordingly.
+
+<!--  -->
+{% include alert.html style="note" text="The integrations and tutorials should work with older versions of Node and npm but it has not been tested by our team." %}
+<!--  -->
 
 
 ---------------------------------
@@ -33,7 +41,7 @@ After the installation, open Ledger Live and go to the **Manager** tab.
 [![Ledger Live Prerequisites](../images/ledgerlivetabs.png)](../images/ledgerlivetabs.png){: style="border-bottom:none;"}      
 *Fig. 1: Ledger Live Prerequisites*
 
-Then connect your Ledger to your machine and make sure to unlock the Ledger Device.
+Then connect your Ledger Nano to your computer and unlock it.
 
 {: .center}
 [![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}        
@@ -53,10 +61,10 @@ Then Ledger Live will ask you to allow the Ledger device, just press the two but
 
 
 
-## Ledger Apps Installation
+## Nano App Installation
 
 Now you can install the Ethereum and bitcoin application into your Ledger Nano S/X.
-In this integration, we will use the Ethereum and bitcoin application from your Ledger.
+In this integration, we will use the Ethereum and Bitcoin application.
 
 
 {: .center}
@@ -64,15 +72,15 @@ In this integration, we will use the Ethereum and bitcoin application from your 
 *Fig. 5: Ethereum App Installation*
 
 
-## Accounts Creation
+## Account Creation
 
-To use the Bitcoin/Ethereum previously installed applications you have to create a Bitcoin/Ethereum account.
-We will present there the creation of a bitcoin account but it remains the same for any application supported by Ledger Live.
+To use the Bitcoin/Ethereum Nano Apps you have to create a Bitcoin/Ethereum account.
+We will present there the creation of a bitcoin account but it is the same for any application supported by Ledger Live.
 
-Therefore launch the Bitcoin application on your Ledger Nano S/X.
 
-Then do the following steps to create your Bitcoin account:
+To create your Bitcoin account:
 
+- Launch the Bitcoin application on your Ledger Nano S/X
 
 - Open the Bitcoin app on your ledger device
 
@@ -85,7 +93,7 @@ Then do the following steps to create your Bitcoin account:
 [![Bitcoin App Ready](../images/ledgerReady.jpg){:width="420"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
 *Fig. 7: Bitcoin App Ready*
 
-- Then you can create an account by going to the **Manager** tab and click on **Add account**.
+- Create an account by going to the **Manager** tab and click on **Add account**.
 
 {: .center}
 [![Bitcoin App Add Account](../images/bitcoinInstalled.png){:width="840"}](../images/bitcoinInstalled.png){: style="border-bottom:none;"} 
