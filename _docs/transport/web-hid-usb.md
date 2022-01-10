@@ -23,8 +23,8 @@ First, open a terminal and create a new folder in your usual working directory. 
 Run:
 
 ```console
-mkdir example-web-hid
-cd example-web-hid
+mkdir example-web-hid-usb
+cd example-web-hid-usb
 ```
 
 Initialize the project by running:
@@ -60,7 +60,7 @@ In index.html copy-paste the following code :
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>My First Ledger App</title>
+    <title>My First Nano App</title>
     <script type="module" src="main.js"></script>
   </head>
   <body id="main">
@@ -70,7 +70,8 @@ In index.html copy-paste the following code :
 ```
 
 
-In main.js copy-paste the following code :
+In main.js copy-paste the following code and comment or remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid).
+
 #### main.js
 ```javascript
 import "babel-polyfill";
@@ -83,7 +84,7 @@ import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
 
 //Display the header in the div which has the ID "main"
-const initial = "<h1>Connect your Ledger and open Bitcoin app. Click anywhere to start...</h1>";
+const initial = "<h1>Connect your Nano and open the Bitcoin app. Click anywhere to start...</h1>";
 const $main = document.getElementById("main");
 $main.innerHTML = initial;
 
@@ -149,11 +150,11 @@ npm install --save @ledgerhq/hw-app-btc
 
 #### Install the Transport HID or USB package
 Then depending on your choice install one of the corresponding packages:
-- Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Ledger with an HID connexion:
+- Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Nano with an HID connexion:
     ```console
     npm install --save @ledgerhq/hw-transport-webhid
     ```
-- Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Ledger with a USB connexion:
+- Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Nano with a USB connexion:
     ```console
     `npm install --save @ledgerhq/hw-transport-webusb`
     ``` 
@@ -184,7 +185,7 @@ Your "package.json" should to look like this:
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
     "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
+    "babel-polyfill": "^6.26.0"
   },
   "devDependencies": {
       "parcel": "^2.0.0"
@@ -198,6 +199,9 @@ Your "package.json" should to look like this:
 }
 ```
 
+<!--  -->
+{% include alert.html style="important" text="Do not put comments in package.json or it will result in a parsing error." %}
+<!--  -->
 
 ## Web App launch
 
@@ -214,8 +218,8 @@ Now the application is up and running. Open the browser and go to `localhost:123
 {: .center}
 [![Application running on browser](../images/webapp1.png)](../images/webapp1.png){: style="border-bottom:none;"}  
 *Fig. 3: Application Running on Browser*
-### Plug Your Ledger Device
-Before clicking on the text connect your Ledger to the USB port, unlock it and run the bitcoin application.
+### Plug your Nano
+Before clicking on the text connect your Nano to the USB port, unlock it and run the bitcoin application.
 The steps are described below.
 
 {: .center}
@@ -230,8 +234,8 @@ The steps are described below.
 [![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 6: Ledger Run Application*
 
-### Connect Your Ledger to the Application
-Now you can click on the text and a popup will be prompt. Choose your Ledger device and click connexion
+### Connect Your Nano to the Application
+Now you can click on the text and a popup will be prompt. Choose your Nano and click connexion
 
 {: .center}
 [![Connect the Ledger](../images/webapp2.png)](../images/webapp2.png){: style="border-bottom:none;"}  
@@ -266,7 +270,7 @@ To test your application on android, a little change has to be made. Just add th
     "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
     "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
+    "babel-polyfill": "^6.26.0"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
@@ -281,5 +285,5 @@ To test your application on android, a little change has to be made. Just add th
 ```
 
 The browser will ask you that the website is malicious, to continue, click on "advanced settings" and then on "continue to the localhost site".
-Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
+Now you can test to connect your Nano on your android just like the [previous step](#web-app-test).
 
