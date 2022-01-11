@@ -244,74 +244,66 @@ In style.css copy-paste the following code :
 ```
 
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [parcel](https://parceljs.org/)  
-This package is a build tool that will help you package your application to run it in the browser.  
+#### Install the packages
+
+Run:
+
 ```console
 npm install --save-dev parcel
-```
-#### Install [@ledgerhq/hw-app-solana](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-solana)  
-This package will help you ask your Ledger Nano to access the solana application on the Ledger Nano.  
-```console
 npm install --save @ledgerhq/hw-app-solana
-```
-#### Install [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb)  
-The Ledger package provides you with all the methods to interact with your Ledger with an USB connexion.  
-```console
 npm install --save @ledgerhq/hw-transport-webusb
-```
-#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
-This package provides you the log of all the error from your connexion with your Ledger device that may appear when developing.  
-```console
 npm install --save @ledgerhq/logs
-```
-#### Install [@solana/web3.js](https://solana-labs.github.io/solana-web3.js/index.html)  
-The package provides you with all the methods to interact with the solana blockchain.  
-```console
 npm install --save @solana/web3.js
-```
-#### Install [bs58](https://www.npmjs.com/package/bs58)  
-The package provides you with all the methods to compute base 58 encoding.  
-```console
 npm install --save bs58
 ```
 
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://parceljs.org/">parcel</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it in the browser.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-solana">@ledgerhq/hw-app-solana</a></td>
+            <td colspan="2">It will help you ask your Ledger Nano to access the solana application on the Ledger Nano.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-transport-webusb</a></td>
+            <td colspan="2">It provides you with all the methods to interact with your Ledger with an USB connexion.  </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a></td>
+            <td colspan="2">It provides you the log of all the error from your connexion with your Ledger device that may appear when developing.</td>
+        </tr>
+        <tr>
+            <td><a href="https://solana-labs.github.io/solana-web3.js/index.html">@solana/web3.js</a></td>
+            <td colspan="2">It provides you with all the methods to interact with the solana blockchain.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/bs58">bs58</a></td>
+            <td colspan="2">It provides you with all the methods to compute base 58 encoding.</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Package.json Dependencies
-Now that the dependencies are installed you can find them in the "package.js".
-This is how your "package.json" has to look like.
-
-```javascript
-{
-  "name": "e2e-sol-tutorial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" 
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "dependencies": {
-    "@ledgerhq/hw-app-solana": "^6.15.0",
-    "@ledgerhq/hw-transport-webusb": "^6.19.0",
-    "@ledgerhq/logs": "^6.10.0",
-    "@solana/web3.js": "^1.31.0",
-    "bs58": "^4.0.1"
-    }
-}
-```
 
 #### Modify Package.json
-Modify two lines:
-- On the 5th line: `"main": "index.js"` => `"source": "index.html"`
-- On the 7th line: `"test": "echo \"Error: no test specified\" && exit 1"`=>`"start": "parcel" `
 
+Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
+And ensure you have this line in scripts:
+
+```javascript
+  "scripts": {
+    "start": "parcel"
+  },
+```
 Your file should know look like this:
 
 ```javascript
@@ -319,9 +311,9 @@ Your file should know look like this:
     "name": "e2e-sol-tutorial",
     "version": "1.0.0",
     "description": "",
-    "source": "index.html", // 5th line
+    "source": "index.html",
     "scripts": {
-        "start": "parcel" // 7th line
+        "start": "parcel"
     },
     "author": "",
     "license": "ISC",

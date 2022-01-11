@@ -263,62 +263,55 @@ In style.css copy-paste the following code :
 ```
 
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [parcel](https://parceljs.org/)  
-This package is a build tool that will help you package your application to run it in the browser.  
+#### Install the packages
+
+Run:
+
 ```console
 npm install --save-dev parcel
-```
-#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)  
-This package will help you ask your Ledger Nano to access the ethereum address.  
-```console
 npm install --save @ledgerhq/hw-app-eth
-```
-#### Install [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid)  
-The Ledger package provides you with all the methods to interact with your Ledger with an HID connexion.  
-```console
 npm install --save @ledgerhq/hw-transport-webhid
-```
-#### Install [ethers](https://docs.ethers.io/v5/)  
-The package provides you with all the methods to interact with the ethereum blockchain.  
-```console
 npm install --save ethers
 ```
 
-
-#### Package.json Dependencies
-Now that the dependencies are installed you can find them in the "package.js".
-This is how your "package.json" has to look like.
-
-```javascript
-{
-  "name": "e2e-tutorial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.18.0",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2",
-    "ethers": "^5.5.1"
-  }
-}
-```
-
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://parceljs.org/">parcel</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it in the browser.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a></td>
+            <td colspan="2">It will help you ask your Ledger Nano to access the ethereum address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a></td>
+            <td colspan="2">It provides you with all the methods to interact with your Ledger with an HID connexion.</td>
+        </tr>
+        <tr>
+            <td><a href="https://docs.ethers.io/v5/">ethers</a></td>
+            <td colspan="2">It provides you with all the methods to interact with the ethereum blockchain.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Modify Package.json
-Modify two lines:
-- On the 5th line: `"main": "index.js"` => `"source": "index.html"`
-- On the 7th line: `"test": "echo \"Error: no test specified\" && exit 1"`=>`"start": "parcel" `
+
+Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
+And ensure you have this line in scripts:
+
+```javascript
+  "scripts": {
+    "start": "parcel"
+  },
+```
 
 Your file should know look like this:
 
@@ -327,9 +320,9 @@ Your file should know look like this:
     "name": "e2e-sol-tutorial",
     "version": "1.0.0",
     "description": "",
-    "source": "index.html", // 5th line
+    "source": "index.html",
     "scripts": {
-        "start": "parcel" // 7th line
+        "start": "parcel"
     },
     "author": "",
     "license": "ISC",
