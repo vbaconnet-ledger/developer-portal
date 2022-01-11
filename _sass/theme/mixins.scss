@@ -893,12 +893,13 @@
         background-color: #272822;
         color: white;
         position: absolute;
-        right: 1.2rem;
-        top: 1.2rem;
+        right: 0.5rem;
+        top: 0.5rem;
         border: solid 1px white;
+        font-size:12px;
+        font-family: $global-font-family;
+        padding: 5px;
     }
-
-
 
     pre.highlight > button {
       opacity: 0;
