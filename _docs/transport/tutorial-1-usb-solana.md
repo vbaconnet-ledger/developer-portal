@@ -14,7 +14,7 @@ The purpose of the application is to transfer sol from your solana account on yo
 ## Prerequisites
 To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
 
-### Install the Solana Nano App and create a Solana account
+### Install the Solana Nano App
 First you need to install the Solana Nano App from Ledger Live as shown in the [prerequisites](../prerequisites) for Ethereum.
 
 ## Tutorial implementation
@@ -22,7 +22,7 @@ First you need to install the Solana Nano App from Ledger Live as shown in the [
 In this implementation, we will be building a web application with vanilla javascript that uses the USB protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) to communicate with the ledger.
 
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-sol-tutorial”.
+It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-sol-tutorial”.
 Run the following command to create the folder and go into it:
 
 ```console
@@ -36,21 +36,31 @@ Then, initialize the project by running the following:
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized open it in an editor.
-Create files named "index.html", "index.js" and "style.css" in the root folder. Create an "assets" folder and put [this logo](../images/ledger-logo.jpg) inside.
-Your folder must look like this.
+Run:
+
+```console
+touch index.html
+touch index.js
+touch style.css
+mkdir assets
+```
+
+Put [this logo](../images/ledger-logo.jpg) in the assets folder.
+
+Your working folder must look like this.
 
 {: .center}
-[![Folder tutorial](../images/folder-e2e-1.png)](../images/folder-e2e-1.png){: style="border-bottom:none;"}   
+[![Folder tutorial](../images/folder-e2e-sol.png)](../images/folder-e2e-sol.png){: style="border-bottom:none;"}   
 *Fig. 2: Folder of the Application*
 
 ### Code Implementation
 
-Now we will implement the code.  
-In index.html copy-paste the following code :
 #### index.html
+
+In index.html copy-paste the following code :
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -127,8 +137,10 @@ In index.html copy-paste the following code :
 ```
 
 
-In index.js copy-paste the following code :
 #### index.js
+
+In index.js copy-paste the following code :
+
 ```javascript
 import * as SolanaWeb3 from '@solana/web3.js';
 import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
@@ -214,8 +226,10 @@ document.getElementById("tx-transfer").onclick = async function () {
 }
 ```
 
-In style.css copy-paste the following code :
 #### style.css
+
+In style.css copy-paste the following code :
+
 ```css
 .modal-content{
     width: 300px;
@@ -223,11 +237,12 @@ In style.css copy-paste the following code :
 }
 
 #connect-ledger{
-    width: 16rem;
-    height: 7rem;
+    width: 17rem;
+    height: 9rem;
     background-color: white;
     border: none;
 }
+
 #connect-ledger:hover{
     background-color: #EDEFF3;
 }
@@ -368,13 +383,13 @@ Now you can click on the "Connect your Wallet" button and a modal will be opened
 Click on the Ledger logo.
 
 {: .center}
-[![Choice of Wallet](../images/tutorial-1-solana-pairing.png)](../images/tutorial-1-solana-pairing.png){: style="border-bottom:none;"}   
+[![Choice of Wallet](../images/tutorial-1-solana-wallet.png)](../images/tutorial-1-solana-wallet.png){: style="border-bottom:none;"}   
 *Fig. 7: Choice of Wallet*
 
 Now choose the Ledger Nano to connect it to the browser.
 
 {: .center}
-[![Connect the Ledger Nano](../images/tutorial-1-solana-wallet.png)](../images/tutorial-1-solana-wallet.png){: style="border-bottom:none;"}   
+[![Connect the Ledger Nano](../images/tutorial-1-solana-pairing.png)](../images/tutorial-1-solana-pairing.png){: style="border-bottom:none;"}   
 *Fig. 8: Connect the Ledger Nano*
 
 After connecting the Nano, click on "Get Information". If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.

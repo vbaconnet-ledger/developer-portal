@@ -15,8 +15,8 @@ The purpose of the application is to transfer ethers from your ethereum account 
 To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
 ### Send Ether token to your Ledger Nano ethereum account
 To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
-1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
-2. [Dimensions Network](https://faucet.dimensions.network/)
+- [Ropsten Ethereum Faucet](https://faucet.ropsten.be/), or
+- [Dimensions Network](https://faucet.dimensions.network/)
 
 #### Ropsten Ethereum Network
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
@@ -40,35 +40,45 @@ Go to the [Dimensions Network](https://faucet.dimensions.network/) website put y
 In this implementation, we will be building a web application with vanilla javascript that uses the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the ledger.
 
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-tutorial”.
+It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-eth-tutorial”.
 Run the following command to create the folder and go into it:
 
 ```console
-mkdir e2e-tutorial
-cd e2e-tutorial
+mkdir e2e-eth-tutorial
+cd e2e-eth-tutorial
 ```
 
-Then, initialize the project by running the following:
+Initialize the project by running the following:
 
 ```console
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized open it in an editor.
-Create files named "index.html", "index.js" and "style.css" in the root folder. Create an "assets" folder and put [this logo](../images/ledger-logo.jpg) inside.
-Your folder must look like this.
+Run:
+
+```console
+touch index.html
+touch index.js
+touch style.css
+mkdir assets
+```
+
+Put [this logo](../images/ledger-logo.jpg) in the assets folder.
+
+Your working folder must look like this.
 
 {: .center}
-[![Folder tutorial](../images/folder-e2e-1.png)](../images/folder-e2e-1.png){: style="border-bottom:none;"}  
+[![Folder tutorial](../images/folder-e2e-eth.png)](../images/folder-e2e-eth.png){: style="border-bottom:none;"}  
 *Fig. 3: Folder of the Application*
 
 ### Code Implementation
 
-Now we will implement the code.  
-In index.html copy-paste the following code :
 #### index.html
+
+In index.html copy-paste the following code :
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -146,8 +156,10 @@ In index.html copy-paste the following code :
 ```
 
 
-In index.js copy-paste the following code :
 #### index.js
+
+In index.js copy-paste the following code :
+
 ```javascript
 import { ethers } from "ethers";
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
@@ -233,8 +245,10 @@ document.getElementById("tx-transfer").onclick = async function () {
 }
 ```
 
-In style.css copy-paste the following code :
 #### style.css
+
+In style.css copy-paste the following code :
+
 ```css
 .modal-content{
     width: 300px;
@@ -242,11 +256,12 @@ In style.css copy-paste the following code :
 }
 
 #connect-ledger{
-    width: 16rem;
-    height: 7rem;
+    width: 17rem;
+    height: 9rem;
     background-color: white;
     border: none;
 }
+
 #connect-ledger:hover{
     background-color: #EDEFF3;
 }
@@ -317,24 +332,22 @@ Your file should know look like this:
 
 ```javascript
 {
-    "name": "e2e-sol-tutorial",
+    "name": "e2e-eth-tutorial",
     "version": "1.0.0",
     "description": "",
     "source": "index.html",
     "scripts": {
-        "start": "parcel"
+      "start": "parcel"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "parcel": "^2.0.1"
+      "parcel": "^2.1.1"
     },
     "dependencies": {
-        "@ledgerhq/hw-app-solana": "^6.15.0",
-        "@ledgerhq/hw-transport-webusb": "^6.19.0",
-        "@ledgerhq/logs": "^6.10.0",
-        "@solana/web3.js": "^1.31.0",
-        "bs58": "^4.0.1"
+      "@ledgerhq/hw-app-eth": "^6.22.3",
+      "@ledgerhq/hw-transport-webhid": "^6.20.0",
+      "ethers": "^5.5.3"
     }
 }
 ```
@@ -349,7 +362,7 @@ Start the development server:
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
+Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
 
 {: .center}
 [![Application running on browser](../images/tutorial-1-view.png)](../images/tutorial-1-view.png){: style="border-bottom:none;"}  
