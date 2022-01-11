@@ -8,50 +8,60 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of an application. This application will connect to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
+In this section, we will guide you through the creation of a web application. This application will connect to your Nano to display the address of a Bitcoin account. If you want it for Ethereum you can easily modify it.
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before starting ensure you have gone through the [prerequisites](../prerequisites).
+
 ## Web App USB and HID
 
-The implementation of a web application that use the USB or HID protocol is the same. The only difference is that instead of using the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) you will use [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) and vise versa.
+An application that uses WebUSB or WebHID has the same implementation and uses the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) or [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
 
-### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named “examples-web-hid-usb”.
-Run the following command to create the folder and go into it:
+### Initialization
+First, open a terminal and create a new folder in your usual working directory. For this tutorial, the folder will be named "example-web-hid-usb".
+
+Run:
 
 ```console
-mkdir examples-web-hid
-cd examples-web-hid
+mkdir example-web-hid-usb
+cd example-web-hid-usb
 ```
 
-Then, initialize the project by running the following:
+Initialize the project by running:
 
 ```console
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized open it in an editor.
-Create a folder named “src” and two files named “index.html” and “main.js” in the “src” folder.
+Run:
+
+```console
+mkdir src
+touch src/index.html
+touch src/main.js
+```
+
 Your folder must look like this.
 
 {: .center}
 [![Folder USB and HID](../images/folderUsbHid.png)](../images/folderUsbHid.png){: style="border-bottom:none;"}  
-*Fig. 1: Folder of the Application*
+*Fig. 1: File structure*
 
-### Code Implementation
+### Coding
+Open the folder example-web-hid-usb in an code editor.
 
-Now we will implement the code.  
-In index.html copy-paste the following code :
 #### index.html
+In index.html copy-paste the following code :
+
+
 ```html
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>My First Ledger App</title>
+    <title>My First Nano App</title>
     <script type="module" src="main.js"></script>
   </head>
   <body id="main">
@@ -61,10 +71,16 @@ In index.html copy-paste the following code :
 ```
 
 
-In main.js copy-paste the following code :
 #### main.js
+
+In main.js copy-paste the following code:
+
+<!--  -->
+{% include alert.html style="important" text="Comment out or remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
+<!--  -->
+
 ```javascript
-import "babel-polyfill";
+import 'core-js/actual';
 import { listen } from "@ledgerhq/logs";
 import AppBtc from "@ledgerhq/hw-app-btc";
 
@@ -74,10 +90,9 @@ import TransportWebUSB from "@ledgerhq/hw-transport-webusb";
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
 
 //Display the header in the div which has the ID "main"
-const initial = "<h1>Connect your Ledger and open Bitcoin app. Click anywhere to start...</h1>";
+const initial = "<h1>Connect your Nano and open the Bitcoin app. Click anywhere to start...</h1>";
 const $main = document.getElementById("main");
 $main.innerHTML = initial;
-
 
 document.body.addEventListener("click", async () => {
   $main.innerHTML = initial;
@@ -92,7 +107,7 @@ document.body.addEventListener("click", async () => {
     //listen to the events which are sent by the Ledger packages in order to debug the app
     listen(log => console.log(log))
 
-    //When the Ledger connected it is trying to display the bitcoin address
+    //When the Ledger device connected it is trying to display the bitcoin address
     const appBtc = new AppBtc(transport);
     const { bitcoinAddress } = await appBtc.getWalletPublicKey(
       "44'/0'/0'/0/0",
@@ -118,101 +133,102 @@ document.body.addEventListener("click", async () => {
 });
 ```
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill):
-```console
-npm install --save babel-polyfill
-```
-#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
+#### Install the packages
 
-This package provides you the log of all the error from your connexion with your Ledger device that may appear when developing.  
+Run:
+
 ```console
+npm install --save core-js
 npm install --save @ledgerhq/logs
-```
-#### Install [parcel](https://parceljs.org/)  
-This package is a build tool that will help you package your application to run it in the browser.  
-```console
 npm install --save-dev parcel
-```
-#### Install [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)  
-This package will help you ask your Ledger Nano to access the bitcoin address.  
-```console
 npm install --save @ledgerhq/hw-app-btc
 ```
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/core-js">core-js</a></td>
+            <td colspan="2">Modular standard library for JavaScript.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a></td>
+            <td colspan="2">It provides you the log of all the errors from your connexion with your Nano that may appear when developing.</td>
+        </tr>
+        <tr>
+            <td><a href="https://parceljs.org/">parcel</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it in the browser.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a></td>
+            <td colspan="2">It will help you ask your Nano to access the Bitcoin address.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 #### Install the Transport HID or USB package
 Then depending on your choice install one of the corresponding packages:
-- Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Ledger with an HID connexion:
-    - `npm install --save @ledgerhq/hw-transport-webhid`
-- Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Ledger with a USB connexion:
-    - `npm install --save @ledgerhq/hw-transport-webusb`
+- Install the Ledger package [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) which provide you with all the methods to interact with  your Nano with an HID connexion:
+    ```console
+    npm install --save @ledgerhq/hw-transport-webhid
+    ```
+- Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Nano with a USB connexion:
+    ```console
+    `npm install --save @ledgerhq/hw-transport-webusb`
+    ``` 
 
 
-#### Package.json Dependencies
-Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+#### Package.json
 
+Modify `"main": "index.js"` to `"source": "src/index.html"`.
+
+And ensure you have this line in your package.json:
 ```javascript
-{
-  "name": "examples-web-hid-usb",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
-    "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
-  },
-  "devDependencies": {
-      "parcel": "^2.0.0"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", // You can remove this script, it will be removed
+    "build": "parcel build", 
+    "start": "parcel"
   },
-  "author": "",
-  "license": "ISC"
-}
 ```
 
-A little modification has to be made in the “package.json” : `“main”: “index.js”` => `“source”: “src/index.html”`.
+Your "package.json" should to look like this:
 
-{: .center}
-[![PackageJson modify](../images/packageJsonModify.png)](../images/packageJsonModify.png){: style="border-bottom:none;"}   
-*Fig. 2: Modifying the package.json*
-
-Add some script :
-- `“build”: “parcel build”`
-- `“start”: “parcel”`
-#### Package.json Script
 ```javascript
 {
-  "name": "examples-web-hid-usb",
+  "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not both
+    "@ledgerhq/hw-transport-webhid": "^6.11.2", 
+    "@ledgerhq/hw-transport-webusb": "^6.11.2", 
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.20.2"
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+      "parcel": "^2.0.0"
   },
   "scripts": {
-    "build": "parcel build", //Add this line
-    "start": "parcel"        //Add this line
+    "build": "parcel build", 
+    "start": "parcel"
   },
   "author": "",
   "license": "ISC"
 }
 ```
 
-## Web App Test
+<!--  -->
+{% include alert.html style="important" text="In package.json, remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
+<!--  -->
+
+## Web App launch
 
 ### Start the Development Server
 Now that the Setup is finished, the app has to be built to be displayed.
@@ -227,28 +243,28 @@ Now the application is up and running. Open the browser and go to `localhost:123
 {: .center}
 [![Application running on browser](../images/webapp1.png)](../images/webapp1.png){: style="border-bottom:none;"}  
 *Fig. 3: Application Running on Browser*
-### Plug Your Ledger Device
-Before clicking on the text connect your Ledger to the USB port, unlock it and run the bitcoin application.
+### Plug your Nano
+Before clicking on the text connect your Nano to the USB port, unlock it and run the bitcoin application.
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
-*Fig. 4: Ledger Enter Code Pin*
+[![Enter Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
+*Fig. 4: Enter Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
-*Fig. 5: Ledger Application*
+[![Selection Bitcoin](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
+*Fig. 5: Select Bictoin*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
-*Fig. 6: Ledger Run Application*
+[![Run App](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+*Fig. 6: The App is running*
 
-### Connect Your Ledger to the Application
-Now you can click on the text and a popup will be prompt. Choose your Ledger device and click connexion
+### Connect Your Nano to the Application
+Now you can click on the text and a popup will be prompt. Choose your Nano and click connexion
 
 {: .center}
-[![Connect the Ledger](../images/webapp2.png)](../images/webapp2.png){: style="border-bottom:none;"}  
-*Fig. 7: Connect the Ledger*
+[![Connect your Nano](../images/webapp2.png)](../images/webapp2.png){: style="border-bottom:none;"}  
+*Fig. 7: Connect your Nano*
 
 Then if all goes well you must have the bitcoin address you just create [previously](#prerequisites)
 
@@ -256,43 +272,52 @@ Then if all goes well you must have the bitcoin address you just create [previou
 [![Address Account Displayed](../images/webapp3.png)](../images/webapp3.png){: style="border-bottom:none;"}  
 *Fig. 8: Address Account Displayed*
 
-Congratulations, you have successfully built your first application connected with Ledger !!!
+Congratulations, you have successfully built your first application connected with a Nano !
 
-## Web USB and Web HID on Android chrome
+<!--  -->
+{% include alert.html style="note" text="Note that if your finalize the operation on your Nano by accepting or rejecting, the corresponding message appears on your web application." %}
+<!--  -->
+
+
+## WebUSB and WebHID on Android chrome
 
 Android chrome supports the use of the Ledger device by HID and USB.
 On a mobile phone, only android can support the web application.
 Moreover, on android, just chrome can support the web application.
 
-### Test on Android chrome
-To test your application on android, a little change has to be made. Just add the “--https” flag in your start script, and run the script.
+### Launch on Android chrome
+To test your application on android, a little change has to be made. Just add the "--https" flag in your start script, and run the script.
 
 #### package.json
 ```javascript
 {
-  "name": "examples-web-hid-usb",
+  "name": "example-web-hid-usb",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", // You are either the webhid import or the webusb import
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", // But not the both
+    "@ledgerhq/hw-transport-webhid": "^6.11.2", 
+    "@ledgerhq/hw-transport-webusb": "^6.11.2",
     "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.20.2"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
   },
   "scripts": {
     "build": "parcel build",
-    "start": "parcel --https"        //Change this line
+    "start": "parcel --https" 
   },
   "author": "",
   "license": "ISC"
 }
 ```
 
-The browser will ask you that the website is malicious, to continue, click on “advanced settings” and then on “continue to the localhost site”.
-Now you can test to connect your Ledger device on your android just like the [previous step](#web-app-test).
+<!--  -->
+{% include alert.html style="important" text="In package.json, remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
+<!--  -->
+
+The browser will ask you that the website is malicious, to continue, click on "advanced settings" and then on "continue to the localhost site".
+Now you can test to connect your Nano on your android just like the [previous step](#web-app-test).
 
