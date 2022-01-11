@@ -145,12 +145,32 @@ npm install --save-dev parcel
 npm install --save @ledgerhq/hw-app-btc
 ```
 
-|     Package       |    What does it do?     |  
-| ----------------- | ----------------------- |
-| [core-js](https://www.npmjs.com/package/core-js) | Modular standard library for JavaScript. |
-| [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs) | It provides you the log of all the errors from your connexion with your Nano that may appear when developing. |
-| [parcel](https://parceljs.org/) | It is a build tool that will help you package your application to run it in the browser. |
-| [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc) | It will help you ask your Nano to access the Bitcoin address.|
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/core-js">core-js</a></td>
+            <td colspan="2">Modular standard library for JavaScript.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a></td>
+            <td colspan="2">It provides you the log of all the errors from your connexion with your Nano that may appear when developing.</td>
+        </tr>
+        <tr>
+            <td><a href="https://parceljs.org/">parcel</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it in the browser.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a></td>
+            <td colspan="2">It will help you ask your Nano to access the Bitcoin address.</td>
+        </tr>
+    </tbody>
+</table>
 
 
 #### Install the Transport HID or USB package
