@@ -49,31 +49,25 @@ The numbering below follows the one in the Requirements chapter.
 
 - A link to the Companion Wallet
 
-
-### 5 - Maintenance
-
-- I have read the [maintenance page](../maintenance-requirements) and will abide to the requirements
-
-
-### 6 - Documentation
+### 5- Documentation
 
 - Link to a Google doc tutorial about how to install and use your app (see [Third Party Applications Support](../support-requirements))
     - The doc must include the link to the published tutorial hosted on third party website 
 
 
-### 7 - Support
+### 6 - Support
 
 - I have read the [support page](../support-requirements)
 - Main support contact (mail address, Slack/Reddit/Telegram/Discord communities)
 
 
-### 8 - Marketing 
+### 7 - Marketing 
 
 - I have read the [marketing page](../marketing-requirements) 
 - Marketing plan
 
 
-### 9 - Warranty and liability
+### 8 - Warranty and liability
 
 - I have read and agree with information laid out the [warranty and liability disclaimer](../warranty-disclaimer)
 

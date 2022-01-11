@@ -17,5 +17,5 @@ You are responsible for all subsequent updates following the initial release. Le
 
 To have your application updates released on time, we recommend you inform Ledger as soon as possible and submit the changes at least one month before the desired release date.
 
-Please fill in this form for any updates to your Nano App code.
+Please [fill in this form](https://ledger.typeform.com/to/ZFVKrEHN) for any updates to your Nano App code.
 
