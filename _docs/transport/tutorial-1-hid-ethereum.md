@@ -356,7 +356,7 @@ Start the development server:
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
+Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
 
 {: .center}
 [![Application running on browser](../images/tutorial-1-view.png)](../images/tutorial-1-view.png){: style="border-bottom:none;"}  

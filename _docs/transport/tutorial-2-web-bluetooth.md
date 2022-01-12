@@ -393,7 +393,7 @@ npm run start
 <!--  -->
 
 
-Now the application is up and running. Open the browser and go to [localhost:3000](http://localhost:3000), it will display :
+Now the application is up and running. Open the browser and go to `localhost:3000`, it will display :
 
 {: .center}
 [![Application Running on Browser](../images/tutorial-2-connect.png){:width="840"}](../images/tutorial-2-connect.png){: style="border-bottom: none;"}   
@@ -441,7 +441,7 @@ Now instead of reading data, we will overwrite the data by calling a function of
 For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-[![Ledger Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Ledger Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jp)   
+[![Ledger Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Ledger Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jpg)   
 *Fig. 9: Ledger Review Screen  \ Fig. 10: Ledger Amount Screen*
 
 {: .center}
