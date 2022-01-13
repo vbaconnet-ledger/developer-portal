@@ -10,12 +10,14 @@ layout: doc
 ## Introduction
 In this section, we will guide you through the creation of a web application. This application will connect to your Nano to display the address of a Bitcoin account. If you want it for Ethereum you can easily modify it.
 
+Web USB and Web HID applications are implemented with [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) and [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
+
 ## Prerequisites
 Before starting ensure you have gone through the [prerequisites](../prerequisites).
 
-## Web App USB and HID
+## Coding
 
-An application that uses WebUSB or WebHID has the same implementation and uses the [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) or [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) respectively.
+
 
 ### Initialization
 First, open a terminal and create a new folder in your usual working directory. For this tutorial, the folder will be named "example-web-hid-usb".
@@ -149,7 +151,7 @@ npm install --save @ledgerhq/hw-app-btc
     <thead>
         <tr>
             <th colspan="1">Package</th>
-            <th colspan="2">What does it do</th>
+            <th colspan="2">What does it do?</th>
         </tr>
     </thead>
     <tbody>
@@ -228,7 +230,7 @@ Your "package.json" should to look like this:
 {% include alert.html style="important" text="In package.json, remove the Transport package you are not using (@ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid)." %}
 <!--  -->
 
-## Web App launch
+## Launch
 
 ### Start the Development Server
 Now that the Setup is finished, the app has to be built to be displayed.
@@ -279,7 +281,7 @@ Congratulations, you have successfully built your first application connected wi
 <!--  -->
 
 
-## WebUSB and WebHID on Android chrome
+## Android chrome
 
 Android chrome supports the use of the Ledger device by HID and USB.
 On a mobile phone, only android can support the web application.
