@@ -37,7 +37,11 @@ Try to apply the same kind of flow design for all of them.
 
 ## Video
 
-On the video demo you must: 
+Please create your video using the example given.  
+  
+<video controls width="395" style="float:right" muted preload='none' poster='../images/ledger-submission.png'><source src="../../videos/ledger-submission.mp4" type='video/mp4'></video><br>
+
+On the video demo you must show how to: 
 - Verify a public address on the Ledger device
 - Display the transaction information before allowing the signature
 - Reject a transaction on the Ledger device
