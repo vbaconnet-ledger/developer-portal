@@ -151,7 +151,7 @@ npm install --save @ledgerhq/hw-app-btc
     <thead>
         <tr>
             <th colspan="1">Package</th>
-            <th colspan="2">What does it do</th>
+            <th colspan="2">What does it do?</th>
         </tr>
     </thead>
     <tbody>
