@@ -8,13 +8,15 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of an application. This application will call a smart contract to read and write.
+In this section, we will guide you through the creation of an application that will call a smart contract to read and write.
+
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before startint, make sure you have gone through the [prerequisites](../prerequisites).
+
 ### Send Ether token to your Ledger Nano ethereum account
 To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
-1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
-2. [Dimensions Network](https://faucet.dimensions.network/)
+- [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
+- [Dimensions Network](https://faucet.dimensions.network/)
 
 #### Ropsten Ethereum Network
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
@@ -33,41 +35,48 @@ Go to the [Dimensions Network](https://faucet.dimensions.network/) website put y
 *Fig. 2: Ropsten Ethereum Faucet*
 
 ## Web App Bluetooth (only Nano X)
-Ledger Nano S does not have Bluetooth functionality you can only use Ledger Nano X with Bluetooth.
+The Ledger Nano S does not have the Bluetooth functionality. This tutorial will only work with a Ledger Nano X.
 
 Please be aware that the Bluetooth implementation is only supported by a few browsers.
-You can check the [browser support](https://caniuse.com/web-bluetooth) for the Web Bluetooth.
+You can check the [browser support](https://caniuse.com/web-bluetooth) for the Web Bluetooth transport.
 
 ### Project Initialization
-It is time to implement the application and test it. This web application will be implemented using React which is a frontend Javascript framework.
+The app is build with React, which is a frontend Javascript framework.
 
-First, open a terminal and create a new project, during this tutorial the project will be named “e2e-tutorial”.
-Run the following command to create the project and go into it:
+First, open a terminal and create a new project. For this tutorial the project will be named "e2e-tutorial-contract".
+Run:
 
 ```console
-npx create-react-app e2e-tutorial
-cd e2e-tutorial
+npx create-react-app e2e-tutorial-contract
+cd e2e-tutorial-contract
 ```
 
-Now that the project is initialized, open it in an editor.
-You will see a React app initialized with an "src" folder where you will find all the code.
+Open the folder in an editor.
+The React app initialization creates a "src" folder where you will find all the code.
 
-To implement the Ledger connexion you have to change and create three files.
+Run:
 
-The implementation will not dive into the other file as this is not the focus of this tutorial.
+```console
+touch ./src/ConnectLedger.js
+touch ./src/SmartContract.js
+touch ./src/ethereum.js
+```
 
-Dive into the folder named “src” to modify/create the three files. The files are named "App.js", "ConnectLedger.js”,"SmartContract.js" and ethereum.js”.
 Your folder must look like this.
 
 {: .center}
 [![Folder of the Application](../images/tutorial-2-folder.png){:width="210"}](../images/tutorial-2-folder.png){: style="border-bottom: none;"}   
 *Fig. 1: Folder of the Application*
 
+To implement the Ledger connexion you will only modify "App.js", "Index.js", "ConnectLedger.js”,"SmartContract.js", and ethereum.js”
+
+
 ### Code Implementation
 
-Now we will implement the code.  
-In App.js copy-paste the following code :
 #### App.js
+
+In App.js copy-paste the following code:
+
 ```javascript
 import React, { useState } from 'react';
 import ConnectLedger from './ConnectLedger.js';
@@ -103,8 +112,10 @@ in the Index.js add this line
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-In ConnectLedger.js copy-paste the following code :
 #### ConnectLedger.js
+
+In ConnectLedger.js, copy-paste the following code:
+
 ```javascript
 import React from 'react';
 
@@ -137,8 +148,10 @@ export default ConnectLedger;
 ```
 
 
-And create the "SmartContract.js" file in the "src" folder, then copy-paste the following code :
 #### SmartContract.js
+
+In "SmartContract.js", copy-paste the following code:
+
 ```javascript
 import React, { useState } from 'react';
 import getBlockchain from './ethereum.js';
@@ -240,8 +253,10 @@ function SmartContract({eth,address}) {
 export default SmartContract;
 ```
 
-Finally, create the "ethereum.js" file in the "src" folder, then copy-paste the following code :
 #### ethereum.js
+
+In "ethereum.js", copy-paste the following code:
+
 ```javascript
 import { Contract } from 'ethers';
 
@@ -304,34 +319,46 @@ export default getBlockchain;
 
 
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [bootstrap](https://www.npmjs.com/package/bootstrap) 
-This package allow you to use the CSS framework Bootstrap.  
+Run:
+
 ```console
 npm install --save bootstrap
-```
-#### Install [ethers](https://docs.ethers.io/v5/)  
-The package provides you with all the methods to interact with the ethereum blockchain.  
-```console
 npm install --save ethers
-```
-#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)
-This Ledger package will help you ask your Ledger device to access the ethereum address:
-```console
 npm install --save @ledgerhq/hw-app-eth
-```
-#### Install [@ledgerhq/hw-transport-web-ble](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble)
-This Ledger package provide you with all the methods to interact with  your Ledger Nano X with a Bluetooth connexion.  
-```console
 npm install --save @ledgerhq/hw-transport-web-ble
 ```
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://parceljs.org/">bootstrap</a></td>
+            <td colspan="2">It allows you to use the Bootstrap CSS framework.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-solana">ethers</a></td>
+            <td colspan="2">It provides you with all the methods to interact with the Ethereum blockchain</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-app-eth</a></td>
+            <td colspan="2">It will help you ask your Nano to access the ethereum address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/hw-transport-web-ble</a></td>
+            <td colspan="2">It provides you with all the methods to interact with your Ledger Nano X with a Bluetooth connexion.</td>
+        </tr>
+    </tbody>
+</table>
 
 
 #### Package.json Dependencies
-Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+Now that the dependencies are installed you can find them in the "package.js".
+This is how your "package.json" shoud look like:
 
 ```javascript
 {
@@ -339,13 +366,13 @@ This is how your “package.json” has to look like.
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.14.0",              //New line added
-    "@ledgerhq/hw-transport-web-ble": "^6.11.2",    //New line added
+    "@ledgerhq/hw-app-eth": "^6.14.0",              
+    "@ledgerhq/hw-transport-web-ble": "^6.11.2",  
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^4.6.0",                           //New line added
-    "ethers": "^5.5.2",                              //New line added
+    "bootstrap": "^4.6.0",         
+    "ethers": "^5.5.2",        
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -380,8 +407,7 @@ This is how your “package.json” has to look like.
 ```
 ## Web App Test
 ### Start the Development Server
-Now that the Setup is finished, the app has to be available to be displayed.
-Therefore start the development server:
+Run:
 
 ```console
 npm run start
@@ -399,8 +425,10 @@ Now the application is up and running. Open the browser and go to `localhost:300
 [![Application Running on Browser](../images/tutorial-2-connect.png){:width="840"}](../images/tutorial-2-connect.png){: style="border-bottom: none;"}   
 *Fig. 2: Application Running on Browser*  
 
+Don't click on the button yet.
+
 ### Launch Ethereum App
-Before clicking on the button, unlock it and run the Ethereum application.
+Before clicking on the button, unlock your Nano X and run the Ethereum application.
 The steps are described below.
 
 {: .center}
@@ -415,8 +443,8 @@ The steps are described below.
 [![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom: none;"}   
 *Fig. 5: Ledger Run Application*
 
-### Connect Your Ledger to the Application
-Now you can click on the button and a popup will be prompt. Choose your Ledger Nano X and click connexion
+### Connect Your Nano to the Application
+Now you can click on the button and a popup open. Choose your Ledger Nano X and click connexion
 
 {: .center}
 [![Connect the Ledger with Bluetooth](../images/tutorial-2-pairing.png){:width="840"}](../images/tutorial-2-pairing.png){: style="border-bottom: none;"}   
@@ -437,20 +465,20 @@ Now instead of reading data, we will overwrite the data by calling a function of
 [![Change data from a smart contract](../images/tutorial-2-changedata.png){:width="840"}](../images/tutorial-2-changedata.png){: style="border-bottom: none;"}    
 *Fig. 8: Change data from a smart contract*
 
-### Verify the Address on Your Ledger Device
+### Verify the Address on your Nano
 For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-[![Ledger Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Ledger Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jpg)   
-*Fig. 9: Ledger Review Screen  \ Fig. 10: Ledger Amount Screen*
+[![Nano Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Nano Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jpg)   
+*Fig. 9: Nano Review Screen  \ Fig. 10: Nano Amount Screen*
 
 {: .center}
-[![Ledger Address Screen](../images/ledger-tx-address.jpg){:width="320"}](../images/ledger-tx-address.jpg) [![Ledger Network Screen](../images/ledger-tx-network.jpg){:width="320"}](../images/ledger-tx-network.jpg)   
-*Fig. 11: Ledger Address Screen   \   Fig. 12: Ledger Network Screen*
+[![Nano Address Screen](../images/ledger-tx-address.jpg){:width="320"}](../images/ledger-tx-address.jpg) [![Nano Network Screen](../images/ledger-tx-network.jpg){:width="320"}](../images/ledger-tx-network.jpg)   
+*Fig. 11: Nano Address Screen   \   Fig. 12: Nano Network Screen*
 
 {: .center}
-[![Ledger Max Fees Screen](../images/ledger-tx-fees.jpg){:width="320"}](../images/ledger-tx-fees.jpg) [![Ledger Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="320"}](../images/ledger-tx-accept.jpg)   
-*Fig. 13: Ledger Max Fees Screen   \  Fig. 14: Ledger Accept and Send Screen*
+[![Nano Max Fees Screen](../images/ledger-tx-fees.jpg){:width="320"}](../images/ledger-tx-fees.jpg) [![Nano Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="320"}](../images/ledger-tx-accept.jpg)   
+*Fig. 13: Nano Max Fees Screen   \  Fig. 14: Nano Accept and Send Screen*
 
 
 <!--  -->
@@ -473,7 +501,7 @@ Wait till the status passes to Success.
 
 ### Verify the update of data
 
-Finally, to verify if the update was done in the previous section. Return to your web application and again click on "Get data".
+Finally, to verify if data was updated, open the web application and click on "Get data".
 
 {: .center}
 [![Verify the data](../images/tutorial-2-getdata2.png){:width="840"}](../images/tutorial-2-getdata2.png){: style="border-bottom: none;"}    
@@ -483,4 +511,4 @@ Finally, to verify if the update was done in the previous section. Return to you
 [![Verify the data](../images/tutorial-2-getdata3.png){:width="840"}](../images/tutorial-2-getdata3.png){: style="border-bottom: none;"}    
 *Fig. 18: Verify the data*
 
-Congratulations, you have successfully built your first application connected with Ledger !!!
+Congratulations, you have successfully built your first application connected with Ledger!

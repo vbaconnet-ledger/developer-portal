@@ -12,7 +12,7 @@ In this section, we will guide you through the creation of an application. This 
 The purpose of the application is to transfer sol from your solana account on your Ledger to another account.
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before startint, make sure you have gone through the [prerequisites](../prerequisites).
 
 ### Install the Solana Nano App
 First you need to install the Solana Nano App from Ledger Live as shown in the [prerequisites](../prerequisites) for Ethereum.
@@ -23,7 +23,7 @@ In this implementation, we will be building a web application with vanilla javas
 
 ### Project Initialization
 It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-sol-tutorial”.
-Run the following command to create the folder and go into it:
+Run:
 
 ```console
 mkdir e2e-sol-tutorial
