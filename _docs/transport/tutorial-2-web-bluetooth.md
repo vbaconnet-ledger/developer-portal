@@ -11,7 +11,7 @@ layout: doc
 In this section, we will guide you through the creation of an application that will call a smart contract to read and write.
 
 ## Prerequisites
-Before startint, make sure you have gone through the [prerequisites](../prerequisites).
+Before starting, make sure you have gone through the [prerequisites](../prerequisites).
 
 ### Send Ether token to your Ledger Nano ethereum account
 To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
