@@ -466,7 +466,7 @@ Now instead of reading data, we will overwrite the data by calling a function of
 *Fig. 8: Change data from a smart contract*
 
 ### Verify the Address on your Nano
-For security reasons, the address will also be displayed to your Ledger Nano X to verify and confirm the address.
+For security reasons, the address will also be displayed on your Ledger Nano X to verify and confirm the address.
 
 {: .center}
 [![Nano Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Nano Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jpg)   
