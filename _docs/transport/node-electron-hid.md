@@ -11,40 +11,49 @@ layout: doc
 In this section, we will guide you through the creation of a desktop electron application. This application will be connected to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites) before diving into the implementation.
+Before starting, make sure you have gone through the [prerequisites](../prerequisites).
+
 ## Implementation for Web USB and Web HID on Nano S/X
 
-During this application we will use the Ledger node hid package which is [@ledgerhq/hw-transport-node-hid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid).
+For this application we will use the Ledger node hid package which is [@ledgerhq/hw-transport-node-hid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid).
 
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder, during this tutorial the folder will be named “examples-node-electron-hid”.
-Run the following command to create the folder and go into it:
+First, open a terminal and create a new folder. For this tutorial the folder will be named “examples-node-electron-hid”.
+Run:
 
 ```console
 mkdir examples-node-electron-hid
 cd examples-node-electron-hid
 ```
 
-Then, initialize the project by running:
+Then, initialize the project:
 
 ```console
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized, open it in an editor.
-Create the files “index.html”, “main.js” and “renderer.js”.
+Run:
+
+```console
+touch index.html
+touch main.js
+touch renderer.js
+```
+
 Your folder must look like this.
 
 {: .center}
 [![Folder of the Application](../images/folderNodeHID.png){:width="210px"}](../images/folderNodeHID.png)  
 *Fig. 1: Folder of the Application*
+
 ### Code Implementation
 
-Now we will implement the code.  
-In index.html copy-paste the following code :
 #### index.html
+
+In index.html copy-paste the following code:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -76,8 +85,10 @@ In index.html copy-paste the following code :
 </html>
 ```
 
-In main.js copy-paste the following code :
 #### main.js
+
+In main.js copy-paste the following code:
+
 ```javascript
 // Modules to control application life and create native browser window
 require("babel-polyfill");
@@ -180,9 +191,10 @@ app.on("activate", function() {
 // code. You can also put them in separate files and require them here.
 ```
 
-
-In renderer.js copy-paste the following code :
 #### renderer.js
+
+In renderer.js copy-paste the following code:
+
 ```javascript
 const electron = require("electron");
 const { ipcRenderer } = electron;
@@ -203,78 +215,67 @@ ipcRenderer.send("requestBitcoinInfo");
 ```
 
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [Electron](https://www.electronjs.org/)
-This package is a build tool that will help you package your application to run it as a desktop application.  
+#### Install the packages
+
+Run:
+
 ```console
 npm install --save-dev electron
-```
-#### Install [Babel polyfill](https://www.npmjs.com/package/@babel/polyfill)  
-```console
 npm install --save babel-polyfill
-```
-#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
-This Ledger package provides you with the log of all the error from your connexion with your Ledger device that may appear when developing.  
-```console
 npm install @ledgerhq/logs
-```
-#### Install [@ledgerhq/hw-app-btc](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc)
-This package will help you ask your Ledger Nano to access the bitcoin address.  
-```console
 npm install --save @ledgerhq/hw-app-btc
-```
-#### Install [Browserify](https://browserify.org/)
-This package will help you use "require" like Node does.  
-```console
 npm install --save browserify
 ```
-#### Install [@ledgerhq/hw-transport-node-hid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid)
-This Ledger package provides you with all the methods to interact with your Ledger with an HID connexion.  
-```console
-npm install --save @ledgerhq/hw-transport-node-hid
-```
 
-Now that the dependencies are installed you can find them in the “package.js”.
-During the initialization of the project thanks to npm, the default value for the entry file was "index.js".
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://www.electronjs.org/">Electron</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it as a desktop application.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@babel/polyfill">Babel polyfill</a></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a></td>
+            <td colspan="2">It provides you with the log of all the error from your connexion with your Ledger device that may appear when developing. </td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-btc">@ledgerhq/hw-app-btc</a></td>
+            <td colspan="2">It helps you ask your Ledger Nano to access the bitcoin address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://browserify.org/">Browserify</a></td>
+            <td colspan="2">It helps you use "require" like Node does.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid">@ledgerhq/hw-transport-node-hid</a></td>
+            <td colspan="2">It provides you with all the methods to interact with your Ledger with an HID connexion.</td>
+        </tr>
+    </tbody>
+</table>
 
-For the project, the entry file will be "main.js".
-Therefore you have to change the option "main" in the "package.json".
+#### Modify Package.json
 
-This is how your “package.json” has to look like.
+Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
+And ensure you have this line in scripts:
 
-#### Package.json Dependencies
 ```javascript
-{
-  "name": "examples-node-electron-hid",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",    //Change from "index.js" to "main.js"
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" //You can remove this line
+    "start": "electron"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^16.0.1"
-  },
-  "dependencies": {
-    "@ledgerhq/hw-app-btc": "^6.15.1",
-    "@ledgerhq/hw-transport-node-hid": "^6.11.2",
-    "@ledgerhq/logs": "^6.10.0",
-    "babel-polyfill": "^6.26.0",
-    "browserify": "^17.0.0"
-  }
-}
-
 ```
 
+Your file should know look like this:
 
-Add a script :
-- `"start": "electron ."`
-
-#### Package.json Script
 ```javascript
 {
   "name": "examples-node-electron-hid",
@@ -282,7 +283,7 @@ Add a script :
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ." //Add this script
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
@@ -306,31 +307,32 @@ Now that the Setup is finished, let's start the application.
 npm run start
 ```
 
-Now the application is up and running. A window must have been launched on your machine, it will display :
+Now the application is up and running. A window must have been launched on your machine, it will display:
 
 {: .center}
 [![Node Desktop Application](../images/electron-node-hid-window.png){:width="840px"}](../images/electron-node-hid-window.png)  
 *Fig. 2: Node Desktop Application*
-### Plug Your Ledger Device
-Connect your ledger to the USB port, unlock it and run the bitcoin application.
+
+### Plug Your Nano
+Connect your Nano to the USB port, unlock it and open the Bitcoin application.
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg)  
-*Fig. 3: Ledger Enter Code Pin*
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg)  
+*Fig. 3: Nano Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg)   
-*Fig. 4: Ledger Application*
+[![Nano Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg)   
+*Fig. 4: Nano Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
-*Fig. 5: Ledger Run Application*
+[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
+*Fig. 5: Nano Run Application*
 
-Then if all goes well you must have displayed on the screen the bitcoin address you just create [previously](#prerequisites)
+Then, if all goes well, the Bitcoin address you've just [created](#prerequisites) is displayed on the application.
 
 {: .center}
 [![Address Account Displayed](../images/electron-node-address.png){:width="840px"}](../images/electron-node-address.png)  
 *Fig. 6: Address Account Displayed*
 
-Congratulations you have successfully built your first application connected with Ledger !!!
+Congratulations you have successfully built your first application connected with Ledger!
