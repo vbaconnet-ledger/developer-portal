@@ -266,8 +266,8 @@ npm install --save @ledgerhq/hw-transport-node-hid
 
 #### Modify Package.json
 
-Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
-And ensure you have this line in scripts:
+1. Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
+2. Ensure you have this line in scripts:
 
 ```javascript
   "scripts": {
@@ -282,7 +282,7 @@ Your file should know look like this:
   "name": "examples-node-electron-hid",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "source": "index.html",
   "scripts": {
     "start": "electron ."
   },
