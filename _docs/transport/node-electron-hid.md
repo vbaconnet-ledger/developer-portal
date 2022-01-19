@@ -226,6 +226,7 @@ npm install --save babel-polyfill
 npm install @ledgerhq/logs
 npm install --save @ledgerhq/hw-app-btc
 npm install --save browserify
+npm install --save @ledgerhq/hw-transport-node-hid
 ```
 
 <table>
