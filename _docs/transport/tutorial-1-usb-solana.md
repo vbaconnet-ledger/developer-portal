@@ -405,6 +405,8 @@ To send some sol tokens on the Devnet network, you can either go to one of the s
 
 If you are looking for the easier and quicker way, use the Solana Faucet. If you would rather use the Solana CLI, please read this documentation to [install it](https://docs.solana.com/cli) before starting sending Sol.
 
+The Solana Devnet is not visible on Ledger Live, you can then check the transaction passed on [the Solana Explorer](https://explorer.solana.com/?cluster=devnet). 
+
 #### Option n°1 - Solana Faucet
 Go to the [Solana Faucet](https://solfaucet.com/) website put your Wallet Public Key (displayed on the web app) on the input and click on "Devnet"
 
