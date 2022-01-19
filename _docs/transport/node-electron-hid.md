@@ -264,6 +264,13 @@ npm install --save @ledgerhq/hw-transport-node-hid
     </tbody>
 </table>
 
+Since automatic polyfills have been removed in webpack 5, run the following command to avoid errors when building the app locally:
+
+```console
+npm install node-polyfill-webpack-plugin
+npm i stream
+```
+
 #### Modify Package.json
 
 1. Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
@@ -310,9 +317,12 @@ node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ./main.js
 
 Now the application is up and running. A window must have been launched on your machine, it will display:
 
-{: .center}
-[![Node Desktop Application](../images/electron-node-hid-window.png){:width="840px"}](../images/electron-node-hid-window.png)  
+<div class="uk-text-center">
+<a href="../images/electron-node-hid-window.png" style="border-bottom:none;">
+<img src="../images/electron-node-hid-window.png" >
+</a>
 *Fig. 2: Node Desktop Application*
+</div>
 
 ### Plug Your Nano
 Connect your Nano to the USB port, unlock it and open the Bitcoin application.
@@ -332,8 +342,12 @@ The steps are described below.
 
 Then, if all goes well, the Bitcoin address you've just [created](#prerequisites) is displayed on the application.
 
-{: .center}
-[![Address Account Displayed](../images/electron-node-address.png){:width="840px"}](../images/electron-node-address.png)  
+
+<div class="uk-text-center">
+<a href="../images/electron-node-address.png" style="border-bottom:none;">
+<img src="../images/electron-node-address.png" >
+</a>
 *Fig. 6: Address Account Displayed*
+</div>
 
 Congratulations you have successfully built your first application connected with Ledger!
