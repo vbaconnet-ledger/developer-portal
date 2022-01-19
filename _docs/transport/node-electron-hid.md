@@ -8,7 +8,7 @@ toc: true
 layout: doc
 ---
 ## Introduction
-In this section, we will guide you through the creation of a desktop electron application. This application will be connected to your Ledger to display the address of your account (eg. bitcoin account, ethereum account).
+In this section, we will guide you through the creation of a desktop electron application. This application will be connected to your Nano to display the address of your account (eg. bitcoin account, ethereum account).
 
 ## Prerequisites
 Before starting, make sure you have gone through the [prerequisites](../prerequisites).
@@ -200,7 +200,7 @@ const electron = require("electron");
 const { ipcRenderer } = electron;
 
 document.getElementById("main").innerHTML =
-  "<h1>Connect your Ledger and open Bitcoin app...</h1>";
+  "<h1>Connect your Nano and open Bitcoin app...</h1>";
 
 ipcRenderer.on("bitcoinInfo", (event, arg) => {
   const h1 = document.createElement("h2");
@@ -259,7 +259,7 @@ npm install --save @ledgerhq/hw-transport-node-hid
         </tr>
         <tr>
             <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-node-hid">@ledgerhq/hw-transport-node-hid</a></td>
-            <td colspan="2">It provides you with all the methods to interact with your Ledger with an HID connexion.</td>
+            <td colspan="2">It provides you with all the methods to interact with your Nano with an HID connexion.</td>
         </tr>
     </tbody>
 </table>
