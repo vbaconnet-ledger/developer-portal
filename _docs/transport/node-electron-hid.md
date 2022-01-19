@@ -305,7 +305,7 @@ Your file should know look like this:
 ### Start the Development Server
 Now that the Setup is finished, let's start the application.
 ```console
-npm run start
+node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ./main.js
 ```
 
 Now the application is up and running. A window must have been launched on your machine, it will display:
