@@ -8,6 +8,10 @@ toc: true
 layout: doc
 ---
 
+### Introduction
+
+Using a local version of Ledger Live to test your integration can be time consuming. If you would rather have a faster process, you can use the CLI.
+
 ### Set up
 
 Clone [ledger-live-common](https://github.com/LedgerHQ/ledger-live-common) repository

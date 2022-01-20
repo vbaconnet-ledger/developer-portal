@@ -4,6 +4,7 @@
 - title: Connecting an app
   docs:
   - transport/overview
+  - transport/required-skills
   - transport/choose-the-transport
 
 - title: Integration Walkthrough
