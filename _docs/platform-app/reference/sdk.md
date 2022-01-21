@@ -11,5 +11,5 @@ If this is your first time using the SDK, we highly encourage you to follow our 
 You will learn how to easily create a simple Live App using our SDK.
 
 
-## Where is the SDK?
+## Where is the SDK documentation?
 Please find the latest release of the SDK documentation <a href="https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md" target="_blank">here</a>.  
