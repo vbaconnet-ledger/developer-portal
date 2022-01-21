@@ -22,13 +22,4 @@
 - title: Reference
   docs:
   - platform-app/reference/manifest
-  - platform-app/modules
-  - platform-app/classes
-  - platform-app/device-model
-  - platform-app/exchange-type
-  - platform-app/families
-  - platform-app/fees-level
-  - platform-app/transport
-  - platform-app/transaction-common
-  - platform-app/bitcoin-transaction
-  - platform-app/ethereum-transaction
+  - platform-app/reference/sdk
