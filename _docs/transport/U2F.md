@@ -22,7 +22,7 @@ Explanation:
 - U2F channel was a "fire and forget" protocol without even the capacity to know if a device is plugged or disconnected.
 - The support of U2F channel proxying have been removed from our apps
 
-### What are the solutions and their differences
+## What are the solutions and their differences
 
 The solution we suggest is to use either `@ledgerhq/hw-transport-webusb` or `@ledgerhq/hw-transport-webhid`. You can click on the following links to check the compatibility between a web browser and [WebHID](https://caniuse.com/webhid), [WebUSB](https://caniuse.com/webusb) and [Web Bluetooth](https://caniuse.com/web-bluetooth).
 

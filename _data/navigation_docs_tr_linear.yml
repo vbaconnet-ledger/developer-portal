@@ -25,7 +25,7 @@
 #   docs:
 #   - transport/connect-wallet
 
-- title: FAQ & Troubleshooting
+- title: FAQ
   docs:
   - transport/U2F
-  - transport/test-communication
+  - transport/transport-nano
