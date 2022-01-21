@@ -1,0 +1,135 @@
+---
+title: lcx__ripemd160_8h
+subtitle:
+tags: []
+category: CryptographyAPI
+toc:
+layout: doc
+---
+
+
+<p>RIPEMD-160 hash function.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ripemd160__s">cx_ripemd160_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RIPEMD-160 context.  <a href="../cx__ripemd160__s#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0e819ee2f3468667284716213284e621"><td class="memItemLeft" align="right" valign="top"><a id="a0e819ee2f3468667284716213284e621"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#a0e819ee2f3468667284716213284e621">CX_RIPEMD160_SIZE</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:a0e819ee2f3468667284716213284e621"><td class="mdescLeft">&#160;</td><td class="mdescRight">RIPEMD160 message digest size. <br /></td></tr>
+<tr class="separator:a0e819ee2f3468667284716213284e621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae0605e61b5074bc86b616405eed44934"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ripemd160__s">cx_ripemd160_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a></td></tr>
+<tr class="memdesc:ae0605e61b5074bc86b616405eed44934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#ae0605e61b5074bc86b616405eed44934">More...</a><br /></td></tr>
+<tr class="separator:ae0605e61b5074bc86b616405eed44934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a55d679791de8e2e677fffba87a3a94d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#a55d679791de8e2e677fffba87a3a94d3">cx_ripemd160_init_no_throw</a> (<a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *hash)</td></tr>
+<tr class="memdesc:a55d679791de8e2e677fffba87a3a94d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a RIPEMD-160 context.  <a href="#a55d679791de8e2e677fffba87a3a94d3">More...</a><br /></td></tr>
+<tr class="separator:a55d679791de8e2e677fffba87a3a94d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de39768d5a783cd37128eccfb914416"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#a4de39768d5a783cd37128eccfb914416">cx_ripemd160_init</a> (<a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *hash)</td></tr>
+<tr class="memdesc:a4de39768d5a783cd37128eccfb914416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a RIPEMD-160 context.  <a href="#a4de39768d5a783cd37128eccfb914416">More...</a><br /></td></tr>
+<tr class="separator:a4de39768d5a783cd37128eccfb914416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a>
+
+## Detailed Description
+
+<div class="textblock"><p>RIPEMD-160 hash function. </p>
+<p>RIPEMD-160 is a 160-bit cryptographic hash function. Refer to <a href="../https://homes.esat.kuleuven.be/~bosselae/ripemd160">RIPEMD-160 </a> for more details. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ae0605e61b5074bc86b616405eed44934"></a>
+<h2 class="memtitle">cx_ripemd160_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../cx__ripemd160__s">cx_ripemd160_s</a> <a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience type. </p>
+<p>See <a class="el" href="../cx__ripemd160__s" title="RIPEMD-160 context. ">cx_ripemd160_s</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4de39768d5a783cd37128eccfb914416"></a>
+<h2 class="memtitle">cx_ripemd160_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int cx_ripemd160_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize a RIPEMD-160 context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RIPEMD160 identifier. </dd></dl>
+
+<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117ab4a075a43ece09e77953b297b1a36fb3">CX_RIPEMD160</a>, and <a class="el" href="../lcx__ripemd160_8h#a55d679791de8e2e677fffba87a3a94d3">cx_ripemd160_init_no_throw()</a>.</p>
+
+</div>
+</div>
+<a id="a55d679791de8e2e677fffba87a3a94d3"></a>
+<h2 class="memtitle">cx_ripemd160_init_no_throw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ripemd160_init_no_throw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a RIPEMD-160 context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code:<ul>
+<li>CX_OK on success </li>
+</ul>
+</dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__ripemd160_8h#a4de39768d5a783cd37128eccfb914416">cx_ripemd160_init()</a>.</p>
+
+</div>
+</div>

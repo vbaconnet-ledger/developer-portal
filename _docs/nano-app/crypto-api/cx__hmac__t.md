@@ -1,0 +1,29 @@
+---
+title: cx__hmac__t
+subtitle:
+tags: []
+category: CryptographyAPI
+toc:
+layout: doc
+---
+
+
+<p>HMAC context, abstract type.  
+ <a href="../cx__hmac__t#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a88091e6802236471cb8e165d359d63ce"><td class="memItemLeft" align="right" valign="top"><a id="a88091e6802236471cb8e165d359d63ce"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__hmac__t#a88091e6802236471cb8e165d359d63ce">key</a> [128]</td></tr>
+<tr class="memdesc:a88091e6802236471cb8e165d359d63ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key. <br /></td></tr>
+<tr class="separator:a88091e6802236471cb8e165d359d63ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96905c2e258ff1e20ff748244a831ac1"><td class="memItemLeft" align="right" valign="top"><a id="a96905c2e258ff1e20ff748244a831ac1"></a>
+<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__hmac__t#a96905c2e258ff1e20ff748244a831ac1">hash_ctx</a></td></tr>
+<tr class="memdesc:a96905c2e258ff1e20ff748244a831ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash context. <br /></td></tr>
+<tr class="separator:a96905c2e258ff1e20ff748244a831ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a>
+
+## Detailed Description
+
+<div class="textblock"><p>HMAC context, abstract type. </p>
