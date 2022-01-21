@@ -11,7 +11,7 @@ layout: doc
 
 To broadcast a transaction, you will need to use the `broadcastSignedTransaction` function.
 
-[broadcastSignedtransaction](../../classes/#broadcastsignedtransaction):
+[broadcastSignedtransaction](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#broadcastsignedtransaction):
 
 ```javascript
   async broadcastSignedTransaction(
@@ -28,7 +28,7 @@ To get the `accountId`, you have two options. You can either use the `listAccoun
 ### List account
 List the accounts added by the user on Ledger Live.
 
-[listAccounts](../../classes/#listaccounts):
+[listAccounts](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#listaccounts):
 
 ```javascript
 async listAccounts(): Promise<Account[]> 
@@ -36,7 +36,7 @@ async listAccounts(): Promise<Account[]>
 ### Request account
 Let the user choose an account in Ledger Live, providing filters for choosing currency or allowing add account.
 
-[requestAccount](../../classes/#requestaccount): 
+[requestAccount](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#requestaccount): 
 
 ```javascript
 async requestAccount(
