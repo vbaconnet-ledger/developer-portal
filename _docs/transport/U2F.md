@@ -12,7 +12,9 @@ layout: doc
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.
 
-**We strongly advise to migrate to [`@ledgerhq/hw-transport-webusb`](../web-hid-usb) or [`@ledgerhq/hw-transport-webhid`](../web-hid-usb).**
+**You must migrate to [`@ledgerhq/hw-transport-webusb`](../web-hid-usb) or [`@ledgerhq/hw-transport-webhid`](../web-hid-usb).**
+
+Explanation:
 
 - U2F is a technology that was hijacked by Ledger in 2016-2018 in order to achieve Web integrations of our devices. It was done at a time where was no other alternative and no way to communicate with "HID" or "WebUSB" technologies in a seemless manner.
 - WebHID and WebUSB are technologies that offer a better alternative and are specfically designed to be used for bi-directional communication with USB hardware.
