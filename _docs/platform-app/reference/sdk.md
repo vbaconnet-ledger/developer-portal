@@ -12,4 +12,4 @@ You will learn how to easily create a simple Live App using our SDK.
 
 
 ## Where is the SDK?
-Please find the latest release of the SDK [here](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md).  
+Please find the latest release of the SDK <a href="https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md" target="_blank">here</a>.  
