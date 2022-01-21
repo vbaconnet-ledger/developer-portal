@@ -1,5 +1,5 @@
 ---
-title: Broadcast
+title: Live SDK
 subtitle:
 tags: [platform app, platform application, live app, ledger live app, live application, SDK]
 category: Live Application
