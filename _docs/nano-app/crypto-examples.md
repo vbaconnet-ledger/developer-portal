@@ -3,6 +3,7 @@ title: Examples of use of cryptographic functions
 subtitle:
 tags: []
 category: Nano Application
+toc: true
 author:
 toc: true
 layout: doc
