@@ -1,5 +1,5 @@
 ---
-title: Examples of use of cryptographic functions
+title: Examples of using cryptography functions
 subtitle:
 tags: []
 category: Nano Application
@@ -305,4 +305,5 @@ uint8_t plaintext[21];
 uint8_t iv[16]; /* The length of the initialization vector is always 16 */
 size_t plaintextLen = sizeof(plaintext);
 cx_aes_iv_no_throw(&aes_key, CX_DECRYPT | CX_PAD_ISO9797M1 | CX_CHAIN_CBC, iv, CX_AES_BLOCK_SIZE, ciphertext, ciphertextLen, plaintext, &plaintextLen);
+
 ```
