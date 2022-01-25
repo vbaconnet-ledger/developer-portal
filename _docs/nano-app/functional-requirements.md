@@ -1,5 +1,5 @@
 ---
-title: Functionalities
+title: Functions
 subtitle:
 tags: [app name, ticker, staking]
 category: Nano Application
