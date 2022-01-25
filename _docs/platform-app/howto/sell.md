@@ -72,14 +72,14 @@ message NewSellResponse {
 }
 ```
 
-### Fields explanations:
+### Fields explanations
 
-- `trader_email`: An email address used to identify of the user on the third party service provider. Should be known by the user since it **will be displayed on the device for validation purposes.**.
-- `in_currency`: The currency ticker that the client wants to sell (example: `BTC`). **Will be displayed on the device for validation purposes.**
-- `in_amount`: The amount of `in_currency` that the client wants to sell, in the lowest unit of the coin, encoded into a 16 bytes array in big-endian format. **Will be displayed on the device for validation purposes.**
+- `trader_email`: An email address used to identify of the user on the third party service provider. Should be known by the user since it will be displayed on the device for validation purposes.
+- `in_currency`: The currency ticker that the client wants to sell (example: `BTC`). Will be displayed on the device for validation purposes.
+- `in_amount`: The amount of `in_currency` that the client wants to sell, in the lowest unit of the coin, encoded into a 16 bytes array in big-endian format. Will be displayed on the device for validation purposes.
 - `in_address`: The blockchain address to which you expect to received the user cryptoassets.
-- `out_currency`: The fiat currency ticker that the client wants to sell his assets against (example: `USD`). **Will be displayed on the device for validation purposes.**
-- `out_amount`: The amount of `out_currency` that the client is expected to receive, as a `UDecimal` protobuf message (cf. definition above). **Will be displayed on the device for validation purposes.**
+- `out_currency`: The fiat currency ticker that the client wants to sell his assets against (example: `USD`). Will be displayed on the device for validation purposes.
+- `out_amount`: The amount of `out_currency` that the client is expected to receive, as a `UDecimal` protobuf message (cf. definition above). Will be displayed on the device for validation purposes.
 - `device_transaction_id`: The transaction nonce generated on the device and returned by the `startExchange` function, encoded in Base64 following [RFC_4648](https://en.wikipedia.org/wiki/Base64#RFC_4648).
 
 
@@ -88,21 +88,20 @@ Amounts (`in_amount` and `out_amount`) must be in the lowest unit of the coin, e
 Examples:
 
   - For 1 **BTC**:
-    1. The smallest unit is a **satoshi** which is `10^-8` **BTC**
-    2. Multiply the amount by this smallest unit: `1 * 10^8 = 100000000`
-    3. Convert to hexadecimal: `100000000` in decimal is `0x5F5E100` in hexadecimal
-    4. Encode this value in a 16 bytes array in big endian: `[0x00, ..., 0x00, 0x05, 0xF5, 0xE1, 0x00]`
+    1. The smallest unit is a **satoshi** which is `10^-8` **BTC**.
+    2. Multiply the amount by this smallest unit: `1 * 10^8 = 100000000`.
+    3. Convert to hexadecimal: `100000000` in decimal is `0x5F5E100` in hexadecimal.
+    4. Encode this value in a 16 bytes array in big endian: `[0x00, ..., 0x00, 0x05, 0xF5, 0xE1, 0x00]`.
+
 
   - For 2 **ETH**:
+    1. The smallest unit is a **wei** which is `10^-18` **ETH**.
+    2. Multiply the amount by this smallest unit: `2 * 10^18 = 2000000000000000000`.
+    3. Convert to hexadecimal: `2000000000000000000` in decimal is `0x1BC16D674EC80000` in hexadecimal.
+    4. Encode this value in a 16 bytes array in big endian: `[0x00, ... 0x00, 0x1B, 0xC1, 0x6D, 0x67, 0x4E, 0xC8, 0x00, 0x00]`.
 
-    1. The smallest unit is a **wei** which is `10^-18` **ETH**
-    2. Multiply the amount by this smallest unit: `2 * 10^18 = 2000000000000000000`
-    3. Convert to hexadecimal: `2000000000000000000` in decimal is `0x1BC16D674EC80000` in hexadecimal
-    4. Encode this value in a 16 bytes array in big endian: `[0x00, ... 0x00, 0x1B, 0xC1, 0x6D, 0x67, 0x4E, 0xC8, 0x00, 0x00]`
-
-  The `coefficient` part is, like the `in_amount` above, the hexadecimal ammount encoded into a 16 bytes array in big-endian format.
-
-  For example, to represent `10.25`, which is `1025 * 10^(-2)`, the `coefficient` would be `1025` (encoded into a 16 bytes array in big-endian format) and the `exponent` would be `2`.
+  The `coefficient` part is, like the `in_amount` above, the hexadecimal amount encoded into a 16 bytes array in big-endian format:
+    - For example, to represent `10.25`, which is `1025 * 10^(-2)`, the `coefficient` would be `1025` (encoded into a 16 bytes array in big-endian format) and the `exponent` would be `2`.
 
 ### Payloads generation
 
