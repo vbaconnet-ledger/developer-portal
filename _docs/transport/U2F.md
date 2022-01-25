@@ -12,7 +12,9 @@ layout: doc
 
 `@ledgerhq/hw-transport-u2f` and `@ledgerhq/hw-transport-webauthn` have been deprecated.
 
-**We strongly advise to migrate to [`@ledgerhq/hw-transport-webusb`](../web-hid-usb) or [`@ledgerhq/hw-transport-webhid`](../web-hid-usb).**
+**You must migrate to [`@ledgerhq/hw-transport-webusb`](../web-hid-usb) or [`@ledgerhq/hw-transport-webhid`](../web-hid-usb).**
+
+Explanation:
 
 - U2F is a technology that was hijacked by Ledger in 2016-2018 in order to achieve Web integrations of our devices. It was done at a time where was no other alternative and no way to communicate with "HID" or "WebUSB" technologies in a seemless manner.
 - WebHID and WebUSB are technologies that offer a better alternative and are specfically designed to be used for bi-directional communication with USB hardware.
@@ -20,7 +22,7 @@ layout: doc
 - U2F channel was a "fire and forget" protocol without even the capacity to know if a device is plugged or disconnected.
 - The support of U2F channel proxying have been removed from our apps
 
-### What are the solutions and their differences
+## What are the solutions and their differences
 
 The solution we suggest is to use either `@ledgerhq/hw-transport-webusb` or `@ledgerhq/hw-transport-webhid`. You can click on the following links to check the compatibility between a web browser and [WebHID](https://caniuse.com/webhid), [WebUSB](https://caniuse.com/webusb) and [Web Bluetooth](https://caniuse.com/web-bluetooth).
 

@@ -1,7 +1,7 @@
 ---
 title: Transfer of Ethers between accounts
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -12,11 +12,14 @@ In this section, we will guide you through the creation of an application. This 
 The purpose of the application is to transfer ethers from your ethereum account on your Ledger to another account.
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before startint, make sure you have gone through the [prerequisites](../prerequisites).
+
 ### Send Ether token to your Ledger Nano ethereum account
 To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
-1. [Ropsten Ethereum Faucet](https://faucet.ropsten.be/)
-2. [Dimensions Network](https://faucet.dimensions.network/)
+- [Ropsten Ethereum Faucet](https://faucet.ropsten.be/), or
+- [Dimensions Network](https://faucet.dimensions.network/)
+
+The Ropsten network is not visible on Ledger Live, you can then check the transaction passed on [ropsten.etherscan.io](https://ropsten.etherscan.io/). 
 
 #### Ropsten Ethereum Network
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
@@ -40,35 +43,45 @@ Go to the [Dimensions Network](https://faucet.dimensions.network/) website put y
 In this implementation, we will be building a web application with vanilla javascript that uses the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the ledger.
 
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new folder. During this tutorial, the folder will be named "e2e-tutorial”.
-Run the following command to create the folder and go into it:
+It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-eth-tutorial”.
+Run:
 
 ```console
-mkdir e2e-tutorial
-cd e2e-tutorial
+mkdir e2e-eth-tutorial
+cd e2e-eth-tutorial
 ```
 
-Then, initialize the project by running the following:
+Initialize the project by running the following:
 
 ```console
 npm init
 ```
 
-During the initialization, multiple questions will be printed on the terminal, if you don’t know what to do always press enter till the end. By always pressing enter all the default responses will be selected.
+Answer the questions displayed or by default press enter. There is no incidence on the execution.
 
-Now that the folder is initialized open it in an editor.
-Create files named "index.html", "index.js" and "style.css" in the root folder. Create an "assets" folder and put [this logo](../images/ledger-logo.jpg) inside.
-Your folder must look like this.
+Run:
+
+```console
+touch index.html
+touch index.js
+touch style.css
+mkdir assets
+```
+
+Put [this logo](../images/ledger-logo.jpg) in the assets folder.
+
+Your working folder must look like this.
 
 {: .center}
-[![Folder tutorial](../images/folder-e2e-1.png)](../images/folder-e2e-1.png){: style="border-bottom:none;"}  
+[![Folder tutorial](../images/folder-e2e-eth.png)](../images/folder-e2e-eth.png){: style="border-bottom:none;"}  
 *Fig. 3: Folder of the Application*
 
 ### Code Implementation
 
-Now we will implement the code.  
-In index.html copy-paste the following code :
 #### index.html
+
+In index.html copy-paste the following code :
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -146,8 +159,10 @@ In index.html copy-paste the following code :
 ```
 
 
-In index.js copy-paste the following code :
 #### index.js
+
+In index.js copy-paste the following code :
+
 ```javascript
 import { ethers } from "ethers";
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
@@ -233,8 +248,10 @@ document.getElementById("tx-transfer").onclick = async function () {
 }
 ```
 
-In style.css copy-paste the following code :
 #### style.css
+
+In style.css copy-paste the following code :
+
 ```css
 .modal-content{
     width: 300px;
@@ -242,11 +259,12 @@ In style.css copy-paste the following code :
 }
 
 #connect-ledger{
-    width: 16rem;
-    height: 7rem;
+    width: 17rem;
+    height: 9rem;
     background-color: white;
     border: none;
 }
+
 #connect-ledger:hover{
     background-color: #EDEFF3;
 }
@@ -263,85 +281,76 @@ In style.css copy-paste the following code :
 ```
 
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [parcel](https://parceljs.org/)  
-This package is a build tool that will help you package your application to run it in the browser.  
+#### Install the packages
+
+Run:
+
 ```console
 npm install --save-dev parcel
-```
-#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)  
-This package will help you ask your Ledger Nano to access the ethereum address.  
-```console
 npm install --save @ledgerhq/hw-app-eth
-```
-#### Install [@ledgerhq/hw-transport-webhid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid)  
-The Ledger package provides you with all the methods to interact with your Ledger with an HID connexion.  
-```console
 npm install --save @ledgerhq/hw-transport-webhid
-```
-#### Install [ethers](https://docs.ethers.io/v5/)  
-The package provides you with all the methods to interact with the ethereum blockchain.  
-```console
 npm install --save ethers
 ```
 
-
-#### Package.json Dependencies
-Now that the dependencies are installed you can find them in the "package.js".
-This is how your "package.json" has to look like.
-
-```javascript
-{
-  "name": "e2e-tutorial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.18.0",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2",
-    "ethers": "^5.5.1"
-  }
-}
-```
-
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://parceljs.org/">parcel</a></td>
+            <td colspan="2">It is a build tool that will help you package your application to run it in the browser.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a></td>
+            <td colspan="2">It will help you ask your Ledger Nano to access the ethereum address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a></td>
+            <td colspan="2">It provides you with all the methods to interact with your Ledger with an HID connexion.</td>
+        </tr>
+        <tr>
+            <td><a href="https://docs.ethers.io/v5/">ethers</a></td>
+            <td colspan="2">It provides you with all the methods to interact with the ethereum blockchain.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Modify Package.json
-Modify two lines:
-- On the 5th line: `"main": "index.js"` => `"source": "index.html"`
-- On the 7th line: `"test": "echo \"Error: no test specified\" && exit 1"`=>`"start": "parcel" `
+
+Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
+And ensure you have this line in scripts:
+
+```javascript
+  "scripts": {
+    "start": "parcel"
+  },
+```
 
 Your file should know look like this:
 
 ```javascript
 {
-    "name": "e2e-sol-tutorial",
+    "name": "e2e-eth-tutorial",
     "version": "1.0.0",
     "description": "",
-    "source": "index.html", // 5th line
+    "source": "index.html",
     "scripts": {
-        "start": "parcel" // 7th line
+      "start": "parcel"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "parcel": "^2.0.1"
+      "parcel": "^2.1.1"
     },
     "dependencies": {
-        "@ledgerhq/hw-app-solana": "^6.15.0",
-        "@ledgerhq/hw-transport-webusb": "^6.19.0",
-        "@ledgerhq/logs": "^6.10.0",
-        "@solana/web3.js": "^1.31.0",
-        "bs58": "^4.0.1"
+      "@ledgerhq/hw-app-eth": "^6.22.3",
+      "@ledgerhq/hw-transport-webhid": "^6.20.0",
+      "ethers": "^5.5.3"
     }
 }
 ```
@@ -356,7 +365,7 @@ Start the development server:
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to [localhost:1234](http://localhost:1234), it will display :
+Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
 
 {: .center}
 [![Application running on browser](../images/tutorial-1-view.png)](../images/tutorial-1-view.png){: style="border-bottom:none;"}  

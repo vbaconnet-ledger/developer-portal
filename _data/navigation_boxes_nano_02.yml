@@ -1,11 +1,16 @@
 # Boxes All Integrations
 
-- title: Set up and use
-  desc: Get your developement environment up and running
+- title: Toolkit
+  desc: How to load, test and troubleshoot
   doc: nano-app/build
-  icon: laptop
+  icon: toolkit
 
-- title: Coding
-  desc: "How it is done: display management, memory, I/O" 
+- title: Requirements
+  desc: Needed to submit your App
+  doc: nano-app/requirements-intro
+  icon: requirements
+
+- title: Guidelines
+  desc: Including Tips
   doc: nano-app/display-management
-  icon: code
+  icon: pencil

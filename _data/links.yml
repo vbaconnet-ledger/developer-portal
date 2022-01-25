@@ -1,6 +1,10 @@
 # repo include content
-- title: Submit a Nano application for listing
-  url: https://ledger.typeform.com/to/qQSf7CVh
+- title: Nano Application Submission Form 
+  url: https://ledger.typeform.com/to/ZFVKrEHN
+
+- title: What will be asked in the submission form?
+  section: Process
+  url: ../deliverables-checklist/#submission-form-content
 
 - title: Load an app on a Nano S
   section: Set up and use

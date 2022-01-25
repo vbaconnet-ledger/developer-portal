@@ -1,7 +1,7 @@
 ---
 title: Web USB/HID
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -151,7 +151,7 @@ npm install --save @ledgerhq/hw-app-btc
     <thead>
         <tr>
             <th colspan="1">Package</th>
-            <th colspan="2">What does it do</th>
+            <th colspan="2">What does it do?</th>
         </tr>
     </thead>
     <tbody>
