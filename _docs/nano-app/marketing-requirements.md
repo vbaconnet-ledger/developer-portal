@@ -1,5 +1,5 @@
 ---
-title: Marketing requirements
+title: 7 - Marketing
 subtitle:
 tags: [twitter, retweet, blog post, press release]
 category: Nano Application
@@ -8,18 +8,17 @@ author:
 layout: doc
 ---
 
-## Marketing plan 
+## Requirement Summary
 
-If you a develop a Nano Application for a public release, the following will occur:
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    Not needed    |   Recommended     |   <b>Mandatory</b>     |
 
-|                     On your side                  |                         On Ledger's side                         |
-|--------------------------------------------------------------|--------------------------------------------------------|
-|          [Twitter announcement](#twitter-announcement)<br><b>Mandatory</b>            |      Retweet by @Ledger or @Ledger_Support <br>Website update<br><b>Optional (1)</b>    |
-| Device giveway<br>[Blog post/Press Release](#blog-post--press-release)<br><b>Optional</b> | Quote from Ledger<br><b>If Blockchain is in top 50 CMC |
+The requirement is to submit a Google Doc containing a marketing plan that includes roadmap, dates, and actions. See details below.
 
-(1) Depends on the roadmap
+## Marketing actions
 
-## Twitter announcement
+### Twitter announcement
 
 A Twitter announcement is the minimal communication requirement.
 
@@ -27,15 +26,17 @@ It must include the following:
 - A message about the secure storage of assets
 - An link to Ledger hardware wallet. You can use an affiliate link or a regular link. [Our affiliate program](https://www.ledgerwallet.com/affiliates) allows you to earn 10% of each hardware sale in Bitcoin or Fiat. 
 
-## Blog post / Press Release
+Your tweet can be retweeted by @Ledger or @Ledger_Support if the publication planning allows it.
 
-If the Blockchain is in top 50 CMC, the blog post can include a quote from your CEO, CTO, one of your Founders, or another c-level executive regarding the collaboration and the impact it will have on your project.
+### Blog post / Press Release (optional)
 
-## Co-branding devices give away 
+If you choose to publish a blog post (or a press release) and the Blockchain is in top 50 CMC, the blog post can include a quote from Ledger's CEO, CTO, one of our Founders, or another c-level executive regarding the collaboration and the impact it will have on your project.
 
-Ledger offers a co-branded partnership that will help you customize your marketing, reward your community. All details from standard to dropshipping options are given on [our website](https://www.ledger.com/co-branded-partnership).
+### Co-branded device give-aways (optional)
+
+Finally, Ledger offers a co-branded partnership that will help you customize your marketing and reward your community. All details from standard to dropshipping options are given on [our website](https://www.ledger.com/co-branded-partnership).
 
 
 <!--  -->
-{% include alert.html style="tip" text="Co-branded partnerships or affiliate links do not give a project priority in Ledger's marketing plan timeline." %}
+{% include alert.html style="important" text="Co-branded partnerships or affiliate links do <b>not change</b> the Ledger marketing plan timeline." %}
 <!--  -->

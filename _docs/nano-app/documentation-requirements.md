@@ -1,5 +1,5 @@
 ---
-title: Documentation requirements
+title: 5 - Documentation
 subtitle: Ensuring your documentation is well documented
 tags: [writing documentation, nano app documentation]
 category: Nano Application
@@ -8,13 +8,19 @@ author:
 layout: doc
 ---
 
+## Requirement Summary
 
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+The requirement is to submit the documentation in a Google Doc format for review or an URL to the already published documentation. If it is already published, ensure it follows the instructions below.
 
 ## Introduction
 
-Ledger continually works to make its products and services easy and safe to use. Since the Ledger hardware wallet platform is open-source, members of the Ledger community are welcome to develop BOLOS apps. After a review and approval by Ledger, their apps can be installed through the Ledger Live Manager and used with third-party wallet apps (web or desktop app).
+Documentation is important for the Approval of your app, as your app will not be released without it.
 
-As the wallet apps are maintained by third-party members of the Ledger community, the documentation on how to use these third-party services needs to be provided during the app review process. This document presents guidelines for writing such documentation and it should be followed very carefully, as part of the app integration process.
+It is required for third party teams to provide and host a complete tutorial for users before the app is released on the Ledger Manager. Here are the rules for writing this documentation and it should be followed very carefully.
 
 <!--  -->
 {% include alert.html style="important" text="Without approval of your documentation, your app will not be released." %}
@@ -29,9 +35,10 @@ Your documentation must follow the requirements below  so that Ledger uses a sol
 - Installation instructions: How to install the app using Ledger Live.
 - Next steps: link to third party documentation and where to get support.
 
-## Third Party Documentation
 
-Third Party will write and host an article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) that describes:
+## Content
+
+The article ([example](https://blog.cyberrepublic.org/2020/06/15/how-to-use-your-ledger-device-with-the-elastos-light-wallet/)) must describe:
 - Short introduction: what the app and service do, what crypto assets they can manage, why to use a Ledger device, where to get support.
 - Requirements: What’s needed before starting.
 - Installation instructions: How to install the app using Ledger Live.
@@ -45,9 +52,10 @@ Third Party will write and host an article ([example](https://blog.cyberrepublic
 - How to send crypto assets
     - Document all the steps and form fields to fill.
     - Explicitly instruct to verify transaction details on the device display, before confirming and signing it.
-- Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities).
+- Support: where to get help if needed (mail address, Slack/Reddit/Telegram communities). 
+- Since you will host the final version of the document you are required to prepare the URL address and include it clearly in the Google Doc.
 
-## Writing tips
+## Style
 
 - Write short and concise sentences.
 - Write clear section titles.

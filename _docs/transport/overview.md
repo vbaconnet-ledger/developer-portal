@@ -1,7 +1,7 @@
 ---
 title: Overview
 subtitle: Introduction on wallet connection
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author: Ledger
 toc: true
