@@ -20,7 +20,7 @@ The main steps needed for the funding flow are:
 
 ## User Account
 
-Get the user [Account](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md#account) from which to perform a transfer operation.
+Get the user [Account](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md#account) from which the transfer operation will be done.
 
 You can get an account using either [`listAccount`](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/LedgerLivePlatformSDK.md#listaccounts) or [`requestaccount`](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/LedgerLivePlatformSDK.md#requestaccount).
 
