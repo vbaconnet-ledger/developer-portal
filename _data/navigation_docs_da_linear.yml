@@ -2,6 +2,10 @@
   docs:
   - dapp/process
 
+- title: Requirements
+  docs:
+  - dapp/general-requirements
+
 - title: Development how-to
   docs:
   - dapp/dapp-customisation
