@@ -10,43 +10,39 @@ layout: doc
 
 ## Introduction
 In this section, you will see how to create a React Native application using the [@ledgerhq/react-native-hid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hid) (Only on Android).
-During this project some general prerequisites are mandatory and you can find them [here](../prerequisites).
+For this project some general prerequisites are mandatory and you can find them [here](../prerequisites).
 
-Then you can now go through the necessary prerequisite for Android development.
+Then you can now go through the prerequisite for Android development below.
 
 ## Prerequisites
 
 #### Android Studio Installation
-Beforehand to develop an Android application we have to install Android Studio.  
-First download and install [Android Studio](https://developer.android.com/studio), choose the version of your operating system.
+Download and install [Android Studio](https://developer.android.com/studio), choose the version of your operating system.
 
-When the installation is finished open Android Studio:
+When Android Studio is installed, open it.
 
 {: .center}
 [![Android Studio Window](../images/android-studio.png){:width="840"}](../images/android-studio.png){: style="border-bottom:none;"}   
 *Fig. 1: Android Studio Window*
 
-Then go to Settings => Appearance & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
+Go to Settings => Appearance & Behavior => System Settings => Android SDK and check the "Show Package Details" checkbox on the bottom right of the windows.
 
 {: .center}
 [![Android Studio Settings](../images/android-studio-settings.png){:width="840"}](../images/android-studio-settings.png){: style="border-bottom:none;"}   
 *Fig. 2: Android Studio Settings*
 
-Then you have to install the latest SDK version. Therefore select the packages shown below and apply to install the packages.
+Install the latest SDK version. To do so, select the packages shown below and click apply.
 
 {: .center}
 [![Android Studio SDK Settings](../images/android-studio-SDK.png){:width="840"}](../images/android-studio-SDK.png){: style="border-bottom:none;"}   
 *Fig. 3: Android Studio SDK Settings*
 
 #### Install Homebrew
-Homebrew is a package manager for macOS as a whole, not just for a particular programming language. When it needs to install software from third-party websites, we can get the real advantage of Homebrew with few lines of code.
-Install Homebrew using the bellow command in Terminal.
+Homebrew is a package manager for macOS. When it needs to install software from third-party websites. To install it, run:
 
 ```console
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 ```
-
-
 
 #### Install watchman
 React Native uses watchman to detect real-time code changes and it automatically builds and pushes the update to your device without manually refreshing.
@@ -57,7 +53,7 @@ brew install watchman
 
 
 #### Install Java JRE and JDK
-If you don’t have a complete installation of Java, the build scripts for react-native tend to complain and fail. Downloading Android Studio is not enough solution since it comes bundled with its own JRE.
+ There is a risk of react-native build failure if you don’t have a complete installation of Java. Downloading Android Studio is not enough since it comes bundled with its own JRE.
 
 ```console
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
@@ -65,7 +61,7 @@ brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 
 #### Install React Native
-React Native allows the application to be written in Javascript and then the React Native Compiler will convert your Javascript code into native code for iOS and Android environments.
+With React Native, you can write an application in Javascript and then the React Native Compiler will convert your Javascript code into native code for iOS and Android environments.
 React Native command line interface can be installed using npm as below.
 
 ```console
@@ -90,17 +86,17 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-Do the same if you are using zsh or anything else.
-
-But the file will be named differently (eg. zsh => .zprofile)
+Do the same if you are using zsh or anything else. Remember the file will be named differently (eg. zsh => .zprofile)
 
 
 ## Android App Build
 Now that we have set up the prerequisites, you can now create the application.
 In this integration, we will use the ethereum application.
+
 ### Project Initialization
-It is time to implement the application and test it. First, open a terminal and create a new project, during this tutorial the project will be named “myApp”.
-Run the following command to create the project and go into it:
+First, open a terminal and create a new project. For this tutorial the project will be named “myApp”.
+
+Run:
 
 ```console
 react-native init myApp
@@ -108,28 +104,36 @@ cd myApp
 ```
 
 <!--  -->
-{% include alert.html style="tip" text="During the initialization, it is installing required 'CocoaPods' dependencies and it may take time." %}
+{% include alert.html style="tip" text="During the initialization, required 'CocoaPods' dependencies are installed and it may take time." %}
 <!--  -->
 
 ### Code Implementation
-Now that the folder is initialized, open it in an editor.
-Create a file named "App.js" and "polyfill.js" in the root folder.
-Your folder must look like this.
+
+Run:
+
+```console
+touch App.js
+touch polyfill.js
+```
+Open your folder in a code editor, it must look like this.
 
 {: .center}
 [![Folder of the Application](../images/folder-rn-android.png){:width="210"}](../images/folder-rn-android.png){: style="border-bottom:none;"}   
 *Fig. 4: Folder of the Application*
 
 
-In polyfill.js copy-paste the following code :
-
 #### polyfill.js
+
+In polyfill.js copy-paste the following code:
+
 ```javascript
 global.Buffer = require("buffer").Buffer;
 ```
-Then import the "polyfill.js" in "index.js" like below:
 
 #### index.js
+
+Then import the "polyfill.js" in "index.js" as shown below:
+
 ```javascript
 /**
  * @format
@@ -143,9 +147,10 @@ import {name as appName} from './app.json';
 AppRegistry.registerComponent(appName, () => App);
 ```
 
-
-In App.js copy-paste the following code :
 #### App.js
+
+In App.js copy-paste the following code:
+
 ```javascript
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -231,33 +236,47 @@ const styles = StyleSheet.create({
 
 ```
 ### Dependencies Installation
-Now that the code is pasted, the dependencies of the code have to be installed.
-To do that install the following package by running the command :
 
-#### Install [Buffer](https://www.npmjs.com/package/buffer)
+Run:
+
 ```console
- npm install --save buffer
-```
-#### Install [@ledgerhq/logs](https://www.npmjs.com/package/@ledgerhq/logs)
-This Ledger package provides you the log of all the errors from your connexion with your Ledger device that may appear when developing:
-```console
- npm install --save @ledgerhq/logs
-```
-#### Install [@ledgerhq/hw-app-eth](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth)
-This Ledger package will help you ask your Ledger device to access the ethereum address:
-```console
+npm install --save buffer
+npm install --save @ledgerhq/logs
 npm install --save @ledgerhq/hw-app-eth
-```
-#### Install [@ledgerhq/react-native-hid](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hid)
-This Ledger package provides you with all the methods to interact with  your Ledger with an HID connexion:
-```console
 npm install --save @ledgerhq/hw-transport-webusb
 ```
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Package</th>
+            <th colspan="2">What does it do?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/buffer">Buffer</a></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/logs</a></td>
+            <td colspan="2">It helps you ask your Ledger device to access the ethereum address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a></td>
+            <td colspan="2">It helps you ask your Ledger device to access the ethereum address.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/react-native-hid">@ledgerhq/react-native-hid</a></td>
+            <td colspan="2">It provides you with all the methods to interact with  your Ledger with an HID connexion.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Package.json dependencies
 
 Now that the dependencies are installed you can find them in the “package.js”.
-This is how your “package.json” has to look like.
+This is how your “package.json” must look like.
 
 ```javascript
 {
@@ -295,7 +314,7 @@ This is how your “package.json” has to look like.
 }
 ```
 #### Build.gradle Modification
-A little modification have to be made in the “build.gradle” in the "android" folder : `minSdkVersion = 21` => `minSdkVersion = 24`.
+In “build.gradle”, in the "android" folder change `minSdkVersion = 21` to `minSdkVersion = 24`.
 
 {: .center}
 [![Build.gradle Modify the minSdkVersion](../images/change-minSDK.png){:width="840"}](../images/change-minSDK.png){: style="border-bottom:none;"}   
@@ -306,7 +325,7 @@ You can now test the application you have built.
 
 ## Android App Test
 
-The app testing will be executed on your smartphone, why? Because the android studio environment does not allow you to use either Bluetooth or USB connexion.
+The app testing will be executed on your smartphone because the android studio environment does not allow you to use either Bluetooth or USB connexion.
 
 <!--  -->
 {% include alert.html style="tip" text="Please refer to the information for <a href='https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application' class='alert-link'> Android Emulator Limitation </a>." %}
@@ -316,13 +335,13 @@ The app testing will be executed on your smartphone, why? Because the android st
 To integrate an application on your android smartphone you have to enable the developer role.
 To do that go to  Settings > About Phone > Build Number, and tap 7 times on build number to enable the developer settings.
 
-Now go to Settings > System > Advanced > Developer Options and enable the  "USB debugging" as well as "Install via USB"
+Then go to Settings > System > Advanced > Developer Options and enable the  "USB debugging" as well as "Install via USB"
 
-Connect your phone to your machine, and run the below command to see if your device is connected:
+Connect your phone to your computer, and run the below command to see if your device is connected:
 ```console
 adb devices
 ```
-if all goes well you have to find the phone in the list of devices like the below image.
+If all goes well, the list of devices is displayed as shown below:
 
 {: .center}
 [![Device Connected On The Machine](../images/adb-devices.png){:width="210"}](../images/adb-devices.png){: style="border-bottom:none;"}   
@@ -333,52 +352,51 @@ if all goes well you have to find the phone in the list of devices like the belo
 <!--  -->
 
 ### Start the Development Server
-You can now open a terminal and navigate into your "myApp" folder, then start the server by running the below command:
+You can now open a terminal, navigate to your "myApp" folder, and start the server by running:
 ```console
 npm start
 ```
 
 ### Install the App on Device
-Let the terminal where "metro" is running open and open a new terminal.
-In this terminal go into your project folder:
+Keep the terminal where "metro" is running open and open a new terminal.
+In this new terminal go to your app folder:
 ```console
 cd myApp
 ```
 
-Finally, run the below command to install the application on your android device. It's assumed that your device is recognized by the command `adb devices` as the [Previous Step](#enable-developer-settings) mentioned. 
+Run the command below to install the application on your android device. It's assumed that your device is recognized by the command `adb devices` as the [Previous Step](#enable-developer-settings) mentioned. 
 ```console
 npm run android
 ```
 
-A popup will be prompt on your android device to install the application.
-Of course, click on "Yes" to install it and to test it.
+A window will pop up on your android device to install the application. Click on "Yes" to install it and run it.
 
-When launching the application it will be displayed like the below image.
+When launching the application it will be displayed like the image below.
 
 {: .center}
 [![Application Displayed on Smartphone](../images/android-device-hid.jpg){:width="210"}](../images/android-device-hid.jpg){: style="border-bottom:none;"}   
 *Fig. 7: Application Displayed on Smartphone*
 
-### Plug Your Ledger Device
-Connect your Ledger Nano to your android device, unlock it and run the ethereum application.
+### Plug Your Nano
+Connect your Ledger Nano to your android device, unlock it and open the ethereum application.
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
-*Fig. 8: Ledger Enter Code Pin*
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+*Fig. 8: Nano Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
-*Fig. 9: Ledger Application*
+[![Nano Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+*Fig. 9: Nano Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
-*Fig. 10: Ledger Run Application*
+[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+*Fig. 10: Nano Run Application*
 
-Now that the two devices are connected, the address must have been displayed like below.
+Now that the two devices are connected, the address will be displayed as shown below:
 
 {: .center}
 [![Address Account Displayed on Smartphone](../images/android-device-hid-address.jpg){:width="210"}](../images/android-device-hid-address.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Address Account Displayed on Smartphone*
 
-Congratulations you have successfully built your first application connected with Ledger !!!
+Congratulations you have successfully built your first application connected with Ledger!

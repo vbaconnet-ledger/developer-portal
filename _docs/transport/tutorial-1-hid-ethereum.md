@@ -12,11 +12,14 @@ In this section, we will guide you through the creation of an application. This 
 The purpose of the application is to transfer ethers from your ethereum account on your Ledger to another account.
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before startint, make sure you have gone through the [prerequisites](../prerequisites).
+
 ### Send Ether token to your Ledger Nano ethereum account
 To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
 - [Ropsten Ethereum Faucet](https://faucet.ropsten.be/), or
 - [Dimensions Network](https://faucet.dimensions.network/)
+
+The Ropsten network is not visible on Ledger Live, you can then check the transaction passed on [ropsten.etherscan.io](https://ropsten.etherscan.io/). 
 
 #### Ropsten Ethereum Network
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
@@ -41,7 +44,7 @@ In this implementation, we will be building a web application with vanilla javas
 
 ### Project Initialization
 It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-eth-tutorial”.
-Run the following command to create the folder and go into it:
+Run:
 
 ```console
 mkdir e2e-eth-tutorial

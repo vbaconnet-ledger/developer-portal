@@ -22,24 +22,4 @@
 - title: Reference
   docs:
   - platform-app/reference/manifest 
-  subfolderitems:
-    - title: Live SDK
-      docs:
-      - platform-app/modules
-      - subfolderitems:
-          - title: Classes
-            docs:
-            - platform-app/classes
-          - title: Enums
-            docs:
-            - platform-app/device-model
-            - platform-app/exchange-type
-            - platform-app/families
-            - platform-app/fees-level
-          - title: Interfaces
-            docs:
-            - platform-app/transport
-            - platform-app/transaction-common
-            - platform-app/bitcoin-transaction
-            - platform-app/ethereum-transaction
-
+  - platform-app/reference/sdk

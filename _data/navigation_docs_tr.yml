@@ -32,7 +32,7 @@
   - transport/tutorial-1-usb-solana
   - transport/tutorial-2-web-bluetooth
 
-- title: FAQ & Troubleshooting
+- title: FAQ
   docs:
   - transport/U2F
-  - transport/test-communication
+  - transport/transport-nano

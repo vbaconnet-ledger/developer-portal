@@ -11,7 +11,7 @@ layout: doc
 
 Signing a transaction is pretty straight-forward. 
 
-[signTransaction](../../classes/#signtransaction):
+[signTransaction](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#signtransaction):
 
 ```javascript
 async signTransaction(
@@ -38,7 +38,7 @@ To get the `accountID`, you have two options. You can either use the `listAccoun
 
 List the accounts added by the user on Ledger Live.
 
-[listAccounts](../../classes/#listaccounts):
+[listAccounts](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#listaccounts):
 
 ```javascript
 async listAccounts(): Promise<Account[]>
@@ -47,7 +47,7 @@ async listAccounts(): Promise<Account[]>
 
 Let the user choose an account in Ledger Live, providing filters for choosing currency or allowing add account.
 
-[requestAccount](../../classes/#requestaccount): 
+[requestAccount](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/Mock.md#requestaccount): 
 
 ```javascript
 async requestAccount(
@@ -62,7 +62,7 @@ async requestAccount(
 
 The `transaction` parameter (type) must be built by yourself, it isn't returned by a function. 
 
-[transaction](../../modules/#transaction):
+[transaction](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/modules.md#transaction):
 
 ```javascript
 export interface TransactionCommon {

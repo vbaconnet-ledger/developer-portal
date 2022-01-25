@@ -9,8 +9,6 @@ layout: doc
 sort: 1
 ---
 
-
-
 After having [installed the requirements and built](../../installation/build) speculos:
 
 ```shell

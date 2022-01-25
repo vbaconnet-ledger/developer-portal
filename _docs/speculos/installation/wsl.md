@@ -4,7 +4,6 @@ subtitle:
 tags: [install speculos, emulate, emulator, Nano X emulator, speculos]
 category: Speculos
 author:
-toc: 
 layout: doc
 sort: 2
 ---

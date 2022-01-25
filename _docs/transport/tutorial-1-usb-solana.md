@@ -12,7 +12,7 @@ In this section, we will guide you through the creation of an application. This 
 The purpose of the application is to transfer sol from your solana account on your Ledger to another account.
 
 ## Prerequisites
-To start with the Web Integration go through the [Prerequisites](../prerequisites)  before diving into the implementation.
+Before startint, make sure you have gone through the [prerequisites](../prerequisites).
 
 ### Install the Solana Nano App
 First you need to install the Solana Nano App from Ledger Live as shown in the [prerequisites](../prerequisites) for Ethereum.
@@ -23,7 +23,7 @@ In this implementation, we will be building a web application with vanilla javas
 
 ### Project Initialization
 It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-sol-tutorial”.
-Run the following command to create the folder and go into it:
+Run:
 
 ```console
 mkdir e2e-sol-tutorial
@@ -404,6 +404,8 @@ To send some sol tokens on the Devnet network, you can either go to one of the s
 - [Solana CLI](https://docs.solana.com/cli/transfer-tokens)
 
 If you are looking for the easier and quicker way, use the Solana Faucet. If you would rather use the Solana CLI, please read this documentation to [install it](https://docs.solana.com/cli) before starting sending Sol.
+
+The Solana Devnet is not visible on Ledger Live, you can then check the transaction passed on [the Solana Explorer](https://explorer.solana.com/?cluster=devnet). 
 
 #### Option n°1 - Solana Faucet
 Go to the [Solana Faucet](https://solfaucet.com/) website put your Wallet Public Key (displayed on the web app) on the input and click on "Devnet"

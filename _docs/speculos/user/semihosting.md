@@ -9,8 +9,6 @@ layout: doc
 sort: 7
 ---
 
-
-
 QEMU implements some semihosted operations which can be triggered from the app.
 For instance, messages can be printed to stderr with the following code:
 

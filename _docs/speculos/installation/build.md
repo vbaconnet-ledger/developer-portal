@@ -9,8 +9,6 @@ layout: doc
 sort: 1
 ---
 
-
-
 ## Requirements
 
 For Debian (version 10 "Buster" or later) and Ubuntu (version 18.04 or later):
