@@ -26,7 +26,7 @@ You can get an account using either [`listAccount`](https://github.com/LedgerHQ/
 
 ## Transaction Id
 
-The first step to start the exchange process is to call the `startExchange` function with the appropriate [`exchangeType`](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/enums/ExchangeType.md). This will return a transaction ID that will be used to complete the exchange process.
+The first step to start the exchange process is to call the [`startExchange`](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/LedgerLivePlatformSDK.md#startexchange) function with the appropriate [`exchangeType`](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/enums/ExchangeType.md). This will return a transaction ID that will be used to complete the exchange process.
 
 ```ts
 const transactionId = await SDK.startExchange({
@@ -100,8 +100,8 @@ Examples:
     3. Convert to hexadecimal: `2000000000000000000` in decimal is `0x1BC16D674EC80000` in hexadecimal.
     4. Encode this value in a 16 bytes array in big endian: `[0x00, ... 0x00, 0x1B, 0xC1, 0x6D, 0x67, 0x4E, 0xC8, 0x00, 0x00]`.
 
-  The `coefficient` part is, like the `in_amount` above, the hexadecimal amount encoded into a 16 bytes array in big-endian format:
-    - For example, to represent `10.25`, which is `1025 * 10^(-2)`, the `coefficient` would be `1025` (encoded into a 16 bytes array in big-endian format) and the `exponent` would be `2`.
+  The `coefficient` part is, like the `in_amount` above, the hexadecimal amount encoded into a 16 bytes array in big-endian format.<br>
+  For example, to represent `10.25`, which is `1025 * 10^(-2)`, the `coefficient` would be `1025` (encoded into a 16 bytes array in big-endian format) and the `exponent` would be `2`.
 
 ### Payloads generation
 
@@ -109,7 +109,7 @@ How are `binaryPayload` and it's `signature` generated?
 
 Here is a diagram to explain this:
 
-![Payload and Payload Signature generation diagram](https://developers.ledger.com/docs/platform-app/images/funding-payload-signature-generation.png)
+[![Payload and Payload Signature generation diagram](../../images/funding-payload-signature-generation.png)](../../images/funding-payload-signature-generation.png)
 
 - `binaryPayload`: The transaction data's parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [Base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `binaryPayload` field.
 
