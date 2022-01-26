@@ -3,12 +3,6 @@
   - dapp/process
   - dapp/requirements
 
-# - title: Requirements
-#   docs:
-#   - dapp/general-requirements
-#   - dapp/coding-requirements
-#   - dapp/security-requirements
-
 - title: Development how-to
   docs:
   - dapp/dapp-customisation
