@@ -367,7 +367,16 @@ This is how your “package.json” has to look like:
 ```
 ## Web App Test
 ### Start the Development Server
-Run:
+
+Make sure the Bluetooth feature of your Nano is enabled.
+
+<!--  -->
+{% include alert.html style="important" text="If it was not enabled, you need to enable it and then power off the power on your Nano." %}
+<!--  -->
+
+
+Now that the Setup is finished, the app has to be available to be displayed.
+Therefore start the development server:
 
 ```console
 npm run start
