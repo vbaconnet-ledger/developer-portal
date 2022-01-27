@@ -24,5 +24,3 @@ Introduction</h1>
 <li>GROESTL and RIPEMD-160</li>
 <li>Keyed-hash Message Authentication Code </li>
 </ul>
-<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
-<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
