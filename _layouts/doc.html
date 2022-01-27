@@ -4,6 +4,7 @@ layout: default
 
 {% assign url = page.url | split: "/" %}
 {% assign category = url[2] %}
+{% assign sub_category = url[3] %}
 
 {% if category == "nano-app" %}
   {% assign docs = site.data.navigation_docs_na %}
@@ -32,7 +33,9 @@ layout: default
         <div class="uk-grid-medium" data-uk-grid>
             <div class="sidebar-fixed-width uk-visible@l">
                 <div id="sidebar-docs" class="sidebar-docs uk-position-fixed uk-margin-top">
-                    {% if category == "nano-app"  %}
+                    {% if category == "nano-app" and sub_category == "crypto-api" %}
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../start-here">Back to the Nano App intro</a>                    
+                    {% elsif category == "nano-app"  %}
                       <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../start-here">Back to the Nano App intro</a>
                     {% endif %}
                     {% for section in docs %}

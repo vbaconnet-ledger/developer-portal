@@ -883,6 +883,17 @@
         font-size: 12px;
     }
 
+    // Crypto api doc button
+
+    .crypto-button {
+        color: white !important;
+    }
+
+    .crypto-button:active {
+        background-color: $safety-orange;
+    }
+
+
     // Copy Code button
 
     pre.highlight {

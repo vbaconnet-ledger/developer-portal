@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>BLAKE2b context.  
  <a href="../cx__blake2b__s#details">More...</a></p>
@@ -47,3 +50,5 @@ struct <a class="el" href="../blake2b__state____">blake2b_state__</a>&#160;</td>
 
 </div>
 </div>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

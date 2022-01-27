@@ -53,7 +53,7 @@
       - nano-app/interaction-bolos-apps
       - nano-app/application-structure
 
-- title: Cryptographi library and syscalls
+- title: Cryptography library and syscalls
   docs:
   - nano-app/crypto-api/index
   - nano-app/crypto-api/files

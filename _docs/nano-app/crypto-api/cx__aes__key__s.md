@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>AES key container.  
  <a href="../cx__aes__key__s#details">More...</a></p>
@@ -28,3 +31,5 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=".
 
 <div class="textblock"><p>AES key container. </p>
 <p>Such container should be initialized with cx_ees_init_key to ensure future API compatibility. Indeed, in next API level, the key store format may changed at all. Only 16-byte key (AES128) is supported . </p>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

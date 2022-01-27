@@ -51,6 +51,11 @@
   - nano-app/interaction-bolos-apps
   - nano-app/application-structure
 
+- title: Cryptography library and syscalls
+  docs:
+  - nano-app/crypto-api/index
+  - nano-app/crypto-api/files
+
 - title: Clone applications
   docs:
   - nano-app/clone-specifics

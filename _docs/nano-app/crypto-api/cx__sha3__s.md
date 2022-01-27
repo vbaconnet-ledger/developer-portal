@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>KECCAK, SHA3 and SHA3-XOF context.  
  <a href="../cx__sha3__s#details">More...</a></p>
@@ -104,3 +107,5 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="..
 
 </div>
 </div>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>DES key container.  
  <a href="../cx__des__key__s#details">More...</a></p>
@@ -28,3 +31,5 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=".
 
 <div class="textblock"><p>DES key container. </p>
 <p>DES key container. Such container should be initialized with <b>cx_des_init_key</b> to ensure future API compatibility. Indeed, in next API level, the key store format may changed at all. 8 bytes (simple DES), 16 bytes (triple DES with 2 keys) and 24 bytes (triple DES with 3 keys) are supported. </p>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

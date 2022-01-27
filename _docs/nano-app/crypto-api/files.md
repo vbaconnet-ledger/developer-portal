@@ -42,3 +42,5 @@ layout: doc
 <tr id="row_1_0_20_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="../lcx__sha512_8h" target="_self">lcx_sha512.h</a></td><td class="desc">SHA-2 (Secure Hash Algorithm 2) </td></tr>
 </table>
 </div><!-- directory -->
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

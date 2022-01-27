@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>HMAC (Keyed-Hash Message Authentication Code)  
 <a href="#details">More...</a></p>
@@ -979,3 +982,5 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

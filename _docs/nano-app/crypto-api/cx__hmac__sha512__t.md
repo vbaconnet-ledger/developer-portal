@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>HMAC context, concrete type for SHA-384/SHA-512.  
  <a href="../cx__hmac__sha512__t#details">More...</a></p>
@@ -27,3 +30,5 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=".
 ## Detailed Description
 
 <div class="textblock"><p>HMAC context, concrete type for SHA-384/SHA-512. </p>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

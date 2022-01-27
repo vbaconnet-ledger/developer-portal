@@ -7,6 +7,9 @@ toc:
 layout: doc
 ---
 
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
+
 
 <p>64-bit types, native or by-hands, depending on target and/or compiler support.  
  <a href="../uint64__s#details">More...</a></p>
@@ -28,3 +31,5 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <div class="textblock"><p>64-bit types, native or by-hands, depending on target and/or compiler support. </p>
 <p>This type is defined here only because SHA-3 structure uses it INTERNALLY. It should never be directly used by other modules. </p>
+<button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
+<a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
