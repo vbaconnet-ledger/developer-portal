@@ -20,9 +20,7 @@
   - nano-app/open-close-info-on-apps
   - nano-app/troubleshooting
   - nano-app/debug
-  - nano-app/crypto-examples
-
-
+  
 - title: Requirements
   docs:
   - nano-app/requirements-intro
@@ -53,38 +51,6 @@
   - nano-app/interaction-bolos-apps
   - nano-app/application-structure
 
-<<<<<<< HEAD
-- title: Functional 
-  docs:
-  - nano-app/functional-requirements
-
-- title: Documentation 
-  docs:
-  - nano-app/documentation-requirements
-
-- title: Marketing 
-  docs:
-  - nano-app/marketing-requirements
-
-- title: Design 
-  docs:
-  - nano-app/design-requirements
-
-- title: Support and maintenance 
-  docs:
-  - nano-app/support-maintenance-requirements
-
-- title: Warranty and liability
-  docs:
-  - nano-app/warranty-disclaimer
-
-- title: Cryptographi library and syscalls
-  docs:
-  - nano-app/crypto-api/index
-  - nano-app/crypto-api/files
-
-=======
->>>>>>> main
 - title: Clone applications
   docs:
   - nano-app/clone-specifics
