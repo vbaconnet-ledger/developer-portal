@@ -9,8 +9,11 @@
 - title: Process
   docs:
   - nano-app/publish-introduction
+  - nano-app/deliverables-checklist
+  - nano-app/submission-form
+  - nano-app/maintenance
 
-- title: Set up and use
+- title: Toolkit
   docs:
   - nano-app/build
   - nano-app/load
@@ -20,13 +23,18 @@
   - nano-app/crypto-examples
 
 
-- title: Requirements and Guidelines
+- title: Requirements
   docs:
-  - nano-app/requirements
-  
-- title: Security
-  docs:
+  - nano-app/requirements-intro
   - nano-app/secure-app
+  - nano-app/functional-requirements
+  - nano-app/design-requirements
+  - nano-app/ui-flow-video
+  - nano-app/companion-requirements
+  - nano-app/documentation-requirements
+  - nano-app/support-requirements
+  - nano-app/marketing-requirements
+  - nano-app/warranty-disclaimer
 
 - title: Display
   docs:
@@ -45,6 +53,7 @@
   - nano-app/interaction-bolos-apps
   - nano-app/application-structure
 
+<<<<<<< HEAD
 - title: Functional 
   docs:
   - nano-app/functional-requirements
@@ -74,9 +83,11 @@
   - nano-app/crypto-api/index
   - nano-app/crypto-api/files
 
+=======
+>>>>>>> main
 - title: Clone applications
   docs:
-  - nano-app/clones-specificities
+  - nano-app/clone-specifics
   - nano-app/eth-clones
 
 - title: Learn - Personal security devices

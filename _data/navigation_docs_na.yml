@@ -6,12 +6,11 @@
 - title: Process
   docs:
   - nano-app/publish-introduction
+  - nano-app/deliverables-checklist
+  - nano-app/submission-form
+  - nano-app/maintenance
 
-- title: Requirements and Guidelines
-  docs:
-  - nano-app/requirements
-
-- title: Set up and use
+- title: Toolkit
   docs:
   - nano-app/build
   - nano-app/load
@@ -20,12 +19,25 @@
   - nano-app/debug
   - nano-app/crypto-examples
 
-- title: Coding
+- title: Requirements
+  docs:
+  - nano-app/requirements-intro
+  - nano-app/secure-app
+  - subfolderitems:
+    - title: 3 - Nano App
+      docs:
+      - nano-app/functional-requirements
+      - nano-app/design-requirements
+      - nano-app/ui-flow-video
+  - nano-app/companion-requirements
+  - nano-app/documentation-requirements
+  - nano-app/support-requirements
+  - nano-app/marketing-requirements
+  - nano-app/warranty-disclaimer
+
+- title: Guidelines
   docs:
   subfolderitems:
-    - title: Security
-      docs:
-      - nano-app/secure-app
     - title: Display
       docs:
       - nano-app/display-management
@@ -40,25 +52,6 @@
       docs:
       - nano-app/interaction-bolos-apps
       - nano-app/application-structure
-    - title: Functional 
-      docs:
-      - nano-app/functional-requirements
-    - title: Documentation 
-      docs:
-      - nano-app/documentation-requirements
-    - title: Marketing 
-      docs:
-      - nano-app/marketing-requirements
-    - title: Design 
-      docs:
-      - nano-app/design-requirements
-    - title: Support and maintenance 
-      docs:
-      - nano-app/support-maintenance-requirements
-
-    - title: Warranty and liability
-      docs:
-      - nano-app/warranty-disclaimer
 
 - title: Cryptographi library and syscalls
   docs:
@@ -67,7 +60,7 @@
 
 - title: Clone applications
   docs:
-  - nano-app/clones-specificities
+  - nano-app/clone-specifics
   - nano-app/eth-clones
 
 - title: Learn - Personal security devices

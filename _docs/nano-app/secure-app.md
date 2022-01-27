@@ -1,5 +1,5 @@
 ---
-title: Developing Secure Ledger Apps
+title: 2- Security
 subtitle: Ensuring your app passes the security review
 tags: []
 category: Nano Application
@@ -7,6 +7,24 @@ toc: true
 author:
 layout: doc
 ---
+
+## Requirement Summary
+
+|    Release Type       |          Unaudited     |          Audited       |          Public        |
+|-----------------------|------------------------|------------------------|------------------------|
+|  This requirement is: |  Highly recommended    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
+
+
+The requirement is to read and apply instructions below.
+
+## Requirement Note --
+
+Your Nano App must comply with all the Security requirements (Updated in Sep 2021). Security aspect apply to building the code, testing, (including automated testing), the use of BOLOS flags, the derivation path, exception calls, the handling of key-derived secrets, the signing process. (The lst is not exhaustive)
+
+Ledger will not pass the Security Audit for an App if potential errors have been detected by Clang Static Analyzer.  
+Make sure you use the Clang Static Analyzer in GitHub your workflow, and that all Vulnerabilities are detected and corrected
+
+Your Repos must have a test folder that contains Unit Tests list and your functional Tests.
 
 ## Introduction
 
@@ -163,7 +181,7 @@ The vast majority of applications are mainly designed to sign a transaction. Alt
 
 The application's structure should follow this pattern:
 
-[![Transaction Signature Flow](../images/tx-parsing.svg)](../images/tx-parsing.svg)
+![Transaction Signature Flow](../images/tx-parsing.svg)
 
 In order to produce an easily maintained, readable codebase composed of reusable components, each of these steps should be cleanly cut.
 It is sometimes tempting to mix in the parser with the rest of the code, or format data for printing within the parser, but doing so produces code that is hard to test or maintain.

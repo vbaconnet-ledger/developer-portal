@@ -16,30 +16,12 @@
   - platform-app/howto/setup
   - platform-app/howto/sign
   - platform-app/howto/broadcast
+  - platform-app/howto/sell
+  - platform-app/howto/fund
   - platform-app/howto/test
   - platform-app/howto/release
 
 - title: Reference
   docs:
   - platform-app/reference/manifest 
-  subfolderitems:
-    - title: Live SDK
-      docs:
-      - platform-app/modules
-      - subfolderitems:
-          - title: Classes
-            docs:
-            - platform-app/classes
-          - title: Enums
-            docs:
-            - platform-app/device-model
-            - platform-app/exchange-type
-            - platform-app/families
-            - platform-app/fees-level
-          - title: Interfaces
-            docs:
-            - platform-app/transport
-            - platform-app/transaction-common
-            - platform-app/bitcoin-transaction
-            - platform-app/ethereum-transaction
-
+  - platform-app/reference/sdk
