@@ -1,7 +1,7 @@
 ---
 title: Release
 subtitle:
-tags: [platform app, platform application, live app, ledger live app]
+tags: [non dapp, live app, ledger live app]
 category: Live Application
 toc: true
 layout: doc

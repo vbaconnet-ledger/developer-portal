@@ -17,7 +17,7 @@
   {% assign docs = site.data.navigation_docs_la | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "dapp"  %}
   {% assign docs = site.data.navigation_docs_da_linear | map: 'docs' | join: ',' | split: ',' %}
-{% elsif category == "platform-app"  %}
+{% elsif category == "non-dapp"  %}
   {% assign docs = site.data.navigation_docs_pa_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "developer-mode"  %}
   {% assign docs = site.data.navigation_docs_dm | map: 'docs' | join: ',' | split: ',' %}
