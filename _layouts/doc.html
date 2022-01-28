@@ -17,7 +17,7 @@ layout: default
   {% assign docs = site.data.navigation_docs_tr %}
 {% elsif category == "dapp"  %}
   {% assign docs = site.data.navigation_docs_da %}
-{% elsif category == "platform-app"  %}
+{% elsif category == "non-dapp"  %}
   {% assign docs = site.data.navigation_docs_pa %}
 {% elsif category == "swap"  %}
   {% assign docs = site.data.navigation_docs_sw %}
@@ -87,9 +87,9 @@ layout: default
                       {% endfor %}
                     {% if category == "live-app" %}
                       <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../dapp/process/">DApp</a>
-                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../platform-app/introduction">Non-DApp</a>
+                      <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" href="../../non-dapp/introduction">Non-DApp</a>
                     {% endif %}
-                    {% if category == "dapp" or category == "platform-app" %}
+                    {% if category == "dapp" or category == "non-dapp" %}
                       <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top" style="margin-bottom:20px;" href="https://developers.ledger.com/docs/live-app/start-here/">Back to the Live App intro</a>
                     {% endif %}
                 </div>

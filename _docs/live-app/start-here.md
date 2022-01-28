@@ -1,7 +1,7 @@
 ---
 title: Start here
 subtitle:
-tags: [platform app, live application, ledger live app, dapp]
+tags: [non dapp, live application, ledger live app, dapp]
 category: Live App
 toc: 
 layout: doc
@@ -46,8 +46,8 @@ See the left or right part respectively.
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Non-DApp</h5>
-          <p class="card-text">Process, Ledger Live SDK and manifest documentation.</p>
-          <a href="../../platform-app/introduction" class="btn btn-primary">Click here</a>
+          <p class="card-text">Process, Live App SDK and manifest documentation.</p>
+          <a href="../../non-dapp/introduction" class="btn btn-primary">Click here</a>
         </div>
       </div>
     </div>

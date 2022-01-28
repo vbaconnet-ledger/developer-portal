@@ -1,7 +1,7 @@
 ---
 title: Broadcast
 subtitle:
-tags: [platform app, platform application, live app, ledger live app, live application]
+tags: [non dapp, live app, ledger live app, live application]
 category: Live Application
 toc: true
 layout: doc
@@ -47,4 +47,4 @@ async requestAccount(
   ): Promise<Account> 
 ```
 ## Signed Transaction
-Refer to the page [How to: sign](https://developers.ledger.com/docs/platform-app/howto/sign/).
+Refer to the page [How to: sign](https://developers.ledger.com/docs/non-dapp/howto/sign/).
