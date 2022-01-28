@@ -62,6 +62,7 @@ Run:
 touch ./src/ConnectLedger.js
 touch ./src/SmartContract.js
 touch ./src/ethereum.js
+touch ./src/polyfill.js
 ```
 
 Your folder must look like this.
@@ -70,7 +71,7 @@ Your folder must look like this.
 [![Folder of the Application](../images/tutorial-2-folder.png){:width="210"}](../images/tutorial-2-folder.png){: style="border-bottom: none;"}   
 *Fig. 1: Folder of the Application*
 
-To implement the Ledger connexion you will only modify "App.js", "Index.js", "ConnectLedger.js”,"SmartContract.js", and ethereum.js”
+To implement the Ledger connexion you will only modify "App.js", "index.js", "ConnectLedger.js”,"SmartContract.js", and ethereum.js”
 
 
 ### Code Implementation
@@ -108,9 +109,17 @@ function App() {
 
 export default App;
 ```
+#### polyfill.js
 
-in the Index.js add this line 
+In App.js copy-paste the following code:
+
 ```javascript
+global.Buffer = require("buffer").Buffer;
+```
+#### index.js
+in the index.js add this line 
+```javascript
+import './polyfill'
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
@@ -329,6 +338,7 @@ npm install --save bootstrap
 npm install --save ethers
 npm install --save @ledgerhq/hw-app-eth
 npm install --save @ledgerhq/hw-transport-web-ble
+npm install --save buffer
 ```
 <table>
     <thead>
@@ -339,20 +349,24 @@ npm install --save @ledgerhq/hw-transport-web-ble
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://parceljs.org/">bootstrap</a></td>
+            <td><a href="https://getbootstrap.com/">bootstrap</a></td>
             <td colspan="2">It allows you to use the Bootstrap CSS framework.</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-solana">ethers</a></td>
+            <td><a href="https://docs.ethers.io/v5/">ethers</a></td>
             <td colspan="2">It provides you with all the methods to interact with the Ethereum blockchain</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-app-eth</a></td>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a></td>
             <td colspan="2">It will help you ask your Nano to access the ethereum address.</td>
         </tr>
         <tr>
-            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/hw-transport-web-ble</a></td>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble">@ledgerhq/hw-transport-web-ble</a></td>
             <td colspan="2">It provides you with all the methods to interact with your Ledger Nano X with a Bluetooth connexion.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/buffer">buffer</a></td>
+            <td colspan="2">The goal is to provide an API that is 100% identical to node's Buffer API.</td>
         </tr>
     </tbody>
 </table>
@@ -364,21 +378,22 @@ This is how your "package.json" shoud look like:
 
 ```javascript
 {
-  "name": "examples-web-bluetooth",
+  "name": "e2e-tutorial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.14.0",              
-    "@ledgerhq/hw-transport-web-ble": "^6.11.2",  
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^4.6.0",         
-    "ethers": "^5.5.2",        
+    "@ledgerhq/hw-app-eth": "^6.23.1",
+    "@ledgerhq/hw-transport-web-ble": "^6.21.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.1.3",
+    "buffer": "^6.0.3",
+    "ethers": "^5.5.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -405,6 +420,7 @@ This is how your "package.json" shoud look like:
     ]
   }
 }
+
 
 ```
 ## Web App Test
