@@ -23,6 +23,6 @@ To integrate a **non-DApp**, you need to:
 
 To develop an application compatible with Ledger Live, we provide you with a set of particular APIs ([Live App SDK](../reference/sdk/). According to the services and features you want to provide, you may have to use some specific APIs in order to interact with Ledger Live. An example would be account registration, or signing transactions. This set of APIs will evolve over time. 
 
-You basically develop a web version of your application, which is then integrated in an iframe inside the platform so all the Ledger Live users can discover it.
+You basically develop a web version of your application, which is then integrated in an iframe inside Ledger Live so all our users can discover it.
 
 You can follow our step-by-step [Tutorial](../tutorial/introduction) to learn how to develop your first Live App using our [Live App SDK](../reference/sdk/)!
