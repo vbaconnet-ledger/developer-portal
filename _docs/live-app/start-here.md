@@ -11,7 +11,7 @@ layout: doc
   <iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Live Apps are displayed in the discover section of Ledger Live on desktops (Windows, Mac, Linux) and mobiles (Android only for now, iOS is not included for now).    
+Live Apps are displayed in the discover section of Ledger Live on desktop (Windows, Mac, Linux) and mobile (Android only for now, iOS is not included for now).    
 
 <!---- image ---->
 
