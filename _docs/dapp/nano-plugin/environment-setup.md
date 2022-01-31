@@ -24,6 +24,8 @@ cd plugin_dev
 In the `plugin_dev/` folder, clone the Ethereum-app 
 ```sh
 git clone https://github.com/LedgerHQ/app-ethereum
+cd app-ethereum
+git switch master
 ```
 And the Plugin-tools
 ```sh
