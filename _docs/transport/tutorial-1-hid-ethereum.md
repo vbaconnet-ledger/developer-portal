@@ -331,7 +331,7 @@ And ensure you have this line in scripts:
   },
 ```
 
-Your file should know look like this:
+Your file should now look like this:
 
 ```javascript
 {
