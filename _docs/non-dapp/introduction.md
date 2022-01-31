@@ -9,7 +9,7 @@ layout: doc
 
 ## Context
 
-In this article, we will guide you through the process of developing your non-DApp and integrating it to the Ledger Live ecosystem. By having your application supported in Ledger Live, you offer security, ease and accessibility to millions of users.
+In this section, we will guide you through the process of developing your non-DApp and integrating it to the Ledger Live ecosystem. By having your application supported in Ledger Live, you offer security, ease and accessibility to millions of users.
 
 ## What is a non-DApp?
 
