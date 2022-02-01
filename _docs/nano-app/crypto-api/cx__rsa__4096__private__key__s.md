@@ -14,17 +14,14 @@ layout: doc
 <p>4096-bit RSA private key  
  <a href="../cx__rsa__4096__private__key__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
-<tr class="memdesc:a854352f53b148adc24983a58a1866d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key size in bytes.  <a href="#a854352f53b148adc24983a58a1866d66">More...</a><br /></td></tr>
-<tr class="separator:a854352f53b148adc24983a58a1866d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7bf60e9e6a4b6cb39e5a68c6606f92e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#af7bf60e9e6a4b6cb39e5a68c6606f92e">d</a> [512]</td></tr>
-<tr class="memdesc:af7bf60e9e6a4b6cb39e5a68c6606f92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private exponent.  <a href="#af7bf60e9e6a4b6cb39e5a68c6606f92e">More...</a><br /></td></tr>
-<tr class="separator:af7bf60e9e6a4b6cb39e5a68c6606f92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac20a68943054b72d682deede0e8f330d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#ac20a68943054b72d682deede0e8f330d">n</a> [512]</td></tr>
-<tr class="memdesc:ac20a68943054b72d682deede0e8f330d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public modulus.  <a href="#ac20a68943054b72d682deede0e8f330d">More...</a><br /></td></tr>
-<tr class="separator:ac20a68943054b72d682deede0e8f330d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
+<tr class="memdesc:a854352f53b148adc24983a58a1866d66"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Key size in bytes.  <a href="#a854352f53b148adc24983a58a1866d66">More...</a><br /></td></tr>
+<tr class="memitem:af7bf60e9e6a4b6cb39e5a68c6606f92e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#af7bf60e9e6a4b6cb39e5a68c6606f92e">d</a> [512]</td></tr>
+<tr class="memdesc:af7bf60e9e6a4b6cb39e5a68c6606f92e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Private exponent.  <a href="#af7bf60e9e6a4b6cb39e5a68c6606f92e">More...</a><br /></td></tr>
+<tr class="memitem:ac20a68943054b72d682deede0e8f330d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s#ac20a68943054b72d682deede0e8f330d">n</a> [512]</td></tr>
+<tr class="memdesc:ac20a68943054b72d682deede0e8f330d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Public modulus.  <a href="#ac20a68943054b72d682deede0e8f330d">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 

@@ -14,11 +14,10 @@ layout: doc
 <p>Cyclic Redundancy Check syscall.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a33022284e3b405eedf1c1ae90e164d3c"><td class="memItemLeft" align="right" valign="top">SYSCALL uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../ox__crc_8h#a33022284e3b405eedf1c1ae90e164d3c">cx_crc32_hw</a> (const void *buf, size_t len)</td></tr>
-<tr class="memdesc:a33022284e3b405eedf1c1ae90e164d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a 32-bit cyclic redundancy check.  <a href="#a33022284e3b405eedf1c1ae90e164d3c">More...</a><br /></td></tr>
-<tr class="separator:a33022284e3b405eedf1c1ae90e164d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33022284e3b405eedf1c1ae90e164d3c"><td class="memItemLeft" align="right" valign="top">SYSCALL uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__crc_8h#a33022284e3b405eedf1c1ae90e164d3c">cx_crc32_hw</a> (const void *buf, size_t len)</td></tr>
+<tr class="memdesc:a33022284e3b405eedf1c1ae90e164d3c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Calculate a 32-bit cyclic redundancy check.  <a href="#a33022284e3b405eedf1c1ae90e164d3c">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -35,20 +34,15 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SYSCALL uint32_t cx_crc32_hw </td>
-          <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -56,8 +50,8 @@ Functions</h2></td></tr>
 <p>Calculate a 32-bit cyclic redundancy check. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Pointer to the buffer to check.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Length of the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td colspan="4">Pointer to the buffer to check.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the buffer.</td></tr>
   </table>
   </dd>
 </dl>

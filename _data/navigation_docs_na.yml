@@ -17,7 +17,6 @@
   - nano-app/open-close-info-on-apps
   - nano-app/troubleshooting
   - nano-app/debug
-  - nano-app/crypto-examples
 
 - title: Requirements
   docs:
@@ -56,6 +55,7 @@
 - title: Cryptography library and syscalls
   docs:
   - nano-app/crypto-api/index
+  - nano-app/crypto-examples
   - nano-app/crypto-api/files
 
 - title: Clone applications

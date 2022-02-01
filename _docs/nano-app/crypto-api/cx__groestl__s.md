@@ -14,19 +14,16 @@ layout: doc
 <p>Groestl context.  
  <a href="../cx__groestl__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad5a251d434baeed078b92d184b5b29d5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../cx__hash__header__s">cx_hash_header_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#ad5a251d434baeed078b92d184b5b29d5">header</a></td></tr>
-<tr class="memdesc:ad5a251d434baeed078b92d184b5b29d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="../cx__hash__header__s" title="Common message digest context, used as abstract type. ">cx_hash_header_s</a>.  <a href="#ad5a251d434baeed078b92d184b5b29d5">More...</a><br /></td></tr>
-<tr class="separator:ad5a251d434baeed078b92d184b5b29d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a251d434baeed078b92d184b5b29d5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../cx__hash__header__s">cx_hash_header_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#ad5a251d434baeed078b92d184b5b29d5">header</a></td></tr>
+<tr class="memdesc:ad5a251d434baeed078b92d184b5b29d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">See <a class="el" href="../cx__hash__header__s" title="Common message digest context, used as abstract type. ">cx_hash_header_s</a>.  <a href="#ad5a251d434baeed078b92d184b5b29d5">More...</a><br /></td></tr>
 <tr class="memitem:adcfa20a6470faf70e9cafe2ac7d9183f"><td class="memItemLeft" align="right" valign="top"><a id="adcfa20a6470faf70e9cafe2ac7d9183f"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#adcfa20a6470faf70e9cafe2ac7d9183f">output_size</a></td></tr>
-<tr class="memdesc:adcfa20a6470faf70e9cafe2ac7d9183f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output digest size. <br /></td></tr>
-<tr class="separator:adcfa20a6470faf70e9cafe2ac7d9183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+unsigned int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#adcfa20a6470faf70e9cafe2ac7d9183f">output_size</a></td></tr>
+<tr class="memdesc:adcfa20a6470faf70e9cafe2ac7d9183f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Output digest size. <br /></td></tr>
 <tr class="memitem:a5c05fb960b42bd1ca37a973bab447d84"><td class="memItemLeft" align="right" valign="top"><a id="a5c05fb960b42bd1ca37a973bab447d84"></a>
-struct <a class="el" href="../hash_state__s">hashState_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#a5c05fb960b42bd1ca37a973bab447d84">ctx</a></td></tr>
-<tr class="memdesc:a5c05fb960b42bd1ca37a973bab447d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash state. <br /></td></tr>
-<tr class="separator:a5c05fb960b42bd1ca37a973bab447d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+struct <a class="el" href="../hash_state__s">hashState_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s#a5c05fb960b42bd1ca37a973bab447d84">ctx</a></td></tr>
+<tr class="memdesc:a5c05fb960b42bd1ca37a973bab447d84"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash state. <br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 

@@ -14,16 +14,14 @@ layout: doc
 <p>64-bit types, native or by-hands, depending on target and/or compiler support.  
  <a href="../uint64__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a1b064e2f6a6eae2b71e0444d64736a36"><td class="memItemLeft" align="right" valign="top"><a id="a1b064e2f6a6eae2b71e0444d64736a36"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../uint64__s#a1b064e2f6a6eae2b71e0444d64736a36">l</a></td></tr>
-<tr class="memdesc:a1b064e2f6a6eae2b71e0444d64736a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">32 least significant bits <br /></td></tr>
-<tr class="separator:a1b064e2f6a6eae2b71e0444d64736a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../uint64__s#a1b064e2f6a6eae2b71e0444d64736a36">l</a></td></tr>
+<tr class="memdesc:a1b064e2f6a6eae2b71e0444d64736a36"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">32 least significant bits <br /></td></tr>
 <tr class="memitem:a50d0f0f0767450a76d736d60766c9999"><td class="memItemLeft" align="right" valign="top"><a id="a50d0f0f0767450a76d736d60766c9999"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../uint64__s#a50d0f0f0767450a76d736d60766c9999">h</a></td></tr>
-<tr class="memdesc:a50d0f0f0767450a76d736d60766c9999"><td class="mdescLeft">&#160;</td><td class="mdescRight">32 most significant bits <br /></td></tr>
-<tr class="separator:a50d0f0f0767450a76d736d60766c9999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../uint64__s#a50d0f0f0767450a76d736d60766c9999">h</a></td></tr>
+<tr class="memdesc:a50d0f0f0767450a76d736d60766c9999"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">32 most significant bits <br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 

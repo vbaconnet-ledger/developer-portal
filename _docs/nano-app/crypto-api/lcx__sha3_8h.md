@@ -14,50 +14,38 @@ layout: doc
 <p>SHA-3 (Secure Hash Algorithm 3)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__sha3__s">cx_sha3_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">KECCAK, SHA3 and SHA3-XOF context.  <a href="../cx__sha3__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__sha3__s">cx_sha3_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">KECCAK, SHA3 and SHA3-XOF context.  <a href="../cx__sha3__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2487acc2e3ae619e2916d6741ff9d96a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__sha3__s">cx_sha3_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a></td></tr>
-<tr class="memdesc:a2487acc2e3ae619e2916d6741ff9d96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#a2487acc2e3ae619e2916d6741ff9d96a">More...</a><br /></td></tr>
-<tr class="separator:a2487acc2e3ae619e2916d6741ff9d96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2487acc2e3ae619e2916d6741ff9d96a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__sha3__s">cx_sha3_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a></td></tr>
+<tr class="memdesc:a2487acc2e3ae619e2916d6741ff9d96a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a2487acc2e3ae619e2916d6741ff9d96a">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af1ee003715d6fb8cb6ad954a560b6439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439">cx_sha3_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:af1ee003715d6fb8cb6ad954a560b6439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3 context.  <a href="#af1ee003715d6fb8cb6ad954a560b6439">More...</a><br /></td></tr>
-<tr class="separator:af1ee003715d6fb8cb6ad954a560b6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#adbdddb31ebf5f6a41a6e0a3d76f51648">cx_sha3_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3 context.  <a href="#adbdddb31ebf5f6a41a6e0a3d76f51648">More...</a><br /></td></tr>
-<tr class="separator:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9">cx_keccak_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a KECCAK context.  <a href="#a84fdde7c9a61fe0ccc4ad16b5ff137a9">More...</a><br /></td></tr>
-<tr class="separator:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a4154c0e5ef1cb0e5ce89c10c83dad02c">cx_keccak_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a KECCAK context.  <a href="#a4154c0e5ef1cb0e5ce89c10c83dad02c">More...</a><br /></td></tr>
-<tr class="separator:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145">cx_shake128_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
-<tr class="memdesc:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#acf6c2bda2bbc64ee17cff4e16a78b145">More...</a><br /></td></tr>
-<tr class="separator:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a3b7b0e53b9b88f4a576c1038ad0547ed">cx_shake128_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
-<tr class="memdesc:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a3b7b0e53b9b88f4a576c1038ad0547ed">More...</a><br /></td></tr>
-<tr class="separator:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43934d03ef80a9c0be16805c46aaae33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33">cx_shake256_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
-<tr class="memdesc:a43934d03ef80a9c0be16805c46aaae33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a43934d03ef80a9c0be16805c46aaae33">More...</a><br /></td></tr>
-<tr class="separator:a43934d03ef80a9c0be16805c46aaae33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ab4ed687f02084b7cbfe1a7baaf597f21">cx_shake256_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
-<tr class="memdesc:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ab4ed687f02084b7cbfe1a7baaf597f21">More...</a><br /></td></tr>
-<tr class="separator:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21ff12761bb2f87176109b4fbc5a84b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b">cx_sha3_xof_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size, size_t out_length)</td></tr>
-<tr class="memdesc:ac21ff12761bb2f87176109b4fbc5a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ac21ff12761bb2f87176109b4fbc5a84b">More...</a><br /></td></tr>
-<tr class="separator:ac21ff12761bb2f87176109b4fbc5a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#aaa1ad51b0b4b5d2ac90b50633daf7aec">cx_sha3_xof_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int size, unsigned int out_length)</td></tr>
-<tr class="memdesc:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a SHA3-XOF context.  <a href="#aaa1ad51b0b4b5d2ac90b50633daf7aec">More...</a><br /></td></tr>
-<tr class="separator:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ee003715d6fb8cb6ad954a560b6439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439">cx_sha3_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
+<tr class="memdesc:af1ee003715d6fb8cb6ad954a560b6439"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3 context.  <a href="#af1ee003715d6fb8cb6ad954a560b6439">More...</a><br /></td></tr>
+<tr class="memitem:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#adbdddb31ebf5f6a41a6e0a3d76f51648">cx_sha3_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
+<tr class="memdesc:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3 context.  <a href="#adbdddb31ebf5f6a41a6e0a3d76f51648">More...</a><br /></td></tr>
+<tr class="memitem:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9">cx_keccak_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
+<tr class="memdesc:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a KECCAK context.  <a href="#a84fdde7c9a61fe0ccc4ad16b5ff137a9">More...</a><br /></td></tr>
+<tr class="memitem:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a4154c0e5ef1cb0e5ce89c10c83dad02c">cx_keccak_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
+<tr class="memdesc:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a KECCAK context.  <a href="#a4154c0e5ef1cb0e5ce89c10c83dad02c">More...</a><br /></td></tr>
+<tr class="memitem:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145">cx_shake128_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
+<tr class="memdesc:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#acf6c2bda2bbc64ee17cff4e16a78b145">More...</a><br /></td></tr>
+<tr class="memitem:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a3b7b0e53b9b88f4a576c1038ad0547ed">cx_shake128_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
+<tr class="memdesc:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a3b7b0e53b9b88f4a576c1038ad0547ed">More...</a><br /></td></tr>
+<tr class="memitem:a43934d03ef80a9c0be16805c46aaae33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33">cx_shake256_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
+<tr class="memdesc:a43934d03ef80a9c0be16805c46aaae33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a43934d03ef80a9c0be16805c46aaae33">More...</a><br /></td></tr>
+<tr class="memitem:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ab4ed687f02084b7cbfe1a7baaf597f21">cx_shake256_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
+<tr class="memdesc:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ab4ed687f02084b7cbfe1a7baaf597f21">More...</a><br /></td></tr>
+<tr class="memitem:ac21ff12761bb2f87176109b4fbc5a84b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b">cx_sha3_xof_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size, size_t out_length)</td></tr>
+<tr class="memdesc:ac21ff12761bb2f87176109b4fbc5a84b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ac21ff12761bb2f87176109b4fbc5a84b">More...</a><br /></td></tr>
+<tr class="memitem:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#aaa1ad51b0b4b5d2ac90b50633daf7aec">cx_sha3_xof_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int size, unsigned int out_length)</td></tr>
+<tr class="memdesc:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#aaa1ad51b0b4b5d2ac90b50633daf7aec">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -95,25 +83,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_keccak_init </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -128,15 +109,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>KECCAK identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -153,20 +133,15 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_keccak_init_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -180,8 +155,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -206,25 +181,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha3_init </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -239,15 +207,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SHA3 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -264,20 +231,15 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha3_init_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -291,8 +253,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -317,31 +279,23 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha3_xof_init </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>out_length</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -354,16 +308,15 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of SHA3 digest in bits.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td>Length of the output in bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of SHA3 digest in bits.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">Length of the output in bytes.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Either SHAKE128 or SHAKE256 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -380,26 +333,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha3_xof_init_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>out_length</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -411,9 +358,9 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Length of SHA3 digest in bits.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td>Length of the output in bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of SHA3 digest in bits.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">Length of the output in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -438,25 +385,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_shake128_init </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>out_size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -469,15 +409,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td>Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SHAKE128 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -494,20 +433,15 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_shake128_init_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>out_size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -519,8 +453,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td>Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -545,25 +479,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_shake256_init </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>out_size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -576,15 +503,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td>Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SHA256 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -601,20 +527,15 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_shake256_init_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>out_size</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -626,8 +547,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td>Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>

@@ -24,3 +24,4 @@ Introduction</h1>
 <li>GROESTL and RIPEMD-160</li>
 <li>Keyed-hash Message Authentication Code </li>
 </ul>
+

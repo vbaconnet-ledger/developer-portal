@@ -14,138 +14,96 @@ layout: doc
 <p>Key pair generation based on elliptic curves.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__public__key__s">cx_ecfp_public_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elliptic Curve public key.  <a href="../cx__ecfp__public__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__private__key__s">cx_ecfp_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elliptic Curve private key.  <a href="../cx__ecfp__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_256_public_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 256-bit Elliptic Curve public key.  <a href="../cx__ecfp__256__public__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_256_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 256-bit Elliptic Curve private key.  <a href="../cx__ecfp__256__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__extended__private__key__s">cx_ecfp_256_extended_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 256-bit Elliptic Curve extended private key.  <a href="../cx__ecfp__256__extended__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__384__public__key__s">cx_ecfp_384_public_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 384-bit Elliptic Curve public key.  <a href="../cx__ecfp__384__public__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__384__private__key__s">cx_ecfp_384_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 384-bit Elliptic Curve private key.  <a href="../cx__ecfp__384__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__public__key__s">cx_ecfp_512_public_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 512-bit Elliptic Curve public key.  <a href="../cx__ecfp__512__public__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__private__key__s">cx_ecfp_512_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 512-bit Elliptic Curve private key.  <a href="../cx__ecfp__512__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__extented__private__key__s">cx_ecfp_512_extented_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 512-bit Elliptic Curve extended private key.  <a href="../cx__ecfp__512__extented__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__640__public__key__s">cx_ecfp_640_public_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 640-bit Elliptic Curve public key.  <a href="../cx__ecfp__640__public__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__640__private__key__s">cx_ecfp_640_private_key_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up to 640-bit Elliptic Curve private key.  <a href="../cx__ecfp__640__private__key__s#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__public__key__s">cx_ecfp_public_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Elliptic Curve public key.  <a href="../cx__ecfp__public__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__private__key__s">cx_ecfp_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Elliptic Curve private key.  <a href="../cx__ecfp__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_256_public_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 256-bit Elliptic Curve public key.  <a href="../cx__ecfp__256__public__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_256_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 256-bit Elliptic Curve private key.  <a href="../cx__ecfp__256__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__256__extended__private__key__s">cx_ecfp_256_extended_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 256-bit Elliptic Curve extended private key.  <a href="../cx__ecfp__256__extended__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__384__public__key__s">cx_ecfp_384_public_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 384-bit Elliptic Curve public key.  <a href="../cx__ecfp__384__public__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__384__private__key__s">cx_ecfp_384_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 384-bit Elliptic Curve private key.  <a href="../cx__ecfp__384__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__public__key__s">cx_ecfp_512_public_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 512-bit Elliptic Curve public key.  <a href="../cx__ecfp__512__public__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__private__key__s">cx_ecfp_512_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 512-bit Elliptic Curve private key.  <a href="../cx__ecfp__512__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__512__extented__private__key__s">cx_ecfp_512_extented_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 512-bit Elliptic Curve extended private key.  <a href="../cx__ecfp__512__extented__private__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__640__public__key__s">cx_ecfp_640_public_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 640-bit Elliptic Curve public key.  <a href="../cx__ecfp__640__public__key__s#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__640__private__key__s">cx_ecfp_640_private_key_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Up to 640-bit Elliptic Curve private key.  <a href="../cx__ecfp__640__private__key__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:afaa50411578a50dfe6b26af1e8eb80ea"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_256_public_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#afaa50411578a50dfe6b26af1e8eb80ea">cx_ecfp_256_public_key_t</a></td></tr>
-<tr class="memdesc:afaa50411578a50dfe6b26af1e8eb80ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#afaa50411578a50dfe6b26af1e8eb80ea">More...</a><br /></td></tr>
-<tr class="separator:afaa50411578a50dfe6b26af1e8eb80ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab797613054a5e9af9f6bbfb2dc1573f1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_256_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab797613054a5e9af9f6bbfb2dc1573f1">cx_ecfp_256_private_key_t</a></td></tr>
-<tr class="memdesc:ab797613054a5e9af9f6bbfb2dc1573f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">temporary def type.  <a href="#ab797613054a5e9af9f6bbfb2dc1573f1">More...</a><br /></td></tr>
-<tr class="separator:ab797613054a5e9af9f6bbfb2dc1573f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8d77bd31f17bfb8ca11c390dedca91"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__extended__private__key__s">cx_ecfp_256_extended_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aad8d77bd31f17bfb8ca11c390dedca91">cx_ecfp_256_extended_private_key_t</a></td></tr>
-<tr class="memdesc:aad8d77bd31f17bfb8ca11c390dedca91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#aad8d77bd31f17bfb8ca11c390dedca91">More...</a><br /></td></tr>
-<tr class="separator:aad8d77bd31f17bfb8ca11c390dedca91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a210266a591635caeb70e5015d6431e7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__384__private__key__s">cx_ecfp_384_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a210266a591635caeb70e5015d6431e7a">cx_ecfp_384_private_key_t</a></td></tr>
-<tr class="memdesc:a210266a591635caeb70e5015d6431e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#a210266a591635caeb70e5015d6431e7a">More...</a><br /></td></tr>
-<tr class="separator:a210266a591635caeb70e5015d6431e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad346228054ac9ea3d4618a1027aaea1b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__384__public__key__s">cx_ecfp_384_public_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ad346228054ac9ea3d4618a1027aaea1b">cx_ecfp_384_public_key_t</a></td></tr>
-<tr class="memdesc:ad346228054ac9ea3d4618a1027aaea1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#ad346228054ac9ea3d4618a1027aaea1b">More...</a><br /></td></tr>
-<tr class="separator:ad346228054ac9ea3d4618a1027aaea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ecc945db32a3dd9cf972cfb3bfc244d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__public__key__s">cx_ecfp_512_public_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9ecc945db32a3dd9cf972cfb3bfc244d">cx_ecfp_512_public_key_t</a></td></tr>
-<tr class="memdesc:a9ecc945db32a3dd9cf972cfb3bfc244d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#a9ecc945db32a3dd9cf972cfb3bfc244d">More...</a><br /></td></tr>
-<tr class="separator:a9ecc945db32a3dd9cf972cfb3bfc244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5431c1e8a52a8c95733e7978e67dbf3f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__private__key__s">cx_ecfp_512_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a5431c1e8a52a8c95733e7978e67dbf3f">cx_ecfp_512_private_key_t</a></td></tr>
-<tr class="memdesc:a5431c1e8a52a8c95733e7978e67dbf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#a5431c1e8a52a8c95733e7978e67dbf3f">More...</a><br /></td></tr>
-<tr class="separator:a5431c1e8a52a8c95733e7978e67dbf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae63fbb5c7edcdd2f6eb2c17ffafe9c38"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__extented__private__key__s">cx_ecfp_512_extented_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ae63fbb5c7edcdd2f6eb2c17ffafe9c38">cx_ecfp_512_extented_private_key_t</a></td></tr>
-<tr class="memdesc:ae63fbb5c7edcdd2f6eb2c17ffafe9c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#ae63fbb5c7edcdd2f6eb2c17ffafe9c38">More...</a><br /></td></tr>
-<tr class="separator:ae63fbb5c7edcdd2f6eb2c17ffafe9c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b63e9c101e3216d99be2bd7da2e4249"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__640__public__key__s">cx_ecfp_640_public_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9b63e9c101e3216d99be2bd7da2e4249">cx_ecfp_640_public_key_t</a></td></tr>
-<tr class="memdesc:a9b63e9c101e3216d99be2bd7da2e4249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#a9b63e9c101e3216d99be2bd7da2e4249">More...</a><br /></td></tr>
-<tr class="separator:a9b63e9c101e3216d99be2bd7da2e4249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab853a64f1891481c62698e48ce85bc5b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__640__private__key__s">cx_ecfp_640_private_key_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab853a64f1891481c62698e48ce85bc5b">cx_ecfp_640_private_key_t</a></td></tr>
-<tr class="memdesc:ab853a64f1891481c62698e48ce85bc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type.  <a href="#ab853a64f1891481c62698e48ce85bc5b">More...</a><br /></td></tr>
-<tr class="separator:ab853a64f1891481c62698e48ce85bc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa50411578a50dfe6b26af1e8eb80ea"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_256_public_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#afaa50411578a50dfe6b26af1e8eb80ea">cx_ecfp_256_public_key_t</a></td></tr>
+<tr class="memdesc:afaa50411578a50dfe6b26af1e8eb80ea"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#afaa50411578a50dfe6b26af1e8eb80ea">More...</a><br /></td></tr>
+<tr class="memitem:ab797613054a5e9af9f6bbfb2dc1573f1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_256_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab797613054a5e9af9f6bbfb2dc1573f1">cx_ecfp_256_private_key_t</a></td></tr>
+<tr class="memdesc:ab797613054a5e9af9f6bbfb2dc1573f1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">temporary def type.  <a href="#ab797613054a5e9af9f6bbfb2dc1573f1">More...</a><br /></td></tr>
+<tr class="memitem:aad8d77bd31f17bfb8ca11c390dedca91"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__256__extended__private__key__s">cx_ecfp_256_extended_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aad8d77bd31f17bfb8ca11c390dedca91">cx_ecfp_256_extended_private_key_t</a></td></tr>
+<tr class="memdesc:aad8d77bd31f17bfb8ca11c390dedca91"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aad8d77bd31f17bfb8ca11c390dedca91">More...</a><br /></td></tr>
+<tr class="memitem:a210266a591635caeb70e5015d6431e7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__384__private__key__s">cx_ecfp_384_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a210266a591635caeb70e5015d6431e7a">cx_ecfp_384_private_key_t</a></td></tr>
+<tr class="memdesc:a210266a591635caeb70e5015d6431e7a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a210266a591635caeb70e5015d6431e7a">More...</a><br /></td></tr>
+<tr class="memitem:ad346228054ac9ea3d4618a1027aaea1b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__384__public__key__s">cx_ecfp_384_public_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ad346228054ac9ea3d4618a1027aaea1b">cx_ecfp_384_public_key_t</a></td></tr>
+<tr class="memdesc:ad346228054ac9ea3d4618a1027aaea1b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ad346228054ac9ea3d4618a1027aaea1b">More...</a><br /></td></tr>
+<tr class="memitem:a9ecc945db32a3dd9cf972cfb3bfc244d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__public__key__s">cx_ecfp_512_public_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9ecc945db32a3dd9cf972cfb3bfc244d">cx_ecfp_512_public_key_t</a></td></tr>
+<tr class="memdesc:a9ecc945db32a3dd9cf972cfb3bfc244d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a9ecc945db32a3dd9cf972cfb3bfc244d">More...</a><br /></td></tr>
+<tr class="memitem:a5431c1e8a52a8c95733e7978e67dbf3f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__private__key__s">cx_ecfp_512_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a5431c1e8a52a8c95733e7978e67dbf3f">cx_ecfp_512_private_key_t</a></td></tr>
+<tr class="memdesc:a5431c1e8a52a8c95733e7978e67dbf3f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a5431c1e8a52a8c95733e7978e67dbf3f">More...</a><br /></td></tr>
+<tr class="memitem:ae63fbb5c7edcdd2f6eb2c17ffafe9c38"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__512__extented__private__key__s">cx_ecfp_512_extented_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ae63fbb5c7edcdd2f6eb2c17ffafe9c38">cx_ecfp_512_extented_private_key_t</a></td></tr>
+<tr class="memdesc:ae63fbb5c7edcdd2f6eb2c17ffafe9c38"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ae63fbb5c7edcdd2f6eb2c17ffafe9c38">More...</a><br /></td></tr>
+<tr class="memitem:a9b63e9c101e3216d99be2bd7da2e4249"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__640__public__key__s">cx_ecfp_640_public_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9b63e9c101e3216d99be2bd7da2e4249">cx_ecfp_640_public_key_t</a></td></tr>
+<tr class="memdesc:a9b63e9c101e3216d99be2bd7da2e4249"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a9b63e9c101e3216d99be2bd7da2e4249">More...</a><br /></td></tr>
+<tr class="memitem:ab853a64f1891481c62698e48ce85bc5b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ecfp__640__private__key__s">cx_ecfp_640_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab853a64f1891481c62698e48ce85bc5b">cx_ecfp_640_private_key_t</a></td></tr>
+<tr class="memdesc:ab853a64f1891481c62698e48ce85bc5b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ab853a64f1891481c62698e48ce85bc5b">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925">cx_ecfp_add_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *R, const uint8_t *P, const uint8_t *Q)</td></tr>
-<tr class="memdesc:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two points of an elliptic curve.  <a href="#a9fc2ac0486d0cd6a67f654417ba1f925">More...</a><br /></td></tr>
-<tr class="separator:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *R, const unsigned char *P, const unsigned char *Q, unsigned int X_len)</td></tr>
-<tr class="memdesc:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two points of an elliptic curve.  <a href="#a5a0e2ce81dfb4318e14ae0e9db164db1">More...</a><br /></td></tr>
-<tr class="separator:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91d6f274abf730d2558c6736b1db00f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8">cx_ecfp_scalar_mult_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *P, const uint8_t *k, size_t k_len)</td></tr>
-<tr class="memdesc:a91d6f274abf730d2558c6736b1db00f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a91d6f274abf730d2558c6736b1db00f8">More...</a><br /></td></tr>
-<tr class="separator:a91d6f274abf730d2558c6736b1db00f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *P, unsigned int P_len, const unsigned char *k, unsigned int k_len)</td></tr>
-<tr class="memdesc:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a2cc4aeae037cc9c0b13954e9bb3651fc">More...</a><br /></td></tr>
-<tr class="separator:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371">cx_ecfp_init_public_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a public key.  <a href="#a9dba0fd71ca5df52eb27e3c4493e0371">More...</a><br /></td></tr>
-<tr class="separator:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509a069a0d882d2ebcd7c189fffae52f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:a509a069a0d882d2ebcd7c189fffae52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a public key.  <a href="#a509a069a0d882d2ebcd7c189fffae52f">More...</a><br /></td></tr>
-<tr class="separator:a509a069a0d882d2ebcd7c189fffae52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60ed5c59930e787f187df1802b84ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5">cx_ecfp_init_private_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
-<tr class="memdesc:aa60ed5c59930e787f187df1802b84ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a private key.  <a href="#aa60ed5c59930e787f187df1802b84ab5">More...</a><br /></td></tr>
-<tr class="separator:aa60ed5c59930e787f187df1802b84ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94402980442875a67af525d3ad907318"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
-<tr class="memdesc:a94402980442875a67af525d3ad907318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a private key.  <a href="#a94402980442875a67af525d3ad907318">More...</a><br /></td></tr>
-<tr class="separator:a94402980442875a67af525d3ad907318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c0ed692411324f34d97305c9e4040d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d">cx_ecfp_generate_pair_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, bool keepprivate)</td></tr>
-<tr class="memdesc:a06c0ed692411324f34d97305c9e4040d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a06c0ed692411324f34d97305c9e4040d">More...</a><br /></td></tr>
-<tr class="separator:a06c0ed692411324f34d97305c9e4040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8880d93a82c60faeb564149e9618a6c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, int keepprivate)</td></tr>
-<tr class="memdesc:a8880d93a82c60faeb564149e9618a6c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a8880d93a82c60faeb564149e9618a6c4">More...</a><br /></td></tr>
-<tr class="separator:a8880d93a82c60faeb564149e9618a6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ca9d7985773300dba5490b0dcd9fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7">cx_ecfp_generate_pair2_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, bool keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
-<tr class="memdesc:a26ca9d7985773300dba5490b0dcd9fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a key pair.  <a href="#a26ca9d7985773300dba5490b0dcd9fc7">More...</a><br /></td></tr>
-<tr class="separator:a26ca9d7985773300dba5490b0dcd9fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a700affb602b29623ba28ac960df63b27"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a700affb602b29623ba28ac960df63b27">cx_ecfp_generate_pair2</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, int keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
-<tr class="memdesc:a700affb602b29623ba28ac960df63b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a key pair.  <a href="#a700affb602b29623ba28ac960df63b27">More...</a><br /></td></tr>
-<tr class="separator:a700affb602b29623ba28ac960df63b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab940dccf0b90c362b2f033bc93d38283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283">cx_eddsa_get_public_key_no_throw</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pukey, uint8_t *a, size_t a_len, uint8_t *h, size_t h_len)</td></tr>
-<tr class="memdesc:ab940dccf0b90c362b2f033bc93d38283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an EDDSA public key.  <a href="#ab940dccf0b90c362b2f033bc93d38283">More...</a><br /></td></tr>
-<tr class="separator:ab940dccf0b90c362b2f033bc93d38283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4366ae761dac729bfc1c8ea38090f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pukey, unsigned char *a, unsigned int a_len, unsigned char *h, unsigned int h_len)</td></tr>
-<tr class="memdesc:a0d4366ae761dac729bfc1c8ea38090f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an EDDSA public key.  <a href="#a0d4366ae761dac729bfc1c8ea38090f0">More...</a><br /></td></tr>
-<tr class="separator:a0d4366ae761dac729bfc1c8ea38090f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf15d95fb7384452b38bec8131230de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:aacf15d95fb7384452b38bec8131230de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#aacf15d95fb7384452b38bec8131230de">More...</a><br /></td></tr>
-<tr class="separator:aacf15d95fb7384452b38bec8131230de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#abbe81f0cda9fbbc9b89a64b4245474ed">More...</a><br /></td></tr>
-<tr class="separator:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135c9e000dc82e000cb427788ba33bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:a135c9e000dc82e000cb427788ba33bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a135c9e000dc82e000cb427788ba33bcd">More...</a><br /></td></tr>
-<tr class="separator:a135c9e000dc82e000cb427788ba33bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94fcf19a2a1073ae043bbf9ecc4befcf">cx_edwards_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a94fcf19a2a1073ae043bbf9ecc4befcf">More...</a><br /></td></tr>
-<tr class="separator:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af618491194f35b79492ced3a6756f83f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#af618491194f35b79492ced3a6756f83f">cx_edward_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="separator:af618491194f35b79492ced3a6756f83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2084f9df08a0e0ea89481baf99f8e751"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2084f9df08a0e0ea89481baf99f8e751">cx_edward_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="separator:a2084f9df08a0e0ea89481baf99f8e751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925">cx_ecfp_add_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *R, const uint8_t *P, const uint8_t *Q)</td></tr>
+<tr class="memdesc:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two points of an elliptic curve.  <a href="#a9fc2ac0486d0cd6a67f654417ba1f925">More...</a><br /></td></tr>
+<tr class="memitem:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *R, const unsigned char *P, const unsigned char *Q, unsigned int X_len)</td></tr>
+<tr class="memdesc:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two points of an elliptic curve.  <a href="#a5a0e2ce81dfb4318e14ae0e9db164db1">More...</a><br /></td></tr>
+<tr class="memitem:a91d6f274abf730d2558c6736b1db00f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8">cx_ecfp_scalar_mult_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *P, const uint8_t *k, size_t k_len)</td></tr>
+<tr class="memdesc:a91d6f274abf730d2558c6736b1db00f8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a91d6f274abf730d2558c6736b1db00f8">More...</a><br /></td></tr>
+<tr class="memitem:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *P, unsigned int P_len, const unsigned char *k, unsigned int k_len)</td></tr>
+<tr class="memdesc:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a2cc4aeae037cc9c0b13954e9bb3651fc">More...</a><br /></td></tr>
+<tr class="memitem:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371">cx_ecfp_init_public_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *key)</td></tr>
+<tr class="memdesc:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a public key.  <a href="#a9dba0fd71ca5df52eb27e3c4493e0371">More...</a><br /></td></tr>
+<tr class="memitem:a509a069a0d882d2ebcd7c189fffae52f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *key)</td></tr>
+<tr class="memdesc:a509a069a0d882d2ebcd7c189fffae52f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a public key.  <a href="#a509a069a0d882d2ebcd7c189fffae52f">More...</a><br /></td></tr>
+<tr class="memitem:aa60ed5c59930e787f187df1802b84ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5">cx_ecfp_init_private_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
+<tr class="memdesc:aa60ed5c59930e787f187df1802b84ab5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a private key.  <a href="#aa60ed5c59930e787f187df1802b84ab5">More...</a><br /></td></tr>
+<tr class="memitem:a94402980442875a67af525d3ad907318"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
+<tr class="memdesc:a94402980442875a67af525d3ad907318"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a private key.  <a href="#a94402980442875a67af525d3ad907318">More...</a><br /></td></tr>
+<tr class="memitem:a06c0ed692411324f34d97305c9e4040d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d">cx_ecfp_generate_pair_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, bool keepprivate)</td></tr>
+<tr class="memdesc:a06c0ed692411324f34d97305c9e4040d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a06c0ed692411324f34d97305c9e4040d">More...</a><br /></td></tr>
+<tr class="memitem:a8880d93a82c60faeb564149e9618a6c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, int keepprivate)</td></tr>
+<tr class="memdesc:a8880d93a82c60faeb564149e9618a6c4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a8880d93a82c60faeb564149e9618a6c4">More...</a><br /></td></tr>
+<tr class="memitem:a26ca9d7985773300dba5490b0dcd9fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7">cx_ecfp_generate_pair2_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, bool keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
+<tr class="memdesc:a26ca9d7985773300dba5490b0dcd9fc7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair.  <a href="#a26ca9d7985773300dba5490b0dcd9fc7">More...</a><br /></td></tr>
+<tr class="memitem:a700affb602b29623ba28ac960df63b27"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a700affb602b29623ba28ac960df63b27">cx_ecfp_generate_pair2</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *privkey, int keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
+<tr class="memdesc:a700affb602b29623ba28ac960df63b27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair.  <a href="#a700affb602b29623ba28ac960df63b27">More...</a><br /></td></tr>
+<tr class="memitem:ab940dccf0b90c362b2f033bc93d38283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283">cx_eddsa_get_public_key_no_throw</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pukey, uint8_t *a, size_t a_len, uint8_t *h, size_t h_len)</td></tr>
+<tr class="memdesc:ab940dccf0b90c362b2f033bc93d38283"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieve an EDDSA public key.  <a href="#ab940dccf0b90c362b2f033bc93d38283">More...</a><br /></td></tr>
+<tr class="memitem:a0d4366ae761dac729bfc1c8ea38090f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *pukey, unsigned char *a, unsigned int a_len, unsigned char *h, unsigned int h_len)</td></tr>
+<tr class="memdesc:a0d4366ae761dac729bfc1c8ea38090f0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieve an EDDSA public key.  <a href="#a0d4366ae761dac729bfc1c8ea38090f0">More...</a><br /></td></tr>
+<tr class="memitem:aacf15d95fb7384452b38bec8131230de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
+<tr class="memdesc:aacf15d95fb7384452b38bec8131230de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#aacf15d95fb7384452b38bec8131230de">More...</a><br /></td></tr>
+<tr class="memitem:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
+<tr class="memdesc:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#abbe81f0cda9fbbc9b89a64b4245474ed">More...</a><br /></td></tr>
+<tr class="memitem:a135c9e000dc82e000cb427788ba33bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
+<tr class="memdesc:a135c9e000dc82e000cb427788ba33bcd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a135c9e000dc82e000cb427788ba33bcd">More...</a><br /></td></tr>
+<tr class="memitem:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94fcf19a2a1073ae043bbf9ecc4befcf">cx_edwards_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
+<tr class="memdesc:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a94fcf19a2a1073ae043bbf9ecc4befcf">More...</a><br /></td></tr>
+<tr class="memitem:af618491194f35b79492ced3a6756f83f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#af618491194f35b79492ced3a6756f83f">cx_edward_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
+<tr class="memitem:a2084f9df08a0e0ea89481baf99f8e751"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2084f9df08a0e0ea89481baf99f8e751">cx_edward_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -336,43 +294,33 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_add_point </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>X_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -381,26 +329,17 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td>Resulting point encoded as <b>04 || x || y</b>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td>First operand: point on curve encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td>Second operand: point on curve encoded as <b>04 || x || y</b>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">X_len</td><td>Length of the x-coordinate. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Resulting point encoded as <b>04 || x || y</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">First operand: point on curve encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Second operand: point on curve encoded as <b>04 || x || y</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">X_len</td><td colspan="4">Length of the x-coordinate. This parameter is not used.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the encoded point.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -417,32 +356,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_add_point_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>Q</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -450,10 +382,10 @@ Functions</h2></td></tr>
 <p>Add two points of an elliptic curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td>Resulting point encoded as <b>04 || x || y</b>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td>First operand: point on curve encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td>Second operand: point on curve encoded as <b>04 || x || y</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Resulting point encoded as <b>04 || x || y</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">First operand: point on curve encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Second operand: point on curve encoded as <b>04 || x || y</b>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -486,37 +418,28 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_generate_pair </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pubkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>privkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>keepprivate</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -525,25 +448,16 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td>Generated public key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td>Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td>If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_INTERNAL_ERROR</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -563,43 +477,33 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_generate_pair2 </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pubkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>privkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>keepprivate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><em>hashID</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -608,26 +512,17 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td>Generated public key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td>Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td>If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td>Message digest algorithm identifer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifer.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_INTERNAL_ERROR</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -644,38 +539,30 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_generate_pair2_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pubkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>privkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>keepprivate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><em>hashID</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -683,11 +570,11 @@ Functions</h2></td></tr>
 <p>Generate a key pair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td>Generated public key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td>Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td>If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td>Message digest algorithm identifer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -717,32 +604,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_generate_pair_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pubkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>privkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>keepprivate</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -750,10 +630,10 @@ Functions</h2></td></tr>
 <p>Generate a key pair with SHA-512 hash function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td>Generated public key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td>Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td>If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
   </table>
   </dd>
 </dl>
@@ -786,37 +666,28 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_init_private_key </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>rawkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>key_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>pvkey</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -825,18 +696,16 @@ Functions</h2></td></tr>
 <p>The key can be stored in non-volatile memory and used for ECDSA or ECDH processing. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td>Pointer to a raw key value or NULL pointer. The value shall be in big endian order.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>Length of the key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pvkey</td><td>Private key to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to a raw key value or NULL pointer. The value shall be in big endian order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pvkey</td><td colspan="4">Private key to initialize.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the key.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -853,32 +722,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_init_private_key_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>rawkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>key_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>pvkey</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -887,10 +749,10 @@ Functions</h2></td></tr>
 <p>The key can be stored in non-volatile memory and used for ECDSA or ECDH processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td>Pointer to a raw key value or NULL pointer. The value shall be in big endian order.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>Length of the key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pvkey</td><td>Private key to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to a raw key value or NULL pointer. The value shall be in big endian order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pvkey</td><td colspan="4">Private key to initialize.</td></tr>
   </table>
   </dd>
 </dl>
@@ -916,37 +778,28 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_init_public_key </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>rawkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>key_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -955,8 +808,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td>Pointer to a raw key value or NULL pointer The value shall be the public point encoded as:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to a raw key value or NULL pointer The value shall be the public point encoded as:<ul>
 <li><b>04 || x || y</b> for Weiertrass curves</li>
 <li><b>04 || x || y</b> or <b>02 || y</b> (plus sign) for Twisted Edward curves</li>
 <li><b>04 || x || y</b> or <b>02 || x</b> for Montgomery curves</li>
@@ -968,16 +821,14 @@ Functions</h2></td></tr>
 <p>where <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to the curve domain size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>Length of the key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>Public key to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Public key to initialize.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the key.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -994,32 +845,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_init_public_key_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>rawkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>key_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1027,8 +871,8 @@ Functions</h2></td></tr>
 <p>Initialize a public key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td>Pointer to a raw key value or NULL pointer The value shall be the public point encoded as:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to a raw key value or NULL pointer The value shall be the public point encoded as:<ul>
 <li><b>04 || x || y</b> for Weiertrass curves</li>
 <li><b>04 || x || y</b> or <b>02 || y</b> (plus sign) for Twisted Edward curves</li>
 <li><b>04 || x || y</b> or <b>02 || x</b> for Montgomery curves</li>
@@ -1040,8 +884,8 @@ Functions</h2></td></tr>
 <p>where <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to the curve domain size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>Length of the key.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>Public key to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Public key to initialize.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1067,43 +911,33 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecfp_scalar_mult </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>P_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>k</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>k_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1112,24 +946,17 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td>Point on curve encoded as <b>04 || x || y</b>: x and y are encoded as big endian raw values and have a binary length equal to curve domain size. This is also used for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td>Length of the input point. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td>Scalar encoded as big endian integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td>Length of the scalar. This should be equal to the curve domain length.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Point on curve encoded as <b>04 || x || y</b>: x and y are encoded as big endian raw values and have a binary length equal to curve domain size. This is also used for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">Length of the input point. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Scalar encoded as big endian integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the curve domain length.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the encoded point.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1146,32 +973,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecfp_scalar_mult_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>k</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>k_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1179,10 +999,10 @@ Functions</h2></td></tr>
 <p>Perform a scalar multiplication over an elliptic curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td>Point on curve encoded as <b>04 || x || y</b>: x and y are encoded as big endian raw values and have a binary length equal to curve domain size. This is also used for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td>Scalar encoded as big endian integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td>Length of the scalar. This should be equal to the curve domain length.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Point on curve encoded as <b>04 || x || y</b>: x and y are encoded as big endian raw values and have a binary length equal to curve domain size. This is also used for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Scalar encoded as big endian integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the curve domain length.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1213,55 +1033,43 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static void cx_eddsa_get_public_key </td>
-          <td>(</td>
           <td class="paramtype">const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>pvkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><em>hashID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pukey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>a_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>h_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1270,27 +1078,18 @@ Functions</h2></td></tr>
 <p>Retrieve (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified in <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td>A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td>Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td>Key container for retrieving the public key A.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td>Private scalar such that A = a.B.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a_len</td><td>Length of the scalar a.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">h</td><td>Signature prefix.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h_len</td><td>Length of the prefix h.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td colspan="4">Key container for retrieving the public key A.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">Private scalar such that A = a.B.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a_len</td><td colspan="4">Length of the scalar a.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">h</td><td colspan="4">Signature prefix.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h_len</td><td colspan="4">Length of the prefix h.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_INTERNAL_ERROR</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1307,50 +1106,40 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_eddsa_get_public_key_no_throw </td>
-          <td>(</td>
           <td class="paramtype">const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><em>pvkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><em>hashID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="../cx__ecfp__256__public__key__s">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><em>pukey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>a_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>h_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1359,13 +1148,13 @@ Functions</h2></td></tr>
 <p>Retrieve (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified in <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td>A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td>Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td>Key container for retrieving the public key A.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td>Private scalar such that A = a.B.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a_len</td><td>Length of the scalar a.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">h</td><td>Signature prefix.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h_len</td><td>Length of the prefix h.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td colspan="4">Key container for retrieving the public key A.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">Private scalar such that A = a.B.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a_len</td><td colspan="4">Length of the scalar a.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">h</td><td colspan="4">Signature prefix.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h_len</td><td colspan="4">Length of the prefix h.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1398,31 +1187,23 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static void cx_edward_compress_point </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1443,31 +1224,23 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static void cx_edward_decompress_point </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1488,31 +1261,23 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static void cx_edwards_compress_point </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1521,22 +1286,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>Pointer to the point to compress.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td>Length of the point buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td colspan="4">Pointer to the point to compress.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the point buffer.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1553,26 +1310,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_edwards_compress_point_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1580,9 +1331,9 @@ Functions</h2></td></tr>
 <p>Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>Pointer to the point to compress.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td>Length of the point buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td colspan="4">Pointer to the point to compress.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the point buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1614,31 +1365,23 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static void cx_edwards_decompress_point </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1647,24 +1390,14 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>Pointer to the point to decompress.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td>Length of the point buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td colspan="4">Pointer to the point to decompress.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the point buffer.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_UNLOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INVALID_CURVE</td><td></td></tr>
-    <tr><td class="paramname">CX_MEMORY_FULL</td><td></td></tr>
-    <tr><td class="paramname">CX_NOT_LOCKED</td><td></td></tr>
-    <tr><td class="paramname">CX_INVALID_PARAMETER</td><td></td></tr>
-    <tr><td class="paramname">CX_EC_INFINITE_POINT</td><td></td></tr>
-    <tr><td class="paramname">CX_NO_RESIDUE</td><td></td></tr>
-    <tr><td class="paramname">INVALID_PARAMETER</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1681,26 +1414,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_edwards_decompress_point_no_throw </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><em>curve</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p_len</em>&#160;</td>
         </tr>
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1708,9 +1435,9 @@ Functions</h2></td></tr>
 <p>Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>Pointer to the point to decompress.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td>Length of the point buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td colspan="4">Pointer to the point to decompress.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the point buffer.</td></tr>
   </table>
   </dd>
 </dl>

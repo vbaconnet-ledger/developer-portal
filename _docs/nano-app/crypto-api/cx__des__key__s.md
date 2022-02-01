@@ -14,16 +14,14 @@ layout: doc
 <p>DES key container.  
  <a href="../cx__des__key__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ae5dc6ffcd9b7605c7787791e40cc6bb0"><td class="memItemLeft" align="right" valign="top"><a id="ae5dc6ffcd9b7605c7787791e40cc6bb0"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__des__key__s#ae5dc6ffcd9b7605c7787791e40cc6bb0">size</a></td></tr>
-<tr class="memdesc:ae5dc6ffcd9b7605c7787791e40cc6bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">key size <br /></td></tr>
-<tr class="separator:ae5dc6ffcd9b7605c7787791e40cc6bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__des__key__s#ae5dc6ffcd9b7605c7787791e40cc6bb0">size</a></td></tr>
+<tr class="memdesc:ae5dc6ffcd9b7605c7787791e40cc6bb0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">key size <br /></td></tr>
 <tr class="memitem:aca1861f1d9ce3b496af8f1da1bacf1c8"><td class="memItemLeft" align="right" valign="top"><a id="aca1861f1d9ce3b496af8f1da1bacf1c8"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../cx__des__key__s#aca1861f1d9ce3b496af8f1da1bacf1c8">keys</a> [24]</td></tr>
-<tr class="memdesc:aca1861f1d9ce3b496af8f1da1bacf1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">key value <br /></td></tr>
-<tr class="separator:aca1861f1d9ce3b496af8f1da1bacf1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__des__key__s#aca1861f1d9ce3b496af8f1da1bacf1c8">keys</a> [24]</td></tr>
+<tr class="memdesc:aca1861f1d9ce3b496af8f1da1bacf1c8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">key value <br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
