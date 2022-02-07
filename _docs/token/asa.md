@@ -11,7 +11,7 @@ layout: doc
 
 
 
-For ASAs, compared to ERC20, the process differs due to the fact that the tokens details are hardcoded within the Algorand Nano application instead of being streamed to the device. Furthermore, the ownership of the Algorand Nano Application source code lies with the Algorand team. Request for updates must be validated by them before being reviewed by Ledger.
+For ASAs, compared to ERC20, the process differs due to the fact that the tokens details are hardcoded within the Algorand Nano application instead of being streamed to the device. Furthermore, the ownership of the Algorand Nano Application source code lies with the Algorand team. Request for updates must be validated by them before being reviewed by Ledger, that is why there is no form.
 
 ## How to request a token addition
 
@@ -35,8 +35,8 @@ Then, the Algorand team will update the [ledgerjs package](https://github.com/Le
 <!--  -->
 
 
-### What will Ledger do?
+### What next?
 
-Ledger will review the PR made by the Algorand team to [Ledger Github repository](https://github.com/LedgerHQ/app-algorand).
+This is all you need to do. Ledger will review the PR made by the Algorand team to [Ledger Github repository](https://github.com/LedgerHQ/app-algorand).
 Ledger will review and merge the PR made on the [ledgerjs package](https://github.com/LedgerHQ/ledgerjs/blob/master/packages/cryptoassets/data/asa.js).
 Ledger will perform a functional review of the changes before release in production.

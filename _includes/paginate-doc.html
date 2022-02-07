@@ -8,7 +8,7 @@
 {% elsif category == "speculos"  %}
   {% assign docs = site.data.navigation_docs_sp | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "token"  %}
-  {% assign docs = site.data.navigation_docs_et | map: 'docs' | join: ',' | split: ',' %}
+  {% assign docs = site.data.navigation_docs_et_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "transport"  %}
   {% assign docs = site.data.navigation_docs_tr_linear | map: 'docs' | join: ',' | split: ',' %}
 {% elsif category == "swap"  %}

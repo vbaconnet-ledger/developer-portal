@@ -1,5 +1,5 @@
 ---
-title: Live SDK
+title: Live App SDK
 subtitle:
 tags: [non dapp, live app, ledger live app, live application, SDK]
 category: Live Application
@@ -7,7 +7,7 @@ toc: true
 layout: doc
 ---
 
-If this is your first time using the SDK, we highly encourage you to follow our step-by-step [Tutorial](https://developers.ledger.com/docs/non-dapp/tutorial/introduction/) and to have a look at the [How to](https://developers.ledger.com/docs/non-dapp/howto/setup/) section. <br>
+If this is your first time using the Live App SDK, we highly encourage you to follow our step-by-step [Tutorial](https://developers.ledger.com/docs/non-dapp/tutorial/introduction/) and to have a look at the [How to](https://developers.ledger.com/docs/non-dapp/howto/setup/) section. <br>
 You will learn how to easily create a simple Live App using our SDK.
 
 
