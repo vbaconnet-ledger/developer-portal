@@ -376,15 +376,15 @@ Before clicking on the text connect your Ledger to the USB port, unlock it and r
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg)](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 6: Ledger Enter Code Pin*
 
 {: .center}
-[![Run Ethereum Application on Ledger Nano](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+[![Run Ethereum Application on Ledger Nano](../images/ledgerEth.jpg)](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 7: Run Ethereum Application on Ledger Nano*
 
 {: .center}
-[![Ethereum Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Ethereum Application is Running on Ledger Nano](../images/ledgerReady.jpg)](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 8: Ethereum Application is Running on Ledger Nano*
 
 

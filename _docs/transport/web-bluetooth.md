@@ -427,15 +427,15 @@ Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 
 {: .center}
-[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg)](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 4: Nano Enter Code Pin*
 
 {: .center}
-[![Nano Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+[![Nano Application](../images/ledgerEth.jpg)](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 5: Nano Application*
 
 {: .center}
-[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Nano Run Application](../images/ledgerReady.jpg)](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 6: Nano Run Application*
 
 ### Connect Your Nano to the Application
@@ -461,15 +461,15 @@ Finally, if all goes well the address must be displayed with the QR code
 For security reasons, the address will also be displayed on your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-[![Nano Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Screen](../images/ledgerVerify.jpg)](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Nano Verify Screen*
 
 {: .center}
-[![Nano Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Address Screen](../images/ledgerAddress.jpg)](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Nano Verify Address Screen*
 
 {: .center}
-[![Nano Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
+[![Nano Approve Screen](../images/ledgerApprove.jpg)](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 12: Nano Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger Nano X!
