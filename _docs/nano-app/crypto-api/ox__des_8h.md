@@ -14,23 +14,23 @@ layout: doc
 <p>Data Encryption Standard syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__des__key__s">cx_des_key_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">DES key container.  <a href="../cx__des__key__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ada0cc538fe9f26456939251e871cf0bb"><td class="memItemLeft" align="right" valign="top"><a id="ada0cc538fe9f26456939251e871cf0bb"></a>
 #define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#ada0cc538fe9f26456939251e871cf0bb">CX_DES_BLOCK_SIZE</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:ada0cc538fe9f26456939251e871cf0bb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Block size of the DES in bytes. <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a42e0abbb819b1adef6ec3679e398461b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__des__key__s">cx_des_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a></td></tr>
 <tr class="memdesc:a42e0abbb819b1adef6ec3679e398461b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a42e0abbb819b1adef6ec3679e398461b">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6d808b3719784427743e746631106dd1"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#a6d808b3719784427743e746631106dd1">cx_des_set_key_hw</a> (const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *keys, uint32_t mode)</td></tr>
 <tr class="memdesc:a6d808b3719784427743e746631106dd1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Set a DES key in hardware.  <a href="#a6d808b3719784427743e746631106dd1">More...</a><br /></td></tr>
@@ -93,8 +93,8 @@ SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a c
 <p>Encrypt or decrypt a block with DES. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Pointer to the block.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Buffer for the output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Pointer to the block.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Buffer for the output. </td></tr>
   </table>
   </dd>
 </dl>
@@ -125,8 +125,8 @@ SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a c
 <p>Set a DES key in hardware. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">keys</td><td colspan="4">DES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Operation for which the key will be used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keys</td><td colspan="4">>DES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Operation for which the key will be used.</td></tr>
   </table>
   </dd>
 </dl>

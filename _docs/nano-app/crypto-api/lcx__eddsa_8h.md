@@ -14,7 +14,7 @@ layout: doc
 <p>EDDSA (Edwards Curve Digital Signature Algorithm)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af5baecd2ef3d0ca561059a38e3a0fbc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#af5baecd2ef3d0ca561059a38e3a0fbc0">cx_eddsa_sign_no_throw</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len)</td></tr>
 <tr class="memdesc:af5baecd2ef3d0ca561059a38e3a0fbc0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sign a message digest.  <a href="#af5baecd2ef3d0ca561059a38e3a0fbc0">More...</a><br /></td></tr>
@@ -60,8 +60,8 @@ Functions</h2></td></tr>
 <p>Decode the curve point coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td colspan="4">A pointer to the point encoded coordinates.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the encoded coordinates.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td colspan="4">>A pointer to the point encoded coordinates.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the encoded coordinates.</td></tr>
   </table>
   </dd>
 </dl>
@@ -142,21 +142,21 @@ Functions</h2></td></tr>
 <p>Sign a message digest according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Mode. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Mode. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
 <li>Keccak</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the message digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the context. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx_len</td><td colspan="4">Length of <em>ctx</em>. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">Buffer where to store the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td colspan="4">Additional information. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the context. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx_len</td><td colspan="4">>Length of <em>ctx</em>. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">>Buffer where to store the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td colspan="4">>Additional information. This parameter is not used.</td></tr>
   </table>
   </dd>
 </dl>
@@ -216,17 +216,17 @@ Functions</h2></td></tr>
 <p>Sign a message digest according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
 <li>Keccak</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the message digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the digest.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">Buffer where to store the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the digest.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">>Buffer where to store the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
   </table>
   </dd>
 </dl>
@@ -317,20 +317,20 @@ Functions</h2></td></tr>
 <p>Verify a signature according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. THis shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Mode. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">>Public key. THis shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Mode. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
 <li>Keccak</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the message digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the context. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx_len</td><td colspan="4">Length of the context. This parameter is not used.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">Pointer to the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the context. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx_len</td><td colspan="4">>Length of the context. This parameter is not used.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">>Pointer to the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
   </table>
   </dd>
 </dl>
@@ -385,17 +385,17 @@ Functions</h2></td></tr>
 <p>Verify a signature according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">>Public key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
 <li>Keccak</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the message digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the digest.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">Pointer to the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the digest.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sig</td><td colspan="4">>Pointer to the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
   </table>
   </dd>
 </dl>
@@ -434,9 +434,9 @@ Functions</h2></td></tr>
 <p>Encode the curve point coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td colspan="4">A pointer to the point coordinates in the form x|y.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the coordinates.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">Sign of the x-coordinate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td colspan="4">>A pointer to the point coordinates in the form x|y.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the coordinates.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">>Sign of the x-coordinate. </td></tr>
   </table>
   </dd>
 </dl>

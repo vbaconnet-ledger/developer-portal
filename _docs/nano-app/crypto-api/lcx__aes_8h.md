@@ -14,7 +14,7 @@ layout: doc
 <p>AES (Advanced Encryption Standard).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a159ceb54e8b22a467a4f643474f85356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356">cx_aes_init_key_no_throw</a> (const uint8_t *rawkey, size_t key_len, <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key)</td></tr>
 <tr class="memdesc:a159ceb54e8b22a467a4f643474f85356"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize an AES Key.  <a href="#a159ceb54e8b22a467a4f643474f85356">More...</a><br /></td></tr>
@@ -92,8 +92,8 @@ Functions</h2></td></tr>
 <p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -107,15 +107,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -159,9 +159,9 @@ Functions</h2></td></tr>
 <p>Decrypt a 16-byte block using AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the AES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Ciphertext block to decrypt.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Plaintext block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the AES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Ciphertext block to decrypt.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Plaintext block.</td></tr>
   </table>
   </dd>
 </dl>
@@ -205,9 +205,9 @@ Functions</h2></td></tr>
 <p>Encrypt a 16-byte block using AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the AES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Plaintext block to encrypt.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Ciphertext block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the AES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Plaintext block to encrypt.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Ciphertext block.</td></tr>
   </table>
   </dd>
 </dl>
@@ -258,9 +258,9 @@ Functions</h2></td></tr>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any AES processing. This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to the supplied key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key: 8, 16 or 24 octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">>Pointer to the supplied key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key: 8, 16 or 24 octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -305,9 +305,9 @@ Functions</h2></td></tr>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any AES processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to the supplied key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key: 8, 16 or 24 octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">>Pointer to the supplied key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key: 8, 16 or 24 octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -382,8 +382,8 @@ Functions</h2></td></tr>
 <p>This functions throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -397,17 +397,17 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">Initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">Length of the initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">>Initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">>Length of the initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -476,8 +476,8 @@ Functions</h2></td></tr>
 <p>Encrypt, Decrypt, Sign or Verify data with AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -491,17 +491,17 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">Initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">Length of the initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">>Initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">>Length of the initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -561,8 +561,8 @@ Functions</h2></td></tr>
 <p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -576,15 +576,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of AES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>

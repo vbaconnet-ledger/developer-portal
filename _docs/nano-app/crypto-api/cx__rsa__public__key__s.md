@@ -14,7 +14,7 @@ layout: doc
 <p>Abstract RSA public key.  
  <a href="../cx__rsa__public__key__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top"><a id="a854352f53b148adc24983a58a1866d66"></a>
 size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__public__key__s#a854352f53b148adc24983a58a1866d66">size</a></td></tr>

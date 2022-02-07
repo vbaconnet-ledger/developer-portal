@@ -14,7 +14,7 @@ layout: doc
 <p>64-bit types, native or by-hands, depending on target and/or compiler support.  
  <a href="../uint64__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a1b064e2f6a6eae2b71e0444d64736a36"><td class="memItemLeft" align="right" valign="top"><a id="a1b064e2f6a6eae2b71e0444d64736a36"></a>
 uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../uint64__s#a1b064e2f6a6eae2b71e0444d64736a36">l</a></td></tr>

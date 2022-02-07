@@ -14,12 +14,12 @@ layout: doc
 <p>PBKDF2 (Password-Based Key Derivation Function)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a4f9733a932cdcb904a602ed76252151d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__pbkdf2_8h#a4f9733a932cdcb904a602ed76252151d">cx_pbkdf2_sha512</a>(password,  password_len,  salt,  salt_len,  iterations,  out,  out_len)&#160;&#160;&#160;<a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw</a>(<a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af1c7c38d54f080781c6026cb6fed85f6">CX_SHA512</a>, password, password_len, salt, salt_len, iterations, out, out_len)</td></tr>
 <tr class="memdesc:a4f9733a932cdcb904a602ed76252151d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute PBKDF2 bytes sequence with SHA512.  <a href="#a4f9733a932cdcb904a602ed76252151d">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa8e83c16857155d23468877ca99b6bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw</a> (<a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> md_type, const uint8_t *password, size_t passwordlen, uint8_t *salt, size_t saltlen, uint32_t iterations, uint8_t *out, size_t outLength)</td></tr>
 <tr class="memdesc:aa8e83c16857155d23468877ca99b6bc1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute PBKDF2 bytes sequence.  <a href="#aa8e83c16857155d23468877ca99b6bc1">More...</a><br /></td></tr>
@@ -83,13 +83,13 @@ Functions</h2></td></tr>
 <p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a> with SHA512 as the underlying hash function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">Password used as a base key to compute the HMAC.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password_len</td><td colspan="4">Length of the password i.e. the length of the HMAC key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">Initial salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">Length of the salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">Per block iteration.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the output.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Lengh of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">>Password used as a base key to compute the HMAC.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password_len</td><td colspan="4">>Length of the password i.e. the length of the HMAC key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">>Initial salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">>Length of the salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">>Per block iteration.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Lengh of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -163,14 +163,14 @@ Functions</h2></td></tr>
 <p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">Message digest algorithm identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">Password used as a base key to compute the HMAC.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td colspan="4">Length of the password i.e. the length of the HMAC key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">Initial salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">saltlen</td><td colspan="4">Length of the salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">Per block iteration.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the output.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outLength</td><td colspan="4">Lengh of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">>Message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">>Password used as a base key to compute the HMAC.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td colspan="4">>Length of the password i.e. the length of the HMAC key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">>Initial salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">saltlen</td><td colspan="4">>Length of the salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">>Per block iteration.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outLength</td><td colspan="4">>Lengh of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -239,14 +239,14 @@ Functions</h2></td></tr>
 <p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">Message digest algorithm identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">Password used as a base key to compute the HMAC.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td colspan="4">Length of the password i.e. the length of the HMAC key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">Initial salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">saltlen</td><td colspan="4">Length of the salt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">Per block iteration.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the output.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outLength</td><td colspan="4">Lengh of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">>Message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">>Password used as a base key to compute the HMAC.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td colspan="4">>Length of the password i.e. the length of the HMAC key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td colspan="4">>Initial salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">saltlen</td><td colspan="4">>Length of the salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td colspan="4">>Per block iteration.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outLength</td><td colspan="4">>Lengh of the output.</td></tr>
   </table>
   </dd>
 </dl>

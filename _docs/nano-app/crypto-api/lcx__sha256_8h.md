@@ -14,12 +14,12 @@ layout: doc
 <p>SHA-2 (Secure Hash Algorithm 2)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__sha256__s">cx_sha256_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-224 and SHA-256 context.  <a href="../cx__sha256__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a1869f01a1fa5deb2845c93957e89be88"><td class="memItemLeft" align="right" valign="top"><a id="a1869f01a1fa5deb2845c93957e89be88"></a>
 #define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a1869f01a1fa5deb2845c93957e89be88">CX_SHA224_SIZE</a>&#160;&#160;&#160;28</td></tr>
@@ -28,12 +28,12 @@ Macros</h2></td></tr>
 #define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#ae20099c7ad89af9ac43fd93fa02826a4">CX_SHA256_SIZE</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:ae20099c7ad89af9ac43fd93fa02826a4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-256 message digest size. <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac46cc2c6a6a5a142363e7a3dfaa17d87"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__sha256__s">cx_sha256_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a></td></tr>
 <tr class="memdesc:ac46cc2c6a6a5a142363e7a3dfaa17d87"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ac46cc2c6a6a5a142363e7a3dfaa17d87">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8b0df02125b1fde2936e615416b09fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a8b0df02125b1fde2936e615416b09fd7">cx_sha224_init_no_throw</a> (<a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *hash)</td></tr>
 <tr class="memdesc:a8b0df02125b1fde2936e615416b09fd7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-224 context.  <a href="#a8b0df02125b1fde2936e615416b09fd7">More...</a><br /></td></tr>
@@ -103,10 +103,10 @@ Functions</h2></td></tr>
 <p>Compute a one shot SHA-256 digest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the digest.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output. This is actually 256 bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output. This is actually 256 bits. </td></tr>
   </table>
   </dd>
 </dl>
@@ -131,7 +131,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>

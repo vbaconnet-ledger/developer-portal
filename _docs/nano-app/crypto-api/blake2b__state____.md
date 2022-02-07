@@ -14,7 +14,7 @@ layout: doc
 <p>BLAKE2b state members.  
  <a href="../blake2b__state____#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a687c52e3a420c838ba2a867eb5f11b4c"><td class="memItemLeft" align="right" valign="top"><a id="a687c52e3a420c838ba2a867eb5f11b4c"></a>
 uint64_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../blake2b__state____#a687c52e3a420c838ba2a867eb5f11b4c">h</a> [8]</td></tr>

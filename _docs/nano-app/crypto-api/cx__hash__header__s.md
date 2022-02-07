@@ -14,7 +14,7 @@ layout: doc
 <p>Common message digest context, used as abstract type.  
  <a href="../cx__hash__header__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ac613131b42e92ab66088a8cfbdc8fbba"><td class="memItemLeft" align="right" valign="top"><a id="ac613131b42e92ab66088a8cfbdc8fbba"></a>
 const <a class="el" href="../cx__hash__info__t">cx_hash_info_t</a> *&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__header__s#ac613131b42e92ab66088a8cfbdc8fbba">info</a></td></tr>

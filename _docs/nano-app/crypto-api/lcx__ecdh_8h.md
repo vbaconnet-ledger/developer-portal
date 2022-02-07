@@ -14,7 +14,7 @@ layout: doc
 <p>ECDH (Elliptic Curve Diffie Hellman) key exchange.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa36d38a37ced925043a8d17b750e3f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e">cx_ecdh_no_throw</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, uint32_t mode, const uint8_t *P, size_t P_len, uint8_t *secret, size_t secret_len)</td></tr>
 <tr class="memdesc:aa36d38a37ced925043a8d17b750e3f6e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute an ECDH shared secret.  <a href="#aa36d38a37ced925043a8d17b750e3f6e">More...</a><br /></td></tr>
@@ -79,16 +79,16 @@ Functions</h2></td></tr>
 <p>Depending on the mode, the shared secret is either the full point or only the <em>x</em> coordinate. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_ECDH_POINT</li>
 <li>CX_ECDH_X</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">Length of the public key in octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">Buffer where to store the shared secret (full or compressed).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">Length of the buffer in octets.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">>Length of the public key in octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">>Buffer where to store the shared secret (full or compressed).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">>Length of the buffer in octets.</td></tr>
   </table>
   </dd>
 </dl>
@@ -148,16 +148,16 @@ Functions</h2></td></tr>
 <p>Depending on the mode, the shared secret is either the full point or only the <em>x</em> coordinate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_ECDH_POINT</li>
 <li>CX_ECDH_X</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">Length of the public key in octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">Buffer where to store the shared secret (full or compressed).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">Length of the buffer in octets.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">>Length of the public key in octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">>Buffer where to store the shared secret (full or compressed).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">>Length of the buffer in octets.</td></tr>
   </table>
   </dd>
 </dl>

@@ -14,22 +14,22 @@ layout: doc
 <p>Big Number syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Montgomery context.  <a href="../cx__bn__mont__ctx__t#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a8e4037d905d5c7cdae69259dabf0afe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a8e4037d905d5c7cdae69259dabf0afe9">CX_BN_WORD_ALIGNEMENT</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a8e4037d905d5c7cdae69259dabf0afe9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Minimal word size in bytes.  <a href="#a8e4037d905d5c7cdae69259dabf0afe9">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a3caccc9ce9a31d3cba31ce1de1194d12"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a></td></tr>
 <tr class="memdesc:a3caccc9ce9a31d3cba31ce1de1194d12"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Index of a big number.  <a href="#a3caccc9ce9a31d3cba31ce1de1194d12">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6d3a8100c6eb2e07df393cf228640a6b"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a6d3a8100c6eb2e07df393cf228640a6b">cx_bn_lock</a> (size_t word_nbytes, uint32_t flags)</td></tr>
 <tr class="memdesc:a6d3a8100c6eb2e07df393cf228640a6b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Acquire lock to BN processor.  <a href="#a6d3a8100c6eb2e07df393cf228640a6b">More...</a><br /></td></tr>
@@ -210,9 +210,9 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -250,8 +250,8 @@ Functions</h2></td></tr>
 <p>The specified number of bytes is the minimal required bytes, the number of words allocated will be automatically a multiple of the configured word size. At this moment the BN value is set to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">Pointer to a BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes of x.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>Pointer to a BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes of x.</td></tr>
   </table>
   </dd>
 </dl>
@@ -299,10 +299,10 @@ Functions</h2></td></tr>
 <p>The specified number of bytes is the minimal required bytes, the number of words allocated will be automatically a multiple of the configured word size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">Pointer to a BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes of x.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">Pointer to the value used to initialize the BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">Number of bytes of value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>Pointer to a BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes of x.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">>Pointer to the value used to initialize the BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">>Number of bytes of value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -345,9 +345,9 @@ Functions</h2></td></tr>
 <p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -385,8 +385,8 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
   </table>
   </dd>
 </dl>
@@ -428,9 +428,9 @@ Functions</h2></td></tr>
 <p>Compare two BN values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index to the first value to be compared.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index to the second value to be compared.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index to the first value to be compared.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index to the second value to be compared.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
 <li>0 if the numbers are equal.</li>
 <li>&gt; 0 if the first number is greater than the second</li>
 <li>&lt; 0 if the first number is smaller than the second</li>
@@ -477,9 +477,9 @@ Functions</h2></td></tr>
 <p>Compare a BN value with an unsigned integer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index to the value to be compared.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Integer to be compared.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index to the value to be compared.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Integer to be compared.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
 <li>0 if the numbers are equal.</li>
 <li>&gt; 0 if the BN value is greater</li>
 <li>&lt; 0 if the BN value is smaller</li>
@@ -521,8 +521,8 @@ Functions</h2></td></tr>
 <p>Count the number of bits set to 1 of the BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nbits</td><td colspan="4">Number of bits set.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nbits</td><td colspan="4">>Number of bits set.</td></tr>
   </table>
   </dd>
 </dl>
@@ -559,8 +559,8 @@ Functions</h2></td></tr>
 <p>Copy the BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">BN destination index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN source index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">>BN destination index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN source index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -589,7 +589,7 @@ Functions</h2></td></tr>
 <p>Release a BN and give back its attached memory to the system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN to release. If NULL, nothing is done.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN to release. If NULL, nothing is done.</td></tr>
   </table>
   </dd>
 </dl>
@@ -632,9 +632,9 @@ Functions</h2></td></tr>
 <p>Only the least significant <em>nbytes</em> bytes of the BN are serialized If <em>nbytes</em> is greater than the BN size, <em>x</em> is serialized right aligned and zero left padded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bytes</td><td colspan="4">Buffer where to store the serialized number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes to store into the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bytes</td><td colspan="4">>Buffer where to store the serialized number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes to store into the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -671,8 +671,8 @@ Functions</h2></td></tr>
 <p>Get the 32-bit value corresponding to a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td colspan="4">Stored 32-bit unsigned value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td colspan="4">>Stored 32-bit unsigned value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -714,9 +714,9 @@ Functions</h2></td></tr>
 <p>Initialize a BN with an unsigned value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">Pointer to the value in big-endian order.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">Number of bytes of the value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">>Pointer to the value in big-endian order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">>Number of bytes of the value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -772,8 +772,8 @@ Functions</h2></td></tr>
 <p>Test whether a BN value is odd. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">odd</td><td colspan="4">Boolean which indicates the parity of the BN value:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">odd</td><td colspan="4">>Boolean which indicates the parity of the BN value:<ul>
 <li>1 if odd</li>
 <li>0 if even</li>
 </ul>
@@ -814,8 +814,8 @@ Functions</h2></td></tr>
 <p>Test whether a BN value is a probable prime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the value.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">Boolean which indicates whether the number is a prime:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the value.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">>Boolean which indicates whether the number is a prime:<ul>
 <li>1 if it is a prime</li>
 <li>0 otherwise</li>
 </ul>
@@ -858,8 +858,8 @@ Functions</h2></td></tr>
 <p>Reset it, set the word size and configure. Once locked the memory can be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">word_nbytes</td><td colspan="4">Word size in byte, the size of the parameters will be a multiple of <em>word_nbytes</em>. This size must be a multiple of CX_BN_WORD_ALIGNEMENT. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td colspan="4">Flags.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">word_nbytes</td><td colspan="4">>Word size in byte, the size of the parameters will be a multiple of <em>word_nbytes</em>. This size must be a multiple of CX_BN_WORD_ALIGNEMENT. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td colspan="4">>Flags.</td></tr>
   </table>
   </dd>
 </dl>
@@ -929,10 +929,10 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The values of <em>a</em> and <em>b</em> must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -976,9 +976,9 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>n</em> must be prime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the value to be inverted.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to be inverted.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1027,10 +1027,10 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The value of b must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1085,11 +1085,11 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1143,11 +1143,11 @@ Functions</h2></td></tr>
 <p>This fonction reuses the parameter <em>a</em> for intermediate computations, hence requires less memory. <em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation. The BN value is modified during the computations.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation. The BN value is modified during the computations.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1196,10 +1196,10 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">BN index of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>BN index of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1248,10 +1248,10 @@ Functions</h2></td></tr>
 <p>This returns an error if the given number is not a quadratic residue. <em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the value to compute the quadratic residue.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">Sign of the quadratic residue.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to compute the quadratic residue.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">>Sign of the quadratic residue.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1301,10 +1301,10 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The values of <em>a</em> and <em>b</em> must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1348,9 +1348,9 @@ Functions</h2></td></tr>
 <p><em>r</em> and <em>n</em> shall have the same BN size. The parameters <em>n</em> is detroyed and contains zero after the function returns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">32-bit value to be inverted.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>32-bit value to be inverted.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1396,9 +1396,9 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1435,8 +1435,8 @@ Functions</h2></td></tr>
 <p>Return the size in bytes of a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nbytes</td><td colspan="4">Returned number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nbytes</td><td colspan="4">>Returned number of bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1464,7 +1464,7 @@ Functions</h2></td></tr>
 <p>Return the first prime number after a given BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td colspan="4">BN index of the value and the result.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td colspan="4">>BN index of the value and the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1509,9 +1509,9 @@ Functions</h2></td></tr>
 <p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1540,7 +1540,7 @@ Functions</h2></td></tr>
 <p>Generate a random number and store it in the given index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1582,9 +1582,9 @@ Functions</h2></td></tr>
 <p><em>r</em> and <em>n</em> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td colspan="4">BN index of the value to be reduced.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td colspan="4">>BN index of the value to be reduced.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1623,8 +1623,8 @@ Functions</h2></td></tr>
 <p><em>r</em> is such that: <b>0 &lt; r &lt; n</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the upper bound.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the upper bound.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1663,8 +1663,8 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1701,8 +1701,8 @@ Functions</h2></td></tr>
 <p>Set the value of a BN with a 32-bit unsigned value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">32-bit value to be assigned.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>32-bit value to be assigned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1739,8 +1739,8 @@ Functions</h2></td></tr>
 <p>Perform a left shift. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">Number of bits to shift.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>Number of bits to shift.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1777,8 +1777,8 @@ Functions</h2></td></tr>
 <p>Perform a right shift. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">Number of bits to shift.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>Number of bits to shift.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1821,9 +1821,9 @@ Functions</h2></td></tr>
 <p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1866,9 +1866,9 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">set</td><td colspan="4">Boolean which indicates the bit value<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">set</td><td colspan="4">>Boolean which indicates the bit value<ul>
 <li>1 if the bit is set</li>
 <li>0 otherwise</li>
 </ul>
@@ -1938,9 +1938,9 @@ Functions</h2></td></tr>
 <p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1977,8 +1977,8 @@ Functions</h2></td></tr>
 <p>Allocate memory for the Montgomery context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montogmery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">BN size for the context fields.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montogmery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>BN size for the context fields.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2021,9 +2021,9 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">BN index of the value to be converted. The value should be in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">>BN index of the value to be converted. The value should be in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2062,8 +2062,8 @@ Functions</h2></td></tr>
 <p>Calculate and set up the second Montgomery constant.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to a Montgomery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to a Montgomery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2107,9 +2107,9 @@ Functions</h2></td></tr>
 <p>Set up the second Montgomery constant with the given parameter. The caller should make sure that the given second Montgomery constant is correct.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to a Montgomery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td colspan="4">BN index of the pre calculated second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to a Montgomery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td colspan="4">>BN index of the pre calculated second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2152,9 +2152,9 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the value to be inverted. The value is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to be inverted. The value is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant</td></tr>
   </table>
   </dd>
 </dl>
@@ -2203,10 +2203,10 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2259,11 +2259,11 @@ Functions</h2></td></tr>
 <p>The context must be initialized. The BN value <em>a</em> is in Montgomery representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the exponentiation base in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent in bytes.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the exponentiation base in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent in bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2312,10 +2312,10 @@ Functions</h2></td></tr>
 <p>The context must be initialized. The BN value <em>a</em> is in Montgomery representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the exponentiation base in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">BN index of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the exponentiation base in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>BN index of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2359,9 +2359,9 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">BN index of the value to convert into Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">>BN index of the value to convert into Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>

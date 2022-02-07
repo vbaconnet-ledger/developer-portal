@@ -14,22 +14,22 @@ layout: doc
 <p>Advanced Encryption Standard syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__aes__key__s">cx_aes_key_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">AES key container.  <a href="../cx__aes__key__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a31bd65821d46970359e66a5221680262"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#a31bd65821d46970359e66a5221680262">CX_AES_BLOCK_SIZE</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a31bd65821d46970359e66a5221680262"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Block size of the AES in bytes.  <a href="#a31bd65821d46970359e66a5221680262">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ab8b2f2ea9595e64bb23f47fa0785c22c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__aes__key__s">cx_aes_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a></td></tr>
 <tr class="memdesc:ab8b2f2ea9595e64bb23f47fa0785c22c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ab8b2f2ea9595e64bb23f47fa0785c22c">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae30926453ed5a67d184593d275316051"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#ae30926453ed5a67d184593d275316051">cx_aes_set_key_hw</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, uint32_t mode)</td></tr>
 <tr class="memdesc:ae30926453ed5a67d184593d275316051"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Set an AES key in hardware.  <a href="#ae30926453ed5a67d184593d275316051">More...</a><br /></td></tr>
@@ -109,8 +109,8 @@ SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a c
 <p>Encrypt or decrypt a block with AES. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Pointer to the block.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Buffer for the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Pointer to the block.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Buffer for the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -146,8 +146,8 @@ SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a c
 <p>Set an AES key in hardware. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">AES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Operation for which the key will be used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>AES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Operation for which the key will be used.</td></tr>
   </table>
   </dd>
 </dl>

@@ -14,17 +14,17 @@ layout: doc
 <p>SHA-3 (Secure Hash Algorithm 3)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__sha3__s">cx_sha3_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">KECCAK, SHA3 and SHA3-XOF context.  <a href="../cx__sha3__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2487acc2e3ae619e2916d6741ff9d96a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__sha3__s">cx_sha3_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a></td></tr>
 <tr class="memdesc:a2487acc2e3ae619e2916d6741ff9d96a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a2487acc2e3ae619e2916d6741ff9d96a">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af1ee003715d6fb8cb6ad954a560b6439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439">cx_sha3_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
 <tr class="memdesc:af1ee003715d6fb8cb6ad954a560b6439"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3 context.  <a href="#af1ee003715d6fb8cb6ad954a560b6439">More...</a><br /></td></tr>
@@ -109,8 +109,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -155,8 +155,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -207,8 +207,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -253,8 +253,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the hash output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the hash output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -308,9 +308,9 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of SHA3 digest in bits.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">Length of the output in bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of SHA3 digest in bits.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">>Length of the output in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -358,9 +358,9 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of SHA3 digest in bits.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">Length of the output in bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of SHA3 digest in bits.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_length</td><td colspan="4">>Length of the output in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -409,8 +409,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">>Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -453,8 +453,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">>Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -503,8 +503,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">>Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -547,8 +547,8 @@ Functions</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">Length of the output in bits.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_size</td><td colspan="4">>Length of the output in bits.</td></tr>
   </table>
   </dd>
 </dl>

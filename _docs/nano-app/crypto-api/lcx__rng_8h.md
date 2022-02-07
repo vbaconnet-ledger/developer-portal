@@ -14,7 +14,7 @@ layout: doc
 <p>Random Number Generation.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a93f059f030344ed32c0107bfad323d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rng_8h#a93f059f030344ed32c0107bfad323d72">cx_rng_no_throw</a> (uint8_t *buffer, size_t len)</td></tr>
 <tr class="memdesc:a93f059f030344ed32c0107bfad323d72"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a random buffer such that each byte is between 0 and 255.  <a href="#a93f059f030344ed32c0107bfad323d72">More...</a><br /></td></tr>
@@ -68,8 +68,8 @@ Functions</h2></td></tr>
 <p>Generate a random buffer such that each byte is between 0 and 255. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td colspan="4">Buffer to hold the random data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the buffer i.e. number of random bytes to put into the buffer.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td colspan="4">>Buffer to hold the random data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the buffer i.e. number of random bytes to put into the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -103,8 +103,8 @@ Functions</h2></td></tr>
 <p>Generate a random buffer such that each byte is between 0 and 255. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td colspan="4">Buffer to hold the random data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the buffer i.e. number of random bytes to put into the buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td colspan="4">>Buffer to hold the random data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the buffer i.e. number of random bytes to put into the buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -172,15 +172,15 @@ Functions</h2></td></tr>
 <p>Generate a random buffer according to <a href="../https://tools.ietf.org/rfc6979">RFC6979 </a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">Message digest algorithm identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">ECDSA private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">Length of the key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h1</td><td colspan="4">Hash of the message.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h1_len</td><td colspan="4">Length of the hash.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td colspan="4">Prime number that is a divisor of the curve order.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">q_len</td><td colspan="4">Length of the prime number <em>q</em>.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer for the output.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>Message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>ECDSA private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">>Length of the key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h1</td><td colspan="4">>Hash of the message.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h1_len</td><td colspan="4">>Length of the hash.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td colspan="4">>Prime number that is a divisor of the curve order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q_len</td><td colspan="4">>Length of the prime number <em>q</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer for the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -253,8 +253,8 @@ Functions</h2></td></tr>
 <p>The generated number is taken in the range [a;b[ with uniform distribution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Inclusive low bound.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Exclusive high bound.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Inclusive low bound.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Exclusive high bound.</td></tr>
   </table>
   </dd>
 </dl>
@@ -294,9 +294,9 @@ Functions</h2></td></tr>
 <p>The generated number is taken in the range [a;b[ with uniform distribution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Inclusive low bound.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Exclusive high bound.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">randfunc</td><td colspan="4">Function called to generate the random value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Inclusive low bound.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Exclusive high bound.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">randfunc</td><td colspan="4">>Function called to generate the random value.</td></tr>
   </table>
   </dd>
 </dl>

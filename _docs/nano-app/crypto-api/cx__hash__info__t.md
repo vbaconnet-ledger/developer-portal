@@ -14,7 +14,7 @@ layout: doc
 <p>Hash description.  
  <a href="../cx__hash__info__t#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a8427fe2f03a7ea954df11e2191075041"><td class="memItemLeft" align="right" valign="top"><a id="a8427fe2f03a7ea954df11e2191075041"></a>
 <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__info__t#a8427fe2f03a7ea954df11e2191075041">md_type</a></td></tr>

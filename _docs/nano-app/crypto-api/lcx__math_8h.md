@@ -14,7 +14,7 @@ layout: doc
 <p>Basic arithmetic.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abe7fad9139fc57b173d6e23ccb237d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71">cx_math_cmp_no_throw</a> (const uint8_t *a, const uint8_t *b, size_t length, int *diff)</td></tr>
 <tr class="memdesc:abe7fad9139fc57b173d6e23ccb237d71"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare two integers represented as byte arrays.  <a href="#abe7fad9139fc57b173d6e23ccb237d71">More...</a><br /></td></tr>
@@ -118,10 +118,10 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the addition.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the addition.</td></tr>
   </table>
   </dd>
 </dl>
@@ -170,10 +170,10 @@ Functions</h2></td></tr>
 <p>Add two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the addition.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the addition.</td></tr>
   </table>
   </dd>
 </dl>
@@ -237,11 +237,11 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -294,11 +294,11 @@ Functions</h2></td></tr>
 <p>Modular addition of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -352,9 +352,9 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">Number of bytes taken into account for the comparison.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>Number of bytes taken into account for the comparison.</td></tr>
   </table>
   </dd>
 </dl>
@@ -408,10 +408,10 @@ Functions</h2></td></tr>
 <p>Compare two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">Number of bytes taken into account for the comparison.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>Number of bytes taken into account for the comparison.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
 <li>0 if a and b are identical</li>
 <li>&lt; 0 if a is less than b</li>
 <li>&gt; 0 if a is greater than b</li>
@@ -475,10 +475,10 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^(-1) mod m</b>. a must be invertible modulo <em>m</em>, i.e. the greatest common divisor of <em>a</em> and <em>n</em> is 1. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -527,10 +527,10 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^(-1) mod m</b>. <em>a</em> must be invertible modulo <em>m</em>, i.e. the greatest common divisor of <em>a</em> and <em>n</em> is 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -589,10 +589,10 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^(-1) mod m</b>, for a prime <em>m</em>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus. Must be a prime number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus. Must be a prime number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -641,10 +641,10 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^(-1) mod m</b>, for a prime <em>m</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus. Must be a prime number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus. Must be a prime number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -693,8 +693,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -742,9 +742,9 @@ Functions</h2></td></tr>
 <p>Check whether a number is probable prime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">Bool indicating whether r is prime or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">>Bool indicating whether r is prime or not:<ul>
 <li>0 : not prime</li>
 <li>1 : prime</li>
 </ul>
@@ -796,8 +796,8 @@ Functions</h2></td></tr>
 <p>Compare if the byte array of an integer is all zero. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -846,10 +846,10 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">Number of bytes of the dividend.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">Number of bytes of the modulus.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">>Pointer to the dividend and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">>Number of bytes of the dividend.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">>Number of bytes of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -898,10 +898,10 @@ Functions</h2></td></tr>
 <p>Compute the remainder of the division of v by m. Store the result in v.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">Number of bytes of the dividend.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">Number of bytes of the modulus.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">>Pointer to the dividend and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">>Number of bytes of the dividend.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">>Number of bytes of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -960,10 +960,10 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the multiplication.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the multiplication.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1011,10 +1011,10 @@ Functions</h2></td></tr>
 <p>Multiply two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the multiplication.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the multiplication.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1078,11 +1078,11 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1135,11 +1135,11 @@ Functions</h2></td></tr>
 <p>Modular multiplication of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1189,8 +1189,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the integer and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1228,8 +1228,8 @@ Functions</h2></td></tr>
 <p>Compute the next prime after a given number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the integer and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1300,12 +1300,12 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^e mod m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">Number of bytes of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">>Number of bytes of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1364,12 +1364,12 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^e mod m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">Number of bytes of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">>Number of bytes of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1428,10 +1428,10 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the subtraction.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the subtraction.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1480,10 +1480,10 @@ Functions</h2></td></tr>
 <p>Subtract two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the subtraction.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the subtraction.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1547,11 +1547,11 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1604,11 +1604,11 @@ Functions</h2></td></tr>
 <p>Modular subtraction of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>

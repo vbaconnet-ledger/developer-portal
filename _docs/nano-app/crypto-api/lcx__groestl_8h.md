@@ -14,19 +14,19 @@ layout: doc
 <p>GROESTL hash function.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../hash_state__s">hashState_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash state.  <a href="../hash_state__s#details">More...</a><br /></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__groestl__s">cx_groestl_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Groestl context.  <a href="../cx__groestl__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aad1e7a59537d3e3692fa010d2ac0d4d8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__groestl__s">cx_groestl_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a></td></tr>
 <tr class="memdesc:aad1e7a59537d3e3692fa010d2ac0d4d8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aad1e7a59537d3e3692fa010d2ac0d4d8">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0bb9a0c59b98a10b2a9a77e9247a5e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__groestl_8h#a0bb9a0c59b98a10b2a9a77e9247a5e77">cx_groestl_init_no_throw</a> (<a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a> *hash, size_t size)</td></tr>
 <tr class="memdesc:a0bb9a0c59b98a10b2a9a77e9247a5e77"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a GROESTL224 context.  <a href="#a0bb9a0c59b98a10b2a9a77e9247a5e77">More...</a><br /></td></tr>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to init.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the digest.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to init.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the digest.</td></tr>
   </table>
   </dd>
 </dl>
@@ -128,8 +128,8 @@ Functions</h2></td></tr>
 <p>Initialize a GROESTL224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to init.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">Length of the digest.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to init.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td colspan="4">>Length of the digest.</td></tr>
   </table>
   </dd>
 </dl>

@@ -14,7 +14,7 @@ layout: doc
 <p>Montgomery context.  
  <a href="../cx__bn__mont__ctx__t#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pri-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a629b82dbf76ac8095d4fdffaf51790d5"><td class="memItemLeft" align="right" valign="top"><a id="a629b82dbf76ac8095d4fdffaf51790d5"></a>
 <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__bn__mont__ctx__t#a629b82dbf76ac8095d4fdffaf51790d5">n</a></td></tr>

@@ -14,7 +14,7 @@ layout: doc
 <p>3072-bit RSA private key  
  <a href="../cx__rsa__3072__private__key__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__3072__private__key__s#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
 <tr class="memdesc:a854352f53b148adc24983a58a1866d66"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Key size in bytes.  <a href="#a854352f53b148adc24983a58a1866d66">More...</a><br /></td></tr>

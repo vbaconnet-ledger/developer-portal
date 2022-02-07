@@ -14,7 +14,7 @@ layout: doc
 <p>Hash state.  
  <a href="../hash_state__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ae781356fb43376d0c0da5a21583d163c"><td class="memItemLeft" align="right" valign="top"><a id="ae781356fb43376d0c0da5a21583d163c"></a>
 uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../hash_state__s#ae781356fb43376d0c0da5a21583d163c">chaining</a> [ROWS][COLS1024]</td></tr>

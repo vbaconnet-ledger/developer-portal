@@ -14,7 +14,7 @@ layout: doc
 <p>Elliptic Curve public key.  
  <a href="../cx__ecfp__public__key__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a474bc8df07e877791f9b39dac8f9a8df"><td class="memItemLeft" align="right" valign="top"><a id="a474bc8df07e877791f9b39dac8f9a8df"></a>
 <a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">curve</a></td></tr>

@@ -14,7 +14,7 @@ layout: doc
 <p>Elliptic curve cryptography syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__curve__weierstrass__s">cx_curve_weierstrass_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Weierstrass curve defined by <b>y^3 = x^2 + a*x + b over GF(p)</b>.  <a href="../cx__curve__weierstrass__s#details">More...</a><br /></td></tr>
@@ -27,7 +27,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ec__point__s">cx_ec_point_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Elliptic curve point.  <a href="../cx__ec__point__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7d9b0d7fc9b2cbc8ff911521713e98e6">CX_MAX_DOMAIN_LENGTH</a>&#160;&#160;&#160;66</td></tr>
 <tr class="memdesc:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Largest domain parameters length.  <a href="#a7d9b0d7fc9b2cbc8ff911521713e98e6">More...</a><br /></td></tr>
@@ -97,7 +97,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a5ad90d6a0e043d9a94aa017fec898b78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a5ad90d6a0e043d9a94aa017fec898b78">CX_CURVE_HEADER</a></td></tr>
 <tr class="memdesc:a5ad90d6a0e043d9a94aa017fec898b78"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Curve domain parameters.  <a href="#a5ad90d6a0e043d9a94aa017fec898b78">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ada004671ae8fe2032d4c144ed6ebb837"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477d">cx_curve_e</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a></td></tr>
 <tr class="memdesc:ada004671ae8fe2032d4c144ed6ebb837"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ada004671ae8fe2032d4c144ed6ebb837">More...</a><br /></td></tr>
@@ -112,7 +112,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa33ce844128bcd045dc7c80a2b06af8c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ec__point__s">cx_ec_point_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a></td></tr>
 <tr class="memdesc:aa33ce844128bcd045dc7c80a2b06af8c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aa33ce844128bcd045dc7c80a2b06af8c">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="enum-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ab9e984f37d7329f57dbc826cb5ba477d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477d">cx_curve_e</a> { <br />
 &#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da8ccae6edafa11dd748dcc0eb6f26c431">CX_CURVE_NONE</a>, 
@@ -164,7 +164,7 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a4716b0edb6c8816d3876164bc40ea1f6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Identifiers of the domain parameters.  <a href="../ox__ec_8h#a4716b0edb6c8816d3876164bc40ea1f6">More...</a><br /></td></tr>
 </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a31118df83eb2629ff417521ace4d917e"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a31118df83eb2629ff417521ace4d917e">cx_ecdomain_size</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, size_t *length)</td></tr>
 <tr class="memdesc:a31118df83eb2629ff417521ace4d917e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the bit length of each parameter of the curve.  <a href="#a31118df83eb2629ff417521ace4d917e">More...</a><br /></td></tr>
@@ -805,10 +805,10 @@ Functions</h2></td></tr>
 <p>Get the generator of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Gx</td><td colspan="4">Buffer to store the x-coordinate of the generator.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Gy</td><td colspan="4">Buffer to store the y-coordinate of the generator.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Byte length of each coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Gx</td><td colspan="4">>Buffer to store the x-coordinate of the generator.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Gy</td><td colspan="4">>Buffer to store the y-coordinate of the generator.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Byte length of each coordinate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -845,8 +845,8 @@ Functions</h2></td></tr>
 <p>Get the generator of the curve and store it in the point structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">Pointer to the structure where to store the generator.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">>Pointer to the structure where to store the generator.</td></tr>
   </table>
   </dd>
 </dl>
@@ -896,10 +896,10 @@ Functions</h2></td></tr>
 <p>Get a specific parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">Parameter identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">Buffer where to store the parameter.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">>Parameter identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">>Buffer where to store the parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">>Length of the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -941,9 +941,9 @@ Functions</h2></td></tr>
 <p>Store a specific parameter of the curve as a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">Parameter identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">BN where to store the parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">>Parameter identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">>BN where to store the parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -982,8 +982,8 @@ Functions</h2></td></tr>
 <p>Return the byte length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">Byte length of each parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">>Byte length of each parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1021,8 +1021,8 @@ Functions</h2></td></tr>
 <p>Return the bit length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">Bit length of each parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">>Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">>Bit length of each parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1064,9 +1064,9 @@ Functions</h2></td></tr>
 <p>Each point should not be the point at infinity. If one of the point is the point at infinity then the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point to add. The point must be on the curve.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point to add. The point must be on the curve.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point to add. The point must be on the curve.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point to add. The point must be on the curve.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1107,8 +1107,8 @@ Functions</h2></td></tr>
 <p>Allocate memory for a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to a point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve on which the point is defined.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve on which the point is defined.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1152,9 +1152,9 @@ Functions</h2></td></tr>
 <p>Compare two points on the same curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">First point to compare.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Second point to compare.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_equal</td><td colspan="4">Boolean which indicates whether the two points are equal or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>First point to compare.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Second point to compare.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_equal</td><td colspan="4">>Boolean which indicates whether the two points are equal or not:<ul>
 <li>1 if the points are equal</li>
 <li>0 otherwise</li>
 </ul>
@@ -1209,10 +1209,10 @@ Functions</h2></td></tr>
 <p>The compressed form depends on the curve type. For a Weierstrass or a Montgomery curve, the compressed form consists of the x-coordinate and a prefix. For a Twisted Edwards curve the compressed form consists of a y-coordinate and a prefix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to be compressed.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xy_compressed</td><td colspan="4">Buffer to hold the compressed coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sign</td><td colspan="4">Pointer to the sign of the hidden coordinate: correspond to the least significant bit of the y-coordinate for a Weierstrass or Montgomery curve and of the x-coordinate for a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to be compressed.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xy_compressed</td><td colspan="4">>Buffer to hold the compressed coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">>Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sign</td><td colspan="4">>Pointer to the sign of the hidden coordinate: correspond to the least significant bit of the y-coordinate for a Weierstrass or Montgomery curve and of the x-coordinate for a Twisted Edwards curve.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1262,10 +1262,10 @@ Functions</h2></td></tr>
 <p>Compute the affine coordinates of a point given its compressed form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">Pointer to the point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed</td><td colspan="4">Pointer to the buffer holding the compressed coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">Sign of the coordinate to recover.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed</td><td colspan="4">>Pointer to the buffer holding the compressed coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">>Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">>Sign of the coordinate to recover.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1297,7 +1297,7 @@ Functions</h2></td></tr>
 <p>Destroy a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to destroy. If the pointer is NULL, nothing is done.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to destroy. If the pointer is NULL, nothing is done.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1361,13 +1361,13 @@ Functions</h2></td></tr>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the second scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r_len</td><td colspan="4">Length of the second scalar.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the second scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r_len</td><td colspan="4">>Length of the second scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1424,11 +1424,11 @@ Functions</h2></td></tr>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_r</td><td colspan="4">BN index of the second scalar.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_r</td><td colspan="4">>BN index of the second scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1485,11 +1485,11 @@ Functions</h2></td></tr>
 <p>Fill two distinct buffers with the x-coordinate and the y-coordinate of the point. If the point is not in affine representation, it will be normalized first.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">Buffer for the x-coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">Length of the <em>x</em> buffer.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">Buffer for the y-coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">Length of the <em>y</em> buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to export.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>Buffer for the x-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">>Length of the <em>x</em> buffer.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">>Buffer for the y-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">>Length of the <em>y</em> buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1534,9 +1534,9 @@ Functions</h2></td></tr>
 <p>Export a point using BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">Pointer to the BN index of the x-coordinate.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">Pointer to the BN index of the y-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to export.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>Pointer to the BN index of the x-coordinate.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">>Pointer to the BN index of the y-coordinate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1591,11 +1591,11 @@ Functions</h2></td></tr>
 <p>Initialize a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">x-coordinate of the point. This must belong to the curve field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">Length of the x-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">y-coordinate of the point. This must belong to the curve field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">Length of the y-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>x-coordinate of the point. This must belong to the curve field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">>Length of the x-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">>y-coordinate of the point. This must belong to the curve field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">>Length of the y-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1638,9 +1638,9 @@ Functions</h2></td></tr>
 <p>Initialize a point on the curve with the BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index of the x-coordinate. The coordinate must belong to the base field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">BN index of the y-coordinate. The coordinate must belong to the base field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index of the x-coordinate. The coordinate must belong to the base field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">>BN index of the y-coordinate. The coordinate must belong to the base field.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1679,8 +1679,8 @@ Functions</h2></td></tr>
 <p>The point at infinity has a z-coordinate equal to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">Pointer to the point to check.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_at_infinity</td><td colspan="4">Boolean which indicates whether the point is at infinity or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">>Pointer to the point to check.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_at_infinity</td><td colspan="4">>Boolean which indicates whether the point is at infinity or not:<ul>
 <li>1 if the point is at infinity</li>
 <li>0 otherwise</li>
 </ul>
@@ -1722,8 +1722,8 @@ Functions</h2></td></tr>
 <p>Check if a given point is on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">Pointer to the point to check.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_on_curve</td><td colspan="4">Boolean which indicates whether the point is on the curve or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">>Pointer to the point to check.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_on_curve</td><td colspan="4">>Boolean which indicates whether the point is on the curve or not:<ul>
 <li>1 if the point is on the curve</li>
 <li>0 otherwise</li>
 </ul>
@@ -1760,7 +1760,7 @@ Functions</h2></td></tr>
 <p>The point should not be the point at infinity, otherwise the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point of the curve. and will hold the result.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point of the curve. and will hold the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1806,9 +1806,9 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication with a fixed scalar length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the domain length.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar. This should be equal to the domain length.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1854,9 +1854,9 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the domain length.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar. This should be equal to the domain length.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1897,8 +1897,8 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication given the BN index of the scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1945,9 +1945,9 @@ Functions</h2></td></tr>
 <p>This should be called only for non critical purposes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1989,8 +1989,8 @@ Functions</h2></td></tr>
 <p>This should be called only for non critical purposes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
   </table>
   </dd>
 </dl>

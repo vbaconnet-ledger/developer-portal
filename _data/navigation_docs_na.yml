@@ -55,8 +55,8 @@
 - title: Cryptography library and syscalls
   docs:
   - nano-app/crypto-api/index
-  - nano-app/crypto-examples
   - nano-app/crypto-api/files
+  - nano-app/crypto-examples
 
 - title: Clone applications
   docs:

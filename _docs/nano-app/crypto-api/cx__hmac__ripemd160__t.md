@@ -14,7 +14,7 @@ layout: doc
 <p>HMAC context, concrete type for RIPEMD160.  
  <a href="../cx__hmac__ripemd160__t#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a88091e6802236471cb8e165d359d63ce"><td class="memItemLeft" align="right" valign="top"><a id="a88091e6802236471cb8e165d359d63ce"></a>
 uint8_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hmac__ripemd160__t#a88091e6802236471cb8e165d359d63ce">key</a> [128]</td></tr>

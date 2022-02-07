@@ -14,13 +14,13 @@ layout: doc
 <p>CRC (Cyclic Redundancy Check).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ac9b17360d9441d3ce14734ce2557eac1"><td class="memItemLeft" align="right" valign="top"><a id="ac9b17360d9441d3ce14734ce2557eac1"></a>
 #define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__crc_8h#ac9b17360d9441d3ce14734ce2557eac1">CX_CRC16_INIT</a>&#160;&#160;&#160;0xFFFF</td></tr>
 <tr class="memdesc:ac9b17360d9441d3ce14734ce2557eac1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">CRC16 initial value. <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6872340585eb5b4d1a88f0e4e59f9ac5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__crc_8h#a6872340585eb5b4d1a88f0e4e59f9ac5">cx_crc16</a> (const void *buffer, size_t len)</td></tr>
 <tr class="memdesc:a6872340585eb5b4d1a88f0e4e59f9ac5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a 16-bit checksum value.  <a href="#a6872340585eb5b4d1a88f0e4e59f9ac5">More...</a><br /></td></tr>
@@ -59,8 +59,8 @@ Functions</h2></td></tr>
 <p>The 16-bit value is computed according to the CRC16 CCITT definition.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td colspan="4">The buffer to compute the CRC over.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Bytes length of the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td colspan="4">>The buffer to compute the CRC over.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Bytes length of the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -97,9 +97,9 @@ Functions</h2></td></tr>
 <p>Accumulate more data to CRC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">crc</td><td colspan="4">CRC value to be updated.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td colspan="4">The buffer to compute the CRC over.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Bytes length of the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">crc</td><td colspan="4">>CRC value to be updated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td colspan="4">>The buffer to compute the CRC over.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Bytes length of the buffer.</td></tr>
   </table>
   </dd>
 </dl>

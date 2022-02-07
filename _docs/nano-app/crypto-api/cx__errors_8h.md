@@ -14,7 +14,7 @@ layout: doc
 <p>Error codes related to cryptography and arithmetic operations.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a34b5ac9d964a6cb39bc7093c15f81ce0"><td class="memItemLeft" align="right" valign="top"><a id="a34b5ac9d964a6cb39bc7093c15f81ce0"></a>
 #define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#a34b5ac9d964a6cb39bc7093c15f81ce0">CX_CHECK</a>(call)</td></tr>
@@ -64,7 +64,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a85997852d258d5bbe6c4e33717408777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#a85997852d258d5bbe6c4e33717408777">CX_EC_INVALID_CURVE</a>&#160;&#160;&#160;0xFFFFFFA3</td></tr>
 <tr class="memdesc:a85997852d258d5bbe6c4e33717408777"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Curve is invalid.  <a href="#a85997852d258d5bbe6c4e33717408777">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a06db7f567671764f4980db9bc828fa85"><td class="memItemLeft" align="right" valign="top"><a id="a06db7f567671764f4980db9bc828fa85"></a>
 typedef uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a></td></tr>

@@ -14,21 +14,21 @@ layout: doc
 <p>Hash functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__info__t">cx_hash_info_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash description.  <a href="../cx__hash__info__t#details">More...</a><br /></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__header__s">cx_hash_header_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Common message digest context, used as abstract type.  <a href="../cx__hash__header__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aac7f6b791a4df89ac2e67ee43d4021a2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">cx_md_e</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a></td></tr>
 <tr class="memdesc:aac7f6b791a4df89ac2e67ee43d4021a2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aac7f6b791a4df89ac2e67ee43d4021a2">More...</a><br /></td></tr>
 <tr class="memitem:a5fa8d1a7a91f41d10ba46386e5286343"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__hash__header__s">cx_hash_header_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a></td></tr>
 <tr class="memdesc:a5fa8d1a7a91f41d10ba46386e5286343"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a5fa8d1a7a91f41d10ba46386e5286343">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="enum-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a83490ac84757a8bc00ff719ed807e117"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">cx_md_e</a> { <br />
 &#160;&#160;<a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a53820b668032d4211be4fec868ac011a">CX_NONE</a> = 0, 
@@ -52,7 +52,7 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a83490ac84757a8bc00ff719ed807e117"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Message digest algorithm identifiers.  <a href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">More...</a><br /></td></tr>
 </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a51cf929ff30c2b19232c0389df2e2547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, uint32_t mode, const uint8_t *in, size_t len, uint8_t *out, size_t out_len)</td></tr>
 <tr class="memdesc:a51cf929ff30c2b19232c0389df2e2547"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash data according to the specified algorithm.  <a href="#a51cf929ff30c2b19232c0389df2e2547">More...</a><br /></td></tr>
@@ -221,21 +221,21 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto flag. Supported flag: CX_LAST. If set:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto flag. Supported flag: CX_LAST. If set:<ul>
 <li>the structure is not modified after finishing</li>
 <li>if out is not NULL, the message digest is stored in out</li>
 <li>the context is NOT automatically re-initialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to be hashed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the message digest:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to be hashed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the message digest:<ul>
 <li>NULL (ignored) if CX_LAST is NOT set</li>
 <li>message digest if CX_LAST is set</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">>The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -275,8 +275,8 @@ Functions</h2></td></tr>
 <p>A call to this function is equivalent to: <em>cx_hash_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td colspan="4">The message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td colspan="4">>The message digest.</td></tr>
   </table>
   </dd>
 </dl>
@@ -311,8 +311,8 @@ Functions</h2></td></tr>
 <p>Initialize a hash context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">Message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>Message digest algorithm identifier.</td></tr>
   </table>
   </dd>
 </dl>
@@ -354,15 +354,15 @@ Functions</h2></td></tr>
 <p>Initialize a hash context with a chosen output length (typically for eXtendable Output Functions (XOF)).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">Hash algorithm identifier. Typically:<ul>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>Hash algorithm identifier. Typically:<ul>
 <li>CX_BLAKE2B</li>
 <li>CX_GROESTL</li>
 <li>CX_SHAKE128</li>
 <li>CX_SHAKE256</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">output_size</td><td colspan="4">Length of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_size</td><td colspan="4">>Length of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -418,21 +418,21 @@ Functions</h2></td></tr>
 <p>Hash data according to the specified algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto flag. Supported flag: CX_LAST. If set:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto flag. Supported flag: CX_LAST. If set:<ul>
 <li>the structure is not modified after finishing</li>
 <li>if out is not NULL, the message digest is stored in out</li>
 <li>the context is NOT automatically re-initialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to be hashed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the message digest:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to be hashed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the message digest:<ul>
 <li>NULL (ignored) if CX_LAST is NOT set</li>
 <li>message digest if CX_LAST is set</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">>The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -477,9 +477,9 @@ Functions</h2></td></tr>
 <p>A call to this function is equivalent to: <em>cx_hash_no_throw(hash, 0, in, in_len, NULL, 0)</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to add to the context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to add to the context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data.</td></tr>
   </table>
   </dd>
 </dl>

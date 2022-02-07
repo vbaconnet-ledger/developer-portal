@@ -14,7 +14,7 @@ layout: doc
 <p>DES (Data Encryption Standard).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adf5d469235b023c13c1305805a06af9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f">cx_des_init_key_no_throw</a> (const uint8_t *rawkey, size_t key_len, <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *key)</td></tr>
 <tr class="memdesc:adf5d469235b023c13c1305805a06af9f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a DES key.  <a href="#adf5d469235b023c13c1305805a06af9f">More...</a><br /></td></tr>
@@ -91,8 +91,8 @@ Functions</h2></td></tr>
 <p>Encrypt, Decrypt, Sign or Verify data with DES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -106,15 +106,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -158,9 +158,9 @@ Functions</h2></td></tr>
 <p>Decrypt a 8-byte block using DES/3-DES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the DES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Ciphertext block to decrypt.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Plaintext block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the DES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Ciphertext block to decrypt.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Plaintext block.</td></tr>
   </table>
   </dd>
 </dl>
@@ -204,9 +204,9 @@ Functions</h2></td></tr>
 <p>Encrypt a 8-byte block using DES/3-DES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the DES key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Plaintext block to encrypt.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">Ciphertext block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the DES key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">>Plaintext block to encrypt.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outblock</td><td colspan="4">>Ciphertext block.</td></tr>
   </table>
   </dd>
 </dl>
@@ -257,9 +257,9 @@ Functions</h2></td></tr>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any DES processing. This functions throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to the supplied key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key: 8, 16 or 24 octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">>Pointer to the supplied key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key: 8, 16 or 24 octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -304,9 +304,9 @@ Functions</h2></td></tr>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any DES processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to the supplied key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key: 8, 16 or 24 octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">>Pointer to the supplied key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key: 8, 16 or 24 octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -381,10 +381,10 @@ Functions</h2></td></tr>
 <p>This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">Initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">Length of the initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">>Initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">>Length of the initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -398,15 +398,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -475,10 +475,10 @@ Functions</h2></td></tr>
 <p>Encrypt, Decrypt, Sign or Verify data with DES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">Initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">Length of the initialization vector.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td colspan="4">>Initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_len</td><td colspan="4">>Length of the initialization vector.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -492,15 +492,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -559,8 +559,8 @@ Functions</h2></td></tr>
 <p>Encrypt, Decrypt, Sign or Verify data with DES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the key initialized with <a class="el" href="../lcx__des_8h#adf5d469235b023c13c1305805a06af9f" title="Initialize a DES key. ">cx_des_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
 <li>CX_DECRYPT</li>
@@ -574,15 +574,15 @@ Functions</h2></td></tr>
 <li>CX_CHAIN_CTR</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Output data according to the mode:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data. If CX_LAST is set, padding is automatically done according to the <em>mode</em>. Otherwise, <em>in_len</em> shall be a multiple of DES_BLOCK_SIZE.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Output data according to the mode:<ul>
 <li>encrypted/decrypted output data</li>
 <li>generated signature</li>
 <li>signature to be verified</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output data.</td></tr>
   </table>
   </dd>
 </dl>

@@ -14,12 +14,12 @@ layout: doc
 <p>Cryptography flags.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../uint64__s">uint64_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">64-bit types, native or by-hands, depending on target and/or compiler support.  <a href="../uint64__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad87dae5ad74e16849c6751cc9d29c98b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__common_8h#ad87dae5ad74e16849c6751cc9d29c98b">CX_FLAG</a></td></tr>
 <tr class="memdesc:ad87dae5ad74e16849c6751cc9d29c98b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Cryptography flags.  <a href="#ad87dae5ad74e16849c6751cc9d29c98b">More...</a><br /></td></tr>
@@ -77,49 +77,49 @@ Macros</h2></td></tr>
 <th>Bits position </th><th>Values </th><th>Flags </th><th>Meaning </th><th>Algorithms  </th></tr>
 <tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0111000000000000 </td><td colspan="4">CX_ECSCHNORR_Z </td><td colspan="4">Zilliqa scheme </td><td colspan="4">ECSCHNORR </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0111000000000000 </td><td colspan="4">>CX_ECSCHNORR_Z </td><td colspan="4">>Zilliqa scheme </td><td colspan="4">>ECSCHNORR </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0110000000000000 </td><td colspan="4">CX_ECSCHNORR_LIBSECP </td><td colspan="4">ECSCHNORR according to libsecp256k1 </td><td colspan="4">ECSCHNORR </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0110000000000000 </td><td colspan="4">>CX_ECSCHNORR_LIBSECP </td><td colspan="4">>ECSCHNORR according to libsecp256k1 </td><td colspan="4">>ECSCHNORR </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0101000000000000 </td><td colspan="4">CX_ECSCHNORR_BSI03111 </td><td colspan="4">ECSCHNORR according to BSI TR-03111 </td><td colspan="4">ECSCHNORR </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0101000000000000 </td><td colspan="4">>CX_ECSCHNORR_BSI03111 </td><td colspan="4">>ECSCHNORR according to BSI TR-03111 </td><td colspan="4">>ECSCHNORR </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0100000000000000 </td><td colspan="4">CX_ECSCHNORR_ISO14888_X </td><td colspan="4">ECSCHNORR according to ISO/IEC 14888-3 </td><td colspan="4">ECSCHNORR </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0100000000000000 </td><td colspan="4">>CX_ECSCHNORR_ISO14888_X </td><td colspan="4">>ECSCHNORR according to ISO/IEC 14888-3 </td><td colspan="4">>ECSCHNORR </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0011000000000000 </td><td colspan="4">CX_ECSCHNORR_ISO14888_XY </td><td colspan="4">ECSCHNORR according to ISO/IEC 14888-3 </td><td colspan="4">ECSCHNORR </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0011000000000000 </td><td colspan="4">>CX_ECSCHNORR_ISO14888_XY </td><td colspan="4">>ECSCHNORR according to ISO/IEC 14888-3 </td><td colspan="4">>ECSCHNORR </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0010000000000000 </td><td colspan="4">CX_ECDH_X </td><td colspan="4">ECDH with the x-coordinate of the point </td><td colspan="4">ECDH </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0010000000000000 </td><td colspan="4">>CX_ECDH_X </td><td colspan="4">>ECDH with the x-coordinate of the point </td><td colspan="4">>ECDH </td></tr>
 <tr>
-<td colspan="4">14:12 </td><td colspan="4">0001000000000000 </td><td colspan="4">CX_ECDH_POINT </td><td colspan="4">ECDH with a point </td><td colspan="4">ECDH </td></tr>
-<tr>
-<tr>
-<tr>
-<tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000100000000 </td><td colspan="4">CX_CHAIN_OFB </td><td colspan="4">Output feedback mode </td><td colspan="4">AES/DES </td></tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000011000000 </td><td colspan="4">CX_CHAIN_CFB </td><td colspan="4">Cipher feedback mode </td><td colspan="4">AES/DES </td></tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000010000000 </td><td colspan="4">CX_CHAIN_CTR </td><td colspan="4">Counter mode </td><td colspan="4">AES/DES </td></tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000001000000 </td><td colspan="4">CX_CHAIN_CBC </td><td colspan="4">Cipher block chaining mode </td><td colspan="4">AES/DES </td></tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000001000000 </td><td colspan="4">CX_NO_CANONICAL </td><td colspan="4">Do not compute a canonical signature </td><td colspan="4">ECDSA/EDDSA/ECSCHNORR </td></tr>
-<tr>
-<td colspan="4">8:6 </td><td colspan="4">0000000000000000 </td><td colspan="4">CX_CHAIN_ECB </td><td colspan="4">Electronic codebook mode </td><td colspan="4">AES/DES </td></tr>
+<td colspan="4">>14:12 </td><td colspan="4">>0001000000000000 </td><td colspan="4">>CX_ECDH_POINT </td><td colspan="4">>ECDH with a point </td><td colspan="4">>ECDH </td></tr>
 <tr>
 <tr>
 <tr>
 <tr>
 <tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000100000000 </td><td colspan="4">>CX_CHAIN_OFB </td><td colspan="4">>Output feedback mode </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000011000000 </td><td colspan="4">>CX_CHAIN_CFB </td><td colspan="4">>Cipher feedback mode </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000010000000 </td><td colspan="4">>CX_CHAIN_CTR </td><td colspan="4">>Counter mode </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000001000000 </td><td colspan="4">>CX_CHAIN_CBC </td><td colspan="4">>Cipher block chaining mode </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000001000000 </td><td colspan="4">>CX_NO_CANONICAL </td><td colspan="4">>Do not compute a canonical signature </td><td colspan="4">>ECDSA/EDDSA/ECSCHNORR </td></tr>
+<tr>
+<td colspan="4">>8:6 </td><td colspan="4">>0000000000000000 </td><td colspan="4">>CX_CHAIN_ECB </td><td colspan="4">>Electronic codebook mode </td><td colspan="4">>AES/DES </td></tr>
 <tr>
 <tr>
-<td colspan="4">2:1 </td><td colspan="4">0000000000000110 </td><td colspan="4">CX_SIGN </td><td colspan="4">Signature </td><td colspan="4">AES/DES </td></tr>
 <tr>
-<td colspan="4">2:1 </td><td colspan="4">0000000000000100 </td><td colspan="4">CX_ENCRYPT </td><td colspan="4">Encryption </td><td colspan="4">AES/DES </td></tr>
 <tr>
-<td colspan="4">2:1 </td><td colspan="4">0000000000000010 </td><td colspan="4">CX_VERIFY </td><td colspan="4">Signature verification </td><td colspan="4">AES/DES </td></tr>
 <tr>
-<td colspan="4">2:1 </td><td colspan="4">0000000000000000 </td><td colspan="4">CX_DECRYPT </td><td colspan="4">Decryption </td><td colspan="4">AES/DES </td></tr>
+<tr>
+<tr>
+<td colspan="4">>2:1 </td><td colspan="4">>0000000000000110 </td><td colspan="4">>CX_SIGN </td><td colspan="4">>Signature </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>2:1 </td><td colspan="4">>0000000000000100 </td><td colspan="4">>CX_ENCRYPT </td><td colspan="4">>Encryption </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>2:1 </td><td colspan="4">>0000000000000010 </td><td colspan="4">>CX_VERIFY </td><td colspan="4">>Signature verification </td><td colspan="4">>AES/DES </td></tr>
+<tr>
+<td colspan="4">>2:1 </td><td colspan="4">>0000000000000000 </td><td colspan="4">>CX_DECRYPT </td><td colspan="4">>Decryption </td><td colspan="4">>AES/DES </td></tr>
 <tr>
 </table>
 
