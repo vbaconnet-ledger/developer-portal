@@ -366,15 +366,15 @@ Before clicking on the text connect your Ledger to the USB port, unlock it and r
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg)](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 4: Ledger Enter Code Pin*
 
 {: .center}
-[![Run Solana Application on Ledger Nano](../images/ledgerSol.jpg)](../images/ledgerEth.jpg){: style="border-bottom:none;"}    
+[![Run Solana Application on Ledger Nano](../images/ledgerSol.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}    
 *Fig. 5: Run Solana Application on Ledger Nano*
 
 {: .center}
-[![Solana Application is Running on Ledger Nano](../images/ledgerReady.jpg)](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
+[![Solana Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
 *Fig. 6: Solana Application is Running on Ledger Nano*
 
 

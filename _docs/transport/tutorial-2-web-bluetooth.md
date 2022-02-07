@@ -450,15 +450,15 @@ Before clicking on the button, unlock your Nano X and run the Ethereum applicati
 The steps are described below.
 
 {: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg)](../images/ledgerCodePin.jpg){: style="border-bottom: none;"}  
+[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom: none;"}  
 *Fig. 3: Ledger Enter Code Pin*
 
 {: .center}
-[![Ledger Application](../images/ledgerEth.jpg)](../images/ledgerEth.jpg){: style="border-bottom: none;"}   
+[![Ledger Application](../images/ledgerEth.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom: none;"}   
 *Fig. 4: Ledger Application*
 
 {: .center}
-[![Ledger Run Application](../images/ledgerReady.jpg)](../images/ledgerReady.jpg){: style="border-bottom: none;"}   
+[![Ledger Run Application](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom: none;"}   
 *Fig. 5: Ledger Run Application*
 
 ### Connect Your Nano to the Application
