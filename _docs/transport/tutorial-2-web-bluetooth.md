@@ -487,15 +487,15 @@ Now instead of reading data, we will overwrite the data by calling a function of
 For security reasons, the address will also be displayed on your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-[![Nano Review Screen](../images/ledger-tx-review.jpg){:width="320"}](../images/ledger-tx-review.jpg) [![Nano Amount Screen](../images/ledger-tx-amount.jpg){:width="320"}](../images/ledger-tx-amount.jpg)   
+[![Nano Review Screen](../images/ledger-tx-review.jpg){:width="300"}](../images/ledger-tx-review.jpg) [![Nano Amount Screen](../images/ledger-tx-amount.jpg){:width="300"}](../images/ledger-tx-amount.jpg)   
 *Fig. 9: Nano Review Screen  \ Fig. 10: Nano Amount Screen*
 
 {: .center}
-[![Nano Address Screen](../images/ledger-tx-address.jpg){:width="320"}](../images/ledger-tx-address.jpg) [![Nano Network Screen](../images/ledger-tx-network.jpg){:width="320"}](../images/ledger-tx-network.jpg)   
+[![Nano Address Screen](../images/ledger-tx-address.jpg){:width="300"}](../images/ledger-tx-address.jpg) [![Nano Network Screen](../images/ledger-tx-network.jpg){:width="300"}](../images/ledger-tx-network.jpg)   
 *Fig. 11: Nano Address Screen   \   Fig. 12: Nano Network Screen*
 
 {: .center}
-[![Nano Max Fees Screen](../images/ledger-tx-fees.jpg){:width="320"}](../images/ledger-tx-fees.jpg) [![Nano Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="320"}](../images/ledger-tx-accept.jpg)   
+[![Nano Max Fees Screen](../images/ledger-tx-fees.jpg){:width="300"}](../images/ledger-tx-fees.jpg) [![Nano Accept and Send Screen](../images/ledger-tx-accept.jpg){:width="300"}](../images/ledger-tx-accept.jpg)   
 *Fig. 13: Nano Max Fees Screen   \  Fig. 14: Nano Accept and Send Screen*
 
 
