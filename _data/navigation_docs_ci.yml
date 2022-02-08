@@ -12,6 +12,7 @@
   docs:
   - coin/ledger-live-cli
   - coin/speculos
+  - coin/yalc
 
 - title: Adding a Coin
   docs:
