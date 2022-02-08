@@ -1,7 +1,7 @@
 ---
 title: Web Bluetooth
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -40,6 +40,7 @@ Run:
 
 ```console
 touch ./src/QRCode.js
+touch ./src/polyfill.js
 ```
 Your folder must look like this.
 
@@ -47,17 +48,32 @@ Your folder must look like this.
 [![Folder of the Application](../images/folderWebBle.png){:width="210"}](../images/folderWebBle.png){: style="border-bottom:none;"}  
 *Fig. 1: Folder of the Application*
 
-For this implemetation, you will only modify "App.js", "App.css” and “QRCode.js”.
+For this implemetation, you will only modify "App.js", "App.css”, "index.js", "polyfill.js" and “QRCode.js”.
 
 ### Code Implementation
 
+
+#### polyfill.js
+
+In "polyfill.js" copy-paste the following code:
+
+```javascript
+global.Buffer = require("buffer").Buffer;
+```
+
+#### index.js
+
+In "index.js" add the following code:
+
+```javascript
+import './polyfill'
+```
 #### App.js
 
 In App.js copy-paste the following code:
 
 ```javascript
 import React, { Component } from "react";
-import eip55 from "eip55";
 import TransportWebBLE from "@ledgerhq/hw-transport-web-ble";
 import AppEth from "@ledgerhq/hw-app-eth";
 import QRCode from "./QRCode";
@@ -115,8 +131,7 @@ class ShowAddressScreen extends Component {
     try {
       const eth = new AppEth(transport);
       const path = "44'/60'/0'/0/0"; // HD derivation path
-      const r = await eth.getAddress(path, verify);
-      const address = eip55.encode(r.address);
+      const { address } = await eth.getAddress(path, verify);
       if (this.unmounted) return;
       this.setState({ address });
     } catch (error) {
@@ -284,9 +299,11 @@ Run:
 
 ```console
 npm install --save qrcode
-npm install --save eip55
 npm install --save @ledgerhq/hw-app-eth
 npm install --save @ledgerhq/hw-transport-web-ble
+npm install --save buffer
+npm install --save node-polyfill-webpack-plugin
+npm install --save stream
 ```
 
 <table>
@@ -298,20 +315,28 @@ npm install --save @ledgerhq/hw-transport-web-ble
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://parceljs.org/">qrcode</a></td>
+            <td><a href="https://www.npmjs.com/package/qrcode">qrcode</a></td>
             <td colspan="2">It allows you to create a QR code.</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-solana">eip55</a></td>
-            <td colspan="2">It encodes your ethereum address and can verify your address after encoding.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb">@ledgerhq/hw-app-eth</a></td>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-app-eth">@ledgerhq/hw-app-eth</a></td>
             <td colspan="2">It will help you ask your Nano to access the ethereum address.</td>
         </tr>
         <tr>
-            <td><a href="https://www.npmjs.com/package/@ledgerhq/logs">@ledgerhq/hw-transport-web-ble</a></td>
+            <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-web-ble">@ledgerhq/hw-transport-web-ble</a></td>
             <td colspan="2">It provides you with all the methods to interact with your Ledger Nano X with a Bluetooth connexion.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/buffer">buffer</a></td>
+            <td colspan="2">The goal is to provide an API that is 100% identical to node's Buffer API.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/node-polyfill-webpack-plugin">node-polyfill-webpack-plugin</a></td>
+            <td colspan="2">Polyfill Node.js core modules in Webpack. This module is only needed for webpack 5+.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.npmjs.com/package/stream">stream</a></td>
+            <td colspan="2">Node.js streams in the browser. Ported straight from the Node.js core and adapted to component/emitter's api.</td>
         </tr>
     </tbody>
 </table>
@@ -326,17 +351,19 @@ This is how your “package.json” has to look like:
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.15.1",
-    "@ledgerhq/hw-transport-web-ble": "^6.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "eip55": "^2.1.0",
-    "qrcode": "^1.4.4",
+    "@ledgerhq/hw-app-eth": "^6.23.1",
+    "@ledgerhq/hw-transport-web-ble": "^6.21.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "buffer": "^6.0.3",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "qrcode": "^1.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "5.0.0",
+    "stream": "^0.0.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -364,10 +391,20 @@ This is how your “package.json” has to look like:
   }
 }
 
+
 ```
 ## Web App Test
 ### Start the Development Server
-Run:
+
+Make sure the Bluetooth feature of your Nano is enabled.
+
+<!--  -->
+{% include alert.html style="important" text="If it was not enabled, you need to enable it and then power off the power on your Nano." %}
+<!--  -->
+
+
+Now that the Setup is finished, the app has to be available to be displayed.
+Therefore start the development server:
 
 ```console
 npm run start
@@ -390,15 +427,15 @@ Before clicking on the button, unlock it and run the Ethereum application.
 The steps are described below.
 
 {: .center}
-[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 4: Nano Enter Code Pin*
 
 {: .center}
-[![Nano Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+[![Nano Application](../images/ledgerEth.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 5: Nano Application*
 
 {: .center}
-[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Nano Run Application](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 6: Nano Run Application*
 
 ### Connect Your Nano to the Application
@@ -424,15 +461,15 @@ Finally, if all goes well the address must be displayed with the QR code
 For security reasons, the address will also be displayed on your Ledger Nano X to verify and confirm the address.
 
 {: .center}
-[![Nano Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Screen](../images/ledgerVerify.jpg){:width="300"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Nano Verify Screen*
 
 {: .center}
-[![Nano Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Address Screen](../images/ledgerAddress.jpg){:width="300"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 11: Nano Verify Address Screen*
 
 {: .center}
-[![Nano Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
+[![Nano Approve Screen](../images/ledgerApprove.jpg){:width="300"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 12: Nano Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger Nano X!

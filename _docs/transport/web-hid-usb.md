@@ -1,7 +1,7 @@
 ---
 title: Web USB/HID
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -250,15 +250,15 @@ Before clicking on the text connect your Nano to the USB port, unlock it and run
 The steps are described below.
 
 {: .center}
-[![Enter Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
+[![Enter Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 4: Enter Pin*
 
 {: .center}
-[![Selection Bitcoin](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
+[![Selection Bitcoin](../images/ledgerBtc.jpg){:width="300"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}   
 *Fig. 5: Select Bictoin*
 
 {: .center}
-[![Run App](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Run App](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 6: The App is running*
 
 ### Connect Your Nano to the Application

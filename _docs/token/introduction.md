@@ -9,7 +9,7 @@ layout: doc
 ---
 
 <div class="uk-text-center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/DLkn6R63FKY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/DLkn6R63FKY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Similarly to transferring native assets, transferring tokens requires the end-user to confirm the transaction details on the Nano devices’ screens. Such verification is a security requirement and must be made available before the application is released by Ledger. Expected information to verify are (at least) : the amount transferred, the token name and/or ticker, the recipient address.
@@ -28,4 +28,11 @@ Ledger applies a specific signature to the triplet **{"ticker”,"contract_addre
 
 ## How to request a token addition?
 
-Click [here](../erc20-bep20) for ERC20, BEP20 and Polygon tokens, [here](../asa) for ASA, and [here](../trc) for TRC10/20.
+Follow the action for:
+- [ERC20, BEP20 or Polygon tokens](../erc20-bep20) for ERC20, BEP20 and Polygon tokens
+- [ASA](../asa) 
+- [TRC10/20](../trc) for TRC10/20
+
+## Join us on Discord
+
+If you need help or information about a token addition, join us on Discord and make sure you've joined the **#Tokens** chan.

@@ -2,16 +2,15 @@
     {% assign columns = include.columns %}
 {% endif %}
 
-
 <div class="uk-section" style="padding-top: 0px; padding-bottom: 0px">
-    <div class="uk-container uk-container-small">
+    <div class="uk-container uk-container-xsmall">
 
         {% if include.title %}
             <h2 class="uk-h1 uk-text-center" style="padding-top:60px;">{{ include.title }}</h2>
         {% endif %}
 
         <div class="uk-text-center" style="padding-top:60px;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WsmpMr8c9uI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/WsmpMr8c9uI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         {% if include.subtitle %}<p class="uk-text-lead uk-text-center">{{ include.subtitle | escape }}</p>{% endif %}
@@ -21,7 +20,7 @@
             {% if item.title %}
             {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
             {% assign doc = site.docs | where:"url", doc_url | first %}
-            <div>
+            <div style="display:block;">
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-xlight uk-width-medium@m" style="padding:20px;">
                     <a class="uk-position-cover" href="{{ doc.url | relative_url }}"></a>
                     {% if item.icon %}

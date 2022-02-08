@@ -1,7 +1,7 @@
 ---
 title: React Native HID (Android only)
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -382,15 +382,15 @@ Connect your Ledger Nano to your android device, unlock it and open the ethereum
 The steps are described below.
 
 {: .center}
-[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
 *Fig. 8: Nano Enter Code Pin*
 
 {: .center}
-[![Nano Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+[![Nano Application](../images/ledgerEth.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
 *Fig. 9: Nano Application*
 
 {: .center}
-[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Nano Run Application](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Nano Run Application*
 
 Now that the two devices are connected, the address will be displayed as shown below:

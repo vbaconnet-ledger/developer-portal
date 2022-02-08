@@ -1,5 +1,5 @@
 ---
-title: ERC20, BEP20 and Polygon tokens
+title: Process
 subtitle: Addition or modification
 tags: [tokens]
 category: Tokens
@@ -29,8 +29,6 @@ Fill in this form:
 
 <div data-tf-widget="Miekq8b2" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
-Please make sure to share with us the details of your ERC20, BEP20 or Polygon token, and a link to Etherscan, BSCscan or Polygonscan to allow us to double check the information.
+### What next?
 
-### What will Ledger do?
-
-We will review the list of tokens on a bi-montly basis and will apply our own internal signature process. Once signed, the new tokens will become available after a Ledger Live update. Ledger reserves the right to decide which token will be listed.
+This is all you need to do. We will review the list of tokens on a bi-montly basis and will apply our own internal signature process. Once signed, the new tokens will become available after a Ledger Live update. Ledger reserves the right to decide which token will be listed.

@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -48,19 +48,19 @@ After the installation, open Ledger Live and go to the **Manager** tab.
 Then connect your Ledger Nano to your computer and unlock it.
 
 {: .center}
-[![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}        
+[![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="300px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}        
 *Fig. 2: Ledger Device Unlock*
 
 Then Ledger Live will ask you to allow the Ledger device, just press the two buttons simultaneously to allow it.
 
 
 {: .center}
-[![Ledger Live Animation](../images/ledgerConnect.png){:width="420px"}](../images/ledgerConnect.png){: style="border-bottom:none;"}   
+[![Ledger Live Animation](../images/ledgerConnect.png){:width="300px"}](../images/ledgerConnect.png){: style="border-bottom:none;"}   
 *Fig. 3: Ledger Live Animation*
 
 
 {: .center}
-[![Ledger Live Notification on Ledger Device](../images/ledgerAllow.jpg){:width="420px"}](../images/ledgerAllow.jpg){: style="border-bottom:none;"}   
+[![Ledger Live Notification on Ledger Device](../images/ledgerAllow.jpg){:width="300px"}](../images/ledgerAllow.jpg){: style="border-bottom:none;"}   
 *Fig. 4: Ledger Live Notification on Ledger Device*
 
 
@@ -89,12 +89,12 @@ To create your Bitcoin account:
 - Open the Bitcoin app on your ledger device
 
 {: .center}
-[![Bitcoin App Launch](../images/ledgerBtc.jpg){:width="420"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}     
+[![Bitcoin App Launch](../images/ledgerBtc.jpg){:width="300"}](../images/ledgerBtc.jpg){: style="border-bottom:none;"}     
 *Fig. 6: Bitcoin App Launch*
 
 
 {: .center}
-[![Bitcoin App Ready](../images/ledgerReady.jpg){:width="420"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
+[![Bitcoin App Ready](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}    
 *Fig. 7: Bitcoin App Ready*
 
 - Create an account by going to the **Manager** tab and click on **Add account**.

@@ -1,7 +1,7 @@
 ---
 title: Node HID integration
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -329,15 +329,15 @@ Connect your Nano to the USB port, unlock it and open the Bitcoin application.
 The steps are described below.
 
 {: .center}
-[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="480px"}](../images/ledgerCodePin.jpg)  
+[![Nano Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg)  
 *Fig. 3: Nano Enter Code Pin*
 
 {: .center}
-[![Nano Application](../images/ledgerBtc.jpg){:width="480px"}](../images/ledgerBtc.jpg)   
+[![Nano Application](../images/ledgerBtc.jpg){:width="300"}](../images/ledgerBtc.jpg)   
 *Fig. 4: Nano Application*
 
 {: .center}
-[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg)   
+[![Nano Run Application](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg)   
 *Fig. 5: Nano Run Application*
 
 Then, if all goes well, the Bitcoin address you've just [created](#prerequisites) is displayed on the application.

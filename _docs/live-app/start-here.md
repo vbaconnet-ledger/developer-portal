@@ -1,17 +1,17 @@
 ---
 title: Start here
 subtitle:
-tags: [platform app, live application, ledger live app, dapp]
+tags: [non dapp, live application, ledger live app, dapp]
 category: Live App
 toc: 
 layout: doc
 ---
 
 <div class="uk-text-center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Live Apps are displayed in the discover section of Ledger Live.    
+Live Apps are displayed in the discover section of Ledger Live on desktop (Windows, Mac, Linux) and mobile (Android only, iOS is not currently included).    
 
 <!---- image ---->
 
@@ -46,8 +46,8 @@ See the left or right part respectively.
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Non-DApp</h5>
-          <p class="card-text">Process, Ledger Live SDK and manifest documentation.</p>
-          <a href="../../platform-app/introduction" class="btn btn-primary">Click here</a>
+          <p class="card-text">Process, Live App SDK and manifest documentation.</p>
+          <a href="../../non-dapp/introduction" class="btn btn-primary">Click here</a>
         </div>
       </div>
     </div>

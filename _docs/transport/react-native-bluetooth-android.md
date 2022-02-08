@@ -1,7 +1,7 @@
 ---
 title: React Native Bluetooth on Android (Nano X only)
 subtitle:
-tags: [transport, device, wallet app, communicate, wallet, companion]
+tags: [transport, device, communicate, companion wallet]
 category: Connect your app
 author:
 toc: true
@@ -702,7 +702,7 @@ If this is not what you see, you may get:
 To pair your Ledger Nano X, unlock it.
 
 {: .center}
-[![Nano Code Pin](../images/ledgerCodePin.jpg){:width="420"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
+[![Nano Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}   
 *Fig. 10: Nano Code Pin*
 
 Now try to pair the Ledger Nano X to your android smartphone.
@@ -715,15 +715,15 @@ Now try to pair the Ledger Nano X to your android smartphone.
 When pairing, the pairing code will be displayed on your Ledger Nano X to confirm.
 
 {: .center}
-[![Nano Enter Code Pin](../images/ledgerPairing.jpg){:width="480px"}](../images/ledgerPairing.jpg){: style="border-bottom:none;"}  
-*Fig. 12: Nano Enter Code Pin*
+[![Confirm the pairing](../images/ledgerPairing.jpg){:width="300"}](../images/ledgerPairing.jpg){: style="border-bottom:none;"}  
+*Fig. 12: Confirm the pairing*
 
 {: .center}
-[![Nano Application](../images/ledgerEth.jpg){:width="480px"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
-*Fig. 13: Nano Application*
+[![Nano Application](../images/ledgerEth.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+*Fig. 13: Ethereum Application*
 
 {: .center}
-[![Nano Run Application](../images/ledgerReady.jpg){:width="480px"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+[![Nano Run Application](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
 *Fig. 14: Nano Run Application*
 
 Now that the pairing is complete, the Nano X is ready with the ethereum application.
@@ -737,15 +737,15 @@ If all goes well you see the address of your ethereum account displayed.
 For security purposes, we display on your Nano X the same ethereum address for you to confirm.
 
 {: .center}
-[![Nano Verify Screen](../images/ledgerVerify.jpg){:width="420"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Screen](../images/ledgerVerify.jpg){:width="300"}](../images/ledgerVerify.jpg){: style="border-bottom:none;"}   
 *Fig. 16: Nano Verify Screen*
 
 {: .center}
-[![Nano Verify Address Screen](../images/ledgerAddress.jpg){:width="420"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
+[![Nano Verify Address Screen](../images/ledgerAddress.jpg){:width="300"}](../images/ledgerAddress.jpg){: style="border-bottom:none;"}   
 *Fig. 17: Nano Verify Address Screen*
 
 {: .center}
-[![Nano Approve Screen](../images/ledgerApprove.jpg){:width="420"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
+[![Nano Approve Screen](../images/ledgerApprove.jpg){:width="300"}](../images/ledgerApprove.jpg){: style="border-bottom:none;"}   
 *Fig. 18: Nano Approve Screen*
 
 Congratulations you have successfully built your first application connected with Ledger on Android!
