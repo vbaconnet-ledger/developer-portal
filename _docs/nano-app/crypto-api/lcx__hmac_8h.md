@@ -14,7 +14,7 @@ layout: doc
 <p>HMAC (Keyed-Hash Message Authentication Code)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hmac__t">cx_hmac_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">HMAC context, abstract type.  <a href="../cx__hmac__t#details">More...</a><br /></td></tr>
@@ -25,7 +25,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">HMAC context, concrete type for SHA-384/SHA-512.  <a href="../cx__hmac__sha512__t#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a655097348db511c8f8732c5f09f063ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec">cx_hmac_ripemd160_init_no_throw</a> (<a class="el" href="../cx__hmac__ripemd160__t">cx_hmac_ripemd160_t</a> *hmac, const uint8_t *key, size_t key_len)</td></tr>
 <tr class="memdesc:a655097348db511c8f8732c5f09f063ec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-RIPEMD160 context.  <a href="#a655097348db511c8f8732c5f09f063ec">More...</a><br /></td></tr>
@@ -77,32 +77,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_hmac </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__t">cx_hmac_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>mac</em>, </td>
+          <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>mac_len</em>&#160;</td>
+          <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -114,18 +114,19 @@ Functions</h2></td></tr>
 
 <p>Compute a HMAC value according to the specified hash function. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2" title="Compute a HMAC value according to the specified hash function. ">cx_hmac_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_NO_REINIT If CX_LAST is set and CX_NO_REINIT is not set, the context is reinitialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to add to the context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">>Pointer to the computed HMAC or NULL pointer (if CX_LAST is not set).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">>Length of the output buffer if not NULL, 0 otherwise. The buffer size must be larger than the length of the HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to add to the context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">Pointer to the computed HMAC or NULL pointer (if CX_LAST is not set).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">Length of the output buffer if not NULL, 0 otherwise. The buffer size must be larger than the length of the HMAC value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -149,17 +150,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_final </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__t">cx_hmac_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>out_len</em>&#160;</td>
+          <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -167,12 +168,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalize the HMAC algorithm. </p>
-<p>A call to this function is equivalent to <em>cx_hmac_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</em>.</p>
+<p>A call to this function is equivalent to <b>cx_hmac_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the HMAC context. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Computed HMAC value is CX_LAST is set.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output (the most significant bytes).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the HMAC context.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Computed HMAC value is CX_LAST is set.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td colspan="4">Length of the output (the most significant bytes).</td></tr>
   </table>
   </dd>
 </dl>
@@ -194,22 +195,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__t">cx_hmac_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hash_id</em>, </td>
+          <td class="paramname"><b>hash_id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -219,10 +220,10 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>The message digest algorithm identifier</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 128 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">The message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 128 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -245,32 +246,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_no_throw </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__t">cx_hmac_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>mac</em>, </td>
+          <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mac_len</em>&#160;</td>
+          <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -280,16 +281,16 @@ Functions</h2></td></tr>
 <p>Compute a HMAC value according to the specified hash function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_NO_REINIT If CX_LAST is set and CX_NO_REINIT is not set, the context is reinitialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to add to the context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">>Pointer to the computed HMAC or NULL pointer (if CX_LAST is not set).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">>Length of the output buffer if not NULL, 0 otherwise. The buffer size must be larger than the length of the HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to add to the context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">Pointer to the computed HMAC or NULL pointer (if CX_LAST is not set).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">Length of the output buffer if not NULL, 0 otherwise. The buffer size must be larger than the length of the HMAC value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -315,17 +316,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_hmac_ripemd160_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__ripemd160__t">cx_hmac_ripemd160_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -337,11 +338,12 @@ Functions</h2></td></tr>
 
 <p>Initialize a HMAC-RIPEMD160 context. </p>
 <p>This function throws an exception if the initialization fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec" title="Initialize a HMAC-RIPEMD160 context. ">cx_hmac_ripemd160_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 64 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 64 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -365,17 +367,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_ripemd160_init_no_throw </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__ripemd160__t">cx_hmac_ripemd160_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -385,9 +387,9 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC-RIPEMD160 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 64 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 64 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -410,17 +412,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_sha224_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -430,9 +432,9 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC-SHA224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 64 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 64 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -453,32 +455,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t cx_hmac_sha256 </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>, </td>
+          <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>mac</em>, </td>
+          <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mac_len</em>&#160;</td>
+          <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -488,12 +490,12 @@ Functions</h2></td></tr>
 <p>Compute a HMAC value using SHA256. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>HMAC key value.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the HMAC key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">>Computed HMAC value.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">>Size of the output buffer. The buffer size must be larger than the length of the HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">HMAC key value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the HMAC key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">Computed HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">Size of the output buffer. The buffer size must be larger than the length of the HMAC value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -515,17 +517,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_hmac_sha256_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -537,11 +539,12 @@ Functions</h2></td></tr>
 
 <p>Initialize a HMAC-SHA256 context. </p>
 <p>This function throws an exception if the initialization fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#acb664a12291a2fe0e05588c45b7206cb" title="Initialize a HMAC-SHA256 context. ">cx_hmac_sha256_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 64 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 64 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -565,17 +568,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_sha256_init_no_throw </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -585,9 +588,9 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC-SHA256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 64 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 64 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -610,17 +613,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_sha384_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -630,9 +633,9 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC-SHA384 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 128 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 128 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -653,32 +656,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t cx_hmac_sha512 </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>, </td>
+          <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>mac</em>, </td>
+          <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mac_len</em>&#160;</td>
+          <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -688,12 +691,12 @@ Functions</h2></td></tr>
 <p>Compute a HMAC value using SHA512. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>HMAC key value.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the HMAC key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">>Computed HMAC value.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">>Size of the output buffer. The buffer size must be larger than the length of the HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">HMAC key value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the HMAC key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td colspan="4">Computed HMAC value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac_len</td><td colspan="4">Size of the output buffer. The buffer size must be larger than the length of the HMAC value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -715,17 +718,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_hmac_sha512_init </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -737,11 +740,12 @@ Functions</h2></td></tr>
 
 <p>Initialize a HMAC-SHA512 context. </p>
 <p>This function throws an exception if if the initialization fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a22bea8db8f917221b9ade35d9838b109" title="Initialize a HMAC-SHA512 context. ">cx_hmac_sha512_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 128 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 128 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -765,17 +769,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_sha512_init_no_throw </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>key_len</em>&#160;</td>
+          <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -785,9 +789,9 @@ Functions</h2></td></tr>
 <p>Initialize a HMAC-SHA512 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>Pointer to the HMAC key value. If a key has been set, passing NULL pointeur will reinitialize the context with the previously set key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">>Length of the key. The key length shall be less than 128 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the HMAC key value. If a key has been set, passing NULL pointer will reinitialize the context with the previously set key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td colspan="4">Length of the key. The key length shall be less than 128 bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -810,17 +814,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hmac_update </td>
           <td class="paramtype"><a class="el" href="../cx__hmac__t">cx_hmac_t</a> *&#160;</td>
-          <td class="paramname"><em>hmac</em>, </td>
+          <td class="paramname"><b>hmac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>in_len</em>&#160;</td>
+          <td class="paramname"><b>in_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -828,12 +832,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add more data to compute the HMAC. </p>
-<p>A call to this function is equivalent to: <em>cx_hmac_no_throw(hmac, 0, in, in_len, NULL, 0)</em>.</p>
+<p>A call to this function is equivalent to: <b>cx_hmac_no_throw(hmac, 0, in, in_len, NULL, 0)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">>Pointer to the HMAC context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to add to the context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to add to the context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data.</td></tr>
   </table>
   </dd>
 </dl>

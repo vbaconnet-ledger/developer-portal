@@ -14,7 +14,7 @@ layout: doc
 <p>SHA-384 and SHA-512 context.  
  <a href="../cx__sha512__s#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ad5a251d434baeed078b92d184b5b29d5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../cx__hash__header__s">cx_hash_header_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__sha512__s#ad5a251d434baeed078b92d184b5b29d5">header</a></td></tr>
 <tr class="memdesc:ad5a251d434baeed078b92d184b5b29d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">See <a class="el" href="../cx__hash__header__s" title="Common message digest context, used as abstract type. ">cx_hash_header_s</a>.  <a href="#ad5a251d434baeed078b92d184b5b29d5">More...</a><br /></td></tr>

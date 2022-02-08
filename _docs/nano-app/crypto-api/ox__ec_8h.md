@@ -14,7 +14,7 @@ layout: doc
 <p>Elliptic curve cryptography syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__curve__weierstrass__s">cx_curve_weierstrass_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Weierstrass curve defined by <b>y^3 = x^2 + a*x + b over GF(p)</b>.  <a href="../cx__curve__weierstrass__s#details">More...</a><br /></td></tr>
@@ -27,7 +27,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__ec__point__s">cx_ec_point_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Elliptic curve point.  <a href="../cx__ec__point__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7d9b0d7fc9b2cbc8ff911521713e98e6">CX_MAX_DOMAIN_LENGTH</a>&#160;&#160;&#160;66</td></tr>
 <tr class="memdesc:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Largest domain parameters length.  <a href="#a7d9b0d7fc9b2cbc8ff911521713e98e6">More...</a><br /></td></tr>
@@ -67,37 +67,29 @@ Macros</h2></td></tr>
 <tr class="memdesc:a446f9c56c3cfa08d5abfbf3534016117"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the Stark curve.  <a href="#a446f9c56c3cfa08d5abfbf3534016117">More...</a><br /></td></tr>
 <tr class="memitem:a0546971e9e13424e94aed73a43dd1f0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a0546971e9e13424e94aed73a43dd1f0e">CX_ECCINFO_PARITY_ODD</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a0546971e9e13424e94aed73a43dd1f0e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Indicates the parity of a point coordinate.  <a href="#a0546971e9e13424e94aed73a43dd1f0e">More...</a><br /></td></tr>
-<tr class="memitem:a62302b3b053718f4b2997cf096314085"><td class="memItemLeft" align="right" valign="top"><a id="a62302b3b053718f4b2997cf096314085"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a62302b3b053718f4b2997cf096314085">CX_CURVE_256K1</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477dab18a1d844197eb7a450fb01a6a1017da">CX_CURVE_SECP256K1</a></td></tr>
-<tr class="memdesc:a62302b3b053718f4b2997cf096314085"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp256k1. <br /></td></tr>
-<tr class="memitem:a548489a4185fd855b5e256beae3fb9a1"><td class="memItemLeft" align="right" valign="top"><a id="a548489a4185fd855b5e256beae3fb9a1"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a548489a4185fd855b5e256beae3fb9a1">CX_CURVE_256R1</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td></tr>
-<tr class="memdesc:a548489a4185fd855b5e256beae3fb9a1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Legacy identifier for Secp256r1. <br /></td></tr>
-<tr class="memitem:a97b867d95b6bc2efb8f2160d310e8727"><td class="memItemLeft" align="right" valign="top"><a id="a97b867d95b6bc2efb8f2160d310e8727"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a97b867d95b6bc2efb8f2160d310e8727">CX_CURVE_NISTP256</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td></tr>
-<tr class="memdesc:a97b867d95b6bc2efb8f2160d310e8727"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Legacy identifier for Secp256r1. <br /></td></tr>
-<tr class="memitem:a7ce7e2b1a016c32ce1602de663ca84ea"><td class="memItemLeft" align="right" valign="top"><a id="a7ce7e2b1a016c32ce1602de663ca84ea"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7ce7e2b1a016c32ce1602de663ca84ea">CX_CURVE_NISTP384</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da824f259da3ef0b8f4e3ee6fcbd98c6e7">CX_CURVE_SECP384R1</a></td></tr>
-<tr class="memdesc:a7ce7e2b1a016c32ce1602de663ca84ea"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp384r1. <br /></td></tr>
-<tr class="memitem:ae4b61604ca53904bf8783cd49884178d"><td class="memItemLeft" align="right" valign="top"><a id="ae4b61604ca53904bf8783cd49884178d"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae4b61604ca53904bf8783cd49884178d">CX_CURVE_NISTP521</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da69f729ce7b3a89bb3871176f8b917b35">CX_CURVE_SECP521R1</a></td></tr>
-<tr class="memdesc:ae4b61604ca53904bf8783cd49884178d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp521r1. <br /></td></tr>
-<tr class="memitem:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="memItemLeft" align="right" valign="top"><a id="ab67addec3d9a79d1ce6d6482562a5bf0"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab67addec3d9a79d1ce6d6482562a5bf0">CX_CURVE_RANGE</a>(i,  dom)</td></tr>
-<tr class="memdesc:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve identifier is in the specified range. <br /></td></tr>
-<tr class="memitem:af7ab029bb3ab89de863730319073dc35"><td class="memItemLeft" align="right" valign="top"><a id="af7ab029bb3ab89de863730319073dc35"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#af7ab029bb3ab89de863730319073dc35">CX_CURVE_IS_WEIERSTRASS</a>(c)</td></tr>
-<tr class="memdesc:af7ab029bb3ab89de863730319073dc35"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a short Weierstrass curve. <br /></td></tr>
-<tr class="memitem:a041b896c15d451fdcd1ac582baf30bce"><td class="memItemLeft" align="right" valign="top"><a id="a041b896c15d451fdcd1ac582baf30bce"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a041b896c15d451fdcd1ac582baf30bce">CX_CURVE_IS_TWISTED_EDWARDS</a>(c)</td></tr>
-<tr class="memdesc:a041b896c15d451fdcd1ac582baf30bce"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a twisted Edwards curve. <br /></td></tr>
-<tr class="memitem:a8a68336775894e26b88a79ec96b41ed3"><td class="memItemLeft" align="right" valign="top"><a id="a8a68336775894e26b88a79ec96b41ed3"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a8a68336775894e26b88a79ec96b41ed3">CX_CURVE_IS_MONTGOMERY</a>(c)</td></tr>
-<tr class="memdesc:a8a68336775894e26b88a79ec96b41ed3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a Montgomery curve. <br /></td></tr>
+<tr class="memitem:ad7d948f769485901b284e3530feace57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ad7d948f769485901b284e3530feace57">CX_ECCINFO_xGTn</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a62302b3b053718f4b2997cf096314085"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a62302b3b053718f4b2997cf096314085">CX_CURVE_256K1</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477dab18a1d844197eb7a450fb01a6a1017da">CX_CURVE_SECP256K1</a></td></tr>
+<tr class="memdesc:a62302b3b053718f4b2997cf096314085"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp256k1.  <a href="#a62302b3b053718f4b2997cf096314085">More...</a><br /></td></tr>
+<tr class="memitem:a548489a4185fd855b5e256beae3fb9a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a548489a4185fd855b5e256beae3fb9a1">CX_CURVE_256R1</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td></tr>
+<tr class="memdesc:a548489a4185fd855b5e256beae3fb9a1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Legacy identifier for Secp256r1.  <a href="#a548489a4185fd855b5e256beae3fb9a1">More...</a><br /></td></tr>
+<tr class="memitem:a97b867d95b6bc2efb8f2160d310e8727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a97b867d95b6bc2efb8f2160d310e8727">CX_CURVE_NISTP256</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td></tr>
+<tr class="memdesc:a97b867d95b6bc2efb8f2160d310e8727"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Legacy identifier for Secp256r1.  <a href="#a97b867d95b6bc2efb8f2160d310e8727">More...</a><br /></td></tr>
+<tr class="memitem:a7ce7e2b1a016c32ce1602de663ca84ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7ce7e2b1a016c32ce1602de663ca84ea">CX_CURVE_NISTP384</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da824f259da3ef0b8f4e3ee6fcbd98c6e7">CX_CURVE_SECP384R1</a></td></tr>
+<tr class="memdesc:a7ce7e2b1a016c32ce1602de663ca84ea"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp384r1.  <a href="#a7ce7e2b1a016c32ce1602de663ca84ea">More...</a><br /></td></tr>
+<tr class="memitem:ae4b61604ca53904bf8783cd49884178d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae4b61604ca53904bf8783cd49884178d">CX_CURVE_NISTP521</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da69f729ce7b3a89bb3871176f8b917b35">CX_CURVE_SECP521R1</a></td></tr>
+<tr class="memdesc:ae4b61604ca53904bf8783cd49884178d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp521r1.  <a href="#ae4b61604ca53904bf8783cd49884178d">More...</a><br /></td></tr>
+<tr class="memitem:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab67addec3d9a79d1ce6d6482562a5bf0">CX_CURVE_RANGE</a>(i,  dom)</td></tr>
+<tr class="memdesc:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve identifier is in the specified range.  <a href="#ab67addec3d9a79d1ce6d6482562a5bf0">More...</a><br /></td></tr>
+<tr class="memitem:af7ab029bb3ab89de863730319073dc35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#af7ab029bb3ab89de863730319073dc35">CX_CURVE_IS_WEIERSTRASS</a>(c)</td></tr>
+<tr class="memdesc:af7ab029bb3ab89de863730319073dc35"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a short Weierstrass curve.  <a href="#af7ab029bb3ab89de863730319073dc35">More...</a><br /></td></tr>
+<tr class="memitem:a041b896c15d451fdcd1ac582baf30bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a041b896c15d451fdcd1ac582baf30bce">CX_CURVE_IS_TWISTED_EDWARDS</a>(c)</td></tr>
+<tr class="memdesc:a041b896c15d451fdcd1ac582baf30bce"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a twisted Edwards curve.  <a href="#a041b896c15d451fdcd1ac582baf30bce">More...</a><br /></td></tr>
+<tr class="memitem:a8a68336775894e26b88a79ec96b41ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a8a68336775894e26b88a79ec96b41ed3">CX_CURVE_IS_MONTGOMERY</a>(c)</td></tr>
+<tr class="memdesc:a8a68336775894e26b88a79ec96b41ed3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a Montgomery curve.  <a href="#a8a68336775894e26b88a79ec96b41ed3">More...</a><br /></td></tr>
 <tr class="memitem:a5ad90d6a0e043d9a94aa017fec898b78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a5ad90d6a0e043d9a94aa017fec898b78">CX_CURVE_HEADER</a></td></tr>
 <tr class="memdesc:a5ad90d6a0e043d9a94aa017fec898b78"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Curve domain parameters.  <a href="#a5ad90d6a0e043d9a94aa017fec898b78">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ada004671ae8fe2032d4c144ed6ebb837"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477d">cx_curve_e</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a></td></tr>
 <tr class="memdesc:ada004671ae8fe2032d4c144ed6ebb837"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#ada004671ae8fe2032d4c144ed6ebb837">More...</a><br /></td></tr>
@@ -111,8 +103,9 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a4d2899438548cdc90c83de901837f7a9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a4d2899438548cdc90c83de901837f7a9">More...</a><br /></td></tr>
 <tr class="memitem:aa33ce844128bcd045dc7c80a2b06af8c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__ec__point__s">cx_ec_point_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a></td></tr>
 <tr class="memdesc:aa33ce844128bcd045dc7c80a2b06af8c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aa33ce844128bcd045dc7c80a2b06af8c">More...</a><br /></td></tr>
+<tr class="memitem:a29dfa305c98e779d5117612360815dde"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../ox__ec_8h#a4716b0edb6c8816d3876164bc40ea1f6">cx_curve_dom_param_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="enum-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ab9e984f37d7329f57dbc826cb5ba477d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477d">cx_curve_e</a> { <br />
 &#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da8ccae6edafa11dd748dcc0eb6f26c431">CX_CURVE_NONE</a>, 
@@ -164,15 +157,15 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a4716b0edb6c8816d3876164bc40ea1f6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Identifiers of the domain parameters.  <a href="../ox__ec_8h#a4716b0edb6c8816d3876164bc40ea1f6">More...</a><br /></td></tr>
 </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a31118df83eb2629ff417521ace4d917e"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a31118df83eb2629ff417521ace4d917e">cx_ecdomain_size</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, size_t *length)</td></tr>
 <tr class="memdesc:a31118df83eb2629ff417521ace4d917e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the bit length of each parameter of the curve.  <a href="#a31118df83eb2629ff417521ace4d917e">More...</a><br /></td></tr>
 <tr class="memitem:a1c0a18bd483a254e2c7783442d32b002"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, size_t *length)</td></tr>
 <tr class="memdesc:a1c0a18bd483a254e2c7783442d32b002"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the byte length of each parameter of the curve.  <a href="#a1c0a18bd483a254e2c7783442d32b002">More...</a><br /></td></tr>
-<tr class="memitem:ab9afff1ba449430ecab236fa0f5d41c2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab9afff1ba449430ecab236fa0f5d41c2">cx_ecdomain_parameter</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, cx_curve_dom_param_t id, uint8_t *p, uint32_t p_len)</td></tr>
+<tr class="memitem:ab9afff1ba449430ecab236fa0f5d41c2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab9afff1ba449430ecab236fa0f5d41c2">cx_ecdomain_parameter</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, <a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a> id, uint8_t *p, uint32_t p_len)</td></tr>
 <tr class="memdesc:ab9afff1ba449430ecab236fa0f5d41c2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Get a specific parameter of the curve.  <a href="#ab9afff1ba449430ecab236fa0f5d41c2">More...</a><br /></td></tr>
-<tr class="memitem:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ac6fed5707cf1a1978463ac30a8a30e1d">cx_ecdomain_parameter_bn</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, cx_curve_dom_param_t id, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> p)</td></tr>
+<tr class="memitem:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ac6fed5707cf1a1978463ac30a8a30e1d">cx_ecdomain_parameter_bn</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, <a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a> id, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> p)</td></tr>
 <tr class="memdesc:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Store a specific parameter of the curve as a BN.  <a href="#ac6fed5707cf1a1978463ac30a8a30e1d">More...</a><br /></td></tr>
 <tr class="memitem:ab4b77a831232980e28185be49e355630"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab4b77a831232980e28185be49e355630">cx_ecdomain_generator</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, uint8_t *Gx, uint8_t *Gy, size_t len)</td></tr>
 <tr class="memdesc:ab4b77a831232980e28185be49e355630"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Get the generator of the curve.  <a href="#ab4b77a831232980e28185be49e355630">More...</a><br /></td></tr>
@@ -226,6 +219,38 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Elliptic curve cryptography syscalls. </p>
 <p>This file contains elliptic curves definitions and functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a62302b3b053718f4b2997cf096314085"></a>
+<h2 class="memtitle">CX_CURVE_256K1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_256K1&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477dab18a1d844197eb7a450fb01a6a1017da">CX_CURVE_SECP256K1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allowed identifier for Secp256k1. </p>
+
+</div>
+</div>
+<a id="a548489a4185fd855b5e256beae3fb9a1"></a>
+<h2 class="memtitle">CX_CURVE_256R1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_256R1&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Legacy identifier for Secp256r1. </p>
+
+</div>
+</div>
 <a id="a5ad90d6a0e043d9a94aa017fec898b78"></a>
 <h2 class="memtitle">CX_CURVE_HEADER</h2>
 
@@ -258,6 +283,130 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a68336775894e26b88a79ec96b41ed3"></a>
+<h2 class="memtitle">CX_CURVE_IS_MONTGOMERY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_IS_MONTGOMERY</td>
+          <td class="paramtype">&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the curve is a Montgomery curve. </p>
+
+</div>
+</div>
+<a id="a041b896c15d451fdcd1ac582baf30bce"></a>
+<h2 class="memtitle">CX_CURVE_IS_TWISTED_EDWARDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_IS_TWISTED_EDWARDS</td>
+          <td class="paramtype">&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the curve is a twisted Edwards curve. </p>
+
+</div>
+</div>
+<a id="af7ab029bb3ab89de863730319073dc35"></a>
+<h2 class="memtitle">CX_CURVE_IS_WEIERSTRASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_IS_WEIERSTRASS</td>
+          <td class="paramtype">&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the curve is a short Weierstrass curve. </p>
+
+</div>
+</div>
+<a id="a97b867d95b6bc2efb8f2160d310e8727"></a>
+<h2 class="memtitle">CX_CURVE_NISTP256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_NISTP256&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da00389b6367fadd7665770eed01cfbded">CX_CURVE_SECP256R1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Legacy identifier for Secp256r1. </p>
+
+</div>
+</div>
+<a id="a7ce7e2b1a016c32ce1602de663ca84ea"></a>
+<h2 class="memtitle">CX_CURVE_NISTP384</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_NISTP384&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da824f259da3ef0b8f4e3ee6fcbd98c6e7">CX_CURVE_SECP384R1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allowed identifier for Secp384r1. </p>
+
+</div>
+</div>
+<a id="ae4b61604ca53904bf8783cd49884178d"></a>
+<h2 class="memtitle">CX_CURVE_NISTP521</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_NISTP521&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da69f729ce7b3a89bb3871176f8b917b35">CX_CURVE_SECP521R1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allowed identifier for Secp521r1. </p>
+
+</div>
+</div>
+<a id="ab67addec3d9a79d1ce6d6482562a5bf0"></a>
+<h2 class="memtitle">CX_CURVE_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_CURVE_RANGE</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dom&#160;</td>
+        </tr>
+        <tr>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the curve identifier is in the specified range. </p>
+
+</div>
+</div>
 <a id="a0546971e9e13424e94aed73a43dd1f0e"></a>
 <h2 class="memtitle">CX_ECCINFO_PARITY_ODD</h2>
 
@@ -271,6 +420,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates the parity of a point coordinate. </p>
+
+</div>
+</div>
+<a id="ad7d948f769485901b284e3530feace57"></a>
+<h2 class="memtitle">CX_ECCINFO_xGTn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_ECCINFO_xGTn&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -563,6 +726,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a29dfa305c98e779d5117612360815dde"></a>
+<h2 class="memtitle">cx_curve_dom_param_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../ox__ec_8h#a4716b0edb6c8816d3876164bc40ea1f6">cx_curve_dom_param_s</a> <a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4d2899438548cdc90c83de901837f7a9"></a>
 <h2 class="memtitle">cx_curve_domain_t</h2>
 
@@ -680,7 +857,7 @@ Functions</h2></td></tr>
 
 <p>Identifiers of the domain parameters. </p>
 <table class="fieldtable">
-<tr><th>Enumerator</th></tr><tr><td class="fieldname"><a id="a4716b0edb6c8816d3876164bc40ea1f6a28fa28618f566394089103994443f1e4"></a>CX_CURVE_PARAM_NONE&#160;</td><td class="fielddoc"><p>No parameter. </p>
+<tr><th colspan="4">Enumerator</th></tr><tr><td class="fieldname"><a id="a4716b0edb6c8816d3876164bc40ea1f6a28fa28618f566394089103994443f1e4"></a>CX_CURVE_PARAM_NONE&#160;</td><td class="fielddoc"><p>No parameter. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4716b0edb6c8816d3876164bc40ea1f6adb25227f393a29e67003d9caf03d0043"></a>CX_CURVE_PARAM_A&#160;</td><td class="fielddoc"><p>First coefficient of the curve. </p>
 </td></tr>
@@ -714,7 +891,7 @@ Functions</h2></td></tr>
 
 <p>List of supported elliptic curves. </p>
 <table class="fieldtable">
-<tr><th>Enumerator</th></tr><tr><td class="fieldname"><a id="ab9e984f37d7329f57dbc826cb5ba477da8ccae6edafa11dd748dcc0eb6f26c431"></a>CX_CURVE_NONE&#160;</td><td class="fielddoc"><p>Undefined curve. </p>
+<tr><th colspan="4">Enumerator</th></tr><tr><td class="fieldname"><a id="ab9e984f37d7329f57dbc826cb5ba477da8ccae6edafa11dd748dcc0eb6f26c431"></a>CX_CURVE_NONE&#160;</td><td class="fielddoc"><p>Undefined curve. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab9e984f37d7329f57dbc826cb5ba477da9cf27d0c4b6e12a7f2656562148c5ef6"></a>CX_CURVE_WEIERSTRASS_START&#160;</td><td class="fielddoc"><p>Low limit (not included) of Weierstrass curve ID. </p>
 </td></tr>
@@ -780,22 +957,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_generator </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>, </td>
+          <td class="paramname"><b>cv</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>Gx</em>, </td>
+          <td class="paramname"><b>Gx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>Gy</em>, </td>
+          <td class="paramname"><b>Gy</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -805,10 +982,10 @@ Functions</h2></td></tr>
 <p>Get the generator of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Gx</td><td colspan="4">>Buffer to store the x-coordinate of the generator.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Gy</td><td colspan="4">>Buffer to store the y-coordinate of the generator.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Byte length of each coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Gx</td><td colspan="4">Buffer to store the x-coordinate of the generator.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Gy</td><td colspan="4">Buffer to store the y-coordinate of the generator.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Byte length of each coordinate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -830,12 +1007,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_generator_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>, </td>
+          <td class="paramname"><b>cv</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>&#160;</td>
+          <td class="paramname"><b>P</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -845,8 +1022,8 @@ Functions</h2></td></tr>
 <p>Get the generator of the curve and store it in the point structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">>Pointer to the structure where to store the generator.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">Pointer to the structure where to store the generator.</td></tr>
   </table>
   </dd>
 </dl>
@@ -871,22 +1048,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_parameter </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>, </td>
+          <td class="paramname"><b>cv</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td class="paramtype">cx_curve_dom_param_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
+          <td class="paramtype"><a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a>&#160;</td>
+          <td class="paramname"><b>id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>p_len</em>&#160;</td>
+          <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -896,10 +1073,10 @@ Functions</h2></td></tr>
 <p>Get a specific parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">>Parameter identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">>Buffer where to store the parameter.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">>Length of the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">Parameter identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">Buffer where to store the parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_len</td><td colspan="4">Length of the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -921,17 +1098,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_parameter_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>, </td>
+          <td class="paramname"><b>cv</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
-          <td class="paramtype">cx_curve_dom_param_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
+          <td class="paramtype"><a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a>&#160;</td>
+          <td class="paramname"><b>id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
+          <td class="paramname"><b>p</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -941,9 +1118,9 @@ Functions</h2></td></tr>
 <p>Store a specific parameter of the curve as a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">>Parameter identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">>BN where to store the parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td colspan="4">Parameter identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td colspan="4">BN where to store the parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -967,12 +1144,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_parameters_length </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>, </td>
+          <td class="paramname"><b>cv</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -982,8 +1159,8 @@ Functions</h2></td></tr>
 <p>Return the byte length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">>Byte length of each parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">Byte length of each parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1006,12 +1183,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdomain_size </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>curve</em>, </td>
+          <td class="paramname"><b>curve</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1021,8 +1198,8 @@ Functions</h2></td></tr>
 <p>Return the bit length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">>Curve identifier.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">>Bit length of each parameter.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td colspan="4">Bit length of each parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1043,17 +1220,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_add </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>R</em>, </td>
+          <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>Q</em>&#160;</td>
+          <td class="paramname"><b>Q</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1064,9 +1241,9 @@ Functions</h2></td></tr>
 <p>Each point should not be the point at infinity. If one of the point is the point at infinity then the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point to add. The point must be on the curve.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point to add. The point must be on the curve.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point to add. The point must be on the curve.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point to add. The point must be on the curve.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1092,12 +1269,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_alloc </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
-          <td class="paramname"><em>cv</em>&#160;</td>
+          <td class="paramname"><b>cv</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1107,8 +1284,8 @@ Functions</h2></td></tr>
 <p>Allocate memory for a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">>Curve on which the point is defined.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to a point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve on which the point is defined.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1132,17 +1309,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_cmp </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>Q</em>, </td>
+          <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>is_equal</em>&#160;</td>
+          <td class="paramname"><b>is_equal</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1152,9 +1329,9 @@ Functions</h2></td></tr>
 <p>Compare two points on the same curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>First point to compare.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Second point to compare.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_equal</td><td colspan="4">>Boolean which indicates whether the two points are equal or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">First point to compare.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Second point to compare.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_equal</td><td colspan="4">Boolean which indicates whether the two points are equal or not:<ul>
 <li>1 if the points are equal</li>
 <li>0 otherwise</li>
 </ul>
@@ -1183,22 +1360,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_compress </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>xy_compressed</em>, </td>
+          <td class="paramname"><b>xy_compressed</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>xy_compressed_len</em>, </td>
+          <td class="paramname"><b>xy_compressed_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>sign</em>&#160;</td>
+          <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1209,10 +1386,10 @@ Functions</h2></td></tr>
 <p>The compressed form depends on the curve type. For a Weierstrass or a Montgomery curve, the compressed form consists of the x-coordinate and a prefix. For a Twisted Edwards curve the compressed form consists of a y-coordinate and a prefix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to be compressed.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xy_compressed</td><td colspan="4">>Buffer to hold the compressed coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">>Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sign</td><td colspan="4">>Pointer to the sign of the hidden coordinate: correspond to the least significant bit of the y-coordinate for a Weierstrass or Montgomery curve and of the x-coordinate for a Twisted Edwards curve.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to be compressed.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xy_compressed</td><td colspan="4">Buffer to hold the compressed coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">Length of the compressed coordinate in bytes. This should be equal to the length of one coordinate.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sign</td><td colspan="4">Pointer to the sign of the hidden coordinate: correspond to the least significant bit of the y-coordinate for a Weierstrass or Montgomery curve and of the x-coordinate for a Twisted Edwards curve.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1237,22 +1414,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_decompress </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>xy_compressed</em>, </td>
+          <td class="paramname"><b>xy_compressed</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>xy_compressed_len</em>, </td>
+          <td class="paramname"><b>xy_compressed_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>sign</em>&#160;</td>
+          <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1262,10 +1439,10 @@ Functions</h2></td></tr>
 <p>Compute the affine coordinates of a point given its compressed form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed</td><td colspan="4">>Pointer to the buffer holding the compressed coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">>Length of the compressed coordinate in bytes. This should be equal to twice of the length of one coordinate plus one byte for the prefix.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">>Sign of the coordinate to recover.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">Pointer to the point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed</td><td colspan="4">Pointer to the buffer holding the compressed coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xy_compressed_len</td><td colspan="4">Length of the compressed coordinate in bytes. This should be equal to the length of one coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">Sign of the coordinate to recover.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1297,7 +1474,7 @@ Functions</h2></td></tr>
 <p>Destroy a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to destroy. If the pointer is NULL, nothing is done.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to destroy. If the pointer is NULL, nothing is done.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1320,37 +1497,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_double_scalarmul </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>R</em>, </td>
+          <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>Q</em>, </td>
+          <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
+          <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>k_len</em>, </td>
+          <td class="paramname"><b>k_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>r_len</em>&#160;</td>
+          <td class="paramname"><b>r_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1361,13 +1538,13 @@ Functions</h2></td></tr>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the second scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r_len</td><td colspan="4">>Length of the second scalar.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the second scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r_len</td><td colspan="4">Length of the second scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1393,27 +1570,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_double_scalarmul_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>R</em>, </td>
+          <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>Q</em>, </td>
+          <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>bn_k</em>, </td>
+          <td class="paramname"><b>bn_k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>bn_r</em>&#160;</td>
+          <td class="paramname"><b>bn_r</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1424,11 +1601,11 @@ Functions</h2></td></tr>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">>Pointer to the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the first point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">>Pointer to the second point.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the first scalar.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_r</td><td colspan="4">>BN index of the second scalar.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">R</td><td colspan="4">Pointer to the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the first point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td colspan="4">Pointer to the second point.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the first scalar.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_r</td><td colspan="4">BN index of the second scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1454,27 +1631,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_export </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>x_len</em>, </td>
+          <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
+          <td class="paramname"><b>y</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>y_len</em>&#160;</td>
+          <td class="paramname"><b>y_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1485,11 +1662,11 @@ Functions</h2></td></tr>
 <p>Fill two distinct buffers with the x-coordinate and the y-coordinate of the point. If the point is not in affine representation, it will be normalized first.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to export.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>Buffer for the x-coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">>Length of the <em>x</em> buffer.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">>Buffer for the y-coordinate.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">>Length of the <em>y</em> buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">Buffer for the x-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">Length of the <b>x</b> buffer.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">Buffer for the y-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">Length of the <b>y</b> buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1514,17 +1691,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_export_bn </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><b>y</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1534,9 +1711,9 @@ Functions</h2></td></tr>
 <p>Export a point using BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to export.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>Pointer to the BN index of the x-coordinate.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">>Pointer to the BN index of the y-coordinate.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">Pointer to the BN index of the x-coordinate.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td colspan="4">Pointer to the BN index of the y-coordinate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1561,27 +1738,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_init </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>x_len</em>, </td>
+          <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
+          <td class="paramname"><b>y</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>y_len</em>&#160;</td>
+          <td class="paramname"><b>y_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1591,11 +1768,11 @@ Functions</h2></td></tr>
 <p>Initialize a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to initialize.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>x-coordinate of the point. This must belong to the curve field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">>Length of the x-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">>y-coordinate of the point. This must belong to the curve field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">>Length of the y-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">x-coordinate of the point. This must belong to the curve field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_len</td><td colspan="4">Length of the x-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">y-coordinate of the point. This must belong to the curve field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_len</td><td colspan="4">Length of the y-coordinate. This must be at most equal to the curve's domain number of bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1618,17 +1795,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_init_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><b>y</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1638,9 +1815,9 @@ Functions</h2></td></tr>
 <p>Initialize a point on the curve with the BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the point to initialize.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index of the x-coordinate. The coordinate must belong to the base field.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">>BN index of the y-coordinate. The coordinate must belong to the base field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index of the x-coordinate. The coordinate must belong to the base field.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td colspan="4">BN index of the y-coordinate. The coordinate must belong to the base field.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1663,12 +1840,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_is_at_infinity </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>R</em>, </td>
+          <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>is_at_infinity</em>&#160;</td>
+          <td class="paramname"><b>is_at_infinity</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1679,8 +1856,8 @@ Functions</h2></td></tr>
 <p>The point at infinity has a z-coordinate equal to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">>Pointer to the point to check.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_at_infinity</td><td colspan="4">>Boolean which indicates whether the point is at infinity or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">Pointer to the point to check.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_at_infinity</td><td colspan="4">Boolean which indicates whether the point is at infinity or not:<ul>
 <li>1 if the point is at infinity</li>
 <li>0 otherwise</li>
 </ul>
@@ -1707,12 +1884,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_is_on_curve </td>
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>R</em>, </td>
+          <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>is_on_curve</em>&#160;</td>
+          <td class="paramname"><b>is_on_curve</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1722,8 +1899,8 @@ Functions</h2></td></tr>
 <p>Check if a given point is on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">>Pointer to the point to check.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">is_on_curve</td><td colspan="4">>Boolean which indicates whether the point is on the curve or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">Pointer to the point to check.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_on_curve</td><td colspan="4">Boolean which indicates whether the point is on the curve or not:<ul>
 <li>1 if the point is on the curve</li>
 <li>0 otherwise</li>
 </ul>
@@ -1760,7 +1937,7 @@ Functions</h2></td></tr>
 <p>The point should not be the point at infinity, otherwise the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point of the curve. and will hold the result.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point of the curve. This will hold the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1786,17 +1963,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_rnd_fixed_scalarmul </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
+          <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>k_len</em>&#160;</td>
+          <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1806,9 +1983,9 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication with a fixed scalar length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar. This should be equal to the domain length.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the domain length.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1834,17 +2011,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_rnd_scalarmul </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
+          <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>k_len</em>&#160;</td>
+          <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1854,9 +2031,9 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar. This should be equal to the domain length.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar. This should be equal to the domain length.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1882,12 +2059,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_rnd_scalarmul_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>bn_k</em>&#160;</td>
+          <td class="paramname"><b>bn_k</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1897,8 +2074,8 @@ Functions</h2></td></tr>
 <p>Perform a secure scalar multiplication given the BN index of the scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1924,17 +2101,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_scalarmul </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
+          <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>k_len</em>&#160;</td>
+          <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1942,12 +2119,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a scalar multiplication. </p>
-<p>This should be called only for non critical purposes.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#ae4c0306a025333d279be5326586bf86b" title="Perform a secure scalar multiplication. ">cx_ecpoint_rnd_scalarmul</a> or <a class="el" href="../ox__ec_8h#a3f63575b0780c61aafc46d74843f9737" title="Perform a secure scalar multiplication with a fixed scalar length. ">cx_ecpoint_rnd_fixed_scalarmul</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">>Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">>Length of the scalar.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td colspan="4">Pointer to the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k_len</td><td colspan="4">Length of the scalar.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1973,12 +2150,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_scalarmul_bn </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>bn_k</em>&#160;</td>
+          <td class="paramname"><b>bn_k</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1986,11 +2163,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a scalar multiplication given the BN index of the scalar. </p>
-<p>This should be called only for non critical purposes.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#a4bd5932bc102754d01bcccccbefdcdc3" title="Perform a secure scalar multiplication given the BN index of the scalar. ">cx_ecpoint_rnd_scalarmul_bn</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">>Pointer to a point on a curve. This will hold the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">>BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bn_k</td><td colspan="4">BN index of the scalar. The scalar is an integer at least equal to 0 and at most equal to the order of the curve minus 1.</td></tr>
   </table>
   </dd>
 </dl>

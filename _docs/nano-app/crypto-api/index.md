@@ -17,7 +17,7 @@ layout: doc
 <li>ECDSA with a random or deterministic nonce</li>
 <li>EDDSA</li>
 <li>ECDH</li>
-<li>Schnorr signature with different implementations, especially the one used for Zilliqa</li>
+<li>Schnorr signature with different implementations, especially the one used for Zilliqa and BIP-0340</li>
 <li>Multiple hash functions from SHA-2 and SHA-3 families as well as extendable output functions (SHAKE-128 and SHAKE-256)</li>
 <li>GROESTL and RIPEMD-160</li>
 <li>Keyed-hash Message Authentication Code </li>

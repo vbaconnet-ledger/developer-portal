@@ -14,22 +14,22 @@ layout: doc
 <p>Big Number syscalls.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Montgomery context.  <a href="../cx__bn__mont__ctx__t#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a8e4037d905d5c7cdae69259dabf0afe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a8e4037d905d5c7cdae69259dabf0afe9">CX_BN_WORD_ALIGNEMENT</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a8e4037d905d5c7cdae69259dabf0afe9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Minimal word size in bytes.  <a href="#a8e4037d905d5c7cdae69259dabf0afe9">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a3caccc9ce9a31d3cba31ce1de1194d12"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a></td></tr>
 <tr class="memdesc:a3caccc9ce9a31d3cba31ce1de1194d12"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Index of a big number.  <a href="#a3caccc9ce9a31d3cba31ce1de1194d12">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6d3a8100c6eb2e07df393cf228640a6b"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a6d3a8100c6eb2e07df393cf228640a6b">cx_bn_lock</a> (size_t word_nbytes, uint32_t flags)</td></tr>
 <tr class="memdesc:a6d3a8100c6eb2e07df393cf228640a6b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Acquire lock to BN processor.  <a href="#a6d3a8100c6eb2e07df393cf228640a6b">More...</a><br /></td></tr>
@@ -98,7 +98,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac04ef099548e399df84d972cdf83f99a"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#ac04ef099548e399df84d972cdf83f99a">cx_bn_reduce</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> d, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
 <tr class="memdesc:ac04ef099548e399df84d972cdf83f99a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a reduction <b>r = d mod n</b>.  <a href="#ac04ef099548e399df84d972cdf83f99a">More...</a><br /></td></tr>
 <tr class="memitem:ae35f88dfde67d9c20e733d144a19bb94"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#ae35f88dfde67d9c20e733d144a19bb94">cx_bn_mod_sqrt</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n, uint32_t sign)</td></tr>
-<tr class="memdesc:ae35f88dfde67d9c20e733d144a19bb94"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute <em>r</em> such that <b>r² = a mod n</b> if <em>a</em> is a quadratic residue.  <a href="#ae35f88dfde67d9c20e733d144a19bb94">More...</a><br /></td></tr>
+<tr class="memdesc:ae35f88dfde67d9c20e733d144a19bb94"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute <b>r</b> such that <b>r² = a mod n</b> if <b>a</b> is a quadratic residue.  <a href="#ae35f88dfde67d9c20e733d144a19bb94">More...</a><br /></td></tr>
 <tr class="memitem:a6b30b34ab43f02228d57fcf9727d3afc"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a6b30b34ab43f02228d57fcf9727d3afc">cx_bn_mod_pow_bn</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> e, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
 <tr class="memdesc:a6b30b34ab43f02228d57fcf9727d3afc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a modular exponentiation <b>r = a^e mod n</b>.  <a href="#a6b30b34ab43f02228d57fcf9727d3afc">More...</a><br /></td></tr>
 <tr class="memitem:a8d74dbd3e478f5660ce972d0faa9bec1"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a8d74dbd3e478f5660ce972d0faa9bec1">cx_bn_mod_pow</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const uint8_t *e, uint32_t e_len, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
@@ -106,7 +106,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aa47de169921a3034468d796720f35dbc"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#aa47de169921a3034468d796720f35dbc">cx_bn_mod_pow2</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const uint8_t *e, uint32_t e_len, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
 <tr class="memdesc:aa47de169921a3034468d796720f35dbc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a modular exponentiation <b>r = a^e mod n</b>.  <a href="#aa47de169921a3034468d796720f35dbc">More...</a><br /></td></tr>
 <tr class="memitem:abfff1f779b7a85df5e93ea5e6b748db7"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#abfff1f779b7a85df5e93ea5e6b748db7">cx_bn_mod_invert_nprime</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
-<tr class="memdesc:abfff1f779b7a85df5e93ea5e6b748db7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the modular inverse <b>r = a^(-1) mod n</b>, for a prime <em>n</em>.  <a href="#abfff1f779b7a85df5e93ea5e6b748db7">More...</a><br /></td></tr>
+<tr class="memdesc:abfff1f779b7a85df5e93ea5e6b748db7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the modular inverse <b>r = a^(-1) mod n</b>, for a prime <b>n</b>.  <a href="#abfff1f779b7a85df5e93ea5e6b748db7">More...</a><br /></td></tr>
 <tr class="memitem:abe79dfbbe52e582d63a46af9c07309f1"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#abe79dfbbe52e582d63a46af9c07309f1">cx_bn_mod_u32_invert</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, uint32_t a, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
 <tr class="memdesc:abe79dfbbe52e582d63a46af9c07309f1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the modular inverse <b>r = a^(-1) mod n</b>, of a 32-bit value.  <a href="#abe79dfbbe52e582d63a46af9c07309f1">More...</a><br /></td></tr>
 <tr class="memitem:ac9fd3bf92a0400b939021a9f39ba8f2e"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#ac9fd3bf92a0400b939021a9f39ba8f2e">cx_mont_alloc</a> (<a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *ctx, size_t length)</td></tr>
@@ -126,13 +126,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ae05617d9cb1711b9a26664f371950a99"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#ae05617d9cb1711b9a26664f371950a99">cx_mont_pow_bn</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> e, const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *ctx)</td></tr>
 <tr class="memdesc:ae05617d9cb1711b9a26664f371950a99"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a modular exponentiation <b>r = a^e mod n</b>.  <a href="#ae05617d9cb1711b9a26664f371950a99">More...</a><br /></td></tr>
 <tr class="memitem:a56e8e57ee180b7fb6af72a8e08855eb7"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a56e8e57ee180b7fb6af72a8e08855eb7">cx_mont_invert_nprime</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> a, const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *ctx)</td></tr>
-<tr class="memdesc:a56e8e57ee180b7fb6af72a8e08855eb7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the modular inverse <b>r = a^(-1) mod n</b> for a prime number <em>n</em>.  <a href="#a56e8e57ee180b7fb6af72a8e08855eb7">More...</a><br /></td></tr>
+<tr class="memdesc:a56e8e57ee180b7fb6af72a8e08855eb7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the modular inverse <b>r = a^(-1) mod n</b> for a prime number <b>n</b>.  <a href="#a56e8e57ee180b7fb6af72a8e08855eb7">More...</a><br /></td></tr>
 <tr class="memitem:a82c8a652e35c9040a7be456959a8fac2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#a82c8a652e35c9040a7be456959a8fac2">cx_bn_is_prime</a> (const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n, bool *prime)</td></tr>
 <tr class="memdesc:a82c8a652e35c9040a7be456959a8fac2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Test whether a BN value is a probable prime.  <a href="#a82c8a652e35c9040a7be456959a8fac2">More...</a><br /></td></tr>
 <tr class="memitem:adb0a12ebd2ff9e822a990c00586861bd"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#adb0a12ebd2ff9e822a990c00586861bd">cx_bn_next_prime</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
 <tr class="memdesc:adb0a12ebd2ff9e822a990c00586861bd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the first prime number after a given BN value.  <a href="#adb0a12ebd2ff9e822a990c00586861bd">More...</a><br /></td></tr>
 <tr class="memitem:ab838e5ee98111bac2cb87f6e51604691"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__bn_8h#ab838e5ee98111bac2cb87f6e51604691">cx_bn_rng</a> (<a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> r, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> n)</td></tr>
-<tr class="memdesc:ab838e5ee98111bac2cb87f6e51604691"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a random number <em>r</em> in the range ]0,n[.  <a href="#ab838e5ee98111bac2cb87f6e51604691">More...</a><br /></td></tr>
+<tr class="memdesc:ab838e5ee98111bac2cb87f6e51604691"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a random number <b>r</b> in the range ]0,n[.  <a href="#ab838e5ee98111bac2cb87f6e51604691">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -189,17 +189,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_add </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -207,12 +207,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform an addition <b>r = a + b</b>. </p>
-<p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
+<p><b>r</b>, <b>a</b> and <b>b</b> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -234,12 +234,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_alloc </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>&#160;</td>
+          <td class="paramname"><b>nbytes</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -250,8 +250,8 @@ Functions</h2></td></tr>
 <p>The specified number of bytes is the minimal required bytes, the number of words allocated will be automatically a multiple of the configured word size. At this moment the BN value is set to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>Pointer to a BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes of x.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">Pointer to a BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes of x.</td></tr>
   </table>
   </dd>
 </dl>
@@ -273,22 +273,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_alloc_init </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
+          <td class="paramname"><b>nbytes</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramname"><b>value</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>value_nbytes</em>&#160;</td>
+          <td class="paramname"><b>value_nbytes</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -299,10 +299,10 @@ Functions</h2></td></tr>
 <p>The specified number of bytes is the minimal required bytes, the number of words allocated will be automatically a multiple of the configured word size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>Pointer to a BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes of x.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">>Pointer to the value used to initialize the BN.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">>Number of bytes of value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">Pointer to a BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes of x.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">Pointer to the value used to initialize the BN.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">Number of bytes of value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -324,17 +324,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_and </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -342,12 +342,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform the bitwise 'AND' of two BN values. </p>
-<p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
+<p><b>r</b> must be distinct from <b>a</b> and <b>b</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -369,12 +369,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_clr_bit </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>pos</em>&#160;</td>
+          <td class="paramname"><b>pos</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -385,8 +385,8 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
   </table>
   </dd>
 </dl>
@@ -408,17 +408,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_cmp </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>diff</em>&#160;</td>
+          <td class="paramname"><b>diff</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -428,9 +428,9 @@ Functions</h2></td></tr>
 <p>Compare two BN values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index to the first value to be compared.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index to the second value to be compared.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index to the first value to be compared.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index to the second value to be compared.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
 <li>0 if the numbers are equal.</li>
 <li>&gt; 0 if the first number is greater than the second</li>
 <li>&lt; 0 if the first number is smaller than the second</li>
@@ -457,17 +457,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_cmp_u32 </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>diff</em>&#160;</td>
+          <td class="paramname"><b>diff</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -477,9 +477,9 @@ Functions</h2></td></tr>
 <p>Compare a BN value with an unsigned integer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index to the value to be compared.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Integer to be compared.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index to the value to be compared.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Integer to be compared.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
 <li>0 if the numbers are equal.</li>
 <li>&gt; 0 if the BN value is greater</li>
 <li>&lt; 0 if the BN value is smaller</li>
@@ -506,12 +506,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_cnt_bits </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramname"><b>n</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>nbits</em>&#160;</td>
+          <td class="paramname"><b>nbits</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -521,8 +521,8 @@ Functions</h2></td></tr>
 <p>Count the number of bits set to 1 of the BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nbits</td><td colspan="4">>Number of bits set.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nbits</td><td colspan="4">Number of bits set.</td></tr>
   </table>
   </dd>
 </dl>
@@ -544,12 +544,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_copy </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -559,8 +559,8 @@ Functions</h2></td></tr>
 <p>Copy the BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">>BN destination index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN source index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">BN destination index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN source index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -589,7 +589,7 @@ Functions</h2></td></tr>
 <p>Release a BN and give back its attached memory to the system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN to release. If NULL, nothing is done.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN to release. If NULL, nothing is done.</td></tr>
   </table>
   </dd>
 </dl>
@@ -611,17 +611,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_export </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>bytes</em>, </td>
+          <td class="paramname"><b>bytes</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>&#160;</td>
+          <td class="paramname"><b>nbytes</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -629,12 +629,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Store/Serialize a BN value as unsigned raw bytes in big-endian order. </p>
-<p>Only the least significant <em>nbytes</em> bytes of the BN are serialized If <em>nbytes</em> is greater than the BN size, <em>x</em> is serialized right aligned and zero left padded.</p>
+<p>Only the least significant <b>nbytes</b> bytes of the BN are serialized If <b>nbytes</b> is greater than the BN size, <b>x</b> is serialized right aligned and zero left-padded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bytes</td><td colspan="4">>Buffer where to store the serialized number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">>Number of bytes to store into the buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bytes</td><td colspan="4">Buffer where to store the serialized number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td colspan="4">Number of bytes to store into the buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -656,12 +656,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_get_u32 </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -671,8 +671,8 @@ Functions</h2></td></tr>
 <p>Get the 32-bit value corresponding to a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td colspan="4">>Stored 32-bit unsigned value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td colspan="4">Stored 32-bit unsigned value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -694,17 +694,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_init </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramname"><b>value</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>value_nbytes</em>&#160;</td>
+          <td class="paramname"><b>value_nbytes</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -714,9 +714,9 @@ Functions</h2></td></tr>
 <p>Initialize a BN with an unsigned value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">>Pointer to the value in big-endian order.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">>Number of bytes of the value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td colspan="4">Pointer to the value in big-endian order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value_nbytes</td><td colspan="4">Number of bytes of the value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -757,12 +757,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_is_odd </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramname"><b>n</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>odd</em>&#160;</td>
+          <td class="paramname"><b>odd</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -772,8 +772,8 @@ Functions</h2></td></tr>
 <p>Test whether a BN value is odd. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">odd</td><td colspan="4">>Boolean which indicates the parity of the BN value:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">odd</td><td colspan="4">Boolean which indicates the parity of the BN value:<ul>
 <li>1 if odd</li>
 <li>0 if even</li>
 </ul>
@@ -799,12 +799,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_is_prime </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramname"><b>n</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>prime</em>&#160;</td>
+          <td class="paramname"><b>prime</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -814,8 +814,8 @@ Functions</h2></td></tr>
 <p>Test whether a BN value is a probable prime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the value.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">>Boolean which indicates whether the number is a prime:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the value.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">Boolean which indicates whether the number is a prime:<ul>
 <li>1 if it is a prime</li>
 <li>0 otherwise</li>
 </ul>
@@ -842,12 +842,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_lock </td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>word_nbytes</em>, </td>
+          <td class="paramname"><b>word_nbytes</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramname"><b>flags</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -858,8 +858,8 @@ Functions</h2></td></tr>
 <p>Reset it, set the word size and configure. Once locked the memory can be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">word_nbytes</td><td colspan="4">>Word size in byte, the size of the parameters will be a multiple of <em>word_nbytes</em>. This size must be a multiple of CX_BN_WORD_ALIGNEMENT. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td colspan="4">>Flags.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">word_nbytes</td><td colspan="4">Word size in byte, the size of the parameters will be a multiple of <b>word_nbytes</b>. This size must be a multiple of CX_BN_WORD_ALIGNEMENT. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td colspan="4">Flags.</td></tr>
   </table>
   </dd>
 </dl>
@@ -903,22 +903,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_add </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -926,13 +926,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular addition <b>r = a + b mod n</b>. </p>
-<p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The values of <em>a</em> and <em>b</em> must be strictly smaller than modulus value.</p>
+<p><b>r</b>, <b>a</b>, <b>b</b> and <b>n</b> shall have the same BN size. The values of <b>a</b> and <b>b</b> must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -955,30 +955,30 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_invert_nprime </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the modular inverse <b>r = a^(-1) mod n</b>, for a prime <em>n</em>. </p>
-<p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>n</em> must be prime.</p>
+<p>Compute the modular inverse <b>r = a^(-1) mod n</b>, for a prime <b>n</b>. </p>
+<p><b>r</b>, <b>a</b> and <b>n</b> shall have the same BN size. <b>n</b> must be prime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to be inverted.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the value to be inverted.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1001,22 +1001,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_mul </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1024,13 +1024,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular multiplication <b>r = a * b mod n</b>. </p>
-<p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The value of b must be strictly smaller than modulus value.</p>
+<p><b>r</b>, <b>a</b>, <b>b</b> and <b>n</b> shall have the same BN size. The value of b must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1054,27 +1054,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_pow </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>e_len</em>, </td>
+          <td class="paramname"><b>e_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1082,14 +1082,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular exponentiation <b>r = a^e mod n</b>. </p>
-<p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
+<p><b>r</b>, <b>a</b> and <b>n</b> shall have the same BN size. <b>r</b>, <b>a</b> and <b>n</b> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1112,27 +1112,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_pow2 </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>e_len</em>, </td>
+          <td class="paramname"><b>e_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1140,14 +1140,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular exponentiation <b>r = a^e mod n</b>. </p>
-<p>This fonction reuses the parameter <em>a</em> for intermediate computations, hence requires less memory. <em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
+<p>This fonction reuses the parameter <b>a</b> for intermediate computations, hence requires less memory. <b>r</b>, <b>a</b> and <b>n</b> shall have the same BN size. <b>r</b>, <b>a</b> and <b>n</b> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation. The BN value is modified during the computations.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation. The BN value is modified during the computations.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1170,22 +1170,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_pow_bn </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1193,13 +1193,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular exponentiation <b>r = a^e mod n</b>. </p>
-<p><em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size. <em>r</em>, <em>a</em> and <em>n</em> must be different.</p>
+<p><b>r</b>, <b>a</b> and <b>n</b> shall have the same BN size. <b>r</b>, <b>a</b> and <b>n</b> must be different.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the base of the exponentiation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>BN index of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the base of the exponentiation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">BN index of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1222,36 +1222,36 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_sqrt </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramname"><b>n</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>sign</em>&#160;</td>
+          <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute <em>r</em> such that <b>r² = a mod n</b> if <em>a</em> is a quadratic residue. </p>
-<p>This returns an error if the given number is not a quadratic residue. <em>r</em>, <em>a</em> and <em>n</em> shall have the same BN size.</p>
+<p>Compute <b>r</b> such that <b>r² = a mod n</b> if <b>a</b> is a quadratic residue. </p>
+<p>This returns an error if the given number is not a quadratic residue. <b>r</b>, <b>a</b> and <b>n</b> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to compute the quadratic residue.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">>Sign of the quadratic residue.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the quadratic residue or quadratic non residue.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td colspan="4">Sign of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1275,22 +1275,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_sub </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1298,13 +1298,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular subtraction <b>r = a - b mod n</b>. </p>
-<p><em>r</em>, <em>a</em>, <em>b</em> and <em>n</em> shall have the same BN size. The values of <em>a</em> and <em>b</em> must be strictly smaller than modulus value.</p>
+<p><b>r</b>, <b>a</b>, <b>b</b> and <b>n</b> shall have the same BN size. The values of <b>a</b> and <b>b</b> must be strictly smaller than modulus value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1327,17 +1327,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mod_u32_invert </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1345,12 +1345,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compute the modular inverse <b>r = a^(-1) mod n</b>, of a 32-bit value. </p>
-<p><em>r</em> and <em>n</em> shall have the same BN size. The parameters <em>n</em> is detroyed and contains zero after the function returns.</p>
+<p><b>r</b> and <b>n</b> shall have the same BN size. The parameter <b>n</b> is detroyed and contains zero after the function returns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>32-bit value to be inverted.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">32-bit value to be inverted.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1375,17 +1375,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_mul </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1393,12 +1393,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a multiplication <b>r = a * b</b>. </p>
-<p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
+<p><b>a</b> and <b>b</b> shall have the same BN size. The size of <b>r</b> must be the size of <b>a</b></p><ul>
+<li>the size of <b>b</b>.</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1420,12 +1422,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_nbytes </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>nbytes</em>&#160;</td>
+          <td class="paramname"><b>nbytes</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1435,8 +1437,8 @@ Functions</h2></td></tr>
 <p>Return the size in bytes of a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nbytes</td><td colspan="4">>Returned number of bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nbytes</td><td colspan="4">Returned number of bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1464,7 +1466,7 @@ Functions</h2></td></tr>
 <p>Return the first prime number after a given BN value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td colspan="4">>BN index of the value and the result.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td colspan="4">BN index of the value and the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1488,17 +1490,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_or </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1506,12 +1508,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform the bitwise 'OR' of two BN values. </p>
-<p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
+<p><b>r</b> must be distinct from <b>a</b> and <b>b</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1540,7 +1542,7 @@ Functions</h2></td></tr>
 <p>Generate a random number and store it in the given index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1561,17 +1563,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_reduce </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
+          <td class="paramname"><b>d</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1579,12 +1581,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a reduction <b>r = d mod n</b>. </p>
-<p><em>r</em> and <em>n</em> shall have the same BN size.</p>
+<p><b>r</b> and <b>n</b> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td colspan="4">>BN index of the value to be reduced.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td colspan="4">BN index of the value to be reduced.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1607,24 +1609,24 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_rng </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a random number <em>r</em> in the range ]0,n[. </p>
-<p><em>r</em> is such that: <b>0 &lt; r &lt; n</b>.</p>
+<p>Generate a random number <b>r</b> in the range ]0,n[. </p>
+<p><b>r</b> is such that: <b>0 &lt; r &lt; n</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the upper bound.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the upper bound.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1647,12 +1649,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_set_bit </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>pos</em>&#160;</td>
+          <td class="paramname"><b>pos</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1663,8 +1665,8 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1686,12 +1688,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_set_u32 </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1701,8 +1703,8 @@ Functions</h2></td></tr>
 <p>Set the value of a BN with a 32-bit unsigned value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>32-bit value to be assigned.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">32-bit value to be assigned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1724,12 +1726,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_shl </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1739,8 +1741,8 @@ Functions</h2></td></tr>
 <p>Perform a left shift. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>Number of bits to shift.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">Number of bits to shift.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1762,12 +1764,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_shr </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1777,8 +1779,8 @@ Functions</h2></td></tr>
 <p>Perform a right shift. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>Number of bits to shift.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">Number of bits to shift.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1800,17 +1802,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_sub </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1818,12 +1820,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a subtraction <b>r = a - b</b>. </p>
-<p><em>r</em>, <em>a</em> and <em>b</em> shall have the same BN size.</p>
+<p><b>r</b>, <b>a</b> and <b>b</b> shall have the same BN size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1845,17 +1847,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_tst_bit </td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
+          <td class="paramname"><b>pos</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>set</em>&#160;</td>
+          <td class="paramname"><b>set</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1866,9 +1868,9 @@ Functions</h2></td></tr>
 <p>The BN value is in big endian order, thus the position 0 corresponds to the least significant bit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">>BN index.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">>Position of the bit.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">set</td><td colspan="4">>Boolean which indicates the bit value<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td colspan="4">BN index.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td colspan="4">Position of the bit.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">set</td><td colspan="4">Boolean which indicates the bit value<ul>
 <li>1 if the bit is set</li>
 <li>0 otherwise</li>
 </ul>
@@ -1917,17 +1919,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_bn_xor </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1935,12 +1937,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform the bitwise 'exclusive-OR' of two BN values. </p>
-<p><em>r</em> must be distinct from <em>a</em> and <em>b</em>.</p>
+<p><b>r</b> must be distinct from <b>a</b> and <b>b</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1962,12 +1964,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_alloc </td>
           <td class="paramtype"><a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1977,8 +1979,8 @@ Functions</h2></td></tr>
 <p>Allocate memory for the Montgomery context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montogmery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>BN size for the context fields.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">BN size for the context fields.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2000,17 +2002,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_from_montgomery </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
+          <td class="paramname"><b>z</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2021,9 +2023,9 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">>BN index of the value to be converted. The value should be in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">BN index of the value to be converted. The value should be in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2046,12 +2048,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_init </td>
           <td class="paramtype"><a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><b>n</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2062,8 +2064,8 @@ Functions</h2></td></tr>
 <p>Calculate and set up the second Montgomery constant.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to a Montgomery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to a Montgomery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2086,17 +2088,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_init2 </td>
           <td class="paramtype"><a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramname"><b>n</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
+          <td class="paramname"><b>h</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2107,9 +2109,9 @@ Functions</h2></td></tr>
 <p>Set up the second Montgomery constant with the given parameter. The caller should make sure that the given second Montgomery constant is correct.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to a Montgomery context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">>BN index of the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td colspan="4">>BN index of the pre calculated second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to a Montgomery context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td colspan="4">BN index of the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td colspan="4">BN index of the pre calculated second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2131,30 +2133,30 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_invert_nprime </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the modular inverse <b>r = a^(-1) mod n</b> for a prime number <em>n</em>. </p>
+<p>Compute the modular inverse <b>r = a^(-1) mod n</b> for a prime number <b>n</b>. </p>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the value to be inverted. The value is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the value to be inverted. The value is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant</td></tr>
   </table>
   </dd>
 </dl>
@@ -2177,22 +2179,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_mul </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2203,10 +2205,10 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the first operand in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>BN index of the second operand in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the first operand in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">BN index of the second operand in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2228,27 +2230,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_pow </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>e_len</em>, </td>
+          <td class="paramname"><b>e_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2256,14 +2258,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular exponentiation <b>r = a^e mod n</b>. </p>
-<p>The context must be initialized. The BN value <em>a</em> is in Montgomery representation.</p>
+<p>The context must be initialized. The BN value <b>a</b> is in Montgomery representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the exponentiation base in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">>Length of the exponent in bytes.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the exponentiation base in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e_len</td><td colspan="4">Length of the exponent in bytes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2286,22 +2288,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_pow_bn </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2309,13 +2311,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform a modular exponentiation <b>r = a^e mod n</b>. </p>
-<p>The context must be initialized. The BN value <em>a</em> is in Montgomery representation.</p>
+<p>The context must be initialized. The BN value <b>a</b> is in Montgomery representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>BN index for the result. The result is in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>BN index of the exponentiation base in Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>BN index of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">BN index for the result. The result is in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">BN index of the exponentiation base in Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">BN index of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2338,17 +2340,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_mont_to_montgomery </td>
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
+          <td class="paramname"><b>z</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const <a class="el" href="../cx__bn__mont__ctx__t">cx_bn_mont_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramname"><b>ctx</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -2359,9 +2361,9 @@ Functions</h2></td></tr>
 <p>The context must be initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">>BN index for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">>BN index of the value to convert into Montgomery representation.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">>Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td colspan="4">BN index for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td colspan="4">BN index of the value to convert into Montgomery representation.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td colspan="4">Pointer to the Montgomery context, initialized with the modulus and the second Montgomery constant.</td></tr>
   </table>
   </dd>
 </dl>

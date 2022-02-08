@@ -14,26 +14,24 @@ layout: doc
 <p>SHA-2 (Secure Hash Algorithm 2)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__sha512__s">cx_sha512_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-384 and SHA-512 context.  <a href="../cx__sha512__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a31fde7c6974a7fe5cda7bde88d881d9a"><td class="memItemLeft" align="right" valign="top"><a id="a31fde7c6974a7fe5cda7bde88d881d9a"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#a31fde7c6974a7fe5cda7bde88d881d9a">CX_SHA384_SIZE</a>&#160;&#160;&#160;48</td></tr>
-<tr class="memdesc:a31fde7c6974a7fe5cda7bde88d881d9a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-384 message digest size. <br /></td></tr>
-<tr class="memitem:a8c92da6dbfa2fa62932f43353cd70c8e"><td class="memItemLeft" align="right" valign="top"><a id="a8c92da6dbfa2fa62932f43353cd70c8e"></a>
-#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#a8c92da6dbfa2fa62932f43353cd70c8e">CX_SHA512_SIZE</a>&#160;&#160;&#160;64</td></tr>
-<tr class="memdesc:a8c92da6dbfa2fa62932f43353cd70c8e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-512 message digest size. <br /></td></tr>
+<tr class="memitem:a31fde7c6974a7fe5cda7bde88d881d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#a31fde7c6974a7fe5cda7bde88d881d9a">CX_SHA384_SIZE</a>&#160;&#160;&#160;48</td></tr>
+<tr class="memdesc:a31fde7c6974a7fe5cda7bde88d881d9a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-384 message digest size.  <a href="#a31fde7c6974a7fe5cda7bde88d881d9a">More...</a><br /></td></tr>
+<tr class="memitem:a8c92da6dbfa2fa62932f43353cd70c8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#a8c92da6dbfa2fa62932f43353cd70c8e">CX_SHA512_SIZE</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:a8c92da6dbfa2fa62932f43353cd70c8e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">SHA-512 message digest size.  <a href="#a8c92da6dbfa2fa62932f43353cd70c8e">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a53d64cea729324cd5b0b260e3657e04e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__sha512__s">cx_sha512_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a></td></tr>
 <tr class="memdesc:a53d64cea729324cd5b0b260e3657e04e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a53d64cea729324cd5b0b260e3657e04e">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeae1fdcd8850affddff9947c1ac16b28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha512_8h#aeae1fdcd8850affddff9947c1ac16b28">cx_sha384_init_no_throw</a> (<a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a> *hash)</td></tr>
 <tr class="memdesc:aeae1fdcd8850affddff9947c1ac16b28"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-384 context.  <a href="#aeae1fdcd8850affddff9947c1ac16b28">More...</a><br /></td></tr>
@@ -52,7 +50,44 @@ Functions</h2></td></tr>
 
 <div class="textblock"><p>SHA-2 (Secure Hash Algorithm 2) </p>
 <p>SHA-384 and SHA-512 are secure hash functions belonging to the SHA-2 family with a digest length of 384 and 512 bits, respectively. The message length should be less than 2<sup align="right">128</sup> bits. Refer to <a href="../https://csrc.nist.gov/publications/detail/fips/180/4/final">FIPS 180-4 </a> for more details. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a31fde7c6974a7fe5cda7bde88d881d9a"></a>
+<h2 class="memtitle">CX_SHA384_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_SHA384_SIZE&#160;&#160;&#160;48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHA-384 message digest size. </p>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
+
+</div>
+</div>
+<a id="a8c92da6dbfa2fa62932f43353cd70c8e"></a>
+<h2 class="memtitle">CX_SHA512_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_SHA512_SIZE&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHA-512 message digest size. </p>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a53d64cea729324cd5b0b260e3657e04e"></a>
 <h2 class="memtitle">cx_sha512_t</h2>
 
@@ -80,22 +115,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t cx_hash_sha512 </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>in_len</em>, </td>
+          <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>out_len</em>&#160;</td>
+          <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -105,10 +140,10 @@ Functions</h2></td></tr>
 <p>Compute a one shot SHA-512 digest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the output.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">>Length of the output. This is actually 512 bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the output.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">Length of the output. This is actually 512 bits. </td></tr>
   </table>
   </dd>
 </dl>
@@ -139,7 +174,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-384 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>
@@ -165,7 +200,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-384 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>
@@ -200,7 +235,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-512 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>
@@ -226,7 +261,7 @@ Functions</h2></td></tr>
 <p>Initialize a SHA-512 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
   </table>
   </dd>
 </dl>

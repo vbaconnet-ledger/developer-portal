@@ -14,7 +14,7 @@ layout: doc
 <p>Basic arithmetic.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abe7fad9139fc57b173d6e23ccb237d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71">cx_math_cmp_no_throw</a> (const uint8_t *a, const uint8_t *b, size_t length, int *diff)</td></tr>
 <tr class="memdesc:abe7fad9139fc57b173d6e23ccb237d71"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare two integers represented as byte arrays.  <a href="#abe7fad9139fc57b173d6e23ccb237d71">More...</a><br /></td></tr>
@@ -89,22 +89,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static uint32_t cx_math_add </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -116,12 +116,13 @@ Functions</h2></td></tr>
 
 <p>Add two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f" title="Add two integers represented as byte arrays. ">cx_math_add_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the addition.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the addition.</td></tr>
   </table>
   </dd>
 </dl>
@@ -145,22 +146,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_add_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -170,10 +171,10 @@ Functions</h2></td></tr>
 <p>Add two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the addition.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the addition.</td></tr>
   </table>
   </dd>
 </dl>
@@ -203,27 +204,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_addm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -235,13 +236,14 @@ Functions</h2></td></tr>
 
 <p>Modular addition of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003" title="Modular addition of two integers represented as byte arrays. ">cx_math_addm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -264,27 +266,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_addm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -294,11 +296,11 @@ Functions</h2></td></tr>
 <p>Modular addition of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -328,17 +330,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int32_t cx_math_cmp </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -350,11 +352,12 @@ Functions</h2></td></tr>
 
 <p>Compare two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71" title="Compare two integers represented as byte arrays. ">cx_math_cmp_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>Number of bytes taken into account for the comparison.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">Number of bytes taken into account for the comparison.</td></tr>
   </table>
   </dd>
 </dl>
@@ -383,22 +386,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_cmp_no_throw </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramname"><b>length</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>diff</em>&#160;</td>
+          <td class="paramname"><b>diff</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -408,10 +411,10 @@ Functions</h2></td></tr>
 <p>Compare two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">>Number of bytes taken into account for the comparison.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">>Result of the comparison:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td colspan="4">Number of bytes taken into account for the comparison.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">diff</td><td colspan="4">Result of the comparison:<ul>
 <li>0 if a and b are identical</li>
 <li>&lt; 0 if a is less than b</li>
 <li>&gt; 0 if a is greater than b</li>
@@ -446,22 +449,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_invintm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -472,13 +475,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modular inverse. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>. a must be invertible modulo <em>m</em>, i.e. the greatest common divisor of <em>a</em> and <em>n</em> is 1. This function throws an exception if the computation doesn't succeed.</p>
+<p>Compute the result of <b>a^(-1) mod m</b>. a must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12" title="Modular inverse. ">cx_math_invintm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -501,22 +505,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_invintm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -524,13 +528,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modular inverse. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>. <em>a</em> must be invertible modulo <em>m</em>, i.e. the greatest common divisor of <em>a</em> and <em>n</em> is 1.</p>
+<p>Compute the result of <b>a^(-1) mod m</b>. <b>a</b> must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -560,22 +564,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_invprimem </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -586,13 +590,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modular inverse with a prime modulus. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <em>m</em>. This function throws an exception if the computation doesn't succeed.</p>
+<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db" title="Modular inverse with a prime modulus. ">cx_math_invprimem_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus. Must be a prime number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus. Must be a prime number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -615,22 +620,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_invprimem_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -638,13 +643,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modular inverse with a prime modulus. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <em>m</em>.</p>
+<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus. Must be a prime number.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus. Must be a prime number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -674,12 +679,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static bool cx_math_is_prime </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -691,10 +696,11 @@ Functions</h2></td></tr>
 
 <p>Check whether a number is probable prime. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f" title="Check whether a number is probable prime. ">cx_math_is_prime_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -722,17 +728,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_is_prime_no_throw </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>prime</em>&#160;</td>
+          <td class="paramname"><b>prime</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -742,9 +748,9 @@ Functions</h2></td></tr>
 <p>Check whether a number is probable prime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">>Bool indicating whether r is prime or not:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prime</td><td colspan="4">Bool indicating whether r is prime or not:<ul>
 <li>0 : not prime</li>
 <li>1 : prime</li>
 </ul>
@@ -778,12 +784,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static bool cx_math_is_zero </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -796,8 +802,8 @@ Functions</h2></td></tr>
 <p>Compare if the byte array of an integer is all zero. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -817,22 +823,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_modm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><b>v</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_v</em>, </td>
+          <td class="paramname"><b>len_v</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_m</em>&#160;</td>
+          <td class="paramname"><b>len_m</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -844,12 +850,13 @@ Functions</h2></td></tr>
 
 <p>Modulo operation. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a" title="Modulo operation. ">cx_math_modm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">>Pointer to the dividend and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">>Number of bytes of the dividend.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">>Number of bytes of the modulus.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">Number of bytes of the dividend.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">Number of bytes of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -872,22 +879,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_modm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><b>v</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_v</em>, </td>
+          <td class="paramname"><b>len_v</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_m</em>&#160;</td>
+          <td class="paramname"><b>len_m</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -898,10 +905,10 @@ Functions</h2></td></tr>
 <p>Compute the remainder of the division of v by m. Store the result in v.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">>Pointer to the dividend and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">>Number of bytes of the dividend.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">>Number of bytes of the modulus.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_v</td><td colspan="4">Number of bytes of the dividend.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_m</td><td colspan="4">Number of bytes of the modulus.</td></tr>
   </table>
   </dd>
 </dl>
@@ -931,22 +938,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_mult </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -958,12 +965,13 @@ Functions</h2></td></tr>
 
 <p>Multiply two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a" title="Multiply two integers represented as byte arrays. ">cx_math_mult_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the multiplication.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the multiplication.</td></tr>
   </table>
   </dd>
 </dl>
@@ -986,22 +994,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_mult_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1011,10 +1019,10 @@ Functions</h2></td></tr>
 <p>Multiply two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the multiplication.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the multiplication.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1044,27 +1052,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_multm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1076,13 +1084,14 @@ Functions</h2></td></tr>
 
 <p>Modular multiplication of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50" title="Modular multiplication of two integers represented as byte arrays. ">cx_math_multm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1105,27 +1114,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_multm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1135,11 +1144,11 @@ Functions</h2></td></tr>
 <p>Modular multiplication of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1170,12 +1179,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_next_prime </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1187,10 +1196,11 @@ Functions</h2></td></tr>
 
 <p>Compute the next prime after a given number. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448" title="Compute the next prime after a given number. ">cx_math_next_prime_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the integer and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1213,12 +1223,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_next_prime_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1228,8 +1238,8 @@ Functions</h2></td></tr>
 <p>Compute the next prime after a given number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">>Pointer to the integer and buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the integer.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the integer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1261,32 +1271,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_powm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_e</em>, </td>
+          <td class="paramname"><b>len_e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1297,15 +1307,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modular exponentiation. </p>
-<p>Compute the result of <b>a^e mod m</b>.</p>
+<p>Compute the result of <b>a^e mod m</b>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60" title="Modular exponentiation. ">cx_math_powm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">>Number of bytes of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">Number of bytes of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1328,32 +1339,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_powm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"><b>e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len_e</em>, </td>
+          <td class="paramname"><b>len_e</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1364,12 +1375,12 @@ Functions</h2></td></tr>
 <p>Compute the result of <b>a^e mod m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to an integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">>Pointer to the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">>Number of bytes of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes of the result.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td colspan="4">Pointer to the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len_e</td><td colspan="4">Number of bytes of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes of the result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1399,22 +1410,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static uint32_t cx_math_sub </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1426,12 +1437,13 @@ Functions</h2></td></tr>
 
 <p>Subtract two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89" title="Subtract two integers represented as byte arrays. ">cx_math_sub_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the subtraction.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the subtraction.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1455,22 +1467,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_sub_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1480,10 +1492,10 @@ Functions</h2></td></tr>
 <p>Subtract two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the subtraction.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the subtraction.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1513,27 +1525,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void cx_math_subm </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1545,13 +1557,14 @@ Functions</h2></td></tr>
 
 <p>Modular subtraction of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5" title="Modular subtraction of two integers represented as byte arrays. ">cx_math_subm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1574,27 +1587,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_math_subm_no_throw </td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramname"><b>m</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1604,11 +1617,11 @@ Functions</h2></td></tr>
 <p>Modular subtraction of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">>Buffer for the result.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">>Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">>Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">>Modulus</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Number of bytes taken into account for the operation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td colspan="4">Pointer to the second integer. This must be strictly smaller than the modulus.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td colspan="4">Modulus</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Number of bytes taken into account for the operation.</td></tr>
   </table>
   </dd>
 </dl>

@@ -9,7 +9,7 @@ layout: doc
 
 This documentation is generated automatically from the code. The following structure is the one you will find in _____. You can navigate through the files list and you will have more information about Data Structure and Functions. On each page, navigation buttons quickly get you back to the files list. You can also use the search tool on the top right corner of the page to search through the API by file, data structure or function name.
 
-<div class="textblock">Here is a list of all documented files with brief descriptions:</div><div class="directory">
+<div class="textblock">Here is a list of all files with brief descriptions:</div><div class="directory">
 <table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span id="img_0_" class="iconfopen" onclick="toggleFolder('0_')">&#160;</span>include</td><td colspan="3" class="desc"></td></tr>
 <tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="../cx__errors_8h" target="_self">cx_errors.h</a></td><td colspan="3" class="desc">Error codes related to cryptography and arithmetic operations </td></tr>

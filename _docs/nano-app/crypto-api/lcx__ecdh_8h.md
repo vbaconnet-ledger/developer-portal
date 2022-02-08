@@ -14,11 +14,11 @@ layout: doc
 <p>ECDH (Elliptic Curve Diffie Hellman) key exchange.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa36d38a37ced925043a8d17b750e3f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e">cx_ecdh_no_throw</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, uint32_t mode, const uint8_t *P, size_t P_len, uint8_t *secret, size_t secret_len)</td></tr>
+<tr class="memitem:aa36d38a37ced925043a8d17b750e3f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e">cx_ecdh_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, uint32_t mode, const uint8_t *P, size_t P_len, uint8_t *secret, size_t secret_len)</td></tr>
 <tr class="memdesc:aa36d38a37ced925043a8d17b750e3f6e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute an ECDH shared secret.  <a href="#aa36d38a37ced925043a8d17b750e3f6e">More...</a><br /></td></tr>
-<tr class="memitem:a9a4febd251d944d6c04b43c7330740ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh</a> (const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *pvkey, int mode, const unsigned char *P, unsigned int P_len, unsigned char *secret, unsigned int secret_len)</td></tr>
+<tr class="memitem:a9a4febd251d944d6c04b43c7330740ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, int mode, const unsigned char *P, unsigned int P_len, unsigned char *secret, unsigned int secret_len)</td></tr>
 <tr class="memdesc:a9a4febd251d944d6c04b43c7330740ce"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute an ECDH shared secret.  <a href="#a9a4febd251d944d6c04b43c7330740ce">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
@@ -39,33 +39,33 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ecdh </td>
-          <td class="paramtype">const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>pvkey</em>, </td>
+          <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
+          <td class="paramname"><b>pvkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>P_len</em>, </td>
+          <td class="paramname"><b>P_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>secret</em>, </td>
+          <td class="paramname"><b>secret</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>secret_len</em>&#160;</td>
+          <td class="paramname"><b>secret_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -76,19 +76,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compute an ECDH shared secret. </p>
-<p>Depending on the mode, the shared secret is either the full point or only the <em>x</em> coordinate. This function throws an exception if the computation doesn't succeed.</p>
+<p>Depending on the mode, the shared secret is either the full point or only the <b>x</b> coordinate. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e" title="Compute an ECDH shared secret. ">cx_ecdh_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_ECDH_POINT</li>
 <li>CX_ECDH_X</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">>Length of the public key in octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">>Buffer where to store the shared secret (full or compressed).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">>Length of the buffer in octets.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the public key encoded as <b>04 || x || y</b>: <b>x</b> and <b>y</b> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">Length of the public key in octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">Buffer where to store the shared secret (full or compressed).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">Length of the buffer in octets.</td></tr>
   </table>
   </dd>
 </dl>
@@ -99,7 +100,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../cx__ecfp__256__private__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_256_private_key_s::curve</a>, <a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e">cx_ecdh_no_throw()</a>, <a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length()</a>, and <a class="el" href="../lcx__common_8h#a4550b2e093cd42ccf24e6b62df3747b4">CX_MASK_EC</a>.</p>
+<p class="reference">References <a class="el" href="../cx__ecfp__256__private__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_256_private_key_s::curve</a>, <a class="el" href="../lcx__ecdh_8h#aa36d38a37ced925043a8d17b750e3f6e">cx_ecdh_no_throw()</a>, <a class="el" href="../lcx__common_8h#a3a28b93a073d3559a4daa34581a49435">CX_ECDH_POINT</a>, <a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length()</a>, and <a class="el" href="../lcx__common_8h#a4550b2e093cd42ccf24e6b62df3747b4">CX_MASK_EC</a>.</p>
 
 </div>
 </div>
@@ -111,33 +112,33 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecdh_no_throw </td>
-          <td class="paramtype">const <a class="el" href="../cx__ecfp__256__private__key__s">cx_ecfp_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>pvkey</em>, </td>
+          <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
+          <td class="paramname"><b>pvkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>P</em>, </td>
+          <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>P_len</em>, </td>
+          <td class="paramname"><b>P_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>secret</em>, </td>
+          <td class="paramname"><b>secret</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>secret_len</em>&#160;</td>
+          <td class="paramname"><b>secret_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -145,19 +146,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compute an ECDH shared secret. </p>
-<p>Depending on the mode, the shared secret is either the full point or only the <em>x</em> coordinate.</p>
+<p>Depending on the mode, the shared secret is either the full point or only the <b>x</b> coordinate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">>Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_ECDH_POINT</li>
 <li>CX_ECDH_X</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">>Pointer to the public key encoded as <b>04 || x || y</b>: <em>x</em> and <em>y</em> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">>Length of the public key in octets.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">>Buffer where to store the shared secret (full or compressed).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">>Length of the buffer in octets.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the public key encoded as <b>04 || x || y</b>: <b>x</b> and <b>y</b> are encoded as big endian raw values and have a binary length equal to curve domain size.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">P_len</td><td colspan="4">Length of the public key in octets.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td colspan="4">Buffer where to store the shared secret (full or compressed).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td colspan="4">Length of the buffer in octets.</td></tr>
   </table>
   </dd>
 </dl>

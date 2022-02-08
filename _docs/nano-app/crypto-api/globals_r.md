@@ -1,5 +1,5 @@
 ---
-title: dir_f19cb56d6ecfeb72444413e62ae31a52
+title: globals_r
 subtitle:
 tags: []
 category: CryptographyAPI
@@ -10,10 +10,12 @@ layout: doc
 <button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
 <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>
 
-<table class="memberdecls">
-<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="subdirs"></a>
-Directories</h2></td></tr>
-<tr class="memitem:dir_a69a61e9293a18e19774232b7e40aad8"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../dir_a69a61e9293a18e19774232b7e40aad8">include</a></td></tr>
-</table>
+<div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>ROWS
+: <a class="el" href="../lcx__groestl_8h#a3cfd3aa62338d12609f6d65bce97e9cd">lcx_groestl.h</a>
+</li>
+</ul>
 <button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>
 <a class="uk-button uk-button-default uk-button-small uk-margin-medium-top crypto-button" href="../../crypto-api/files">Back to the files list</a>

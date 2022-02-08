@@ -14,21 +14,25 @@ layout: doc
 <p>Hash functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__info__t">cx_hash_info_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash description.  <a href="../cx__hash__info__t#details">More...</a><br /></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__hash__header__s">cx_hash_header_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Common message digest context, used as abstract type.  <a href="../cx__hash__header__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1ae63cf5a9e4d42041bdcda17b21e296"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a1ae63cf5a9e4d42041bdcda17b21e296">CX_HASH_MAX_BLOCK_COUNT</a>&#160;&#160;&#160;65535</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aac7f6b791a4df89ac2e67ee43d4021a2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">cx_md_e</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a></td></tr>
 <tr class="memdesc:aac7f6b791a4df89ac2e67ee43d4021a2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aac7f6b791a4df89ac2e67ee43d4021a2">More...</a><br /></td></tr>
 <tr class="memitem:a5fa8d1a7a91f41d10ba46386e5286343"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__hash__header__s">cx_hash_header_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a></td></tr>
 <tr class="memdesc:a5fa8d1a7a91f41d10ba46386e5286343"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a5fa8d1a7a91f41d10ba46386e5286343">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="enum-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a83490ac84757a8bc00ff719ed807e117"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">cx_md_e</a> { <br />
 &#160;&#160;<a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a53820b668032d4211be4fec868ac011a">CX_NONE</a> = 0, 
@@ -52,8 +56,9 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a83490ac84757a8bc00ff719ed807e117"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Message digest algorithm identifiers.  <a href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117">More...</a><br /></td></tr>
 </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad6d0f11deac47473046877f63b1b3842"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#ad6d0f11deac47473046877f63b1b3842">cx_hash_get_size</a> (const <a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *ctx)</td></tr>
 <tr class="memitem:a51cf929ff30c2b19232c0389df2e2547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, uint32_t mode, const uint8_t *in, size_t len, uint8_t *out, size_t out_len)</td></tr>
 <tr class="memdesc:a51cf929ff30c2b19232c0389df2e2547"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash data according to the specified algorithm.  <a href="#a51cf929ff30c2b19232c0389df2e2547">More...</a><br /></td></tr>
 <tr class="memitem:adc7f6918cc747f7ac7d9c9faaf9ec215"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, int mode, const unsigned char *in, unsigned int len, unsigned char *out, unsigned int out_len)</td></tr>
@@ -87,7 +92,22 @@ Functions</h2></td></tr>
 <li>SHA3_512</li>
 <li>SHA512 </li>
 </ul>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a1ae63cf5a9e4d42041bdcda17b21e296"></a>
+<h2 class="memtitle">CX_HASH_MAX_BLOCK_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CX_HASH_MAX_BLOCK_COUNT&#160;&#160;&#160;65535</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a5fa8d1a7a91f41d10ba46386e5286343"></a>
 <h2 class="memtitle">cx_hash_t</h2>
 
@@ -137,7 +157,7 @@ Functions</h2></td></tr>
 
 <p>Message digest algorithm identifiers. </p>
 <table class="fieldtable">
-<tr><th>Enumerator</th></tr><tr><td class="fieldname"><a id="a83490ac84757a8bc00ff719ed807e117a53820b668032d4211be4fec868ac011a"></a>CX_NONE&#160;</td><td class="fielddoc"><p>No message digest algorithm. </p>
+<tr><th colspan="4">Enumerator</th></tr><tr><td class="fieldname"><a id="a83490ac84757a8bc00ff719ed807e117a53820b668032d4211be4fec868ac011a"></a>CX_NONE&#160;</td><td class="fielddoc"><p>No message digest algorithm. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a83490ac84757a8bc00ff719ed807e117ab4a075a43ece09e77953b297b1a36fb3"></a>CX_RIPEMD160&#160;</td><td class="fielddoc"><p>RIPEMD160 digest. </p>
 </td></tr>
@@ -182,32 +202,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_hash </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>out_len</em>&#160;</td>
+          <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -219,23 +239,24 @@ Functions</h2></td></tr>
 
 <p>Hash data according to the specified algorithm. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547" title="Hash data according to the specified algorithm. ">cx_hash_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto flag. Supported flag: CX_LAST. If set:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto flag. Supported flag: CX_LAST. If set:<ul>
 <li>the structure is not modified after finishing</li>
 <li>if out is not NULL, the message digest is stored in out</li>
 <li>the context is NOT automatically re-initialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to be hashed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the message digest:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to be hashed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the message digest:<ul>
 <li>NULL (ignored) if CX_LAST is NOT set</li>
 <li>message digest if CX_LAST is set</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">>The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash an exception is thrown.</td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +267,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw()</a>.</p>
+<p class="reference">References <a class="el" href="../lcx__hash_8h#a9d1068c9ef9bf98eedb839b74674ff15">cx_hash_final()</a>, <a class="el" href="../lcx__hash_8h#ad6d0f11deac47473046877f63b1b3842">cx_hash_get_size()</a>, <a class="el" href="../lcx__hash_8h#a885f02f3636aac761fbbba21b079414c">cx_hash_init()</a>, <a class="el" href="../lcx__hash_8h#a44ca61db6548b8f361fa8fb065a8bb92">cx_hash_init_ex()</a>, <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw()</a>, and <a class="el" href="../lcx__hash_8h#a95be19cf6b724e3837b84ff5d73520de">cx_hash_update()</a>.</p>
 
 </div>
 </div>
@@ -259,12 +280,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hash_final </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>digest</em>&#160;</td>
+          <td class="paramname"><b>digest</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -272,11 +293,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalize the hash. </p>
-<p>A call to this function is equivalent to: <em>cx_hash_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</em>.</p>
+<p>A call to this function is equivalent to: <b>cx_hash_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td colspan="4">>The message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td colspan="4">The message digest.</td></tr>
   </table>
   </dd>
 </dl>
@@ -284,6 +305,25 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
+
+</div>
+</div>
+<a id="ad6d0f11deac47473046877f63b1b3842"></a>
+<h2 class="memtitle">cx_hash_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t cx_hash_get_size </td>
+          <td class="paramtype">const <a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -296,12 +336,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hash_init </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hash_id</em>&#160;</td>
+          <td class="paramname"><b>hash_id</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -311,8 +351,8 @@ Functions</h2></td></tr>
 <p>Initialize a hash context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>Message digest algorithm identifier.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">Message digest algorithm identifier.</td></tr>
   </table>
   </dd>
 </dl>
@@ -321,6 +361,8 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -333,17 +375,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hash_init_ex </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hash_id</em>, </td>
+          <td class="paramname"><b>hash_id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>output_size</em>&#160;</td>
+          <td class="paramname"><b>output_size</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -354,15 +396,15 @@ Functions</h2></td></tr>
 <p>Initialize a hash context with a chosen output length (typically for eXtendable Output Functions (XOF)).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">>Hash algorithm identifier. Typically:<ul>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_id</td><td colspan="4">Hash algorithm identifier. Typically:<ul>
 <li>CX_BLAKE2B</li>
 <li>CX_GROESTL</li>
 <li>CX_SHAKE128</li>
 <li>CX_SHAKE256</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">output_size</td><td colspan="4">>Length of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_size</td><td colspan="4">Length of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -371,6 +413,8 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -383,32 +427,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hash_no_throw </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>out_len</em>&#160;</td>
+          <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -418,21 +462,21 @@ Functions</h2></td></tr>
 <p>Hash data according to the specified algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto flag. Supported flag: CX_LAST. If set:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto flag. Supported flag: CX_LAST. If set:<ul>
 <li>the structure is not modified after finishing</li>
 <li>if out is not NULL, the message digest is stored in out</li>
 <li>the context is NOT automatically re-initialized.</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to be hashed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">>Buffer where to store the message digest:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to be hashed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td colspan="4">Buffer where to store the message digest:<ul>
 <li>NULL (ignored) if CX_LAST is NOT set</li>
 <li>message digest if CX_LAST is set</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">>The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash a exception is returned.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td colspan="4">The size of the output buffer or 0 if out is NULL. If buffer is too small to store the hash an error is returned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -456,17 +500,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_hash_update </td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
+          <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>in_len</em>&#160;</td>
+          <td class="paramname"><b>in_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -474,12 +518,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add more data to hash. </p>
-<p>A call to this function is equivalent to: <em>cx_hash_no_throw(hash, 0, in, in_len, NULL, 0)</em>.</p>
+<p>A call to this function is equivalent to: <b>cx_hash_no_throw(hash, 0, in, in_len, NULL, 0)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">>Pointer to the hash context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">>Input data to add to the context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">>Length of the input data.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data to add to the context.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td colspan="4">Length of the input data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -489,6 +533,8 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>

@@ -14,7 +14,7 @@ layout: doc
 <p>RSA algorithm.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__public__key__s">cx_rsa_public_key_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Abstract RSA public key.  <a href="../cx__rsa__public__key__s#details">More...</a><br /></td></tr>
@@ -37,7 +37,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__rsa__4096__private__key__s">cx_rsa_4096_private_key_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">4096-bit RSA private key  <a href="../cx__rsa__4096__private__key__s#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a4332ce85a407c456b5386cc2a2f77363"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__rsa__public__key__s">cx_rsa_public_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a></td></tr>
 <tr class="memdesc:a4332ce85a407c456b5386cc2a2f77363"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#a4332ce85a407c456b5386cc2a2f77363">More...</a><br /></td></tr>
@@ -60,7 +60,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaf361c3bcc9b4d1957e935ff943c2d96"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../cx__rsa__4096__private__key__s">cx_rsa_4096_private_key_s</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#aaf361c3bcc9b4d1957e935ff943c2d96">cx_rsa_4096_private_key_t</a></td></tr>
 <tr class="memdesc:aaf361c3bcc9b4d1957e935ff943c2d96"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Convenience type.  <a href="#aaf361c3bcc9b4d1957e935ff943c2d96">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="4">><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af814abef1212161f269f907393b6bfbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe">cx_rsa_init_public_key_no_throw</a> (const uint8_t *exponent, size_t exponent_len, const uint8_t *modulus, size_t modulus_len, <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key)</td></tr>
 <tr class="memdesc:af814abef1212161f269f907393b6bfbe"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RSA public key.  <a href="#af814abef1212161f269f907393b6bfbe">More...</a><br /></td></tr>
@@ -283,37 +283,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_decrypt </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>mesg</em>, </td>
+          <td class="paramname"><b>mesg</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>mesg_len</em>, </td>
+          <td class="paramname"><b>mesg_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>dec</em>, </td>
+          <td class="paramname"><b>dec</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>dec_len</em>&#160;</td>
+          <td class="paramname"><b>dec_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -325,25 +325,26 @@ Functions</h2></td></tr>
 
 <p>Decrypt a message according to RSA specification. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781" title="Decrypt a message according to RSA specification. ">cx_rsa_decrypt_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
 <li>CX_SHA512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">>Input data to decrypt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">>Length of the input.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dec</td><td colspan="4">>Buffer where to store the decrypted data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dec_len</td><td colspan="4">>Length of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">Input data to decrypt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">Length of the input.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dec</td><td colspan="4">Buffer where to store the decrypted data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dec_len</td><td colspan="4">Length of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -367,37 +368,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_decrypt_no_throw </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>mesg</em>, </td>
+          <td class="paramname"><b>mesg</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mesg_len</em>, </td>
+          <td class="paramname"><b>mesg_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>dec</em>, </td>
+          <td class="paramname"><b>dec</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>dec_len</em>&#160;</td>
+          <td class="paramname"><b>dec_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -407,23 +408,23 @@ Functions</h2></td></tr>
 <p>Decrypt a message according to RSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
 <li>CX_SHA512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">>Input data to decrypt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">>Length of the input.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dec</td><td colspan="4">>Buffer where to store the decrypted data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dec_len</td><td colspan="4">>Length of the output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">Input data to decrypt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">Length of the input.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dec</td><td colspan="4">Buffer where to store the decrypted data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dec_len</td><td colspan="4">Length of the output.</td></tr>
   </table>
   </dd>
 </dl>
@@ -453,37 +454,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_encrypt </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>mesg</em>, </td>
+          <td class="paramname"><b>mesg</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>mesg_len</em>, </td>
+          <td class="paramname"><b>mesg_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>enc</em>, </td>
+          <td class="paramname"><b>enc</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>enc_len</em>&#160;</td>
+          <td class="paramname"><b>enc_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -495,25 +496,26 @@ Functions</h2></td></tr>
 
 <p>Encrypt a message according to RSA specification. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef" title="Encrypt a message according to RSA specification. ">cx_rsa_encrypt_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
 <li>CX_SHA512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">>Input data to encrypt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">>Length of the input.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enc</td><td colspan="4">>Buffer where to store the ciphertext.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enc_len</td><td colspan="4">>Length of the ciphertext.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">Input data to encrypt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">Length of the input.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enc</td><td colspan="4">Buffer where to store the ciphertext.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enc_len</td><td colspan="4">Length of the ciphertext.</td></tr>
   </table>
   </dd>
 </dl>
@@ -537,37 +539,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_encrypt_no_throw </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>mesg</em>, </td>
+          <td class="paramname"><b>mesg</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mesg_len</em>, </td>
+          <td class="paramname"><b>mesg_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>enc</em>, </td>
+          <td class="paramname"><b>enc</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>enc_len</em>&#160;</td>
+          <td class="paramname"><b>enc_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -577,23 +579,23 @@ Functions</h2></td></tr>
 <p>Encrypt a message according to RSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers used in OAEP padding:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
 <li>CX_SHA512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">>Input data to encrypt.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">>Length of the input.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enc</td><td colspan="4">>Buffer where to store the ciphertext.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enc_len</td><td colspan="4">>Length of the ciphertext.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg</td><td colspan="4">Input data to encrypt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesg_len</td><td colspan="4">Length of the input.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enc</td><td colspan="4">Buffer where to store the ciphertext.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enc_len</td><td colspan="4">Length of the ciphertext.</td></tr>
   </table>
   </dd>
 </dl>
@@ -623,32 +625,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_generate_pair </td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>public_key</em>, </td>
+          <td class="paramname"><b>public_key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>private_key</em>, </td>
+          <td class="paramname"><b>private_key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>pub_exponent</em>, </td>
+          <td class="paramname"><b>pub_exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>externalPQ</em>&#160;</td>
+          <td class="paramname"><b>externalPQ</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -659,19 +661,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a RSA key pair. </p>
+<p>Generate a RSA key pair. This function throws an exception if the generation failed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f" title="Generate a RSA key pair. ">cx_rsa_generate_pair_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Size of the modulus in bytes. Expected sizes:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Size of the modulus in bytes. Expected sizes:<ul>
 <li>256</li>
 <li>384</li>
 <li>512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">public_key</td><td colspan="4">>Pointer to the RSA public key. The structure shall match <em>modulus_len</em>.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">private_key</td><td colspan="4">>Pointer to the RSA private key. The structure shall match <em>modulus_len</em>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pub_exponent</td><td colspan="4">>Public exponent. ZERO means default value: 0x010001 (65337). The public exponent shall be less than 0x0FFFFFFF. No verification is done on the public exponent value except its range.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">externalPQ</td><td colspan="4">>Pointer to the prime factors of the modulus or NULL pointer. Each prime consists of modulus_len/2 bytes in big endian order. P = externalPQ[0:modulus_len/2-1], Q = externalPQ[modulus_len/2 : modulus_len-1] There is no verification on provided P and Q.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">public_key</td><td colspan="4">Pointer to the RSA public key. The structure shall match <b>modulus_len</b>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">private_key</td><td colspan="4">Pointer to the RSA private key. The structure shall match <b>modulus_len</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pub_exponent</td><td colspan="4">Public exponent. ZERO means default value: 0x010001 (65337). The public exponent shall be less than 0x0FFFFFFF. No verification is done on the public exponent value except its range.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">externalPQ</td><td colspan="4">Pointer to the prime factors of the modulus or NULL pointer. Each prime consists of modulus_len/2 bytes in big endian order. P = externalPQ[0:modulus_len/2-1], Q = externalPQ[modulus_len/2 : modulus_len-1] There is no verification on provided P and Q.</td></tr>
   </table>
   </dd>
 </dl>
@@ -695,32 +699,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_generate_pair_no_throw </td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>public_key</em>, </td>
+          <td class="paramname"><b>public_key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>private_key</em>, </td>
+          <td class="paramname"><b>private_key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>pub_exponent</em>, </td>
+          <td class="paramname"><b>pub_exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>externalPQ</em>&#160;</td>
+          <td class="paramname"><b>externalPQ</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -730,17 +734,17 @@ Functions</h2></td></tr>
 <p>Generate a RSA key pair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Size of the modulus in bytes. Expected sizes:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Size of the modulus in bytes. Expected sizes:<ul>
 <li>256</li>
 <li>384</li>
 <li>512</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">public_key</td><td colspan="4">>Pointer to the RSA public key. The structure shall match <em>modulus_len</em>.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">private_key</td><td colspan="4">>Pointer to the RSA private key. The structure shall match <em>modulus_len</em>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pub_exponent</td><td colspan="4">>Public exponent. ZERO means default value: 0x010001 (65337). The public exponent shall be less than 0x0FFFFFFF. No verification is done on the public exponent value except its range.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">externalPQ</td><td colspan="4">>Pointer to the prime factors of the modulus or NULL pointer. Each prime consists of modulus_len/2 bytes in big endian order. P = externalPQ[0:modulus_len/2-1], Q = externalPQ[modulus_len/2 : modulus_len-1] There is no verification on provided P and Q.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">public_key</td><td colspan="4">Pointer to the RSA public key. The structure shall match <b>modulus_len</b>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">private_key</td><td colspan="4">Pointer to the RSA private key. The structure shall match <b>modulus_len</b>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pub_exponent</td><td colspan="4">Public exponent. ZERO means default value: 0x010001 (65337). The public exponent shall be less than 0x0FFFFFFF. No verification is done on the public exponent value except its range.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">externalPQ</td><td colspan="4">Pointer to the prime factors of the modulus or NULL pointer. Each prime consists of modulus_len/2 bytes in big endian order. P = externalPQ[0:modulus_len/2-1], Q = externalPQ[modulus_len/2 : modulus_len-1] There is no verification on provided P and Q.</td></tr>
   </table>
   </dd>
 </dl>
@@ -772,27 +776,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_init_private_key </td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>exponent</em>, </td>
+          <td class="paramname"><b>exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>modulus</em>, </td>
+          <td class="paramname"><b>modulus</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
+          <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -805,13 +809,14 @@ Functions</h2></td></tr>
 <p>Initialize a RSA private key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used. This function throws an exception if the initialization fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">>Private exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">>Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Length of the modulus.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the RSA private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Private exponent: pointer to a raw key value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Length of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the RSA private key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -835,27 +840,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_init_private_key_no_throw </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>exponent</em>, </td>
+          <td class="paramname"><b>exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>modulus</em>, </td>
+          <td class="paramname"><b>modulus</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
+          <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -867,11 +872,11 @@ Functions</h2></td></tr>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">>Private exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">>Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Length of the modulus.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the RSA private key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Private exponent: pointer to a raw key value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Length of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the RSA private key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -897,27 +902,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_init_public_key </td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>exponent</em>, </td>
+          <td class="paramname"><b>exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>modulus</em>, </td>
+          <td class="paramname"><b>modulus</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
+          <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -929,14 +934,15 @@ Functions</h2></td></tr>
 
 <p>Initialize a RSA public key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
-<p>Passing NULL as raw key initializes the key without any value. The key can not be used. This function throws an exception if the initialization fails.</p>
+<p>Passing NULL as raw key initializes the key without any value. The key cannot be used. This function throws an exception if the initialization fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">>Public exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">>Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Length of the modulus.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the RSA public key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Public exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Length of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the RSA public key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -960,27 +966,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_init_public_key_no_throw </td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>exponent</em>, </td>
+          <td class="paramname"><b>exponent</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>exponent_len</em>, </td>
+          <td class="paramname"><b>exponent_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>modulus</em>, </td>
+          <td class="paramname"><b>modulus</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>modulus_len</em>, </td>
+          <td class="paramname"><b>modulus_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
+          <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -989,14 +995,14 @@ Functions</h2></td></tr>
 
 <p>Initialize a RSA public key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
-<p>Passing NULL as raw key initializes the key without any value. The key can not be used.</p>
+<p>Passing NULL as raw key initializes the key without any value. The key cannot be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">>Public exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">>Length of the exponent.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">>Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">>Length of the modulus.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">>Pointer to the RSA public key.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Public exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exponent_len</td><td colspan="4">Length of the exponent.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus</td><td colspan="4">Modulus: pointer to a raw key as big endian value or NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Length of the modulus.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td colspan="4">Pointer to the RSA public key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1022,37 +1028,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_rsa_sign </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>hash_len</em>, </td>
+          <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>sig</em>, </td>
+          <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>sig_len</em>&#160;</td>
+          <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1064,15 +1070,16 @@ Functions</h2></td></tr>
 
 <p>Compute a message digest signature according to RSA specification. </p>
 <p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
@@ -1081,10 +1088,10 @@ Functions</h2></td></tr>
 <li>CX_SHA3_512 (for CX_PAD_PKCS1_1o5 mode only)</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Input data to be signed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">>Buffer where to store the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the output buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Input data to be signed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">Buffer where to store the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the output buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1108,37 +1115,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_sign_no_throw </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>hash_len</em>, </td>
+          <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>sig</em>, </td>
+          <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sig_len</em>&#160;</td>
+          <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1149,13 +1156,13 @@ Functions</h2></td></tr>
 <p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
@@ -1164,10 +1171,10 @@ Functions</h2></td></tr>
 <li>CX_SHA3_512 (for CX_PAD_PKCS1_1o5 mode only)</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Input data to be signed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">>Buffer where to store the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the output buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Input data to be signed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">Buffer where to store the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the output buffer.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1194,42 +1201,42 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rsa_sign_with_salt_len </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>hash_len</em>, </td>
+          <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>sig</em>, </td>
+          <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sig_len</em>, </td>
+          <td class="paramname"><b>sig_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>salt_len</em>&#160;</td>
+          <td class="paramname"><b>salt_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1240,13 +1247,13 @@ Functions</h2></td></tr>
 <p>When using PSS padding, the salt length is fixed to the hash output length. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the same hash algorithm as specified by hashID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
@@ -1255,11 +1262,11 @@ Functions</h2></td></tr>
 <li>CX_SHA3_512 (for CX_PAD_PKCS1_1o5 mode only)</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Input data to be signed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">>Buffer where to store the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the output buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">>Length of the salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Input data to be signed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">Buffer where to store the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the output buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">Length of the salt.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1286,37 +1293,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cx_rsa_verify </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>hash_len</em>, </td>
+          <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>sig</em>, </td>
+          <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sig_len</em>&#160;</td>
+          <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1327,13 +1334,13 @@ Functions</h2></td></tr>
 <p>Verify a message digest signature according to RSA specification. Please note that if the mode is set to CX_PAD_PKCS1_PSS, then the underlying salt length is by convention equal to the hash length. If another salt length is used, please call <a class="el" href="../lcx__rsa_8h#aa9f7d00e76d3dd2ff7be2940db1eaaa6" title="Verify a message digest signature. ">cx_rsa_verify_with_salt_len</a> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
@@ -1342,10 +1349,10 @@ Functions</h2></td></tr>
 <li>CX_SHA3_512 (for CX_PAD_PKCS1_1o5 mode only)</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Input data to be signed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">>RSA signature encoded as raw bytes. This is used as a temporary buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Message digest corresponding to the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the message digest.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">RSA signature encoded as raw bytes. This is used as a temporary buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1364,42 +1371,42 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool cx_rsa_verify_with_salt_len </td>
           <td class="paramtype">const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
-          <td class="paramname"><em>hashID</em>, </td>
+          <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
+          <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>hash_len</em>, </td>
+          <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>sig</em>, </td>
+          <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sig_len</em>, </td>
+          <td class="paramname"><b>sig_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>salt_len</em>&#160;</td>
+          <td class="paramname"><b>salt_len</b>&#160;</td>
         </tr>
         <tr>
         </tr>
@@ -1410,13 +1417,13 @@ Functions</h2></td></tr>
 <p>Verify a message digest signature according to RSA specification with a specified salt length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">>RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">>Crypto mode flags. Supported flags:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">>Message digest algorithm identifier. Expected identifiers:<ul>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier. Expected identifiers:<ul>
 <li>CX_SHA224</li>
 <li>CX_SHA256</li>
 <li>CX_SHA384</li>
@@ -1425,11 +1432,11 @@ Functions</h2></td></tr>
 <li>CX_SHA3_512 (for CX_PAD_PKCS1_1o5 mode only)</li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">>Input data to be signed.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">>Length of the input data.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">>RSA signature encoded as raw bytes. This is used as a temporary buffer.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">>Length of the signature.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">>Length of the salt.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Input data to be signed.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the input data.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">RSA signature encoded as raw bytes. This is used as a temporary buffer.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig_len</td><td colspan="4">Length of the signature.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt_len</td><td colspan="4">Length of the salt.</td></tr>
   </table>
   </dd>
 </dl>
