@@ -1,5 +1,5 @@
 ---
-title: Adding *MyCoin* to live-common
+title: Adding *MyCoin* to ledger-live-common
 subtitle:
 tags: [Ledger Live Common, typescript, environment variables, local packages]
 category: Blockchain Support
@@ -30,7 +30,7 @@ All integrated coins are implemented in a `src/families` dedicated folder which 
 
 ### Development tools (used or required)
 
-- [yalc](https://github.com/wclr/yalc) for locally linking live-common with other projects
+- [yalc](../yalc) for locally linking ledger-live-common with other projects
 - [eslint](https://github.com/eslint/eslint) - ensure it's working in your IDE ([vscode plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))
 - [prettier](https://github.com/prettier/prettier) - through an eslint-plugin
 - [typescript](https://www.typescriptlang.org/) - ensure it works fine with your IDE
@@ -44,7 +44,7 @@ All integrated coins are implemented in a `src/families` dedicated folder which 
 
 - Clone project [https://github.com/LedgerHQ/ledger-live-common](https://github.com/LedgerHQ/ledger-live-common)
 - `yarn install` will install all dependencies
-- `yalc publish --push` will build and link live-common
+- `yalc publish --push` will build and link ledger-live-common
 
 ## Structure
 
@@ -83,8 +83,6 @@ Here is a typical family folder structure (TS integration):
 
 
 
-In the section Below, the files are marked as **Required**, **Recommended**, or **Optional** accordingly.
-
 ## Generating families-specific imports
 
 All per-family imports are gathered in the [`src/generated`](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/generated) folder, for letting generic code to choose which implementation to use on a per-coin basis.
@@ -98,7 +96,7 @@ You should not update those files manually, but call a dedicated script:
 {% include alert.html style="tip" text="you may need to add <code>mycoin</code> to the <code>withoutNetworkInfo</code> in this script if you don't use a NetworkInfo type." %}
 
 
-**As soon as you add a file in the family (that is part of the generated folder) you will need to execute this script before building.** Otherwise, your implementation will not be known by the live-common library.
+**As soon as you add a file in the family (that is part of the generated folder) you will need to execute this script before building.** Otherwise, your implementation will not be known by the ledger-live-common library.
 
 ## Building for Development
 
@@ -127,7 +125,7 @@ The one you will use the most before releasing you integration is:
 EXPERIMENTAL_CURRENCIES=mycoin
 ```
 
-It will consider `mycoin` as supported (you can also add it to the supported currencies in `cli/src/live-common-setup-base.ts`).
+It will consider `mycoin` as supported (you can also add it to the supported currencies in `cli/src/ledger-live-common-setup-base.ts`).
 
 **For clarity, we will omit this environment variable in this document.**
 
@@ -143,26 +141,6 @@ If needed, you can add your own in `src/env.ts` (always try to add a MYCOIN\_ pr
 // }
 ```
 
-### Linking local packages
-
-You may need to override some package with a local version (like `@ledgerhq/cryptoassets` or `@ledgerhq/hw-app-mycoin`). Use `yalc add package-name` to do so.
-
-Since your build would be used locally during developemnt, you may also want those dependencies to be local and included in the published local package.
-Ensure the `.yalc` directory is included then in the package.json:
-
-`package.json`:
-
-```ts
-  "files": [
-    ...,
-    ".yalc"
-  ],
-```
-<!--  -->
-{% include alert.html style="important" text="Do not commit changes due to the usage of <code>yalc</code> as it may result in wrong behaviour." %}
-<!--  -->
-
-
 ## Step by Step integration
 
 ### MyCoin cryptoassets
@@ -171,7 +149,9 @@ We will consider that <i>MyCoin</i> is already in [@ledgerhq/cryptoassets](https
 
 ### Derive Address from device
 
-If your app JS bindings (See [\*My Coin\* App JS Bindings](../js-bindings)) are not yet published in [LedgerJS](https://github.com/LedgerHQ/ledgerjs), you can put them in `src/families/mycoin/hw-app-mycoin`.
+<!--  -->
+{% include alert.html style="success" text="If your app <a href='../js-bindings'>JS bindings</a> are not yet published in <a href='https://github.com/LedgerHQ/ledgerjs'>LedgerJS</a>, use <a href='../yalc'>yalc</a> to link your local packages." %}
+<!--  -->
 
 First and easiest step is to get an address from the device for <i>MyCoin</i>, by creating the `hw-getAddress.ts` Resolver:
 
@@ -179,7 +159,7 @@ First and easiest step is to get an address from the device for <i>MyCoin</i>, b
 
 ```ts
 import type { Resolver } from "../../hw/getAddress/types";
-import MyCoin from "./hw-app-mycoin/MyCoin";
+import MyCoin from "@ledgerhq/hw-app-mycoin";
 
 const resolver: Resolver = async (transport, { path, verify }) => {
   const myCoin = new MyCoin(transport);
@@ -294,65 +274,26 @@ They are aggregated as a single `AccountLike` type, used across Ledger Live impl
 
 We will focus only on the `Account` type as we won't cover the Token integration in this document.
 
-All main accounts share a common ground:
+All main accounts share a common ground, that you will find defined and commented [here](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/account.ts#L118).
 
-- `id: string`: a unique account identifier we build up with many pieces of information. It's generally composed of 5 parts split by a `:`
-- `seedIdentifier: string`: a unique way to identify a seed the account was associated with
-- `xpub?: string`: the xpub if relevant. This information is redundant with the `id` and might be eventually dropped
-- `derivationMode: DerivationMode` identifies the derivation scheme that is used. See [Derivation](#derivation)
-- `index: number`: the index of the account among a given `derivationMode`
-- `freshAddress: string`: the "next" public address where a user should receive funds. For account-based blockchains, it is the current public address
-- `freshAddressPath: string` represents the derivation path where the `freshAddress` was taken from
-- `freshAddresses: Address[]`: an array of "future" fresh addresses. It is a generalisation of `freshAddress` and `freshAddressPath`
-- `name: string`: name of the account that the user has set. It is not saved or restored from any place but is defined by the user and locally saved
-- `balance: BigNumber` represent the total amount of assets that this account holds
-- `spendableBalance: BigNumber`: represents the subset of `balance` that can be spent. Most of the time it will be equal to `balance` but this can vary in some blockchains
-- `blockHeight: number`: tracks the current blockchain block height
-- `currency: CryptoCurrency`: the associated crypto currency of the Account. See [\*MyCoin\* in CryptoAssets](../cryptoassets-library)
-- `unit: Unit`: the user defined preferred unit to view the account with. It's initialized to `currency.units[0]`
-- `operationsCount: number` gives the total number of operations this account contains. This field exists because the `operations` array is not guaranteed to be complete
-- `operations: Operation[]`: an array of operations sorted from the most recent to the oldest one. It might be partial, containing only the last N operations but can be paginated on
-- `pendingOperations: Operation[]`: like `operations` but only for <i>optimistic updates</i> of operations resulting from transactions that were just performed and not yet confirmed
-- `lastSyncDate: Date`: the date of the last time a synchronisation was performed
-- `subAccounts?: SubAccount[]`: an optional field that is defined for accounts that can contain children accounts. This is for instance used for tokens and Tezos originated accounts
-- `balanceHistory?: BalanceHistoryMap`: a cache that contains the historical datapoints of the balance in different ranges of time. It might not be present in Account and in that case, a fallback JS implementation will be used to calculate this from the operations array
+If needed by the blockchain, an account can also contain coin-specific resources related to a single account, like its "nonce" or additional balances (e.g. for staking), or anything that may be displayed or used in your implementation. It's generally an additional field like `myCoinResources`. See [Family-specific types](#family-specific-types) below.
 
-But if needed by the blockchain, an account can also contain coin-specific resources related to a single account, like its "nonce" or additional balances (e.g. for staking), or anything that may be displayed or used in your implementation. It's generally an additional field like `myCoinResources`. See [Family-specific types](#family-specific-types) below.
 
-For further details, see [Account documentation](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/account.ts)
 
 #### Operation
 
 In short, transactions history in Ledger Live is a list of `Operation`, that are confirmed, unconfirmed or pending (not yet fetched from explorer).
 
-They all share the same model, with an `extra` field that can store any additional data you may need to display:
-
-- `id: string`: unique identifier (encoded as `accountId-hash-TYPE`)
-- `hash: string`: transaction hash from blockchain
-- `type: OperationType`: see [Operation Type](#operation-type) below
-- `value: BigNumber`: atomic value of the operation, as <i>a positive value</i> that affects the account balance (includes fees for OUT, not for IN, only fees for FEES...)
-- `fee: BigNumber`: atomic value of the operation fees (no matter which direction)
-- `senders: string[]`: list of senders addresses
-- `recipients: string[]`: list of recipients addresses
-- `blockHeight?: number`: (optional) height of the block on the blockchain
-- `blockHash?: string`: (optional) hash of the block the operation is in
-- `transactionSequenceNumber?: number`: sequence number of the transaction in blockchains (aka "nonce")
-- `accountId: string`: the Ledger Live account id
-- `date: Date`: parsed transaction date
-- `hasFailed?: boolean`: does the transaction succeeded
-- `subOperations?: Operation[]`: (advanced) in context of accounts that can have tokens, an operation can contains itself operations
-- `internalOperations?: Operation[]`: (advanced) in context of accounts that have internal transactions that belong to a parent transaction
-- `extra: Object`: Extra crypto specific fields
+They all share the same model, with an `extra` field that can store any additional data you may need to display. You will find the detailed and commented fields [here](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/operation.ts#L34).
 
 If <i>MyCoin</i> has specific operation fields (like `additionalField` we added for example), you will be able to display them later. They are not meant to be useful in any flow, only for UI.
 
-If <i>MyCoin</i> uses a "nonce", then `transactionSequenceNumber` must be filled correctly, as it will be necessary for signing new transactions (and will interpreted to clear pending operations). Only outgoing transaction must have this value though. See [Optimistic Operation](#optimistic-operation).
+If <i>MyCoin</i> uses a "nonce", then `transactionSequenceNumber` must be filled correctly, as it will be necessary for signing new transactions (and will interpreted to clear pending operations). Only outgoing transaction must have this value though. 
 
-See [src/types/operation.ts](https://github.com/LedgerHQ/ledger-live-common/blob/master/src/types/operation.ts) for better understanding of all fields.
 
 #### Operation Type
 
-As said above, an `Operation` has a `type` which is generic string typed as `OperationType`, giving more or less the direction of the operation:
+An `Operation` has a `type` which is generic string typed as `OperationType`, giving more or less the direction of the operation:
 
 - `OUT`: A send / transfer amount transaction
 - `IN`: A received / incoming amount transaction
@@ -457,7 +398,7 @@ export type MyCoinPreloadData = {
 export const reflect = (_declare: *) => {};
 ```
 <!--  -->
-{% include alert.html style="tip" text="Core types should be exported for legacy compatibility with existing libcore integrations." %}
+{% include alert.html style="success" text="Core types should be exported for legacy compatibility with existing libcore integrations." %}
 <!--  -->
 
 
@@ -544,11 +485,11 @@ export { toMyCoinResourcesRaw, fromMyCoinResourcesRaw };
 ```
 
 <!--  -->
-{% include alert.html style="tip" text="If your integration of <i>MyCoin</i> does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
+{% include alert.html style="success" text="If your integration of <i>MyCoin</i> does not require coin-specific data in an account, you will not need to define <code>MyCoinResources</code>." %}
 <!--  -->
 
 
-#### Operation, Account and Transaction serialization
+#### Display Format
 
 Since `Operation` will be stored as JSON, you will need to implement specific serializers for the `extra` field.
 
@@ -649,7 +590,7 @@ export default {
 ```
 
 <!--  -->
-{% include alert.html style="tip" text="<code>formatOperationSpecifics()</code> and <code>formatAccountSpecifics()</code> are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging." %}
+{% include alert.html style="success" text="<code>formatOperationSpecifics()</code> and <code>formatAccountSpecifics()</code> are used in the CLI to display account-specific fields and extras of the transaction history, useful for debugging." %}
 <!--  -->
 
 The same idea applies also to the `Transaction` type which needs to be serialized and formatted for CLI:
@@ -706,6 +647,7 @@ export const toTransactionRaw = (t: Transaction): TransactionRaw => {
 
 export default { formatTransaction, fromTransactionRaw, toTransactionRaw };
 ```
+
 
 ### Wrap your API
 
@@ -1834,7 +1776,7 @@ The `makeScanAccounts` helper will automatically execute the default address der
 
 #### Preload currency data (optional)
 
-Before creating or using a currency bridge (e.g. scanning accounts, or every 2 minutes for synchronization), Ledger Live will try to preload some currency data (e.g. tokens, delegators, etc) required for live-common feature to correctly work.
+Before creating or using a currency bridge (e.g. scanning accounts, or every 2 minutes for synchronization), Ledger Live will try to preload some currency data (e.g. tokens, delegators, etc) required for ledger-live-common feature to correctly work.
 
 This preloaded data will be stored in a persisted cache for future use, for Ledger Live to still work if temporarily offline, and speed up startup, depending on `getPreloadStrategy` (`preloadMaxAge` determines the data expiration that will trigger a refresh).
 
@@ -1911,7 +1853,7 @@ export const hydrate = (data: any) => {
 
 Read more on [Currency Bridge documentation](https://github.com/LedgerHQ/ledger-live-common/blob/master/docs/CurrencyBridge.md).
 
-### Cache and performance
+### Cache and performance (optional)
 
 It is important to keep in mind that all currencies work independently and that Live Common provides a common framework to synchronize accounts with a polling strategy, and that network connectivity is not always stable and optimal.
 
@@ -1995,7 +1937,7 @@ See examples like sorting and filtering validators, subscribing to preloaded dat
 
 ### Icon
 
-Icons are usually maintained by Ledger's design team, so you must first check that <i>MyCoin</i> icon is not already added in live-common, in [src/data/icons/svg](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg). It contains cleaned-up versions of Cryptocurrency Icons from [cryptoicons.co](http://cryptoicons.co/), organized by ticker.
+Icons are usually maintained by Ledger's design team, so you must first check that <i>MyCoin</i> icon is not already added in ledger-live-common, in [src/data/icons/svg](https://github.com/LedgerHQ/ledger-live-common/tree/master/src/data/icons/svg). It contains cleaned-up versions of Cryptocurrency Icons from [cryptoicons.co](http://cryptoicons.co/), organized by ticker.
 
 If you need to add your own, they must respect those requirements:
 - Clean SVG with **only** `<path>` elements representing the crypto
@@ -2007,7 +1949,7 @@ If you need to add your own, they must respect those requirements:
 
 Name should be the coin's ticker (e.g. `MYC.svg`) and must not conflict with an existing coin or token.
 
-When building live-common, a [script](https://github.com/LedgerHQ/ledger-live-common/blob/master/scripts/buildReactIcons.js) automatically converts them to React and React Native components.
+When building ledger-live-common, a [script](https://github.com/LedgerHQ/ledger-live-common/blob/master/scripts/buildReactIcons.js) automatically converts them to React and React Native components.
 
 ## Testing
 
