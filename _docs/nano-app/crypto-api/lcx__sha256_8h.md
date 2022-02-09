@@ -119,20 +119,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -164,6 +169,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_sha224_init </td>
           <td class="paramtype"><a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *&#160;</td>
+          
         </tr>
       </table>
   </td>
@@ -193,6 +199,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha224_init_no_throw </td>
           <td class="paramtype"><a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,6 +232,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int cx_sha256_init </td>
           <td class="paramtype"><a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *&#160;</td>
+          
         </tr>
       </table>
   </td>
@@ -254,6 +262,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha256_init_no_throw </td>
           <td class="paramtype"><a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">

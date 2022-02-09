@@ -97,10 +97,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>outblock</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -125,6 +128,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL void cx_des_reset_hw </td>
           <td class="paramtype">void&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -146,10 +150,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>mode</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

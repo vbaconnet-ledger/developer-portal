@@ -81,30 +81,37 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -133,6 +140,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Identifier of the hash function.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -154,15 +162,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -199,20 +211,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hash_id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -250,30 +267,37 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -320,15 +344,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -350,6 +378,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>RIPEMD160 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -371,15 +400,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -416,15 +449,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -459,30 +496,37 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,15 +565,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -551,6 +599,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SHA256 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -572,15 +621,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -617,15 +670,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -660,30 +717,37 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>mac</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>mac_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -722,15 +786,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -752,6 +820,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SHA512 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -773,15 +842,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -818,15 +891,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>in_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

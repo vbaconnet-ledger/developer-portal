@@ -326,6 +326,7 @@ Typedefs</h2></td></tr>
 <tr>
 <th colspan="4">Bits position </th><th colspan="4">Values </th><th colspan="4">Flags </th><th colspan="4">Meaning </th><th colspan="4">Algorithms  </th></tr>
 <tr>
+<td colspan="4">15 </td><td colspan="4">1000000000000000 </td><td colspan="4">CX_NO_REINIT </td><td colspan="4">Do not reinitialize the context on CX_LAST </td></tr>
 <tr>
 <td colspan="4">14:12 </td><td colspan="4">0111000000000000 </td><td colspan="4">CX_ECSCHNORR_Z </td><td colspan="4">Zilliqa scheme </td><td colspan="4">ECSCHNORR </td></tr>
 <tr>
@@ -341,9 +342,13 @@ Typedefs</h2></td></tr>
 <tr>
 <td colspan="4">14:12 </td><td colspan="4">0001000000000000 </td><td colspan="4">CX_ECDH_POINT </td><td colspan="4">ECDH with a point </td><td colspan="4">ECDH </td></tr>
 <tr>
+<td colspan="4">11:9 </td><td colspan="4">0000100000000000 </td><td colspan="4">CX_RND_PROVIDED </td><td colspan="4">Provided random </td></tr>
 <tr>
+<td colspan="4">11:9 </td><td colspan="4">0000011000000000 </td><td colspan="4">CX_RND_RFC6979 </td><td colspan="4">Random from RFC6979 </td></tr>
 <tr>
+<td colspan="4">11:9 </td><td colspan="4">0000010000000000 </td><td colspan="4">CX_RND_TRNG </td><td colspan="4">Random from a PRNG </td></tr>
 <tr>
+<td colspan="4">11:9 </td><td colspan="4">0000001000000000 </td><td colspan="4">CX_RND_PRNG </td><td colspan="4">Random from a TRNG </td></tr>
 <tr>
 <td colspan="4">8:6 </td><td colspan="4">0000000100000000 </td><td colspan="4">CX_CHAIN_OFB </td><td colspan="4">Output feedback mode </td><td colspan="4">AES/DES </td></tr>
 <tr>
@@ -357,11 +362,17 @@ Typedefs</h2></td></tr>
 <tr>
 <td colspan="4">8:6 </td><td colspan="4">0000000000000000 </td><td colspan="4">CX_CHAIN_ECB </td><td colspan="4">Electronic codebook mode </td><td colspan="4">AES/DES </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000010100000 </td><td colspan="4">CX_PAD_PKCS1_OAEP </td><td colspan="4">PKCS1_OAEP padding </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000010000000 </td><td colspan="4">CX_PAD_PKCS1_PSS </td><td colspan="4">PKCS1_PSS padding </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000001100000 </td><td colspan="4">CX_PAD_PKCS1_1o5 </td><td colspan="4">PKCS1-v1_5 padding </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000001000000 </td><td colspan="4">CX_PAD_ISO9797M2 </td><td colspan="4">ISO9797 padding, method 2 </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000000100000 </td><td colspan="4">CX_PAD_ISO9797M1 </td><td colspan="4">ISO9797 padding, method 1 </td></tr>
 <tr>
+<td colspan="4">5:3 </td><td colspan="4">0000000000000000 </td><td colspan="4">CX_PAD_NONE </td><td colspan="4">No padding </td></tr>
 <tr>
 <td colspan="4">2:1 </td><td colspan="4">0000000000000110 </td><td colspan="4">CX_SIGN </td><td colspan="4">Signature </td><td colspan="4">AES/DES </td></tr>
 <tr>
@@ -371,6 +382,7 @@ Typedefs</h2></td></tr>
 <tr>
 <td colspan="4">2:1 </td><td colspan="4">0000000000000000 </td><td colspan="4">CX_DECRYPT </td><td colspan="4">Decryption </td><td colspan="4">AES/DES </td></tr>
 <tr>
+<td colspan="4">0 </td><td colspan="4">0000000000000001 </td><td colspan="4">CX_LAST </td><td colspan="4">Last block </td></tr>
 </table>
 
 </div>

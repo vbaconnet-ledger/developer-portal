@@ -292,6 +292,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">#define CX_CURVE_IS_MONTGOMERY</td>
           <td class="paramtype">&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -309,6 +310,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">#define CX_CURVE_IS_TWISTED_EDWARDS</td>
           <td class="paramtype">&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -326,6 +328,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">#define CX_CURVE_IS_WEIERSTRASS</td>
           <td class="paramtype">&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -395,10 +398,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">&#160;</td>
           <td class="paramname">dom&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -961,20 +967,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>Gx</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>Gy</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1011,10 +1022,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>P</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1052,20 +1066,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a>&#160;</td>
           <td class="paramname"><b>id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1102,15 +1121,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a>&#160;</td>
           <td class="paramname"><b>id</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>p</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1148,10 +1171,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1187,10 +1213,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><b>length</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1224,15 +1253,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>Q</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1273,10 +1306,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a>&#160;</td>
           <td class="paramname"><b>cv</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1313,15 +1349,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><b>is_equal</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1364,20 +1404,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>xy_compressed</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>xy_compressed_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t *&#160;</td>
           <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1418,20 +1463,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>xy_compressed</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>xy_compressed_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1467,6 +1517,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_destroy </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1501,35 +1552,43 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>k_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>r</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>r_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1574,25 +1633,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
           <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>bn_k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>bn_r</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1635,25 +1700,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>y</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>y_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1695,15 +1766,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *&#160;</td>
           <td class="paramname"><b>y</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1742,25 +1817,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>y</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>y_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1799,15 +1880,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>y</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1844,10 +1929,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><b>is_at_infinity</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1888,10 +1976,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><b>is_on_curve</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1929,6 +2020,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ecpoint_neg </td>
           <td class="paramtype"><a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1967,15 +2059,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2015,15 +2111,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2063,10 +2163,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>bn_k</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2105,15 +2208,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2154,10 +2261,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a>&#160;</td>
           <td class="paramname"><b>bn_k</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

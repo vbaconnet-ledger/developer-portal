@@ -93,6 +93,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">#define CX_CHECK</td>
           <td class="paramtype">&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -110,6 +111,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="memname">#define CX_CHECK_IGNORE_CARRY</td>
           <td class="paramtype">&#160;</td>
+          
         </tr>
       </table>
 </div><div class="memdoc">

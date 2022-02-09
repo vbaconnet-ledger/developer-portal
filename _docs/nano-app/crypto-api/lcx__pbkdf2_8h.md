@@ -45,29 +45,37 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">password_len, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">salt, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">salt_len, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">iterations, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">out, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramname">out_len&#160;</td>
         </tr>
         <tr>
+          
+          <td colspan="4">&#160;&#160;&#160;<a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw</a>(<a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af1c7c38d54f080781c6026cb6fed85f6">CX_SHA512</a>, password, password_len, salt, salt_len, iterations, out, out_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -111,40 +119,49 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>password</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned short&#160;</td>
           <td class="paramname"><b>passwordlen</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>salt</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned short&#160;</td>
           <td class="paramname"><b>saltlen</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>iterations</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>outLength</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -170,6 +187,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -191,40 +209,49 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>password</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>passwordlen</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>salt</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>saltlen</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>iterations</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>outLength</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

@@ -329,25 +329,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>Q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>X_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -371,6 +377,15 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Length of the encoded point.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_POINT</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
   </table>
   </dd>
 </dl>
@@ -392,20 +407,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>R</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>Q</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -454,20 +474,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pubkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>privkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>keepprivate</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -490,6 +515,15 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_INTERNAL_ERROR</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_POINT</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
   </table>
   </dd>
 </dl>
@@ -514,25 +548,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pubkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>privkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>keepprivate</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -556,6 +596,15 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_INTERNAL_ERROR</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_POINT</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
   </table>
   </dd>
 </dl>
@@ -577,25 +626,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pubkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>privkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><b>keepprivate</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -642,20 +697,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pubkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>privkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><b>keepprivate</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -704,20 +764,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>pvkey</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -740,6 +805,8 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Length of the key.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -761,20 +828,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>pvkey</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -817,20 +889,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -864,6 +941,8 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Length of the key.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -885,20 +964,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -951,25 +1035,31 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>P_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -993,6 +1083,13 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Length of the encoded point.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
   </table>
   </dd>
 </dl>
@@ -1014,20 +1111,25 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>P</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>k</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>k_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1074,35 +1176,43 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pukey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>a_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>h</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>h_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -1127,6 +1237,15 @@ Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_POINT</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
+    <tr><td class="paramname">CX_INTERNAL_ERROR</td></tr>
   </table>
   </dd>
 </dl>
@@ -1148,35 +1267,43 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pukey</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>a_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>h</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>h_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1229,15 +1356,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -1266,15 +1397,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -1303,15 +1438,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -1332,6 +1471,14 @@ Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
   </table>
   </dd>
 </dl>
@@ -1353,15 +1500,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1408,15 +1559,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -1437,6 +1592,16 @@ Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_NOT_UNLOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER_SIZE</td></tr>
+    <tr><td class="paramname">CX_EC_INVALID_CURVE</td></tr>
+    <tr><td class="paramname">CX_MEMORY_FULL</td></tr>
+    <tr><td class="paramname">CX_NOT_LOCKED</td></tr>
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
+    <tr><td class="paramname">CX_EC_INFINITE_POINT</td></tr>
+    <tr><td class="paramname">CX_NO_RESIDUE</td></tr>
+    <tr><td class="paramname">INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -1458,15 +1623,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>p</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>p_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

@@ -88,10 +88,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -118,6 +121,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>KECCAK identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -139,10 +143,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,10 +194,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -217,6 +227,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SHA3 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -238,10 +249,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -286,15 +300,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>size</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_length</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -320,6 +338,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Either SHAKE128 or SHAKE256 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -341,15 +360,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_length</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -393,10 +416,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -421,6 +447,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SHAKE128 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -442,10 +469,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -488,10 +518,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -516,6 +549,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SHA256 identifier.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">CX_INVALID_PARAMETER</td></tr>
   </table>
   </dd>
 </dl>
@@ -537,10 +571,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">

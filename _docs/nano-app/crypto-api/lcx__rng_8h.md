@@ -73,10 +73,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -111,10 +114,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -145,45 +151,55 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>h1</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>h1_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>q</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>q_len</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,6 +241,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static uint32_t cx_rng_u32 </td>
           <td class="paramtype">void&#160;</td>
+          
         </tr>
       </table>
   </td>
@@ -257,10 +274,13 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
   </td>
@@ -296,15 +316,19 @@ Functions</h2></td></tr>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
+          
           <td class="paramtype"><a class="el" href="../lcx__rng_8h#a952e38c575ed8874d4a875b967cee485">cx_rng_u32_range_randfunc_t</a>&#160;</td>
           <td class="paramname"><b>randfunc</b>&#160;</td>
         </tr>
         <tr>
+          
+          
         </tr>
       </table>
 </div><div class="memdoc">
@@ -337,6 +361,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static uint8_t cx_rng_u8 </td>
           <td class="paramtype">void&#160;</td>
+          
         </tr>
       </table>
   </td>
