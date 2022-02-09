@@ -125,6 +125,16 @@ The one you will use the most before releasing you integration is:
 EXPERIMENTAL_CURRENCIES=mycoin
 ```
 
+to use them : 
+```sh
+EXPERIMENTAL_CURRENCIES=mycoin ledger-live send -c mycoin --amount 0.1 ---recipient mycoinaddr -i 0
+```
+
+or for LLD :
+```sh
+EXPERIMENTAL_CURRENCIES=mycoin yarn start
+```
+
 It will consider `mycoin` as supported (you can also add it to the supported currencies in `cli/src/ledger-live-common-setup-base.ts`).
 
 **For clarity, we will omit this environment variable in this document.**
@@ -307,6 +317,20 @@ There are more types available, existing one will have predefined icons, transla
 
 <i>MyCoin</i> could have also specific operation types, if you need to add a type that is not yet implemented, add them in `src/types/operation.ts`. You will later need to implement some specific code for the Ledger Live Desktop and Mobile to display them correctly.
 
+It will be ask to add an svg for the icon of your type and a label to be translated, you can check for "OPT_IN" operation in Algorand.
+
+
+In LLD : 
+```
+src/renderer/components/OperationsList/ConfirmationCheck.js
+```
+
+In LLM : 
+(You will need to check SVG is wrapped into our component)
+```
+src/icons/OperationStatusIcon/index.js
+```
+
 #### Transaction
 
 `Transaction` will contains any data needed to create a transaction on the blockchain. It is created as soon as the user initiates a transaction flow on Ledger Live, and will be updated according to its inputs, like the amount or choosing a recipient.
@@ -333,7 +357,7 @@ See existing implementations for inspiration: [Polkadot types](https://github.co
 
 #### Family-specific types
 
-You will be implementing the flow types that will be used in your integration, like the Transaction type or the additional data needed to be added to the Account shared type, but also any other types that you will need (remember to always type your functions with flow types).
+You will be implementing typescript types that will be used in your integration, like the Transaction type or the additional data needed to be added to the Account shared type, but also any other types that you will need (remember to always type your functions with typescript).
 
 `src/families/mycoin/types.ts`:
 
@@ -428,7 +452,7 @@ export function fromMyCoinResourcesRaw(r: MyCoinResourcesRaw): MyCoinResources {
 }
 ```
 
-Because of Account being generic, you may need to add your specific resources to `src/types/account.ts`...
+Because of Account being generic, you may need to add your specific resources to `src/types/account.ts`, if you need to store specific information related to the blockchain (like staking, validators, or frozen balance...) that are not handle in Account.
 
 ```ts
 // ...
@@ -448,7 +472,7 @@ import type {
 // };
 ```
 
-...and handle the associated serialization in `src/account/serialization.ts`:
+...and handle the associated serialization in `src/account/serialization.ts` (if you use BigInt you will need to make it raw by changing it to string for example):
 
 ```ts
 // ...
@@ -880,6 +904,8 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
+We call it JS Bridge because historically we used to write the support of blockchain in C++, this is referenced as libcore in the code. We are working to get rid of libcore and importing everything on Javascript. So it's a bridge in javascript for the currency to communicate with the live environment 
+
 `src/families/mycoin/bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
 
 - a CurrencyBridge
@@ -887,7 +913,10 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 #### Starting with a mock
 
-This is a barebone template of a mock bridge implementation.
+Mock will help you test different UI flows on Desktop and Mobile.
+It's connected to any indexer / explorer and gave you a rough idea on how it will look like when connected to the UI.
+
+For example you can use it by doing `MOCK=1 yarn start` on `ledger-live-desktop`
 
 ```ts
 import { BigNumber } from "bignumber.js";
