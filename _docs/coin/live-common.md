@@ -317,7 +317,7 @@ There are more types available, existing one will have predefined icons, transla
 
 <i>MyCoin</i> could have also specific operation types, if you need to add a type that is not yet implemented, add them in `src/types/operation.ts`. You will later need to implement some specific code for the Ledger Live Desktop and Mobile to display them correctly.
 
-It will be ask to add an svg for the icon of your type and a label to be translated, you can check for "OPT_IN" operation in Algorand.
+You will be asked to add an svg for the icon of your type and a label to be translated, you can check for "OPT_IN" operation in Algorand.
 
 
 In LLD : 
@@ -904,7 +904,7 @@ If you need to disconnect from your API after using it, update `src/api/index.ts
 
 ### JS Bridge
 
-We call it JS Bridge because historically we used to write the support of blockchain in C++, this is referenced as libcore in the code. We are working to get rid of libcore and importing everything on Javascript. So it's a bridge in javascript for the currency to communicate with the live environment 
+We call it JS Bridge because historically we used to write the support of blockchain in C++, this is referenced as libcore in the code. We are working to get rid of libcore and importing everything on Javascript. So it's a bridge in JavaScript for the currency to communicate with the Live environment 
 
 `src/families/mycoin/bridge/js.ts` is the entry point of a coin integration. It must export two bridges:
 
@@ -913,8 +913,8 @@ We call it JS Bridge because historically we used to write the support of blockc
 
 #### Starting with a mock
 
-Mock will help you test different UI flows on Desktop and Mobile.
-It's connected to any indexer / explorer and gave you a rough idea on how it will look like when connected to the UI.
+A mock will help you test different UI flows on Desktop and Mobile.
+It's connected to any indexer / explorer and gives you a rough idea on how it will look like when connected to the UI.
 
 For example you can use it by doing `MOCK=1 yarn start` on `ledger-live-desktop`
 
