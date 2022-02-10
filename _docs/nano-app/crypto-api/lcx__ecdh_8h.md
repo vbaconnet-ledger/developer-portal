@@ -1,5 +1,5 @@
 ---
-title: lcx__ecdh_8h
+title: lcx_ecdh.h
 subtitle:
 tags: []
 category: CryptographyAPI

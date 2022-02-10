@@ -1,5 +1,5 @@
 ---
-title: cx__curve__weierstrass__s
+title: cx_curve_weierstrass_s
 subtitle:
 tags: []
 category: CryptographyAPI

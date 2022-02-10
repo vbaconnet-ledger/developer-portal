@@ -1,5 +1,5 @@
 ---
-title: cx__bn__mont__ctx__t
+title: cx_bn_mont_ctx_t
 subtitle:
 tags: []
 category: CryptographyAPI

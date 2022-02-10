@@ -1,5 +1,5 @@
 ---
-title: lcx__crc_8h
+title: lcx_crc.h
 subtitle:
 tags: []
 category: CryptographyAPI

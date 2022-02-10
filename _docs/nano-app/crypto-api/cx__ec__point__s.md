@@ -1,5 +1,5 @@
 ---
-title: cx__ec__point__s
+title: cx_ec_point_s
 subtitle:
 tags: []
 category: CryptographyAPI

@@ -1,5 +1,5 @@
 ---
-title: cx__curve__twisted__edwards__s
+title: cx_curve_twisted_edwards_s
 subtitle:
 tags: []
 category: CryptographyAPI

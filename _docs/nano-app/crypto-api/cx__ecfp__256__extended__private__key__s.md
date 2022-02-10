@@ -1,5 +1,5 @@
 ---
-title: cx__ecfp__256__extended__private__key__s
+title: cx_ecfp_256_extended_private_key_s
 subtitle:
 tags: []
 category: CryptographyAPI

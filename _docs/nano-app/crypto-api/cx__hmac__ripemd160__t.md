@@ -1,5 +1,5 @@
 ---
-title: cx__hmac__ripemd160__t
+title: cx_hmac_ripemd160_t
 subtitle:
 tags: []
 category: CryptographyAPI

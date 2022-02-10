@@ -1,5 +1,5 @@
 ---
-title: lcx__ecfp_8h
+title: lcx_ecfp.h
 subtitle:
 tags: []
 category: CryptographyAPI

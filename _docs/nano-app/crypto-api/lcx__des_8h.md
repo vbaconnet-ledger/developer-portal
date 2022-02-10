@@ -1,5 +1,5 @@
 ---
-title: lcx__des_8h
+title: lcx_des.h
 subtitle:
 tags: []
 category: CryptographyAPI

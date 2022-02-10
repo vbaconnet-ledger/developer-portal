@@ -1,5 +1,5 @@
 ---
-title: lcx__sha256_8h
+title: lcx_sha256.h
 subtitle:
 tags: []
 category: CryptographyAPI

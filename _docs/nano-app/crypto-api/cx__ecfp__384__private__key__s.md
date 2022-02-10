@@ -1,5 +1,5 @@
 ---
-title: cx__ecfp__384__private__key__s
+title: cx_ecfp_384_private_key_s
 subtitle:
 tags: []
 category: CryptographyAPI

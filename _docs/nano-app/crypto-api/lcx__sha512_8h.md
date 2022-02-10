@@ -1,5 +1,5 @@
 ---
-title: lcx__sha512_8h
+title: lcx_sha512.h
 subtitle:
 tags: []
 category: CryptographyAPI

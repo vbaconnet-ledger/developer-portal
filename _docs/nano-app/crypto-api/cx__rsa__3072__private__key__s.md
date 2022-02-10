@@ -1,5 +1,5 @@
 ---
-title: cx__rsa__3072__private__key__s
+title: cx_rsa_3072_private_key_s
 subtitle:
 tags: []
 category: CryptographyAPI

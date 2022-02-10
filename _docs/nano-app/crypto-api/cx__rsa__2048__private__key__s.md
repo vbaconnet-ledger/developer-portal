@@ -1,5 +1,5 @@
 ---
-title: cx__rsa__2048__private__key__s
+title: cx_rsa_2048_private_key_s
 subtitle:
 tags: []
 category: CryptographyAPI

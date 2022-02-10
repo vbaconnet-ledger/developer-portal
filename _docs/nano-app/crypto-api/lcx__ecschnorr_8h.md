@@ -1,5 +1,5 @@
 ---
-title: lcx__ecschnorr_8h
+title: lcx_ecschnorr.h
 subtitle:
 tags: []
 category: CryptographyAPI

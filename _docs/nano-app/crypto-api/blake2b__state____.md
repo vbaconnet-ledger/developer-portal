@@ -1,5 +1,5 @@
 ---
-title: blake2b__state____
+title: blake2b_state__
 subtitle:
 tags: []
 category: CryptographyAPI

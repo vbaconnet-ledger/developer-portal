@@ -1,5 +1,5 @@
 ---
-title: lcx__rng_8h
+title: lcx_rng.h
 subtitle:
 tags: []
 category: CryptographyAPI

@@ -1,5 +1,5 @@
 ---
-title: cx__rsa__1024__private__key__s
+title: cx_rsa_1024_private_key_s
 subtitle:
 tags: []
 category: CryptographyAPI

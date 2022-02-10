@@ -1,5 +1,5 @@
 ---
-title: cx__hash__info__t
+title: cx_hash_info_t
 subtitle:
 tags: []
 category: CryptographyAPI

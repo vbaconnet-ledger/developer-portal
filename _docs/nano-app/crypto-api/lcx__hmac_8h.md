@@ -1,5 +1,5 @@
 ---
-title: lcx__hmac_8h
+title: lcx_hmac.h
 subtitle:
 tags: []
 category: CryptographyAPI

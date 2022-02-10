@@ -1,5 +1,5 @@
 ---
-title: cx__curve__domain__s
+title: cx_curve_domain_s
 subtitle:
 tags: []
 category: CryptographyAPI

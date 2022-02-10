@@ -1,5 +1,5 @@
 ---
-title: ox__rng_8h
+title: ox_rng.h
 subtitle:
 tags: []
 category: CryptographyAPI

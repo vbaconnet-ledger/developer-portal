@@ -1,5 +1,5 @@
 ---
-title: cx__hmac__sha512__t
+title: cx_hmac_sha512_t
 subtitle:
 tags: []
 category: CryptographyAPI

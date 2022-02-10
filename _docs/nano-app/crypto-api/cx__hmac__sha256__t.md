@@ -1,5 +1,5 @@
 ---
-title: cx__hmac__sha256__t
+title: cx_hmac_sha256_t
 subtitle:
 tags: []
 category: CryptographyAPI

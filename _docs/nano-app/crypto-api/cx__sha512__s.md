@@ -1,5 +1,5 @@
 ---
-title: cx__sha512__s
+title: cx_sha512_s
 subtitle:
 tags: []
 category: CryptographyAPI

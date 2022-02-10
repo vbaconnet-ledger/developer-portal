@@ -1,5 +1,5 @@
 ---
-title: lcx__hash_8h
+title: lcx_hash.h
 subtitle:
 tags: []
 category: CryptographyAPI

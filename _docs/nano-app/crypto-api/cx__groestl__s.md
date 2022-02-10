@@ -1,5 +1,5 @@
 ---
-title: cx__groestl__s
+title: cx_groestl_s
 subtitle:
 tags: []
 category: CryptographyAPI

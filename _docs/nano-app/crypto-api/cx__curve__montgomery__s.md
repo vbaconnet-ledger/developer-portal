@@ -1,5 +1,5 @@
 ---
-title: cx__curve__montgomery__s
+title: cx_curve_montgomery_s
 subtitle:
 tags: []
 category: CryptographyAPI

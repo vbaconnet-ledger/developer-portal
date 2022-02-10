@@ -1,5 +1,5 @@
 ---
-title: cx__sha256__s
+title: cx_sha256_s
 subtitle:
 tags: []
 category: CryptographyAPI

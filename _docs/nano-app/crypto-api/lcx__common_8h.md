@@ -1,5 +1,5 @@
 ---
-title: lcx__common_8h
+title: lcx_common.h
 subtitle:
 tags: []
 category: CryptographyAPI

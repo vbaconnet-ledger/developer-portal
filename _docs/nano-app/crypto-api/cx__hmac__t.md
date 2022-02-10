@@ -1,5 +1,5 @@
 ---
-title: cx__hmac__t
+title: cx_hmac_t
 subtitle:
 tags: []
 category: CryptographyAPI

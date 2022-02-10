@@ -1,5 +1,5 @@
 ---
-title: lcx__blake2_8h
+title: lcx_blake2.h
 subtitle:
 tags: []
 category: CryptographyAPI

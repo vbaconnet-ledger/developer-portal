@@ -1,5 +1,5 @@
 ---
-title: lcx__groestl_8h
+title: lcx_groestl.h
 subtitle:
 tags: []
 category: CryptographyAPI

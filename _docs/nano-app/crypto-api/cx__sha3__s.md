@@ -1,5 +1,5 @@
 ---
-title: cx__sha3__s
+title: cx_sha3_s
 subtitle:
 tags: []
 category: CryptographyAPI

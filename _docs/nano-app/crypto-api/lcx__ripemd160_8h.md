@@ -1,5 +1,5 @@
 ---
-title: lcx__ripemd160_8h
+title: lcx_ripemd160.h
 subtitle:
 tags: []
 category: CryptographyAPI

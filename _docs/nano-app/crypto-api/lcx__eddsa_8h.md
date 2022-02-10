@@ -1,5 +1,5 @@
 ---
-title: lcx__eddsa_8h
+title: lcx_eddsa.h
 subtitle:
 tags: []
 category: CryptographyAPI

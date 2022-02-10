@@ -1,5 +1,5 @@
 ---
-title: lcx__sha3_8h
+title: lcx_sha3.h
 subtitle:
 tags: []
 category: CryptographyAPI

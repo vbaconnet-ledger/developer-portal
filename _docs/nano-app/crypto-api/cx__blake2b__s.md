@@ -1,5 +1,5 @@
 ---
-title: cx__blake2b__s
+title: cx_blake2b_s
 subtitle:
 tags: []
 category: CryptographyAPI

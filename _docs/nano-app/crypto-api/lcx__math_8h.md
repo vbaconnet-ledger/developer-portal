@@ -1,5 +1,5 @@
 ---
-title: lcx__math_8h
+title: lcx_math.h
 subtitle:
 tags: []
 category: CryptographyAPI

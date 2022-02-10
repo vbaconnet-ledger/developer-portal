@@ -1,5 +1,5 @@
 ---
-title: cx__ripemd160__s
+title: cx_ripemd160_s
 subtitle:
 tags: []
 category: CryptographyAPI
