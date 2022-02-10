@@ -92,7 +92,9 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CX_CHECK</td>
+          <td>(</td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname">call</td><td>)</td>
           
         </tr>
       </table>
@@ -110,7 +112,9 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CX_CHECK_IGNORE_CARRY</td>
+          <td>(</td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname">call</td><td>)</td>
           
         </tr>
       </table>

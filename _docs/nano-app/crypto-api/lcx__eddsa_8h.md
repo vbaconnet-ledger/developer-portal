@@ -44,17 +44,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int cx_decode_coord </td>
+          <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>coord</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -85,65 +87,67 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_eddsa_sign </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>pvkey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>ctx_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>sig_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int *&#160;</td>
           <td class="paramname"><b>info</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -206,41 +210,43 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_eddsa_sign_no_throw </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *&#160;</td>
           <td class="paramname"><b>pvkey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -296,59 +302,61 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_eddsa_verify </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pukey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>ctx</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>ctx_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -392,41 +400,43 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool cx_eddsa_verify_no_throw </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *&#160;</td>
           <td class="paramname"><b>pukey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hashID</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>hash_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>sig</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>sig_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -464,23 +474,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void cx_encode_coord </td>
+          <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>coord</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>sign</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

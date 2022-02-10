@@ -83,17 +83,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_keccak_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -138,17 +140,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_keccak_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -189,17 +193,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha3_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -244,17 +250,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha3_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -295,23 +303,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha3_xof_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>size</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_length</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -355,23 +365,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha3_xof_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_length</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -411,17 +423,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_shake128_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -464,17 +478,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_shake128_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -513,17 +529,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_shake256_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -566,17 +584,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_shake256_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

@@ -52,41 +52,43 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_des </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -148,23 +150,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void cx_des_dec_block </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>inblock</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>outblock</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -198,23 +202,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void cx_des_enc_block </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>inblock</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>outblock</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -251,23 +257,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_des_init_key </td>
+          <td>(</td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -307,23 +315,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_des_init_key_no_throw </td>
+          <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>rawkey</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>key_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -360,53 +370,55 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_des_iv </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>iv</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>iv_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -470,53 +482,55 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_des_iv_no_throw </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>iv</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>iv_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -573,41 +587,43 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_des_no_throw </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *&#160;</td>
           <td class="paramname"><b>key</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>mode</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

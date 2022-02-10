@@ -153,17 +153,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_groestl_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -201,17 +203,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_groestl_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a> *&#160;</td>
           <td class="paramname"><b>hash</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

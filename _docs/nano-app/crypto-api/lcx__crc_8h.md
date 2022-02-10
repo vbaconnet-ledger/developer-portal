@@ -58,17 +58,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t cx_crc16 </td>
+          <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><b>buffer</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -95,23 +97,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t cx_crc16_update </td>
+          <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><b>crc</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><b>buffer</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

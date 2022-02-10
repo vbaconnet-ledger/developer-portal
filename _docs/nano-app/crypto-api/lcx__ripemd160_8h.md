@@ -91,7 +91,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_ripemd160_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>
@@ -121,7 +123,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_ripemd160_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>

@@ -34,17 +34,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SYSCALL uint32_t cx_crc32_hw </td>
+          <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><b>buf</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

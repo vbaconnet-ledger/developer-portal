@@ -34,17 +34,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SYSCALL void cx_trng_get_random_data </td>
+          <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>buf</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>size</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>

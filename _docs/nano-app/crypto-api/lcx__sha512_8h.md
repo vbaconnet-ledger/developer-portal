@@ -114,29 +114,31 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">size_t cx_hash_sha512 </td>
+          <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>in</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>in_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -168,7 +170,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha384_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>
@@ -198,7 +202,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha384_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>
@@ -231,7 +237,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cx_sha512_init </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>
@@ -261,7 +269,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_sha512_init_no_throw </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__sha512_8h#a53d64cea729324cd5b0b260e3657e04e">cx_sha512_t</a> *&#160;</td>
+          <td class="paramname"><b>hash</b></td><td>)</td>
           
         </tr>
       </table>

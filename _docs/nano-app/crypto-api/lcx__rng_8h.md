@@ -68,17 +68,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static unsigned char* cx_rng </td>
+          <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>buffer</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -109,17 +111,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void cx_rng_no_throw </td>
+          <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>buffer</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -146,59 +150,61 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a> cx_rng_rfc6979 </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a>&#160;</td>
           <td class="paramname"><b>hash_id</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>x</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>x_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>h1</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>h1_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><b>q</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>q_len</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><b>out</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><b>out_len</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -240,7 +246,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static uint32_t cx_rng_u32 </td>
+          <td>(</td>
           <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           
         </tr>
       </table>
@@ -269,17 +277,19 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static uint32_t cx_rng_u32_range </td>
+          <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>b</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -311,23 +321,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t cx_rng_u32_range_func </td>
+          <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>a</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><b>b</b>, </td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
+          <td colspan="2" class="paramkey"></td>
           
           <td class="paramtype"><a class="el" href="../lcx__rng_8h#a952e38c575ed8874d4a875b967cee485">cx_rng_u32_range_randfunc_t</a>&#160;</td>
           <td class="paramname"><b>randfunc</b>&#160;</td>
         </tr>
         <tr>
           
+          <td>)</td>
           
         </tr>
       </table>
@@ -360,7 +372,9 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static uint8_t cx_rng_u8 </td>
+          <td>(</td>
           <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           
         </tr>
       </table>
