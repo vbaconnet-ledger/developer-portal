@@ -58,3 +58,27 @@ As part of a Ledger Live blockchain integration, you should provide a indexer al
 The Ledger Live application uses our own explorers for Bitcoin and Ethereum forks.
 
 
+## Work breakdown 
+
+### Timeline
+
+This timeline shows shows the steps and relative time of these steps that you will go through for most integrations.
+
+<!-- ------------- Image ------------- -->
+
+{: .uk-text-center}
+[![Global Architecture](../images/timeline.png){:width="350"}](../images/timeline.png)
+
+<!-- --------------------------------- -->
+
+For any other implempentation (staking, tokens, NFTs), you will be guided by the Blockchain support team. 
+
+### Documentation
+
+Quicklinks to the documentation needed in the timeline:
+
+- [getAddress and how to test it with the CLI](../address-derivation)
+- [Add accounts and Send](../js-bridge)
+- [Dataset tests](run-ledger-live/#test-dataset)
+- [Bot tests](../run-ledger-live/#what-are-the-focus-when-testing)
+- [Setup and customise LLD and LLM](../desktop-mobile)
