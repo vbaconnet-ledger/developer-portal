@@ -13,7 +13,7 @@ In this section, we will guide you through the process of developing your non-DA
 
 ## What is a non-DApp?
 
-In the context of Live Apps, a non-DApp is an application that leverages the Ledger Live API. By doing so it can get access to the native features of Ledger Live and to the user’s accounts and information.
+In the context of Live Apps, a non-DApp is an application that leverages the Ledger Live SDK. By doing so it can get access to the native features of Ledger Live and to the user’s accounts and information.
 
 ## How do I develop a non-DApp? 
 
