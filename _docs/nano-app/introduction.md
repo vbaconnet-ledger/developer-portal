@@ -60,4 +60,4 @@ Other languages are possible (no details here).
 
 
 ## Contribute
-If you want to improve the documentation you can the comment box at the bottom of each page, or open a pull request on our repository.
+If you want to improve the documentation you can the comment box at the bottom of each page, or open a pull request on our repository
