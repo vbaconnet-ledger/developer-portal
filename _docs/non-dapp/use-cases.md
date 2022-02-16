@@ -11,8 +11,6 @@ layout: doc
 
 Use [requestAccount](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/LedgerLivePlatformSDK.md#requestaccount) SDK function to retrieve the account the user wants to use to deposit crypto. Set the *currencies* parameter to restrict the account list, set the *allowAddAccount* parameter to *true* to allow the user to create an account on the fly.
 
-You can also use [listAccount](https://github.com/LedgerHQ/live-app-sdk/blob/main/docs/reference/classes/LedgerLivePlatformSDK.md#listaccounts) to get all accounts.
-
 ## Sell (crypto to fiat swap)
 
 Use this [function](../howto/sell/)
