@@ -1,5 +1,5 @@
 ---
-title: Transfer of Sol between accounts
+title: Transfer Sol between accounts
 subtitle:
 tags: []
 category: Connect a wallet
@@ -56,7 +56,6 @@ Your working folder must look like this.
 *Fig. 2: Folder of the Application*
 
 ### Code Implementation
-
 #### index.html
 
 In index.html copy-paste the following code :

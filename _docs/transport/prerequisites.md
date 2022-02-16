@@ -8,17 +8,16 @@ toc: true
 layout: doc
 ---
 
-## Summary
-
-To connect your app you will need to install:
-- [Node and NPM](#node)
+To connect your app you need:
+<!-- no toc -->
+- [node and npm](#node)
 - [Ledger Live](#ledger-live-installation)
-- [The Nano App](#nano-app-installation) of the coin that you are going to use (to use this documentation you will need Bitcoin, Ethereum and Solana)
+- [The Nano App](#nano-app-installation) of the coin used. This documentation uses Bitcoin, Ethereum and Solana.
 - At least [one account](#account-creation) for each coin (except for Solana).
 
 ## Node
 
-If not already installed, install <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. You can check if you have it installed by checking the version with the following commands:
+Make sure you have <a href="https://nodejs.org/en/download/">Node & npm</a>, choose the LTS version of your operating system. You can check if you have it installed by checking the version with the following commands:
 
 ```
 $ node -v
@@ -28,7 +27,7 @@ $ npm -v
 6.14.15
 ```
 
-The commands should print the versions of Node.js and npm accordingly.
+The commands prints the versions of Node.js and npm respectively.
 
 <!--  -->
 {% include alert.html style="note" text="The integrations and tutorials should work with older versions of Node and npm but it has not been tested by our team." %}
@@ -51,7 +50,7 @@ Then connect your Ledger Nano to your computer and unlock it.
 [![Ledger Device Unlock](../images/ledgerCodePin.jpg){:width="300px"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}        
 *Fig. 2: Ledger Device Unlock*
 
-Then Ledger Live will ask you to allow the Ledger device, just press the two buttons simultaneously to allow it.
+Then Ledger Live asks you to allow the Ledger device, just press the two buttons simultaneously to allow it.
 
 
 {: .center}
@@ -79,7 +78,7 @@ In this integration, we will use the Ethereum and Bitcoin application.
 ## Account Creation
 
 To use the Bitcoin/Ethereum Nano Apps you have to create a Bitcoin/Ethereum account.
-We will present there the creation of a bitcoin account but it is the same for any application supported by Ledger Live.
+Here is the creation of a bitcoin account but it is the same for any application supported by Ledger Live.
 
 
 To create your Bitcoin account:

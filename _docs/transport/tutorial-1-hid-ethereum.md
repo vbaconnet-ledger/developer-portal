@@ -1,5 +1,5 @@
 ---
-title: Transfer of Ethers between accounts
+title: Transfer Eth between accounts
 subtitle:
 tags: [transport, device, communicate, companion wallet]
 category: Connect your app
@@ -7,21 +7,25 @@ author:
 toc: true
 layout: doc
 ---
-## Introduction
-In this section, we will guide you through the creation of an application. This application will create a transaction that will be signed with the Ledger Nano before sending it to the blockchain.
+## Introduction  
+
+In this section, you will be guided through the creation of an application. This application creates a transaction signed with the Ledger Nano before sending it to the blockchain.
 The purpose of the application is to transfer ethers from your ethereum account on your Ledger to another account.
 
-## Prerequisites
-Before startint, make sure you have gone through the [prerequisites](../prerequisites).
+This implementation is a vanilla javascript web application, that uses the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the Nano.
 
-### Send Ether token to your Ledger Nano ethereum account
-To send some ethers on the Ropsten network, go to one of the ropsten faucet websites:
+## Prerequisites  
+
+Before starting, make sure you have gone through the [prerequisites](../prerequisites).
+
+## Get some Ether tokens 
+To get some ethers on your Ledger Nano ethereum account from the Ropsten network, go to one of the Ropsten Faucet websites:
 - [Ropsten Ethereum Faucet](https://faucet.ropsten.be/), or
 - [Dimensions Network](https://faucet.dimensions.network/)
 
 The Ropsten network is not visible on Ledger Live, you can then check the transaction passed on [ropsten.etherscan.io](https://ropsten.etherscan.io/). 
 
-#### Ropsten Ethereum Network
+### Ropsten Ethereum Network
 Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your Wallet Public Key on the input and click on "Send me test Ether"
 
 {: .center}
@@ -29,8 +33,7 @@ Go to the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) website put your
 *Fig. 1: Ropsten Ethereum Faucet*
 
 
-
-#### Dimensions Network
+### Dimensions Network (alternative)
 Go to the [Dimensions Network](https://faucet.dimensions.network/) website put your Wallet Public Key on the input, do the captcha and click on "Send me test Ether"
 
 {: .center}
@@ -38,11 +41,7 @@ Go to the [Dimensions Network](https://faucet.dimensions.network/) website put y
 *Fig. 2: Ropsten Ethereum Faucet*
 
 
-## Tutorial implementation
-
-In this implementation, we will be building a web application with vanilla javascript that uses the HID protocol from a [Ledger package](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid) to communicate with the ledger.
-
-### Project Initialization
+## Setting up
 It is time to implement the application and test it. First, open a terminal and create a new folder. For this tutorial, the folder will be named "e2e-eth-tutorial”.
 Run:
 
@@ -57,9 +56,10 @@ Initialize the project by running the following:
 npm init
 ```
 
-Answer the questions displayed or by default press enter. There is no incidence on the execution.
+A series of questions are displayed. The answers can be blank.  
+Answer all the questions until  "Is this OK? (yes)"
 
-Run:
+Then run:
 
 ```console
 touch index.html
@@ -76,11 +76,11 @@ Your working folder must look like this.
 [![Folder tutorial](../images/folder-e2e-eth.png)](../images/folder-e2e-eth.png){: style="border-bottom:none;"}  
 *Fig. 3: Folder of the Application*
 
-### Code Implementation
+## File contents 
 
-#### index.html
+### index.html 
 
-In index.html copy-paste the following code :
+Copy-paste the following code :
 
 ```html
 <!DOCTYPE html>
@@ -159,9 +159,9 @@ In index.html copy-paste the following code :
 ```
 
 
-#### index.js
+### index.js
 
-In index.js copy-paste the following code :
+Copy-paste the following code :
 
 ```javascript
 import { ethers } from "ethers";
@@ -203,7 +203,6 @@ document.getElementById("connect-ledger").onclick = async function () {
     document.getElementById("recipient").value = recipient;
     document.getElementById("gasLimit").value = gasLimit;
 }
-
 
 document.getElementById("tx-transfer").onclick = async function () {
     //Getting information from the inputs
@@ -248,9 +247,9 @@ document.getElementById("tx-transfer").onclick = async function () {
 }
 ```
 
-#### style.css
+### style.css
 
-In style.css copy-paste the following code :
+Copy-paste the following code :
 
 ```css
 .modal-content{
@@ -280,9 +279,9 @@ In style.css copy-paste the following code :
 }
 ```
 
-### Dependencies Installation
+## Dependencies
 
-#### Install the packages
+### Package installation
 
 Run:
 
@@ -297,7 +296,7 @@ npm install --save ethers
     <thead>
         <tr>
             <th colspan="1">Package</th>
-            <th colspan="2">What does it do?</th>
+            <th colspan="2">What it does</th>
         </tr>
     </thead>
     <tbody>
@@ -311,7 +310,7 @@ npm install --save ethers
         </tr>
         <tr>
             <td><a href="https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webhid">@ledgerhq/hw-transport-webhid</a></td>
-            <td colspan="2">It provides you with all the methods to interact with your Ledger with an HID connexion.</td>
+            <td colspan="2">It provides you with all the methods to interact with your Nano with an HID connexion.</td>
         </tr>
         <tr>
             <td><a href="https://docs.ethers.io/v5/">ethers</a></td>
@@ -320,18 +319,19 @@ npm install --save ethers
     </tbody>
 </table>
 
-#### Modify Package.json
+### Modify package.json
 
-Modify the 5th line: `"main": "index.js"` => `"source": "index.html"`
-And ensure you have this line in scripts:
+1. Modify the 4th line: `"main": "index.js"` => `"source": "index.html"` (keep the comma)  
+2. Insert this line `"start": "parcel"`  
+<!-- indent this code for the correct list numbering -->
+   ```javascript  
+     "scripts": {
+       "start": "parcel"
+     },  
+   ```  
+3. You must remove the `"test":` line
 
-```javascript
-  "scripts": {
-    "start": "parcel"
-  },
-```
-
-Your file should now look like this:
+Your file now looks similar to this:
 
 ```javascript
 {
@@ -355,81 +355,86 @@ Your file should now look like this:
 }
 ```
 
-## Tutorial Test
+## Demo time
 
-### Start the Development Server
-Now that the Setup is finished, the app has to be built to be displayed.
-Start the development server:
+Now the web application has to be built and displayed.  
+
+### Launch the server
 
 ```console
 npm run start
 ```
 
-Now the application is up and running. Open the browser and go to `localhost:1234`, it will display :
+The application is now ready in the development server.  
+Open a browser and go to `localhost:1234`.  
+Don't click on "Connect your Wallet" yet.  
+
+### Plug the Nano
+First plug and unlock the Nano.  
+
+{: .center}
+[![Enter PIN](../images/ledgerCodePin.jpg){:width="240"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
+*Fig. 4: Enter PIN*
+
+Open the ethereum application.  
+
+{: .center}
+[![Open the Ethereum Application](../images/ledgerEth.jpg){:width="240"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
+*Fig. 5: Open the Ethereum Application*
+
+{: .center}
+[![Ethereum Application running](../images/ledgerReady.jpg){:width="240"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
+*Fig. 6: Ethereum Application running*
+
+### Open the Nano connection
+
+Click on "Connect your Wallet".  
 
 {: .center}
 [![Application running on browser](../images/tutorial-1-view.png)](../images/tutorial-1-view.png){: style="border-bottom:none;"}  
-*Fig. 5: Application Running on Browser*
-
-### Plug Your Ledger Device
-Before clicking on the text connect your Ledger to the USB port, unlock it and run the ethereum application.
-The steps are described below.
-
-{: .center}
-[![Ledger Enter Code Pin](../images/ledgerCodePin.jpg){:width="300"}](../images/ledgerCodePin.jpg){: style="border-bottom:none;"}  
-*Fig. 6: Ledger Enter Code Pin*
-
-{: .center}
-[![Run Ethereum Application on Ledger Nano](../images/ledgerEth.jpg){:width="300"}](../images/ledgerEth.jpg){: style="border-bottom:none;"}   
-*Fig. 7: Run Ethereum Application on Ledger Nano*
-
-{: .center}
-[![Ethereum Application is Running on Ledger Nano](../images/ledgerReady.jpg){:width="300"}](../images/ledgerReady.jpg){: style="border-bottom:none;"}   
-*Fig. 8: Ethereum Application is Running on Ledger Nano*
+*Fig. 7: Application Running on Browser*
 
 
-### Connect Your Ledger to the Application
-Now you can click on the "Connect your Wallet" button and a modal will be opened.
 Click on the Ledger logo.
 
 {: .center}
-[![Choice of Wallet](../images/tutorial-1-connect.png)](../images/tutorial-1-connect.png){: style="border-bottom:none;"}  
-*Fig. 9: Choice of Wallet*
+[![Choose Wallet](../images/tutorial-1-connect.png)](../images/tutorial-1-connect.png){: style="border-bottom:none;"}  
+*Fig. 8: Choose Wallet*
 
-Now choose the Ledger Nano to connect it to the browser.
-
-{: .center}
-[![Connect the Ledger Nano](../images/tutorial-1-pairing.png)](../images/tutorial-1-pairing.png){: style="border-bottom:none;"}  
-*Fig. 10: Connect the Ledger Nano*
-
-If all goes well, the input fields will be filled with data. The greyed input is not to be changed and it is directly extracted either from the blockchain or from your Ledger Nano application.
+Choose the Nano to connect it to the web application.
 
 {: .center}
-[![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
-*Fig. 11: Application After Connecting Ledger Nano*
+[![Connect the Nano](../images/tutorial-1-pairing.png)](../images/tutorial-1-pairing.png){: style="border-bottom:none;"}  
+*Fig. 9: Connect the Nano*
 
-
-### Create a transaction to transfer ethereum
-
-Now that the inputs are filled with data. It is time to transfer some ether tokens from your Ledger ethereum account to another account (you can keep the default account on the "index.js" file).  
-Therefore, click on "Create Transaction" to create the transaction which will be signed by your ledger before sending it to the blockchain.  
+The input fields are pre-filled with data. Greyed data cannot be changed because it is read directly either from the blockchain or from your Nano application.
 
 {: .center}
-[![Application After Connecting Ledger Nano](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
-*Fig. 12: Application After Connecting Ledger Nano*
+[![Nano connected](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
+*Fig. 10: Nano connected*
 
-When the transaction proceed and finalize, an URL will be displayed on the screen. This URL is a link to Ropsten Etherscan to review the transaction.  
-There you can find all the information concerning the transaction you have previously sent.
+
+### Create a transaction
+
+Now that the inputs are filled you can transfer ether tokens from your Nano ethereum account to another account (you can state the default account in "index.js").  
+When you click on "Create Transaction" it will create the transaction which will then be signed on your Nano before sending it to the blockchain.  
+
+{: .center}
+[![Ready to create the transaction](../images/tutorial-1-view2.png)](../images/tutorial-1-view2.png){: style="border-bottom:none;"}  
+*Fig. 11: Ready to create the transaction*
+
+When the transaction is finalized, a URL is displayed on the screen. It is a link to Ropsten Etherscan where the transaction can be displayed.  
+You can see all the transaction information.
 
 {: .center}
 [![Result after Sending Transaction](../images/tutorial-1-result.png)](../images/tutorial-1-result.png){: style="border-bottom:none;"}  
-*Fig. 13: Result after Sending Transaction*
+*Fig. 12: Result after Sending Transaction*
 
-If you go on Etherscan you can see the information of your transaction.
+If you go on Etherscan you can see the information about the transaction.
 
 {: .center}
 [![Result after Sending Transaction](../images/tutorial-1-etherscan.png)](../images/tutorial-1-etherscan.png){: style="border-bottom:none;"}  
-*Fig. 14: Transaction Information on Ropsten Etherscan*
+*Fig. 13: Transaction Information on Ropsten Etherscan*
 
 
-Congratulations, you have successfully built your first transfer application connected with Ledger !!!
+Congratulations, you have successfully built your first transfer application connected to a Nano.
