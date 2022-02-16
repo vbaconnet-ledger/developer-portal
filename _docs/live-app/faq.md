@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 subtitle:
-tags: [platform app, platform application, live app, ledger live app, faq]
+tags: [non dapp, live app, ledger live app, faq]
 category: Live Application
 toc:
 layout: doc

@@ -1,6 +1,10 @@
 - title: Integrating tokens
   docs:
   - token/introduction
-  - token/erc20-bep20
+  - subfolderitems:
+    - title: ERC20, BEP20 and Polygon tokens
+      docs:
+      - token/erc20-bep20
+      - token/token-form-content
   - token/asa
   - token/trc

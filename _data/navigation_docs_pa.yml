@@ -1,25 +1,28 @@
 - title: "Live App: Non-DApp" 
   docs:
-  - platform-app/introduction
+  - non-dapp/introduction
+  - non-dapp/use-cases
 
 - title: Tutorial
   docs:
-  - platform-app/tutorial/introduction
-  - platform-app/tutorial/1-setup
-  - platform-app/tutorial/2-manifest
-  - platform-app/tutorial/3-import
-  - platform-app/tutorial/4-test
-  - platform-app/tutorial/conclusion
+  - non-dapp/tutorial/introduction
+  - non-dapp/tutorial/1-setup
+  - non-dapp/tutorial/2-manifest
+  - non-dapp/tutorial/3-import
+  - non-dapp/tutorial/4-test
+  - non-dapp/tutorial/conclusion
 
 - title: How to
   docs:
-  - platform-app/howto/setup
-  - platform-app/howto/sign
-  - platform-app/howto/broadcast
-  - platform-app/howto/test
-  - platform-app/howto/release
+  - non-dapp/howto/setup
+  - non-dapp/howto/sign
+  - non-dapp/howto/broadcast
+  - non-dapp/howto/sell
+  - non-dapp/howto/fund
+  - non-dapp/howto/test
+  - non-dapp/howto/release
 
 - title: Reference
   docs:
-  - platform-app/reference/manifest 
-  - platform-app/reference/sdk
+  - non-dapp/reference/manifest 
+  - non-dapp/reference/sdk

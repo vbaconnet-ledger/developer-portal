@@ -8,7 +8,7 @@ author:
 layout: doc
 ---
 
-## User profile
+## User profile  
 
 #### If you are new to developing Nano Applications
 
@@ -33,7 +33,7 @@ BOLOS is the operating system behind all Ledger personal security devices. It pr
 
 ### Personal Security Devices (Learn - PSDs)
 
-Ledger personal security devices allows users to store cryptographic secrets and sign transactions securely and conveniently. It is important to understand how they work before coding a Nano Application.
+Ledger Personal Security Devices allows users to store cryptographic secrets and sign transactions securely and conveniently. It is important to understand how they work before coding a Nano Application.
 
 [Learn about the personal security devices](../psd-introduction)
 
@@ -60,4 +60,4 @@ Other languages are possible (no details here).
 
 
 ## Contribute
-If you want to improve the documentation you can the comment box at the bottom of each page, or open a pull request on our repository.
+If you want to improve the documentation you can the comment box at the bottom of each page, or open a pull request on our repository

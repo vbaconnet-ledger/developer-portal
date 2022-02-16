@@ -9,12 +9,12 @@ toc: true
 
 ## Prerequisites
 
- Before testing your app, make sure you have completed the following requirements:
+ Before testing your appplication, make sure you have completed the following requirements:
  - Download and install [Ledger Live Desktop](https://www.ledger.com/ledger-live/download).
  - Enable Ledger Live [Developer Mode](../../../live-app/developer-mode).
  - Write your [Manifest file](../../reference/manifest).
 
-## Test your Platform App in Ledger Live
+## Test your Live App in Ledger Live
 
 In the Ledger Live developer tab, enable the option **Enable Platform dev tools**. It will allow you to use a browser-like developer tools window to inspect your application.
 
