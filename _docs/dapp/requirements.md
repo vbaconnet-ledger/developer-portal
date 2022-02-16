@@ -25,7 +25,7 @@ To make sure the review process of your Nano Plugin goes smoothly and quickly, w
         </tr>
         <tr>
             <td>Security</td>
-            <td colspan="4">Use the <a href="../nano-plugin/boilerplate-plugin/">Boilerplate Plugin</a>  and the <a href="../nano-plugin/testing/">Zondax Zemu Testing Framework</a></td>
+            <td colspan="4">Use the <a href="../nano-plugin/boilerplate-plugin/">Boilerplate Plugin</a></td>
         </tr>
         <tr>
             <td>Coding</td>
