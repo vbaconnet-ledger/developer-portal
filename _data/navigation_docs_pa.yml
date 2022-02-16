@@ -1,6 +1,7 @@
 - title: "Live App: Non-DApp" 
   docs:
   - non-dapp/introduction
+  - non-dapp/use-cases
 
 - title: Tutorial
   docs:
