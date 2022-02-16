@@ -21,7 +21,7 @@ To make sure the review process of your Nano Plugin goes smoothly and quickly, w
     <tbody>
         <tr>
             <td>General</td>
-            <td colspan="4">Communicate to Ledger the Nano App name, your name, the legal entity name and your email address</td>
+            <td colspan="4">Communicate to Ledger the DApp name, the smart contract address (if applicable), your name, the legal entity name and your email address</td>
         </tr>
         <tr>
             <td>Security</td>
@@ -37,7 +37,7 @@ To make sure the review process of your Nano Plugin goes smoothly and quickly, w
         </tr>
         <tr>
             <td>UI Flow and Video</td>
-            <td colspan="4">Follow the <a href="../../nano-app/ui-flow-video">Nano App flow and video requirements</a> with your app features</td>
+            <td colspan="4">Follow the <a href="../../nano-app/ui-flow-video">Nano App flow and video requirements</a> with your DApp features</td>
         </tr>
         <tr>
             <td>Documentation</td>
