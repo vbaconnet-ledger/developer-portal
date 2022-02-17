@@ -62,7 +62,7 @@ The Ledger Live application uses our own explorers for Bitcoin and Ethereum fork
 
 ### Timeline
 
-This timeline shows shows the steps and relative time of these steps that you will go through for most integrations.
+This timelien shows the relative time of the steps you will go through for most integrations.
 
 <!-- ------------- Image ------------- -->
 
@@ -71,7 +71,7 @@ This timeline shows shows the steps and relative time of these steps that you wi
 
 <!-- --------------------------------- -->
 
-For any other implempentation (staking, tokens, NFTs), you will be guided by the Blockchain support team. 
+For any complementary implempentation (staking, tokens, NFTs), you will be guided by the Blockchain support team. 
 
 ### Documentation
 
