@@ -14,11 +14,10 @@ You can reach out to us [on Discord](https://discord.gg/Ledger). Please introduc
 
 ## Wait for the Ledger review
 
-After sending your application, it will not be listed in Ledger Live right away. Ledger needs to review and validate the code, from a functionality, security, design and business point of view.
+After sending your application, it will not be listed in Ledger Live right away. Ledger needs to perform some tests.
 
 An application will be listed publicly (official Ledger support) only when:
 - It has been tested and validated by at least someone from Ledger Developer Success Team,
-- It passed the security audit (including plugin when necessary),
 - Ledger is ready to communicate officially about the app release (tweet, blogpost, website page update),
 - Customer support pages are available on Ledger Help Center,
 - General T&Cs have been signed,
