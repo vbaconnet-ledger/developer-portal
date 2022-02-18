@@ -1,7 +1,6 @@
 - title: "Live App: DApp" 
   docs:
   - dapp/process
-  - dapp/requirements
 
 - title: Development how-to
   docs:
