@@ -1,11 +1,13 @@
 ---
-title: Requirements
+title: Plugin requirements and submission
 subtitle:
 tags: [live app, ledger live app, dapp, process, submission]
 category: "Live App: Dapp integration"
 toc:
 layout: doc
 ---
+
+## Requirements
 
 The following requirements are here to provide a secure and unified experience for Ledger devices users.
 
@@ -21,31 +23,27 @@ To make sure the review process of your Nano Plugin goes smoothly and quickly, w
     <tbody>
         <tr>
             <td>General</td>
-            <td colspan="4">Communicate to Ledger the DApp name, the smart contract address (if applicable), your name, the legal entity name and your email address</td>
-        </tr>
-        <tr>
-            <td>Security</td>
-            <td colspan="4">Use the <a href="../nano-plugin/boilerplate-plugin/">Boilerplate Plugin</a></td>
+            <td colspan="4">Communicate to Ledger the DApp name, the smart contract address (if applicable), and an email address.</td>
         </tr>
         <tr>
             <td>Coding</td>
-            <td colspan="4">Go through the <a href="../nano-plugin/code-overview/">Plugin Code walkthrough</a> to create your plugin</td>
+            <td colspan="4">Go through the <a href="../nano-plugin/code-overview/">Plugin Code walkthrough</a> to create your plugin.</td>
         </tr>
         <tr>
             <td>Design</td>
-            <td colspan="4">Follow the <a href="../../nano-app/design-requirements">Nano App design requirements</a></td>
-        </tr>
-        <tr>
-            <td>UI Flow and Video</td>
-            <td colspan="4">Follow the <a href="../../nano-app/ui-flow-video">Nano App flow and video requirements</a> with your DApp features</td>
+            <td colspan="4">Follow the <a href="../../nano-app/design-requirements">Nano App design requirements.</a></td>
         </tr>
         <tr>
             <td>Documentation</td>
-            <td colspan="4">Follow the <a href="../../nano-app/documentation-requirements">Nano App documentation requirements</a></td>
+            <td colspan="4">Follow the <a href="../../nano-app/documentation-requirements">Nano App documentation requirements.</a></td>
         </tr>
         <tr>
             <td>Support</td>
-            <td colspan="4">Follow the <a href="../../nano-app/support-requirements">Nano App support requirements</a></td>
+            <td colspan="4">Follow the <a href="../../nano-app/support-requirements">Nano App support requirements.</a></td>
         </tr>
     </tbody>
 </table>
+
+## Submission
+
+Once your plugin is ready, please [fill in this form](https://ledger.typeform.com/to/YZZCHEB8).

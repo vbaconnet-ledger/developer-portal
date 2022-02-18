@@ -1,6 +1,7 @@
 - title: "Live App: DApp" 
   docs:
   - dapp/process
+  - dapp/requirements
 
 - title: Development how-to
   docs:
@@ -9,8 +10,8 @@
 
 - title: DApp Plugin
   docs:
-  - dapp/nano-plugin/overview
   - dapp/requirements
+  - dapp/nano-plugin/overview
   - dapp/nano-plugin/environment-setup
 
 - title: Code walkthrough
