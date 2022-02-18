@@ -111,9 +111,28 @@ Here is a diagram to explain this:
 
 [![Payload and Payload Signature generation diagram](../../images/funding-payload-signature-generation.png)](../../images/funding-payload-signature-generation.png)
 
-- `binaryPayload`: The transaction data's parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf (Byte Array). Finally, with [Base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `binaryPayload` field.
+- `binaryPayload`: The transaction data's parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf to get a Byte Array. Finally, with [Base64url encoding](https://en.wikipedia.org/wiki/Base64) you get the `binaryPayload` field.
 
-- `signature`: From the binary encoding of the previous [protobuf](https://developers.google.com/protocol-buffers) (Byte Array), you sign it with [ES256](https://ldapwiki.com/wiki/ES256) and your private key to get a Signature Byte Array. Finally, with [Base64 encoding](https://en.wikipedia.org/wiki/Base64) you get the `signature` field.
+- `signature`: Add "." in front of the previously encoded `binaryPayload`, hash it with [sha256](https://www.n-able.com/blog/sha-256-encryption) and finally sign it with [secp256r1](https://neuromancer.sk/std/secg/secp256r1) to get the `signature` field.
+
+
+Here is a code snippet to illustrate the binaryPayload and signature generation process:
+
+```ts
+/* binaryPayload generation */
+// get a Byte Array (binary) representation of the protobuf data    
+const payload: Buffer = Buffer.from(protobufData);
+// base64url encode the payload
+const binaryPayload: Buffer = Buffer.from(base64url(payload));
+
+/* signature generation */
+// create the message to be signed from the binaryPayload
+const message = Buffer.concat([Buffer.from('.'), binaryPayload])
+// create a sha256 digest of the message
+const digest: Buffer = Buffer.from(sha256.sha256.array(message));
+// sign the message using your private key
+const signature = Buffer.from(secp256r1.sign(digest, YOUR_PRIVATE_KEY).signature)
+```
 
 ## Complete the exchange
 
