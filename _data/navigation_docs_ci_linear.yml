@@ -27,6 +27,8 @@
   - coin/types
   - coin/api
   - coin/js-bridge
+  - coin/sync
+  - coin/send
   - coin/cache
   - coin/front-end
   - coin/react-hooks
