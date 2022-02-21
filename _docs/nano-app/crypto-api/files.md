@@ -7,7 +7,7 @@ toc:
 layout: doc
 ---
 
-This documentation is generated automatically from the code. The following structure is the one you will find in _____. You can navigate through the files list and you will have more information about Data Structure and Functions. On each page, navigation buttons quickly get you back to the files list. You can also use the search tool on the top right corner of the page to search through the API by file, data structure or function name.
+This documentation is generated automatically from the code. You will find the same files structure in the Ledger devices SDKs. You can navigate through the files list and you will have more information about Data Structure and Functions. On each page, navigation buttons quickly get you back to the files list. You can also use the search tool on the top right corner of the page to search through the API by file, data structure or function name.
 
 <div class="textblock">Here is a list of all files with brief descriptions:</div><div class="directory">
 <table class="directory">
