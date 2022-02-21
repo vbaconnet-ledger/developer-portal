@@ -9,6 +9,7 @@
 
 - title: DApp Plugin
   docs:
+  - dapp/requirements
   - dapp/nano-plugin/overview
   - dapp/nano-plugin/environment-setup
   subfolderitems:
