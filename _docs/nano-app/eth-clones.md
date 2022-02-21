@@ -64,7 +64,7 @@ typedef enum chain_kind_e {
 
 Once you have created your App's icons following the [Design requirements](../design-requirements), upload them in the `/icons` folder.
 
-## 4. Modify src/main.h
+## 4. Modify src/main.c
 
 Add:
 

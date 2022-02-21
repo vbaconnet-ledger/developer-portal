@@ -1,5 +1,5 @@
 ---
-title: Getting your Ledger Live running
+title: Writing Tests
 subtitle:
 tags: [ledger-live-common, test-dataset, test, testing, speculos, bot, the bot]
 category: Blockchain Support

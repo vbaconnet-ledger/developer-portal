@@ -1,5 +1,5 @@
 ---
-title: Submission form
+title: Form content
 subtitle: Addition or modification
 tags: [tokens]
 category: Tokens

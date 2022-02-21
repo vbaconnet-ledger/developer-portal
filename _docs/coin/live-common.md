@@ -1718,7 +1718,7 @@ const getEstimatedFees = async ({
 export default getEstimatedFees;
 ```
 
-#### Testing send with CLI
+#### Do a send operation with the CLI
 
 Before being able to test a `send` operation with CLI you will need to bind arguments and infer a transaction from it. Since we defined a "mode" field in the transaction, this will be the only argument that will be necessary to test a send.
 
