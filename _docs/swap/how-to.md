@@ -126,7 +126,7 @@ No HTTP body
 - **Function**: Generates a secure binary payload for the nano in order to authorize the transaction.
 - **Input**: quoteID, refundAddress, payoutAddress, nonce. <br>
   Optional: from, to, amount.
-- **Output**: binaryPayload, signature. <br>
+- **Output**: payload, payload_signature. <br>
   In case of error, returns the same payload as **/check_quote**.
 - **Payload**:
   - Success <br>
@@ -238,7 +238,7 @@ Examples:
 #### Output field: providerSig
 
 The real return value of the **/swap** endpoint is the `providerSig` field with the JSON Web Signature (JWS) in compact form within:
-- `providerSig.header.alg` - the algorithm used for the signature: “secp256k1”.
+- `providerSig.header.alg` - the algorithm used for the signature: “ES256”.
 - `proverSig.header.kid` - an identifier for the public key used: “provider_name-2020“.
 - `providerSig.payload` - hexadecimal encoding of the binary serialized protobuf message.NewTransactionResponse.
 - `providerSig.signature` - hexadecimal encoding of the secp256k1 signature of providerSig.payload. More details in the [JWS signature](#jws-signature), [Payload and Signature generation](#payload-and-signature-generation) and [Protobuf message (payload) structure](#protobuf-message-payload-structure) sections. 
