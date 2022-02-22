@@ -11,7 +11,7 @@ layout: doc
 
 
 
-[Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X.
+[Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X/S Plus.
 
 <!--  -->
 {% include alert.html style="important" text="When you submit an app, using Ledger App Builder to build the application is a Security Requirement." %}
@@ -80,15 +80,26 @@ $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# make
 ```
 
-#### For the Nano X
+#### For the Nano X or S Plus
 
-For Nano X, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
+For Nano X or S Plus, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
+
+For Nano X:
 
 ```bash
 $ # docker can be replaced with podman or buildah without sudo
 $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
 ```
+
+For Nano S Plus:
+
+```bash
+$ # docker can be replaced with podman or buildah without sudo
+$ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
+root@656be163fe84:/app# BOLOS_SDK=$NANOSPLUS_SDK make
+```
+
 
 <!--  -->
 {% include alert.html style="note" text="If you change the <code>BOLOS_SDK</code> variable between two builds, you can first use <code>make clean</code> to avoid errors." %}
@@ -107,7 +118,7 @@ root@656be163fe84:/app# make scan-build
 
 ### 2.3 Exit the image
 
-The build generates several files in your application folder and especially the `app.elf` that can be loaded to a [physical Nano S](../load) or an [emulated Nano X or S with Speculos](../../speculos/installation/build).
+The build generates several files in your application folder and especially the `app.elf` that can be loaded to a [physical Nano S or S Plus](../load) or an [emulated Nano X or S with Speculos](../../speculos/installation/build).
 
 You can exit the image, with the command `exit`.
 
