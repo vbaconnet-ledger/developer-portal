@@ -75,7 +75,7 @@ There are 2 mandatory icons that should be provided for Ledger to release an app
 Most of the time, Nano Apps have few functionalities. However, despite this simplicity, it is still challenging to build a user-friendly interface, because of the few inputs (only 2 buttons) and the screen size (128\*32 pixels). The following guidelines will give a good basis to ensure user-friendliness.
 
 <!--  -->
-{% include alert.html style="note" text="See the <a href='../display-management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
+{% include alert.html style="note" text="See the <a href='../low-level-display-management' class='alert-link'> BAGL Toolkit </a> for more information on the BOLOS Application Graphics Library technical details." %}
 <!--  -->
 
 #### Welcome screen
