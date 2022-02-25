@@ -9,7 +9,7 @@ layout: doc
 ---
 
 <div class="uk-text-center">
-	<iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/zEYnDHh5NRM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video controls muted preload='none' poster='/uploads//videos/covers/BlockchainSupport.png' ><source src="/uploads//videos/BlockchainSupport.mp4" type='video/mp4'></video><br>
 </div>
 
 ## General Ledger Live Overview

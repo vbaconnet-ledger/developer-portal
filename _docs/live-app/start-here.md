@@ -8,7 +8,7 @@ layout: doc
 ---
 
 <div class="uk-text-center">
-  <iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/L6dGYsevRxc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video controls muted preload='none' poster='/uploads//videos/covers/LiveApp.png' ><source src="/uploads//videos/LiveApp.mp4" type='video/mp4'></video><br>
 </div>
 
 Live Apps are displayed in the discover section of Ledger Live on desktop (Windows, Mac, Linux) and mobile (Android only, iOS is not currently included).    
