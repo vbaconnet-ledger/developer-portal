@@ -152,7 +152,7 @@ How are the `binaryPayload` and it's `signature` generated?
 Here is a little diagram to explain how the `binaryPayload` and the `signature` are generated: 
 [![Payload and Payload Signature generation diagram](../images/payload-signature-generation.png)](../images/payload-signature-generation.png)
 - `binaryPayload`: the swap parameters are assembled in a [protobuf](https://developers.google.com/protocol-buffers) message. Then using the protobuf tools you can do a [binary encoding](https://developers.google.com/protocol-buffers/docs/encoding) of the protobuf to get a Byte Array. Finally, with [hex encoding](http://fileformats.archiveteam.org/wiki/Hex_encoding) you get the `binaryPayload` field.  
-- `signature`: Hash the previously binary encoded Byte Array with [SHA-256](https://www.n-able.com/blog/sha-256-encryption) and then sign the hash with [secp256k1](https://neuromancer.sk/std/secg/secp256k1). Finally, with [hex encoding](http://fileformats.archiveteam.org/wiki/Hex_encoding) you get the `signature` field.
+- `signature`: Hash the previously binary encoded Byte Array with [sha-256](https://www.n-able.com/blog/sha-256-encryption) and then sign the hash with [secp256k1](https://neuromancer.sk/std/secg/secp256k1). Finally, with [hex encoding](http://fileformats.archiveteam.org/wiki/Hex_encoding) you get the `signature` field.
 
 Here is a code snippet to illustrate the `binaryPayload` and `signature` generation process:
 
@@ -238,7 +238,7 @@ Examples:
 #### Output field: providerSig
 
 The real return value of the **/swap** endpoint is the `providerSig` field with the JSON Web Signature (JWS) in compact form within:
-- `providerSig.header.alg` - Signed using [secp256k1](https://neuromancer.sk/std/secg/secp256k1), with [SHA-256](https://www.n-able.com/blog/sha-256-encryption) as its hash function.
+- `providerSig.header.alg` - the algorithm used for the signature: “ES256”.
 - `proverSig.header.kid` - an identifier for the public key used: “provider_name-2020“.
 - `providerSig.payload` - hexadecimal encoding of the binary serialized protobuf message.NewTransactionResponse.
 - `providerSig.signature` - hexadecimal encoding of the secp256k1 signature of providerSig.payload. More details in the [JWS signature](#jws-signature), [Payload and Signature generation](#payload-and-signature-generation) and [Protobuf message (payload) structure](#protobuf-message-payload-structure) sections. 
