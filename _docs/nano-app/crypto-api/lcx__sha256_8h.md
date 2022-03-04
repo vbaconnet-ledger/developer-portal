@@ -34,15 +34,15 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8b0df02125b1fde2936e615416b09fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a8b0df02125b1fde2936e615416b09fd7">cx_sha224_init_no_throw</a> (<a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *hash)</td></tr>
-<tr class="memdesc:a8b0df02125b1fde2936e615416b09fd7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-224 context.  <a href="#a8b0df02125b1fde2936e615416b09fd7">More...</a><br /></td></tr>
+<tr class="memdesc:a8b0df02125b1fde2936e615416b09fd7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA-224 context.  <a href="#a8b0df02125b1fde2936e615416b09fd7">More...</a><br /></td></tr>
 <tr class="memitem:a1282c14df106d5a3b26d55387a33c167"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a1282c14df106d5a3b26d55387a33c167">cx_sha224_init</a> (<a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *hash)</td></tr>
-<tr class="memdesc:a1282c14df106d5a3b26d55387a33c167"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-224 context.  <a href="#a1282c14df106d5a3b26d55387a33c167">More...</a><br /></td></tr>
+<tr class="memdesc:a1282c14df106d5a3b26d55387a33c167"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA-224 context.  <a href="#a1282c14df106d5a3b26d55387a33c167">More...</a><br /></td></tr>
 <tr class="memitem:a8d0ee114d08779d43b970b3f7cc8a1fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a8d0ee114d08779d43b970b3f7cc8a1fc">cx_sha256_init_no_throw</a> (<a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *hash)</td></tr>
-<tr class="memdesc:a8d0ee114d08779d43b970b3f7cc8a1fc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-256 context.  <a href="#a8d0ee114d08779d43b970b3f7cc8a1fc">More...</a><br /></td></tr>
+<tr class="memdesc:a8d0ee114d08779d43b970b3f7cc8a1fc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA-256 context.  <a href="#a8d0ee114d08779d43b970b3f7cc8a1fc">More...</a><br /></td></tr>
 <tr class="memitem:a8c217528e08352c856b2d27c9531bdf2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#a8c217528e08352c856b2d27c9531bdf2">cx_sha256_init</a> (<a class="el" href="../lcx__sha256_8h#ac46cc2c6a6a5a142363e7a3dfaa17d87">cx_sha256_t</a> *hash)</td></tr>
-<tr class="memdesc:a8c217528e08352c856b2d27c9531bdf2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA-256 context.  <a href="#a8c217528e08352c856b2d27c9531bdf2">More...</a><br /></td></tr>
+<tr class="memdesc:a8c217528e08352c856b2d27c9531bdf2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA-256 context.  <a href="#a8c217528e08352c856b2d27c9531bdf2">More...</a><br /></td></tr>
 <tr class="memitem:ad71355cf5f37bb24c9febd4c477aab48"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha256_8h#ad71355cf5f37bb24c9febd4c477aab48">cx_hash_sha256</a> (const uint8_t *in, size_t len, uint8_t *out, size_t out_len)</td></tr>
-<tr class="memdesc:ad71355cf5f37bb24c9febd4c477aab48"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a one shot SHA-256 digest.  <a href="#ad71355cf5f37bb24c9febd4c477aab48">More...</a><br /></td></tr>
+<tr class="memdesc:ad71355cf5f37bb24c9febd4c477aab48"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a one shot SHA-256 digest.  <a href="#ad71355cf5f37bb24c9febd4c477aab48">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -65,8 +65,6 @@ Functions</h2></td></tr>
 
 <p>SHA-224 message digest size. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
-
 </div>
 </div>
 <a id="ae20099c7ad89af9ac43fd93fa02826a4"></a>
@@ -82,8 +80,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SHA-256 message digest size. </p>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>
@@ -144,7 +140,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a one shot SHA-256 digest. </p>
+<p>Computes a one shot SHA-256 digest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td colspan="4">Input data.</td></tr>
@@ -154,8 +150,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha256_8h#a8c217528e08352c856b2d27c9531bdf2">cx_sha256_init()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +175,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA-224 context. </p>
+<p>Initializes a SHA-224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -189,8 +183,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SHA224 identifier. </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a2e9444f358a03e8501b2fda3356bf758">CX_SHA224</a>, <a class="el" href="../lcx__sha256_8h#a8b0df02125b1fde2936e615416b09fd7">cx_sha224_init_no_throw()</a>, and <a class="el" href="../lcx__sha256_8h#a8d0ee114d08779d43b970b3f7cc8a1fc">cx_sha256_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -210,7 +202,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA-224 context. </p>
+<p>Initializes a SHA-224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -221,8 +213,6 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha256_8h#a1282c14df106d5a3b26d55387a33c167">cx_sha224_init()</a>.</p>
 
 </div>
 </div>
@@ -248,7 +238,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA-256 context. </p>
+<p>Initializes a SHA-256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -256,8 +246,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SHA256 identifier. </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__sha256_8h#ad71355cf5f37bb24c9febd4c477aab48">cx_hash_sha256()</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a178ae8151eb1b1ad6d4f01fbe0acc5fc">CX_SHA256</a>, and <a class="el" href="../lcx__sha256_8h#a8d0ee114d08779d43b970b3f7cc8a1fc">cx_sha256_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +265,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA-256 context. </p>
+<p>Initializes a SHA-256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -288,8 +276,6 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha256_8h#a1282c14df106d5a3b26d55387a33c167">cx_sha224_init()</a>, and <a class="el" href="../lcx__sha256_8h#a8c217528e08352c856b2d27c9531bdf2">cx_sha256_init()</a>.</p>
 
 </div>
 </div>

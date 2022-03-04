@@ -17,14 +17,14 @@ layout: doc
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a4f9733a932cdcb904a602ed76252151d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__pbkdf2_8h#a4f9733a932cdcb904a602ed76252151d">cx_pbkdf2_sha512</a>(password,  password_len,  salt,  salt_len,  iterations,  out,  out_len)&#160;&#160;&#160;<a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw</a>(<a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af1c7c38d54f080781c6026cb6fed85f6">CX_SHA512</a>, password, password_len, salt, salt_len, iterations, out, out_len)</td></tr>
-<tr class="memdesc:a4f9733a932cdcb904a602ed76252151d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute PBKDF2 bytes sequence with SHA512.  <a href="#a4f9733a932cdcb904a602ed76252151d">More...</a><br /></td></tr>
+<tr class="memdesc:a4f9733a932cdcb904a602ed76252151d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a PBKDF2 bytes sequence with SHA512.  <a href="#a4f9733a932cdcb904a602ed76252151d">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa8e83c16857155d23468877ca99b6bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw</a> (<a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> md_type, const uint8_t *password, size_t passwordlen, uint8_t *salt, size_t saltlen, uint32_t iterations, uint8_t *out, size_t outLength)</td></tr>
-<tr class="memdesc:aa8e83c16857155d23468877ca99b6bc1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute PBKDF2 bytes sequence.  <a href="#aa8e83c16857155d23468877ca99b6bc1">More...</a><br /></td></tr>
+<tr class="memdesc:aa8e83c16857155d23468877ca99b6bc1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a PBKDF2 bytes sequence.  <a href="#aa8e83c16857155d23468877ca99b6bc1">More...</a><br /></td></tr>
 <tr class="memitem:a57dd9eec0da8095a40e88b57e97e58ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__pbkdf2_8h#a57dd9eec0da8095a40e88b57e97e58ba">cx_pbkdf2</a> (<a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> md_type, const unsigned char *password, unsigned short passwordlen, unsigned char *salt, unsigned short saltlen, unsigned int iterations, unsigned char *out, unsigned int outLength)</td></tr>
-<tr class="memdesc:a57dd9eec0da8095a40e88b57e97e58ba"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute PBKDF2 bytes sequence.  <a href="#a57dd9eec0da8095a40e88b57e97e58ba">More...</a><br /></td></tr>
+<tr class="memdesc:a57dd9eec0da8095a40e88b57e97e58ba"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a PBKDF2 bytes sequence.  <a href="#a57dd9eec0da8095a40e88b57e97e58ba">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -82,8 +82,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute PBKDF2 bytes sequence with SHA512. </p>
-<p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a> with SHA512 as the underlying hash function.</p>
+<p>Computes a PBKDF2 bytes sequence with SHA512. </p>
+<p>It computes the bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a> with SHA512 as the underlying hash function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td colspan="4">Password used as a base key to compute the HMAC.</td></tr>
@@ -173,9 +173,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute PBKDF2 bytes sequence. </p>
-<p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1" title="Compute PBKDF2 bytes sequence. ">cx_pbkdf2_no_throw</a> rather than this function.</dd></dl>
+<p>Computes a PBKDF2 bytes sequence. </p>
+<p>It computes the bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1" title="Computes a PBKDF2 bytes sequence. ">cx_pbkdf2_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">Message digest algorithm identifier.</td></tr>
@@ -195,8 +195,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__pbkdf2_8h#aa8e83c16857155d23468877ca99b6bc1">cx_pbkdf2_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -262,8 +260,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute PBKDF2 bytes sequence. </p>
-<p>Compute PBKDF2 bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>.</p>
+<p>Computes a PBKDF2 bytes sequence. </p>
+<p>It computes the bytes sequence according to <a href="../https://tools.ietf.org/rfc2898">RFC 2898 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">md_type</td><td colspan="4">Message digest algorithm identifier.</td></tr>
@@ -282,8 +280,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__pbkdf2_8h#a57dd9eec0da8095a40e88b57e97e58ba">cx_pbkdf2()</a>.</p>
 
 </div>
 </div>

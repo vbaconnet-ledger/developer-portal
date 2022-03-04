@@ -60,17 +60,17 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad6d0f11deac47473046877f63b1b3842"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#ad6d0f11deac47473046877f63b1b3842">cx_hash_get_size</a> (const <a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *ctx)</td></tr>
 <tr class="memitem:a51cf929ff30c2b19232c0389df2e2547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, uint32_t mode, const uint8_t *in, size_t len, uint8_t *out, size_t out_len)</td></tr>
-<tr class="memdesc:a51cf929ff30c2b19232c0389df2e2547"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash data according to the specified algorithm.  <a href="#a51cf929ff30c2b19232c0389df2e2547">More...</a><br /></td></tr>
+<tr class="memdesc:a51cf929ff30c2b19232c0389df2e2547"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hashes data according to the specified algorithm.  <a href="#a51cf929ff30c2b19232c0389df2e2547">More...</a><br /></td></tr>
 <tr class="memitem:adc7f6918cc747f7ac7d9c9faaf9ec215"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, int mode, const unsigned char *in, unsigned int len, unsigned char *out, unsigned int out_len)</td></tr>
-<tr class="memdesc:adc7f6918cc747f7ac7d9c9faaf9ec215"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hash data according to the specified algorithm.  <a href="#adc7f6918cc747f7ac7d9c9faaf9ec215">More...</a><br /></td></tr>
+<tr class="memdesc:adc7f6918cc747f7ac7d9c9faaf9ec215"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Hashes data according to the specified algorithm.  <a href="#adc7f6918cc747f7ac7d9c9faaf9ec215">More...</a><br /></td></tr>
 <tr class="memitem:a885f02f3636aac761fbbba21b079414c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a885f02f3636aac761fbbba21b079414c">cx_hash_init</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hash_id)</td></tr>
-<tr class="memdesc:a885f02f3636aac761fbbba21b079414c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a hash context.  <a href="#a885f02f3636aac761fbbba21b079414c">More...</a><br /></td></tr>
+<tr class="memdesc:a885f02f3636aac761fbbba21b079414c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a hash context.  <a href="#a885f02f3636aac761fbbba21b079414c">More...</a><br /></td></tr>
 <tr class="memitem:a44ca61db6548b8f361fa8fb065a8bb92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a44ca61db6548b8f361fa8fb065a8bb92">cx_hash_init_ex</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hash_id, size_t output_size)</td></tr>
-<tr class="memdesc:a44ca61db6548b8f361fa8fb065a8bb92"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a hash context.  <a href="#a44ca61db6548b8f361fa8fb065a8bb92">More...</a><br /></td></tr>
+<tr class="memdesc:a44ca61db6548b8f361fa8fb065a8bb92"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a hash context.  <a href="#a44ca61db6548b8f361fa8fb065a8bb92">More...</a><br /></td></tr>
 <tr class="memitem:a95be19cf6b724e3837b84ff5d73520de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a95be19cf6b724e3837b84ff5d73520de">cx_hash_update</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, const uint8_t *in, size_t in_len)</td></tr>
-<tr class="memdesc:a95be19cf6b724e3837b84ff5d73520de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add more data to hash.  <a href="#a95be19cf6b724e3837b84ff5d73520de">More...</a><br /></td></tr>
+<tr class="memdesc:a95be19cf6b724e3837b84ff5d73520de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds more data to hash.  <a href="#a95be19cf6b724e3837b84ff5d73520de">More...</a><br /></td></tr>
 <tr class="memitem:a9d1068c9ef9bf98eedb839b74674ff15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hash_8h#a9d1068c9ef9bf98eedb839b74674ff15">cx_hash_final</a> (<a class="el" href="../lcx__hash_8h#a5fa8d1a7a91f41d10ba46386e5286343">cx_hash_t</a> *hash, uint8_t *digest)</td></tr>
-<tr class="memdesc:a9d1068c9ef9bf98eedb839b74674ff15"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Finalize the hash.  <a href="#a9d1068c9ef9bf98eedb839b74674ff15">More...</a><br /></td></tr>
+<tr class="memdesc:a9d1068c9ef9bf98eedb839b74674ff15"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Finalizes the hash.  <a href="#a9d1068c9ef9bf98eedb839b74674ff15">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -246,9 +246,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Hash data according to the specified algorithm. </p>
+<p>Hashes data according to the specified algorithm. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547" title="Hash data according to the specified algorithm. ">cx_hash_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547" title="Hashes data according to the specified algorithm. ">cx_hash_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
@@ -278,8 +278,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a9d1068c9ef9bf98eedb839b74674ff15">cx_hash_final()</a>, <a class="el" href="../lcx__hash_8h#ad6d0f11deac47473046877f63b1b3842">cx_hash_get_size()</a>, <a class="el" href="../lcx__hash_8h#a885f02f3636aac761fbbba21b079414c">cx_hash_init()</a>, <a class="el" href="../lcx__hash_8h#a44ca61db6548b8f361fa8fb065a8bb92">cx_hash_init_ex()</a>, <a class="el" href="../lcx__hash_8h#a51cf929ff30c2b19232c0389df2e2547">cx_hash_no_throw()</a>, and <a class="el" href="../lcx__hash_8h#a95be19cf6b724e3837b84ff5d73520de">cx_hash_update()</a>.</p>
-
 </div>
 </div>
 <a id="a9d1068c9ef9bf98eedb839b74674ff15"></a>
@@ -308,7 +306,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finalize the hash. </p>
+<p>Finalizes the hash. </p>
 <p>A call to this function is equivalent to: <b>cx_hash_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -321,8 +319,6 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -341,8 +337,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a hash context. </p>
+<p>Initializes a hash context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
@@ -385,8 +379,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -422,8 +414,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a hash context. </p>
-<p>Initialize a hash context with a chosen output length (typically for eXtendable Output Functions (XOF)).</p>
+<p>Initializes a hash context. </p>
+<p>It initializes a hash context with a chosen output length (typically for eXtendable Output Functions (XOF)).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to be initialized. The context shall be in RAM.</td></tr>
@@ -443,8 +435,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +488,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Hash data according to the specified algorithm. </p>
+<p>Hashes data according to the specified algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Pointer to the hash context. Shall be in RAM. Should be called with a cast.</td></tr>
@@ -525,8 +515,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>
@@ -562,7 +550,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add more data to hash. </p>
+<p>Adds more data to hash. </p>
 <p>A call to this function is equivalent to: <b>cx_hash_no_throw(hash, 0, in, in_len, NULL, 0)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -578,8 +566,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hash_8h#adc7f6918cc747f7ac7d9c9faaf9ec215">cx_hash()</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@ Data Fields</h2></td></tr>
 ## Detailed Description
 
 <div class="textblock"><p>AES key container. </p>
-<p>Such container should be initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>. </p>
+<p>Such container should be initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a82b87a34803cd38cb207ff66c6494acd"></a>
 <h2 class="memtitle">keys</h2>

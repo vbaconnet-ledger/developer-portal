@@ -44,13 +44,13 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8a85bc503a81b3565b6811d2d1e04774"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__blake2_8h#a8a85bc503a81b3565b6811d2d1e04774">cx_blake2b_init_no_throw</a> (<a class="el" href="../lcx__blake2_8h#ae926de66e1dac797b97038c19ec2ca44">cx_blake2b_t</a> *hash, size_t out_len)</td></tr>
-<tr class="memdesc:a8a85bc503a81b3565b6811d2d1e04774"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize BLAKE2b message digest context.  <a href="#a8a85bc503a81b3565b6811d2d1e04774">More...</a><br /></td></tr>
+<tr class="memdesc:a8a85bc503a81b3565b6811d2d1e04774"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes BLAKE2b message digest context.  <a href="#a8a85bc503a81b3565b6811d2d1e04774">More...</a><br /></td></tr>
 <tr class="memitem:a4dcfb525d262594101a8d6966e0439c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__blake2_8h#a4dcfb525d262594101a8d6966e0439c4">cx_blake2b_init</a> (<a class="el" href="../lcx__blake2_8h#ae926de66e1dac797b97038c19ec2ca44">cx_blake2b_t</a> *hash, unsigned int out_len)</td></tr>
-<tr class="memdesc:a4dcfb525d262594101a8d6966e0439c4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize BLAKE2b message digest context.  <a href="#a4dcfb525d262594101a8d6966e0439c4">More...</a><br /></td></tr>
+<tr class="memdesc:a4dcfb525d262594101a8d6966e0439c4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes BLAKE2b message digest context.  <a href="#a4dcfb525d262594101a8d6966e0439c4">More...</a><br /></td></tr>
 <tr class="memitem:af2bda9dec7598d4414eb49d3f1ee93ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__blake2_8h#af2bda9dec7598d4414eb49d3f1ee93ee">cx_blake2b_init2_no_throw</a> (<a class="el" href="../lcx__blake2_8h#ae926de66e1dac797b97038c19ec2ca44">cx_blake2b_t</a> *hash, size_t out_len, uint8_t *salt, size_t salt_len, uint8_t *perso, size_t perso_len)</td></tr>
-<tr class="memdesc:af2bda9dec7598d4414eb49d3f1ee93ee"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize BLAKE2b message digest context with salt and personnalization string.  <a href="#af2bda9dec7598d4414eb49d3f1ee93ee">More...</a><br /></td></tr>
+<tr class="memdesc:af2bda9dec7598d4414eb49d3f1ee93ee"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes BLAKE2b message digest context with salt and personnalization string.  <a href="#af2bda9dec7598d4414eb49d3f1ee93ee">More...</a><br /></td></tr>
 <tr class="memitem:a4363d2e56f5be5456f9e00f0890f6dca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__blake2_8h#a4363d2e56f5be5456f9e00f0890f6dca">cx_blake2b_init2</a> (<a class="el" href="../lcx__blake2_8h#ae926de66e1dac797b97038c19ec2ca44">cx_blake2b_t</a> *hash, unsigned int out_len, unsigned char *salt, unsigned int salt_len, unsigned char *perso, unsigned int perso_len)</td></tr>
-<tr class="memdesc:a4363d2e56f5be5456f9e00f0890f6dca"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize BLAKE2b message digest context with salt and personnalization string.  <a href="#a4363d2e56f5be5456f9e00f0890f6dca">More...</a><br /></td></tr>
+<tr class="memdesc:a4363d2e56f5be5456f9e00f0890f6dca"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes BLAKE2b message digest context with salt and personnalization string.  <a href="#a4363d2e56f5be5456f9e00f0890f6dca">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -166,9 +166,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize BLAKE2b message digest context. </p>
+<p>Initializes BLAKE2b message digest context. </p>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__blake2_8h#a8a85bc503a81b3565b6811d2d1e04774" title="Initialize BLAKE2b message digest context. ">cx_blake2b_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__blake2_8h#a8a85bc503a81b3565b6811d2d1e04774" title="Initializes BLAKE2b message digest context. ">cx_blake2b_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the BLAKE2b context to initialize. The context shall be in RAM.</td></tr>
@@ -183,8 +183,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a07b70c52856661d9ba09ae71d38bc715">CX_BLAKE2B</a>, <a class="el" href="../lcx__blake2_8h#af2bda9dec7598d4414eb49d3f1ee93ee">cx_blake2b_init2_no_throw()</a>, and <a class="el" href="../lcx__blake2_8h#a8a85bc503a81b3565b6811d2d1e04774">cx_blake2b_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -244,9 +242,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize BLAKE2b message digest context with salt and personnalization string. </p>
+<p>Initializes BLAKE2b message digest context with salt and personnalization string. </p>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__blake2_8h#af2bda9dec7598d4414eb49d3f1ee93ee" title="Initialize BLAKE2b message digest context with salt and personnalization string. ">cx_blake2b_init2_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__blake2_8h#af2bda9dec7598d4414eb49d3f1ee93ee" title="Initializes BLAKE2b message digest context with salt and personnalization string. ...">cx_blake2b_init2_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the BLAKE2b context to initialize. The context shall be in RAM.</td></tr>
@@ -265,8 +263,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a07b70c52856661d9ba09ae71d38bc715">CX_BLAKE2B</a>, and <a class="el" href="../lcx__blake2_8h#af2bda9dec7598d4414eb49d3f1ee93ee">cx_blake2b_init2_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -320,7 +316,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize BLAKE2b message digest context with salt and personnalization string. </p>
+<p>Initializes BLAKE2b message digest context with salt and personnalization string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the BLAKE2b context to initialize. The context shall be in RAM.</td></tr>
@@ -337,8 +333,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__blake2_8h#a4dcfb525d262594101a8d6966e0439c4">cx_blake2b_init()</a>, and <a class="el" href="../lcx__blake2_8h#a4363d2e56f5be5456f9e00f0890f6dca">cx_blake2b_init2()</a>.</p>
 
 </div>
 </div>
@@ -368,7 +362,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize BLAKE2b message digest context. </p>
+<p>Initializes BLAKE2b message digest context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the BLAKE2b context to initialize. The context shall be in RAM.</td></tr>
@@ -381,8 +375,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__blake2_8h#a4dcfb525d262594101a8d6966e0439c4">cx_blake2b_init()</a>.</p>
 
 </div>
 </div>

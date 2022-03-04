@@ -28,35 +28,35 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a655097348db511c8f8732c5f09f063ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec">cx_hmac_ripemd160_init_no_throw</a> (<a class="el" href="../cx__hmac__ripemd160__t">cx_hmac_ripemd160_t</a> *hmac, const uint8_t *key, size_t key_len)</td></tr>
-<tr class="memdesc:a655097348db511c8f8732c5f09f063ec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-RIPEMD160 context.  <a href="#a655097348db511c8f8732c5f09f063ec">More...</a><br /></td></tr>
+<tr class="memdesc:a655097348db511c8f8732c5f09f063ec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-RIPEMD160 context.  <a href="#a655097348db511c8f8732c5f09f063ec">More...</a><br /></td></tr>
 <tr class="memitem:a607b5443b71e13baf822bd14cf3e900f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a607b5443b71e13baf822bd14cf3e900f">cx_hmac_ripemd160_init</a> (<a class="el" href="../cx__hmac__ripemd160__t">cx_hmac_ripemd160_t</a> *hmac, const unsigned char *key, unsigned int key_len)</td></tr>
-<tr class="memdesc:a607b5443b71e13baf822bd14cf3e900f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-RIPEMD160 context.  <a href="#a607b5443b71e13baf822bd14cf3e900f">More...</a><br /></td></tr>
+<tr class="memdesc:a607b5443b71e13baf822bd14cf3e900f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-RIPEMD160 context.  <a href="#a607b5443b71e13baf822bd14cf3e900f">More...</a><br /></td></tr>
 <tr class="memitem:a7f90af47a865e3d4bbe8f16ffac15d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a7f90af47a865e3d4bbe8f16ffac15d2d">cx_hmac_sha224_init</a> (<a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *hmac, const uint8_t *key, unsigned int key_len)</td></tr>
-<tr class="memdesc:a7f90af47a865e3d4bbe8f16ffac15d2d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA224 context.  <a href="#a7f90af47a865e3d4bbe8f16ffac15d2d">More...</a><br /></td></tr>
+<tr class="memdesc:a7f90af47a865e3d4bbe8f16ffac15d2d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA224 context.  <a href="#a7f90af47a865e3d4bbe8f16ffac15d2d">More...</a><br /></td></tr>
 <tr class="memitem:acb664a12291a2fe0e05588c45b7206cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#acb664a12291a2fe0e05588c45b7206cb">cx_hmac_sha256_init_no_throw</a> (<a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *hmac, const uint8_t *key, size_t key_len)</td></tr>
-<tr class="memdesc:acb664a12291a2fe0e05588c45b7206cb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA256 context.  <a href="#acb664a12291a2fe0e05588c45b7206cb">More...</a><br /></td></tr>
+<tr class="memdesc:acb664a12291a2fe0e05588c45b7206cb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA256 context.  <a href="#acb664a12291a2fe0e05588c45b7206cb">More...</a><br /></td></tr>
 <tr class="memitem:a92fe5e51130696bcf38e458ae8b931ba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a92fe5e51130696bcf38e458ae8b931ba">cx_hmac_sha256_init</a> (<a class="el" href="../cx__hmac__sha256__t">cx_hmac_sha256_t</a> *hmac, const unsigned char *key, unsigned int key_len)</td></tr>
-<tr class="memdesc:a92fe5e51130696bcf38e458ae8b931ba"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA256 context.  <a href="#a92fe5e51130696bcf38e458ae8b931ba">More...</a><br /></td></tr>
+<tr class="memdesc:a92fe5e51130696bcf38e458ae8b931ba"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA256 context.  <a href="#a92fe5e51130696bcf38e458ae8b931ba">More...</a><br /></td></tr>
 <tr class="memitem:a280d26d38eeebad8555b0ce5a5facb27"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a280d26d38eeebad8555b0ce5a5facb27">cx_hmac_sha256</a> (const uint8_t *key, size_t key_len, const uint8_t *in, size_t len, uint8_t *mac, size_t mac_len)</td></tr>
-<tr class="memdesc:a280d26d38eeebad8555b0ce5a5facb27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a HMAC value using SHA256.  <a href="#a280d26d38eeebad8555b0ce5a5facb27">More...</a><br /></td></tr>
+<tr class="memdesc:a280d26d38eeebad8555b0ce5a5facb27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a HMAC value using SHA256.  <a href="#a280d26d38eeebad8555b0ce5a5facb27">More...</a><br /></td></tr>
 <tr class="memitem:a47c555a072160c325e54c04f406ce2d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a47c555a072160c325e54c04f406ce2d6">cx_hmac_sha384_init</a> (<a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *hmac, const uint8_t *key, unsigned int key_len)</td></tr>
-<tr class="memdesc:a47c555a072160c325e54c04f406ce2d6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA384 context.  <a href="#a47c555a072160c325e54c04f406ce2d6">More...</a><br /></td></tr>
+<tr class="memdesc:a47c555a072160c325e54c04f406ce2d6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA384 context.  <a href="#a47c555a072160c325e54c04f406ce2d6">More...</a><br /></td></tr>
 <tr class="memitem:a22bea8db8f917221b9ade35d9838b109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a22bea8db8f917221b9ade35d9838b109">cx_hmac_sha512_init_no_throw</a> (<a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *hmac, const uint8_t *key, size_t key_len)</td></tr>
-<tr class="memdesc:a22bea8db8f917221b9ade35d9838b109"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA512 context.  <a href="#a22bea8db8f917221b9ade35d9838b109">More...</a><br /></td></tr>
+<tr class="memdesc:a22bea8db8f917221b9ade35d9838b109"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA512 context.  <a href="#a22bea8db8f917221b9ade35d9838b109">More...</a><br /></td></tr>
 <tr class="memitem:a1366763eb58eab50def9aa26ebeb9a3e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a1366763eb58eab50def9aa26ebeb9a3e">cx_hmac_sha512_init</a> (<a class="el" href="../cx__hmac__sha512__t">cx_hmac_sha512_t</a> *hmac, const unsigned char *key, unsigned int key_len)</td></tr>
-<tr class="memdesc:a1366763eb58eab50def9aa26ebeb9a3e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC-SHA512 context.  <a href="#a1366763eb58eab50def9aa26ebeb9a3e">More...</a><br /></td></tr>
+<tr class="memdesc:a1366763eb58eab50def9aa26ebeb9a3e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC-SHA512 context.  <a href="#a1366763eb58eab50def9aa26ebeb9a3e">More...</a><br /></td></tr>
 <tr class="memitem:aae387607e11e005d1fe466a47ff22133"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#aae387607e11e005d1fe466a47ff22133">cx_hmac_sha512</a> (const uint8_t *key, size_t key_len, const uint8_t *in, size_t len, uint8_t *mac, size_t mac_len)</td></tr>
-<tr class="memdesc:aae387607e11e005d1fe466a47ff22133"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a HMAC value using SHA512.  <a href="#aae387607e11e005d1fe466a47ff22133">More...</a><br /></td></tr>
+<tr class="memdesc:aae387607e11e005d1fe466a47ff22133"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a HMAC value using SHA512.  <a href="#aae387607e11e005d1fe466a47ff22133">More...</a><br /></td></tr>
 <tr class="memitem:ac17c793ef88b21ebf2914a698fa189b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2">cx_hmac_no_throw</a> (<a class="el" href="../cx__hmac__t">cx_hmac_t</a> *hmac, uint32_t mode, const uint8_t *in, size_t len, uint8_t *mac, size_t mac_len)</td></tr>
-<tr class="memdesc:ac17c793ef88b21ebf2914a698fa189b2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a HMAC value according to the specified hash function.  <a href="#ac17c793ef88b21ebf2914a698fa189b2">More...</a><br /></td></tr>
+<tr class="memdesc:ac17c793ef88b21ebf2914a698fa189b2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a HMAC value according to the specified hash function.  <a href="#ac17c793ef88b21ebf2914a698fa189b2">More...</a><br /></td></tr>
 <tr class="memitem:a59713fd754b21c5af7de282b7b03c824"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac</a> (<a class="el" href="../cx__hmac__t">cx_hmac_t</a> *hmac, int mode, const unsigned char *in, unsigned int len, unsigned char *mac, unsigned int mac_len)</td></tr>
-<tr class="memdesc:a59713fd754b21c5af7de282b7b03c824"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a HMAC value according to the specified hash function.  <a href="#a59713fd754b21c5af7de282b7b03c824">More...</a><br /></td></tr>
+<tr class="memdesc:a59713fd754b21c5af7de282b7b03c824"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a HMAC value according to the specified hash function.  <a href="#a59713fd754b21c5af7de282b7b03c824">More...</a><br /></td></tr>
 <tr class="memitem:a4c0edf6c13ffd8f4eb0873b354edb700"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a4c0edf6c13ffd8f4eb0873b354edb700">cx_hmac_init</a> (<a class="el" href="../cx__hmac__t">cx_hmac_t</a> *hmac, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hash_id, const uint8_t *key, size_t key_len)</td></tr>
-<tr class="memdesc:a4c0edf6c13ffd8f4eb0873b354edb700"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a HMAC context.  <a href="#a4c0edf6c13ffd8f4eb0873b354edb700">More...</a><br /></td></tr>
+<tr class="memdesc:a4c0edf6c13ffd8f4eb0873b354edb700"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a HMAC context.  <a href="#a4c0edf6c13ffd8f4eb0873b354edb700">More...</a><br /></td></tr>
 <tr class="memitem:a89bba951d06459552c9c2fdfdab08a33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a89bba951d06459552c9c2fdfdab08a33">cx_hmac_update</a> (<a class="el" href="../cx__hmac__t">cx_hmac_t</a> *hmac, const uint8_t *in, size_t in_len)</td></tr>
-<tr class="memdesc:a89bba951d06459552c9c2fdfdab08a33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add more data to compute the HMAC.  <a href="#a89bba951d06459552c9c2fdfdab08a33">More...</a><br /></td></tr>
+<tr class="memdesc:a89bba951d06459552c9c2fdfdab08a33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds more data to compute the HMAC.  <a href="#a89bba951d06459552c9c2fdfdab08a33">More...</a><br /></td></tr>
 <tr class="memitem:a4b2c981c7bf4691016436768a329ae09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__hmac_8h#a4b2c981c7bf4691016436768a329ae09">cx_hmac_final</a> (<a class="el" href="../cx__hmac__t">cx_hmac_t</a> *ctx, uint8_t *out, size_t *out_len)</td></tr>
-<tr class="memdesc:a4b2c981c7bf4691016436768a329ae09"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Finalize the HMAC algorithm.  <a href="#a4b2c981c7bf4691016436768a329ae09">More...</a><br /></td></tr>
+<tr class="memdesc:a4b2c981c7bf4691016436768a329ae09"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Finalizes the HMAC algorithm.  <a href="#a4b2c981c7bf4691016436768a329ae09">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -121,9 +121,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute a HMAC value according to the specified hash function. </p>
+<p>Computes a HMAC value according to the specified hash function. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2" title="Compute a HMAC value according to the specified hash function. ">cx_hmac_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2" title="Computes a HMAC value according to the specified hash function. ">cx_hmac_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
@@ -146,8 +146,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hmac_8h#a4b2c981c7bf4691016436768a329ae09">cx_hmac_final()</a>, <a class="el" href="../lcx__hmac_8h#a4c0edf6c13ffd8f4eb0873b354edb700">cx_hmac_init()</a>, <a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2">cx_hmac_no_throw()</a>, <a class="el" href="../lcx__hmac_8h#a89bba951d06459552c9c2fdfdab08a33">cx_hmac_update()</a>, <a class="el" href="../cx__errors_8h#a727ed72c9c217a588e76ef0e2452b299">CX_INVALID_PARAMETER</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117ab4a075a43ece09e77953b297b1a36fb3">CX_RIPEMD160</a>, <a class="el" href="../lcx__ripemd160_8h#a0e819ee2f3468667284716213284e621">CX_RIPEMD160_SIZE</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a2e9444f358a03e8501b2fda3356bf758">CX_SHA224</a>, <a class="el" href="../lcx__sha256_8h#a1869f01a1fa5deb2845c93957e89be88">CX_SHA224_SIZE</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a178ae8151eb1b1ad6d4f01fbe0acc5fc">CX_SHA256</a>, <a class="el" href="../lcx__sha256_8h#ae20099c7ad89af9ac43fd93fa02826a4">CX_SHA256_SIZE</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a74d048ad79463a9c73b7226785da3aea">CX_SHA384</a>, <a class="el" href="../lcx__sha512_8h#a31fde7c6974a7fe5cda7bde88d881d9a">CX_SHA384_SIZE</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af1c7c38d54f080781c6026cb6fed85f6">CX_SHA512</a>, <a class="el" href="../lcx__sha512_8h#a8c92da6dbfa2fa62932f43353cd70c8e">CX_SHA512_SIZE</a>, <a class="el" href="../cx__hmac__t#a96905c2e258ff1e20ff748244a831ac1">cx_hmac_t::hash_ctx</a>, <a class="el" href="../cx__hash__header__s#ac613131b42e92ab66088a8cfbdc8fbba">cx_hash_header_s::info</a>, and <a class="el" href="../cx__hash__info__t#a8427fe2f03a7ea954df11e2191075041">cx_hash_info_t::md_type</a>.</p>
 
 </div>
 </div>
@@ -183,7 +181,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finalize the HMAC algorithm. </p>
+<p>Finalizes the HMAC algorithm. </p>
 <p>A call to this function is equivalent to <b>cx_hmac_no_throw(hash, CX_LAST, NULL, 0, out, out_len)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -197,8 +195,6 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +236,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC context. </p>
+<p>Initializes a HMAC context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -255,8 +251,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>
@@ -310,7 +304,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a HMAC value according to the specified hash function. </p>
+<p>Computes a HMAC value according to the specified hash function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be initialized with one of the initialization functions. The context shall be in RAM. The function shall be called with the cast (<a class="el" href="../cx__hmac__t" title="HMAC context, abstract type. ">cx_hmac_t</a> *).</td></tr>
@@ -331,8 +325,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>, and <a class="el" href="../lcx__hmac_8h#a1366763eb58eab50def9aa26ebeb9a3e">cx_hmac_sha512_init()</a>.</p>
 
 </div>
 </div>
@@ -374,9 +366,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-RIPEMD160 context. </p>
+<p>Initializes a HMAC-RIPEMD160 context. </p>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec" title="Initialize a HMAC-RIPEMD160 context. ">cx_hmac_ripemd160_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec" title="Initializes a HMAC-RIPEMD160 context. ">cx_hmac_ripemd160_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
@@ -392,8 +384,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hmac_8h#a655097348db511c8f8732c5f09f063ec">cx_hmac_ripemd160_init_no_throw()</a>, and <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117ab4a075a43ece09e77953b297b1a36fb3">CX_RIPEMD160</a>.</p>
 
 </div>
 </div>
@@ -429,7 +419,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-RIPEMD160 context. </p>
+<p>Initializes a HMAC-RIPEMD160 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
@@ -443,8 +433,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a607b5443b71e13baf822bd14cf3e900f">cx_hmac_ripemd160_init()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +468,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA224 context. </p>
+<p>Initializes a HMAC-SHA224 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
@@ -547,7 +535,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a HMAC value using SHA256. </p>
+<p>Computes a HMAC value using SHA256. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">HMAC key value.</td></tr>
@@ -560,8 +548,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the HMAC value. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a92fe5e51130696bcf38e458ae8b931ba">cx_hmac_sha256_init()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +589,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA256 context. </p>
+<p>Initializes a HMAC-SHA256 context. </p>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#acb664a12291a2fe0e05588c45b7206cb" title="Initialize a HMAC-SHA256 context. ">cx_hmac_sha256_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#acb664a12291a2fe0e05588c45b7206cb" title="Initializes a HMAC-SHA256 context. ">cx_hmac_sha256_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
@@ -621,8 +607,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hmac_8h#a280d26d38eeebad8555b0ce5a5facb27">cx_hmac_sha256()</a>, <a class="el" href="../lcx__hmac_8h#acb664a12291a2fe0e05588c45b7206cb">cx_hmac_sha256_init_no_throw()</a>, and <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a178ae8151eb1b1ad6d4f01fbe0acc5fc">CX_SHA256</a>.</p>
 
 </div>
 </div>
@@ -658,7 +642,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA256 context. </p>
+<p>Initializes a HMAC-SHA256 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the HMAC context. The context shall be in RAM.</td></tr>
@@ -672,8 +656,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a92fe5e51130696bcf38e458ae8b931ba">cx_hmac_sha256_init()</a>.</p>
 
 </div>
 </div>
@@ -709,7 +691,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA384 context. </p>
+<p>Initializes a HMAC-SHA384 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -776,7 +758,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a HMAC value using SHA512. </p>
+<p>Computes a HMAC value using SHA512. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">HMAC key value.</td></tr>
@@ -789,8 +771,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Length of the HMAC value. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a1366763eb58eab50def9aa26ebeb9a3e">cx_hmac_sha512_init()</a>.</p>
 
 </div>
 </div>
@@ -832,9 +812,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA512 context. </p>
+<p>Initializes a HMAC-SHA512 context. </p>
 <p>This function throws an exception if if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a22bea8db8f917221b9ade35d9838b109" title="Initialize a HMAC-SHA512 context. ">cx_hmac_sha512_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__hmac_8h#a22bea8db8f917221b9ade35d9838b109" title="Initializes a HMAC-SHA512 context. ">cx_hmac_sha512_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -850,8 +830,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hmac_8h#ac17c793ef88b21ebf2914a698fa189b2">cx_hmac_no_throw()</a>, <a class="el" href="../lcx__hmac_8h#aae387607e11e005d1fe466a47ff22133">cx_hmac_sha512()</a>, <a class="el" href="../lcx__hmac_8h#a22bea8db8f917221b9ade35d9838b109">cx_hmac_sha512_init_no_throw()</a>, and <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af1c7c38d54f080781c6026cb6fed85f6">CX_SHA512</a>.</p>
 
 </div>
 </div>
@@ -887,7 +865,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a HMAC-SHA512 context. </p>
+<p>Initializes a HMAC-SHA512 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hmac</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -901,8 +879,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a1366763eb58eab50def9aa26ebeb9a3e">cx_hmac_sha512_init()</a>.</p>
 
 </div>
 </div>
@@ -938,7 +914,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add more data to compute the HMAC. </p>
+<p>Adds more data to compute the HMAC. </p>
 <p>A call to this function is equivalent to: <b>cx_hmac_no_throw(hmac, 0, in, in_len, NULL, 0)</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -954,8 +930,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>

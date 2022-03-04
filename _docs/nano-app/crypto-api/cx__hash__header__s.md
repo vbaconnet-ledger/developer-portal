@@ -57,8 +57,6 @@ Data Fields</h2></td></tr>
 
 <p>Hash description. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
-
 </div>
 </div>
 <button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>

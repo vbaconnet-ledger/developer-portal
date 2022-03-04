@@ -17,21 +17,21 @@ layout: doc
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a159ceb54e8b22a467a4f643474f85356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356">cx_aes_init_key_no_throw</a> (const uint8_t *rawkey, size_t key_len, <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key)</td></tr>
-<tr class="memdesc:a159ceb54e8b22a467a4f643474f85356"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize an AES Key.  <a href="#a159ceb54e8b22a467a4f643474f85356">More...</a><br /></td></tr>
+<tr class="memdesc:a159ceb54e8b22a467a4f643474f85356"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes an AES Key.  <a href="#a159ceb54e8b22a467a4f643474f85356">More...</a><br /></td></tr>
 <tr class="memitem:ab360df96c653641f7d1fc30a0c7d7cd6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#ab360df96c653641f7d1fc30a0c7d7cd6">cx_aes_init_key</a> (const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key)</td></tr>
-<tr class="memdesc:ab360df96c653641f7d1fc30a0c7d7cd6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize an AES Key.  <a href="#ab360df96c653641f7d1fc30a0c7d7cd6">More...</a><br /></td></tr>
+<tr class="memdesc:ab360df96c653641f7d1fc30a0c7d7cd6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes an AES Key.  <a href="#ab360df96c653641f7d1fc30a0c7d7cd6">More...</a><br /></td></tr>
 <tr class="memitem:a43d55289801fc0491b669fee92a0604f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f">cx_aes_iv_no_throw</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, uint32_t mode, const uint8_t *iv, size_t iv_len, const uint8_t *in, size_t in_len, uint8_t *out, size_t *out_len)</td></tr>
-<tr class="memdesc:a43d55289801fc0491b669fee92a0604f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt, Decrypt, Sign or Verify data with AES algorithm.  <a href="#a43d55289801fc0491b669fee92a0604f">More...</a><br /></td></tr>
+<tr class="memdesc:a43d55289801fc0491b669fee92a0604f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts, decrypts, signs or verifies data with AES algorithm.  <a href="#a43d55289801fc0491b669fee92a0604f">More...</a><br /></td></tr>
 <tr class="memitem:ac6ada32dc75900ea7a2bbd707e2194b5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#ac6ada32dc75900ea7a2bbd707e2194b5">cx_aes_iv</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, int mode, unsigned char *iv, unsigned int iv_len, const unsigned char *in, unsigned int in_len, unsigned char *out, unsigned int out_len)</td></tr>
-<tr class="memdesc:ac6ada32dc75900ea7a2bbd707e2194b5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt, Decrypt, Sign or Verify data with AES algorithm.  <a href="#ac6ada32dc75900ea7a2bbd707e2194b5">More...</a><br /></td></tr>
+<tr class="memdesc:ac6ada32dc75900ea7a2bbd707e2194b5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts, decrypts, signs or verifies data with AES algorithm.  <a href="#ac6ada32dc75900ea7a2bbd707e2194b5">More...</a><br /></td></tr>
 <tr class="memitem:ac5fc63ae567c1ff8fde82003dbf4c968"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#ac5fc63ae567c1ff8fde82003dbf4c968">cx_aes_no_throw</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, uint32_t mode, const uint8_t *in, size_t in_len, uint8_t *out, size_t *out_len)</td></tr>
-<tr class="memdesc:ac5fc63ae567c1ff8fde82003dbf4c968"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt, Decrypt, Sign or Verify data with AES algorithm.  <a href="#ac5fc63ae567c1ff8fde82003dbf4c968">More...</a><br /></td></tr>
+<tr class="memdesc:ac5fc63ae567c1ff8fde82003dbf4c968"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts, decrypts, signs or verifies data with AES algorithm.  <a href="#ac5fc63ae567c1ff8fde82003dbf4c968">More...</a><br /></td></tr>
 <tr class="memitem:a3e09a5d34cec17fa31a9e8bb256c082b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a3e09a5d34cec17fa31a9e8bb256c082b">cx_aes</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, int mode, const unsigned char *in, unsigned int in_len, unsigned char *out, unsigned int out_len)</td></tr>
-<tr class="memdesc:a3e09a5d34cec17fa31a9e8bb256c082b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt, Decrypt, Sign or Verify data with AES algorithm.  <a href="#a3e09a5d34cec17fa31a9e8bb256c082b">More...</a><br /></td></tr>
+<tr class="memdesc:a3e09a5d34cec17fa31a9e8bb256c082b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts, decrypts, signs or verifies data with AES algorithm.  <a href="#a3e09a5d34cec17fa31a9e8bb256c082b">More...</a><br /></td></tr>
 <tr class="memitem:a244526bca422d4916e4c243a2e83c146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a244526bca422d4916e4c243a2e83c146">cx_aes_enc_block</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, const uint8_t *inblock, uint8_t *outblock)</td></tr>
-<tr class="memdesc:a244526bca422d4916e4c243a2e83c146"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt a 16-byte block using AES algorithm.  <a href="#a244526bca422d4916e4c243a2e83c146">More...</a><br /></td></tr>
+<tr class="memdesc:a244526bca422d4916e4c243a2e83c146"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts a 16-byte block using AES algorithm.  <a href="#a244526bca422d4916e4c243a2e83c146">More...</a><br /></td></tr>
 <tr class="memitem:a0ff49f193d81b89b8ea429a4da5ca333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__aes_8h#a0ff49f193d81b89b8ea429a4da5ca333">cx_aes_dec_block</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, const uint8_t *inblock, uint8_t *outblock)</td></tr>
-<tr class="memdesc:a0ff49f193d81b89b8ea429a4da5ca333"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypt a 16-byte block using AES algorithm.  <a href="#a0ff49f193d81b89b8ea429a4da5ca333">More...</a><br /></td></tr>
+<tr class="memdesc:a0ff49f193d81b89b8ea429a4da5ca333"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypts a 16-byte block using AES algorithm.  <a href="#a0ff49f193d81b89b8ea429a4da5ca333">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -97,12 +97,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Encrypt, Decrypt, Sign or Verify data with AES algorithm. </p>
-<p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#ac5fc63ae567c1ff8fde82003dbf4c968" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_no_throw</a> rather than this function.</dd></dl>
+<p>Encrypts, decrypts, signs or verifies data with AES algorithm. </p>
+<p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypts, decrypts, signs or verifies data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#ac5fc63ae567c1ff8fde82003dbf4c968" title="Encrypts, decrypts, signs or verifies data with AES algorithm. ">cx_aes_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
@@ -138,8 +138,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../lcx__aes_8h#a0ff49f193d81b89b8ea429a4da5ca333">cx_aes_dec_block()</a>, <a class="el" href="../lcx__aes_8h#a244526bca422d4916e4c243a2e83c146">cx_aes_enc_block()</a>, and <a class="el" href="../lcx__aes_8h#ac5fc63ae567c1ff8fde82003dbf4c968">cx_aes_no_throw()</a>.</p>
-
 </div>
 </div>
 <a id="a0ff49f193d81b89b8ea429a4da5ca333"></a>
@@ -174,7 +172,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrypt a 16-byte block using AES algorithm. </p>
+<p>Decrypts a 16-byte block using AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the AES key.</td></tr>
@@ -189,8 +187,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__aes_8h#a3e09a5d34cec17fa31a9e8bb256c082b">cx_aes()</a>.</p>
 
 </div>
 </div>
@@ -226,7 +222,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt a 16-byte block using AES algorithm. </p>
+<p>Encrypts a 16-byte block using AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the AES key.</td></tr>
@@ -241,8 +237,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__aes_8h#a3e09a5d34cec17fa31a9e8bb256c082b">cx_aes()</a>.</p>
 
 </div>
 </div>
@@ -284,9 +278,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize an AES Key. </p>
+<p>Initializes an AES Key. </p>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any AES processing. This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawkey</td><td colspan="4">Pointer to the supplied key.</td></tr>
@@ -302,8 +296,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356">cx_aes_init_key_no_throw()</a>, and <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f">cx_aes_iv_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +331,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize an AES Key. </p>
+<p>Initializes an AES Key. </p>
 <p>Once initialized, the key can be stored in non-volatile memory and directly used for any AES processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -354,8 +346,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__aes_8h#ab360df96c653641f7d1fc30a0c7d7cd6">cx_aes_init_key()</a>.</p>
 
 </div>
 </div>
@@ -427,12 +417,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Encrypt, Decrypt, Sign or Verify data with AES algorithm. </p>
+<p>Encrypts, decrypts, signs or verifies data with AES algorithm. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_iv_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypts, decrypts, signs or verifies data with AES algorithm. ">cx_aes_iv_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
@@ -469,8 +459,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f">cx_aes_iv_no_throw()</a>, and <a class="el" href="../lcx__aes_8h#ac5fc63ae567c1ff8fde82003dbf4c968">cx_aes_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -536,10 +524,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt, Decrypt, Sign or Verify data with AES algorithm. </p>
+<p>Encrypts, decrypts, signs or verifies data with AES algorithm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
@@ -574,8 +562,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__aes_8h#ab360df96c653641f7d1fc30a0c7d7cd6">cx_aes_init_key()</a>, and <a class="el" href="../lcx__aes_8h#ac6ada32dc75900ea7a2bbd707e2194b5">cx_aes_iv()</a>.</p>
 
 </div>
 </div>
@@ -629,11 +615,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt, Decrypt, Sign or Verify data with AES algorithm. </p>
-<p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypt, Decrypt, Sign or Verify data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros.</p>
+<p>Encrypts, decrypts, signs or verifies data with AES algorithm. </p>
+<p>Same as <a class="el" href="../lcx__aes_8h#a43d55289801fc0491b669fee92a0604f" title="Encrypts, decrypts, signs or verifies data with AES algorithm. ">cx_aes_iv_no_throw</a> with initial IV assumed to be sixteen zeros.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initialize an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">Pointer to the key initialized with <a class="el" href="../lcx__aes_8h#a159ceb54e8b22a467a4f643474f85356" title="Initializes an AES Key. ">cx_aes_init_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags Supported flags:<ul>
 <li>CX_LAST</li>
 <li>CX_ENCRYPT</li>
@@ -666,8 +652,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__aes_8h#a3e09a5d34cec17fa31a9e8bb256c082b">cx_aes()</a>, and <a class="el" href="../lcx__aes_8h#ac6ada32dc75900ea7a2bbd707e2194b5">cx_aes_iv()</a>.</p>
 
 </div>
 </div>

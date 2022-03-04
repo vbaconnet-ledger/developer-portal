@@ -43,8 +43,6 @@ Data Fields</h2></td></tr>
 
 <p>Curve identifier. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point()</a>, <a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair()</a>, <a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key()</a>, <a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key()</a>, <a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult()</a>, <a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key()</a>, and <a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point()</a>.</p>
-
 </div>
 </div>
 <a id="ac32a08901f9d2cc8a7ad433c1a871959"></a>

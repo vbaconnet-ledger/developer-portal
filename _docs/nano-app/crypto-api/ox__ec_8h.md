@@ -32,39 +32,39 @@ Macros</h2></td></tr>
 <tr class="memitem:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7d9b0d7fc9b2cbc8ff911521713e98e6">CX_MAX_DOMAIN_LENGTH</a>&#160;&#160;&#160;66</td></tr>
 <tr class="memdesc:a7d9b0d7fc9b2cbc8ff911521713e98e6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Largest domain parameters length.  <a href="#a7d9b0d7fc9b2cbc8ff911521713e98e6">More...</a><br /></td></tr>
 <tr class="memitem:a0324f20e8dd444913924c9f39e44c1bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a0324f20e8dd444913924c9f39e44c1bd">HAVE_SECP256K1_CURVE</a></td></tr>
-<tr class="memdesc:a0324f20e8dd444913924c9f39e44c1bd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the Koblitz curve Secp256k1.  <a href="#a0324f20e8dd444913924c9f39e44c1bd">More...</a><br /></td></tr>
+<tr class="memdesc:a0324f20e8dd444913924c9f39e44c1bd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the Koblitz curve Secp256k1.  <a href="#a0324f20e8dd444913924c9f39e44c1bd">More...</a><br /></td></tr>
 <tr class="memitem:a9eb15e46c211ec48c8f0ba11bb656472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a9eb15e46c211ec48c8f0ba11bb656472">HAVE_SECP256R1_CURVE</a></td></tr>
-<tr class="memdesc:a9eb15e46c211ec48c8f0ba11bb656472"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the verifiably random curve Secp256r1.  <a href="#a9eb15e46c211ec48c8f0ba11bb656472">More...</a><br /></td></tr>
+<tr class="memdesc:a9eb15e46c211ec48c8f0ba11bb656472"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the verifiably random curve Secp256r1.  <a href="#a9eb15e46c211ec48c8f0ba11bb656472">More...</a><br /></td></tr>
 <tr class="memitem:adb4b730dc1e31621f66468567b206a76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#adb4b730dc1e31621f66468567b206a76">HAVE_SECP384R1_CURVE</a></td></tr>
-<tr class="memdesc:adb4b730dc1e31621f66468567b206a76"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the verifiably random curve Secp384r1.  <a href="#adb4b730dc1e31621f66468567b206a76">More...</a><br /></td></tr>
+<tr class="memdesc:adb4b730dc1e31621f66468567b206a76"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the verifiably random curve Secp384r1.  <a href="#adb4b730dc1e31621f66468567b206a76">More...</a><br /></td></tr>
 <tr class="memitem:a29ec9738a3443e830815f5eb82abc2f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a29ec9738a3443e830815f5eb82abc2f0">HAVE_SECP521R1_CURVE</a></td></tr>
-<tr class="memdesc:a29ec9738a3443e830815f5eb82abc2f0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the verifiably random curve Secp521r1.  <a href="#a29ec9738a3443e830815f5eb82abc2f0">More...</a><br /></td></tr>
+<tr class="memdesc:a29ec9738a3443e830815f5eb82abc2f0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the verifiably random curve Secp521r1.  <a href="#a29ec9738a3443e830815f5eb82abc2f0">More...</a><br /></td></tr>
 <tr class="memitem:ad9e55fd69c0d6cc70bbea1a7bed22c7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ad9e55fd69c0d6cc70bbea1a7bed22c7f">HAVE_BRAINPOOL_P256R1_CURVE</a></td></tr>
-<tr class="memdesc:ad9e55fd69c0d6cc70bbea1a7bed22c7f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the curve BrainpoolP256r1.  <a href="#ad9e55fd69c0d6cc70bbea1a7bed22c7f">More...</a><br /></td></tr>
+<tr class="memdesc:ad9e55fd69c0d6cc70bbea1a7bed22c7f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the curve BrainpoolP256r1.  <a href="#ad9e55fd69c0d6cc70bbea1a7bed22c7f">More...</a><br /></td></tr>
 <tr class="memitem:ab3370197da697421061843918272cbed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab3370197da697421061843918272cbed">HAVE_BRAINPOOL_P256T1_CURVE</a></td></tr>
-<tr class="memdesc:ab3370197da697421061843918272cbed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted curve BrainpoolP256t1.  <a href="#ab3370197da697421061843918272cbed">More...</a><br /></td></tr>
+<tr class="memdesc:ab3370197da697421061843918272cbed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted curve BrainpoolP256t1.  <a href="#ab3370197da697421061843918272cbed">More...</a><br /></td></tr>
 <tr class="memitem:a605f497ffc683dafc10a363223e1c62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a605f497ffc683dafc10a363223e1c62d">HAVE_BRAINPOOL_P320R1_CURVE</a></td></tr>
-<tr class="memdesc:a605f497ffc683dafc10a363223e1c62d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the curve BrainpoolP320r1.  <a href="#a605f497ffc683dafc10a363223e1c62d">More...</a><br /></td></tr>
+<tr class="memdesc:a605f497ffc683dafc10a363223e1c62d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the curve BrainpoolP320r1.  <a href="#a605f497ffc683dafc10a363223e1c62d">More...</a><br /></td></tr>
 <tr class="memitem:a7f7db76d64c0e4d5b097eddb9cbd4fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7f7db76d64c0e4d5b097eddb9cbd4fd3">HAVE_BRAINPOOL_P320T1_CURVE</a></td></tr>
-<tr class="memdesc:a7f7db76d64c0e4d5b097eddb9cbd4fd3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted curve BrainpoolP320t1.  <a href="#a7f7db76d64c0e4d5b097eddb9cbd4fd3">More...</a><br /></td></tr>
+<tr class="memdesc:a7f7db76d64c0e4d5b097eddb9cbd4fd3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted curve BrainpoolP320t1.  <a href="#a7f7db76d64c0e4d5b097eddb9cbd4fd3">More...</a><br /></td></tr>
 <tr class="memitem:ace39e352169474131eff9cf27d5e6cd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ace39e352169474131eff9cf27d5e6cd5">HAVE_BRAINPOOL_P384R1_CURVE</a></td></tr>
-<tr class="memdesc:ace39e352169474131eff9cf27d5e6cd5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the curve BrainpoolP384r1.  <a href="#ace39e352169474131eff9cf27d5e6cd5">More...</a><br /></td></tr>
+<tr class="memdesc:ace39e352169474131eff9cf27d5e6cd5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the curve BrainpoolP384r1.  <a href="#ace39e352169474131eff9cf27d5e6cd5">More...</a><br /></td></tr>
 <tr class="memitem:aa75ce86c233554a87d69d2d96597e6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aa75ce86c233554a87d69d2d96597e6e3">HAVE_BRAINPOOL_P384T1_CURVE</a></td></tr>
-<tr class="memdesc:aa75ce86c233554a87d69d2d96597e6e3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted curve BrainpoolP384t1.  <a href="#aa75ce86c233554a87d69d2d96597e6e3">More...</a><br /></td></tr>
+<tr class="memdesc:aa75ce86c233554a87d69d2d96597e6e3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted curve BrainpoolP384t1.  <a href="#aa75ce86c233554a87d69d2d96597e6e3">More...</a><br /></td></tr>
 <tr class="memitem:a48849e367c754dc797b4b4c48ac8f968"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a48849e367c754dc797b4b4c48ac8f968">HAVE_BRAINPOOL_P512R1_CURVE</a></td></tr>
-<tr class="memdesc:a48849e367c754dc797b4b4c48ac8f968"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the curve BrainpoolP512r1.  <a href="#a48849e367c754dc797b4b4c48ac8f968">More...</a><br /></td></tr>
+<tr class="memdesc:a48849e367c754dc797b4b4c48ac8f968"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the curve BrainpoolP512r1.  <a href="#a48849e367c754dc797b4b4c48ac8f968">More...</a><br /></td></tr>
 <tr class="memitem:a7d2353c2ca3989a78ef6869335b8c90d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7d2353c2ca3989a78ef6869335b8c90d">HAVE_BRAINPOOL_P512T1_CURVE</a></td></tr>
-<tr class="memdesc:a7d2353c2ca3989a78ef6869335b8c90d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted curve BrainpoolP512t1.  <a href="#a7d2353c2ca3989a78ef6869335b8c90d">More...</a><br /></td></tr>
+<tr class="memdesc:a7d2353c2ca3989a78ef6869335b8c90d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted curve BrainpoolP512t1.  <a href="#a7d2353c2ca3989a78ef6869335b8c90d">More...</a><br /></td></tr>
 <tr class="memitem:aea960ee390d348cea6464c1714417405"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aea960ee390d348cea6464c1714417405">HAVE_ED25519_CURVE</a></td></tr>
-<tr class="memdesc:aea960ee390d348cea6464c1714417405"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted Edwards curve Ed25519.  <a href="#aea960ee390d348cea6464c1714417405">More...</a><br /></td></tr>
+<tr class="memdesc:aea960ee390d348cea6464c1714417405"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted Edwards curve Ed25519.  <a href="#aea960ee390d348cea6464c1714417405">More...</a><br /></td></tr>
 <tr class="memitem:aa993c306d12641ea4bd0c660f3837929"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aa993c306d12641ea4bd0c660f3837929">HAVE_ED448_CURVE</a></td></tr>
-<tr class="memdesc:aa993c306d12641ea4bd0c660f3837929"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the twisted Edwards curve Ed448.  <a href="#aa993c306d12641ea4bd0c660f3837929">More...</a><br /></td></tr>
+<tr class="memdesc:aa993c306d12641ea4bd0c660f3837929"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the twisted Edwards curve Ed448.  <a href="#aa993c306d12641ea4bd0c660f3837929">More...</a><br /></td></tr>
 <tr class="memitem:a831938576c5d89420135aef9a06a54ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a831938576c5d89420135aef9a06a54ac">HAVE_CV25519_CURVE</a></td></tr>
-<tr class="memdesc:a831938576c5d89420135aef9a06a54ac"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the Montgomery curve Curve25519.  <a href="#a831938576c5d89420135aef9a06a54ac">More...</a><br /></td></tr>
+<tr class="memdesc:a831938576c5d89420135aef9a06a54ac"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the Montgomery curve Curve25519.  <a href="#a831938576c5d89420135aef9a06a54ac">More...</a><br /></td></tr>
 <tr class="memitem:a53a27bcfa0b611365977f00f402e4e97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a53a27bcfa0b611365977f00f402e4e97">HAVE_CV448_CURVE</a></td></tr>
-<tr class="memdesc:a53a27bcfa0b611365977f00f402e4e97"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the Montgomery curve Curve448.  <a href="#a53a27bcfa0b611365977f00f402e4e97">More...</a><br /></td></tr>
+<tr class="memdesc:a53a27bcfa0b611365977f00f402e4e97"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the Montgomery curve Curve448.  <a href="#a53a27bcfa0b611365977f00f402e4e97">More...</a><br /></td></tr>
 <tr class="memitem:a446f9c56c3cfa08d5abfbf3534016117"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a446f9c56c3cfa08d5abfbf3534016117">HAVE_STARK256_CURVE</a></td></tr>
-<tr class="memdesc:a446f9c56c3cfa08d5abfbf3534016117"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enable the Stark curve.  <a href="#a446f9c56c3cfa08d5abfbf3534016117">More...</a><br /></td></tr>
+<tr class="memdesc:a446f9c56c3cfa08d5abfbf3534016117"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Enables the Stark curve.  <a href="#a446f9c56c3cfa08d5abfbf3534016117">More...</a><br /></td></tr>
 <tr class="memitem:a0546971e9e13424e94aed73a43dd1f0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a0546971e9e13424e94aed73a43dd1f0e">CX_ECCINFO_PARITY_ODD</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a0546971e9e13424e94aed73a43dd1f0e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Indicates the parity of a point coordinate.  <a href="#a0546971e9e13424e94aed73a43dd1f0e">More...</a><br /></td></tr>
 <tr class="memitem:ad7d948f769485901b284e3530feace57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ad7d948f769485901b284e3530feace57">CX_ECCINFO_xGTn</a>&#160;&#160;&#160;2</td></tr>
@@ -79,13 +79,13 @@ Macros</h2></td></tr>
 <tr class="memitem:ae4b61604ca53904bf8783cd49884178d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae4b61604ca53904bf8783cd49884178d">CX_CURVE_NISTP521</a>&#160;&#160;&#160;<a class="el" href="../ox__ec_8h#ab9e984f37d7329f57dbc826cb5ba477da69f729ce7b3a89bb3871176f8b917b35">CX_CURVE_SECP521R1</a></td></tr>
 <tr class="memdesc:ae4b61604ca53904bf8783cd49884178d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allowed identifier for Secp521r1.  <a href="#ae4b61604ca53904bf8783cd49884178d">More...</a><br /></td></tr>
 <tr class="memitem:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab67addec3d9a79d1ce6d6482562a5bf0">CX_CURVE_RANGE</a>(i,  dom)</td></tr>
-<tr class="memdesc:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve identifier is in the specified range.  <a href="#ab67addec3d9a79d1ce6d6482562a5bf0">More...</a><br /></td></tr>
+<tr class="memdesc:ab67addec3d9a79d1ce6d6482562a5bf0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Returns true if the curve identifier is in the specified range.  <a href="#ab67addec3d9a79d1ce6d6482562a5bf0">More...</a><br /></td></tr>
 <tr class="memitem:af7ab029bb3ab89de863730319073dc35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#af7ab029bb3ab89de863730319073dc35">CX_CURVE_IS_WEIERSTRASS</a>(c)</td></tr>
-<tr class="memdesc:af7ab029bb3ab89de863730319073dc35"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a short Weierstrass curve.  <a href="#af7ab029bb3ab89de863730319073dc35">More...</a><br /></td></tr>
+<tr class="memdesc:af7ab029bb3ab89de863730319073dc35"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Returns true if the curve is a short Weierstrass curve.  <a href="#af7ab029bb3ab89de863730319073dc35">More...</a><br /></td></tr>
 <tr class="memitem:a041b896c15d451fdcd1ac582baf30bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a041b896c15d451fdcd1ac582baf30bce">CX_CURVE_IS_TWISTED_EDWARDS</a>(c)</td></tr>
-<tr class="memdesc:a041b896c15d451fdcd1ac582baf30bce"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a twisted Edwards curve.  <a href="#a041b896c15d451fdcd1ac582baf30bce">More...</a><br /></td></tr>
+<tr class="memdesc:a041b896c15d451fdcd1ac582baf30bce"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Returns true if the curve is a twisted Edwards curve.  <a href="#a041b896c15d451fdcd1ac582baf30bce">More...</a><br /></td></tr>
 <tr class="memitem:a8a68336775894e26b88a79ec96b41ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a8a68336775894e26b88a79ec96b41ed3">CX_CURVE_IS_MONTGOMERY</a>(c)</td></tr>
-<tr class="memdesc:a8a68336775894e26b88a79ec96b41ed3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return true if the curve is a Montgomery curve.  <a href="#a8a68336775894e26b88a79ec96b41ed3">More...</a><br /></td></tr>
+<tr class="memdesc:a8a68336775894e26b88a79ec96b41ed3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Returns true if the curve is a Montgomery curve.  <a href="#a8a68336775894e26b88a79ec96b41ed3">More...</a><br /></td></tr>
 <tr class="memitem:a5ad90d6a0e043d9a94aa017fec898b78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a5ad90d6a0e043d9a94aa017fec898b78">CX_CURVE_HEADER</a></td></tr>
 <tr class="memdesc:a5ad90d6a0e043d9a94aa017fec898b78"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Curve domain parameters.  <a href="#a5ad90d6a0e043d9a94aa017fec898b78">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -160,57 +160,57 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a31118df83eb2629ff417521ace4d917e"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a31118df83eb2629ff417521ace4d917e">cx_ecdomain_size</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, size_t *length)</td></tr>
-<tr class="memdesc:a31118df83eb2629ff417521ace4d917e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the bit length of each parameter of the curve.  <a href="#a31118df83eb2629ff417521ace4d917e">More...</a><br /></td></tr>
+<tr class="memdesc:a31118df83eb2629ff417521ace4d917e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Gets the bit length of each parameter of the curve.  <a href="#a31118df83eb2629ff417521ace4d917e">More...</a><br /></td></tr>
 <tr class="memitem:a1c0a18bd483a254e2c7783442d32b002"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, size_t *length)</td></tr>
-<tr class="memdesc:a1c0a18bd483a254e2c7783442d32b002"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Return the byte length of each parameter of the curve.  <a href="#a1c0a18bd483a254e2c7783442d32b002">More...</a><br /></td></tr>
+<tr class="memdesc:a1c0a18bd483a254e2c7783442d32b002"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Gets the byte length of each parameter of the curve.  <a href="#a1c0a18bd483a254e2c7783442d32b002">More...</a><br /></td></tr>
 <tr class="memitem:ab9afff1ba449430ecab236fa0f5d41c2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab9afff1ba449430ecab236fa0f5d41c2">cx_ecdomain_parameter</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, <a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a> id, uint8_t *p, uint32_t p_len)</td></tr>
-<tr class="memdesc:ab9afff1ba449430ecab236fa0f5d41c2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Get a specific parameter of the curve.  <a href="#ab9afff1ba449430ecab236fa0f5d41c2">More...</a><br /></td></tr>
+<tr class="memdesc:ab9afff1ba449430ecab236fa0f5d41c2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Gets a specific parameter of the curve.  <a href="#ab9afff1ba449430ecab236fa0f5d41c2">More...</a><br /></td></tr>
 <tr class="memitem:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ac6fed5707cf1a1978463ac30a8a30e1d">cx_ecdomain_parameter_bn</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, <a class="el" href="../ox__ec_8h#a29dfa305c98e779d5117612360815dde">cx_curve_dom_param_t</a> id, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> p)</td></tr>
-<tr class="memdesc:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Store a specific parameter of the curve as a BN.  <a href="#ac6fed5707cf1a1978463ac30a8a30e1d">More...</a><br /></td></tr>
+<tr class="memdesc:ac6fed5707cf1a1978463ac30a8a30e1d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Stores a specific parameter of the curve as a BN.  <a href="#ac6fed5707cf1a1978463ac30a8a30e1d">More...</a><br /></td></tr>
 <tr class="memitem:ab4b77a831232980e28185be49e355630"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab4b77a831232980e28185be49e355630">cx_ecdomain_generator</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, uint8_t *Gx, uint8_t *Gy, size_t len)</td></tr>
-<tr class="memdesc:ab4b77a831232980e28185be49e355630"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Get the generator of the curve.  <a href="#ab4b77a831232980e28185be49e355630">More...</a><br /></td></tr>
+<tr class="memdesc:ab4b77a831232980e28185be49e355630"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Gets the generator of the curve.  <a href="#ab4b77a831232980e28185be49e355630">More...</a><br /></td></tr>
 <tr class="memitem:ab055f0bd0a2b43c0b27493216d566efc"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab055f0bd0a2b43c0b27493216d566efc">cx_ecdomain_generator_bn</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv, <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P)</td></tr>
-<tr class="memdesc:ab055f0bd0a2b43c0b27493216d566efc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Get the generator of the curve and store it in the point structure.  <a href="#ab055f0bd0a2b43c0b27493216d566efc">More...</a><br /></td></tr>
+<tr class="memdesc:ab055f0bd0a2b43c0b27493216d566efc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Gets the generator of the curve and stores it in the point structure.  <a href="#ab055f0bd0a2b43c0b27493216d566efc">More...</a><br /></td></tr>
 <tr class="memitem:aae0dc41d0dc74a8402a8629533ae11d5"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aae0dc41d0dc74a8402a8629533ae11d5">cx_ecpoint_alloc</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, <a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> cv)</td></tr>
-<tr class="memdesc:aae0dc41d0dc74a8402a8629533ae11d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allocate memory for a point on the curve.  <a href="#aae0dc41d0dc74a8402a8629533ae11d5">More...</a><br /></td></tr>
+<tr class="memdesc:aae0dc41d0dc74a8402a8629533ae11d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Allocates memory for a point on the curve.  <a href="#aae0dc41d0dc74a8402a8629533ae11d5">More...</a><br /></td></tr>
 <tr class="memitem:a185b9bb49f4c92b3f6251937c377be5f"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a185b9bb49f4c92b3f6251937c377be5f">cx_ecpoint_destroy</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P)</td></tr>
-<tr class="memdesc:a185b9bb49f4c92b3f6251937c377be5f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Destroy a point on the curve.  <a href="#a185b9bb49f4c92b3f6251937c377be5f">More...</a><br /></td></tr>
+<tr class="memdesc:a185b9bb49f4c92b3f6251937c377be5f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Destroys a point on the curve.  <a href="#a185b9bb49f4c92b3f6251937c377be5f">More...</a><br /></td></tr>
 <tr class="memitem:ab79f577e0b833eea2d51041899fe10f9"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ab79f577e0b833eea2d51041899fe10f9">cx_ecpoint_init</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const uint8_t *x, size_t x_len, const uint8_t *y, size_t y_len)</td></tr>
-<tr class="memdesc:ab79f577e0b833eea2d51041899fe10f9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a point on the curve.  <a href="#ab79f577e0b833eea2d51041899fe10f9">More...</a><br /></td></tr>
+<tr class="memdesc:ab79f577e0b833eea2d51041899fe10f9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a point on the curve.  <a href="#ab79f577e0b833eea2d51041899fe10f9">More...</a><br /></td></tr>
 <tr class="memitem:aafb21ddcd66e30397d6043aba5ddea96"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aafb21ddcd66e30397d6043aba5ddea96">cx_ecpoint_init_bn</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> x, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> y)</td></tr>
-<tr class="memdesc:aafb21ddcd66e30397d6043aba5ddea96"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a point on the curve with the BN indexes of the coordinates.  <a href="#aafb21ddcd66e30397d6043aba5ddea96">More...</a><br /></td></tr>
+<tr class="memdesc:aafb21ddcd66e30397d6043aba5ddea96"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a point on the curve with the BN indexes of the coordinates.  <a href="#aafb21ddcd66e30397d6043aba5ddea96">More...</a><br /></td></tr>
 <tr class="memitem:a357c217dfb38ea5bf4bf90cadb122871"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a357c217dfb38ea5bf4bf90cadb122871">cx_ecpoint_export</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, uint8_t *x, size_t x_len, uint8_t *y, size_t y_len)</td></tr>
-<tr class="memdesc:a357c217dfb38ea5bf4bf90cadb122871"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Export a point.  <a href="#a357c217dfb38ea5bf4bf90cadb122871">More...</a><br /></td></tr>
+<tr class="memdesc:a357c217dfb38ea5bf4bf90cadb122871"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Exports a point.  <a href="#a357c217dfb38ea5bf4bf90cadb122871">More...</a><br /></td></tr>
 <tr class="memitem:a30df3c7aa3c1b3628c8e60c67addbeeb"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a30df3c7aa3c1b3628c8e60c67addbeeb">cx_ecpoint_export_bn</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *x, <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> *y)</td></tr>
-<tr class="memdesc:a30df3c7aa3c1b3628c8e60c67addbeeb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Export a point using BN indexes of the coordinates.  <a href="#a30df3c7aa3c1b3628c8e60c67addbeeb">More...</a><br /></td></tr>
+<tr class="memdesc:a30df3c7aa3c1b3628c8e60c67addbeeb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Exports a point using BN indexes of the coordinates.  <a href="#a30df3c7aa3c1b3628c8e60c67addbeeb">More...</a><br /></td></tr>
 <tr class="memitem:abfd779cec5c375e59fb63928d2de484b"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#abfd779cec5c375e59fb63928d2de484b">cx_ecpoint_compress</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, uint8_t *xy_compressed, size_t xy_compressed_len, uint32_t *sign)</td></tr>
-<tr class="memdesc:abfd779cec5c375e59fb63928d2de484b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the compressed form of a point.  <a href="#abfd779cec5c375e59fb63928d2de484b">More...</a><br /></td></tr>
+<tr class="memdesc:abfd779cec5c375e59fb63928d2de484b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the compressed form of a point.  <a href="#abfd779cec5c375e59fb63928d2de484b">More...</a><br /></td></tr>
 <tr class="memitem:a8a77233157092a5f15af3e72f2468f66"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a8a77233157092a5f15af3e72f2468f66">cx_ecpoint_decompress</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const uint8_t *xy_compressed, size_t xy_compressed_len, uint32_t sign)</td></tr>
-<tr class="memdesc:a8a77233157092a5f15af3e72f2468f66"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the affine coordinates of a point given its compressed form.  <a href="#a8a77233157092a5f15af3e72f2468f66">More...</a><br /></td></tr>
+<tr class="memdesc:a8a77233157092a5f15af3e72f2468f66"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the affine coordinates of a point given its compressed form.  <a href="#a8a77233157092a5f15af3e72f2468f66">More...</a><br /></td></tr>
 <tr class="memitem:aaa2d271c9e431d43e1034fe065bbe918"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#aaa2d271c9e431d43e1034fe065bbe918">cx_ecpoint_add</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *R, const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *Q)</td></tr>
-<tr class="memdesc:aaa2d271c9e431d43e1034fe065bbe918"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two points on a curve.  <a href="#aaa2d271c9e431d43e1034fe065bbe918">More...</a><br /></td></tr>
+<tr class="memdesc:aaa2d271c9e431d43e1034fe065bbe918"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds two points on a curve.  <a href="#aaa2d271c9e431d43e1034fe065bbe918">More...</a><br /></td></tr>
 <tr class="memitem:a45aff9cbf509ce0dc8533af802a740a7"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a45aff9cbf509ce0dc8533af802a740a7">cx_ecpoint_neg</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P)</td></tr>
-<tr class="memdesc:a45aff9cbf509ce0dc8533af802a740a7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the opposite of a point.  <a href="#a45aff9cbf509ce0dc8533af802a740a7">More...</a><br /></td></tr>
+<tr class="memdesc:a45aff9cbf509ce0dc8533af802a740a7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the opposite of a point.  <a href="#a45aff9cbf509ce0dc8533af802a740a7">More...</a><br /></td></tr>
 <tr class="memitem:ae4c0306a025333d279be5326586bf86b"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae4c0306a025333d279be5326586bf86b">cx_ecpoint_rnd_scalarmul</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const uint8_t *k, size_t k_len)</td></tr>
-<tr class="memdesc:ae4c0306a025333d279be5326586bf86b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a secure scalar multiplication.  <a href="#ae4c0306a025333d279be5326586bf86b">More...</a><br /></td></tr>
+<tr class="memdesc:ae4c0306a025333d279be5326586bf86b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a secure scalar multiplication.  <a href="#ae4c0306a025333d279be5326586bf86b">More...</a><br /></td></tr>
 <tr class="memitem:a4bd5932bc102754d01bcccccbefdcdc3"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a4bd5932bc102754d01bcccccbefdcdc3">cx_ecpoint_rnd_scalarmul_bn</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> bn_k)</td></tr>
-<tr class="memdesc:a4bd5932bc102754d01bcccccbefdcdc3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a secure scalar multiplication given the BN index of the scalar.  <a href="#a4bd5932bc102754d01bcccccbefdcdc3">More...</a><br /></td></tr>
+<tr class="memdesc:a4bd5932bc102754d01bcccccbefdcdc3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a secure scalar multiplication given the BN index of the scalar.  <a href="#a4bd5932bc102754d01bcccccbefdcdc3">More...</a><br /></td></tr>
 <tr class="memitem:a3f63575b0780c61aafc46d74843f9737"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a3f63575b0780c61aafc46d74843f9737">cx_ecpoint_rnd_fixed_scalarmul</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const uint8_t *k, size_t k_len)</td></tr>
-<tr class="memdesc:a3f63575b0780c61aafc46d74843f9737"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a secure scalar multiplication with a fixed scalar length.  <a href="#a3f63575b0780c61aafc46d74843f9737">More...</a><br /></td></tr>
+<tr class="memdesc:a3f63575b0780c61aafc46d74843f9737"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a secure scalar multiplication with a fixed scalar length.  <a href="#a3f63575b0780c61aafc46d74843f9737">More...</a><br /></td></tr>
 <tr class="memitem:ae6c120f9d7e79685741b37a8bd7417c2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae6c120f9d7e79685741b37a8bd7417c2">cx_ecpoint_scalarmul</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const uint8_t *k, size_t k_len)</td></tr>
-<tr class="memdesc:ae6c120f9d7e79685741b37a8bd7417c2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication.  <a href="#ae6c120f9d7e79685741b37a8bd7417c2">More...</a><br /></td></tr>
+<tr class="memdesc:ae6c120f9d7e79685741b37a8bd7417c2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a scalar multiplication.  <a href="#ae6c120f9d7e79685741b37a8bd7417c2">More...</a><br /></td></tr>
 <tr class="memitem:a7af5711cec8ba114f380524d54d71387"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a7af5711cec8ba114f380524d54d71387">cx_ecpoint_scalarmul_bn</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> bn_k)</td></tr>
-<tr class="memdesc:a7af5711cec8ba114f380524d54d71387"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication given the BN index of the scalar.  <a href="#a7af5711cec8ba114f380524d54d71387">More...</a><br /></td></tr>
+<tr class="memdesc:a7af5711cec8ba114f380524d54d71387"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a scalar multiplication given the BN index of the scalar.  <a href="#a7af5711cec8ba114f380524d54d71387">More...</a><br /></td></tr>
 <tr class="memitem:ad74a8ffd620e4fdc9a52ad678c7fed62"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ad74a8ffd620e4fdc9a52ad678c7fed62">cx_ecpoint_double_scalarmul</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *R, <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *Q, const uint8_t *k, size_t k_len, const uint8_t *r, size_t r_len)</td></tr>
-<tr class="memdesc:ad74a8ffd620e4fdc9a52ad678c7fed62"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a double scalar multiplication.  <a href="#ad74a8ffd620e4fdc9a52ad678c7fed62">More...</a><br /></td></tr>
+<tr class="memdesc:ad74a8ffd620e4fdc9a52ad678c7fed62"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a double scalar multiplication.  <a href="#ad74a8ffd620e4fdc9a52ad678c7fed62">More...</a><br /></td></tr>
 <tr class="memitem:a69c8d8b11481a929dce4689e85eb3f3d"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#a69c8d8b11481a929dce4689e85eb3f3d">cx_ecpoint_double_scalarmul_bn</a> (<a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *R, <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *Q, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> bn_k, const <a class="el" href="../ox__bn_8h#a3caccc9ce9a31d3cba31ce1de1194d12">cx_bn_t</a> bn_r)</td></tr>
-<tr class="memdesc:a69c8d8b11481a929dce4689e85eb3f3d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a double scalar multiplication given the BN indexes of the scalars.  <a href="#a69c8d8b11481a929dce4689e85eb3f3d">More...</a><br /></td></tr>
+<tr class="memdesc:a69c8d8b11481a929dce4689e85eb3f3d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a double scalar multiplication given the BN indexes of the scalars.  <a href="#a69c8d8b11481a929dce4689e85eb3f3d">More...</a><br /></td></tr>
 <tr class="memitem:afa038890e5ffc3b2dc3e4e5f2637cce2"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#afa038890e5ffc3b2dc3e4e5f2637cce2">cx_ecpoint_cmp</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *P, const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *Q, bool *is_equal)</td></tr>
-<tr class="memdesc:afa038890e5ffc3b2dc3e4e5f2637cce2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare two points on the same curve.  <a href="#afa038890e5ffc3b2dc3e4e5f2637cce2">More...</a><br /></td></tr>
+<tr class="memdesc:afa038890e5ffc3b2dc3e4e5f2637cce2"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compares two points on the same curve.  <a href="#afa038890e5ffc3b2dc3e4e5f2637cce2">More...</a><br /></td></tr>
 <tr class="memitem:afa84ef9a9c8bfccc3516de77fa13cabf"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#afa84ef9a9c8bfccc3516de77fa13cabf">cx_ecpoint_is_on_curve</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *R, bool *is_on_curve)</td></tr>
-<tr class="memdesc:afa84ef9a9c8bfccc3516de77fa13cabf"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check if a given point is on the curve.  <a href="#afa84ef9a9c8bfccc3516de77fa13cabf">More...</a><br /></td></tr>
+<tr class="memdesc:afa84ef9a9c8bfccc3516de77fa13cabf"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks whether a given point is on the curve.  <a href="#afa84ef9a9c8bfccc3516de77fa13cabf">More...</a><br /></td></tr>
 <tr class="memitem:ae2f2d3238d16cfdcb069db848a96739a"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__ec_8h#ae2f2d3238d16cfdcb069db848a96739a">cx_ecpoint_is_at_infinity</a> (const <a class="el" href="../ox__ec_8h#aa33ce844128bcd045dc7c80a2b06af8c">cx_ecpoint_t</a> *R, bool *is_at_infinity)</td></tr>
-<tr class="memdesc:ae2f2d3238d16cfdcb069db848a96739a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check if a given point is the point at infinity.  <a href="#ae2f2d3238d16cfdcb069db848a96739a">More...</a><br /></td></tr>
+<tr class="memdesc:ae2f2d3238d16cfdcb069db848a96739a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks whether a given point is the point at infinity.  <a href="#ae2f2d3238d16cfdcb069db848a96739a">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -299,7 +299,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return true if the curve is a Montgomery curve. </p>
+<p>Returns true if the curve is a Montgomery curve. </p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return true if the curve is a twisted Edwards curve. </p>
+<p>Returns true if the curve is a twisted Edwards curve. </p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return true if the curve is a short Weierstrass curve. </p>
+<p>Returns true if the curve is a short Weierstrass curve. </p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return true if the curve identifier is in the specified range. </p>
+<p>Returns true if the curve identifier is in the specified range. </p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the curve BrainpoolP256r1. </p>
+<p>Enables the curve BrainpoolP256r1. </p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted curve BrainpoolP256t1. </p>
+<p>Enables the twisted curve BrainpoolP256t1. </p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the curve BrainpoolP320r1. </p>
+<p>Enables the curve BrainpoolP320r1. </p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted curve BrainpoolP320t1. </p>
+<p>Enables the twisted curve BrainpoolP320t1. </p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the curve BrainpoolP384r1. </p>
+<p>Enables the curve BrainpoolP384r1. </p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted curve BrainpoolP384t1. </p>
+<p>Enables the twisted curve BrainpoolP384t1. </p>
 
 </div>
 </div>
@@ -575,7 +575,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the curve BrainpoolP512r1. </p>
+<p>Enables the curve BrainpoolP512r1. </p>
 
 </div>
 </div>
@@ -591,7 +591,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted curve BrainpoolP512t1. </p>
+<p>Enables the twisted curve BrainpoolP512t1. </p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the Montgomery curve Curve25519. </p>
+<p>Enables the Montgomery curve Curve25519. </p>
 
 </div>
 </div>
@@ -623,7 +623,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the Montgomery curve Curve448. </p>
+<p>Enables the Montgomery curve Curve448. </p>
 
 </div>
 </div>
@@ -639,7 +639,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted Edwards curve Ed25519. </p>
+<p>Enables the twisted Edwards curve Ed25519. </p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the twisted Edwards curve Ed448. </p>
+<p>Enables the twisted Edwards curve Ed448. </p>
 
 </div>
 </div>
@@ -671,7 +671,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the Koblitz curve Secp256k1. </p>
+<p>Enables the Koblitz curve Secp256k1. </p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the verifiably random curve Secp256r1. </p>
+<p>Enables the verifiably random curve Secp256r1. </p>
 
 </div>
 </div>
@@ -703,7 +703,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the verifiably random curve Secp384r1. </p>
+<p>Enables the verifiably random curve Secp384r1. </p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the verifiably random curve Secp521r1. </p>
+<p>Enables the verifiably random curve Secp521r1. </p>
 
 </div>
 </div>
@@ -735,7 +735,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the Stark curve. </p>
+<p>Enables the Stark curve. </p>
 
 </div>
 </div>
@@ -1000,7 +1000,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the generator of the curve. </p>
+<p>Gets the generator of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
@@ -1045,7 +1045,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the generator of the curve and store it in the point structure. </p>
+<p>Gets the generator of the curve and stores it in the point structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
@@ -1103,7 +1103,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get a specific parameter of the curve. </p>
+<p>Gets a specific parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
@@ -1154,7 +1154,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Store a specific parameter of the curve as a BN. </p>
+<p>Stores a specific parameter of the curve as a BN. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
@@ -1200,7 +1200,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the byte length of each parameter of the curve. </p>
+<p>Gets the byte length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cv</td><td colspan="4">Curve identifier.</td></tr>
@@ -1213,8 +1213,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INVALID_CURVE </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh()</a>, <a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point()</a>, <a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult()</a>, and <a class="el" href="../lcx__eddsa_8h#a0b57531e83e4b41a8ea9af3371a92c1a">cx_eddsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1242,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the bit length of each parameter of the curve. </p>
+<p>Gets the bit length of each parameter of the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -1292,7 +1290,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add two points on a curve. </p>
+<p>Adds two points on a curve. </p>
 <p>Each point should not be the point at infinity. If one of the point is the point at infinity then the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1341,7 +1339,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate memory for a point on the curve. </p>
+<p>Allocates memory for a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to a point.</td></tr>
@@ -1392,7 +1390,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compare two points on the same curve. </p>
+<p>Compares two points on the same curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">First point to compare.</td></tr>
@@ -1455,7 +1453,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the compressed form of a point. </p>
+<p>Computes the compressed form of a point. </p>
 <p>The compressed form depends on the curve type. For a Weierstrass or a Montgomery curve, the compressed form consists of the x-coordinate and a prefix. For a Twisted Edwards curve the compressed form consists of a y-coordinate and a prefix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1516,7 +1514,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the affine coordinates of a point given its compressed form. </p>
+<p>Computes the affine coordinates of a point given its compressed form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">P</td><td colspan="4">Pointer to the point.</td></tr>
@@ -1554,7 +1552,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroy a point on the curve. </p>
+<p>Destroys a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to destroy. If the pointer is NULL, nothing is done.</td></tr>
@@ -1627,7 +1625,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a double scalar multiplication. </p>
+<p>Performs a double scalar multiplication. </p>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1698,7 +1696,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a double scalar multiplication given the BN indexes of the scalars. </p>
+<p>Performs a double scalar multiplication given the BN indexes of the scalars. </p>
 <p>This implements the Straus-Shamir algorithm for computing <b>R = [k]P + [r]Q</b>. This should be used only for non-secret computations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1767,8 +1765,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Export a point. </p>
-<p>Fill two distinct buffers with the x-coordinate and the y-coordinate of the point. If the point is not in affine representation, it will be normalized first.</p>
+<p>Exports a point. </p>
+<p>Fills two distinct buffers with the x-coordinate and the y-coordinate of the point. If the point is not in affine representation, it will be normalized first.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
@@ -1823,7 +1821,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Export a point using BN indexes of the coordinates. </p>
+<p>Exports a point using BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to export.</td></tr>
@@ -1888,7 +1886,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a point on the curve. </p>
+<p>Initializes a point on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
@@ -1941,7 +1939,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a point on the curve with the BN indexes of the coordinates. </p>
+<p>Initializes a point on the curve with the BN indexes of the coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">P</td><td colspan="4">Pointer to the point to initialize.</td></tr>
@@ -1986,7 +1984,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if a given point is the point at infinity. </p>
+<p>Checks whether a given point is the point at infinity. </p>
 <p>The point at infinity has a z-coordinate equal to 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2035,7 +2033,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if a given point is on the curve. </p>
+<p>Checks whether a given point is on the curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td colspan="4">Pointer to the point to check.</td></tr>
@@ -2075,7 +2073,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the opposite of a point. </p>
+<p>Computes the opposite of a point. </p>
 <p>The point should not be the point at infinity, otherwise the function returns a CX_EC_INFINITE_POINT error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2128,7 +2126,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a secure scalar multiplication with a fixed scalar length. </p>
+<p>Performs a secure scalar multiplication with a fixed scalar length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
@@ -2182,7 +2180,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a secure scalar multiplication. </p>
+<p>Performs a secure scalar multiplication. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
@@ -2230,7 +2228,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a secure scalar multiplication given the BN index of the scalar. </p>
+<p>Performs a secure scalar multiplication given the BN index of the scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
@@ -2283,8 +2281,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a scalar multiplication. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#ae4c0306a025333d279be5326586bf86b" title="Perform a secure scalar multiplication. ">cx_ecpoint_rnd_scalarmul</a> or <a class="el" href="../ox__ec_8h#a3f63575b0780c61aafc46d74843f9737" title="Perform a secure scalar multiplication with a fixed scalar length. ">cx_ecpoint_rnd_fixed_scalarmul</a> rather than this function.</dd></dl>
+<p>Performs a scalar multiplication. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#ae4c0306a025333d279be5326586bf86b" title="Performs a secure scalar multiplication. ">cx_ecpoint_rnd_scalarmul</a> or <a class="el" href="../ox__ec_8h#a3f63575b0780c61aafc46d74843f9737" title="Performs a secure scalar multiplication with a fixed scalar length. ">cx_ecpoint_rnd_fixed_scalarmul</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>
@@ -2332,8 +2330,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a scalar multiplication given the BN index of the scalar. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#a4bd5932bc102754d01bcccccbefdcdc3" title="Perform a secure scalar multiplication given the BN index of the scalar. ">cx_ecpoint_rnd_scalarmul_bn</a> rather than this function.</dd></dl>
+<p>Performs a scalar multiplication given the BN index of the scalar. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This should be called only for non critical purposes. It is recommended to use <a class="el" href="../ox__ec_8h#a4bd5932bc102754d01bcccccbefdcdc3" title="Performs a secure scalar multiplication given the BN index of the scalar. ">cx_ecpoint_rnd_scalarmul_bn</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">P</td><td colspan="4">Pointer to a point on a curve. This will hold the result.</td></tr>

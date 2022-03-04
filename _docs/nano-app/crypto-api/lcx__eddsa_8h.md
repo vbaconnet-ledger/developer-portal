@@ -17,17 +17,17 @@ layout: doc
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af5baecd2ef3d0ca561059a38e3a0fbc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#af5baecd2ef3d0ca561059a38e3a0fbc0">cx_eddsa_sign_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len)</td></tr>
-<tr class="memdesc:af5baecd2ef3d0ca561059a38e3a0fbc0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sign a message digest.  <a href="#af5baecd2ef3d0ca561059a38e3a0fbc0">More...</a><br /></td></tr>
+<tr class="memdesc:af5baecd2ef3d0ca561059a38e3a0fbc0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Signs a message digest.  <a href="#af5baecd2ef3d0ca561059a38e3a0fbc0">More...</a><br /></td></tr>
 <tr class="memitem:a0b57531e83e4b41a8ea9af3371a92c1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#a0b57531e83e4b41a8ea9af3371a92c1a">cx_eddsa_sign</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *hash, unsigned int hash_len, const unsigned char *ctx, unsigned int ctx_len, unsigned char *sig, unsigned int sig_len, unsigned int *info)</td></tr>
-<tr class="memdesc:a0b57531e83e4b41a8ea9af3371a92c1a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sign a message digest.  <a href="#a0b57531e83e4b41a8ea9af3371a92c1a">More...</a><br /></td></tr>
+<tr class="memdesc:a0b57531e83e4b41a8ea9af3371a92c1a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Signs a message digest.  <a href="#a0b57531e83e4b41a8ea9af3371a92c1a">More...</a><br /></td></tr>
 <tr class="memitem:a3cf296536f3fb32e731f463385cf698e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#a3cf296536f3fb32e731f463385cf698e">cx_eddsa_verify_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, const uint8_t *sig, size_t sig_len)</td></tr>
-<tr class="memdesc:a3cf296536f3fb32e731f463385cf698e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify a signature.  <a href="#a3cf296536f3fb32e731f463385cf698e">More...</a><br /></td></tr>
+<tr class="memdesc:a3cf296536f3fb32e731f463385cf698e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies a signature.  <a href="#a3cf296536f3fb32e731f463385cf698e">More...</a><br /></td></tr>
 <tr class="memitem:a6dd546700a865eae1f89fd438185469c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#a6dd546700a865eae1f89fd438185469c">cx_eddsa_verify</a> (const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *hash, unsigned int hash_len, const unsigned char *ctx, unsigned int ctx_len, const unsigned char *sig, unsigned int sig_len)</td></tr>
-<tr class="memdesc:a6dd546700a865eae1f89fd438185469c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify a signature.  <a href="#a6dd546700a865eae1f89fd438185469c">More...</a><br /></td></tr>
+<tr class="memdesc:a6dd546700a865eae1f89fd438185469c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies a signature.  <a href="#a6dd546700a865eae1f89fd438185469c">More...</a><br /></td></tr>
 <tr class="memitem:a6b5ff7583b40951d6fa2e66a8683d078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#a6b5ff7583b40951d6fa2e66a8683d078">cx_encode_coord</a> (uint8_t *coord, int len, int sign)</td></tr>
-<tr class="memdesc:a6b5ff7583b40951d6fa2e66a8683d078"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encode the curve point coordinates.  <a href="#a6b5ff7583b40951d6fa2e66a8683d078">More...</a><br /></td></tr>
+<tr class="memdesc:a6b5ff7583b40951d6fa2e66a8683d078"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encodes the curve point coordinates.  <a href="#a6b5ff7583b40951d6fa2e66a8683d078">More...</a><br /></td></tr>
 <tr class="memitem:a0f57c52056f373f1a2c21f6d0c838a6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__eddsa_8h#a0f57c52056f373f1a2c21f6d0c838a6f">cx_decode_coord</a> (uint8_t *coord, int len)</td></tr>
-<tr class="memdesc:a0f57c52056f373f1a2c21f6d0c838a6f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decode the curve point coordinates.  <a href="#a0f57c52056f373f1a2c21f6d0c838a6f">More...</a><br /></td></tr>
+<tr class="memdesc:a0f57c52056f373f1a2c21f6d0c838a6f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decodes the curve point coordinates.  <a href="#a0f57c52056f373f1a2c21f6d0c838a6f">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -62,7 +62,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decode the curve point coordinates. </p>
+<p>Decodes the curve point coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">coord</td><td colspan="4">A pointer to the point encoded coordinates.</td></tr>
@@ -71,8 +71,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sign of the x-coordinate. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__eddsa_8h#a6dd546700a865eae1f89fd438185469c">cx_eddsa_verify()</a>.</p>
 
 </div>
 </div>
@@ -156,12 +154,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sign a message digest. </p>
-<p>Sign a message digest according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__eddsa_8h#af5baecd2ef3d0ca561059a38e3a0fbc0" title="Sign a message digest. ">cx_eddsa_sign_no_throw</a> rather than this function.</dd></dl>
+<p>Signs a message digest. </p>
+<p>The signature is done according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__eddsa_8h#af5baecd2ef3d0ca561059a38e3a0fbc0" title="Signs a message digest. ">cx_eddsa_sign_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Mode. This parameter is not used.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
@@ -197,8 +195,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__256__private__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_256_private_key_s::curve</a>, <a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length()</a>, <a class="el" href="../lcx__eddsa_8h#af5baecd2ef3d0ca561059a38e3a0fbc0">cx_eddsa_sign_no_throw()</a>, and <a class="el" href="../lcx__eddsa_8h#a3cf296536f3fb32e731f463385cf698e">cx_eddsa_verify_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -252,11 +248,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sign a message digest. </p>
-<p>Sign a message digest according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
+<p>Signs a message digest. </p>
+<p>The signature is done according to the EDDSA specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
@@ -286,8 +282,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER_VALUE </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__eddsa_8h#a0b57531e83e4b41a8ea9af3371a92c1a">cx_eddsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -365,11 +359,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Verify a signature. </p>
-<p>Verify a signature according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
+<p>Verifies a signature. </p>
+<p>The verification is done according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. THis shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. THis shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initializes a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Mode. This parameter is not used.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
@@ -387,8 +381,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, otherwise 0. </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__eddsa_8h#a0f57c52056f373f1a2c21f6d0c838a6f">cx_decode_coord()</a>, <a class="el" href="../lcx__eddsa_8h#a3cf296536f3fb32e731f463385cf698e">cx_eddsa_verify_no_throw()</a>, and <a class="el" href="../lcx__eddsa_8h#a6b5ff7583b40951d6fa2e66a8683d078">cx_encode_coord()</a>.</p>
 
 </div>
 </div>
@@ -442,11 +434,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify a signature. </p>
-<p>Verify a signature according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
+<p>Verifies a signature. </p>
+<p>The verification is done according to the specification <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key. This shall be initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initializes a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest agorithm identifier. Algorithms supported:<ul>
 <li>SHA512</li>
 <li>SHA3</li>
@@ -461,8 +453,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, otherwise 0. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__eddsa_8h#a0b57531e83e4b41a8ea9af3371a92c1a">cx_eddsa_sign()</a>, and <a class="el" href="../lcx__eddsa_8h#a6dd546700a865eae1f89fd438185469c">cx_eddsa_verify()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +488,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encode the curve point coordinates. </p>
+<p>Encodes the curve point coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">coord</td><td colspan="4">A pointer to the point coordinates in the form x|y.</td></tr>
@@ -507,8 +497,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__eddsa_8h#a6dd546700a865eae1f89fd438185469c">cx_eddsa_verify()</a>.</p>
 
 </div>
 </div>

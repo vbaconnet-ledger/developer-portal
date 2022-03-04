@@ -43,8 +43,6 @@ Data Fields</h2></td></tr>
 
 <p>Curve identifier. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh()</a>, and <a class="el" href="../lcx__eddsa_8h#a0b57531e83e4b41a8ea9af3371a92c1a">cx_eddsa_sign()</a>.</p>
-
 </div>
 </div>
 <a id="a4443e80f8e2262547b7c857fbb0ff652"></a>

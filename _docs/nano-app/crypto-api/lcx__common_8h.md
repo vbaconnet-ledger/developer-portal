@@ -192,8 +192,6 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh()</a>.</p>
-
 </div>
 </div>
 <a id="a1693fc2767844b509e747d705aaae7ef"></a>
@@ -432,8 +430,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bit 14:12: ECDH and ECSCHNORR specificities. </p>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdh_8h#a9a4febd251d944d6c04b43c7330740ce">cx_ecdh()</a>.</p>
 
 </div>
 </div>

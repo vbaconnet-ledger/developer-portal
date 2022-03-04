@@ -63,35 +63,35 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af814abef1212161f269f907393b6bfbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe">cx_rsa_init_public_key_no_throw</a> (const uint8_t *exponent, size_t exponent_len, const uint8_t *modulus, size_t modulus_len, <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:af814abef1212161f269f907393b6bfbe"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RSA public key.  <a href="#af814abef1212161f269f907393b6bfbe">More...</a><br /></td></tr>
+<tr class="memdesc:af814abef1212161f269f907393b6bfbe"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RSA public key.  <a href="#af814abef1212161f269f907393b6bfbe">More...</a><br /></td></tr>
 <tr class="memitem:aec14aad212dd646a77d4810448fa626f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#aec14aad212dd646a77d4810448fa626f">cx_rsa_init_public_key</a> (const unsigned char *exponent, unsigned int exponent_len, const unsigned char *modulus, unsigned int modulus_len, <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:aec14aad212dd646a77d4810448fa626f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RSA public key.  <a href="#aec14aad212dd646a77d4810448fa626f">More...</a><br /></td></tr>
+<tr class="memdesc:aec14aad212dd646a77d4810448fa626f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RSA public key.  <a href="#aec14aad212dd646a77d4810448fa626f">More...</a><br /></td></tr>
 <tr class="memitem:abb300ab7879fa569620a588c4ce2fd8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f">cx_rsa_init_private_key_no_throw</a> (const uint8_t *exponent, size_t exponent_len, const uint8_t *modulus, size_t modulus_len, <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key)</td></tr>
-<tr class="memdesc:abb300ab7879fa569620a588c4ce2fd8f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RSA private key.  <a href="#abb300ab7879fa569620a588c4ce2fd8f">More...</a><br /></td></tr>
+<tr class="memdesc:abb300ab7879fa569620a588c4ce2fd8f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RSA private key.  <a href="#abb300ab7879fa569620a588c4ce2fd8f">More...</a><br /></td></tr>
 <tr class="memitem:ae643a57d5a8d7e0d3e6e2c1dc54f68a7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#ae643a57d5a8d7e0d3e6e2c1dc54f68a7">cx_rsa_init_private_key</a> (const unsigned char *exponent, unsigned int exponent_len, const unsigned char *modulus, unsigned int modulus_len, <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key)</td></tr>
-<tr class="memdesc:ae643a57d5a8d7e0d3e6e2c1dc54f68a7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RSA private key.  <a href="#ae643a57d5a8d7e0d3e6e2c1dc54f68a7">More...</a><br /></td></tr>
+<tr class="memdesc:ae643a57d5a8d7e0d3e6e2c1dc54f68a7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RSA private key.  <a href="#ae643a57d5a8d7e0d3e6e2c1dc54f68a7">More...</a><br /></td></tr>
 <tr class="memitem:a06a46bf52ef7d2f1684e89db042d9a0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f">cx_rsa_generate_pair_no_throw</a> (size_t modulus_len, <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *public_key, <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *private_key, const uint8_t *pub_exponent, size_t exponent_len, const uint8_t *externalPQ)</td></tr>
-<tr class="memdesc:a06a46bf52ef7d2f1684e89db042d9a0f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a RSA key pair.  <a href="#a06a46bf52ef7d2f1684e89db042d9a0f">More...</a><br /></td></tr>
+<tr class="memdesc:a06a46bf52ef7d2f1684e89db042d9a0f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a RSA key pair.  <a href="#a06a46bf52ef7d2f1684e89db042d9a0f">More...</a><br /></td></tr>
 <tr class="memitem:a21909c144e63e9e95bfbb26787d6150b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a21909c144e63e9e95bfbb26787d6150b">cx_rsa_generate_pair</a> (unsigned int modulus_len, <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *public_key, <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *private_key, const unsigned char *pub_exponent, unsigned int exponent_len, const unsigned char *externalPQ)</td></tr>
-<tr class="memdesc:a21909c144e63e9e95bfbb26787d6150b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a RSA key pair.  <a href="#a21909c144e63e9e95bfbb26787d6150b">More...</a><br /></td></tr>
+<tr class="memdesc:a21909c144e63e9e95bfbb26787d6150b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a RSA key pair.  <a href="#a21909c144e63e9e95bfbb26787d6150b">More...</a><br /></td></tr>
 <tr class="memitem:a197cd7d5ab61952b81060b1032dc0ec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3">cx_rsa_sign_with_salt_len</a> (const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len, size_t salt_len)</td></tr>
-<tr class="memdesc:a197cd7d5ab61952b81060b1032dc0ec3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a message digest signature according to RSA specification.  <a href="#a197cd7d5ab61952b81060b1032dc0ec3">More...</a><br /></td></tr>
+<tr class="memdesc:a197cd7d5ab61952b81060b1032dc0ec3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a message digest signature according to RSA specification.  <a href="#a197cd7d5ab61952b81060b1032dc0ec3">More...</a><br /></td></tr>
 <tr class="memitem:a680975047eee1a76357372ae53a361d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5">cx_rsa_sign_no_throw</a> (const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len)</td></tr>
-<tr class="memdesc:a680975047eee1a76357372ae53a361d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a message digest signature according to RSA specification.  <a href="#a680975047eee1a76357372ae53a361d5">More...</a><br /></td></tr>
+<tr class="memdesc:a680975047eee1a76357372ae53a361d5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a message digest signature according to RSA specification.  <a href="#a680975047eee1a76357372ae53a361d5">More...</a><br /></td></tr>
 <tr class="memitem:a3e5b8b019f6bba127d56897500c8b927"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign</a> (const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *hash, unsigned int hash_len, unsigned char *sig, unsigned int sig_len)</td></tr>
-<tr class="memdesc:a3e5b8b019f6bba127d56897500c8b927"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute a message digest signature according to RSA specification.  <a href="#a3e5b8b019f6bba127d56897500c8b927">More...</a><br /></td></tr>
+<tr class="memdesc:a3e5b8b019f6bba127d56897500c8b927"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes a message digest signature according to RSA specification.  <a href="#a3e5b8b019f6bba127d56897500c8b927">More...</a><br /></td></tr>
 <tr class="memitem:aa9f7d00e76d3dd2ff7be2940db1eaaa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#aa9f7d00e76d3dd2ff7be2940db1eaaa6">cx_rsa_verify_with_salt_len</a> (const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len, size_t salt_len)</td></tr>
-<tr class="memdesc:aa9f7d00e76d3dd2ff7be2940db1eaaa6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify a message digest signature.  <a href="#aa9f7d00e76d3dd2ff7be2940db1eaaa6">More...</a><br /></td></tr>
+<tr class="memdesc:aa9f7d00e76d3dd2ff7be2940db1eaaa6"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies a message digest signature.  <a href="#aa9f7d00e76d3dd2ff7be2940db1eaaa6">More...</a><br /></td></tr>
 <tr class="memitem:a53a92ebba93f6579fc7734c7a42dd5bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a53a92ebba93f6579fc7734c7a42dd5bb">cx_rsa_verify</a> (const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t sig_len)</td></tr>
-<tr class="memdesc:a53a92ebba93f6579fc7734c7a42dd5bb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify a message digest signature.  <a href="#a53a92ebba93f6579fc7734c7a42dd5bb">More...</a><br /></td></tr>
+<tr class="memdesc:a53a92ebba93f6579fc7734c7a42dd5bb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies a message digest signature.  <a href="#a53a92ebba93f6579fc7734c7a42dd5bb">More...</a><br /></td></tr>
 <tr class="memitem:a1f5dbde4ea4fc7ac4191e2d65b9392ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef">cx_rsa_encrypt_no_throw</a> (const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *mesg, size_t mesg_len, uint8_t *enc, size_t enc_len)</td></tr>
-<tr class="memdesc:a1f5dbde4ea4fc7ac4191e2d65b9392ef"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt a message according to RSA specification.  <a href="#a1f5dbde4ea4fc7ac4191e2d65b9392ef">More...</a><br /></td></tr>
+<tr class="memdesc:a1f5dbde4ea4fc7ac4191e2d65b9392ef"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts a message according to RSA specification.  <a href="#a1f5dbde4ea4fc7ac4191e2d65b9392ef">More...</a><br /></td></tr>
 <tr class="memitem:acd543c2453e21ffb03b2c6e0d31f061a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#acd543c2453e21ffb03b2c6e0d31f061a">cx_rsa_encrypt</a> (const <a class="el" href="../lcx__rsa_8h#a4332ce85a407c456b5386cc2a2f77363">cx_rsa_public_key_t</a> *key, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *mesg, unsigned int mesg_len, unsigned char *enc, unsigned int enc_len)</td></tr>
-<tr class="memdesc:acd543c2453e21ffb03b2c6e0d31f061a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt a message according to RSA specification.  <a href="#acd543c2453e21ffb03b2c6e0d31f061a">More...</a><br /></td></tr>
+<tr class="memdesc:acd543c2453e21ffb03b2c6e0d31f061a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts a message according to RSA specification.  <a href="#acd543c2453e21ffb03b2c6e0d31f061a">More...</a><br /></td></tr>
 <tr class="memitem:ab77e2c0642aaf3fe8f92ca8b7c73b781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781">cx_rsa_decrypt_no_throw</a> (const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *mesg, size_t mesg_len, uint8_t *dec, size_t *dec_len)</td></tr>
-<tr class="memdesc:ab77e2c0642aaf3fe8f92ca8b7c73b781"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypt a message according to RSA specification.  <a href="#ab77e2c0642aaf3fe8f92ca8b7c73b781">More...</a><br /></td></tr>
+<tr class="memdesc:ab77e2c0642aaf3fe8f92ca8b7c73b781"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypts a message according to RSA specification.  <a href="#ab77e2c0642aaf3fe8f92ca8b7c73b781">More...</a><br /></td></tr>
 <tr class="memitem:a46cc5cc112d8e3cd4dfaa81143d2d1eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__rsa_8h#a46cc5cc112d8e3cd4dfaa81143d2d1eb">cx_rsa_decrypt</a> (const <a class="el" href="../lcx__rsa_8h#a25061837f7ce204d13114de41fdabdd1">cx_rsa_private_key_t</a> *key, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *mesg, unsigned int mesg_len, unsigned char *dec, unsigned int dec_len)</td></tr>
-<tr class="memdesc:a46cc5cc112d8e3cd4dfaa81143d2d1eb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypt a message according to RSA specification.  <a href="#a46cc5cc112d8e3cd4dfaa81143d2d1eb">More...</a><br /></td></tr>
+<tr class="memdesc:a46cc5cc112d8e3cd4dfaa81143d2d1eb"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decrypts a message according to RSA specification.  <a href="#a46cc5cc112d8e3cd4dfaa81143d2d1eb">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -333,12 +333,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Decrypt a message according to RSA specification. </p>
+<p>Decrypts a message according to RSA specification. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781" title="Decrypt a message according to RSA specification. ">cx_rsa_decrypt_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781" title="Decrypts a message according to RSA specification. ">cx_rsa_decrypt_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
@@ -369,8 +369,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781">cx_rsa_decrypt_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -430,10 +428,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrypt a message according to RSA specification. </p>
+<p>Decrypts a message according to RSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
@@ -462,8 +460,6 @@ Functions</h2></td></tr>
 <li>CX_NOT_LOCKED </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a46cc5cc112d8e3cd4dfaa81143d2d1eb">cx_rsa_decrypt()</a>, and <a class="el" href="../lcx__rsa_8h#acd543c2453e21ffb03b2c6e0d31f061a">cx_rsa_encrypt()</a>.</p>
 
 </div>
 </div>
@@ -529,12 +525,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Encrypt a message according to RSA specification. </p>
+<p>Encrypts a message according to RSA specification. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef" title="Encrypt a message according to RSA specification. ">cx_rsa_encrypt_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef" title="Encrypts a message according to RSA specification. ">cx_rsa_encrypt_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initializes a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
@@ -565,8 +561,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#ab77e2c0642aaf3fe8f92ca8b7c73b781">cx_rsa_decrypt_no_throw()</a>, <a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef">cx_rsa_encrypt_no_throw()</a>, and <a class="el" href="../cx__rsa__public__key__s#a854352f53b148adc24983a58a1866d66">cx_rsa_public_key_s::size</a>.</p>
 
 </div>
 </div>
@@ -626,10 +620,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt a message according to RSA specification. </p>
+<p>Encrypts a message according to RSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initializes a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_OAEP</li>
@@ -658,8 +652,6 @@ Functions</h2></td></tr>
 <li>CX_NOT_LOCKED </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#acd543c2453e21ffb03b2c6e0d31f061a">cx_rsa_encrypt()</a>, and <a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -719,9 +711,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generate a RSA key pair. </p>
-<p>Generate a RSA key pair. This function throws an exception if the generation failed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f" title="Generate a RSA key pair. ">cx_rsa_generate_pair_no_throw</a> rather than this function.</dd></dl>
+<p>Generates a RSA key pair. </p>
+<p>This function throws an exception if the generation failed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f" title="Generates a RSA key pair. ">cx_rsa_generate_pair_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Size of the modulus in bytes. Expected sizes:<ul>
@@ -751,8 +743,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f">cx_rsa_generate_pair_no_throw()</a>, <a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5">cx_rsa_sign_no_throw()</a>, and <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3">cx_rsa_sign_with_salt_len()</a>.</p>
 
 </div>
 </div>
@@ -806,7 +796,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a RSA key pair. </p>
+<p>Generates a RSA key pair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">modulus_len</td><td colspan="4">Size of the modulus in bytes. Expected sizes:<ul>
@@ -834,8 +824,6 @@ Functions</h2></td></tr>
 <li>CX_OVERFLOW </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a21909c144e63e9e95bfbb26787d6150b">cx_rsa_generate_pair()</a>, and <a class="el" href="../lcx__rsa_8h#ae643a57d5a8d7e0d3e6e2c1dc54f68a7">cx_rsa_init_private_key()</a>.</p>
 
 </div>
 </div>
@@ -889,10 +877,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a RSA private key. </p>
+<p>Initializes a RSA private key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used. This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Private exponent: pointer to a raw key value or NULL.</td></tr>
@@ -910,8 +898,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#a06a46bf52ef7d2f1684e89db042d9a0f">cx_rsa_generate_pair_no_throw()</a>, and <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f">cx_rsa_init_private_key_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -959,7 +945,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a RSA private key. </p>
+<p>Initializes a RSA private key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -977,8 +963,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#ae643a57d5a8d7e0d3e6e2c1dc54f68a7">cx_rsa_init_private_key()</a>, and <a class="el" href="../lcx__rsa_8h#aec14aad212dd646a77d4810448fa626f">cx_rsa_init_public_key()</a>.</p>
 
 </div>
 </div>
@@ -1032,10 +1016,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a RSA public key. </p>
+<p>Initializes a RSA public key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used. This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initializes a RSA public key. ">cx_rsa_init_public_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">exponent</td><td colspan="4">Public exponent: pointer to a raw key value (4 bytes) or NULL.</td></tr>
@@ -1053,8 +1037,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f">cx_rsa_init_private_key_no_throw()</a>, and <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe">cx_rsa_init_public_key_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1084,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a RSA public key. </p>
+<p>Initializes a RSA public key. </p>
 <p>Once initialized, the key may be stored in non-volatile memory and used for any RSA processing.</p>
 <p>Passing NULL as raw key initializes the key without any value. The key cannot be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1120,8 +1102,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#aec14aad212dd646a77d4810448fa626f">cx_rsa_init_public_key()</a>.</p>
 
 </div>
 </div>
@@ -1187,12 +1167,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute a message digest signature according to RSA specification. </p>
-<p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_no_throw</a> rather than this function.</dd></dl>
+<p>Computes a message digest signature according to RSA specification. </p>
+<p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Computes a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5" title="Computes a message digest signature according to RSA specification. ">cx_rsa_sign_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
@@ -1225,8 +1205,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__rsa_8h#a1f5dbde4ea4fc7ac4191e2d65b9392ef">cx_rsa_encrypt_no_throw()</a>, <a class="el" href="../lcx__rsa_8h#a680975047eee1a76357372ae53a361d5">cx_rsa_sign_no_throw()</a>, <a class="el" href="../lcx__rsa_8h#a53a92ebba93f6579fc7734c7a42dd5bb">cx_rsa_verify()</a>, <a class="el" href="../lcx__rsa_8h#aa9f7d00e76d3dd2ff7be2940db1eaaa6">cx_rsa_verify_with_salt_len()</a>, and <a class="el" href="../cx__rsa__private__key__s#a854352f53b148adc24983a58a1866d66">cx_rsa_private_key_s::size</a>.</p>
 
 </div>
 </div>
@@ -1286,11 +1264,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a message digest signature according to RSA specification. </p>
-<p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Compute a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID.</p>
+<p>Computes a message digest signature according to RSA specification. </p>
+<p>When using PSS padding, the salt length is fixed to the hash output length. If another salt length is used, call <a class="el" href="../lcx__rsa_8h#a197cd7d5ab61952b81060b1032dc0ec3" title="Computes a message digest signature according to RSA specification. ">cx_rsa_sign_with_salt_len</a> instead. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the the same hash algorithm as specified by hashID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
@@ -1321,8 +1299,6 @@ Functions</h2></td></tr>
 <li>CX_NOT_LOCKED </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a21909c144e63e9e95bfbb26787d6150b">cx_rsa_generate_pair()</a>, and <a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -1388,11 +1364,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute a message digest signature according to RSA specification. </p>
+<p>Computes a message digest signature according to RSA specification. </p>
 <p>When using PSS padding, the salt length is fixed to the hash output length. The MGF1 function is the one descrided in PKCS1 v2.0 specification, using the same hash algorithm as specified by hashID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initialize a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA private key initialized with <a class="el" href="../lcx__rsa_8h#abb300ab7879fa569620a588c4ce2fd8f" title="Initializes a RSA private key. ">cx_rsa_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
@@ -1424,8 +1400,6 @@ Functions</h2></td></tr>
 <li>CX_NOT_LOCKED </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a21909c144e63e9e95bfbb26787d6150b">cx_rsa_generate_pair()</a>.</p>
 
 </div>
 </div>
@@ -1485,11 +1459,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify a message digest signature. </p>
-<p>Verify a message digest signature according to RSA specification. Please note that if the mode is set to CX_PAD_PKCS1_PSS, then the underlying salt length is by convention equal to the hash length. If another salt length is used, please call <a class="el" href="../lcx__rsa_8h#aa9f7d00e76d3dd2ff7be2940db1eaaa6" title="Verify a message digest signature. ">cx_rsa_verify_with_salt_len</a> instead.</p>
+<p>Verifies a message digest signature. </p>
+<p>It verifies a message digest signature according to RSA specification. Please note that if the mode is set to CX_PAD_PKCS1_PSS, then the underlying salt length is by convention equal to the hash length. If another salt length is used, please call <a class="el" href="../lcx__rsa_8h#aa9f7d00e76d3dd2ff7be2940db1eaaa6" title="Verifies a message digest signature. ">cx_rsa_verify_with_salt_len</a> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initializes a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
@@ -1512,8 +1486,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, 0 otherwise. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -1579,11 +1551,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify a message digest signature. </p>
-<p>Verify a message digest signature according to RSA specification with a specified salt length.</p>
+<p>Verifies a message digest signature. </p>
+<p>It verifies a message digest signature according to RSA specification with a specified salt length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initialize a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">RSA public key initialized with <a class="el" href="../lcx__rsa_8h#af814abef1212161f269f907393b6bfbe" title="Initializes a RSA public key. ">cx_rsa_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_PAD_PKCS1_1o5</li>
 <li>CX_PAD_PKCS1_PSS</li>
@@ -1607,8 +1579,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, 0 otherwise. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign()</a>.</p>
 
 </div>
 </div>

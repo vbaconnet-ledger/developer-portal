@@ -27,25 +27,25 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af1ee003715d6fb8cb6ad954a560b6439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439">cx_sha3_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:af1ee003715d6fb8cb6ad954a560b6439"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3 context.  <a href="#af1ee003715d6fb8cb6ad954a560b6439">More...</a><br /></td></tr>
+<tr class="memdesc:af1ee003715d6fb8cb6ad954a560b6439"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3 context.  <a href="#af1ee003715d6fb8cb6ad954a560b6439">More...</a><br /></td></tr>
 <tr class="memitem:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#adbdddb31ebf5f6a41a6e0a3d76f51648">cx_sha3_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3 context.  <a href="#adbdddb31ebf5f6a41a6e0a3d76f51648">More...</a><br /></td></tr>
+<tr class="memdesc:adbdddb31ebf5f6a41a6e0a3d76f51648"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3 context.  <a href="#adbdddb31ebf5f6a41a6e0a3d76f51648">More...</a><br /></td></tr>
 <tr class="memitem:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9">cx_keccak_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a KECCAK context.  <a href="#a84fdde7c9a61fe0ccc4ad16b5ff137a9">More...</a><br /></td></tr>
+<tr class="memdesc:a84fdde7c9a61fe0ccc4ad16b5ff137a9"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a KECCAK context.  <a href="#a84fdde7c9a61fe0ccc4ad16b5ff137a9">More...</a><br /></td></tr>
 <tr class="memitem:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a4154c0e5ef1cb0e5ce89c10c83dad02c">cx_keccak_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a KECCAK context.  <a href="#a4154c0e5ef1cb0e5ce89c10c83dad02c">More...</a><br /></td></tr>
+<tr class="memdesc:a4154c0e5ef1cb0e5ce89c10c83dad02c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a KECCAK context.  <a href="#a4154c0e5ef1cb0e5ce89c10c83dad02c">More...</a><br /></td></tr>
 <tr class="memitem:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145">cx_shake128_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
-<tr class="memdesc:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#acf6c2bda2bbc64ee17cff4e16a78b145">More...</a><br /></td></tr>
+<tr class="memdesc:acf6c2bda2bbc64ee17cff4e16a78b145"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#acf6c2bda2bbc64ee17cff4e16a78b145">More...</a><br /></td></tr>
 <tr class="memitem:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a3b7b0e53b9b88f4a576c1038ad0547ed">cx_shake128_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
-<tr class="memdesc:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a3b7b0e53b9b88f4a576c1038ad0547ed">More...</a><br /></td></tr>
+<tr class="memdesc:a3b7b0e53b9b88f4a576c1038ad0547ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#a3b7b0e53b9b88f4a576c1038ad0547ed">More...</a><br /></td></tr>
 <tr class="memitem:a43934d03ef80a9c0be16805c46aaae33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33">cx_shake256_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t out_size)</td></tr>
-<tr class="memdesc:a43934d03ef80a9c0be16805c46aaae33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#a43934d03ef80a9c0be16805c46aaae33">More...</a><br /></td></tr>
+<tr class="memdesc:a43934d03ef80a9c0be16805c46aaae33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#a43934d03ef80a9c0be16805c46aaae33">More...</a><br /></td></tr>
 <tr class="memitem:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ab4ed687f02084b7cbfe1a7baaf597f21">cx_shake256_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int out_size)</td></tr>
-<tr class="memdesc:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ab4ed687f02084b7cbfe1a7baaf597f21">More...</a><br /></td></tr>
+<tr class="memdesc:ab4ed687f02084b7cbfe1a7baaf597f21"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#ab4ed687f02084b7cbfe1a7baaf597f21">More...</a><br /></td></tr>
 <tr class="memitem:ac21ff12761bb2f87176109b4fbc5a84b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b">cx_sha3_xof_init_no_throw</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, size_t size, size_t out_length)</td></tr>
-<tr class="memdesc:ac21ff12761bb2f87176109b4fbc5a84b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#ac21ff12761bb2f87176109b4fbc5a84b">More...</a><br /></td></tr>
+<tr class="memdesc:ac21ff12761bb2f87176109b4fbc5a84b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#ac21ff12761bb2f87176109b4fbc5a84b">More...</a><br /></td></tr>
 <tr class="memitem:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__sha3_8h#aaa1ad51b0b4b5d2ac90b50633daf7aec">cx_sha3_xof_init</a> (<a class="el" href="../lcx__sha3_8h#a2487acc2e3ae619e2916d6741ff9d96a">cx_sha3_t</a> *hash, unsigned int size, unsigned int out_length)</td></tr>
-<tr class="memdesc:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a SHA3-XOF context.  <a href="#aaa1ad51b0b4b5d2ac90b50633daf7aec">More...</a><br /></td></tr>
+<tr class="memdesc:aaa1ad51b0b4b5d2ac90b50633daf7aec"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a SHA3-XOF context.  <a href="#aaa1ad51b0b4b5d2ac90b50633daf7aec">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -104,7 +104,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a KECCAK context. </p>
+<p>Initializes a KECCAK context. </p>
 <p>Supported output sizes in bits:</p><ul>
 <li>224</li>
 <li>256</li>
@@ -112,7 +112,7 @@ Functions</h2></td></tr>
 <li>512</li>
 </ul>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9" title="Initialize a KECCAK context. ">cx_keccak_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9" title="Initializes a KECCAK context. ">cx_keccak_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the KECCAK context. The context shall be in RAM.</td></tr>
@@ -127,8 +127,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117aecd503c7fa1b28f3741c6406ac07e5cc">CX_KECCAK</a>, <a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9">cx_keccak_init_no_throw()</a>, and <a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145">cx_shake128_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -158,7 +156,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a KECCAK context. </p>
+<p>Initializes a KECCAK context. </p>
 <p>Supported output sizes in bits:</p><ul>
 <li>224</li>
 <li>256</li>
@@ -177,8 +175,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha3_8h#a4154c0e5ef1cb0e5ce89c10c83dad02c">cx_keccak_init()</a>, and <a class="el" href="../lcx__sha3_8h#adbdddb31ebf5f6a41a6e0a3d76f51648">cx_sha3_init()</a>.</p>
 
 </div>
 </div>
@@ -214,7 +210,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3 context. </p>
+<p>Initializes a SHA3 context. </p>
 <p>Supported output sizes in bits:</p><ul>
 <li>224</li>
 <li>256</li>
@@ -222,7 +218,7 @@ Functions</h2></td></tr>
 <li>512</li>
 </ul>
 <p>This function throws an exception if the initialization fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439" title="Initialize a SHA3 context. ">cx_sha3_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439" title="Initializes a SHA3 context. ">cx_sha3_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the SHA3 context. The context shall be in RAM.</td></tr>
@@ -237,8 +233,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__sha3_8h#a84fdde7c9a61fe0ccc4ad16b5ff137a9">cx_keccak_init_no_throw()</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117af9ae2d3469a8acc775f58647ed9591a5">CX_SHA3</a>, and <a class="el" href="../lcx__sha3_8h#af1ee003715d6fb8cb6ad954a560b6439">cx_sha3_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +262,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3 context. </p>
+<p>Initializes a SHA3 context. </p>
 <p>Supported output sizes in bits:</p><ul>
 <li>224</li>
 <li>256</li>
@@ -287,8 +281,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha3_8h#adbdddb31ebf5f6a41a6e0a3d76f51648">cx_sha3_init()</a>.</p>
 
 </div>
 </div>
@@ -330,13 +322,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>This can be used to initialize either SHAKE128 or SHAKE256. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
 </ul>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b" title="Initialize a SHA3-XOF context. ">cx_sha3_xof_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b" title="Initializes a SHA3-XOF context. ">cx_sha3_xof_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -352,8 +344,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b">cx_sha3_xof_init_no_throw()</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a109e7978193ee96c67516f9c09c97c3d">CX_SHAKE128</a>, and <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a267724ee4e443272cbc31e8ccf3f403b">CX_SHAKE256</a>.</p>
 
 </div>
 </div>
@@ -389,7 +379,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>This can be used to initialize either SHAKE128 or SHAKE256. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
@@ -407,8 +397,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha3_8h#aaa1ad51b0b4b5d2ac90b50633daf7aec">cx_sha3_xof_init()</a>, and <a class="el" href="../lcx__sha3_8h#ab4ed687f02084b7cbfe1a7baaf597f21">cx_shake256_init()</a>.</p>
 
 </div>
 </div>
@@ -444,13 +432,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>SHAKE128 is a SHA3-XOF (Extendable Output Function based on SHA3) with a 128-bit security. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
 </ul>
 <p>This function throws an exception if the initialization doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145" title="Initialize a SHA3-XOF context. ">cx_shake128_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145" title="Initializes a SHA3-XOF context. ">cx_shake128_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -465,8 +453,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a109e7978193ee96c67516f9c09c97c3d">CX_SHAKE128</a>, <a class="el" href="../lcx__sha3_8h#acf6c2bda2bbc64ee17cff4e16a78b145">cx_shake128_init_no_throw()</a>, and <a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33">cx_shake256_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -496,7 +482,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>SHAKE128 is a SHA3-XOF (Extendable Output Function based on SHA3) with a 128-bit security. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
@@ -513,8 +499,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha3_8h#a4154c0e5ef1cb0e5ce89c10c83dad02c">cx_keccak_init()</a>, and <a class="el" href="../lcx__sha3_8h#a3b7b0e53b9b88f4a576c1038ad0547ed">cx_shake128_init()</a>.</p>
 
 </div>
 </div>
@@ -550,13 +534,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>SHAKE256 is a SHA3-XOF (Extendable Output Function based on SHA3) with a 256-bit security. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
 </ul>
 <p>This function throws an exception if the initialization doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33" title="Initialize a SHA3-XOF context. ">cx_shake256_init_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33" title="Initializes a SHA3-XOF context. ">cx_shake256_init_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -571,8 +555,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__sha3_8h#ac21ff12761bb2f87176109b4fbc5a84b">cx_sha3_xof_init_no_throw()</a>, <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a267724ee4e443272cbc31e8ccf3f403b">CX_SHAKE256</a>, and <a class="el" href="../lcx__sha3_8h#a43934d03ef80a9c0be16805c46aaae33">cx_shake256_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -602,7 +584,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a SHA3-XOF context. </p>
+<p>Initializes a SHA3-XOF context. </p>
 <p>SHAKE256 is a SHA3-XOF (Extendable Output Function based on SHA3) with a 256-bit security. Supported output sizes in bits:</p><ul>
 <li>256</li>
 <li>512</li>
@@ -619,8 +601,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__sha3_8h#a3b7b0e53b9b88f4a576c1038ad0547ed">cx_shake128_init()</a>, and <a class="el" href="../lcx__sha3_8h#ab4ed687f02084b7cbfe1a7baaf597f21">cx_shake256_init()</a>.</p>
 
 </div>
 </div>

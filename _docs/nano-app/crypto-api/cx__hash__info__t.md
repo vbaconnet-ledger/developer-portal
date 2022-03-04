@@ -117,8 +117,6 @@ Data Fields</h2></td></tr>
 
 <p>Message digest algorithm identifier. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
-
 </div>
 </div>
 <a id="a936e314fcab4e7bfe77e6ffde4e15e06"></a>

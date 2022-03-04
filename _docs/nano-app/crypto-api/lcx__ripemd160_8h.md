@@ -32,9 +32,9 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a55d679791de8e2e677fffba87a3a94d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#a55d679791de8e2e677fffba87a3a94d3">cx_ripemd160_init_no_throw</a> (<a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *hash)</td></tr>
-<tr class="memdesc:a55d679791de8e2e677fffba87a3a94d3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RIPEMD-160 context.  <a href="#a55d679791de8e2e677fffba87a3a94d3">More...</a><br /></td></tr>
+<tr class="memdesc:a55d679791de8e2e677fffba87a3a94d3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RIPEMD-160 context.  <a href="#a55d679791de8e2e677fffba87a3a94d3">More...</a><br /></td></tr>
 <tr class="memitem:a4de39768d5a783cd37128eccfb914416"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ripemd160_8h#a4de39768d5a783cd37128eccfb914416">cx_ripemd160_init</a> (<a class="el" href="../lcx__ripemd160_8h#ae0605e61b5074bc86b616405eed44934">cx_ripemd160_t</a> *hash)</td></tr>
-<tr class="memdesc:a4de39768d5a783cd37128eccfb914416"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a RIPEMD-160 context.  <a href="#a4de39768d5a783cd37128eccfb914416">More...</a><br /></td></tr>
+<tr class="memdesc:a4de39768d5a783cd37128eccfb914416"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a RIPEMD-160 context.  <a href="#a4de39768d5a783cd37128eccfb914416">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -56,8 +56,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>RIPEMD160 message digest size. </p>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>
@@ -102,7 +100,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a RIPEMD-160 context. </p>
+<p>Initializes a RIPEMD-160 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -110,8 +108,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>RIPEMD160 identifier. </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117ab4a075a43ece09e77953b297b1a36fb3">CX_RIPEMD160</a>, and <a class="el" href="../lcx__ripemd160_8h#a55d679791de8e2e677fffba87a3a94d3">cx_ripemd160_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -131,7 +127,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a RIPEMD-160 context. </p>
+<p>Initializes a RIPEMD-160 context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context. The context shall be in RAM.</td></tr>
@@ -142,8 +138,6 @@ Functions</h2></td></tr>
 <li>CX_OK on success </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ripemd160_8h#a4de39768d5a783cd37128eccfb914416">cx_ripemd160_init()</a>.</p>
 
 </div>
 </div>

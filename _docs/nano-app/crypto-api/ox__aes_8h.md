@@ -32,11 +32,11 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae30926453ed5a67d184593d275316051"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#ae30926453ed5a67d184593d275316051">cx_aes_set_key_hw</a> (const <a class="el" href="../ox__aes_8h#ab8b2f2ea9595e64bb23f47fa0785c22c">cx_aes_key_t</a> *key, uint32_t mode)</td></tr>
-<tr class="memdesc:ae30926453ed5a67d184593d275316051"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Set an AES key in hardware.  <a href="#ae30926453ed5a67d184593d275316051">More...</a><br /></td></tr>
+<tr class="memdesc:ae30926453ed5a67d184593d275316051"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sets an AES key in hardware.  <a href="#ae30926453ed5a67d184593d275316051">More...</a><br /></td></tr>
 <tr class="memitem:a05e7fd5b3e0878cd5d33cfd015cf1a27"><td class="memItemLeft" align="right" valign="top">SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#a05e7fd5b3e0878cd5d33cfd015cf1a27">cx_aes_reset_hw</a> (void)</td></tr>
-<tr class="memdesc:a05e7fd5b3e0878cd5d33cfd015cf1a27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Reset AES context.  <a href="#a05e7fd5b3e0878cd5d33cfd015cf1a27">More...</a><br /></td></tr>
+<tr class="memdesc:a05e7fd5b3e0878cd5d33cfd015cf1a27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Resets the AES context.  <a href="#a05e7fd5b3e0878cd5d33cfd015cf1a27">More...</a><br /></td></tr>
 <tr class="memitem:aaef71539023f5ef39bd14bcca0aea6d4"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__aes_8h#aaef71539023f5ef39bd14bcca0aea6d4">cx_aes_block_hw</a> (const unsigned char *inblock, unsigned char *outblock)</td></tr>
-<tr class="memdesc:aaef71539023f5ef39bd14bcca0aea6d4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt or decrypt a block with AES.  <a href="#aaef71539023f5ef39bd14bcca0aea6d4">More...</a><br /></td></tr>
+<tr class="memdesc:aaef71539023f5ef39bd14bcca0aea6d4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts or decrypts a block with AES.  <a href="#aaef71539023f5ef39bd14bcca0aea6d4">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -110,7 +110,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt or decrypt a block with AES. </p>
+<p>Encrypts or decrypts a block with AES. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Pointer to the block.</td></tr>
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset AES context. </p>
+<p>Resets the AES context. </p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set an AES key in hardware. </p>
+<p>Sets an AES key in hardware. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td colspan="4">AES key.</td></tr>

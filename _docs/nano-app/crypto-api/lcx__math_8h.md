@@ -17,59 +17,59 @@ layout: doc
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abe7fad9139fc57b173d6e23ccb237d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71">cx_math_cmp_no_throw</a> (const uint8_t *a, const uint8_t *b, size_t length, int *diff)</td></tr>
-<tr class="memdesc:abe7fad9139fc57b173d6e23ccb237d71"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare two integers represented as byte arrays.  <a href="#abe7fad9139fc57b173d6e23ccb237d71">More...</a><br /></td></tr>
+<tr class="memdesc:abe7fad9139fc57b173d6e23ccb237d71"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compares two integers represented as byte arrays.  <a href="#abe7fad9139fc57b173d6e23ccb237d71">More...</a><br /></td></tr>
 <tr class="memitem:a2c81281722c71f1ba0542dd94138f37b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a2c81281722c71f1ba0542dd94138f37b">cx_math_cmp</a> (const uint8_t *a, const uint8_t *b, size_t length)</td></tr>
-<tr class="memdesc:a2c81281722c71f1ba0542dd94138f37b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare two integers represented as byte arrays.  <a href="#a2c81281722c71f1ba0542dd94138f37b">More...</a><br /></td></tr>
+<tr class="memdesc:a2c81281722c71f1ba0542dd94138f37b"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compares two integers represented as byte arrays.  <a href="#a2c81281722c71f1ba0542dd94138f37b">More...</a><br /></td></tr>
 <tr class="memitem:abbb12c1e6e3cb5c64ccc128d48b1938f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f">cx_math_add_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:abbb12c1e6e3cb5c64ccc128d48b1938f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two integers represented as byte arrays.  <a href="#abbb12c1e6e3cb5c64ccc128d48b1938f">More...</a><br /></td></tr>
+<tr class="memdesc:abbb12c1e6e3cb5c64ccc128d48b1938f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds two integers represented as byte arrays.  <a href="#abbb12c1e6e3cb5c64ccc128d48b1938f">More...</a><br /></td></tr>
 <tr class="memitem:a03666ab13301ff979e9537931dfd6a6d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a03666ab13301ff979e9537931dfd6a6d">cx_math_add</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:a03666ab13301ff979e9537931dfd6a6d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two integers represented as byte arrays.  <a href="#a03666ab13301ff979e9537931dfd6a6d">More...</a><br /></td></tr>
+<tr class="memdesc:a03666ab13301ff979e9537931dfd6a6d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds two integers represented as byte arrays.  <a href="#a03666ab13301ff979e9537931dfd6a6d">More...</a><br /></td></tr>
 <tr class="memitem:a5455933ba4e27ccae743459e69147b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89">cx_math_sub_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:a5455933ba4e27ccae743459e69147b89"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Subtract two integers represented as byte arrays.  <a href="#a5455933ba4e27ccae743459e69147b89">More...</a><br /></td></tr>
+<tr class="memdesc:a5455933ba4e27ccae743459e69147b89"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Subtracts two integers represented as byte arrays.  <a href="#a5455933ba4e27ccae743459e69147b89">More...</a><br /></td></tr>
 <tr class="memitem:ad939a3a02706fc0891ba00f082ddbc10"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#ad939a3a02706fc0891ba00f082ddbc10">cx_math_sub</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:ad939a3a02706fc0891ba00f082ddbc10"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Subtract two integers represented as byte arrays.  <a href="#ad939a3a02706fc0891ba00f082ddbc10">More...</a><br /></td></tr>
+<tr class="memdesc:ad939a3a02706fc0891ba00f082ddbc10"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Subtracts two integers represented as byte arrays.  <a href="#ad939a3a02706fc0891ba00f082ddbc10">More...</a><br /></td></tr>
 <tr class="memitem:af92dd08eb8b586d9a3e36d4972f4730a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a">cx_math_mult_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:af92dd08eb8b586d9a3e36d4972f4730a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Multiply two integers represented as byte arrays.  <a href="#af92dd08eb8b586d9a3e36d4972f4730a">More...</a><br /></td></tr>
+<tr class="memdesc:af92dd08eb8b586d9a3e36d4972f4730a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Multiplies two integers represented as byte arrays.  <a href="#af92dd08eb8b586d9a3e36d4972f4730a">More...</a><br /></td></tr>
 <tr class="memitem:a397e7e1612cd73bbc1d0cede0439ebea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a397e7e1612cd73bbc1d0cede0439ebea">cx_math_mult</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, size_t len)</td></tr>
-<tr class="memdesc:a397e7e1612cd73bbc1d0cede0439ebea"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Multiply two integers represented as byte arrays.  <a href="#a397e7e1612cd73bbc1d0cede0439ebea">More...</a><br /></td></tr>
+<tr class="memdesc:a397e7e1612cd73bbc1d0cede0439ebea"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Multiplies two integers represented as byte arrays.  <a href="#a397e7e1612cd73bbc1d0cede0439ebea">More...</a><br /></td></tr>
 <tr class="memitem:ab33f2233e60e1ff57d0215c3887ea003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003">cx_math_addm_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:ab33f2233e60e1ff57d0215c3887ea003"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular addition of two integers represented as byte arrays.  <a href="#ab33f2233e60e1ff57d0215c3887ea003">More...</a><br /></td></tr>
+<tr class="memdesc:ab33f2233e60e1ff57d0215c3887ea003"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular addition of two integers represented as byte arrays.  <a href="#ab33f2233e60e1ff57d0215c3887ea003">More...</a><br /></td></tr>
 <tr class="memitem:a449e49642737703c12fae09518ebd71c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a449e49642737703c12fae09518ebd71c">cx_math_addm</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:a449e49642737703c12fae09518ebd71c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular addition of two integers represented as byte arrays.  <a href="#a449e49642737703c12fae09518ebd71c">More...</a><br /></td></tr>
+<tr class="memdesc:a449e49642737703c12fae09518ebd71c"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular addition of two integers represented as byte arrays.  <a href="#a449e49642737703c12fae09518ebd71c">More...</a><br /></td></tr>
 <tr class="memitem:a767297f79263d1ce5dffc1574af681c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5">cx_math_subm_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:a767297f79263d1ce5dffc1574af681c5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular subtraction of two integers represented as byte arrays.  <a href="#a767297f79263d1ce5dffc1574af681c5">More...</a><br /></td></tr>
+<tr class="memdesc:a767297f79263d1ce5dffc1574af681c5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular subtraction of two integers represented as byte arrays.  <a href="#a767297f79263d1ce5dffc1574af681c5">More...</a><br /></td></tr>
 <tr class="memitem:addcb1e52be7fa1d166981e16c2ef3fa5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#addcb1e52be7fa1d166981e16c2ef3fa5">cx_math_subm</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:addcb1e52be7fa1d166981e16c2ef3fa5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular subtraction of two integers represented as byte arrays.  <a href="#addcb1e52be7fa1d166981e16c2ef3fa5">More...</a><br /></td></tr>
+<tr class="memdesc:addcb1e52be7fa1d166981e16c2ef3fa5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular subtraction of two integers represented as byte arrays.  <a href="#addcb1e52be7fa1d166981e16c2ef3fa5">More...</a><br /></td></tr>
 <tr class="memitem:aff8bc640cf787c8512693818b6f5bc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50">cx_math_multm_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:aff8bc640cf787c8512693818b6f5bc50"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular multiplication of two integers represented as byte arrays.  <a href="#aff8bc640cf787c8512693818b6f5bc50">More...</a><br /></td></tr>
+<tr class="memdesc:aff8bc640cf787c8512693818b6f5bc50"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular multiplication of two integers represented as byte arrays.  <a href="#aff8bc640cf787c8512693818b6f5bc50">More...</a><br /></td></tr>
 <tr class="memitem:a122efb1db79901b1cf509a132c54fe63"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a122efb1db79901b1cf509a132c54fe63">cx_math_multm</a> (uint8_t *r, const uint8_t *a, const uint8_t *b, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:a122efb1db79901b1cf509a132c54fe63"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular multiplication of two integers represented as byte arrays.  <a href="#a122efb1db79901b1cf509a132c54fe63">More...</a><br /></td></tr>
+<tr class="memdesc:a122efb1db79901b1cf509a132c54fe63"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular multiplication of two integers represented as byte arrays.  <a href="#a122efb1db79901b1cf509a132c54fe63">More...</a><br /></td></tr>
 <tr class="memitem:aeac0f5e3f1c2c9da481ea7e274d1da7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a">cx_math_modm_no_throw</a> (uint8_t *v, size_t len_v, const uint8_t *m, size_t len_m)</td></tr>
-<tr class="memdesc:aeac0f5e3f1c2c9da481ea7e274d1da7a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modulo operation.  <a href="#aeac0f5e3f1c2c9da481ea7e274d1da7a">More...</a><br /></td></tr>
+<tr class="memdesc:aeac0f5e3f1c2c9da481ea7e274d1da7a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular reduction.  <a href="#aeac0f5e3f1c2c9da481ea7e274d1da7a">More...</a><br /></td></tr>
 <tr class="memitem:a8fbd821b6fb1712e7b6dcdd090b1b342"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a8fbd821b6fb1712e7b6dcdd090b1b342">cx_math_modm</a> (uint8_t *v, size_t len_v, const uint8_t *m, size_t len_m)</td></tr>
-<tr class="memdesc:a8fbd821b6fb1712e7b6dcdd090b1b342"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modulo operation.  <a href="#a8fbd821b6fb1712e7b6dcdd090b1b342">More...</a><br /></td></tr>
+<tr class="memdesc:a8fbd821b6fb1712e7b6dcdd090b1b342"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular reduction.  <a href="#a8fbd821b6fb1712e7b6dcdd090b1b342">More...</a><br /></td></tr>
 <tr class="memitem:af5e23fd303fd48de8bbb5a477c8bac60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60">cx_math_powm_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *e, size_t len_e, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:af5e23fd303fd48de8bbb5a477c8bac60"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular exponentiation.  <a href="#af5e23fd303fd48de8bbb5a477c8bac60">More...</a><br /></td></tr>
+<tr class="memdesc:af5e23fd303fd48de8bbb5a477c8bac60"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular exponentiation.  <a href="#af5e23fd303fd48de8bbb5a477c8bac60">More...</a><br /></td></tr>
 <tr class="memitem:a12ea1b3db0e540aeb841d73656b448da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a12ea1b3db0e540aeb841d73656b448da">cx_math_powm</a> (uint8_t *r, const uint8_t *a, const uint8_t *e, size_t len_e, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:a12ea1b3db0e540aeb841d73656b448da"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular exponentiation.  <a href="#a12ea1b3db0e540aeb841d73656b448da">More...</a><br /></td></tr>
+<tr class="memdesc:a12ea1b3db0e540aeb841d73656b448da"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a modular exponentiation.  <a href="#a12ea1b3db0e540aeb841d73656b448da">More...</a><br /></td></tr>
 <tr class="memitem:ae92b63a4637b33c29e59b961ff1734db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db">cx_math_invprimem_no_throw</a> (uint8_t *r, const uint8_t *a, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:ae92b63a4637b33c29e59b961ff1734db"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular inverse with a prime modulus.  <a href="#ae92b63a4637b33c29e59b961ff1734db">More...</a><br /></td></tr>
+<tr class="memdesc:ae92b63a4637b33c29e59b961ff1734db"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the modular inverse with a prime modulus.  <a href="#ae92b63a4637b33c29e59b961ff1734db">More...</a><br /></td></tr>
 <tr class="memitem:a96cd960b4a18de08aeb3175cfd31249e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a96cd960b4a18de08aeb3175cfd31249e">cx_math_invprimem</a> (uint8_t *r, const uint8_t *a, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:a96cd960b4a18de08aeb3175cfd31249e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular inverse with a prime modulus.  <a href="#a96cd960b4a18de08aeb3175cfd31249e">More...</a><br /></td></tr>
+<tr class="memdesc:a96cd960b4a18de08aeb3175cfd31249e"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the modular inverse with a prime modulus.  <a href="#a96cd960b4a18de08aeb3175cfd31249e">More...</a><br /></td></tr>
 <tr class="memitem:affd9ee3f7fb3648732e6dbf386b83f12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12">cx_math_invintm_no_throw</a> (uint8_t *r, uint32_t a, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:affd9ee3f7fb3648732e6dbf386b83f12"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular inverse.  <a href="#affd9ee3f7fb3648732e6dbf386b83f12">More...</a><br /></td></tr>
+<tr class="memdesc:affd9ee3f7fb3648732e6dbf386b83f12"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the modular inverse.  <a href="#affd9ee3f7fb3648732e6dbf386b83f12">More...</a><br /></td></tr>
 <tr class="memitem:acfb6acac5bb338ce4291e84e4e3e07a3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#acfb6acac5bb338ce4291e84e4e3e07a3">cx_math_invintm</a> (uint8_t *r, uint32_t a, const uint8_t *m, size_t len)</td></tr>
-<tr class="memdesc:acfb6acac5bb338ce4291e84e4e3e07a3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Modular inverse.  <a href="#acfb6acac5bb338ce4291e84e4e3e07a3">More...</a><br /></td></tr>
+<tr class="memdesc:acfb6acac5bb338ce4291e84e4e3e07a3"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the modular inverse.  <a href="#acfb6acac5bb338ce4291e84e4e3e07a3">More...</a><br /></td></tr>
 <tr class="memitem:ac4059e12a707eeb05d5bf2ceb152a70f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f">cx_math_is_prime_no_throw</a> (const uint8_t *r, size_t len, bool *prime)</td></tr>
-<tr class="memdesc:ac4059e12a707eeb05d5bf2ceb152a70f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check whether a number is probable prime.  <a href="#ac4059e12a707eeb05d5bf2ceb152a70f">More...</a><br /></td></tr>
+<tr class="memdesc:ac4059e12a707eeb05d5bf2ceb152a70f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks whether a number is probably prime.  <a href="#ac4059e12a707eeb05d5bf2ceb152a70f">More...</a><br /></td></tr>
 <tr class="memitem:aab8a0b7b1aa31116f46262236281c554"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#aab8a0b7b1aa31116f46262236281c554">cx_math_is_prime</a> (const uint8_t *r, size_t len)</td></tr>
-<tr class="memdesc:aab8a0b7b1aa31116f46262236281c554"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check whether a number is probable prime.  <a href="#aab8a0b7b1aa31116f46262236281c554">More...</a><br /></td></tr>
+<tr class="memdesc:aab8a0b7b1aa31116f46262236281c554"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks whether a number is probably prime.  <a href="#aab8a0b7b1aa31116f46262236281c554">More...</a><br /></td></tr>
 <tr class="memitem:a0d3b5f19c673e536dbf2730c5240b448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448">cx_math_next_prime_no_throw</a> (uint8_t *r, uint32_t len)</td></tr>
-<tr class="memdesc:a0d3b5f19c673e536dbf2730c5240b448"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the next prime after a given number.  <a href="#a0d3b5f19c673e536dbf2730c5240b448">More...</a><br /></td></tr>
+<tr class="memdesc:a0d3b5f19c673e536dbf2730c5240b448"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the next prime after a given number.  <a href="#a0d3b5f19c673e536dbf2730c5240b448">More...</a><br /></td></tr>
 <tr class="memitem:ab3fbb8e378b3e52e5f013cfd95fdb2a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#ab3fbb8e378b3e52e5f013cfd95fdb2a0">cx_math_next_prime</a> (uint8_t *r, uint32_t len)</td></tr>
-<tr class="memdesc:ab3fbb8e378b3e52e5f013cfd95fdb2a0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compute the next prime after a given number.  <a href="#ab3fbb8e378b3e52e5f013cfd95fdb2a0">More...</a><br /></td></tr>
+<tr class="memdesc:ab3fbb8e378b3e52e5f013cfd95fdb2a0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Computes the next prime after a given number.  <a href="#ab3fbb8e378b3e52e5f013cfd95fdb2a0">More...</a><br /></td></tr>
 <tr class="memitem:a386ee5c73491f22f869e5c7e892b430f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__math_8h#a386ee5c73491f22f869e5c7e892b430f">cx_math_is_zero</a> (const uint8_t *a, size_t len)</td></tr>
-<tr class="memdesc:a386ee5c73491f22f869e5c7e892b430f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compare if the byte array of an integer is all zero.  <a href="#a386ee5c73491f22f869e5c7e892b430f">More...</a><br /></td></tr>
+<tr class="memdesc:a386ee5c73491f22f869e5c7e892b430f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks whether the byte array of an integer is all zero.  <a href="#a386ee5c73491f22f869e5c7e892b430f">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -121,9 +121,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add two integers represented as byte arrays. </p>
+<p>Adds two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f" title="Add two integers represented as byte arrays. ">cx_math_add_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f" title="Adds two integers represented as byte arrays. ">cx_math_add_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -144,8 +144,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__errors_8h#afa9639746f8e32f22c7f71b5bc15e43f">CX_CARRY</a>, <a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f">cx_math_add_no_throw()</a>, and <a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89">cx_math_sub_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -187,7 +185,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add two integers represented as byte arrays. </p>
+<p>Adds two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -206,8 +204,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a03666ab13301ff979e9537931dfd6a6d">cx_math_add()</a>, and <a class="el" href="../lcx__math_8h#a2c81281722c71f1ba0542dd94138f37b">cx_math_cmp()</a>.</p>
 
 </div>
 </div>
@@ -261,9 +257,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular addition of two integers represented as byte arrays. </p>
+<p>Performs a modular addition of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003" title="Modular addition of two integers represented as byte arrays. ">cx_math_addm_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003" title="Performs a modular addition of two integers represented as byte arrays. ">cx_math_addm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -284,8 +280,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003">cx_math_addm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5">cx_math_subm_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -333,7 +327,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular addition of two integers represented as byte arrays. </p>
+<p>Performs a modular addition of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -353,8 +347,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a449e49642737703c12fae09518ebd71c">cx_math_addm()</a>, and <a class="el" href="../lcx__math_8h#a397e7e1612cd73bbc1d0cede0439ebea">cx_math_mult()</a>.</p>
 
 </div>
 </div>
@@ -396,9 +388,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compare two integers represented as byte arrays. </p>
+<p>Compares two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71" title="Compare two integers represented as byte arrays. ">cx_math_cmp_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71" title="Compares two integers represented as byte arrays. ">cx_math_cmp_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
@@ -423,8 +415,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#abbb12c1e6e3cb5c64ccc128d48b1938f">cx_math_add_no_throw()</a>, and <a class="el" href="../lcx__math_8h#abe7fad9139fc57b173d6e23ccb237d71">cx_math_cmp_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -466,7 +456,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compare two integers represented as byte arrays. </p>
+<p>Compares two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to the first integer.</td></tr>
@@ -490,8 +480,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a2c81281722c71f1ba0542dd94138f37b">cx_math_cmp()</a>.</p>
 
 </div>
 </div>
@@ -539,9 +527,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular inverse. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>. a must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12" title="Modular inverse. ">cx_math_invintm_no_throw</a> rather than this function.</dd></dl>
+<p>Computes the modular inverse. </p>
+<p>It computes the result of <b>a^(-1) mod m</b>. a must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12" title="Computes the modular inverse. ">cx_math_invintm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -561,8 +549,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12">cx_math_invintm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f">cx_math_is_prime_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -604,8 +590,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular inverse. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>. <b>a</b> must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1.</p>
+<p>Computes the modular inverse. </p>
+<p>It computes the result of <b>a^(-1) mod m</b>. <b>a</b> must be invertible modulo <b>m</b>, i.e. the greatest common divisor of <b>a</b> and <b>m</b> is 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -624,8 +610,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#acfb6acac5bb338ce4291e84e4e3e07a3">cx_math_invintm()</a>, and <a class="el" href="../lcx__math_8h#a96cd960b4a18de08aeb3175cfd31249e">cx_math_invprimem()</a>.</p>
 
 </div>
 </div>
@@ -673,9 +657,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular inverse with a prime modulus. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db" title="Modular inverse with a prime modulus. ">cx_math_invprimem_no_throw</a> rather than this function.</dd></dl>
+<p>Computes the modular inverse with a prime modulus. </p>
+<p>It computes the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db" title="Computes the modular inverse with a prime modulus. ">cx_math_invprimem_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -695,8 +679,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#affd9ee3f7fb3648732e6dbf386b83f12">cx_math_invintm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db">cx_math_invprimem_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -738,8 +720,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular inverse with a prime modulus. </p>
-<p>Compute the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>.</p>
+<p>Computes the modular inverse with a prime modulus. </p>
+<p>It computes the result of <b>a^(-1) mod m</b>, for a prime <b>m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -758,8 +740,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a96cd960b4a18de08aeb3175cfd31249e">cx_math_invprimem()</a>, and <a class="el" href="../lcx__math_8h#a12ea1b3db0e540aeb841d73656b448da">cx_math_powm()</a>.</p>
 
 </div>
 </div>
@@ -795,9 +775,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check whether a number is probable prime. </p>
+<p>Checks whether a number is probably prime. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f" title="Check whether a number is probable prime. ">cx_math_is_prime_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f" title="Checks whether a number is probably prime. ">cx_math_is_prime_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
@@ -820,8 +800,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#ac4059e12a707eeb05d5bf2ceb152a70f">cx_math_is_prime_no_throw()</a>, and <a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448">cx_math_next_prime_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -857,7 +835,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check whether a number is probable prime. </p>
+<p>Checks whether a number is probably prime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to an integer.</td></tr>
@@ -879,8 +857,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#acfb6acac5bb338ce4291e84e4e3e07a3">cx_math_invintm()</a>, and <a class="el" href="../lcx__math_8h#aab8a0b7b1aa31116f46262236281c554">cx_math_is_prime()</a>.</p>
 
 </div>
 </div>
@@ -916,7 +892,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compare if the byte array of an integer is all zero. </p>
+<p>Checks whether the byte array of an integer is all zero. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td colspan="4">Pointer to an integer.</td></tr>
@@ -972,9 +948,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modulo operation. </p>
+<p>Performs a modular reduction. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a" title="Modulo operation. ">cx_math_modm_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a" title="Performs a modular reduction. ">cx_math_modm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
@@ -994,8 +970,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a">cx_math_modm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60">cx_math_powm_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1037,8 +1011,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modulo operation. </p>
-<p>Compute the remainder of the division of v by m. Store the result in v.</p>
+<p>Performs a modular reduction. </p>
+<p>Computes the remainder of the division of v by m. Store the result in v.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td colspan="4">Pointer to the dividend and buffer for the result.</td></tr>
@@ -1057,8 +1031,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a8fbd821b6fb1712e7b6dcdd090b1b342">cx_math_modm()</a>, and <a class="el" href="../lcx__math_8h#a122efb1db79901b1cf509a132c54fe63">cx_math_multm()</a>.</p>
 
 </div>
 </div>
@@ -1106,9 +1078,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Multiply two integers represented as byte arrays. </p>
+<p>Multiplies two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a" title="Multiply two integers represented as byte arrays. ">cx_math_mult_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a" title="Multiplies two integers represented as byte arrays. ">cx_math_mult_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1128,8 +1100,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#ab33f2233e60e1ff57d0215c3887ea003">cx_math_addm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a">cx_math_mult_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1141,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Multiply two integers represented as byte arrays. </p>
+<p>Multiplies two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1190,8 +1160,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a397e7e1612cd73bbc1d0cede0439ebea">cx_math_mult()</a>, and <a class="el" href="../lcx__math_8h#ad939a3a02706fc0891ba00f082ddbc10">cx_math_sub()</a>.</p>
 
 </div>
 </div>
@@ -1245,9 +1213,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular multiplication of two integers represented as byte arrays. </p>
+<p>Performs a modular multiplication of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50" title="Modular multiplication of two integers represented as byte arrays. ">cx_math_multm_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50" title="Performs a modular multiplication of two integers represented as byte arrays. ">cx_math_multm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1269,8 +1237,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#aeac0f5e3f1c2c9da481ea7e274d1da7a">cx_math_modm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50">cx_math_multm_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1318,7 +1284,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular multiplication of two integers represented as byte arrays. </p>
+<p>Performs a modular multiplication of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1339,8 +1305,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER_VALUE </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a122efb1db79901b1cf509a132c54fe63">cx_math_multm()</a>, and <a class="el" href="../lcx__math_8h#addcb1e52be7fa1d166981e16c2ef3fa5">cx_math_subm()</a>.</p>
 
 </div>
 </div>
@@ -1376,9 +1340,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the next prime after a given number. </p>
+<p>Computes the next prime after a given number. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448" title="Compute the next prime after a given number. ">cx_math_next_prime_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448" title="Computes the next prime after a given number. ">cx_math_next_prime_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
@@ -1398,8 +1362,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#a0d3b5f19c673e536dbf2730c5240b448">cx_math_next_prime_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1391,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the next prime after a given number. </p>
+<p>Computes the next prime after a given number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">r</td><td colspan="4">Pointer to the integer and buffer for the result.</td></tr>
@@ -1448,8 +1410,6 @@ Functions</h2></td></tr>
 <li>CX_OVERFLOW </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#aab8a0b7b1aa31116f46262236281c554">cx_math_is_prime()</a>, and <a class="el" href="../lcx__math_8h#ab3fbb8e378b3e52e5f013cfd95fdb2a0">cx_math_next_prime()</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1469,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular exponentiation. </p>
-<p>Compute the result of <b>a^e mod m</b>. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60" title="Modular exponentiation. ">cx_math_powm_no_throw</a> rather than this function.</dd></dl>
+<p>Performs a modular exponentiation. </p>
+<p>It computes the result of <b>a^e mod m</b>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60" title="Performs a modular exponentiation. ">cx_math_powm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1533,8 +1493,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#ae92b63a4637b33c29e59b961ff1734db">cx_math_invprimem_no_throw()</a>, and <a class="el" href="../lcx__math_8h#af5e23fd303fd48de8bbb5a477c8bac60">cx_math_powm_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1588,8 +1546,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular exponentiation. </p>
-<p>Compute the result of <b>a^e mod m</b>.</p>
+<p>Performs a modular exponentiation. </p>
+<p>Computes the result of <b>a^e mod m</b>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1610,8 +1568,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a8fbd821b6fb1712e7b6dcdd090b1b342">cx_math_modm()</a>, and <a class="el" href="../lcx__math_8h#a12ea1b3db0e540aeb841d73656b448da">cx_math_powm()</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1615,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Subtract two integers represented as byte arrays. </p>
+<p>Subtracts two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89" title="Subtract two integers represented as byte arrays. ">cx_math_sub_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89" title="Subtracts two integers represented as byte arrays. ">cx_math_sub_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1682,8 +1638,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__errors_8h#afa9639746f8e32f22c7f71b5bc15e43f">CX_CARRY</a>, <a class="el" href="../lcx__math_8h#af92dd08eb8b586d9a3e36d4972f4730a">cx_math_mult_no_throw()</a>, and <a class="el" href="../lcx__math_8h#a5455933ba4e27ccae743459e69147b89">cx_math_sub_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1725,7 +1679,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Subtract two integers represented as byte arrays. </p>
+<p>Subtracts two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1744,8 +1698,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a03666ab13301ff979e9537931dfd6a6d">cx_math_add()</a>, and <a class="el" href="../lcx__math_8h#ad939a3a02706fc0891ba00f082ddbc10">cx_math_sub()</a>.</p>
 
 </div>
 </div>
@@ -1799,9 +1751,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Modular subtraction of two integers represented as byte arrays. </p>
+<p>Performs a modular subtraction of two integers represented as byte arrays. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5" title="Modular subtraction of two integers represented as byte arrays. ">cx_math_subm_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5" title="Performs a modular subtraction of two integers represented as byte arrays. ">cx_math_subm_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1822,8 +1774,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__math_8h#aff8bc640cf787c8512693818b6f5bc50">cx_math_multm_no_throw()</a>, and <a class="el" href="../lcx__math_8h#a767297f79263d1ce5dffc1574af681c5">cx_math_subm_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1871,7 +1821,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modular subtraction of two integers represented as byte arrays. </p>
+<p>Performs a modular subtraction of two integers represented as byte arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">r</td><td colspan="4">Buffer for the result.</td></tr>
@@ -1891,8 +1841,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a449e49642737703c12fae09518ebd71c">cx_math_addm()</a>, and <a class="el" href="../lcx__math_8h#addcb1e52be7fa1d166981e16c2ef3fa5">cx_math_subm()</a>.</p>
 
 </div>
 </div>

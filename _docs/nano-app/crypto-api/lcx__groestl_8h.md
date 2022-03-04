@@ -37,9 +37,9 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0bb9a0c59b98a10b2a9a77e9247a5e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__groestl_8h#a0bb9a0c59b98a10b2a9a77e9247a5e77">cx_groestl_init_no_throw</a> (<a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a> *hash, size_t size)</td></tr>
-<tr class="memdesc:a0bb9a0c59b98a10b2a9a77e9247a5e77"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a GROESTL context.  <a href="#a0bb9a0c59b98a10b2a9a77e9247a5e77">More...</a><br /></td></tr>
+<tr class="memdesc:a0bb9a0c59b98a10b2a9a77e9247a5e77"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a GROESTL context.  <a href="#a0bb9a0c59b98a10b2a9a77e9247a5e77">More...</a><br /></td></tr>
 <tr class="memitem:a08061eda059bc1fcbe8c3384662b858a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__groestl_8h#a08061eda059bc1fcbe8c3384662b858a">cx_groestl_init</a> (<a class="el" href="../lcx__groestl_8h#aad1e7a59537d3e3692fa010d2ac0d4d8">cx_groestl_t</a> *hash, unsigned int size)</td></tr>
-<tr class="memdesc:a08061eda059bc1fcbe8c3384662b858a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a GROESTL context.  <a href="#a08061eda059bc1fcbe8c3384662b858a">More...</a><br /></td></tr>
+<tr class="memdesc:a08061eda059bc1fcbe8c3384662b858a"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a GROESTL context.  <a href="#a08061eda059bc1fcbe8c3384662b858a">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -174,8 +174,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a GROESTL context. </p>
-<p>This function throws an exception if the initialization fails.</p>
+<p>Initializes a GROESTL context. </p>
+<p>Throws an exception if the initialization fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to initialize.</td></tr>
@@ -190,8 +190,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__hash_8h#a83490ac84757a8bc00ff719ed807e117a03f5a9934aee650f97e56e8475ec7442">CX_GROESTL</a>, and <a class="el" href="../lcx__groestl_8h#a0bb9a0c59b98a10b2a9a77e9247a5e77">cx_groestl_init_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -221,7 +219,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a GROESTL context. </p>
+<p>Initializes a GROESTL context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">hash</td><td colspan="4">Pointer to the context to init.ialize.</td></tr>
@@ -234,8 +232,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__groestl_8h#a08061eda059bc1fcbe8c3384662b858a">cx_groestl_init()</a>.</p>
 
 </div>
 </div>

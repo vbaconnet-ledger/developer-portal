@@ -75,8 +75,6 @@ Data Fields</h2></td></tr>
 
 <p>Key size in bytes. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__rsa_8h#a3e5b8b019f6bba127d56897500c8b927">cx_rsa_sign()</a>.</p>
-
 </div>
 </div>
 <button class="uk-button uk-button-default uk-button-small uk-margin-medium-top" onclick="history.back()">Previous</button>

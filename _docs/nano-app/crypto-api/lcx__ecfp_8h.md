@@ -69,41 +69,41 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925">cx_ecfp_add_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *R, const uint8_t *P, const uint8_t *Q)</td></tr>
-<tr class="memdesc:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two points of an elliptic curve.  <a href="#a9fc2ac0486d0cd6a67f654417ba1f925">More...</a><br /></td></tr>
+<tr class="memdesc:a9fc2ac0486d0cd6a67f654417ba1f925"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds two points of an elliptic curve.  <a href="#a9fc2ac0486d0cd6a67f654417ba1f925">More...</a><br /></td></tr>
 <tr class="memitem:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *R, const unsigned char *P, const unsigned char *Q, unsigned int X_len)</td></tr>
-<tr class="memdesc:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Add two points of an elliptic curve.  <a href="#a5a0e2ce81dfb4318e14ae0e9db164db1">More...</a><br /></td></tr>
+<tr class="memdesc:a5a0e2ce81dfb4318e14ae0e9db164db1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Adds two points of an elliptic curve.  <a href="#a5a0e2ce81dfb4318e14ae0e9db164db1">More...</a><br /></td></tr>
 <tr class="memitem:a91d6f274abf730d2558c6736b1db00f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8">cx_ecfp_scalar_mult_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *P, const uint8_t *k, size_t k_len)</td></tr>
-<tr class="memdesc:a91d6f274abf730d2558c6736b1db00f8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a91d6f274abf730d2558c6736b1db00f8">More...</a><br /></td></tr>
+<tr class="memdesc:a91d6f274abf730d2558c6736b1db00f8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a scalar multiplication over an elliptic curve.  <a href="#a91d6f274abf730d2558c6736b1db00f8">More...</a><br /></td></tr>
 <tr class="memitem:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, unsigned char *P, unsigned int P_len, const unsigned char *k, unsigned int k_len)</td></tr>
-<tr class="memdesc:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Perform a scalar multiplication over an elliptic curve.  <a href="#a2cc4aeae037cc9c0b13954e9bb3651fc">More...</a><br /></td></tr>
+<tr class="memdesc:a2cc4aeae037cc9c0b13954e9bb3651fc"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Performs a scalar multiplication over an elliptic curve.  <a href="#a2cc4aeae037cc9c0b13954e9bb3651fc">More...</a><br /></td></tr>
 <tr class="memitem:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371">cx_ecfp_init_public_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a public key.  <a href="#a9dba0fd71ca5df52eb27e3c4493e0371">More...</a><br /></td></tr>
+<tr class="memdesc:a9dba0fd71ca5df52eb27e3c4493e0371"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a public key.  <a href="#a9dba0fd71ca5df52eb27e3c4493e0371">More...</a><br /></td></tr>
 <tr class="memitem:a509a069a0d882d2ebcd7c189fffae52f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *key)</td></tr>
-<tr class="memdesc:a509a069a0d882d2ebcd7c189fffae52f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a public key.  <a href="#a509a069a0d882d2ebcd7c189fffae52f">More...</a><br /></td></tr>
+<tr class="memdesc:a509a069a0d882d2ebcd7c189fffae52f"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a public key.  <a href="#a509a069a0d882d2ebcd7c189fffae52f">More...</a><br /></td></tr>
 <tr class="memitem:aa60ed5c59930e787f187df1802b84ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5">cx_ecfp_init_private_key_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const uint8_t *rawkey, size_t key_len, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
-<tr class="memdesc:aa60ed5c59930e787f187df1802b84ab5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a private key.  <a href="#aa60ed5c59930e787f187df1802b84ab5">More...</a><br /></td></tr>
+<tr class="memdesc:aa60ed5c59930e787f187df1802b84ab5"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a private key.  <a href="#aa60ed5c59930e787f187df1802b84ab5">More...</a><br /></td></tr>
 <tr class="memitem:a94402980442875a67af525d3ad907318"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, const unsigned char *rawkey, unsigned int key_len, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey)</td></tr>
-<tr class="memdesc:a94402980442875a67af525d3ad907318"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initialize a private key.  <a href="#a94402980442875a67af525d3ad907318">More...</a><br /></td></tr>
+<tr class="memdesc:a94402980442875a67af525d3ad907318"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Initializes a private key.  <a href="#a94402980442875a67af525d3ad907318">More...</a><br /></td></tr>
 <tr class="memitem:a06c0ed692411324f34d97305c9e4040d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d">cx_ecfp_generate_pair_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *privkey, bool keepprivate)</td></tr>
-<tr class="memdesc:a06c0ed692411324f34d97305c9e4040d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a06c0ed692411324f34d97305c9e4040d">More...</a><br /></td></tr>
+<tr class="memdesc:a06c0ed692411324f34d97305c9e4040d"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a key pair with SHA-512 hash function.  <a href="#a06c0ed692411324f34d97305c9e4040d">More...</a><br /></td></tr>
 <tr class="memitem:a8880d93a82c60faeb564149e9618a6c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *privkey, int keepprivate)</td></tr>
-<tr class="memdesc:a8880d93a82c60faeb564149e9618a6c4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair with SHA-512 hash function.  <a href="#a8880d93a82c60faeb564149e9618a6c4">More...</a><br /></td></tr>
+<tr class="memdesc:a8880d93a82c60faeb564149e9618a6c4"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a key pair with SHA-512 hash function.  <a href="#a8880d93a82c60faeb564149e9618a6c4">More...</a><br /></td></tr>
 <tr class="memitem:a26ca9d7985773300dba5490b0dcd9fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7">cx_ecfp_generate_pair2_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *privkey, bool keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
-<tr class="memdesc:a26ca9d7985773300dba5490b0dcd9fc7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair.  <a href="#a26ca9d7985773300dba5490b0dcd9fc7">More...</a><br /></td></tr>
+<tr class="memdesc:a26ca9d7985773300dba5490b0dcd9fc7"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a key pair.  <a href="#a26ca9d7985773300dba5490b0dcd9fc7">More...</a><br /></td></tr>
 <tr class="memitem:a700affb602b29623ba28ac960df63b27"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a700affb602b29623ba28ac960df63b27">cx_ecfp_generate_pair2</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pubkey, <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *privkey, int keepprivate, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID)</td></tr>
-<tr class="memdesc:a700affb602b29623ba28ac960df63b27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generate a key pair.  <a href="#a700affb602b29623ba28ac960df63b27">More...</a><br /></td></tr>
+<tr class="memdesc:a700affb602b29623ba28ac960df63b27"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Generates a key pair.  <a href="#a700affb602b29623ba28ac960df63b27">More...</a><br /></td></tr>
 <tr class="memitem:ab940dccf0b90c362b2f033bc93d38283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283">cx_eddsa_get_public_key_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, uint8_t *a, size_t a_len, uint8_t *h, size_t h_len)</td></tr>
-<tr class="memdesc:ab940dccf0b90c362b2f033bc93d38283"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieve an EDDSA public key.  <a href="#ab940dccf0b90c362b2f033bc93d38283">More...</a><br /></td></tr>
+<tr class="memdesc:ab940dccf0b90c362b2f033bc93d38283"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieves an EDDSA public key.  <a href="#ab940dccf0b90c362b2f033bc93d38283">More...</a><br /></td></tr>
 <tr class="memitem:a0d4366ae761dac729bfc1c8ea38090f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, unsigned char *a, unsigned int a_len, unsigned char *h, unsigned int h_len)</td></tr>
-<tr class="memdesc:a0d4366ae761dac729bfc1c8ea38090f0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieve an EDDSA public key.  <a href="#a0d4366ae761dac729bfc1c8ea38090f0">More...</a><br /></td></tr>
+<tr class="memdesc:a0d4366ae761dac729bfc1c8ea38090f0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Retrieves an EDDSA public key.  <a href="#a0d4366ae761dac729bfc1c8ea38090f0">More...</a><br /></td></tr>
 <tr class="memitem:aacf15d95fb7384452b38bec8131230de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:aacf15d95fb7384452b38bec8131230de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#aacf15d95fb7384452b38bec8131230de">More...</a><br /></td></tr>
+<tr class="memdesc:aacf15d95fb7384452b38bec8131230de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#aacf15d95fb7384452b38bec8131230de">More...</a><br /></td></tr>
 <tr class="memitem:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#abbe81f0cda9fbbc9b89a64b4245474ed">More...</a><br /></td></tr>
+<tr class="memdesc:abbe81f0cda9fbbc9b89a64b4245474ed"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Compresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#abbe81f0cda9fbbc9b89a64b4245474ed">More...</a><br /></td></tr>
 <tr class="memitem:a135c9e000dc82e000cb427788ba33bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:a135c9e000dc82e000cb427788ba33bcd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a135c9e000dc82e000cb427788ba33bcd">More...</a><br /></td></tr>
+<tr class="memdesc:a135c9e000dc82e000cb427788ba33bcd"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a135c9e000dc82e000cb427788ba33bcd">More...</a><br /></td></tr>
 <tr class="memitem:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a94fcf19a2a1073ae043bbf9ecc4befcf">cx_edwards_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
-<tr class="memdesc:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a94fcf19a2a1073ae043bbf9ecc4befcf">More...</a><br /></td></tr>
+<tr class="memdesc:a94fcf19a2a1073ae043bbf9ecc4befcf"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Decompresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.  <a href="#a94fcf19a2a1073ae043bbf9ecc4befcf">More...</a><br /></td></tr>
 <tr class="memitem:af618491194f35b79492ced3a6756f83f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#af618491194f35b79492ced3a6756f83f">cx_edward_compress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
 <tr class="memitem:a2084f9df08a0e0ea89481baf99f8e751"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecfp_8h#a2084f9df08a0e0ea89481baf99f8e751">cx_edward_decompress_point</a> (<a class="el" href="../ox__ec_8h#ada004671ae8fe2032d4c144ed6ebb837">cx_curve_t</a> curve, uint8_t *p, size_t p_len)</td></tr>
 </table>
@@ -363,9 +363,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add two points of an elliptic curve. </p>
+<p>Adds two points of an elliptic curve. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925" title="Add two points of an elliptic curve. ">cx_ecfp_add_point_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925" title="Adds two points of an elliptic curve. ">cx_ecfp_add_point_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -391,8 +391,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length()</a>, <a class="el" href="../lcx__ecfp_8h#a9fc2ac0486d0cd6a67f654417ba1f925">cx_ecfp_add_point_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8">cx_ecfp_scalar_mult_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -434,7 +432,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add two points of an elliptic curve. </p>
+<p>Adds two points of an elliptic curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -457,8 +455,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INFINITE_POINT </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point()</a>.</p>
 
 </div>
 </div>
@@ -506,15 +502,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generate a key pair with SHA-512 hash function. </p>
+<p>Generates a key pair with SHA-512 hash function. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d" title="Generate a key pair with SHA-512 hash function. ">cx_ecfp_generate_pair_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d" title="Generates a key pair with SHA-512 hash function. ">cx_ecfp_generate_pair_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
   </table>
   </dd>
 </dl>
@@ -533,8 +529,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7">cx_ecfp_generate_pair2_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d">cx_ecfp_generate_pair_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -588,15 +582,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generate a key pair. </p>
+<p>Generates a key pair. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7" title="Generate a key pair. ">cx_ecfp_generate_pair2_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7" title="Generates a key pair. ">cx_ecfp_generate_pair2_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifer.</td></tr>
   </table>
   </dd>
@@ -616,8 +610,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecfp_8h#a26ca9d7985773300dba5490b0dcd9fc7">cx_ecfp_generate_pair2_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283">cx_eddsa_get_public_key_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -665,13 +657,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a key pair. </p>
+<p>Generates a key pair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifer.</td></tr>
   </table>
   </dd>
@@ -689,8 +681,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INFINITE_POINT </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair()</a>, and <a class="el" href="../lcx__ecfp_8h#a700affb602b29623ba28ac960df63b27">cx_ecfp_generate_pair2()</a>.</p>
 
 </div>
 </div>
@@ -732,13 +722,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a key pair with SHA-512 hash function. </p>
+<p>Generates a key pair with SHA-512 hash function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pubkey</td><td colspan="4">Generated public key.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">privkey</td><td colspan="4">Generated private key.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keepprivate</td><td colspan="4">If set, the private key is the one initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>. Otherwise, a new private key is generated.</td></tr>
   </table>
   </dd>
 </dl>
@@ -755,8 +745,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INFINITE_POINT </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a8880d93a82c60faeb564149e9618a6c4">cx_ecfp_generate_pair()</a>, and <a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key()</a>.</p>
 
 </div>
 </div>
@@ -804,9 +792,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a private key. </p>
+<p>Initializes a private key. </p>
 <p>The key can be stored in non-volatile memory and used for ECDSA or ECDH processing. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -824,8 +812,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../lcx__ecfp_8h#a06c0ed692411324f34d97305c9e4040d">cx_ecfp_generate_pair_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5">cx_ecfp_init_private_key_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -867,7 +853,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a private key. </p>
+<p>Initializes a private key. </p>
 <p>The key can be stored in non-volatile memory and used for ECDSA or ECDH processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -884,8 +870,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a94402980442875a67af525d3ad907318">cx_ecfp_init_private_key()</a>, and <a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key()</a>.</p>
 
 </div>
 </div>
@@ -933,9 +917,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize a public key. </p>
+<p>Initializes a public key. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initializes a public key. ">cx_ecfp_init_public_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -964,8 +948,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5">cx_ecfp_init_private_key_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371">cx_ecfp_init_public_key_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +989,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a public key. </p>
+<p>Initializes a public key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -1034,8 +1016,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a509a069a0d882d2ebcd7c189fffae52f">cx_ecfp_init_public_key()</a>, and <a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult()</a>.</p>
 
 </div>
 </div>
@@ -1089,9 +1069,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Perform a scalar multiplication over an elliptic curve. </p>
+<p>Performs a scalar multiplication over an elliptic curve. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8" title="Perform a scalar multiplication over an elliptic curve. ">cx_ecfp_scalar_mult_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8" title="Performs a scalar multiplication over an elliptic curve. ">cx_ecfp_scalar_mult_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -1115,8 +1095,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../ox__ec_8h#a1c0a18bd483a254e2c7783442d32b002">cx_ecdomain_parameters_length()</a>, <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371">cx_ecfp_init_public_key_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#a91d6f274abf730d2558c6736b1db00f8">cx_ecfp_scalar_mult_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1136,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a scalar multiplication over an elliptic curve. </p>
+<p>Performs a scalar multiplication over an elliptic curve. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier.</td></tr>
@@ -1179,8 +1157,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INFINITE_POINT </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a5a0e2ce81dfb4318e14ae0e9db164db1">cx_ecfp_add_point()</a>, and <a class="el" href="../lcx__ecfp_8h#a2cc4aeae037cc9c0b13954e9bb3651fc">cx_ecfp_scalar_mult()</a>.</p>
 
 </div>
 </div>
@@ -1246,12 +1222,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieve an EDDSA public key. </p>
-<p>Retrieve (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified at <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283" title="Retrieve an EDDSA public key. ">cx_eddsa_get_public_key_no_throw</a> rather than this function.</dd></dl>
+<p>Retrieves an EDDSA public key. </p>
+<p>Retrieves (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified at <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. This function throws an exception if the computation doesn't succeed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283" title="Retrieves an EDDSA public key. ">cx_eddsa_get_public_key_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td colspan="4">Key container for retrieving the public key A.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">Private scalar such that A = a.B.</td></tr>
@@ -1275,8 +1251,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../lcx__ecfp_8h#ab940dccf0b90c362b2f033bc93d38283">cx_eddsa_get_public_key_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1336,11 +1310,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve an EDDSA public key. </p>
-<p>Retrieve (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified at <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
+<p>Retrieves an EDDSA public key. </p>
+<p>Retrieves (a,h) = (Kr, Kl), such that (Kr, Kl) = Hash(pv_key) as specified at <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">A private key fully initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifier used to compute the input data. SHA512, SHA3 and Keccak are supported.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pukey</td><td colspan="4">Key container for retrieving the public key A.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td colspan="4">Private scalar such that A = a.B.</td></tr>
@@ -1363,8 +1337,6 @@ Functions</h2></td></tr>
 <li>CX_INTERNAL_ERROR </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a700affb602b29623ba28ac960df63b27">cx_ecfp_generate_pair2()</a>, and <a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key()</a>.</p>
 
 </div>
 </div>
@@ -1405,9 +1377,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../deprecated#_deprecated000001">Deprecated:</a></b></dt><dd>See <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de" title="Compress a point according to RFC8032 . ">cx_edwards_compress_point_no_throw</a> </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw()</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../deprecated#_deprecated000001">Deprecated:</a></b></dt><dd>See <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de" title="Compresses a point according to RFC8032 . ">cx_edwards_compress_point_no_throw</a> </dd></dl>
 
 </div>
 </div>
@@ -1448,9 +1418,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../deprecated#_deprecated000002">Deprecated:</a></b></dt><dd>See <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd" title="Decompress a point according to RFC8032 . ">cx_edwards_decompress_point_no_throw</a> </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw()</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../deprecated#_deprecated000002">Deprecated:</a></b></dt><dd>See <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd" title="Decompresses a point according to RFC8032 . ">cx_edwards_decompress_point_no_throw</a> </dd></dl>
 
 </div>
 </div>
@@ -1492,9 +1460,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
+<p>Compresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de" title="Compress a point according to RFC8032 . ">cx_edwards_compress_point_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de" title="Compresses a point according to RFC8032 . ">cx_edwards_compress_point_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
@@ -1516,8 +1484,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../cx__ecfp__public__key__s#a474bc8df07e877791f9b39dac8f9a8df">cx_ecfp_public_key_s::curve</a>, <a class="el" href="../lcx__ecfp_8h#aacf15d95fb7384452b38bec8131230de">cx_edwards_compress_point_no_throw()</a>, and <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1553,7 +1519,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
+<p>Compresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
@@ -1574,8 +1540,6 @@ Functions</h2></td></tr>
 <li>CX_EC_INFINITE_POINT </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a0d4366ae761dac729bfc1c8ea38090f0">cx_eddsa_get_public_key()</a>, <a class="el" href="../lcx__ecfp_8h#af618491194f35b79492ced3a6756f83f">cx_edward_compress_point()</a>, and <a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point()</a>.</p>
 
 </div>
 </div>
@@ -1617,9 +1581,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
+<p>Decompresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <p>This function throws an exception if the computation doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd" title="Decompress a point according to RFC8032 . ">cx_edwards_decompress_point_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd" title="Decompresses a point according to RFC8032 . ">cx_edwards_decompress_point_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
@@ -1643,8 +1607,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecfp_8h#a135c9e000dc82e000cb427788ba33bcd">cx_edwards_decompress_point_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -1680,7 +1642,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decompress a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
+<p>Decompresses a point according to <a href="../https://tools.ietf.org/rfc8032">RFC8032 </a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td colspan="4">Curve identifier. The curve must be a Twisted Edwards curve.</td></tr>
@@ -1703,8 +1665,6 @@ Functions</h2></td></tr>
 <li>INVALID_PARAMETER </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecfp_8h#a2084f9df08a0e0ea89481baf99f8e751">cx_edward_decompress_point()</a>, <a class="el" href="../lcx__ecfp_8h#abbe81f0cda9fbbc9b89a64b4245474ed">cx_edwards_compress_point()</a>, and <a class="el" href="../lcx__ecfp_8h#a94fcf19a2a1073ae043bbf9ecc4befcf">cx_edwards_decompress_point()</a>.</p>
 
 </div>
 </div>

@@ -17,9 +17,9 @@ layout: doc
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a34b5ac9d964a6cb39bc7093c15f81ce0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#a34b5ac9d964a6cb39bc7093c15f81ce0">CX_CHECK</a>(call)</td></tr>
-<tr class="memdesc:a34b5ac9d964a6cb39bc7093c15f81ce0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check the error code of a function.  <a href="#a34b5ac9d964a6cb39bc7093c15f81ce0">More...</a><br /></td></tr>
+<tr class="memdesc:a34b5ac9d964a6cb39bc7093c15f81ce0"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks the error code of a function.  <a href="#a34b5ac9d964a6cb39bc7093c15f81ce0">More...</a><br /></td></tr>
 <tr class="memitem:a946326c05272ff8bdca1a4f231c03132"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#a946326c05272ff8bdca1a4f231c03132">CX_CHECK_IGNORE_CARRY</a>(call)</td></tr>
-<tr class="memdesc:a946326c05272ff8bdca1a4f231c03132"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Check the error code of a function and ignore it if CX_CARRY.  <a href="#a946326c05272ff8bdca1a4f231c03132">More...</a><br /></td></tr>
+<tr class="memdesc:a946326c05272ff8bdca1a4f231c03132"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Checks the error code of a function and ignore it if CX_CARRY.  <a href="#a946326c05272ff8bdca1a4f231c03132">More...</a><br /></td></tr>
 <tr class="memitem:af2c41817c51563d574f8a5673fd3ef54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#af2c41817c51563d574f8a5673fd3ef54">CX_OK</a>&#160;&#160;&#160;0x00000000</td></tr>
 <tr class="memdesc:af2c41817c51563d574f8a5673fd3ef54"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Success.  <a href="#af2c41817c51563d574f8a5673fd3ef54">More...</a><br /></td></tr>
 <tr class="memitem:afa9639746f8e32f22c7f71b5bc15e43f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../cx__errors_8h#afa9639746f8e32f22c7f71b5bc15e43f">CX_CARRY</a>&#160;&#160;&#160;0xFFFFFF21</td></tr>
@@ -80,8 +80,6 @@ Typedefs</h2></td></tr>
 
 <p>There exists a carry at the end of the operation. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__math_8h#a03666ab13301ff979e9537931dfd6a6d">cx_math_add()</a>, and <a class="el" href="../lcx__math_8h#ad939a3a02706fc0891ba00f082ddbc10">cx_math_sub()</a>.</p>
-
 </div>
 </div>
 <a id="a34b5ac9d964a6cb39bc7093c15f81ce0"></a>
@@ -100,7 +98,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check the error code of a function. </p>
+<p>Checks the error code of a function. </p>
 
 </div>
 </div>
@@ -120,7 +118,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check the error code of a function and ignore it if CX_CARRY. </p>
+<p>Checks the error code of a function and ignore it if CX_CARRY. </p>
 
 </div>
 </div>
@@ -201,8 +199,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A parameter is invalid. </p>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
 
 </div>
 </div>

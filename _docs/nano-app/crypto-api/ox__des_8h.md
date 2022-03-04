@@ -32,11 +32,11 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6d808b3719784427743e746631106dd1"><td class="memItemLeft" align="right" valign="top">SYSCALL <a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#a6d808b3719784427743e746631106dd1">cx_des_set_key_hw</a> (const <a class="el" href="../ox__des_8h#a42e0abbb819b1adef6ec3679e398461b">cx_des_key_t</a> *keys, uint32_t mode)</td></tr>
-<tr class="memdesc:a6d808b3719784427743e746631106dd1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Set a DES key in hardware.  <a href="#a6d808b3719784427743e746631106dd1">More...</a><br /></td></tr>
+<tr class="memdesc:a6d808b3719784427743e746631106dd1"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sets a DES key in hardware.  <a href="#a6d808b3719784427743e746631106dd1">More...</a><br /></td></tr>
 <tr class="memitem:a5ade6911fa86c36732840955622f0684"><td class="memItemLeft" align="right" valign="top">SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#a5ade6911fa86c36732840955622f0684">cx_des_reset_hw</a> (void)</td></tr>
-<tr class="memdesc:a5ade6911fa86c36732840955622f0684"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Reset DES context.  <a href="#a5ade6911fa86c36732840955622f0684">More...</a><br /></td></tr>
+<tr class="memdesc:a5ade6911fa86c36732840955622f0684"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Resets the DES context.  <a href="#a5ade6911fa86c36732840955622f0684">More...</a><br /></td></tr>
 <tr class="memitem:a979b77edef2ac2daa9b52b13b56ef248"><td class="memItemLeft" align="right" valign="top">SYSCALL void&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../ox__des_8h#a979b77edef2ac2daa9b52b13b56ef248">cx_des_block_hw</a> (const unsigned char *inblock, unsigned char *outblock)</td></tr>
-<tr class="memdesc:a979b77edef2ac2daa9b52b13b56ef248"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypt or decrypt a block with DES.  <a href="#a979b77edef2ac2daa9b52b13b56ef248">More...</a><br /></td></tr>
+<tr class="memdesc:a979b77edef2ac2daa9b52b13b56ef248"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Encrypts or decrypts a block with DES.  <a href="#a979b77edef2ac2daa9b52b13b56ef248">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -110,7 +110,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt or decrypt a block with DES. </p>
+<p>Encrypts or decrypts a block with DES. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inblock</td><td colspan="4">Pointer to the block.</td></tr>
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset DES context. </p>
+<p>Resets the DES context. </p>
 
 </div>
 </div>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set a DES key in hardware. </p>
+<p>Sets a DES key in hardware. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">keys</td><td colspan="4">DES key.</td></tr>

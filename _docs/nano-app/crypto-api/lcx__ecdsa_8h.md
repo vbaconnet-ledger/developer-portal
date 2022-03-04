@@ -22,13 +22,13 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="4"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adb5c5dd90d0ff5ce1f853c55f93e46de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../cx__errors_8h#a06db7f567671764f4980db9bc828fa85">cx_err_t</a>&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdsa_8h#adb5c5dd90d0ff5ce1f853c55f93e46de">cx_ecdsa_sign_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, uint32_t mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const uint8_t *hash, size_t hash_len, uint8_t *sig, size_t *sig_len, uint32_t *info)</td></tr>
-<tr class="memdesc:adb5c5dd90d0ff5ce1f853c55f93e46de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sign a message digest according to ECDSA specification.  <a href="#adb5c5dd90d0ff5ce1f853c55f93e46de">More...</a><br /></td></tr>
+<tr class="memdesc:adb5c5dd90d0ff5ce1f853c55f93e46de"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Signs a message digest according to ECDSA specification.  <a href="#adb5c5dd90d0ff5ce1f853c55f93e46de">More...</a><br /></td></tr>
 <tr class="memitem:a0c5c6a9b51b85669825175f1b830c2c8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdsa_8h#a0c5c6a9b51b85669825175f1b830c2c8">cx_ecdsa_sign</a> (const <a class="el" href="../lcx__ecfp_8h#a0d6bfe95381fad6884d8aa21fd6446c4">cx_ecfp_private_key_t</a> *pvkey, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *hash, unsigned int hash_len, unsigned char *sig, unsigned int sig_len, unsigned int *info)</td></tr>
-<tr class="memdesc:a0c5c6a9b51b85669825175f1b830c2c8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Sign a message digest according to ECDSA specification.  <a href="#a0c5c6a9b51b85669825175f1b830c2c8">More...</a><br /></td></tr>
+<tr class="memdesc:a0c5c6a9b51b85669825175f1b830c2c8"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Signs a message digest according to ECDSA specification.  <a href="#a0c5c6a9b51b85669825175f1b830c2c8">More...</a><br /></td></tr>
 <tr class="memitem:ae9cb1ca66a942ee7df1d724e50ded717"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdsa_8h#ae9cb1ca66a942ee7df1d724e50ded717">cx_ecdsa_verify_no_throw</a> (const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, const uint8_t *hash, size_t hash_len, const uint8_t *sig, size_t sig_len)</td></tr>
-<tr class="memdesc:ae9cb1ca66a942ee7df1d724e50ded717"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify an ECDSA signature according to ECDSA specification.  <a href="#ae9cb1ca66a942ee7df1d724e50ded717">More...</a><br /></td></tr>
+<tr class="memdesc:ae9cb1ca66a942ee7df1d724e50ded717"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies an ECDSA signature according to ECDSA specification.  <a href="#ae9cb1ca66a942ee7df1d724e50ded717">More...</a><br /></td></tr>
 <tr class="memitem:a8f404764e06849d8a3727cf28aff2c33"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td colspan="3" class="memItemRight" valign="bottom"><a class="el" href="../lcx__ecdsa_8h#a8f404764e06849d8a3727cf28aff2c33">cx_ecdsa_verify</a> (const <a class="el" href="../lcx__ecfp_8h#ad678e5d35ae65cefb258de09588332ba">cx_ecfp_public_key_t</a> *pukey, int mode, <a class="el" href="../lcx__hash_8h#aac7f6b791a4df89ac2e67ee43d4021a2">cx_md_t</a> hashID, const unsigned char *hash, unsigned int hash_len, const unsigned char *sig, unsigned int sig_len)</td></tr>
-<tr class="memdesc:a8f404764e06849d8a3727cf28aff2c33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verify an ECDSA signature according to ECDSA specification.  <a href="#a8f404764e06849d8a3727cf28aff2c33">More...</a><br /></td></tr>
+<tr class="memdesc:a8f404764e06849d8a3727cf28aff2c33"><td class="mdescLeft">&#160;</td><td colspan="3" class="mdescRight">Verifies an ECDSA signature according to ECDSA specification.  <a href="#a8f404764e06849d8a3727cf28aff2c33">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a>
 
@@ -134,12 +134,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sign a message digest according to ECDSA specification. </p>
+<p>Signs a message digest according to ECDSA specification. </p>
 <p>This function throws an exception if the signature doesn't succeed.</p>
-<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecdsa_8h#adb5c5dd90d0ff5ce1f853c55f93e46de" title="Sign a message digest according to ECDSA specification. ">cx_ecdsa_sign_no_throw</a> rather than this function.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>It is recommended to use <a class="el" href="../lcx__ecdsa_8h#adb5c5dd90d0ff5ce1f853c55f93e46de" title="Signs a message digest according to ECDSA specification. ">cx_ecdsa_sign_no_throw</a> rather than this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_RND_TRNG</li>
 <li>CX_RND_RFC6979</li>
@@ -170,8 +170,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecdsa_8h#adb5c5dd90d0ff5ce1f853c55f93e46de">cx_ecdsa_sign_no_throw()</a>, and <a class="el" href="../lcx__ecdsa_8h#ae9cb1ca66a942ee7df1d724e50ded717">cx_ecdsa_verify_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -237,10 +235,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sign a message digest according to ECDSA specification. </p>
+<p>Signs a message digest according to ECDSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initialize a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvkey</td><td colspan="4">Private key. Shall be initialized with <a class="el" href="../lcx__ecfp_8h#aa60ed5c59930e787f187df1802b84ab5" title="Initializes a private key. ">cx_ecfp_init_private_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">Crypto mode flags. Supported flags:<ul>
 <li>CX_RND_TRNG</li>
 <li>CX_RND_RFC6979</li>
@@ -269,8 +267,6 @@ Functions</h2></td></tr>
 <li>CX_INVALID_PARAMETER_VALUE </li>
 </ul>
 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdsa_8h#a0c5c6a9b51b85669825175f1b830c2c8">cx_ecdsa_sign()</a>.</p>
 
 </div>
 </div>
@@ -336,10 +332,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Verify an ECDSA signature according to ECDSA specification. </p>
+<p>Verifies an ECDSA signature according to ECDSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initializes a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td colspan="4">ECDSA mode. This parameter is not used.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hashID</td><td colspan="4">Message digest algorithm identifer. This parameter is not used.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Digest of the message to be verified. The length of <b>hash</b> must be smaller than the group order size. Otherwise it is truncated.</td></tr>
@@ -350,8 +346,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, 0 otherwise. </dd></dl>
-
-<p class="reference">References <a class="el" href="../lcx__ecdsa_8h#ae9cb1ca66a942ee7df1d724e50ded717">cx_ecdsa_verify_no_throw()</a>.</p>
 
 </div>
 </div>
@@ -399,10 +393,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify an ECDSA signature according to ECDSA specification. </p>
+<p>Verifies an ECDSA signature according to ECDSA specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initialize a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pukey</td><td colspan="4">Public key initialized with <a class="el" href="../lcx__ecfp_8h#a9dba0fd71ca5df52eb27e3c4493e0371" title="Initializes a public key. ">cx_ecfp_init_public_key_no_throw</a>.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td colspan="4">Digest of the message to be verified. The length of <b>hash</b> must be smaller than the group order size. Otherwise it is truncated.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hash_len</td><td colspan="4">Length of the digest in octets.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td colspan="4">Pointer to the signature encoded in TLV: <b>30 || L || 02 || Lr || r || 02 || Ls || s</b></td></tr>
@@ -411,8 +405,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the signature is verified, 0 otherwise. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="../lcx__ecdsa_8h#a0c5c6a9b51b85669825175f1b830c2c8">cx_ecdsa_sign()</a>, and <a class="el" href="../lcx__ecdsa_8h#a8f404764e06849d8a3727cf28aff2c33">cx_ecdsa_verify()</a>.</p>
 
 </div>
 </div>

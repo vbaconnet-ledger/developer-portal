@@ -41,8 +41,6 @@ Data Fields</h2></td></tr>
 
 <p>Hash context. </p>
 
-<p class="reference">Referenced by <a class="el" href="../lcx__hmac_8h#a59713fd754b21c5af7de282b7b03c824">cx_hmac()</a>.</p>
-
 </div>
 </div>
 <a id="a88091e6802236471cb8e165d359d63ce"></a>
