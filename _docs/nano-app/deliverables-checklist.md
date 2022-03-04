@@ -41,7 +41,6 @@ The numbering below follows the one in the Requirements chapter.
 - My app repository has a test folder that contains the Unit Tests list and the functional Tests
 - The App has been fully tested with a companion wallet (CLI or GUI)
 - Two icons for the Nano and for the Ledger Live Manager in Adobe Illustrator format (see [Design Guidelines](../design-requirements))
-- [UI Flow](../ui-flow-video/#ui-flow) of how your application works
 - [Video](../ui-flow-video/#video) of your application running on the Ledger device
 
 
