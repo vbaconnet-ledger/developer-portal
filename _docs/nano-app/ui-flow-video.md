@@ -14,13 +14,15 @@ layout: doc
 |-----------------------|------------------------|------------------------|------------------------|
 |  This requirement is: |    <b>Mandatory</b>    |   <b>Mandatory</b>     |   <b>Mandatory</b>     |
 
-You are required to submit a demo of your Nano App in the form of a UI flow (file) and a video (URL) as described below. If you are a submitting a [clone application](../clone-specifics), you are required to submit the video only.
+You are required to submit a video demo of your Nano App as described below.
 
 
 
-## UI Flow
+## UI Flows
 
-Please **create your own UI flows** using the example given.
+To create the flow you will show in the video, we recommend you follow the UI flows shown below.
+
+### Send and receive examples
 
 <!-- ------------- Image ------------- -->
 <a href="../images/eth-flow.png">
@@ -30,13 +32,7 @@ Please **create your own UI flows** using the example given.
 
 Please create your flow following the given [Ethereum example](../docs/eth-flow.pdf).  
 
-It contains the basic functions App information, Receive and send operations.  
-
-You are free to choose the format of your own document (pdf, jpg, tif or Google doc).  
-
-Include the main operations that your Nano app contains.  
-
-Try to apply the same kind of flow design for all of them.  
+It contains the basic functions App information, Receive and send operations. Include the main operations that your Nano app contains. Try to apply the same kind of flow design for all of them.  
 
 
 ### Blind signing
@@ -63,7 +59,7 @@ In case you need the users to blind sign transactions, you will need to include 
 
 ## Video
 
-Please **create your own video** using the example given.  
+You must **create your own video** using the example given.  
 
 <video controls width="395" style="float:right; padding-top:60px;" muted preload='none' poster='../images/ledger-submission.png'><source src="../../videos/ledger-submission.mp4" type='video/mp4'></video><br>
 

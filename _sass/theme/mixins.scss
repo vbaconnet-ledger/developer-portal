@@ -374,7 +374,7 @@
             transition: background-color .1s linear;
         }
         th, td {
-            padding: 10px 12px;
+            padding: 5px 12px; // Modified by CF 01/02/2022
         }
         td {
             vertical-align: top;
@@ -902,6 +902,17 @@
         font-weight: bold;
         font-size: 12px;
     }
+
+    // Crypto api doc button
+
+    .crypto-button {
+        color: white !important;
+    }
+
+    .crypto-button:active {
+        background-color: $safety-orange;
+    }
+
 
     // Copy Code button
 
