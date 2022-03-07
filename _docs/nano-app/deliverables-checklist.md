@@ -14,6 +14,10 @@ The submission of a Nano App is completed through a form. This will ask you for 
 
 Below, you will find the details of the form content, per section. You can use this page as a checklist to gather everything that is required.
 
+<!--  -->
+{% include alert.html style="important" text="Help us to help you by ensuring the information your provide is accurate. The integration process will only start if you answer to all the questions." %}
+<!--  -->
+
 The numbering below follows the one in the Requirements chapter.  
 
 
