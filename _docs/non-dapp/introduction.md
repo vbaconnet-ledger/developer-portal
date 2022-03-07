@@ -29,3 +29,5 @@ You basically develop a web version of your application, which is then integrate
 You can follow our step-by-step [Tutorial](../tutorial/introduction) to learn how to develop your first Live App using our [Live App SDK](../reference/sdk/)!
 
 You will find use cases [here](../use-cases).
+
+Please find UX requirements [here](../ux-req).
