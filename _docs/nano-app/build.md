@@ -11,10 +11,14 @@ layout: doc
 
 
 
-[Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X/S Plus.
+[Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S and X.
 
 <!--  -->
 {% include alert.html style="important" text="When you submit an app, using Ledger App Builder to build the application is a Security Requirement." %}
+<!--  -->
+
+<!--  -->
+{% include alert.html style="important" text="For the moment, Ledger App Builder only support the Nano S and X. The documentation will soon be updated with Nano S Plus support." %}
 <!--  -->
 
 To use the container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
@@ -82,7 +86,7 @@ root@656be163fe84:/app# make
 
 #### For the Nano X or S Plus
 
-For Nano X or S Plus, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
+For Nano X, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
 
 For Nano X:
 
@@ -90,14 +94,6 @@ For Nano X:
 $ # docker can be replaced with podman or buildah without sudo
 $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
-```
-
-For Nano S Plus:
-
-```bash
-$ # docker can be replaced with podman or buildah without sudo
-$ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
-root@656be163fe84:/app# BOLOS_SDK=$NANOSPLUS_SDK make
 ```
 
 
