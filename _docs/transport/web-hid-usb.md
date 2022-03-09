@@ -183,7 +183,7 @@ Then depending on your choice install one of the corresponding packages:
     ```
 - Install the Ledger package [@ledgerhq/hw-transport-webusb](https://github.com/LedgerHQ/ledgerjs/tree/master/packages/hw-transport-webusb) which provide you with all the methods to interact with  your Nano with a USB connexion:
     ```console
-    `npm install --save @ledgerhq/hw-transport-webusb`
+    npm install --save @ledgerhq/hw-transport-webusb
     ``` 
 
 
@@ -208,11 +208,11 @@ Your "package.json" should to look like this:
   "description": "",
   "source": "src/index.html",
   "dependencies": {
-    "@ledgerhq/hw-app-btc": "^6.12.1",
-    "@ledgerhq/hw-transport-webhid": "^6.11.2", 
-    "@ledgerhq/hw-transport-webusb": "^6.11.2", 
+    "@ledgerhq/hw-app-btc": "^6.24.1",
+    "@ledgerhq/hw-transport-webhid": "^6.24.1", 
+    "@ledgerhq/hw-transport-webusb": "^6.24.1", 
     "@ledgerhq/logs": "^6.10.0",
-    "core-js": "^3.20.2"
+    "core-js": "^3.21.1"
   },
   "devDependencies": {
       "parcel": "^2.0.0"

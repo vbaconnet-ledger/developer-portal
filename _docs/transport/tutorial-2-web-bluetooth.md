@@ -117,7 +117,7 @@ In App.js copy-paste the following code:
 global.Buffer = require("buffer").Buffer;
 ```
 #### index.js
-in the index.js add this line 
+in the index.js add these line 
 ```javascript
 import './polyfill'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -382,14 +382,14 @@ This is how your "package.json" shoud look like:
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ledgerhq/hw-app-eth": "^6.23.1",
-    "@ledgerhq/hw-transport-web-ble": "^6.21.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@ledgerhq/hw-app-eth": "^6.26.0",
+    "@ledgerhq/hw-transport-web-ble": "^6.24.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
     "buffer": "^6.0.3",
-    "ethers": "^5.5.3",
+    "ethers": "^5.5.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
