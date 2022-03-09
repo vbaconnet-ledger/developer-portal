@@ -14,7 +14,7 @@ layout: doc
 [Ledger App Builder](https://github.com/LedgerHQ/ledger-app-builder) is a container image which contains all dependencies to compile an application for Nano S/X.
 
 <!--  -->
-{% include alert.html style="important" text="When you submit an app, using Ledger App Builder to build the application is a Security Requirement." %}
+{% include alert.html style="important" text="If you chose to build your app differently, please make sure you can still compile it with Ledger App Builder, as it will be required for deployment." %}
 <!--  -->
 
 To use the container image, you need to either install [Docker](https://docs.docker.com/get-docker/), [Podman](https://podman.io/), or [Buildah](https://buildah.io/) and apply the following steps.
