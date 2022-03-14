@@ -8,7 +8,7 @@ toc: true
 layout: doc
 ---
 
-## Global architecture overview
+## Global architecture overview Hello Francesco ! 
 
 <!-- ------------- Image ------------- -->
 [![App architecture](../images/general-architecture-live.png)](../images/general-architecture-live.png)
