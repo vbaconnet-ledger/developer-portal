@@ -65,7 +65,7 @@ The Ledger Live application uses our own explorers for Bitcoin and Ethereum fork
 This time line shows the relative time of the steps (XS, S, M and L) you will go through for most integrations.
 
 
-Coucou Everyone
+Coucou Everyone again!
 
 <div class="uk-text-center" uk-grid>
 	<div class="uk-child-width-1-6@m">
