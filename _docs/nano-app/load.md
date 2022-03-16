@@ -15,7 +15,7 @@ layout: doc
 <!--  -->
 
 <!--  -->
-{% include alert.html style="important" text="If you are a Mac or a Windows user, you should use a Linux Virtual Machine to load the application to a Nano S." %}
+{% include alert.html style="important" text="If you are a Mac or a Windows user, you should use a Linux Virtual Machine to load the application to a Nano S or Nano S Plus." %}
 <!--  -->
 
 ## 1. Define the udev rules
