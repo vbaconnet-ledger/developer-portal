@@ -79,7 +79,7 @@ root@656be163fe84:/app# make
 
 #### For the Nano X and Nano S Plus
 
-For Nano X, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
+For Nano X and S Plus, specify the `BOLOS_SDK` environment variable before building your app, in the source folder of the app:
 
 For Nano X:
 
@@ -87,6 +87,14 @@ For Nano X:
 $ # docker can be replaced with podman or buildah without sudo
 $ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
 root@656be163fe84:/app# BOLOS_SDK=$NANOX_SDK make
+```
+
+For Nano S Plus:
+
+```bash
+$ # docker can be replaced with podman or buildah without sudo
+$ sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
+root@656be163fe84:/app# BOLOS_SDK=$NANOSP_SDK make
 ```
 
 
