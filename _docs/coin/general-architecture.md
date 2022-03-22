@@ -10,6 +10,8 @@ layout: doc
 
 ## Global architecture overview
 
+--- This is my contribution
+
 <!-- ------------- Image ------------- -->
 [![App architecture](../images/general-architecture-live.png)](../images/general-architecture-live.png)
 <!-- --------------------------------- -->
