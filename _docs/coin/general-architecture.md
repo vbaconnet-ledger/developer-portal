@@ -11,7 +11,7 @@ layout: doc
 ## Global architecture overview
 
 --- This is my contribution
--- And this is mine
+-- And this is mine, this is a test
 
 <!-- ------------- Image ------------- -->
 [![App architecture](../images/general-architecture-live.png)](../images/general-architecture-live.png)
